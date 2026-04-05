@@ -4,13 +4,9 @@ argument-hint: "[--fix] [--deep] [--wiki <name>] [--local]"
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:*), WebSearch
 ---
 
-## Context
-
-- Home directory: !`echo $HOME`
-- Global wiki exists: !`ls -d ~/wiki/_index.md 2>/dev/null && echo "Yes" || echo "No"`
-- Local wiki exists: !`ls -d .wiki/_index.md 2>/dev/null && echo "Yes" || echo "No"`
-
 ## Your task
+
+First, check if a wiki exists by trying to read `~/wiki/_index.md` (global) and `.wiki/_index.md` (local).
 
 Read the linting rules at `skills/wiki-manager/references/linting.md`. Then run health checks on the wiki.
 

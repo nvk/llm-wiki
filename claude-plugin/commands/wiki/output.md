@@ -4,13 +4,9 @@ argument-hint: "<type> [--topic <topic>] [--sources <paths>] [--wiki <name>] [--
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(date:*), Bash(python3:*)
 ---
 
-## Context
-
-- Home directory: !`echo $HOME`
-- Global wiki exists: !`ls -d ~/wiki/_index.md 2>/dev/null && echo "Yes" || echo "No"`
-- Local wiki exists: !`ls -d .wiki/_index.md 2>/dev/null && echo "Yes" || echo "No"`
-
 ## Your task
+
+First, check if a wiki exists by trying to read `~/wiki/_index.md` (global) and `.wiki/_index.md` (local).
 
 Generate an output artifact from wiki content based on $ARGUMENTS.
 

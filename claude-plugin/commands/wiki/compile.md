@@ -4,13 +4,10 @@ argument-hint: "[--full] [--source <path>] [--topic <name>] [--wiki <name>] [--l
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:*)
 ---
 
-## Context
-
-- Home directory: !`echo $HOME`
-- Global wiki exists: !`ls -d ~/wiki/_index.md 2>/dev/null && echo "Yes" || echo "No"`
-- Local wiki exists: !`ls -d .wiki/_index.md 2>/dev/null && echo "Yes" || echo "No"`
-
 ## Your task
+
+First, check if a wiki exists by trying to read `~/wiki/_index.md` (global) and `.wiki/_index.md` (local).
+
 
 Read the compilation protocol at `skills/wiki-manager/references/compilation.md` and the indexing protocol at `skills/wiki-manager/references/indexing.md`. Then compile raw sources into wiki articles.
 

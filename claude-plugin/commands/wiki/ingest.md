@@ -4,13 +4,10 @@ argument-hint: "<url|filepath|\"text\"> [--type articles|papers|repos|notes|data
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:*), Bash(mv:*), Bash(basename:*), Bash(file:*), WebFetch, WebSearch
 ---
 
-## Context
-
-- Home directory: !`echo $HOME`
-- Global wiki exists: !`ls -d ~/wiki/_index.md 2>/dev/null && echo "Yes" || echo "No"`
-- Local wiki exists: !`ls -d .wiki/_index.md 2>/dev/null && echo "Yes" || echo "No"`
-
 ## Your task
+
+First, check if a wiki exists by trying to read `~/wiki/_index.md` (global) and `.wiki/_index.md` (local).
+
 
 Read the ingestion protocol at `skills/wiki-manager/references/ingestion.md` and the structure spec at `skills/wiki-manager/references/wiki-structure.md`. Then ingest source material.
 

@@ -4,13 +4,9 @@ argument-hint: "<question> [--wiki <name>] [--local] [--raw]"
 allowed-tools: Read, Glob, Grep, Bash(ls:*)
 ---
 
-## Context
-
-- Home directory: !`echo $HOME`
-- Global wiki exists: !`ls -d ~/wiki/_index.md 2>/dev/null && echo "Yes" || echo "No"`
-- Local wiki exists: !`ls -d .wiki/_index.md 2>/dev/null && echo "Yes" || echo "No"`
-
 ## Your task
+
+First, check if a wiki exists by trying to read `~/wiki/_index.md` (global) and `.wiki/_index.md` (local).
 
 Answer the question in $ARGUMENTS using ONLY the knowledge in the wiki. Follow the Q&A protocol below.
 

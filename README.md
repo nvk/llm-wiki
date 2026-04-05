@@ -31,6 +31,7 @@ Inspired by [Karpathy's LLM wiki concept](https://x.com/karpathy/status/20398056
 /wiki:compile                                     # Compile any unprocessed sources
 /wiki:output report --topic gut-brain             # Generate a report
 /wiki:output slides --retardmax                   # Ship a rough slide deck NOW
+/wiki:assess /path/to/my-app --wiki nutrition     # Gap analysis: repo vs wiki vs market
 /wiki:lint --fix                                  # Clean up inconsistencies
 ```
 
@@ -96,8 +97,9 @@ The hub is just a registry — no content directories, no `.obsidian/`. All cont
 2. **Ingest** additional sources — URLs, files, text, tweets (via Grok MCP), or bulk via inbox
 3. **Compile** raw sources into synthesized wiki articles with cross-references and confidence scores
 4. **Query** the wiki — quick (indexes), standard (articles), or deep (everything)
-5. **Lint** for consistency — broken links, missing indexes, orphan articles
-6. **Output** artifacts — summaries, reports, slides — filed back into the wiki
+5. **Assess** a repo against the wiki — gap analysis: what aligns, what's missing, what the market offers
+6. **Lint** for consistency — broken links, missing indexes, orphan articles
+7. **Output** artifacts — summaries, reports, slides — filed back into the wiki
 
 ### Key Design
 

@@ -173,6 +173,7 @@ sources: [raw/type/file1.md, raw/type/file2.md]
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 tags: [tag1, tag2]
+aliases: [alternate names for Obsidian discovery]
 summary: "2-3 sentence summary for index"
 ---
 
@@ -184,14 +185,46 @@ summary: "2-3 sentence summary for index"
 
 [Synthesized content — explain, contextualize, connect. NOT copy-paste.]
 
+When referencing another wiki article inline, use dual-link format:
+[[article-slug|Display Name]] ([Display Name](../category/article-slug.md))
+
+This ensures both Obsidian (reads [[wikilink]]) and Claude (follows relative path) can navigate.
+
 ## See Also
 
-- [Related Article](../category/file.md) — relationship note
+- [[related-slug|Related Article]] ([Related Article](../category/related-slug.md)) — relationship note
 
 ## Sources
 
 - [Source Title](../../raw/type/file.md) — what this source contributed
 ```
+
+## Dual-Link Convention
+
+All cross-references between wiki articles use BOTH link formats on the same line:
+
+```
+[[target-slug|Display Text]] ([Display Text](../category/target-slug.md))
+```
+
+- **Obsidian** reads the `[[wikilink]]` for its graph view, backlinks panel, and navigation
+- **Claude** follows the standard markdown `(relative/path.md)` link
+- Both coexist on one line so neither system misses the connection
+
+For inline mentions in article body text, use the same pattern:
+```
+The [[transformer-architecture|Transformer]] ([Transformer](../concepts/transformer-architecture.md)) uses self-attention...
+```
+
+## Obsidian Compatibility
+
+The wiki is designed to be opened as an Obsidian vault. On `/wiki init`, a `.obsidian/` config directory is created with minimal settings. Key compatibility notes:
+
+- YAML frontmatter `tags` field is read natively by Obsidian
+- `aliases` in frontmatter lets Obsidian find articles by alternate names
+- `_index.md` files appear as regular notes in Obsidian (this is fine)
+- The `inbox/` folder works as a natural Obsidian inbox
+- Graph view shows connections via `[[wikilinks]]`
 
 ## Output Artifact Format (output/)
 

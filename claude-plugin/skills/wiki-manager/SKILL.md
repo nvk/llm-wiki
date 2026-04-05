@@ -41,7 +41,7 @@ See [references/wiki-structure.md](references/wiki-structure.md) for the complet
 
 3. **Articles are synthesized, not copied.** A wiki article draws from multiple sources, contextualizes, and connects to other concepts. Think textbook, not clipboard.
 
-4. **Backlinks over magic.** Cross-references use explicit markdown links in "See Also" sections. Bidirectional when it makes sense. No invisible link databases, no `[[wiki-links]]`.
+4. **Dual-linking for Obsidian + Claude.** Cross-references use both `[[wikilink]]` (for Obsidian graph view) and standard markdown `[text](path)` (for Claude navigation) on the same line: `[[slug|Name]] ([Name](../category/slug.md))`. Bidirectional when it makes sense.
 
 5. **Frontmatter is structured data.** Every `.md` file has YAML frontmatter with title, summary, tags, dates. This makes the wiki searchable without full-text scans.
 

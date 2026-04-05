@@ -35,7 +35,41 @@ Initialize a new wiki. Parse arguments:
    - `output/`
    - For global wiki only: `topics/`
 
-2. Create empty `_index.md` in every directory following the format in `references/wiki-structure.md`. Use today's date. Set all counts to 0.
+2. Create `.obsidian/` directory with minimal vault config:
+   - `.obsidian/app.json`:
+     ```json
+     {
+       "showFrontmatter": true,
+       "alwaysUpdateLinks": true,
+       "newLinkFormat": "relative",
+       "useMarkdownLinks": false
+     }
+     ```
+   - `.obsidian/appearance.json`:
+     ```json
+     {
+       "accentColor": ""
+     }
+     ```
+   - `.obsidian/graph.json`:
+     ```json
+     {
+       "collapse-filter": false,
+       "search": "",
+       "showTags": true,
+       "showAttachments": false,
+       "showOrphans": true,
+       "collapse-color-groups": false,
+       "collapse-display": false,
+       "showArrow": true,
+       "textFadeMultiplier": 0,
+       "nodeSizeMultiplier": 1,
+       "lineSizeMultiplier": 1
+     }
+     ```
+   This makes the wiki immediately openable as an Obsidian vault with sane defaults.
+
+3. Create empty `_index.md` in every directory following the format in `references/wiki-structure.md`. Use today's date. Set all counts to 0.
 
 3. Ask the user: "What is this wiki about?" Use their answer to create `config.md` with title, description, scope, and today's date.
 

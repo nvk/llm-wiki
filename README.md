@@ -64,10 +64,9 @@ All commands accept `--wiki <name>` to target a specific wiki and `--local` to t
 ### Architecture
 
 ```
-~/wiki/                                 # Hub — tracks all topic wikis
-├── wikis.json                          # Registry of all wikis
-├── _index.md                           # Hub index with topic wiki table
-├── config.md                           # Hub config
+~/wiki/                                 # Hub — lightweight, no content
+├── wikis.json                          # Registry of all topic wikis
+├── _index.md                           # Lists topic wikis with stats
 ├── log.md                              # Global activity log
 └── topics/                             # Each topic is an isolated wiki
     ├── dementia/                       # Example topic wiki

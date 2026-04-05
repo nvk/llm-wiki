@@ -1,15 +1,32 @@
 # Wiki Directory Structure
 
-## Global Wiki (default)
+## Hub (~/wiki/)
+
+The hub is lightweight — it has NO content directories. It only tracks topic wikis.
 
 ```
 ~/wiki/
-├── wikis.json                     # Coordination file — tracks all wikis
+├── wikis.json                     # Registry of all topic wikis
+├── _index.md                      # Lists topic wikis with stats
+├── log.md                         # Global activity log
+└── topics/                        # Each topic is a full wiki
+    ├── dementia/
+    ├── quantum-computing/
+    └── ...
+```
+
+## Topic Sub-Wiki (~/wiki/topics/<name>/)
+
+All content lives here. Each topic wiki has the full structure:
+
+```
+~/wiki/topics/<name>/
+├── .obsidian/                     # Obsidian vault config
 ├── _index.md                      # Master index: stats, quick nav, recent changes
 ├── config.md                      # Title, scope, conventions
-├── log.md                         # Append-only activity log (chronological)
-├── inbox/                         # Drop zone — dump files here, then /wiki:ingest --inbox
-│   └── .processed/                # Processed items moved here
+├── log.md                         # Topic-level activity log
+├── inbox/                         # Drop zone for this topic
+│   └── .processed/
 ├── raw/                           # Immutable source material
 │   ├── _index.md
 │   ├── articles/
@@ -38,17 +55,9 @@
 │   └── references/
 │       ├── _index.md
 │       └── *.md
-├── output/                        # Generated artifacts
-│   ├── _index.md
-│   └── *.md
-└── topics/                        # Sub-wikis by topic
-    └── <topic-name>/              # Each is a full wiki structure
-        ├── _index.md
-        ├── config.md
-        ├── inbox/
-        ├── raw/
-        ├── wiki/
-        └── output/
+└── output/                        # Generated artifacts
+    ├── _index.md
+    └── *.md
 ```
 
 ## Local Wiki (--local flag)

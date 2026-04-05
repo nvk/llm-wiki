@@ -118,17 +118,17 @@ Automatically run a quick structural check when any of these triggers occur:
 
 ### Quick Structure Check (lightweight, runs inline — not a full lint)
 
-1. **Hub hygiene**: Check if `~/wiki/raw/` or `~/wiki/wiki/` contain content files (not just `_index.md`). If yes → warn: "Found content in the global hub that should be in a topic sub-wiki. Move it with `/wiki:lint --fix` or create a new topic wiki."
+1. **Hub integrity**: The hub (`~/wiki/`) should ONLY contain `wikis.json`, `_index.md`, `log.md`, and `topics/`. If `raw/`, `wiki/`, `output/`, `inbox/`, or `config.md` exist at the hub level → delete them (they are traps for misplaced content).
 
-2. **Index freshness**: For the active wiki, compare actual file count in `wiki/concepts/`, `wiki/topics/`, `wiki/references/` against the rows in their `_index.md`. If mismatched → auto-fix by adding missing entries or removing dead ones.
+2. **Index freshness**: For the active topic wiki, compare actual file count in `wiki/concepts/`, `wiki/topics/`, `wiki/references/` against the rows in their `_index.md`. If mismatched → auto-fix by adding missing entries or removing dead ones.
 
 3. **Orphan detection**: Check if any `.md` files exist in wiki directories but are not listed in any `_index.md`. If found → add them to the index.
 
-4. **Missing directories**: Verify all expected subdirectories exist (`raw/articles/`, `raw/papers/`, etc.). If missing → create them with empty `_index.md`.
+4. **Missing directories**: Verify all expected subdirectories exist in the topic wiki (`raw/articles/`, `raw/papers/`, etc.). If missing → create them with empty `_index.md`.
 
 5. **wikis.json sync**: Check that all topic sub-wikis under `~/wiki/topics/` are registered in `wikis.json`. If a directory exists but isn't registered → add it. If registered but directory is missing → remove the entry.
 
-6. **Log existence**: Verify `log.md` exists in the active wiki. If missing → create it.
+6. **Log existence**: Verify `log.md` exists in the active wiki and at the hub. If missing → create it.
 
 ### Behavior
 

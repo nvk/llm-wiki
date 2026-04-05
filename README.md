@@ -6,9 +6,18 @@ Inspired by [Karpathy's LLM wiki concept](https://x.com/karpathy/status/20398056
 
 ## Install
 
+**Claude Code** (native plugin):
 ```
 /install-plugin github:nvk/llm-wiki
 ```
+
+**OpenAI Codex / Any LLM Agent** (idea file):
+```
+# Copy AGENTS.md into your agent's context or project root
+cp AGENTS.md ~/your-project/AGENTS.md
+```
+
+The `AGENTS.md` file contains the complete wiki protocol as a single portable document — works with any LLM agent that can read/write files and search the web.
 
 > **New to a topic? Two commands.** Each topic gets its own wiki — isolated indexes, focused queries, no cross-topic noise:
 > ```

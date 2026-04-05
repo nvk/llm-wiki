@@ -53,7 +53,8 @@
       "WebFetch(domain:extendedbrain.substack.com)",
       "WebFetch(domain:alexanderzeitler.com)",
       "Bash(find ~/wiki/topics/dementia/raw -name *.md -not -name _index.md)",
-      "Bash(find ~/wiki/topics/dementia/wiki -name *.md -not -name _index.md)"
+      "Bash(find ~/wiki/topics/dementia/wiki -name *.md -not -name _index.md)",
+      "WebFetch(domain:www.retardmaxx.com)"
     ]
   }
 }

@@ -24,6 +24,7 @@ If wiki does not exist, stop: "No wiki found. Run `/wiki init <topic>` first."
 - **topic**: The research topic — everything that is not a flag
 - **--sources <N>**: Target number of sources to find and ingest (default: 5, max: 20)
 - **--deep**: Expanded research — launches more agents with broader search angles
+- **--retardmax**: Retardmax mode — skip the planning, cast the widest net possible, ingest aggressively, compile fast. Quantity and speed over precision. You can lint later.
 
 ### Research Protocol
 
@@ -64,7 +65,22 @@ Launch agents IN PARALLEL (single message, multiple Agent tool calls) to maximiz
 - Target 3-5 high-quality sources per agent
 - Skip: paywalled content, SEO spam, thin articles, duplicate information
 
-**Deduplication:** After all agents return, deduplicate by URL and by content similarity. If two agents found the same source, keep it once. If two sources cover identical ground, keep the higher quality one.
+**Retardmax mode (`--retardmax`):** 10 parallel agents — ALL of the above plus:
+
+| Agent | Focus | Search Strategy |
+|-------|-------|----------------|
+| **Rabbit Hole 1** | Whatever the first search surfaces — follow the most interesting link | Start with the topic, click the most compelling result, then search for what THAT references. Go deep. |
+| **Rabbit Hole 2** | Same strategy, different starting search terms | Use synonyms or adjacent framing of the topic. Follow the trail wherever it goes. |
+
+Retardmax mode differences:
+- **Skip Phase 1 entirely** — don't check what already exists, just go
+- Each agent runs 4-5 searches instead of 2-3
+- **Lower quality threshold** — ingest anything that's not obviously spam. Err on the side of ingesting too much. You can lint later.
+- **--sources default bumps to 15** (override with explicit --sources)
+- Compile fast — don't agonize over article structure, get the knowledge in. `/wiki:lint --fix` cleans up after.
+- The rabbit hole agents follow links FROM search results to find sources the other agents wouldn't. They chase citations, references, and "see also" links on pages they find.
+
+**Deduplication:** After all agents return, deduplicate by URL and by content similarity. If two agents found the same source, keep it once. If two sources cover identical ground, keep the higher quality one. In retardmax mode, be more lenient — keep both if they offer even slightly different angles.
 
 #### Phase 3: Ingest
 

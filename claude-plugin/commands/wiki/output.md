@@ -24,6 +24,7 @@ If wiki does not exist or has no articles, stop: "No wiki found (or no articles)
 - **type** (required): One of: `summary`, `report`, `study-guide`, `slides`, `timeline`, `glossary`, `comparison`
 - **--topic <topic>**: Focus on a specific topic or concept (matches against tags and titles)
 - **--sources <paths>**: Comma-separated list of specific wiki article paths to use
+- **--retardmax**: Ship it NOW. Don't agonize over structure or completeness. Generate a rough-but-useful output fast, covering everything the wiki has. Better to have something imperfect now than something perfect never.
 
 ### Output Types
 
@@ -41,9 +42,21 @@ If wiki does not exist or has no articles, stop: "No wiki found (or no articles)
 
 **comparison**: Structured comparison of 2+ concepts/technologies/approaches. Uses tables for feature-by-feature comparison.
 
+### Retardmax Mode (`--retardmax`)
+
+When `--retardmax` is set:
+- Read ALL articles in the wiki, not just topic-matched ones. Don't filter, don't be selective.
+- Generate the output immediately. Don't plan the structure first — just start writing.
+- Include everything that might be relevant. Too much is better than too little.
+- Don't worry about perfect formatting or transitions. Get the content down.
+- If it's a report, make it comprehensive and raw. Polish comes later.
+- If it's slides, more slides is fine. Trim later.
+- File it and move on. The user can iterate with a non-retardmax pass.
+
 ### Process
 
 1. **Gather sources**:
+   - If `--retardmax`: read ALL wiki articles across all categories
    - If `--sources` provided: read those specific articles
    - If `--topic` provided: search wiki indexes for matching articles by tag/title, read them
    - If neither: read `wiki/_index.md` for an overview, read articles from each category

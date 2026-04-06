@@ -1,6 +1,6 @@
 ---
 description: "Ingest source material into the wiki. Accepts URLs, file paths, freeform text, or processes the inbox. Supports tweets via Grok MCP."
-argument-hint: "<url|filepath|\"text\"> [--type articles|papers|repos|notes|data] [--title \"Title\"] [--inbox] [--keep] [--wiki <name>] [--local]"
+argument-hint: "<url|filepath|\"text\"> [--type articles|papers|repos|notes|data] [--title \"Title\"] [--inbox] [--keep] [--wiki <name>] [--local] [--auto-classify]"
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:*), Bash(mv:*), Bash(basename:*), Bash(file:*), WebFetch, WebSearch
 ---
 
@@ -26,6 +26,7 @@ If the resolved wiki does not exist, stop: "No wiki found. Run `/wiki init` firs
 - **--keep**: When processing inbox, keep originals (move to .processed/ instead of deleting)
 - **--type**: Force source type (articles, papers, repos, notes, data). Default: auto-detect.
 - **--title**: Override extracted title
+- **--auto-classify**: For single items, classify into the best-matching topic wiki instead of requiring `--wiki`. Always active for `--inbox` when no `--wiki` is set.
 - **Source**: Everything else — URL (starts with http), file path (contains / or .), or quoted freeform text
 
 ### If --inbox
@@ -66,6 +67,54 @@ Follow the inbox processing protocol from `references/ingestion.md`:
 1. Use the text as-is
 2. Type: notes (unless overridden)
 3. Derive title from first sentence if --title not provided
+
+### Topic Wiki Routing (when no --wiki specified)
+
+When the wiki resolved to the hub (`~/wiki/`) and no `--wiki` flag was provided, route content to the right topic wiki AFTER fetching the source content (title, summary, tags are now known).
+
+**Skip this step entirely if** `--wiki` or `--local` was explicitly provided.
+
+#### Single item (no --inbox)
+
+If `--auto-classify` is set, or the user didn't specify `--wiki`:
+
+1. Read `~/wiki/wikis.json` to list topic wikis
+2. For each topic wiki with a `config.md`, read the description/scope (first 5 lines is enough)
+3. Match the source's title + summary + tags against wiki scopes
+4. Present a simple numbered choice:
+   ```
+   Route to:
+   1) ai-security — "AI security, agent safety, prompt injection..."
+   2) geo — "GEO & AI Search Optimization..."
+   3) New wiki
+   4) Skip (leave in hub inbox for later)
+   ```
+5. User picks a number. Use that wiki as target for the rest of the flow.
+
+If only one topic wiki exists, still ask (don't assume). If zero topic wikis exist, ask whether to create one or ingest to hub raw/.
+
+#### Batch mode (--inbox)
+
+When `--inbox` is set and no `--wiki` was provided, classify items as a batch:
+
+1. Scan inbox, fetch/read each item to get title + summary
+2. For each item, match against topic wiki scopes
+3. Present a classification table:
+   ```
+   Inbox routing:
+   | # | Title | → Wiki | Match |
+   |---|-------|--------|-------|
+   | 1 | Attention Is All You Need | ai-basics | strong |
+   | 2 | Agent Auth IETF Draft | ai-security | strong |
+   | 3 | K8s RBAC Guide | (new: cloud-infra) | weak |
+   | 4 | Random cooking blog | (skip) | none |
+   ```
+4. User confirms: `y` (process all), `edit` (reassign items), `abort`
+5. Process items grouped by target wiki — all ai-security items together, etc.
+6. Items marked "skip" stay in inbox untouched
+7. Items routed to a "new" wiki trigger the init flow first, then ingest
+
+**Performance note**: Fetch all items first (parallel if possible), classify in one pass, then process. Don't fetch-classify-ingest one at a time — that's fragile if interrupted mid-batch.
 
 ### For all sources
 

@@ -14,6 +14,16 @@
 
 LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, thesis-driven investigation, source ingestion, wiki compilation, querying, and artifact generation. Ships as a Claude Code plugin or a portable AGENTS.md for Codex and others. Obsidian-compatible.
 
+## What's New in v0.0.10
+
+**Research Quality & Resilience** — 5 improvements backed by empirical research from the agentic AI knowledge base:
+
+1. **Session Registry** — Multi-round research (`--min-time`) now persists state to `.research-session.json`. If interrupted, resume from the last completed round instead of starting over.
+2. **Subagent Prompt Template** — Standardized prompt structure (Objective/Context/Constraints/Deliverables) for all research agents. "Most sub-agent failures aren't execution failures — they're invocation failures."
+3. **Credibility Critic** — New Phase 2b: independent credibility assessment of sources before ingestion. Scores peer-review status, recency, author authority, and bias. Prevents the "fox guarding the henhouse" problem.
+4. **Progress Scoring** — Each round now produces a 0-100 progress score. Enables principled termination (>=80 = quality ceiling) and low-yield detection (<40 = change strategy).
+5. **Plan Reflection** — Explicit reflection step between rounds that re-evaluates the overall research direction, not just picks gaps. Scores gaps by impact x feasibility x specificity. Catches 34% more cross-topic connections.
+
 ## Install
 
 **Claude Code** (native plugin):

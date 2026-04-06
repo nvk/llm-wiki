@@ -114,9 +114,31 @@ Launch parallel agents, but each agent has the thesis as a FILTER. Every source 
 - Rate evidence strength: meta-analysis > RCT > cohort > case study > expert opinion > anecdotal
 - Return: title, URL, content, relevance rating, evidence strength, and whether it supports/opposes/nuances the thesis
 
+#### Thesis Agent Prompt Template
+
+Each thesis agent receives this structured prompt:
+```
+You are a thesis research agent investigating: "{thesis}"
+Key variables: {variables}
+Your lens: {Agent Focus} — {Thesis Lens}
+
+Search for evidence that is {supporting/opposing/mechanistic/meta-review/adjacent} to this claim.
+
+For each source:
+- Relevance to thesis: direct | indirect | tangential (SKIP tangential — this is the bloat filter)
+- Evidence strength: meta-analysis > RCT > cohort > case study > expert opinion > anecdotal
+- Direction: supports | opposes | nuances
+- Key finding: 1-2 sentences
+- Quality score: 1-5
+
+Return sources ranked by (relevance × evidence strength), strongest first.
+```
+
 ### Phase 3: Evidence Compilation
 
 Different from regular compilation — articles are organized around the thesis, not just by topic.
+
+1. **Credibility Review**: Before ingestion, score each source on peer-review status, evidence strength tier (meta > RCT > cohort > case > opinion > anecdotal), author authority, and potential bias. Flag low-credibility sources. In the thesis file's Evidence sections, organize by evidence strength (strongest first) and mark each finding as "Strong" / "Moderate" / "Weak" based on combined credibility + evidence strength.
 
 1. **Ingest** relevant sources to `raw/` (skip tangential sources — this is how we prevent bloat)
 
@@ -193,3 +215,10 @@ When `--min-time` is set, rounds work differently from open research:
 - **Final**: Synthesize verdict, update thesis file, lint, generate thesis report
 
 The goal is not just "more sources" — it's a more BALANCED and RIGOROUS assessment with each round.
+
+#### Thesis Session State
+
+When `--min-time` is set, create `<wiki-root>/.thesis-session.json` tracking:
+- Round number, evidence for/against counts, current verdict direction
+- Same lifecycle as research sessions: create → update per round → delete on completion
+- Resume detection: "Found interrupted thesis session (Round N, current leaning: X). Continue?"

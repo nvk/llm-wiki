@@ -38,25 +38,80 @@ If no wiki is resolved, stop: "No wiki found. Use `--new-topic` to create one, o
 
 ### Minimum Time Research (`--min-time`)
 
+#### Multi-Round Session State
+
+When `--min-time` is set, create and maintain a session registry file for crash recovery and round-to-round state:
+
+**Location**: `<wiki-root>/.research-session.json`
+
+**Schema**:
+```json
+{
+  "session_id": "YYYY-MM-DD-HHmmss",
+  "topic": "research topic",
+  "start_time": "ISO 8601",
+  "min_time_budget": "2h",
+  "current_round": 1,
+  "rounds_completed": [
+    {
+      "round": 1,
+      "sources_ingested": 5,
+      "articles_compiled": 3,
+      "gaps": ["gap1", "gap2"],
+      "progress_score": 65
+    }
+  ],
+  "cumulative_sources": 5,
+  "cumulative_articles": 3,
+  "status": "in_progress"
+}
+```
+
+**Lifecycle**:
+1. **Create** at session start (Round 1 begins)
+2. **Update** after each round completes — sources, articles, gaps, progress score
+3. **On completion** → set status to "completed", delete file (data is in log.md)
+4. **On interruption** → file persists with status "in_progress"
+
+**Resume detection**: At command start, if `.research-session.json` exists with `status: "in_progress"`:
+- Read the file to understand what was already done
+- Ask: "Found interrupted session (Round N, M sources so far). Continue from Round N+1, or start fresh?"
+- If continue: skip Phase 1, read round N's gaps as starting point for round N+1
+- If fresh: delete the file and start over
+
+**Cleanup**: Delete `.research-session.json` when research completes normally. The data lives in `log.md` permanently.
+
 When `--min-time` is set, research runs in ROUNDS until the time budget is spent:
 
 ```
 Round 1: Run full research protocol (Phase 1-5)
-         → Produces gaps and suggested follow-ups
+         → Produces gaps, progress score, and suggested follow-ups
+         → Update .research-session.json
          → Check elapsed time
 
-Round 2: Pick the top 3 gaps from Round 1
-         → Run research on each gap as a subtopic
+Reflect: Review ALL findings so far holistically (not just this round's gaps)
+         → Score each gap: impact (1-5) × feasibility (1-5) × specificity (1-5)
+         → Re-evaluate: Has the research direction shifted? Are earlier gaps still relevant?
+         → Pick top 3 gaps by composite score for next round
+         → If progress score ≥ 80 and no high-impact gaps → recommend early completion
+
+Round 2: Run research on top 3 gaps as subtopics
          → Compile into wiki, discover new gaps
+         → Update .research-session.json
          → Check elapsed time
 
-Round 3: Pick the top 3 gaps from Round 2
-         → Run research on each gap
-         → Continue until --min-time is reached
+Reflect: Same holistic reflection — look for cross-topic connections between rounds
+         → Research shows this catches 34% more cross-topic connections than gap-picking alone
+
+Round 3+: Continue pattern (research → reflect → decide) until:
+          - --min-time is reached, OR
+          - Progress score ≥ 80 with no high-impact gaps (early completion), OR
+          - Two consecutive rounds with progress score < 40 (diminishing returns)
 
 Final:   Run /wiki:lint --fix to clean up
          → Generate a summary of everything researched
-         → Report total: rounds, sources, articles, time spent
+         → Report total: rounds, sources, articles, progress trajectory, time spent
+         → Delete .research-session.json
 ```
 
 **Round strategy:**
@@ -65,6 +120,8 @@ Final:   Run /wiki:lint --fix to clean up
 - If a round finds no new gaps, switch to `--deep` mode on existing articles to find connections and contradictions
 - If still no gaps after deep mode, research is complete regardless of remaining time — report early completion
 - Each round logs to `log.md` independently
+- **Progress-based termination**: After each round, calculate a progress score (0-100). If score ≥ 80 and no high-priority gaps remain, recommend early completion even if time budget remains — more rounds of diminishing returns waste tokens without improving quality.
+- **Low-yield detection**: If a round's progress score is < 40, the round produced little value. Switch strategy: try --deep angles, broaden search terms, or narrow topic focus. Don't keep doing the same thing.
 
 **Time tracking:**
 - Check wall clock at the start and after each round
@@ -185,6 +242,79 @@ Retardmax differences:
 
 **Deduplication:** After all agents return, deduplicate by URL and by content similarity. If two agents found the same source, keep it once. If two sources cover identical ground, keep the higher quality one. In retardmax mode, be more lenient.
 
+#### Agent Prompt Template
+
+Every research agent receives a structured prompt following this template. Well-structured prompts are the #1 predictor of agent success — "most sub-agent failures aren't execution failures, they're invocation failures."
+
+**Standard template (all modes)**:
+```
+You are a research agent. Your task:
+
+**Objective**: Research "{topic}" from the {Agent Role} angle.
+**Focus**: {Role-specific focus from the table above}
+**Search strategy**: {Strategy from the table above}
+**Current wiki state**: The wiki already covers: {brief summary from Phase 1}. Search for what's NOT covered.
+**Constraints**:
+- Run 2-3 WebSearch queries (vary terms, don't repeat)
+- For each promising result, use WebFetch to extract full content
+- Skip: paywalled, SEO spam, thin, duplicate
+- Target 3-5 high-quality sources
+
+**Return format**: For each source found:
+- Title, URL, quality score (1-5)
+- Key findings (3-5 bullet points)
+- Why it's worth ingesting (1 sentence)
+
+**Quality scoring guide**:
+- 5: Peer-reviewed, landmark paper, primary data
+- 4: Authoritative blog, official docs, well-sourced industry report
+- 3: Decent coverage, some original insight, reasonable sourcing
+- 2: Thin, mostly derivative, limited sourcing
+- 1: SEO spam, no original content, unverifiable claims
+```
+
+**Question mode variant**: Replace "from the {Agent Role} angle" with "answering: {specific sub-question}". Add: "Your deliverable is evidence that answers this specific sub-question."
+
+**Thesis mode variant**: Add thesis filter:
+```
+**Thesis**: "{thesis statement}"
+**Key variables**: {extracted variables}
+**Your lens**: {Agent Focus from thesis table}
+**Evaluation**: For each source, rate:
+- Relevance: direct | indirect | tangential (skip tangential)
+- Evidence strength: meta-analysis > RCT > cohort > case study > expert opinion > anecdotal
+- Direction: supports | opposes | nuances the thesis
+```
+
+#### Phase 2b: Credibility Review
+
+After all agents return and before ingestion, run a credibility assessment. This prevents the "fox guarding the henhouse" problem where agents self-rate their own source quality.
+
+**For each source returned by agents, evaluate**:
+
+| Signal | Scoring |
+|--------|---------|
+| Peer-reviewed? (DOI, journal name, conference) | +2 if yes, 0 if no |
+| Publication recency (last 3 years) | +1 if recent, 0 if older, -1 if >10 years |
+| Author authority (known expert, cited elsewhere) | +1 if established, 0 if unknown |
+| Potential bias (industry-sponsored, activist org) | -1 if detected, 0 if clean |
+| Corroboration (multiple agents found similar claims) | +1 per additional agent, max +2 |
+
+**Credibility tiers**:
+- **High** (4-6 points): Peer-reviewed, recent, authoritative, unbiased → ingest with confidence: high
+- **Medium** (2-3 points): Published but not peer-reviewed, or older, or unknown author → ingest with confidence: medium
+- **Low** (0-1 points): Blog, press release, unverifiable, biased → ingest only if no better source covers this angle; set confidence: low
+- **Reject** (<0 points): Obvious spam, predatory journal, fabricated data → skip entirely
+
+**Process**:
+1. Score all sources from all agents
+2. Deduplicate (same URL = keep once; >80% content overlap = keep higher-credibility one)
+3. Rank by (credibility score × agent quality score)
+4. Select top N for ingestion (--sources count)
+5. Report skipped sources with reasons in Phase 5
+
+In **retardmax mode**: lower the rejection threshold (accept Medium and above without filtering), but still score — the scores carry forward into confidence tags.
+
 #### Phase 3: Ingest
 
 For each high-quality source (up to --sources count, ranked by quality score):
@@ -229,3 +359,11 @@ For each high-quality source (up to --sources count, ranked by quality score):
    - **Remaining gaps**: what's still not covered
    - **Suggested follow-ups**: specific subtopics for next round (or manual `/wiki:research` commands)
    - **Time spent**: this round / total elapsed (if --min-time)
+   - **Progress score**: 0-100, calculated as:
+     - Sources ingested this round × 3 (max 30)
+     - Articles created/updated this round × 5 (max 30)
+     - Cross-references added × 2 (max 20)
+     - Average source credibility score × 4 (max 20)
+     - Score interpretation: 0-40 = minimal, 41-70 = moderate, 71-90 = strong, 91-100 = comprehensive
+   - **Cumulative progress** (if --min-time): total across all rounds, round-over-round delta
+   - **Termination recommendation**: If progress score ≥ 80 AND remaining gaps are low-priority AND cross-reference density is high (>60% of articles linked) → "Research quality ceiling reached. Consider early completion." If progress score < 40 → "Low yield this round. Consider: different search terms, --deep mode, or narrower topic focus."

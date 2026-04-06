@@ -136,3 +136,14 @@ Automatically run a quick structural check when any of these triggers occur:
 - **Auto-fix trivial issues** — missing indexes, unregistered wikis, orphan files. Just fix and note in log.
 - **Warn on structural problems** — content in wrong place, missing directories, stale indexes. Tell the user what's wrong and suggest `/wiki:lint --fix`.
 - **Never block the user's request** — run the check, fix what you can, report issues, then continue with what the user actually asked for.
+
+## Session Management
+
+### Research Session Registry
+
+When a `--min-time` research or thesis session is active, the wiki root contains a `.research-session.json` or `.thesis-session.json` file.
+
+**Structural Guardian behavior**:
+- If a session file exists with `status: "in_progress"` and `start_time` > 7 days ago → warn: "Stale research session found. Clean up with `/wiki:research` or delete manually."
+- Session files are ephemeral — never included in structural health checks or index counts
+- Session files should NOT be committed to git

@@ -37,17 +37,48 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 ## Install
 
 **Claude Code** (native plugin):
-```
-/install-plugin github:nvk/llm-wiki
+```bash
+claude plugin install github:nvk/llm-wiki
 ```
 
 **OpenAI Codex / Any LLM Agent** (idea file):
-```
+```bash
 # Copy AGENTS.md into your agent's context or project root
 cp AGENTS.md ~/your-project/AGENTS.md
 ```
 
 The `AGENTS.md` file contains the complete wiki protocol as a single portable document — works with any LLM agent that can read/write files and search the web.
+
+## Upgrade
+
+**Claude Code** — if `claude plugin update` pulls the latest correctly:
+```bash
+claude plugin update wiki@llm-wiki
+# Restart Claude Code to apply
+```
+
+If the update command doesn't pick up the new version (stale marketplace cache), sync manually from the repo:
+```bash
+# Clone or pull the latest
+git clone https://github.com/nvk/llm-wiki.git  # or: git -C ~/llm-wiki pull
+
+# Sync plugin files to Claude Code's plugin cache
+REPO=~/llm-wiki/claude-plugin
+DEST=~/.claude/plugins/cache/llm-wiki/wiki
+VERSION=$(grep '"version"' "$REPO/.claude-plugin/plugin.json" | grep -o '[0-9.]*')
+rm -rf "$DEST"/*
+mkdir -p "$DEST/$VERSION"
+cp -R "$REPO/.claude-plugin" "$REPO/commands" "$REPO/skills" "$DEST/$VERSION/"
+
+# Restart Claude Code to apply
+```
+
+**AGENTS.md** — just pull the latest and replace:
+```bash
+curl -sL https://raw.githubusercontent.com/nvk/llm-wiki/master/AGENTS.md > ~/your-project/AGENTS.md
+```
+
+Check your installed version: look for the version in `/wiki` status output or check `~/.claude/plugins/installed_plugins.json`.
 
 > **New to a topic? One command, from anywhere:**
 > ```

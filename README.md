@@ -14,6 +14,16 @@
 
 LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, thesis-driven investigation, source ingestion, wiki compilation, querying, and artifact generation. Ships as a Claude Code plugin or a portable AGENTS.md for Codex and others. Obsidian-compatible.
 
+## What's New in v0.0.11
+
+**Source Retraction** — cleanly remove regretted sources and their downstream effects:
+
+- **`/wiki:retract`** — new command that handles the full blast radius: identifies all compiled articles referencing a source, removes metadata references, flags inline claims with retraction markers, deletes the raw source, and updates all indexes.
+- **`--recompile`** flag rewrites affected article sections from remaining sources, removing retraction markers automatically.
+- **`--dry-run`** shows the blast radius without making changes.
+- **New lint rule C4b** (Source Provenance): catches dangling source references and unresolved retraction markers.
+- Every retraction is logged permanently with the reason.
+
 ## What's New in v0.0.10
 
 **Research Quality & Resilience** — 5 improvements backed by empirical research from the agentic AI knowledge base:

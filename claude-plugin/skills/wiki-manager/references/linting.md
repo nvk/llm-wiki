@@ -38,6 +38,12 @@
 - [ ] All "See Also" links are bidirectional (if A→B, then B→A)
 - [ ] All "Sources" links in wiki articles point to existing raw files
 
+### C4b: Source Provenance (Warning)
+
+- [ ] All `sources:` entries in wiki article frontmatter point to existing raw files (no dangling references to deleted/retracted sources)
+- [ ] No `<!--RETRACTED-SOURCE-->` markers remain in article body (these should be resolved via `--recompile` or manual review)
+- [ ] No raw source file is referenced by zero wiki articles (orphan source — suggest compilation or removal)
+
 ### C5: Tag Hygiene (Warning)
 
 - [ ] No near-duplicate tags (e.g., `ml` and `machine-learning`, `nlp` and `natural-language-processing`)
@@ -69,6 +75,8 @@
 | Missing bidirectional link | Add "See Also" entry to the article missing the backlink |
 | Empty frontmatter field | Infer: title from `# heading`, summary from first paragraph |
 | Near-duplicate tags | Replace all instances with the canonical form |
+| Dangling source reference | Remove the entry from `sources:` frontmatter |
+| Unresolved retraction marker | Warn: "Retracted claim not yet reviewed — run `/wiki:retract --recompile` or edit manually" |
 
 ## Report Format
 

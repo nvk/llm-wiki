@@ -1,7 +1,7 @@
 {
   "name": "wiki",
   "description": "LLM-compiled knowledge base. Topic-isolated wikis, parallel multi-agent research (topic + question auto-detect), thesis-driven investigation with verdicts, repo assessment, Obsidian dual-linking, retardmax mode, and --min-time sustained research.",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "author": {
     "name": "nvk"
   },

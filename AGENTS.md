@@ -48,7 +48,8 @@ All content lives here. One topic per wiki. Isolated indexes, focused queries.
 │   ├── _index.md
 │   ├── concepts/*.md              # Bounded ideas
 │   ├── topics/*.md                # Broad themes
-│   └── references/*.md            # Curated collections
+│   ├── references/*.md            # Curated collections
+│   └── theses/*.md                # Thesis investigations with verdicts
 └── output/                        # Generated artifacts
     ├── _index.md
     └── *.md
@@ -149,7 +150,7 @@ Body includes abstract, sections, `## See Also` (dual-links, bidirectional), `##
 ## [YYYY-MM-DD] operation | Description
 ```
 
-Operations: `init`, `ingest`, `compile`, `query`, `lint`, `research`, `output`, `assess`
+Operations: `init`, `ingest`, `compile`, `query`, `lint`, `research`, `thesis`, `output`, `assess`
 
 ## Operations
 
@@ -194,15 +195,37 @@ Always cite sources. Note confidence levels. Identify gaps. Never use training d
 
 ### Research
 
-Automated pipeline: search → ingest → compile. Launch parallel agents.
+Automated pipeline: search → ingest → compile. Launch parallel agents. Auto-detects input type.
 
-**Standard (5 agents)**: Academic, Technical, Applied, News/Trends, Contrarian
+**Input detection**: If the input is a question (starts with what/why/how, contains "?", phrased as a goal), enters Question Mode. Otherwise, Topic Mode.
 
-**Deep (8 agents)**: Adds Historical, Adjacent fields, Data/Stats
+**Topic Mode** — explore a subject area:
+- **Standard (5 agents)**: Academic, Technical, Applied, News/Trends, Contrarian
+- **Deep (8 agents)**: Adds Historical, Adjacent fields, Data/Stats
+- **Retardmax (10 agents)**: Adds 2 Rabbit Hole agents. Skip planning, ingest aggressively.
 
-**Retardmax (10 agents)**: Adds 2 Rabbit Hole agents that chase links from search results. Skip planning phase. Lower quality threshold — ingest aggressively, compile fast. Default 15 sources. Lint later.
+**Question Mode** — answer a specific question with a deliverable:
+1. Decompose into 3-5 sub-questions (what/why/how/who/data)
+2. One agent per sub-question (focused, not generic angles)
+3. Compile into wiki articles + a synthesis "playbook" topic article
+4. Auto-generate a playbook output artifact (the actionable deliverable)
+5. Suggest 2-3 testable theses from findings → feed into `/wiki:thesis`
 
-Each agent: run multiple searches, fetch full content, evaluate quality (1-5), return ranked source list. Deduplicate across agents. Compile all ingested sources. Report gaps and suggest follow-up research.
+**Modifiers**: `--new-topic` (create wiki + research in one shot), `--min-time <duration>` (sustained multi-round research), `--sources <N>` (per round).
+
+Each agent: run multiple searches, fetch full content, evaluate quality (1-5), return ranked source list. Deduplicate across agents. Compile all ingested sources. Report gaps and suggest follow-ups.
+
+### Thesis
+
+Thesis-driven research. Provide a specific claim — agents research evidence for AND against, deliver a verdict.
+
+1. Decompose thesis into: core claim, key variables, testable prediction, falsification criteria, scope boundary
+2. Agents split by purpose: Supporting, Opposing, Mechanistic, Meta/Review, Adjacent (+ Historical, Quantitative, Confounders in deep mode)
+3. The thesis is the bloat filter — sources irrelevant to the claim's variables get skipped
+4. Compile evidence into wiki articles + a thesis file with evidence tables (for/against/nuance)
+5. Verdict: Supported / Partially Supported / Contradicted / Insufficient Evidence / Mixed (with confidence level)
+6. Anti-confirmation-bias: in `--min-time` mode, Round 2 focuses harder on the WEAKER side of Round 1's evidence
+7. Suggest follow-up theses derived from findings
 
 ### Lint
 

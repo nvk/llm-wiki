@@ -1,16 +1,16 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "llm-wiki",
-  "version": "0.0.8",
-  "description": "LLM-compiled knowledge base plugin. Topic-isolated wikis, parallel multi-agent research, thesis-driven investigation, repo assessment, Obsidian dual-linking, retardmax mode, and AGENTS.md for cross-platform support.",
+  "version": "0.0.9",
+  "description": "LLM-compiled knowledge base plugin. Topic-isolated wikis, parallel multi-agent research (auto-detects topic vs question), thesis-driven investigation with verdicts, repo assessment, Obsidian dual-linking, retardmax mode, --min-time sustained research, and AGENTS.md for cross-platform support.",
   "owner": {
     "name": "nvk"
   },
   "plugins": [
     {
       "name": "llm-wiki",
-      "description": "LLM-compiled knowledge base. Commands: /wiki (init/status), /wiki:ingest (URLs, files, text, inbox), /wiki:compile (raw to articles), /wiki:query (quick/standard/deep Q&A), /wiki:research (5-10 parallel agents, --new-topic, --min-time), /wiki:thesis (claim → evidence → verdict), /wiki:assess (repo vs wiki vs market), /wiki:search, /wiki:lint (health checks + auto-fix), /wiki:output (summaries, reports, slides + retardmax).",
-      "version": "0.0.8",
+      "description": "LLM-compiled knowledge base. Commands: /wiki (init/status), /wiki:ingest (URLs, files, text, inbox), /wiki:compile (raw to articles), /wiki:query (quick/standard/deep Q&A), /wiki:research (5-10 parallel agents, --new-topic, --min-time, auto-detects topic vs question with playbook generation), /wiki:thesis (claim → evidence for+against → verdict), /wiki:assess (repo vs wiki vs market), /wiki:search, /wiki:lint (health checks + auto-fix), /wiki:output (summaries, reports, slides + retardmax).",
+      "version": "0.0.9",
       "author": {
         "name": "nvk"
       },

@@ -16,9 +16,39 @@ Read the ingestion protocol at `skills/wiki-manager/references/ingestion.md` and
 1. `--local` flag → `.wiki/`
 2. `--wiki <name>` flag → look up in `~/wiki/wikis.json`
 3. Current directory has `.wiki/` → use it
-4. Otherwise → `~/wiki/`
+4. Otherwise → `~/wiki/` (hub — triggers auto-classification, see below)
 
 If the resolved wiki does not exist, stop: "No wiki found. Run `/wiki init` first."
+
+### Auto-classify to topic wiki (when resolved to hub)
+
+When the wiki resolves to `~/wiki/` (the hub) — meaning no `--wiki`, `--local`, or local `.wiki/` — do NOT write directly to the hub. Instead, classify the content into a topic wiki:
+
+1. Read `~/wiki/wikis.json` to get the list of topic wikis
+2. For each topic wiki, read its `config.md` to understand its scope and description
+3. After fetching/reading the source content (title, URL, summary), compare it against each topic wiki's scope
+4. **If a topic wiki matches:** Suggest it to the user: *"This looks like it belongs in `<wiki-name>` (<description>). Route there? (y/n/other)"*
+   - If the user confirms, use that wiki as the target
+   - If the user says "other", ask which wiki or whether to create a new one
+5. **If no topic wiki matches:** Suggest a new topic wiki: *"No existing wiki matches this content. Create a new one? Suggested name: `<suggested-name>`"*
+   - If the user confirms, run the init flow for that wiki, then continue ingestion into it
+   - If the user provides a different name, use that instead
+6. **If `--inbox` is set (batch mode):** Classify each item individually. Group items by suggested wiki and present the classification as a summary table before processing:
+   ```
+   Inbox classification:
+   | # | Title | Suggested wiki | Confidence |
+   |---|-------|---------------|------------|
+   | 1 | Attention Is All You Need | ai-basics | high |
+   | 2 | Agent Governance Toolkit | ai-security | high |
+   | 3 | Kubernetes RBAC Guide | (new: cloud-infra) | medium |
+   
+   Proceed with this routing? (y/edit/abort)
+   ```
+   - "y" processes all items as classified
+   - "edit" lets the user reassign individual items
+   - "abort" cancels
+
+This step is skipped when `--wiki` or `--local` is explicitly provided.
 
 ### Parse $ARGUMENTS
 

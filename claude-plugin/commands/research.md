@@ -21,7 +21,7 @@ Conduct deep research on the topic in $ARGUMENTS. This is an automated pipeline:
 
 ### Resolve wiki location
 
-First, resolve the hub path: read `~/.config/llm-wiki/config.json` — if it exists and has `hub_path`, use that (expand `~`), otherwise default to `~/wiki/`. Call this **HUB**.
+First, resolve **HUB** by following the protocol in `references/hub-resolution.md` (read config, expand leading `~` only, quote paths with spaces).
 
 **If `--new-topic` is set:**
 1. Derive a slug from the topic: lowercase, hyphens, no special chars, max 40 chars

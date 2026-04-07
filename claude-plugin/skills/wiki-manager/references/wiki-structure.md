@@ -1,6 +1,6 @@
 # Wiki Directory Structure
 
-> **Configurable hub path**: `~/wiki/` is the default hub location. If `~/.config/llm-wiki/config.json` exists with a `hub_path` field, that path is used instead. Throughout this document, `~/wiki/` means "the resolved hub path" (HUB). See SKILL.md "Hub Path" section.
+> **Configurable hub path**: `~/wiki/` is the default hub location. If `~/.config/llm-wiki/config.json` exists with a `hub_path` field, that path is used instead. Throughout this document, `~/wiki/` means "the resolved hub path" (HUB). See [hub-resolution.md](hub-resolution.md) for the full resolution protocol (tilde expansion, space handling, iCloud paths).
 
 ## Hub (~/wiki/)
 

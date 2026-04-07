@@ -16,7 +16,7 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 
 ## Changelog
 
-**v0.0.12** — **Configurable Hub Path.** Store wiki on iCloud, Dropbox, or any custom location via `/wiki config hub-path <path>`. Config at `~/.config/llm-wiki/config.json`. Default `~/wiki/` unchanged.
+**v0.0.12** — **Configurable Hub Path.** Store wiki on iCloud, Dropbox, or any custom location via `/wiki config hub-path <path>`. Config at `~/.config/llm-wiki/config.json`. Default `~/wiki/` unchanged. **v0.0.12-fix**: Centralized hub resolution into `references/hub-resolution.md` — fixes iCloud paths where agents misexpanded tildes in `com~apple~CloudDocs` or broke on spaces in `Mobile Documents`.
 
 **v0.0.11** — **Source Retraction.** `/wiki:retract` removes sources and cleans up all downstream references. `--recompile` rewrites affected articles, `--dry-run` previews blast radius. New lint rule C4b catches dangling refs.
 

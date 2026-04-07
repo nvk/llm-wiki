@@ -32,7 +32,7 @@ Present this decomposition to the user for confirmation before proceeding.
 
 **If `--wiki` is set**: Use the existing topic wiki. Create a `theses/` subdirectory if it doesn't exist. The thesis research lives there alongside the wiki's regular articles.
 
-**If `--wiki` is NOT set**: Create a new topic wiki. First, resolve the hub path: read `~/.config/llm-wiki/config.json` — if it exists and has `hub_path`, use that (expand `~`), otherwise default to `~/wiki/`. Call this **HUB**.
+**If `--wiki` is NOT set**: Create a new topic wiki. First, resolve **HUB** by following the protocol in `references/hub-resolution.md` (read config, expand leading `~` only, quote paths with spaces).
 1. Derive slug from the thesis (e.g., "sunlight reduces CAA independent of vitamin D" → `sunlight-caa-vitamin-d`)
 2. Create `HUB/topics/<slug>/` with full wiki structure
 3. Register in `HUB/wikis.json`, update hub `_index.md`

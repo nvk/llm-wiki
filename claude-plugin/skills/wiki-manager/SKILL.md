@@ -6,7 +6,8 @@ description: >
   in a project with a wiki, wants to ingest/compile/query/lint knowledge,
   or uses /wiki commands. Also activates when user says "wiki", "knowledge base",
   "ingest", "compile wiki", "add to wiki", "search wiki", or asks a factual
-  question in a directory containing .wiki/ or when ~/wiki/ exists.
+  question in a directory containing .wiki/ or when the configured hub path exists
+  (check ~/.config/llm-wiki/config.json for hub_path, default ~/wiki/).
 tools:
   - Read
   - Write
@@ -30,11 +31,7 @@ The hub defaults to `~/wiki/`. To use a different location (e.g., iCloud Drive),
 { "hub_path": "~/Library/Mobile Documents/com~apple~CloudDocs/wiki" }
 ```
 
-**Resolution**: At the start of every operation, resolve the hub path:
-1. Read `~/.config/llm-wiki/config.json` — if it exists and has `hub_path`, use that (expand `~`)
-2. Otherwise, use `~/wiki/`
-
-Store the resolved path as **HUB** for the rest of the operation. All references to `~/wiki/` below mean HUB.
+**Resolution**: At the start of every operation, resolve **HUB** by following the protocol in [references/hub-resolution.md](references/hub-resolution.md). This handles tilde expansion, paths with spaces, and iCloud directory names correctly. All references to `~/wiki/` below mean HUB.
 
 ## Wiki Location
 

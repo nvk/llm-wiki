@@ -14,39 +14,13 @@
 
 LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, thesis-driven investigation, source ingestion, wiki compilation, querying, and artifact generation. Ships as a Claude Code plugin or a portable AGENTS.md for Codex and others. Obsidian-compatible.
 
-## What's New in v0.0.12
+## Changelog
 
-**Configurable Hub Path** — store your wiki on iCloud Drive, Dropbox, or any custom location:
+**v0.0.12** — **Configurable Hub Path.** Store wiki on iCloud, Dropbox, or any custom location via `/wiki config hub-path <path>`. Config at `~/.config/llm-wiki/config.json`. Default `~/wiki/` unchanged.
 
-- **`/wiki config hub-path <path>`** — set a custom hub location (creates `~/.config/llm-wiki/config.json`)
-- Default remains `~/wiki/` — zero breaking changes if you don't configure anything
-- Offers to move existing wiki data when changing the path
-- All commands automatically resolve the hub path from config
+**v0.0.11** — **Source Retraction.** `/wiki:retract` removes sources and cleans up all downstream references. `--recompile` rewrites affected articles, `--dry-run` previews blast radius. New lint rule C4b catches dangling refs.
 
-Example — move your wiki to iCloud:
-```bash
-/wiki config hub-path ~/Library/Mobile\ Documents/com~apple~CloudDocs/wiki
-```
-
-## What's New in v0.0.11
-
-**Source Retraction** — cleanly remove regretted sources and their downstream effects:
-
-- **`/wiki:retract`** — new command that handles the full blast radius: identifies all compiled articles referencing a source, removes metadata references, flags inline claims with retraction markers, deletes the raw source, and updates all indexes.
-- **`--recompile`** flag rewrites affected article sections from remaining sources, removing retraction markers automatically.
-- **`--dry-run`** shows the blast radius without making changes.
-- **New lint rule C4b** (Source Provenance): catches dangling source references and unresolved retraction markers.
-- Every retraction is logged permanently with the reason.
-
-## What's New in v0.0.10
-
-**Research Quality & Resilience** — 5 improvements backed by empirical research from the agentic AI knowledge base:
-
-1. **Session Registry** — Multi-round research (`--min-time`) now persists state to `.research-session.json`. If interrupted, resume from the last completed round instead of starting over.
-2. **Subagent Prompt Template** — Standardized prompt structure (Objective/Context/Constraints/Deliverables) for all research agents. "Most sub-agent failures aren't execution failures — they're invocation failures."
-3. **Credibility Critic** — New Phase 2b: independent credibility assessment of sources before ingestion. Scores peer-review status, recency, author authority, and bias. Prevents the "fox guarding the henhouse" problem.
-4. **Progress Scoring** — Each round now produces a 0-100 progress score. Enables principled termination (>=80 = quality ceiling) and low-yield detection (<40 = change strategy).
-5. **Plan Reflection** — Explicit reflection step between rounds that re-evaluates the overall research direction, not just picks gaps. Scores gaps by impact x feasibility x specificity. Catches 34% more cross-topic connections.
+**v0.0.10** — **Research Quality.** Session registry for crash recovery, standardized agent prompts, credibility scoring (Phase 2b), progress scoring (0-100) with smart termination, and inter-round plan reflection.
 
 ## Install
 

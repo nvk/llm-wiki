@@ -14,6 +14,8 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 
 ## Changelog
 
+**v0.0.15** — **X.com Fallback Chain.** Explicit fallback for X.com/Twitter links: Grok MCP → FxTwitter API → VxTwitter API → direct fetch. Agents no longer waste time debugging login walls. Install [ask-grok-mcp](https://github.com/nvk/ask-grok-mcp) for best results.
+
 **v0.0.14** — **Hub Init Guard.** Agents no longer initialize a hub at `~/wiki/` when config points to iCloud/custom path. Fixes bug where an empty `~/wiki/` directory caused research to write to the wrong location.
 
 **v0.0.13** — **Hub Resolution: ~/wiki First.** Resolution now checks `~/wiki/` before reading config. If `~/wiki/_index.md` exists, it's used directly — no config read, no iCloud path issues. Config-based custom paths (iCloud, Dropbox) are the fallback, not the default.

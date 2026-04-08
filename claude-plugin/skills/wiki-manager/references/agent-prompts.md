@@ -56,6 +56,16 @@ For each source, evaluate:
 Return ranked by (relevance × evidence strength), strongest first.
 ```
 
+## X.com / Twitter URLs
+
+When a research agent encounters an X.com or Twitter link:
+1. **Grok MCP**: If `mcp__grok__*` tools are available, use them.
+2. **FxTwitter**: Rewrite `x.com/user/status/ID` → `https://api.fxtwitter.com/user/status/ID` and WebFetch (returns JSON).
+3. **VxTwitter**: Same pattern with `api.vxtwitter.com`.
+4. **Skip**: If all fail, note the URL in findings but don't block on it.
+
+Do NOT waste time trying other approaches or debugging X.com login walls.
+
 ## Retardmax Variants
 - All templates: increase to 4-5 searches
 - Lower quality threshold: accept 2+ (not 3+)

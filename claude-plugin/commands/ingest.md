@@ -43,9 +43,12 @@ Follow the inbox processing protocol from `references/ingestion.md`:
 
 ### If URL source
 
-1. Detect tweet URLs (`x.com/*/status/*` or `twitter.com/*/status/*`):
-   - Try Grok MCP tool to fetch tweet content
-   - Fallback to WebFetch if Grok unavailable
+1. Detect X.com/Twitter URLs (`x.com/*/status/*` or `twitter.com/*/status/*`):
+   - **Grok MCP** (preferred): Check for `mcp__grok__*` tools. If available, use to fetch tweet. See [ask-grok-mcp](https://github.com/nvk/ask-grok-mcp).
+   - **FxTwitter**: Rewrite URL → `https://api.fxtwitter.com/user/status/ID`, WebFetch for JSON.
+   - **VxTwitter**: Rewrite URL → `https://api.vxtwitter.com/user/status/ID`, WebFetch for JSON.
+   - **Direct WebFetch**: Last resort, often blocked by login wall.
+   - Full fallback chain details in `references/ingestion.md`.
    - Type: notes (unless overridden)
 
 2. Detect GitHub URLs (`github.com/*`):

@@ -16,7 +16,25 @@ Ingestion converts external material into a standardized raw source file in the 
 
 ## URL Ingestion
 
-1. **Detect tweet URLs**: If the URL matches `x.com/*/status/*` or `twitter.com/*/status/*`, use the Grok MCP tool (`mcp__grok__get_tweet` or similar) to fetch the tweet content. Extract: author, text, date, any media descriptions.
+1. **Detect X.com / Twitter URLs**: If the URL matches `x.com/*/status/*` or `twitter.com/*/status/*`, follow this fallback chain in order:
+
+   **a) Grok MCP (preferred)**: Check if the `grok` MCP server is available by looking for tools matching `mcp__grok__*` (e.g., `mcp__grok__search`). If available, use it to fetch the tweet/thread content. Extract: author handle, display name, full text, date, media descriptions, thread context.
+   > Install: [github.com/nvk/ask-grok-mcp](https://github.com/nvk/ask-grok-mcp)
+
+   **b) FxTwitter proxy**: If Grok MCP is not available, rewrite the URL:
+   - `x.com/user/status/123` → `https://api.fxtwitter.com/user/status/123`
+   - WebFetch this API URL — it returns JSON with full tweet text, author, media, and thread data.
+   - Parse the JSON response for `tweet.text`, `tweet.author`, `tweet.created_at`.
+
+   **c) VxTwitter proxy**: If FxTwitter fails, try:
+   - `x.com/user/status/123` → `https://api.vxtwitter.com/user/status/123`
+   - Same JSON extraction as FxTwitter.
+
+   **d) Direct WebFetch**: Last resort — WebFetch the original `x.com` URL. This often returns limited content (login walls), but sometimes works for public tweets.
+
+   **e) Manual fallback**: If all above fail, report: "Could not fetch tweet content. Options: install [ask-grok-mcp](https://github.com/nvk/ask-grok-mcp) for X.com access, or paste the tweet text manually via `/wiki:ingest \"text\" --title \"@author tweet\"`."
+
+   Type: notes (unless overridden).
 
 2. **General URLs**: Use WebFetch to retrieve content. Prompt:
 

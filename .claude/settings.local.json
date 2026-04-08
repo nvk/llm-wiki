@@ -58,7 +58,18 @@
       "Bash(gh release:*)",
       "Bash(python3 -c \":*)",
       "Bash(mv /tmp/settings_fixed.json ~/.claude/settings.json echo 'Fixed settings.json')",
-      "Bash(sed -i '' 's/\"\"name\"\": \"\"llm-wiki\"\"/\"\"name\"\": \"\"wiki\"\"/' ~/.claude/plugins/cache/llm-wiki/wiki/0.0.9/.claude-plugin/plugin.json)"
+      "Bash(sed -i '' 's/\"\"name\"\": \"\"llm-wiki\"\"/\"\"name\"\": \"\"wiki\"\"/' ~/.claude/plugins/cache/llm-wiki/wiki/0.0.9/.claude-plugin/plugin.json)",
+      "Bash(gh api:*)",
+      "Bash(curl -s \"https://api.github.com/repos/bitcoin/bips/pulls?state=all&per_page=30&sort=updated&direction=desc\")",
+      "Bash(curl -s \"https://api.github.com/repos/bitcoin/bips/pulls/1548\")",
+      "Bash(curl -s \"https://api.github.com/repos/bitcoin/bips/pulls/1548/comments?per_page=30\")",
+      "Bash(curl -s \"https://api.github.com/repos/bitcoin/bips/issues/1548/comments?per_page=20\")",
+      "Bash(curl -s \"https://api.github.com/repos/bitcoin/bips/pulls/1383\")",
+      "Bash(curl -s \"https://api.github.com/repos/bitcoin/bips/pulls/2099\")",
+      "Bash(curl -s \"https://api.github.com/repos/bitcoin/bips/issues/2099/comments?per_page=20\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/bitcoin/bips/master/README.mediawiki\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/bitcoin/bips/master/bip-0003.md\")",
+      "Skill(wiki:research)"
     ]
   }
 }

@@ -1,7 +1,7 @@
 ---
 description: "Ingest source material into the wiki. Accepts URLs, file paths, freeform text, or processes the inbox. Supports tweets via Grok MCP."
-argument-hint: "<url|filepath|\"text\"> [--type articles|papers|repos|notes|data] [--title \"Title\"] [--inbox] [--keep] [--wiki <name>] [--local] [--auto-classify]"
-allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:*), Bash(mv:*), Bash(basename:*), Bash(file:*), WebFetch, WebSearch
+argument-hint: "<url|filepath|\"text\"> [--type articles|papers|repos|notes|data] [--title \"Title\"] [--inbox] [--keep] [--wiki <name>] [--local] [--auto-classify] [--new-topic <name>]"
+allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:*), Bash(mv:*), Bash(mkdir:*), Bash(basename:*), Bash(file:*), WebFetch, WebSearch
 ---
 
 ## Your task
@@ -13,15 +13,24 @@ Read the ingestion protocol at `skills/wiki-manager/references/ingestion.md` and
 
 ### Resolve wiki location
 
+**If `--new-topic` is set:**
+1. Derive a slug from the topic name: lowercase, hyphens, no special chars, max 40 chars
+2. If HUB doesn't exist, create it (wikis.json + _index.md + log.md + topics/)
+3. Create the new topic wiki at `HUB/topics/<slug>/` following the full init protocol (directory structure, .obsidian/, empty _index.md files, config.md, log.md)
+4. Register in `HUB/wikis.json` and update hub `_index.md`
+5. Target this new wiki for ingestion
+
+**If `--new-topic` is NOT set:**
 1. `--local` flag → `.wiki/`
 2. `--wiki <name>` flag → look up in `HUB/wikis.json`
 3. Current directory has `.wiki/` → use it
 4. Otherwise → HUB
 
-If the resolved wiki does not exist, stop: "No wiki found. Run `/wiki init` first."
+If the resolved wiki does not exist, stop: "No wiki found. Use `--new-topic <name>` to create one, or run `/wiki init` first."
 
 ### Parse $ARGUMENTS
 
+- **--new-topic <name>**: Create a new topic wiki and ingest the source into it. Works from any directory. Derives the wiki slug from the name (e.g., "knives" → `knives`, "machine learning" → `machine-learning`).
 - **--inbox**: Process all files in the wiki's `inbox/` directory
 - **--keep**: When processing inbox, keep originals (move to .processed/ instead of deleting)
 - **--type**: Force source type (articles, papers, repos, notes, data). Default: auto-detect.

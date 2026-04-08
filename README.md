@@ -14,6 +14,8 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 
 ## Changelog
 
+**v0.0.16** — **Full Path Reporting.** Agents now report full absolute paths (not relative) and never indent-wrap them, so file links are always clickable in terminals.
+
 **v0.0.15** — **X.com Fallback Chain.** Explicit fallback for X.com/Twitter links: Grok MCP → FxTwitter API → VxTwitter API → direct fetch. Agents no longer waste time debugging login walls. Install [ask-grok-mcp](https://github.com/nvk/ask-grok-mcp) for best results.
 
 **v0.0.14** — **Hub Init Guard.** Agents no longer initialize a hub at `~/wiki/` when config points to iCloud/custom path. Fixes bug where an empty `~/wiki/` directory caused research to write to the wrong location.

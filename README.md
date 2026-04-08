@@ -16,6 +16,8 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 
 ## Changelog
 
+**v0.0.14** — **Hub Init Guard.** Agents no longer initialize a hub at `~/wiki/` when config points to iCloud/custom path. Fixes bug where an empty `~/wiki/` directory caused research to write to the wrong location.
+
 **v0.0.13** — **Hub Resolution: ~/wiki First.** Resolution now checks `~/wiki/` before reading config. If `~/wiki/_index.md` exists, it's used directly — no config read, no iCloud path issues. Config-based custom paths (iCloud, Dropbox) are the fallback, not the default.
 
 **v0.0.12** — **Configurable Hub Path.** Store wiki on iCloud, Dropbox, or any custom location via `/wiki config hub-path <path>`. Config at `~/.config/llm-wiki/config.json`. Default `~/wiki/` unchanged. **v0.0.12-fix**: Centralized hub resolution into `references/hub-resolution.md` — fixes iCloud paths where agents misexpanded tildes in `com~apple~CloudDocs` or broke on spaces in `Mobile Documents`.

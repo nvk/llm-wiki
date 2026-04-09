@@ -1,6 +1,6 @@
 ---
-description: "LLM wiki knowledge base — initialize, show status, configure hub path, or list wikis. Subcommands: ingest, compile, query, lint, search, output, research."
-argument-hint: "[init <topic-name> [--local]] [config hub-path [<path>]] [--wiki <name>]"
+description: "LLM wiki knowledge base — understands natural language. Say what you want (add a URL, ask a question, research a topic, resume work) and it routes to the right subcommand. Also handles init, status, and config."
+argument-hint: "[<natural language request>] [init <topic-name> [--local]] [config hub-path [<path>]] [--wiki <name>]"
 allowed-tools: Read, Write, Edit, Glob, Bash(ls:*), Bash(wc:*), Bash(mkdir:*), Bash(date:*), Bash(mv:*)
 ---
 
@@ -97,7 +97,54 @@ Initialize a new wiki. Parse arguments:
 
 ---
 
-### If no "init" argument and a wiki exists
+### If $ARGUMENTS is freeform text (not "init", "config", or empty) and a wiki exists
+
+The user typed something that isn't a known keyword. Detect their intent and route to the right subcommand.
+
+**Check these patterns in order — first match wins:**
+
+| Priority | Intent | Signal patterns | Route to |
+|----------|--------|----------------|----------|
+| 1 | **Ingest** | Contains a URL (`http://`, `https://`), a file path (`/`, `~/`), or words: "add", "save", "ingest", "read this", "grab this" | `Skill: wiki:ingest` with the URL/path/text |
+| 2 | **Resume** | "where was I", "pick up where", "continue", "resume", "get back to", "catch me up", "what was I working on" | `Skill: wiki:query` with `--resume` |
+| 3 | **Query** | Starts with what/why/how/when/where/who, contains "?", or words: "tell me about", "explain", "what do we know about" | `Skill: wiki:query` with the question |
+| 4 | **Research** | "research", "find out about", "look into", "deep dive", "investigate" | `Skill: wiki:research` with the topic |
+| 5 | **Thesis** | "prove that", "is it true that", "verify", "test the claim", "test the hypothesis" | `Skill: wiki:thesis` with the claim |
+| 6 | **Compile** | "compile", "process sources", "synthesize", "update articles" | `Skill: wiki:compile` |
+| 7 | **Lint** | "check health", "fix wiki", "broken", "problems", "cleanup" | `Skill: wiki:lint` |
+| 8 | **Output** | "write a summary", "generate a report", "slides", "create a", "write a" | `Skill: wiki:output` with the request |
+| 9 | **Assess** | "compare to", "assess", "gap analysis" | `Skill: wiki:assess` |
+| 10 | **Plan** | "plan for", "implementation plan", "architecture for" | `Skill: wiki:plan` |
+| 11 | **Retract** | "remove source", "retract", "delete source", "pull out" | `Skill: wiki:retract` |
+
+**Confidence routing:**
+
+- **High confidence** — a single strong signal (URL present, question mark, exact keyword match like "compile" or "resume"). Route directly. Tell the user what you detected:
+  > Detected: **ingest** (found URL). Routing to `/wiki:ingest`.
+  
+  Then invoke the Skill tool with the appropriate command and pass the user's text as arguments.
+
+- **Low confidence** — ambiguous input that could match multiple intents, or no clear signal. Present the top 2-3 matching options as a numbered list:
+  > Not sure what you're after. Pick one:
+  > 
+  > 1. **Query** — ask the wiki what it knows
+  > 2. **Research** — search the web and add new sources
+  > 3. **Ingest** — add specific material you already have
+  > 
+  > (1/2/3)
+  
+  Wait for their choice, then invoke the corresponding Skill.
+
+- **No match** — the text doesn't match any pattern. Show wiki status (fall through to status section below) and list available subcommands.
+
+**Key rules:**
+- Never guess when ambiguous. A quick menu is faster than undoing the wrong action.
+- Strip the signal words when passing args to the target command (e.g., "add https://example.com" → pass just the URL to ingest, not "add https://example.com").
+- Include `--wiki` or `--local` flags from the original args when routing.
+
+---
+
+### If $ARGUMENTS is empty (or just "status"/"stats"/"show") and a wiki exists
 
 Show wiki status:
 

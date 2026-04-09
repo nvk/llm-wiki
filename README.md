@@ -14,6 +14,10 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 
 ## Changelog
 
+**v0.0.19** — **Fuzzy Intent Router.** `/wiki` now understands natural language — type what you want and it routes to the right subcommand. URLs route to ingest, questions route to query, "research X" routes to research, "where was I" routes to resume. Ambiguous input gets a numbered menu instead of guessing.
+
+**v0.0.18** — **Query Resume Mode.** New `--resume` flag on `/wiki:query` reloads context after a session break. Reads interrupted research/thesis sessions, recent log entries, wiki stats, and last-updated articles to produce a "where you left off" briefing. Supports combo mode: `--resume` alone or `--resume` + a question.
+
 **v0.0.17** — **Plan Command + Cross-Wiki Context.** New `/wiki:plan` generates wiki-grounded implementation plans (6-stage pipeline: context assembly → interview → gap research → synthesis → plan → save). Supports `--format rfc|adr|spec`. New `--with <wiki>` flag on `query`, `output`, and `plan` enables cross-wiki synthesis — use one wiki's craft knowledge when generating from another (e.g., `--with article-writing`). Merged `/wiki:search` into `/wiki:query --list`. `/wiki:ingest` now supports `--new-topic`.
 
 **v0.0.16** — **Full Path Reporting.** Agents now report full absolute paths (not relative) and never indent-wrap them, so file links are always clickable in terminals.
@@ -94,6 +98,9 @@ Check your installed version: look for the version in `/wiki` status output or c
 /wiki:thesis "cold exposure upregulates BDNF" --min-time 1h  # Deep thesis investigation
 /wiki:query "How does fiber affect mood?"         # Ask the wiki
 /wiki:query "compare keto and mediterranean" --deep  # Deep cross-referenced answer
+/wiki:query --resume                              # Where did I leave off?
+/wiki add https://example.com/article             # Fuzzy router detects URL → ingest
+/wiki what do we know about CRISPR?               # Fuzzy router detects question → query
 /wiki:ingest https://example.com/article          # Manually ingest a source
 /wiki:ingest --inbox                              # Process files dropped in inbox/
 /wiki:compile                                     # Compile any unprocessed sources
@@ -107,6 +114,7 @@ Check your installed version: look for the version in `/wiki` status output or c
 
 | Command | Description |
 |---------|-------------|
+| `/wiki <natural language>` | Fuzzy intent router — say what you want and it routes to the right subcommand |
 | `/wiki` | Show wiki status, stats, and list all topic wikis |
 | `/wiki init <name>` | Create a topic wiki at `~/wiki/topics/<name>/` |
 | `/wiki init <name> --local` | Create a project-local wiki at `.wiki/` |
@@ -118,6 +126,7 @@ Check your installed version: look for the version in `/wiki` status output or c
 | `/wiki:query <question> --quick` | Fast answer from indexes only |
 | `/wiki:query <question> --deep` | Thorough — reads everything, checks raw + sibling wikis |
 | `/wiki:query <terms> --list` | Find content by keyword, tag, or category (replaces old `/wiki:search`) |
+| `/wiki:query --resume` | Reload context after a session break — recent activity, stats, last-updated articles |
 | `/wiki:plan <goal>` | Generate wiki-grounded implementation plan (interview → gap research → phased plan) |
 | `/wiki:plan <goal> --quick` | Plan from wiki content only — skip interview and gap research |
 | `/wiki:plan <goal> --format rfc\|adr\|spec` | Output as RFC, ADR, or tech spec instead of roadmap |

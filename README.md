@@ -14,7 +14,7 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 
 ## Changelog
 
-**v0.0.17** — **Plan Command + Search Consolidation.** New `/wiki:plan` generates wiki-grounded implementation plans (6-stage pipeline: context assembly → interview → gap research → synthesis → plan → save). Supports `--format rfc|adr|spec`. Merged `/wiki:search` into `/wiki:query --list` — one less command, same functionality. `/wiki:ingest` now supports `--new-topic`.
+**v0.0.17** — **Plan Command + Cross-Wiki Context.** New `/wiki:plan` generates wiki-grounded implementation plans (6-stage pipeline: context assembly → interview → gap research → synthesis → plan → save). Supports `--format rfc|adr|spec`. New `--with <wiki>` flag on `query`, `output`, and `plan` enables cross-wiki synthesis — use one wiki's craft knowledge when generating from another (e.g., `--with article-writing`). Merged `/wiki:search` into `/wiki:query --list`. `/wiki:ingest` now supports `--new-topic`.
 
 **v0.0.16** — **Full Path Reporting.** Agents now report full absolute paths (not relative) and never indent-wrap them, so file links are always clickable in terminals.
 
@@ -136,7 +136,7 @@ Check your installed version: look for the version in `/wiki` status output or c
 | `/wiki:assess <path>` | Assess a repo against wiki research + market. Gap analysis. |
 | `/wiki:assess <path> --retardmax` | Wide net — adds adjacent fields and failure analysis |
 
-All commands accept `--wiki <name>` to target a specific topic wiki and `--local` to target the project wiki.
+All commands accept `--wiki <name>` to target a specific topic wiki and `--local` to target the project wiki. Commands that generate content (`query`, `output`, `plan`) also accept `--with <wiki>` to load supplementary wikis as cross-wiki context — e.g., `--with article-writing` applies writing craft knowledge when generating output from a domain wiki.
 
 ## How It Works
 

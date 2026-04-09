@@ -1,6 +1,6 @@
 ---
 description: "Ask questions against the compiled wiki. Supports three depth levels: quick (indexes only), standard (full articles), deep (everything + raw + sibling wikis). Answers from wiki content only, with citations."
-argument-hint: "<question> [--quick] [--deep] [--raw] [--list] [--tag <tag>] [--category concepts|topics|references] [--wiki <name>] [--local]"
+argument-hint: "<question> [--quick] [--deep] [--raw] [--list] [--tag <tag>] [--category concepts|topics|references] [--with <wiki>...] [--wiki <name>] [--local]"
 allowed-tools: Read, Glob, Grep, Bash(ls:*), Edit
 ---
 
@@ -28,6 +28,7 @@ If wiki does not exist or has no compiled articles, stop: "No wiki found (or no 
 - **--list**: Return a ranked list of matching articles instead of a synthesized answer. Useful for browsing what the wiki has on a topic before diving in.
 - **--tag <tag>**: Filter to articles with this tag in frontmatter
 - **--category <cat>**: Search only in concepts, topics, or references
+- **--with <wiki>**: Load a supplementary wiki as additional context when answering. The primary wiki provides the subject; `--with` wikis provide craft/skill knowledge. Multiple `--with` flags allowed.
 - No depth flag = **standard** (default)
 
 ### Query Depth Levels

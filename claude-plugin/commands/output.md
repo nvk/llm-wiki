@@ -1,6 +1,6 @@
 ---
 description: "Generate output artifacts from wiki content — summaries, reports, study guides, slide outlines, timelines, glossaries, comparisons. Outputs are filed back into the wiki."
-argument-hint: "<type> [--topic <topic>] [--sources <paths>] [--wiki <name>] [--local]"
+argument-hint: "<type> [--topic <topic>] [--sources <paths>] [--with <wiki>...] [--wiki <name>] [--local]"
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(date:*), Bash(python3:*)
 ---
 
@@ -24,6 +24,7 @@ If wiki does not exist or has no articles, stop: "No wiki found (or no articles)
 - **type** (required): One of: `summary`, `report`, `study-guide`, `slides`, `timeline`, `glossary`, `comparison`
 - **--topic <topic>**: Focus on a specific topic or concept (matches against tags and titles)
 - **--sources <paths>**: Comma-separated list of specific wiki article paths to use
+- **--with <wiki>**: Load a supplementary wiki as additional context. The primary wiki (`--wiki`) provides the **subject** (what to write about); `--with` wikis provide **craft/skill** knowledge (how to write it). Multiple `--with` flags allowed. Example: `--wiki quantum-computing --with article-writing` uses quantum-computing for domain content and article-writing for structure, hooks, and writing techniques.
 - **--retardmax**: Ship it NOW. Don't agonize over structure or completeness. Generate a rough-but-useful output fast, covering everything the wiki has. Better to have something imperfect now than something perfect never.
 
 ### Output Types
@@ -61,7 +62,15 @@ When `--retardmax` is set:
    - If `--topic` provided: search wiki indexes for matching articles by tag/title, read them
    - If neither: read `wiki/_index.md` for an overview, read articles from each category
 
-2. **Generate**: Create the artifact in the format specified for the output type. Draw only from wiki content.
+2. **Load supplementary wikis** (if `--with` specified):
+   - For each `--with <name>`, look up in `HUB/wikis.json`
+   - Read the supplementary wiki's `_index.md` and relevant articles
+   - These provide **craft/skill context** — techniques, frameworks, writing patterns, best practices
+   - The primary wiki provides the **subject matter** — facts, research, domain knowledge
+   - When generating, apply the supplementary wiki's techniques to the primary wiki's content
+   - Example: `--with article-writing` means use that wiki's knowledge about hooks, structure, E-E-A-T, viral patterns, debunking techniques, etc. when crafting the output
+
+3. **Generate**: Create the artifact in the format specified for the output type. Draw domain content from the primary wiki and craft/technique guidance from `--with` wikis.
 
 3. **Save**: Write to `output/{type}-{topic-slug}-{YYYY-MM-DD}.md` with frontmatter:
    ```

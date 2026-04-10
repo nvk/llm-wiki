@@ -1,6 +1,6 @@
 ---
 description: "Ingest source material into the wiki. Accepts URLs, file paths, freeform text, or processes the inbox. Supports tweets via Grok MCP."
-argument-hint: "<url|filepath|\"text\"> [--type articles|papers|repos|notes|data] [--title \"Title\"] [--inbox] [--keep] [--wiki <name>] [--local] [--auto-classify] [--new-topic <name>]"
+argument-hint: "<url|filepath|\"text\"> [--type articles|papers|repos|notes|data] [--title \"Title\"] [--inbox] [--keep] [--wiki <name>] [--local] [--auto-classify] [--new-topic <name>] [--project <slug>]"
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:*), Bash(mv:*), Bash(mkdir:*), Bash(basename:*), Bash(file:*), WebFetch, WebSearch
 ---
 
@@ -27,6 +27,14 @@ Read the ingestion protocol at `skills/wiki-manager/references/ingestion.md` and
 4. Otherwise → HUB
 
 If the resolved wiki does not exist, stop: "No wiki found. Use `--new-topic <name>` to create one, or run `/wiki init` first."
+
+### Focus-aware behavior + --project flag
+
+**--project <slug>**: Tag the ingested source with `project: <slug>` frontmatter. The raw file still lands in the normal `raw/<type>/` location (sources are shared across projects by design). The project tagging propagates later when sources are compiled into wiki articles. See `references/projects.md`.
+
+**Focus check**: Before ingesting, check `<wiki-root>/.wiki-session.json` for a `focused_project` field. If present and no explicit `--project` is passed, treat the focused project as implicit. Explicit `--project` always wins over focus.
+
+If `--project <slug>` is set (or inherited from focus), verify the project exists at `<wiki-root>/output/projects/<slug>/_project.md`. If not, fail early: `Project "<slug>" does not exist. Create it first with /wiki:project new <slug> "goal".`
 
 ### Parse $ARGUMENTS
 

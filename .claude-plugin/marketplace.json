@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "llm-wiki",
-  "version": "0.0.20",
+  "version": "0.1.0",
   "description": "LLM-compiled knowledge base plugin. Natural language routing, session resume, concurrent-safe indexes, topic-isolated wikis, parallel multi-agent research, thesis-driven investigation, repo assessment, Obsidian dual-linking, retardmax mode, and --min-time sustained research.",
   "owner": {
     "name": "nvk"
@@ -10,7 +10,7 @@
     {
       "name": "wiki",
       "description": "LLM-compiled knowledge base. Commands: /wiki (natural language router + init/status), /wiki:ingest, /wiki:compile, /wiki:query (quick/standard/deep/--resume), /wiki:research (5-10 parallel agents, --new-topic, --min-time), /wiki:thesis, /wiki:assess, /wiki:plan, /wiki:lint, /wiki:output, /wiki:retract.",
-      "version": "0.0.20",
+      "version": "0.1.0",
       "author": {
         "name": "nvk"
       },

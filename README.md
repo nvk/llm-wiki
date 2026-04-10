@@ -14,6 +14,8 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 
 ## Changelog
 
+**v0.1.0** — **Projects.** Group related outputs (playbooks, images, code, data) into project folders under `output/projects/<slug>/`. Each project has a `_project.md` manifest with goal, status, and auto-derived member list. Focus into a project with `/wiki focus <slug>` and subsequent commands inherit it — same as `cd`-ing into a directory. Multi-project membership via `also_in:` frontmatter. Lifecycle (active/archived/retracted) is metadata, never file moves. New `/wiki:project` command with `new`, `list`, `show`, `add`, `focus`, `unfocus`, `archive`, `retract`, `rename` subcommands. `/wiki:research` and `/wiki:ingest` now accept `--project <slug>` and respect focus. The fuzzy router recognizes project intents ("start a new project", "work on X", "what projects do I have"). Backward compatible — loose outputs still work.
+
 **v0.0.20** — **Bug fixes.** `/wiki` bare command now resolves correctly — the fuzzy router from v0.0.19 is reachable without typing `/wiki:wiki`.
 
 **v0.0.19** — **Fuzzy Intent Router.** `/wiki` now understands natural language — type what you want and it routes to the right subcommand. URLs route to ingest, questions route to query, "research X" routes to research, "where was I" routes to resume. Ambiguous input gets a numbered menu instead of guessing.

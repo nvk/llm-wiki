@@ -1,6 +1,6 @@
 ---
 description: "Deep multi-agent research on a topic. Launches parallel agents to search the web across multiple angles, ingests sources, and compiles them into wiki articles. Can create a new topic wiki automatically."
-argument-hint: "<topic> [--new-topic] [--sources <N>] [--deep] [--retardmax] [--min-time <duration>] [--wiki <name>] [--local]"
+argument-hint: "<topic> [--new-topic] [--sources <N>] [--deep] [--retardmax] [--min-time <duration>] [--wiki <name>] [--local] [--project <slug>]"
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:*), Bash(mkdir:*), WebFetch, WebSearch, Agent
 ---
 
@@ -18,6 +18,11 @@ Conduct deep research on the topic in $ARGUMENTS. This is an automated pipeline:
 - **--min-time <duration>**: Minimum research time. Keep running research rounds until this duration is reached. Formats: `30m`, `1h`, `2h`, `4h`. Default: single round (no minimum).
 - **--wiki <name>**: Target a specific existing topic wiki
 - **--local**: Use project-local `.wiki/`
+- **--project <slug>**: Tag all new outputs with this project. The research playbook/summary artifact is saved inside `output/projects/<slug>/` instead of flat `output/`. Compiled wiki articles get `project: <slug>` frontmatter. If the project doesn't exist, fail early with a helpful error. See `references/projects.md` for the projects architecture.
+
+### Focus-aware behavior
+
+Before starting, check `<wiki-root>/.wiki-session.json` for a `focused_project` field. If present and no explicit `--project` flag is set, treat the focused project as an implicit `--project <slug>`. Explicit flags always win over focus.
 
 ### Resolve wiki location
 

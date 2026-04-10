@@ -62,8 +62,17 @@ All content lives here. Each topic wiki has the full structure:
 │       └── *.md
 └── output/                        # Generated artifacts
     ├── _index.md
-    └── *.md
+    ├── projects/                  # Project folders (see projects.md)
+    │   └── <slug>/
+    │       ├── _project.md        # Manifest: goal, status, derived members
+    │       ├── *.md               # Markdown deliverables
+    │       ├── *.png, *.svg       # Colocated images/diagrams
+    │       ├── code/              # Optional — prototype scripts
+    │       └── data/              # Optional — CSVs, JSON exports
+    └── *.md                       # Loose outputs (backward compatible)
 ```
+
+See [projects.md](projects.md) for the full projects architecture (lifecycle, multi-membership, focus session state).
 
 ## Local Wiki (--local flag)
 

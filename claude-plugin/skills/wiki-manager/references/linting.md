@@ -1,5 +1,33 @@
 # Linting Rules
 
+## Development Note — Lint is the Migration
+
+**When you change the canonical structure or frontmatter schema, update the rules in this file and in `compilation.md` — do NOT write migration code.**
+
+The wiki treats "file in the wrong place from an old version" and "file in the wrong place from user error" as the same defect. `/wiki:lint --fix` heals both, idempotently. Indexes are already derived caches (see `indexing.md` Derived Index Protocol) — this principle extends to file placement and frontmatter shape.
+
+There are two layers where this principle applies, each with its own rules:
+
+- **Mechanical layer (C11/C12/C13)** — raw-source and wiki-article placement and frontmatter schema. Fully auto-fixable because the canonical location and field shape are pure functions of frontmatter. No judgment required.
+- **Editorial layer (C8/C9)** — project grouping inside `output/projects/`. **Never auto-fixed** because "these files belong together" requires human sense-making. C9 surfaces candidates and emits ready-to-paste `/wiki:project new` + `/wiki:project add` blocks for the user to run.
+
+Concretely, when evolving the schema:
+
+- **Renamed a `raw/` or `wiki/` directory?** Update the placement map in C11 and the allowlist in C12. Every existing wiki self-heals on the next lint.
+- **Renamed a frontmatter field?** Append an entry to C13's alias table (old → new). Never remove old aliases.
+- **Changed an enum value?** Add a value alias in C13. Never remove old values.
+- **Added a required field?** Add it to C2 and give it an inference rule (derive from body/filename) or a sane default.
+- **New directory under `raw/` or `wiki/`?** Add it to C12's allowlist and C11's placement map.
+- **New project-level structure or manifest rule?** Update C8 (and projects.md). Candidate heuristics go in C9.
+
+There is no `/wiki:migrate` command and there should never be one. Lint rules **are** the schema.
+
+**When editing the canonical spec** (`wiki-structure.md`, `compilation.md`, `ingestion.md`, `projects.md`, or any reference that defines paths or frontmatter fields), also:
+
+1. Update the relevant check(s) in this file — mechanical changes touch C11/C12/C13; project-model changes touch C8/C9.
+2. Verify `commands/lint.md` still runs the placement/alias pass in the correct order.
+3. Verify `commands/compile.md` still runs the placement pre-check on `raw/` as step 0.
+
 ## Severity Levels
 
 - **Critical**: Broken functionality — missing indexes, broken links, corrupted frontmatter
@@ -108,6 +136,116 @@ Suggested: bitcoin-quantum-fud (proposed slug)
 - **C9c**: longest common prefix of ≥3 files, stripped of trailing hyphens, dates (`YYYY-MM-DD`), version tags (`-v\d+`, `-final`, `-release`), and the `article-` / `output-` / `report-` prefixes. If the result is <4 chars or ambiguous, report without a proposed slug and let the user name it.
 - **C9e**: use the topic wiki's own slug (from `wikis.json` or the folder name) as the seed. Drop the `-wiki` suffix if present. Example: `hardware-wallet-security` → slug `hardware-wallet-security` or a shortened variant like `hw-wallet-security`. Always present the slug as a suggestion and let the user override — C9e is the lowest-confidence rule.
 
+### C11: Canonical Placement (Critical)
+
+A `raw/` or `wiki/` file's correct path is a pure function of its frontmatter. Misplacement is a structural defect regardless of whether the cause was user error or an old wiki layout. This is the mechanical counterpart to C8/C9, which handle project-level organization. C11 does not touch `output/projects/` — that's C8's territory.
+
+**Placement map** (derive expected path from frontmatter). Resolve in order — the first matching rule wins:
+
+| Order | File kind | Frontmatter key | Value → directory |
+|-------|-----------|----------------|-------------------|
+| 1 | Thesis file (wiki-side) | `type: thesis` | `wiki/theses/` |
+| 2 | Raw source | `type` | `articles` → `raw/articles/`, `papers` → `raw/papers/`, `repos` → `raw/repos/`, `notes` → `raw/notes/`, `data` → `raw/data/` |
+| 3 | Wiki article | `category` | `concept` → `wiki/concepts/`, `topic` → `wiki/topics/`, `reference` → `wiki/references/` |
+
+**Disambiguating raw `type: articles/papers/...` from wiki thesis `type: thesis`**: Rule 1 matches only when the value is literally `thesis`. Raw sources never use `thesis` as a type. A file whose frontmatter has both `category` and `type` is a wiki article — use `category` (rule 3). A file with only `type: thesis` is a thesis file (rule 1). A file with only `type` in {articles, papers, repos, notes, data} is a raw source (rule 2).
+
+**Checks**:
+
+- [ ] For every `.md` file under `raw/` and `wiki/` (excluding `_index.md` and `config.md`), compute the expected directory from frontmatter and compare to the actual directory.
+- [ ] Raw sources at the hub level (not inside a topic wiki) → misplaced. Hub must only contain `wikis.json`, `_index.md`, `log.md`, and `topics/`.
+- [ ] Content directories (`raw/`, `wiki/`, `output/`, `inbox/`) at the hub level → misplaced. Move contents into a topic wiki or quarantine.
+- [ ] Files with missing or unreadable frontmatter → defer to C2 (frontmatter fix) before placement can be determined.
+- [ ] Out of scope: anything under `output/projects/`. Project-level placement is C8/C9.
+
+**Auto-fix**: `mv` the file to its canonical path (create the destination directory if missing). If the destination already contains a file with the same slug, skip and warn (potential duplicate — user must resolve). After any move, the containing indexes on both sides are invalidated and will rebuild on next read per the Derived Index Protocol.
+
+### C12: Unknown File Quarantine (Warning)
+
+Any file that is not in the canonical allowlist for its location is either a user mistake, a stale artifact from an older wiki version, or a legitimate new kind of thing that the schema hasn't caught up to. Lint surfaces it either way. Like C11, this is scoped to `raw/`, `wiki/`, and the wiki root — not `output/projects/` (C8 handles that).
+
+**Allowlists** (per location):
+
+| Location | Allowed items |
+|----------|--------------|
+| HUB | `wikis.json`, `_index.md`, `log.md`, `topics/` |
+| Topic wiki root | `_index.md`, `config.md`, `log.md`, `raw/`, `wiki/`, `output/`, `inbox/`, `.obsidian/`, `.wiki-session.json`, `.research-session.json`, `.thesis-session.json` |
+| `raw/` | `_index.md`, `articles/`, `papers/`, `repos/`, `notes/`, `data/` |
+| `wiki/` | `_index.md`, `concepts/`, `topics/`, `references/`, `theses/` |
+| `raw/<type>/` | `_index.md` + `*.md` files with valid frontmatter |
+| `wiki/<category>/` | `_index.md` + `*.md` files with valid frontmatter |
+| `inbox/` | `.processed/`, `.unknown/`, user-dropped files |
+
+**Checks**:
+
+- [ ] Walk `raw/`, `wiki/`, and the wiki root. For each entry, check against the allowlist for that location.
+- [ ] Flag unknown files and directories.
+- [ ] Skip `output/` — C8 and C9 own that subtree.
+
+**Auto-fix**:
+
+- Unknown `.md` file with valid frontmatter → route via C11 (canonical placement).
+- Unknown `.md` file without frontmatter → move to `inbox/.unknown/` for user triage.
+- Unknown directory → **do not auto-delete**. Warn only. Directories may hold user data.
+- Unknown non-`.md` file at an unexpected location → move to `inbox/.unknown/`.
+
+### C13: Frontmatter Aliases (Warning)
+
+Legacy field names and enum values are rewritten to their canonical form. This is the one place where schema evolution is encoded — add aliases here instead of writing migrations. Run this check **before** C2 and C11 so downstream checks see canonical field names.
+
+**Key aliases** (old → canonical, append-only — never remove an entry):
+
+```
+# Raw source frontmatter
+source_url      → source
+source_uri      → source
+url             → source
+ingest_date     → ingested
+ingestedAt      → ingested
+ingested_at     → ingested
+kind            → type
+
+# Wiki article frontmatter
+created_at      → created
+createdAt       → created
+updated_at      → updated
+updatedAt       → updated
+modified        → updated
+category_type   → category
+confidence_level → confidence
+alias           → aliases
+source          → sources     # when on wiki article, not raw
+
+# Output artifact frontmatter
+generated_at    → generated
+generatedAt     → generated
+```
+
+**Value aliases** (enum drift — append-only):
+
+```
+# type (raw sources) — canonical is plural
+article   → articles
+paper     → papers
+repo      → repos
+note      → notes
+
+# category (wiki articles) — canonical is singular
+concepts   → concept
+topics     → topic
+references → reference
+```
+
+Note: thesis files use `type: thesis`, not `category`. Do not alias `theses` to a `category` value.
+
+**Checks**:
+
+- [ ] For every `.md` file's frontmatter, scan keys against the key-alias table. If a match is found, rewrite the key to canonical (preserve value).
+- [ ] For fields with known enums (`type`, `category`, `confidence`), scan values against the value-alias table. If a match is found, rewrite the value to canonical.
+- [ ] Unknown keys not in the alias table and not in the canonical schema → warn (potential new alias needed or typo).
+
+**Auto-fix**: Rewrite the YAML key or value in place using Edit. Preserve field order and comments.
+
 ## Auto-Fix Rules (when --fix is set)
 
 | Issue | Auto-Fix Action |
@@ -127,6 +265,12 @@ Suggested: bitcoin-quantum-fud (proposed slug)
 | **C8e** Mismatched `project:` frontmatter vs folder | **Warn only** — indicates the file was moved without updating metadata; human must confirm whether the file or the frontmatter is wrong |
 | Stale `output/_index.md` when `projects/` exists | Regenerate as a projects-aware listing: table of projects from `_project.md` frontmatter (title, goal, status, updated) + any remaining loose outputs beneath |
 | **C9** candidates | **Never auto-fix** — moves are human-authored via `/wiki:project new` + `/wiki:project add` |
+| **C11** Misplaced file in `raw/` or `wiki/` | `mv` to canonical path derived from frontmatter; create destination dir if missing; invalidate containing indexes. Skip and warn on slug collision |
+| **C11** Content dir at hub level | Move contents into appropriate topic wiki or quarantine to `inbox/.unknown/`. Never delete user data |
+| **C12** Unknown file in known location | Route through C11 if it has frontmatter, else move to `inbox/.unknown/` |
+| **C12** Unknown directory | **Warn only** — never auto-delete |
+| **C13** Legacy frontmatter key | Rewrite key to canonical per alias table |
+| **C13** Legacy enum value | Rewrite value to canonical per alias table |
 
 ## Report Format
 
@@ -160,4 +304,11 @@ Suggested: bitcoin-quantum-fud (proposed slug)
 
 ### Project Candidates
 - [grouped suggestions per C9, formatted as the candidate report block above]
+
+### Placement & Schema (C11/C12/C13)
+- Files moved (C11): [count, list of moves as `old → new`]
+- Files quarantined (C12): [count, list of moves to `inbox/.unknown/`]
+- Frontmatter keys rewritten (C13): [count by alias]
+- Enum values rewritten (C13): [count by alias]
+- Unknown directories (C12, warn-only): [list]
 ```

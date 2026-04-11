@@ -265,11 +265,16 @@ Remove a regretted source and clean up its downstream effects. Requires `--reaso
 
 ### Lint
 
-Health checks with auto-fix capability.
+Health checks with auto-fix capability. Lint **is** the migration path — there is no separate `/wiki:migrate` command. A file in the wrong place from an old wiki layout and a file in the wrong place from user error are treated as the same defect. Two layers:
 
-**Checks**: structure integrity, frontmatter validity, index consistency, link integrity, source provenance (dangling refs, unresolved retraction markers), tag hygiene, coverage, deep fact-checking (optional).
+- **Mechanical (C11/C12/C13)** — `raw/` + `wiki/` file placement and frontmatter schema. Fully auto-fixable.
+- **Editorial (C8/C9)** — `output/projects/` manifest hygiene and project candidates. Never auto-moved; surfaced as ready-to-paste `/wiki:project` commands.
 
-**Auto-fix** (`--fix`): missing indexes, orphan files, dead index entries, statistics mismatch, missing bidirectional links, empty frontmatter fields, dangling source references.
+**Checks**: structure integrity, frontmatter validity (plus legacy key/value aliases C13), canonical placement of raw/wiki files (C11), unknown-file quarantine for raw/wiki/root (C12), index consistency, link integrity, source provenance (dangling refs, unresolved retraction markers), tag hygiene, coverage, project hygiene (C8), project candidates (C9), deep fact-checking (optional).
+
+**Auto-fix** (`--fix`): rewrite legacy frontmatter keys/values to canonical (C13), move misplaced raw/wiki files to their canonical directory (C11), quarantine unknown files to `inbox/.unknown/` (C12), missing indexes, orphan files, dead index entries, statistics mismatch, missing bidirectional links, empty frontmatter fields, dangling source references, regenerate stale `_project.md` Members sections and `output/_index.md`. Never auto-delete unknown directories. Never auto-move files into projects (C9 is human-authored via `/wiki:project`). On slug collisions during a placement move, skip and warn.
+
+**Schema evolution**: when canonical paths or frontmatter fields for `raw/` or `wiki/` change, update the rules in `skills/wiki-manager/references/linting.md` (C11 placement map, C12 allowlist, C13 alias table). When the project model changes, update C8/C9 and `projects.md`. Never write version-specific migration code. Lint rules are the schema.
 
 ### Search
 

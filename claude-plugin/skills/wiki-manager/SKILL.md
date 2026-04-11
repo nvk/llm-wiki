@@ -146,7 +146,7 @@ Automatically run a quick structural check when any of these triggers occur:
 
 ### Quick Structure Check (lightweight, runs inline — not a full lint)
 
-1. **Hub integrity**: The hub (HUB) should ONLY contain `wikis.json`, `_index.md`, `log.md`, and `topics/`. If `raw/`, `wiki/`, `output/`, `inbox/`, or `config.md` exist at the hub level → delete them (they are traps for misplaced content).
+1. **Hub integrity**: The hub (HUB) should ONLY contain `wikis.json`, `_index.md`, `log.md`, and `topics/`. If `raw/`, `wiki/`, `output/`, `inbox/`, or `config.md` exist at the hub level → **warn, do not delete**. These may hold user data from an older wiki layout. Suggest `/wiki:lint --fix`, which will move contents to the appropriate topic wiki or quarantine to `inbox/.unknown/` per C11/C12 in `references/linting.md`.
 
 2. **Index freshness**: For the active topic wiki, compare actual file count in `wiki/concepts/`, `wiki/topics/`, `wiki/references/` against the rows in their `_index.md`. If mismatched → auto-fix by adding missing entries or removing dead ones.
 

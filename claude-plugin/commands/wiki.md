@@ -189,12 +189,19 @@ Set a custom hub location. Creates `~/.config/llm-wiki/config.json`.
 **Steps:**
 
 1. If `<path>` is provided:
-   - Expand `~` in the path
+   - Expand `~` in the path to get the absolute path
    - Check if the path exists as a directory. If not, offer to create it.
-   - Write `~/.config/llm-wiki/config.json` (create `~/.config/llm-wiki/` if needed):
+   - Write `~/.config/llm-wiki/config.json` (create `~/.config/llm-wiki/` if needed) with BOTH the user-facing path and the pre-computed absolute path:
      ```json
-     { "hub_path": "<path>" }
+     {
+       "hub_path": "<path as the user typed it>",
+       "resolved_path": "<absolute path with ~ expanded>"
+     }
      ```
+     The `resolved_path` is consumed by hub resolution so tilde expansion never runs again. See `references/hub-resolution.md`.
+   - Suggest creating a symlink for maximum robustness:
+     > For fastest hub resolution, also run: `ln -s "<resolved_path>" ~/wiki`
+     > This makes `~/wiki/` always resolve immediately, even without reading config.
    - If a wiki already exists at the OLD hub location (default `~/wiki/` or previous config):
      - Ask: "Move existing wiki data from `<old>` to `<new>`? (y/n)"
      - If yes: move contents (`mv <old>/* <new>/`), update `wikis.json` paths to reflect new base
@@ -203,6 +210,8 @@ Set a custom hub location. Creates `~/.config/llm-wiki/config.json`.
 
 2. If no `<path>` provided (just `config hub-path`):
    - Read `~/.config/llm-wiki/config.json` if it exists
+   - Report current hub path (use `resolved_path` if present, otherwise `hub_path`)
+   - If `resolved_path` is missing from config, compute it now and write it back
    - Report: "Current hub path: `<path>`" or "Hub path: `~/wiki/` (default — no custom config)"
 
 #### `config` (no subcommand)

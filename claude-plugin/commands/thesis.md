@@ -32,7 +32,7 @@ Present this decomposition to the user for confirmation before proceeding.
 
 **If `--wiki` is set**: Use the existing topic wiki. Create a `theses/` subdirectory if it doesn't exist. The thesis research lives there alongside the wiki's regular articles.
 
-**If `--wiki` is NOT set**: Create a new topic wiki. First, resolve **HUB** by following the protocol in `references/hub-resolution.md` (check `~/wiki/` first, then config, expand leading `~` only, quote paths with spaces).
+**If `--wiki` is NOT set**: Create a new topic wiki. Resolve HUB per the standard prelude in `skills/wiki-manager/references/command-prelude.md`, then:
 1. Derive slug from the thesis (e.g., "sunlight reduces CAA independent of vitamin D" → `sunlight-caa-vitamin-d`)
 2. Create `HUB/topics/<slug>/` with full wiki structure
 3. Register in `HUB/wikis.json`, update hub `_index.md`

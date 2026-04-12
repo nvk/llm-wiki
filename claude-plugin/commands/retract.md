@@ -17,16 +17,9 @@ Retract (remove) a source that was previously ingested into the wiki. This handl
 - **--wiki <name>**: Target wiki (same resolution as other commands)
 - **--local**: Use project-local `.wiki/`
 
-### Resolve wiki location
+### Resolve HUB and wiki
 
-First, resolve **HUB** by following the protocol in `references/hub-resolution.md` (check `~/wiki/` first, then config, expand leading `~` only, quote paths with spaces).
-
-1. `--local` flag → `.wiki/`
-2. `--wiki <name>` flag → look up in `HUB/wikis.json`
-3. Current directory has `.wiki/` → use it
-4. Otherwise → HUB
-
-If the resolved wiki does not exist, stop: "No wiki found."
+Follow the standard prelude in `skills/wiki-manager/references/command-prelude.md` (variant: **wiki-required** — stop with "No wiki found." if missing).
 
 ### Phase 1: Identify the Source
 

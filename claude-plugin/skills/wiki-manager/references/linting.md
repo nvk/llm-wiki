@@ -193,50 +193,25 @@ Any file that is not in the canonical allowlist for its location is either a use
 
 Legacy field names and enum values are rewritten to their canonical form. This is the one place where schema evolution is encoded — add aliases here instead of writing migrations. Run this check **before** C2 and C11 so downstream checks see canonical field names.
 
-**Key aliases** (old → canonical, append-only — never remove an entry):
+**Why this check exists at all (even while empty):** we want the *framework* for schema evolution in place before we need it, so the first rename ever made to a frontmatter field is a one-line addition to a table rather than "let's design a migration system." The dev note at the top of this file explains the full lint-as-migration principle. C13 itself is the mechanism.
+
+**Key aliases** (old → canonical, append-only — never remove an entry). Populate this table when a real field rename happens; do not pre-populate with speculative entries.
 
 ```
-# Raw source frontmatter
-source_url      → source
-source_uri      → source
-url             → source
-ingest_date     → ingested
-ingestedAt      → ingested
-ingested_at     → ingested
-kind            → type
-
-# Wiki article frontmatter
-created_at      → created
-createdAt       → created
-updated_at      → updated
-updatedAt       → updated
-modified        → updated
-category_type   → category
-confidence_level → confidence
-alias           → aliases
-source          → sources     # when on wiki article, not raw
-
-# Output artifact frontmatter
-generated_at    → generated
-generatedAt     → generated
+# (empty — add entries as schema evolves)
+# Format:  old_key  →  canonical_key
+# Example: source_url  →  source        # added when raw sources dropped source_url in v0.X.Y
 ```
 
-**Value aliases** (enum drift — append-only):
+**Value aliases** (enum drift — append-only). Populate when an enum value is renamed.
 
 ```
-# type (raw sources) — canonical is plural
-article   → articles
-paper     → papers
-repo      → repos
-note      → notes
-
-# category (wiki articles) — canonical is singular
-concepts   → concept
-topics     → topic
-references → reference
+# (empty — add entries as enums evolve)
+# Format:  old_value  →  canonical_value  (for field: <field_name>)
+# Example: article  →  articles  (for field: type)  # added when type enum went plural
 ```
 
-Note: thesis files use `type: thesis`, not `category`. Do not alias `theses` to a `category` value.
+Note: thesis files use `type: thesis`, not `category`. Do not alias `theses` to a `category` value if anyone ever proposes it — theses are their own file kind under C11 rule 1.
 
 **Checks**:
 
@@ -245,6 +220,8 @@ Note: thesis files use `type: thesis`, not `category`. Do not alias `theses` to 
 - [ ] Unknown keys not in the alias table and not in the canonical schema → warn (potential new alias needed or typo).
 
 **Auto-fix**: Rewrite the YAML key or value in place using Edit. Preserve field order and comments.
+
+**When the tables are empty** (current state), C13 only runs the unknown-key warning — alias rewriting is a no-op. This is the honest default: we have no backward-compat debt yet, so advertising alias entries would be fiction. First real rename → first real alias entry.
 
 ## Auto-Fix Rules (when --fix is set)
 

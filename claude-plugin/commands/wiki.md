@@ -6,15 +6,9 @@ allowed-tools: Read, Write, Edit, Glob, Bash(ls:*), Bash(wc:*), Bash(mkdir:*), B
 
 ## Your task
 
-First, resolve **HUB** by following the protocol in `references/hub-resolution.md` (check `~/wiki/` first, then config, expand leading `~` only, quote paths with spaces). Then check if a wiki exists by trying to read `HUB/_index.md` (global hub) and `.wiki/_index.md` (local).
+Follow the standard prelude in `skills/wiki-manager/references/command-prelude.md` for HUB resolution and wiki location (variant: **wiki-neutral** — `wiki.md` is the router, init, and config command, so "wiki missing" is not always an error; the init subcommand creates the wiki, status shows an empty hub gracefully, and the natural-language router explains how to create one).
 
 You are the llm-wiki knowledge base manager. Read the skill at `skills/wiki-manager/SKILL.md` and structure reference at `skills/wiki-manager/references/wiki-structure.md` for full conventions.
-
-Resolve which wiki to use:
-1. If `--local` flag → `.wiki/` in current directory
-2. If `--wiki <name>` flag → look up in `HUB/wikis.json`
-3. If current directory has `.wiki/` → use it
-4. Otherwise → HUB (hub — show status of all topic wikis)
 
 ---
 

@@ -6,27 +6,18 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:
 
 ## Your task
 
-First, resolve **HUB** by following the protocol in `references/hub-resolution.md` (check `~/wiki/` first, then config, expand leading `~` only, quote paths with spaces). Then check if a wiki exists by trying to read `HUB/_index.md` (global hub) and `.wiki/_index.md` (local).
-
+Follow the standard prelude in `skills/wiki-manager/references/command-prelude.md` (variant: **wiki-creating** — `--new-topic <name>` creates a topic wiki on the fly; otherwise stop with "No wiki found. Use `--new-topic <name>` to create one, or run `/wiki init` first.").
 
 Read the ingestion protocol at `skills/wiki-manager/references/ingestion.md` and the structure spec at `skills/wiki-manager/references/wiki-structure.md`. Then ingest source material.
 
-### Resolve wiki location
+### `--new-topic` branch
 
-**If `--new-topic` is set:**
+When `--new-topic` is set, override the standard resolution:
 1. Derive a slug from the topic name: lowercase, hyphens, no special chars, max 40 chars
 2. If HUB doesn't exist, create it (wikis.json + _index.md + log.md + topics/)
 3. Create the new topic wiki at `HUB/topics/<slug>/` following the full init protocol (directory structure, .obsidian/, empty _index.md files, config.md, log.md)
 4. Register in `HUB/wikis.json` and update hub `_index.md`
 5. Target this new wiki for ingestion
-
-**If `--new-topic` is NOT set:**
-1. `--local` flag → `.wiki/`
-2. `--wiki <name>` flag → look up in `HUB/wikis.json`
-3. Current directory has `.wiki/` → use it
-4. Otherwise → HUB
-
-If the resolved wiki does not exist, stop: "No wiki found. Use `--new-topic <name>` to create one, or run `/wiki init` first."
 
 ### Focus-aware behavior + --project flag
 

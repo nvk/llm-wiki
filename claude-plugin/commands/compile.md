@@ -6,19 +6,9 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:
 
 ## Your task
 
-First, resolve **HUB** by following the protocol in `references/hub-resolution.md` (check `~/wiki/` first, then config, expand leading `~` only, quote paths with spaces). Then check if a wiki exists by trying to read `HUB/_index.md` (global hub) and `.wiki/_index.md` (local).
-
+Follow the standard prelude in `skills/wiki-manager/references/command-prelude.md` (variant: **wiki-required** — stop with "No wiki found. Run `/wiki init` first." if missing).
 
 Read the compilation protocol at `skills/wiki-manager/references/compilation.md` and the indexing protocol at `skills/wiki-manager/references/indexing.md`. Then compile raw sources into wiki articles.
-
-### Resolve wiki location
-
-1. `--local` → `.wiki/`
-2. `--wiki <name>` → look up in `HUB/wikis.json`
-3. Current directory has `.wiki/` → use it
-4. Otherwise → HUB
-
-If wiki does not exist, stop: "No wiki found. Run `/wiki init` first."
 
 ### Parse $ARGUMENTS
 

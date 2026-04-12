@@ -6,17 +6,17 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:
 
 ## Your task
 
-First, resolve **HUB** by following the protocol in `references/hub-resolution.md` (check `~/wiki/` first, then config, expand leading `~` only, quote paths with spaces). Then check if a wiki exists by trying to read `HUB/_index.md` (global hub) and `.wiki/_index.md` (local).
+Follow the standard prelude in `skills/wiki-manager/references/command-prelude.md` (variant: **wiki-required** — stop with "No wiki found. Run `/wiki init <topic>` first." if missing).
 
 Compare a local repository against the wiki's knowledge base and the broader market. Produce a comprehensive gap analysis.
 
-### Resolve wiki location
+### Deviation: wiki resolution order
+
+Unlike other commands, `assess` does NOT default to HUB when no wiki is specified — gap analysis against an empty hub is meaningless. The resolution order is:
 
 1. `--wiki <name>` → look up in `HUB/wikis.json`
 2. `--local` → `.wiki/` in current directory
-3. Otherwise → ask which topic wiki to compare against
-
-If wiki does not exist, stop: "No wiki found. Run `/wiki init <topic>` first."
+3. Otherwise → ask the user which topic wiki to compare against (do not silently pick one)
 
 ### Parse $ARGUMENTS
 

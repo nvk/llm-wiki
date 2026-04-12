@@ -24,24 +24,18 @@ Conduct deep research on the topic in $ARGUMENTS. This is an automated pipeline:
 
 Before starting, check `<wiki-root>/.wiki-session.json` for a `focused_project` field. If present and no explicit `--project` flag is set, treat the focused project as an implicit `--project <slug>`. Explicit flags always win over focus.
 
-### Resolve wiki location
+### Resolve HUB and wiki
 
-First, resolve **HUB** by following the protocol in `references/hub-resolution.md` (check `~/wiki/` first, then config, expand leading `~` only, quote paths with spaces).
+Follow the standard prelude in `skills/wiki-manager/references/command-prelude.md` (variant: **wiki-creating** — `--new-topic` creates a topic wiki on the fly; otherwise stop with "No wiki found. Use `--new-topic` to create one, or run `/wiki init <topic>` first.").
 
-**If `--new-topic` is set:**
+**When `--new-topic` is set**, override the standard resolution:
 1. Derive a slug from the topic: lowercase, hyphens, no special chars, max 40 chars
 2. If HUB doesn't exist, create it (wikis.json + _index.md + log.md + topics/)
 3. Create the new topic wiki at `HUB/topics/<slug>/` following the full init protocol (directory structure, .obsidian/, empty _index.md files, config.md, log.md)
 4. Register in `HUB/wikis.json` and update hub `_index.md`
 5. Target this new wiki for all research that follows
 
-**If `--new-topic` is NOT set:**
-1. `--local` → `.wiki/`
-2. `--wiki <name>` → look up in `HUB/wikis.json`
-3. Current directory has `.wiki/` → use it
-4. Otherwise → ask which topic wiki to target
-
-If no wiki is resolved, stop: "No wiki found. Use `--new-topic` to create one, or run `/wiki init <topic>` first."
+**When `--new-topic` is NOT set**, the standard prelude resolution applies, with one deviation: step 4 (fallback to HUB) becomes "ask which topic wiki to target" — research against an empty hub doesn't make sense.
 
 ### Minimum Time Research (`--min-time`)
 

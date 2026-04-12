@@ -6,18 +6,9 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:
 
 ## Your task
 
-First, resolve **HUB** by following the protocol in `references/hub-resolution.md` (check `~/wiki/` first, then config, expand leading `~` only, quote paths with spaces). Then check if a wiki exists by trying to read `HUB/_index.md` (global hub) and `.wiki/_index.md` (local).
+Follow the standard prelude in `skills/wiki-manager/references/command-prelude.md` (variant: **wiki-required** — stop with "No wiki found (or no articles). Run `/wiki init` and `/wiki:research` first to build a knowledge base." if the wiki is missing or has no articles).
 
 Generate an implementation plan for what the user wants to build, grounded in the wiki's accumulated research. Follow the 6-stage pipeline below.
-
-### Resolve wiki location
-
-1. `--local` → `.wiki/`
-2. `--wiki <name>` → look up in `HUB/wikis.json`
-3. Current directory has `.wiki/` → use it
-4. Otherwise → HUB
-
-If wiki does not exist or has no articles, stop: "No wiki found (or no articles). Run `/wiki init` and `/wiki:research` first to build a knowledge base."
 
 ### Parse $ARGUMENTS
 

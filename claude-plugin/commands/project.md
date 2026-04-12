@@ -8,18 +8,13 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(mkdir:*), Bash(mv
 
 Manage projects — folders inside a topic wiki's `output/projects/` directory that group related outputs with a goal, lifecycle, and manifest.
 
-**First, resolve HUB** by following the protocol in `references/hub-resolution.md` (check `~/wiki/` first, then config, expand leading `~` only, quote paths with spaces).
+Follow the standard prelude in `skills/wiki-manager/references/command-prelude.md` (variant: **wiki-neutral** — see deviation below for the step-4 fallback).
 
-**Then read the projects architecture** at `skills/wiki-manager/references/projects.md` for the full specification of folder layout, `_project.md` manifest format, lifecycle states, multi-project membership via `also_in:`, and focus session state.
+Read the projects architecture at `skills/wiki-manager/references/projects.md` for the full specification of folder layout, `_project.md` manifest format, lifecycle states, multi-project membership via `also_in:`, and focus session state.
 
-### Resolve wiki location
+### Deviation: wiki resolution step 4
 
-1. If `--local` → `.wiki/` in current directory
-2. If `--wiki <name>` → look up in `HUB/wikis.json`
-3. Current directory has `.wiki/` → use it
-4. Otherwise → ask user which topic wiki, or fail if no topic wikis exist
-
-All project paths below are relative to the resolved wiki root (`<wiki-root>/output/projects/<slug>/`).
+The standard prelude's step 4 (fallback to HUB) becomes: **ask the user which topic wiki, or fail if no topic wikis exist.** Project operations against an empty hub have nothing to operate on. All project paths below are relative to the resolved wiki root (`<wiki-root>/output/projects/<slug>/`).
 
 ### Parse $ARGUMENTS
 

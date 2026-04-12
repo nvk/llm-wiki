@@ -1,6 +1,6 @@
 # Research Infrastructure
 
-Shared subsystems used by `/wiki:research` and `/wiki:thesis`. Consolidated from five separate files (agent-prompts, credibility-scoring, progress-metrics, gap-scoring, session-registry) into one because all five are consumed by exactly the same two commands and the cross-file navigation was pure noise.
+Shared subsystems used by `/wiki:research` (including `--mode thesis`). Consolidated from five separate files (agent-prompts, credibility-scoring, progress-metrics, gap-scoring, session-registry) into one because all five were consumed by exactly the same pipeline and the cross-file navigation was pure noise. Thesis mode was later merged into research (Move 2), so this file now serves one command.
 
 ## Agent Prompt Templates
 

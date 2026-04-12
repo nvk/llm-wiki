@@ -103,7 +103,7 @@ The user typed something that isn't a known keyword. Detect their intent and rou
 | 2 | **Resume** | "where was I", "pick up where", "continue", "resume", "get back to", "catch me up", "what was I working on" | `Skill: wiki:query` with `--resume` |
 | 3 | **Query** | Starts with what/why/how/when/where/who, contains "?", or words: "tell me about", "explain", "what do we know about" | `Skill: wiki:query` with the question |
 | 4 | **Research** | "research", "find out about", "look into", "deep dive", "investigate" | `Skill: wiki:research` with the topic |
-| 5 | **Thesis** | "prove that", "is it true that", "verify", "test the claim", "test the hypothesis" | `Skill: wiki:thesis` with the claim |
+| 5 | **Thesis** | "prove that", "is it true that", "verify", "test the claim", "test the hypothesis" | `Skill: wiki:research` with `--mode thesis "<claim>"` |
 | 6 | **Compile** | "compile", "process sources", "synthesize", "update articles" | `Skill: wiki:compile` |
 | 7 | **Lint** | "check health", "fix wiki", "broken", "problems", "cleanup" | `Skill: wiki:lint` |
 | 8 | **Output** | "write a summary", "generate a report", "slides", "create a", "write a" | `Skill: wiki:output` with the request |

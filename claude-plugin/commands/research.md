@@ -1,6 +1,6 @@
 ---
-description: "Deep multi-agent research on a topic. Launches parallel agents to search the web across multiple angles, ingests sources, and compiles them into wiki articles. Can create a new topic wiki automatically."
-argument-hint: "<topic> [--new-topic] [--sources <N>] [--deep] [--retardmax] [--min-time <duration>] [--wiki <name>] [--local] [--project <slug>]"
+description: "Deep multi-agent research on a topic, question, or thesis. Launches parallel agents to search the web, ingests sources, and compiles them into wiki articles. Thesis mode provides for/against evidence framing with a verdict."
+argument-hint: "<topic|question> [--mode thesis \"<claim>\"] [--new-topic] [--sources <N>] [--deep] [--retardmax] [--min-time <duration>] [--wiki <name>] [--local] [--project <slug>]"
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:*), Bash(mkdir:*), WebFetch, WebSearch, Agent
 ---
 
@@ -10,7 +10,8 @@ Conduct deep research on the topic in $ARGUMENTS. This is an automated pipeline:
 
 ### Parse $ARGUMENTS
 
-- **topic**: The research topic — everything that is not a flag
+- **topic/question**: The research subject — everything that is not a flag. Auto-detected as topic vs question (see Input Detection below).
+- **--mode thesis "<claim>"**: Activate thesis mode. The claim is the scope constraint — sources that don't relate to it are skipped. Agents evaluate evidence for/against. A verdict is rendered at the end. See Thesis Research Mode below.
 - **--new-topic**: Create a new topic wiki from the topic name and start researching into it. Works from any directory. Derives the wiki slug from the topic (e.g., "quantum error correction" → `quantum-error-correction`).
 - **--sources <N>**: Target sources PER ROUND (default: 5, max: 20)
 - **--deep**: 8 parallel agents with broader search angles
@@ -137,12 +138,14 @@ Final:   Run /wiki:lint --fix to clean up
 ```
 Creates `HUB/topics/crispr-gene-therapy/`, then runs ~3-5 research rounds over 2 hours, progressively drilling into subtopics the earlier rounds surfaced.
 
-### Input Detection: Topic vs Question
+### Input Detection: Topic vs Question vs Thesis
 
-Before starting research, detect whether the input is a **topic** or a **question**:
+Before starting research, detect the input mode:
 
-- **Topic**: a noun/phrase naming a subject area. Examples: "nutrition", "CRISPR", "viral content"
-- **Question**: starts with what/why/how/when/where/who, contains a "?", or is phrased as a goal ("how to...", "what makes...", "why does..."). Examples: "What makes long form articles go viral?", "How to build a search engine", "Why do startups fail in year 2?"
+- **Thesis** (explicit): `--mode thesis` flag is set → enter Thesis Research Mode (see below).
+- **Thesis** (auto-detected): input contains "prove that", "is it true that", "verify", "test the claim", "test the hypothesis" → enter Thesis Research Mode. The claim text is the input minus the signal words.
+- **Question**: starts with what/why/how/when/where/who, contains a "?", or is phrased as a goal ("how to...", "what makes...", "why does...") → enter Question Research Mode.
+- **Topic**: a noun/phrase naming a subject area → proceed with standard research protocol.
 
 **If topic** → proceed with standard research protocol below.
 
@@ -187,7 +190,97 @@ In `--retardmax` mode: add rabbit-hole agents + skip decomposition confirmation.
 - Structure: the original question, key findings per sub-question, actionable steps, examples, sources
 - This is the deliverable — a practical, actionable answer filed back into the wiki
 
-**Step 5: Derive theses.** From the findings, suggest 2-3 testable claims that could be investigated with `/wiki:thesis`. Example: "Articles with a personal narrative hook get 3x more shares than data-led hooks" — this is a specific claim that can be verified.
+**Step 5: Derive theses.** From the findings, suggest 2-3 testable claims that could be investigated with `--mode thesis`. Example: "Articles with a personal narrative hook get 3x more shares than data-led hooks" — this is a specific claim that can be verified.
+
+#### Thesis Research Mode (`--mode thesis`)
+
+**Why this exists as a mode, not a separate command**: thesis research is 70% the same pipeline as topic/question research (agent dispatch, credibility scoring, session registry, multi-round --min-time, compilation, ingestion). The 30% that's different is: scope filtering by claim, for/against agent framing, evidence strength classification, and verdict rendering. Those differences are described below as modifications to the standard phases. Previously this was a separate `/wiki:thesis` command (224 lines) which duplicated all the shared infrastructure.
+
+**Phase 0: Decompose the thesis.** Before any research, break the claim into:
+
+1. **Core claim**: the central assertion in one sentence
+2. **Key variables**: the specific things being connected (e.g., "sunlight exposure", "CAA progression", "vitamin D")
+3. **Testable prediction**: what would be true if the thesis is correct?
+4. **Falsification criteria**: what evidence would disprove it?
+5. **Scope boundary**: what is NOT part of this thesis? (This is the bloat filter — if a source doesn't touch these variables, skip it.)
+
+Present the decomposition to the user for confirmation before proceeding.
+
+**Wiki setup modification**: In addition to the standard wiki resolution, create a thesis file at `wiki/theses/<slug>.md`:
+
+```markdown
+---
+title: "Thesis: <thesis statement>"
+type: thesis
+status: investigating
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+verdict: pending
+confidence: pending
+core_claim: "<one sentence>"
+key_variables: [var1, var2, var3]
+falsification: "<what would disprove this>"
+---
+
+# Thesis: <thesis statement>
+
+## Core Claim
+## Key Variables
+## Testable Prediction
+## Falsification Criteria
+## Evidence For
+(populated during research)
+## Evidence Against
+(populated during research)
+## Nuances & Caveats
+(populated during research)
+## Verdict
+**Status**: Investigating
+```
+
+**Phase 2 modification: thesis-directed agents.** Instead of the standard agent table (Academic, Technical, etc.), use:
+
+| Agent | Focus | Thesis Lens |
+|-------|-------|-------------|
+| **Supporting** | Evidence that supports the thesis | Search for studies, data, mechanisms that confirm the claim. Strongest evidence first. |
+| **Opposing** | Evidence that contradicts the thesis | Counter-evidence, failed replications, alternative explanations. Steelman the opposition. |
+| **Mechanistic** | HOW/WHY the thesis could be true or false | Underlying mechanisms, pathways, causal chains connecting the variables. |
+| **Meta/Review** | Meta-analyses, systematic reviews, expert consensus | Aggregate evidence on this specific question. These carry the most weight. |
+| **Adjacent** | Related findings that nuance the thesis | Edge cases, moderating variables, conditions under which the thesis holds or fails. |
+
+In `--deep` mode, add: **Historical** (evolution of thinking on this claim), **Quantitative** (effect sizes, confidence intervals, dose-response data), **Confounders** (variables that could make a spurious correlation look causal).
+
+Each agent must evaluate: relevance (direct/indirect/tangential — SKIP tangential), evidence strength (meta-analysis > RCT > cohort > case > opinion > anecdotal), and direction (supports/opposes/nuances).
+
+**Phase 4 modification: evidence compilation.** After standard compilation, update the thesis file:
+- **Evidence For**: list each supporting finding with source, evidence strength, and one-line summary. Sort by evidence strength (meta-analyses first).
+- **Evidence Against**: same format for opposing findings.
+- **Nuances & Caveats**: conditions, moderators, edge cases.
+- Each finding is marked "Strong" / "Moderate" / "Weak" based on combined credibility + evidence strength.
+
+**Phase 5 modification: verdict.** After all rounds complete, render a verdict in the thesis file:
+
+```markdown
+## Verdict
+**Status**: Supported | Partially Supported | Insufficient Evidence | Contradicted | Mixed
+**Confidence**: High | Medium | Low
+**Summary**: 2-3 sentences on what the evidence shows.
+**Strongest supporting evidence**: [list]
+**Strongest opposing evidence**: [list]
+**Key caveats**: [list]
+**What would change this verdict**: [specific future findings]
+**Suggested follow-up theses**: [derived from findings]
+```
+
+Update frontmatter: `status: completed`, `verdict: <result>`, `confidence: <level>`.
+
+**Multi-round modification: anti-confirmation-bias.** When `--min-time` is set:
+- **Round 1**: Broad evidence gathering — supporting + opposing + mechanistic
+- **Round 2**: Drill into the WEAKEST side. If Round 1 found mostly supporting evidence, Round 2 focuses harder on finding counter-evidence (and vice versa). This prevents confirmation bias — the most important methodological difference from standard research.
+- **Round 3+**: Follow up on specific sub-questions, confounders, or moderating variables
+- **Final**: Synthesize verdict, update thesis file
+
+Session state uses `.thesis-session.json` instead of `.research-session.json`, tracking evidence for/against counts and current verdict direction per round. Same lifecycle: create → update → delete on completion. Resume detection: "Found interrupted thesis session (Round N, current leaning: X). Continue?"
 
 ### Research Protocol (Single Round — Topic Mode)
 

@@ -221,9 +221,9 @@ Automated pipeline: search → ingest → compile. Launch parallel agents. Auto-
 2. One agent per sub-question (focused, not generic angles)
 3. Compile into wiki articles + a synthesis "playbook" topic article
 4. Auto-generate a playbook output artifact (the actionable deliverable)
-5. Suggest 2-3 testable theses from findings → feed into `/wiki:thesis`
+5. Suggest 2-3 testable theses from findings → feed into `--mode thesis`
 
-**Modifiers**: `--new-topic` (create wiki + research in one shot), `--min-time <duration>` (sustained multi-round research), `--sources <N>` (per round).
+**Modifiers**: `--new-topic` (create wiki + research in one shot), `--mode thesis "<claim>"` (thesis-driven research with for/against framing and verdict), `--min-time <duration>` (sustained multi-round research), `--sources <N>` (per round).
 
 Each agent receives a standardized prompt template: Objective, Context, Current wiki state, Constraints, Return format, Quality scoring guide (5=peer-reviewed → 1=spam). Deduplicate across agents.
 
@@ -237,9 +237,9 @@ Each agent receives a standardized prompt template: Objective, Context, Current 
 
 Compile all ingested sources. Report gaps and suggest follow-ups.
 
-### Thesis
+### Thesis (mode of Research)
 
-Thesis-driven research. Provide a specific claim — agents research evidence for AND against, deliver a verdict.
+Thesis-driven research. Activated via `--mode thesis "<claim>"` on the research command. Previously a separate `/wiki:thesis` command (merged to eliminate duplicated infrastructure).
 
 1. Decompose thesis into: core claim, key variables, testable prediction, falsification criteria, scope boundary
 2. Agents split by purpose: Supporting, Opposing, Mechanistic, Meta/Review, Adjacent (+ Historical, Quantitative, Confounders in deep mode)

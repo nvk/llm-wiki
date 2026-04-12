@@ -75,7 +75,7 @@ All content lives here. Each topic wiki has the full structure:
     └── *.md                       # Loose outputs (backward compatible)
 ```
 
-See [projects.md](projects.md) for the full projects architecture (lifecycle, multi-membership, focus session state).
+See [projects.md](projects.md) for the full projects architecture (lifecycle, multi-membership, explicit `--project <slug>` scoping).
 
 ## Local Wiki (--local flag)
 

@@ -60,7 +60,7 @@ Anything command-specific stays in the command file:
 
 - `### Parse $ARGUMENTS` sections (flag docs)
 - Command-specific deviations from the 4-step wiki resolution (e.g., `assess` asks which wiki to compare against when none is specified, `thesis` has its own `--new-topic`-equivalent branching in Phase 1)
-- Per-command focus-aware behavior details (which flags are focus-sticky)
+- Per-command `--project` behavior details (which commands support it and how they scope outputs)
 - The command's actual work (the reason the command exists)
 
 ## When to edit this file
@@ -70,6 +70,6 @@ Edit `command-prelude.md` when:
 - The hub resolution protocol changes (e.g., new config location, new fallback path)
 - The wiki resolution order changes (e.g., a new flag like `--wiki` or `--local` is added)
 - A new wiki-requirement variant is introduced (e.g., a command that wants to lazy-create a wiki on write)
-- The focus-session mechanism changes
+- The explicit project-scoping rules change
 
 Do **not** edit this file for command-specific changes. Those stay in the command.

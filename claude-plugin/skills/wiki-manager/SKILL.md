@@ -114,7 +114,7 @@ Terminal links break when they wrap to a second line. Rules for all wiki operati
    /Users/name/wiki/topics/my-topic/output/report-2026-04-08.md
    ```
 
-See `references/agent-prompts.md` for examples. Applies to ingest, compile, research, output, assess.
+See `references/research-infrastructure.md` § Agent Prompt Templates for examples. Applies to ingest, compile, research, output, assess.
 
 ## Activity Log
 

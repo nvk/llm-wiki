@@ -51,6 +51,9 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 claude plugin install wiki@llm-wiki
 ```
 
+**OpenAI Codex** (repo-local plugin):
+Use the repo-local marketplace in this repo, then install `LLM Wiki` from Codex's `/plugins` UI. The plugin lives at `plugins/llm-wiki/` and is a thin wrapper around the same wiki-manager skill.
+
 **OpenAI Codex / Any LLM Agent** (idea file):
 ```bash
 # Copy AGENTS.md into your agent's context or project root
@@ -58,6 +61,30 @@ cp AGENTS.md ~/your-project/AGENTS.md
 ```
 
 The `AGENTS.md` file contains the complete wiki protocol as a single portable document — works with any LLM agent that can read/write files and search the web.
+
+## Claude-First, Codex-Compatible
+
+If Claude Code is the principal user, do not try to make one plugin manifest serve both runtimes. Keep one shared behavior layer and two thin packaging layers:
+
+- `claude-plugin/` is the primary distribution target and UX surface.
+- `claude-plugin/skills/wiki-manager/` is the behavioral source of truth.
+- `plugins/llm-wiki/` is the Codex packaging target.
+- `.agents/plugins/marketplace.json` makes the Codex plugin installable from this repo.
+
+The Codex plugin should stay generated, not hand-maintained. Rebuild it from the Claude source of truth with:
+
+```bash
+./scripts/sync-codex-plugin.sh
+```
+
+That script:
+
+- copies `claude-plugin/skills/wiki-manager/` into `plugins/llm-wiki/skills/wiki-manager/`
+- reapplies the small Codex-specific wording changes
+- recreates `agents/openai.yaml` for Codex UI metadata
+- syncs the Codex plugin version to match `claude-plugin/.claude-plugin/plugin.json`
+
+Practical rule: design workflows first for Claude commands and behavior, but keep the underlying knowledge model and references runtime-neutral. The Codex wrapper should adapt invocation and metadata, not fork the wiki logic.
 
 ## Upgrade
 

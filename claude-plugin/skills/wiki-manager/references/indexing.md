@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Index files (`_index.md`) are Claude's navigation system. Instead of scanning hundreds of files, Claude reads a single index to find what it needs. This is the key efficiency mechanism.
+Index files (`_index.md`) are the agent's navigation system. Instead of scanning hundreds of files, the agent reads a single index to find what it needs. This is the key efficiency mechanism.
 
 ## The 3-Hop Strategy
 
@@ -12,7 +12,7 @@ When answering a query or finding content:
 2. **Hop 2**: Read `wiki/{category}/_index.md` → scan summaries and tags for matches
 3. **Hop 3**: Read only the matched article files
 
-This means Claude typically reads 2-3 small index files + 3-8 full articles, rather than scanning dozens of files.
+This means the agent typically reads 2-3 small index files + 3-8 full articles, rather than scanning dozens of files.
 
 ## Derived Index Protocol
 

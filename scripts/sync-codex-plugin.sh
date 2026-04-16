@@ -24,7 +24,20 @@ if [ ! -f "$CODEX_MANIFEST" ]; then
 fi
 
 mkdir -p "$TARGET_PLUGIN/skills"
-rsync -a --delete "$SOURCE_SKILL/" "$TARGET_SKILL/"
+# references/ is a symlink into the Claude source — exclude from rsync so it's
+# preserved, and recreate it idempotently below. agents/ is Codex-only so also
+# exclude it from --delete.
+rsync -a --delete \
+  --exclude='references/' \
+  --exclude='references' \
+  --exclude='agents/' \
+  --exclude='agents' \
+  "$SOURCE_SKILL/" "$TARGET_SKILL/"
+
+# Recreate the references symlink (idempotent — works on fresh checkout too).
+rm -rf "$TARGET_SKILL/references"
+ln -s "../../../../claude-plugin/skills/wiki-manager/references" "$TARGET_SKILL/references"
+
 mkdir -p "$TARGET_SKILL/agents"
 
 cat > "$TARGET_SKILL/agents/openai.yaml" <<'EOF'
@@ -113,46 +126,9 @@ for old, new in replacements:
 
 skill_path.write_text(text)
 
-reference_replacements = {
-    target_skill / "references" / "indexing.md": [
-        (
-            "Index files (`_index.md`) are Claude's navigation system. Instead of scanning hundreds of files, Claude reads a single index to find what it needs. This is the key efficiency mechanism.",
-            "Index files (`_index.md`) are Codex's navigation system. Instead of scanning hundreds of files, Codex reads a single index to find what it needs. This is the key efficiency mechanism.",
-        ),
-        (
-            "This means Claude typically reads 2-3 small index files + 3-8 full articles, rather than scanning dozens of files.",
-            "This means Codex typically reads 2-3 small index files + 3-8 full articles, rather than scanning dozens of files.",
-        ),
-    ],
-    target_skill / "references" / "wiki-structure.md": [
-        (
-            "Every directory has an `_index.md`. This is Claude's primary navigation aid.",
-            "Every directory has an `_index.md`. This is Codex's primary navigation aid.",
-        ),
-        (
-            "This ensures both Obsidian (reads [[wikilink]]) and Claude (follows relative path) can navigate.",
-            "This ensures both Obsidian (reads [[wikilink]]) and Codex (follows relative path) can navigate.",
-        ),
-        (
-            "- **Claude** follows the standard markdown `(relative/path.md)` link",
-            "- **Codex** follows the standard markdown `(relative/path.md)` link",
-        ),
-    ],
-    target_skill / "references" / "compilation.md": [
-        (
-            "3. When referencing another wiki article inline, use dual-link format: `[[slug|Name]] ([Name](../category/slug.md))` — this serves both Obsidian and Claude.",
-            "3. When referencing another wiki article inline, use dual-link format: `[[slug|Name]] ([Name](../category/slug.md))` — this serves both Obsidian and Codex.",
-        ),
-    ],
-}
-
-for path, replacements in reference_replacements.items():
-    text = path.read_text()
-    for old, new in replacements:
-        if old not in text:
-            raise SystemExit(f"Expected text not found in {path}: {old[:80]!r}")
-        text = text.replace(old, new)
-    path.write_text(text)
+# references/ is a symlink to claude-plugin/skills/wiki-manager/references and
+# is shared verbatim — no per-file replacements needed. Source references use
+# runtime-neutral wording ("the agent") so they read correctly under both.
 
 claude = json.loads(claude_manifest.read_text())
 codex = json.loads(codex_manifest.read_text())

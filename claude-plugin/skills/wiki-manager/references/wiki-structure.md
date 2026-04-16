@@ -107,7 +107,7 @@ When a command runs, first resolve the hub path (HUB) from `~/.config/llm-wiki/c
 
 ## _index.md Format
 
-Every directory has an `_index.md`. This is Claude's primary navigation aid.
+Every directory has an `_index.md`. This is the agent's primary navigation aid.
 
 ```markdown
 # [Directory Name] Index
@@ -239,7 +239,7 @@ summary: "2-3 sentence summary for index"
 When referencing another wiki article inline, use dual-link format:
 [[article-slug|Display Name]] ([Display Name](../category/article-slug.md))
 
-This ensures both Obsidian (reads [[wikilink]]) and Claude (follows relative path) can navigate.
+This ensures both Obsidian (reads [[wikilink]]) and the agent (follows relative path) can navigate.
 
 ## See Also
 
@@ -259,7 +259,7 @@ All cross-references between wiki articles use BOTH link formats on the same lin
 ```
 
 - **Obsidian** reads the `[[wikilink]]` for its graph view, backlinks panel, and navigation
-- **Claude** follows the standard markdown `(relative/path.md)` link
+- **The agent** follows the standard markdown `(relative/path.md)` link
 - Both coexist on one line so neither system misses the connection
 
 For inline mentions in article body text, use the same pattern:

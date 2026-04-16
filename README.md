@@ -79,10 +79,12 @@ The Codex plugin should stay generated, not hand-maintained. Rebuild it from the
 
 That script:
 
-- copies `claude-plugin/skills/wiki-manager/` into `plugins/llm-wiki/skills/wiki-manager/`
-- reapplies the small Codex-specific wording changes
+- copies `claude-plugin/skills/wiki-manager/SKILL.md` into the Codex tree and reapplies a small list of Codex-specific wording patches
+- (re)creates `plugins/llm-wiki/skills/wiki-manager/references` as a **symlink** to `claude-plugin/skills/wiki-manager/references` — references are runtime-neutral and shared verbatim, no copy
 - recreates `agents/openai.yaml` for Codex UI metadata
 - syncs the Codex plugin version to match `claude-plugin/.claude-plugin/plugin.json`
+
+Drift between the two trees is caught by `./tests/test-codex-sync.sh`, which runs the sync script and fails (with a self-healing fix instruction) if `plugins/` differs from `HEAD`. This runs alongside the other structural tests, so any LLM following the test-before-done rule catches a missed sync inside its own loop.
 
 Practical rule: design workflows first for Claude commands and behavior, but keep the underlying knowledge model and references runtime-neutral. The Codex wrapper should adapt invocation and metadata, not fork the wiki logic.
 

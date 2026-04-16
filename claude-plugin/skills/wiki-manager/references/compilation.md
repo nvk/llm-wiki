@@ -47,7 +47,7 @@ Read `wiki/_index.md` and category indexes. For each key concept:
 
 1. Write the abstract paragraph — what is this and why does it matter?
 2. Write the body — explain using information from source(s). Synthesize, contextualize, explain. Do NOT copy-paste.
-3. When referencing another wiki article inline, use dual-link format: `[[slug|Name]] ([Name](../category/slug.md))` — this serves both Obsidian and Claude.
+3. When referencing another wiki article inline, use dual-link format: `[[slug|Name]] ([Name](../category/slug.md))` — this serves both Obsidian and the agent.
 4. Add "See Also" links to related wiki articles using dual-link format (check wiki index for related tags/concepts)
 5. Add "Sources" section linking back to raw files
 6. Generate frontmatter per `references/wiki-structure.md` — include `aliases` for alternate names

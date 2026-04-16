@@ -1,7 +1,7 @@
 {
   "name": "wiki",
   "description": "LLM-compiled knowledge base. Natural language routing, session resume, concurrent-safe derived indexes, topic-isolated wikis, parallel multi-agent research, thesis-driven investigation, repo assessment, Obsidian dual-linking, retardmax mode, and --min-time sustained research.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "nvk"
   },

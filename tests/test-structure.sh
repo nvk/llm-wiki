@@ -10,8 +10,8 @@ PASS=0
 FAIL=0
 TOTAL=0
 
-log_pass() { ((PASS++)); ((TOTAL++)); printf "  \033[32mPASS\033[0m: %s\n" "$1"; }
-log_fail() { ((FAIL++)); ((TOTAL++)); printf "  \033[31mFAIL\033[0m: %s — %s\n" "$1" "$2"; }
+log_pass() { PASS=$((PASS + 1)); TOTAL=$((TOTAL + 1)); printf "  \033[32mPASS\033[0m: %s\n" "$1"; }
+log_fail() { FAIL=$((FAIL + 1)); TOTAL=$((TOTAL + 1)); printf "  \033[31mFAIL\033[0m: %s — %s\n" "$1" "$2"; }
 
 echo "=== Layer 1: Structural Validation ==="
 
@@ -155,13 +155,14 @@ else
 fi
 
 echo ""
-echo "--- C4: Link integrity (See Also) ---"
+echo "--- C4: Link integrity (all body links) ---"
 
-# Extract all relative .md links from wiki articles and check they resolve
+# Extract ALL relative .md links from wiki articles and check they resolve.
+# This covers See Also, Sources, and inline body prose links.
 while IFS= read -r -d '' file; do
   bn=$(basename "$file")
   filedir=$(dirname "$file")
-  # Match ](<path>.md) — the markdown link inside See Also / Sources sections
+  # Match ](<path>.md) anywhere in the file — body prose, See Also, or Sources
   while IFS= read -r link; do
     target=$(python3 -c "import os,sys; print(os.path.normpath(sys.argv[1]))" "$filedir/$link")
     if [ -f "$target" ]; then
@@ -243,6 +244,12 @@ if [ -d "$DEFECTS" ]; then
     grep -q "nonexistent.md" "$DEFECTS/broken-link/wiki/concepts/sample-concept.md" 2>/dev/null \
       && log_pass "broken-link: C4 defect present" \
       || log_fail "broken-link: no broken link" "fixture broken"
+  }
+
+  [ -d "$DEFECTS/broken-inline-body-link" ] && {
+    grep -q "nonexistent-inline.md" "$DEFECTS/broken-inline-body-link/wiki/concepts/sample-concept.md" 2>/dev/null \
+      && log_pass "broken-inline-body-link: C4 defect present" \
+      || log_fail "broken-inline-body-link: no broken inline link" "fixture broken"
   }
 
   [ -d "$DEFECTS/dangling-source-ref" ] && {

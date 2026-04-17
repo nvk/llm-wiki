@@ -273,11 +273,13 @@ Note: thesis files use `type: thesis`, not `category`. Do not alias `theses` to 
 
 ## Report Format
 
+**User-facing output must lead with plain-English descriptions, not check codes.** The C-codes (C1, C8c, C11, etc.) are internal identifiers for cross-referencing between this file and `commands/lint.md`. They must never appear as the leading text in any line the user sees. If a code is useful for debugging, append it in parentheses at the end — but prefer omitting it entirely.
+
 ```markdown
 ## Wiki Lint Report — YYYY-MM-DD
 
 ### Summary
-- Checks run: N
+- Ran N health checks
 - Issues found: N (N critical, N warnings, N suggestions)
 - Auto-fixed: N (if --fix was used)
 
@@ -298,17 +300,17 @@ Note: thesis files use `type: thesis`, not `category`. Do not alias `theses` to 
 
 ### Projects
 - Active: N | Archived: N (in `.archive/`)
-- Missing `WHY.md` (C8a): [list of slugs]
-- Stale (C8b): [list of slugs with source-count diff]
-- Legacy `_project.md` migrated (C8c): [list of slugs]
+- Missing project rationale (WHY.md): [list of slugs]
+- Possibly stale (sources newer than artifacts): [list of slugs with source-count diff]
+- Migrated legacy manifests (_project.md → WHY.md): [list of slugs]
 
 ### Project Candidates
-- [grouped suggestions per C9, formatted as the candidate report block above]
+- [grouped suggestions, formatted as the candidate report block above]
 
-### Placement & Schema (C11/C12/C13)
-- Files moved (C11): [count, list of moves as `old → new`]
-- Files quarantined (C12): [count, list of moves to `inbox/.unknown/`]
-- Frontmatter keys rewritten (C13): [count by alias]
-- Enum values rewritten (C13): [count by alias]
-- Unknown directories (C12, warn-only): [list]
+### File Placement & Schema
+- Misplaced files moved to canonical location: [count, list of moves as `old → new`]
+- Unknown files quarantined to inbox: [count, list of moves to `inbox/.unknown/`]
+- Legacy frontmatter keys updated: [count by alias]
+- Legacy enum values updated: [count by alias]
+- Unknown directories (not auto-deleted): [list]
 ```

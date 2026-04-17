@@ -76,4 +76,10 @@ IMPORTANT: Only auto-fix issues with clear, unambiguous fixes — missing index 
 
 ### Report
 
-Present the lint report in the format specified in `references/linting.md`, including the **Projects**, **Project Candidates**, and **Placement & Schema (C11/C12/C13)** sections. Update master `_index.md` with "Last lint" date. Append to `log.md`: `## [YYYY-MM-DD] lint | N checks, N critical, N warnings, N suggestions, N candidates, N auto-fixed`
+Present the lint report in the format specified in `references/linting.md`, including the **Projects**, **Project Candidates**, and **File Placement & Schema** sections. **Lead every user-visible line with a plain-English description of what happened — never with a check code (C1, C8c, etc.).** Check codes are internal identifiers for developers; humans reading the report need to see what was found and what was fixed, not which rule triggered it.
+
+When listing a recommended fix priority, describe the action in human terms:
+- Good: `Migrate 3 legacy project manifests (_project.md → WHY.md)`
+- Bad: `C8c — migrate 3 _project.md → WHY.md`
+
+Update master `_index.md` with "Last lint" date. Append to `log.md`: `## [YYYY-MM-DD] lint | N checks, N critical, N warnings, N suggestions, N candidates, N auto-fixed`

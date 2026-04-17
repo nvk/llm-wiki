@@ -74,6 +74,19 @@ tests:
       - type: cost
         threshold: 0.50
 
+  # --- Plan flag routing ---
+  - description: "Router: research with --plan routes to research, not /wiki:plan"
+    vars:
+      prompt: "Research quantum computing threats --plan"
+    assert:
+      - type: skill-used
+        value: wiki
+      - type: llm-rubric
+        value: "Recognized as a research command with --plan flag. Routed to research (not the separate /wiki:plan command). The --plan flag should trigger parallel multi-path research planning."
+        threshold: 0.75
+      - type: cost
+        threshold: 0.50
+
   # --- Negative controls ---
   - description: "Router: ambiguous single word asks for clarification"
     vars:

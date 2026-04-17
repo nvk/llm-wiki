@@ -1,6 +1,6 @@
 ---
 description: "Deep multi-agent research on a topic, question, or thesis. Launches parallel agents to search the web, ingests sources, and compiles them into wiki articles. Thesis mode provides for/against evidence framing with a verdict."
-argument-hint: "<topic|question> [--mode thesis \"<claim>\"] [--new-topic] [--sources <N>] [--deep] [--retardmax] [--min-time <duration>] [--wiki <name>] [--local] [--project <slug>]"
+argument-hint: "<topic|question> [--plan] [--mode thesis \"<claim>\"] [--new-topic] [--sources <N>] [--deep] [--retardmax] [--min-time <duration>] [--wiki <name>] [--local] [--project <slug>]"
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:*), Bash(mkdir:*), WebFetch, WebSearch, Agent
 ---
 
@@ -19,6 +19,7 @@ Conduct deep research on the topic in $ARGUMENTS. This is an automated pipeline:
 - **--min-time <duration>**: Minimum research time. Keep running research rounds until this duration is reached. Formats: `30m`, `1h`, `2h`, `4h`. Default: single round (no minimum).
 - **--wiki <name>**: Target a specific existing topic wiki
 - **--local**: Use project-local `.wiki/`
+- **--plan**: Decompose the topic into 3-5 independent research paths, present the plan for confirmation, then execute all paths in parallel. Each path gets its own agent group (5 agents standard, 8 with `--deep`). Ingest runs in parallel across paths (each path writes unique raw files); compilation runs once after all paths complete (single pass sees all sources for better cross-referencing). Without `--plan`, research runs a single path as before. See Plan Mode below.
 - **--project <slug>**: Tag all new outputs with this project. The research playbook/summary artifact is saved inside `output/projects/<slug>/` instead of flat `output/`. Compiled wiki articles get `project: <slug>` frontmatter. If the project doesn't exist, fail early with a helpful error. See `references/projects.md` for the projects architecture.
 
 ### `--project <slug>` flag
@@ -53,9 +54,19 @@ When `--min-time` is set, create and maintain a session registry file for crash 
 {
   "session_id": "YYYY-MM-DD-HHmmss",
   "topic": "research topic",
+  "mode": "single|plan",
   "start_time": "ISO 8601",
   "min_time_budget": "2h",
   "current_round": 1,
+  "paths": [
+    {
+      "name": "Path name",
+      "focus": "What this path investigates",
+      "search_angles": ["angle1", "angle2"],
+      "status": "pending|in_progress|completed|failed",
+      "sources_ingested": 3
+    }
+  ],
   "rounds_completed": [
     {
       "round": 1,
@@ -70,6 +81,8 @@ When `--min-time` is set, create and maintain a session registry file for crash 
   "status": "in_progress"
 }
 ```
+
+The `mode` field defaults to `"single"` for backward compatibility. When `--plan` is set, `mode` is `"plan"` and `paths` is populated. For single-path sessions, `paths` is omitted. See `references/research-infrastructure.md` § Research Plan Schema for the full schema and resume protocol.
 
 **Lifecycle**:
 1. **Create** at session start (Round 1 begins)
@@ -281,6 +294,84 @@ Update frontmatter: `status: completed`, `verdict: <result>`, `confidence: <leve
 - **Final**: Synthesize verdict, update thesis file
 
 Session state uses `.thesis-session.json` instead of `.research-session.json`, tracking evidence for/against counts and current verdict direction per round. Same lifecycle: create → update → delete on completion. Resume detection: "Found interrupted thesis session (Round N, current leaning: X). Continue?"
+
+### Plan Mode (`--plan`)
+
+When `--plan` is set, insert a planning phase between Phase 1 and Phase 2. Plan mode works with topic, question, AND thesis input — it decomposes any of them into parallel paths. It is independent of `--min-time` (which controls multi-round iteration within a single path or after plan execution).
+
+#### Phase 1.5: Research Plan Generation
+
+After Phase 1 (existing knowledge check), generate a research plan:
+
+1. Based on the topic, existing wiki state, and identified gaps, decompose into 3-5 independent research paths. Each path should:
+   - Have a clear, non-overlapping scope
+   - Be searchable independently (no dependencies on other paths' findings)
+   - Target a specific aspect: foundational concepts, current state, practical applications, criticisms/limitations, adjacent connections
+
+2. Present the plan to the user:
+
+   ```
+   ## Research Plan — <topic>
+
+   ### Paths (will run in parallel)
+
+   1. **<Path name>**
+      Focus: <what this path covers>
+      Search angles: <2-3 specific search strategies>
+      Target: <N> sources
+
+   2. **<Path name>**
+      ...
+
+   ### Estimated
+   - <N> paths x <M> agents each = <total> parallel agents
+   - Target sources: <total across all paths>
+   - Compilation: single pass after all paths complete
+
+   Proceed? (y/n/edit)
+   ```
+
+3. Wait for user confirmation. If "edit", let them modify paths. If "n", abort.
+
+#### Phase 2 modification: Parallel Path Dispatch
+
+On confirmation, launch one Agent per path (single message, multiple Agent tool calls). Each path-agent receives:
+
+- Its specific focus and search angles from the plan
+- The standard agent template from `references/research-infrastructure.md`
+- Instructions to run the full search → credibility → ingest pipeline
+- A path identifier used to prefix raw file slugs for deduplication
+
+Each path-agent internally launches its own 5/8/10 sub-agents (standard/deep/retardmax) for the search phase, exactly as single-path research does today.
+
+**File ownership rule**: Each path writes to `raw/<type>/YYYY-MM-DD-<path-slug>-<source-slug>.md`. The path-slug prefix prevents filename collisions between paths.
+
+**Index updates**: Path agents skip `_index.md` updates during parallel ingest. Indexes rebuild on the next read per the Derived Index Protocol (`references/indexing.md`).
+
+#### Phase 4 modification: Cross-Path Compilation
+
+After all path agents return, run a single compilation pass that:
+
+1. Reads ALL newly ingested sources from all paths
+2. Follows the standard compilation protocol in `references/compilation.md`
+3. Draws cross-references between findings from different paths — this is the plan's primary value: the compiler sees the full picture across all paths simultaneously
+4. Creates articles that synthesize across paths where findings connect
+
+#### Phase 5 modification: Plan Report
+
+In addition to the standard report fields, include:
+
+- **Per-path breakdown**: sources found, sources ingested, key findings per path
+- **Cross-path connections**: relationships discovered during compilation that span paths
+- **Low-yield paths**: paths that returned few sources — suggest follow-up or different search angles
+
+#### Session Registry Extension
+
+When `--plan` is active, `.research-session.json` includes additional fields. See `references/research-infrastructure.md` § Research Plan Schema for the full schema. The `mode` field distinguishes plan sessions from single-path sessions. Resume detection checks `paths[].status` to re-launch only incomplete paths.
+
+#### Interaction with `--min-time`
+
+`--plan` + `--min-time` work together: Round 1 executes the full plan (all paths in parallel). The reflection step identifies remaining gaps. Round 2 generates a NEW plan targeting those gaps (typically 2-3 paths). Each round is a full plan-dispatch-compile cycle. The time budget and progress scoring apply across all rounds, same as single-path `--min-time`.
 
 ### Research Protocol (Single Round — Topic Mode)
 

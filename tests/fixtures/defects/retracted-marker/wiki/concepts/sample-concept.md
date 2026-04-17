@@ -13,7 +13,7 @@ summary: "Testing patterns for LLM tools — three-layer model with pass@k relia
 
 # Sample Concept
 
-Testing LLM-powered tools requires a layered approach. The three-layer model splits tests into structural validation (deterministic, no LLM), behavioral evals (semantic, LLM-graded), and integration scenarios (end-to-end workflows).
+Testing LLM-powered tools requires a layered approach. The three-layer model splits tests into structural validation (deterministic, no LLM), behavioral evals (semantic, LLM-graded), and integration scenarios (end-to-end workflows). For framework comparisons, see [[sample-reference|Sample Reference]] ([Sample Reference](../references/sample-reference.md)).
 
 Pass@k measures capability while pass^k measures reliability. Both metrics are needed.
 

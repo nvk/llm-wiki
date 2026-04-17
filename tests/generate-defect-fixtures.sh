@@ -47,6 +47,13 @@ sed -i.bak 's|sample-reference.md|nonexistent.md|g' \
 rm -f "$DEFECTS/broken-link/wiki/concepts/sample-concept.md.bak"
 echo "  Created: broken-link (C4)"
 
+# C4: broken-inline-body-link — inline body prose link points to nonexistent article
+cp -r "$GOLDEN" "$DEFECTS/broken-inline-body-link"
+sed -i.bak 's|(../references/sample-reference.md)|(../references/nonexistent-inline.md)|' \
+  "$DEFECTS/broken-inline-body-link/wiki/concepts/sample-concept.md"
+rm -f "$DEFECTS/broken-inline-body-link/wiki/concepts/sample-concept.md.bak"
+echo "  Created: broken-inline-body-link (C4)"
+
 # C4b: dangling-source-ref — sources: entry points to deleted file
 cp -r "$GOLDEN" "$DEFECTS/dangling-source-ref"
 sed -i.bak '/^  - raw\/papers/a\

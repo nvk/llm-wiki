@@ -99,3 +99,15 @@ After refreshing:
 - Update each article's `verified` frontmatter to today
 - Append to `log.md`: `## [YYYY-MM-DD] refresh | N articles checked, M updated, K flagged, J retracted`
 - Append same to hub `log.md`
+
+### Scheduled Refresh
+
+For recurring freshness checks, use Claude Code's `/loop` command:
+
+```
+/loop 1d /wiki:refresh --due --wiki <name>
+```
+
+This checks overdue articles once daily while your session is open. The loop persists across `/resume` and expires after 7 days (re-create as needed).
+
+For unattended scheduling, `/schedule` creates cloud-based routines — but these require the wiki to be in a git-cloneable repo (not local-only iCloud storage). If your wiki is local, `/loop` is the recommended approach.

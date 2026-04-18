@@ -246,15 +246,15 @@ Note: thesis files use `type: thesis`, not `category`. Do not alias `theses` to 
 
 ### C14: Freshness (Warning/Info)
 
-Checks whether compiled wiki articles are due for freshness review based on their `volatility` tier and `verified` date. This is the temporal complement to C8b (project staleness) — C14 operates on individual articles, C8b on project-level source chains.
+Computes a composite freshness score (0-100) for each compiled wiki article based on four dimensions: source freshness, verification recency, compilation recency, and source chain integrity. Each dimension contributes 0-25 points, with decay curves scaled by the article's `volatility` tier. See `wiki-structure.md` § Freshness Score for the full formula.
 
-- [ ] For each wiki article with both `volatility` and `verified` fields, compute days since `verified`
-- [ ] Compare against tier threshold: `hot` = 30 days, `warm` = 90 days, `cold` = 365 days
-- [ ] Flag articles past their threshold
+- [ ] For each wiki article with `volatility` and `verified` fields, compute the four-dimension composite score
+- [ ] Read `freshness_threshold` from `config.md` (default: 70 if not set)
+- [ ] Flag articles scoring below the threshold
 
-**Severity**: Warning for `hot` and `warm` articles past threshold. Info for `cold` articles past threshold (Lindy Effect — cold content that hasn't changed is likely stable, not stale).
+**Severity**: Warning for `hot` and `warm` articles below threshold. Info for `cold` articles below threshold (Lindy Effect — cold content scoring low is unusual and worth noting, but rarely urgent).
 
-**Output**: `Possibly stale: [article] — last verified [date], volatility [tier]. Run /wiki:refresh [path]`
+**Output**: `Freshness score [score]/100: [article] — source age [avg days], verified [days] ago, compiled [days] ago, [N/M] sources intact. Run /wiki:refresh [path]`
 
 **Auto-fix**: None. Freshness requires human judgment — automated recompilation risks the "confident wrong answer" problem where stale content is replaced by hallucinated content.
 
@@ -295,7 +295,7 @@ Flags wiki articles that lack the `volatility` field. New articles should always
 | **C12** Unknown directory | **Warn only** — never auto-delete |
 | **C13** Legacy frontmatter key | Rewrite key to canonical per alias table |
 | **C13** Legacy enum value | Rewrite value to canonical per alias table |
-| **C14** Article past freshness threshold | **Warn/Info only** — freshness requires human judgment. Report and suggest `/wiki:refresh`. |
+| **C14** Article below freshness score threshold | **Warn/Info only** — composite score below `freshness_threshold` (default 70). Report score breakdown and suggest `/wiki:refresh`. |
 | **C15** Missing volatility field | Add `volatility: warm` and `verified: <updated>` — safe defaults |
 
 ## Report Format

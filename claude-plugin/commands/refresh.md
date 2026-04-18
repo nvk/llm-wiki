@@ -77,16 +77,17 @@ When `--due` is set:
 1. Read all wiki articles (glob `wiki/**/*.md`, exclude `_index.md`)
 2. For each, read `volatility` and `verified` from frontmatter
 3. Compute days since verified
-4. Filter to articles past their tier's threshold (hot>30d, warm>90d, cold>365d)
-5. Sort by overdue days (most overdue first)
-6. Present as numbered list:
+4. Read `freshness_threshold` from `config.md` (default: 70)
+5. Filter to articles scoring below the threshold
+6. Sort by score ascending (lowest freshness first)
+7. Present as numbered list:
 
 ```
 ### Articles due for freshness review
 
-1. [NVIDIA Spark Specs](wiki/topics/nvidia-spark.md) — hot, verified 62 days ago (32 days overdue)
-2. [CLI UX Patterns](wiki/concepts/cli-ux-patterns.md) — warm, verified 105 days ago (15 days overdue)
-3. [TCP/IP Fundamentals](wiki/references/tcp-ip.md) — cold, verified 400 days ago (35 days overdue)
+1. [NVIDIA Spark Specs](wiki/topics/nvidia-spark.md) — score 42/100 (hot, sources 120d old, unverified 62d)
+2. [CLI UX Patterns](wiki/concepts/cli-ux-patterns.md) — score 65/100 (warm, sources 105d old, unverified 105d)
+3. [TCP/IP Fundamentals](wiki/references/tcp-ip.md) — score 94/100 (cold, stable — informational only)
 
 Enter numbers (e.g. 1,2), "all", or "skip":
 ```

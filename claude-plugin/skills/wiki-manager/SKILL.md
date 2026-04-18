@@ -143,6 +143,7 @@ Automatically run a quick structural check when any of these triggers occur:
 - **When the skill activates** and the wiki hasn't been linted in 7+ days (check "Last lint" in `_index.md`)
 - **When content is found in the wrong place** — articles in the global hub instead of a topic sub-wiki
 - **When a user mentions wiki problems** — "wiki is broken", "empty", "missing", "wrong"
+- **When no wiki exists** (first-run) — switch to guided onboarding flow instead of showing a command list. Walk the user through topic selection → init → first action suggestion. See `commands/wiki.md` § "If no wiki exists".
 
 ### Quick Structure Check (lightweight, runs inline — not a full lint)
 

@@ -165,16 +165,49 @@ Show wiki status. Before reading any `_index.md`, stale-check it: count `.md` fi
 
 ### If no wiki exists and no "init" argument
 
-Tell the user:
+The user is new or hasn't initialized a wiki yet. Instead of dumping a command list, walk them through getting started.
 
-> No wiki found. Create one with:
-> - `/wiki init quantum-computing` — topic wiki at HUB/topics/quantum-computing/
-> - `/wiki init ml` — topic wiki at HUB/topics/ml/
-> - `/wiki init notes --local` — project-local wiki at .wiki/
+**Step 1: Welcome and orient.** Explain what llm-wiki does in one sentence, then ask what they want to research:
+
+> **Welcome to llm-wiki** — a knowledge base that researches topics, ingests sources, and compiles them into articles you can query.
 >
-> Each topic gets its own wiki with isolated indexes and articles. Queries automatically peek across topic wikis for relevant overlap.
+> To get started, what topic would you like to research? For example:
+> - Quantum computing
+> - Nutrition and supplements
+> - Kubernetes deployment patterns
 >
-> To change where the hub lives (e.g., iCloud Drive): `/wiki config hub-path <path>`
+> Just tell me the topic, and I'll set everything up.
+
+**Step 2: On user response,** derive a slug from their topic (lowercase, hyphens, max 40 chars) and run the full init protocol:
+1. Create the hub if it doesn't exist (`~/wiki/` with wikis.json, _index.md, log.md, topics/)
+2. Create the topic wiki at `HUB/topics/<slug>/` with full directory structure
+3. Register in wikis.json and update hub _index.md
+4. Create config.md using the user's topic description
+
+**Step 3: After init completes,** suggest the immediate next action based on what's most likely useful:
+
+> **Wiki created at `~/wiki/topics/<slug>/`**
+>
+> What would you like to do first?
+>
+> 1. **Research** — I'll search the web and build your knowledge base automatically
+>    → Just say: `/wiki:research "<your topic>" --wiki <slug>`
+>
+> 2. **Add a specific source** — paste a URL or file path
+>    → Just say: `/wiki:ingest <url>`
+>
+> 3. **Import existing notes** — drop files into `~/wiki/topics/<slug>/inbox/`
+>    → Then run: `/wiki:ingest --inbox`
+
+Do NOT show the full command reference, config options, or advanced flags during onboarding. Keep it to these three options. The user can discover the rest via `/wiki` (status view) once they have a wiki.
+
+**Permission hint (one-time):** If this is the first wiki being created, also append:
+
+> **Tip:** Research sessions fetch many URLs. To skip approval prompts, add this to your project's `.claude/settings.local.json`:
+> ```json
+> "WebFetch", "WebSearch"
+> ```
+> in the `permissions.allow` array.
 
 ---
 

@@ -87,6 +87,19 @@ tests:
       - type: cost
         threshold: 0.50
 
+  # --- Onboarding flow ---
+  - description: "First-run: no wiki shows guided onboarding, not just command list"
+    vars:
+      prompt: "What can you help me with?"
+    assert:
+      - type: skill-used
+        value: wiki
+      - type: llm-rubric
+        value: "If no wiki exists, showed a welcoming onboarding message asking what topic the user wants to research, rather than just dumping a list of commands. If a wiki already exists, showed status."
+        threshold: 0.75
+      - type: cost
+        threshold: 0.50
+
   # --- Negative controls ---
   - description: "Router: ambiguous single word asks for clarification"
     vars:

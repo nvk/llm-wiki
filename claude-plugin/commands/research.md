@@ -543,7 +543,7 @@ For each high-quality source (up to --sources count, ranked by quality score):
    - **Articles updated**: list with what was added
    - **Confidence map**: which claims are high/medium/low confidence and why
    - **New connections**: cross-references discovered between new and existing articles
-   - **Remaining gaps**: what's still not covered
+   - **Remaining gaps**: what's still not covered (numbered list — used by gap-closing offer below)
    - **Suggested follow-ups**: specific subtopics for next round (or manual `/wiki:research` commands)
    - **Time spent**: this round / total elapsed (if --min-time)
    - **Progress score**: 0-100, calculated as:
@@ -554,3 +554,32 @@ For each high-quality source (up to --sources count, ranked by quality score):
      - Score interpretation: 0-40 = minimal, 41-70 = moderate, 71-90 = strong, 91-100 = comprehensive
    - **Cumulative progress** (if --min-time): total across all rounds, round-over-round delta
    - **Termination recommendation**: If progress score ≥ 80 AND remaining gaps are low-priority AND cross-reference density is high (>60% of articles linked) → "Research quality ceiling reached. Consider early completion." If progress score < 40 → "Low yield this round. Consider: different search terms, --deep mode, or narrower topic focus."
+
+#### Gap-Closing Offer
+
+After presenting the report, if there are 2 or more remaining gaps, offer to close them using `--plan` parallel research. Present the gaps as a numbered list and let the user pick which ones to pursue:
+
+```
+### Close gaps?
+
+Pick which gaps to research in parallel (all run at once):
+
+1. Dose-response curves for red vs near-infrared wavelengths
+2. Long-term safety data for daily exposure
+3. Device comparison (clinical vs consumer panels)
+4. Combination protocols with other therapies
+5. Pediatric and geriatric contraindications
+
+Enter numbers (e.g. 1,2,4), "all", or "skip":
+```
+
+On user selection:
+- Parse the selected numbers into research paths
+- Each selected gap becomes a path in a `--plan` dispatch
+- Launch immediately — no second confirmation needed (the user just chose)
+- The selected gaps inherit the current session's flags (`--deep`, `--wiki`, `--project`, etc.)
+- After all paths complete, run the standard cross-path compilation and report
+
+On "skip" or if fewer than 2 gaps remain: end normally.
+
+This offer also appears after `--plan` rounds complete (the cross-path compilation may surface new gaps). It does NOT appear during `--min-time` multi-round research — those rounds manage their own gap-to-round pipeline via the reflection protocol.

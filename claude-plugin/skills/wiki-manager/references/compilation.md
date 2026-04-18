@@ -59,6 +59,8 @@ Read `wiki/_index.md` and category indexes. For each key concept:
 
    When Phase 2b credibility scores are available, use them directly. When compiling without a preceding research phase (e.g., manual ingest → compile), assess credibility inline.
 
+When creating or updating a wiki article, set `volatility` and `verified` in frontmatter. Default `volatility` to `warm`. Set `verified` to today's date. If the article's sources are primarily news/trends (type: articles with recent ingestion dates), suggest `hot`. If sources are foundational papers, historical references, or mathematical content, suggest `cold`. The author can override during review.
+
 **For updated articles:**
 
 1. Read the existing article

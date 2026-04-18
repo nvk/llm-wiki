@@ -7,6 +7,8 @@ created: 2026-01-02
 updated: 2026-01-02
 tags: [testing, frameworks, tools]
 confidence: high
+volatility: warm
+verified: 2026-01-02
 summary: "Eval frameworks — Promptfoo (YAML, language-agnostic) vs DeepEval (Python, richer metrics)."
 ---
 

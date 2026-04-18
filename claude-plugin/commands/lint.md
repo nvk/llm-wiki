@@ -68,6 +68,12 @@ Scan `output/` for architectural violations and migration candidates:
 
 For each C9d cluster, output a ready-to-paste `/wiki:project new` + `/wiki:project add` block. Never auto-moved — grouping is a human decision.
 
+#### 13. C14: Freshness (Warning/Info)
+For each wiki article with `volatility` and `verified` fields, compute days since verified and compare against tier threshold (hot=30d, warm=90d, cold=365d). Flag articles past their threshold. See `references/linting.md` § C14.
+
+#### 14. C15: Missing Volatility (Info)
+Flag wiki articles lacking the `volatility` field. See `references/linting.md` § C15.
+
 ### If --fix
 
 For each fixable issue, apply the auto-fix from the rules table in `references/linting.md`. Report what was fixed.

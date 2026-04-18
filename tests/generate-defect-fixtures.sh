@@ -106,6 +106,24 @@ cp -r "$GOLDEN" "$DEFECTS/unknown-file"
 echo "this is not a markdown file" > "$DEFECTS/unknown-file/raw/stray.txt"
 echo "  Created: unknown-file (C12)"
 
+# C14: stale-article — hot article verified over 30 days ago
+cp -r "$GOLDEN" "$DEFECTS/stale-article"
+sed -i.bak 's/volatility: warm/volatility: hot/' \
+  "$DEFECTS/stale-article/wiki/concepts/sample-concept.md"
+sed -i.bak 's/verified: 2026-01-01/verified: 2025-01-01/' \
+  "$DEFECTS/stale-article/wiki/concepts/sample-concept.md"
+rm -f "$DEFECTS/stale-article/wiki/concepts/sample-concept.md.bak"
+echo "  Created: stale-article (C14)"
+
+# C15: missing-volatility — article without volatility field
+cp -r "$GOLDEN" "$DEFECTS/missing-volatility"
+sed -i.bak '/^volatility:/d' \
+  "$DEFECTS/missing-volatility/wiki/concepts/sample-concept.md"
+sed -i.bak '/^verified:/d' \
+  "$DEFECTS/missing-volatility/wiki/concepts/sample-concept.md"
+rm -f "$DEFECTS/missing-volatility/wiki/concepts/sample-concept.md.bak"
+echo "  Created: missing-volatility (C15)"
+
 COUNT=$(ls -d "$DEFECTS"/*/ 2>/dev/null | wc -l | tr -d ' ')
 echo ""
 echo "Generated $COUNT defect fixtures"

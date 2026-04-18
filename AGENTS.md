@@ -265,6 +265,10 @@ Remove a regretted source and clean up its downstream effects. Requires `--reaso
 
 `--dry-run` shows blast radius without making changes. If a source is the only source for an article, warn prominently.
 
+### Refresh
+
+Freshness check for wiki articles. Re-fetches source URLs, detects changes (cosmetic, additive, contradictory), and presents a human-gated assessment. Three tiers: source check → change assessment → action decision (skip/update/flag/retract). `--due` flag shows all articles past their volatility threshold. Never auto-recompiles — human confirms every change.
+
 ### Lint
 
 Health checks with auto-fix capability. Lint **is** the migration path — there is no separate `/wiki:migrate` command. A file in the wrong place from an old wiki layout and a file in the wrong place from user error are treated as the same defect. Two layers:

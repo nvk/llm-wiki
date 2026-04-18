@@ -92,6 +92,19 @@ while IFS= read -r -d '' file; do
   esac
 done < <(find "$GOLDEN/wiki" -name "*.md" -not -name "_index.md" -print0)
 
+# volatility enum
+while IFS= read -r -d '' file; do
+  bn=$(basename "$file")
+  # Check volatility field (new schema)
+  vol=$(grep "^volatility:" "$file" | head -1 | sed 's/volatility: *//')
+  if [ -n "$vol" ]; then
+    case "$vol" in
+      hot|warm|cold) log_pass "valid volatility '$vol' in $bn" ;;
+      *) log_fail "invalid volatility '$vol' in $bn" "expected hot|warm|cold" ;;
+    esac
+  fi
+done < <(find "$GOLDEN/wiki" -name "*.md" -not -name "_index.md" -print0)
+
 echo ""
 echo "--- C3: Index consistency ---"
 
@@ -275,6 +288,19 @@ if [ -d "$DEFECTS" ]; then
     [ -f "$DEFECTS/unknown-file/raw/stray.txt" ] \
       && log_pass "unknown-file: C12 defect present" \
       || log_fail "unknown-file: no stray file" "fixture broken"
+  }
+
+  [ -d "$DEFECTS/stale-article" ] && {
+    grep -q "volatility: hot" "$DEFECTS/stale-article/wiki/concepts/sample-concept.md" 2>/dev/null \
+      && grep -q "verified: 2025-01-01" "$DEFECTS/stale-article/wiki/concepts/sample-concept.md" 2>/dev/null \
+      && log_pass "stale-article: C14 defect present" \
+      || log_fail "stale-article: no stale volatility/verified" "fixture broken"
+  }
+
+  [ -d "$DEFECTS/missing-volatility" ] && {
+    ! grep -q "^volatility:" "$DEFECTS/missing-volatility/wiki/concepts/sample-concept.md" 2>/dev/null \
+      && log_pass "missing-volatility: C15 defect present" \
+      || log_fail "missing-volatility: volatility field still present" "fixture broken"
   }
 else
   echo ""

@@ -244,6 +244,31 @@ Note: thesis files use `type: thesis`, not `category`. Do not alias `theses` to 
 
 **When the tables are empty** (current state), C13 only runs the unknown-key warning — alias rewriting is a no-op. This is the honest default: we have no backward-compat debt yet, so advertising alias entries would be fiction. First real rename → first real alias entry.
 
+### C14: Freshness (Warning/Info)
+
+Checks whether compiled wiki articles are due for freshness review based on their `volatility` tier and `verified` date. This is the temporal complement to C8b (project staleness) — C14 operates on individual articles, C8b on project-level source chains.
+
+- [ ] For each wiki article with both `volatility` and `verified` fields, compute days since `verified`
+- [ ] Compare against tier threshold: `hot` = 30 days, `warm` = 90 days, `cold` = 365 days
+- [ ] Flag articles past their threshold
+
+**Severity**: Warning for `hot` and `warm` articles past threshold. Info for `cold` articles past threshold (Lindy Effect — cold content that hasn't changed is likely stable, not stale).
+
+**Output**: `Possibly stale: [article] — last verified [date], volatility [tier]. Run /wiki:refresh [path]`
+
+**Auto-fix**: None. Freshness requires human judgment — automated recompilation risks the "confident wrong answer" problem where stale content is replaced by hallucinated content.
+
+### C15: Missing Volatility (Info)
+
+Flags wiki articles that lack the `volatility` field. New articles should always have volatility set during compilation.
+
+- [ ] For each `.md` file in `wiki/` (excluding `_index.md`), check for `volatility` field in frontmatter
+- [ ] Flag files missing the field
+
+**Severity**: Info (not blocking — existing wikis predate this field).
+
+**Auto-fix**: Add `volatility: warm` and `verified: <updated date from frontmatter>` — safe defaults that put the article into the standard monitoring cadence.
+
 ## Auto-Fix Rules (when --fix is set)
 
 | Issue | Auto-Fix Action |
@@ -270,6 +295,8 @@ Note: thesis files use `type: thesis`, not `category`. Do not alias `theses` to 
 | **C12** Unknown directory | **Warn only** — never auto-delete |
 | **C13** Legacy frontmatter key | Rewrite key to canonical per alias table |
 | **C13** Legacy enum value | Rewrite value to canonical per alias table |
+| **C14** Article past freshness threshold | **Warn/Info only** — freshness requires human judgment. Report and suggest `/wiki:refresh`. |
+| **C15** Missing volatility field | Add `volatility: warm` and `verified: <updated>` — safe defaults |
 
 ## Report Format
 

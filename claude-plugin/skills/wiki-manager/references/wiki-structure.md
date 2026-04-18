@@ -172,7 +172,7 @@ Append-only chronological activity log. Every wiki operation appends an entry. N
 
 Each entry: `## [YYYY-MM-DD] operation | Description`
 
-Operations: `init`, `ingest`, `compile`, `query`, `lint`, `research`, `output`
+Operations: `init`, `ingest`, `compile`, `query`, `lint`, `research`, `output`, `refresh`
 
 Useful for: `grep "^## \[" log.md | tail -10` to see recent activity.
 
@@ -225,6 +225,8 @@ updated: YYYY-MM-DD
 tags: [tag1, tag2]
 aliases: [alternate names for Obsidian discovery]
 confidence: high|medium|low
+volatility: hot|warm|cold
+verified: YYYY-MM-DD
 summary: "2-3 sentence summary for index"
 ---
 
@@ -249,6 +251,20 @@ This ensures both Obsidian (reads [[wikilink]]) and the agent (follows relative 
 
 - [Source Title](../../raw/type/file.md) — what this source contributed
 ```
+
+## Volatility Classification
+
+Wiki articles carry a `volatility` field that controls how quickly they're flagged for freshness review. The `verified` field records when a human last confirmed the article's conclusions are still accurate.
+
+| Tier | Staleness threshold | When to use | Examples |
+|------|-------------------|-------------|----------|
+| `hot` | 30 days | Fast-moving sources: product specs, pricing, current events, competitive landscape | NVIDIA Spark specs, election results, API changelog |
+| `warm` | 90 days | Quarterly-to-annual cadence: best practices, framework comparisons, market analysis | Testing patterns, CLI UX patterns, market positioning |
+| `cold` | 365 days | Foundational concepts, historical events, mathematical proofs, stable reference | TCP/IP fundamentals, Lindy Effect, cryptographic algorithms |
+
+Default is `warm`. The compilation agent sets volatility based on source characteristics: news/trends sources suggest `hot`, foundational/historical sources suggest `cold`. Authors can override.
+
+The Lindy Effect applies to cold content: knowledge that has survived a year without needing updates is more likely to remain valid, not less. Lint treats cold staleness as informational, not a warning.
 
 ## Dual-Link Convention
 

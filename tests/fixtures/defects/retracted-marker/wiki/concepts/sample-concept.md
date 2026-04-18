@@ -8,6 +8,8 @@ created: 2026-01-01
 updated: 2026-01-02
 tags: [testing, patterns, evals]
 confidence: high
+volatility: warm
+verified: 2026-01-01
 summary: "Testing patterns for LLM tools — three-layer model with pass@k reliability metrics."
 ---
 

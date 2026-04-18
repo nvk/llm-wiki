@@ -100,6 +100,19 @@ tests:
       - type: cost
         threshold: 0.50
 
+  # --- Refresh routing ---
+  - description: "Router: freshness check routes to refresh"
+    vars:
+      prompt: "Are my quantum computing articles still up to date?"
+    assert:
+      - type: skill-used
+        value: wiki
+      - type: llm-rubric
+        value: "Recognized as a freshness check and routed to the refresh command, not query or lint."
+        threshold: 0.75
+      - type: cost
+        threshold: 0.50
+
   # --- Negative controls ---
   - description: "Router: ambiguous single word asks for clarification"
     vars:

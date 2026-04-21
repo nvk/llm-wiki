@@ -24,19 +24,14 @@ if [ ! -f "$CODEX_MANIFEST" ]; then
 fi
 
 mkdir -p "$TARGET_PLUGIN/skills"
-# references/ is a symlink into the Claude source — exclude from rsync so it's
-# preserved, and recreate it idempotently below. agents/ is Codex-only so also
-# exclude it from --delete.
+# The Codex plugin cache is installed as a standalone bundle, so references/
+# must be copied into the generated tree instead of symlinked back into the
+# repo. agents/ is Codex-only, so exclude it from --delete and recreate it
+# below.
 rsync -a --delete \
-  --exclude='references/' \
-  --exclude='references' \
   --exclude='agents/' \
   --exclude='agents' \
   "$SOURCE_SKILL/" "$TARGET_SKILL/"
-
-# Recreate the references symlink (idempotent — works on fresh checkout too).
-rm -rf "$TARGET_SKILL/references"
-ln -s "../../../../claude-plugin/skills/wiki-manager/references" "$TARGET_SKILL/references"
 
 mkdir -p "$TARGET_SKILL/agents"
 
@@ -126,9 +121,9 @@ for old, new in replacements:
 
 skill_path.write_text(text)
 
-# references/ is a symlink to claude-plugin/skills/wiki-manager/references and
-# is shared verbatim — no per-file replacements needed. Source references use
-# runtime-neutral wording ("the agent") so they read correctly under both.
+# references/ is copied verbatim from claude-plugin/skills/wiki-manager/
+# because the installed Codex cache must be self-contained. Source references
+# use runtime-neutral wording ("the agent") so they read correctly under both.
 
 claude = json.loads(claude_manifest.read_text())
 codex = json.loads(codex_manifest.read_text())

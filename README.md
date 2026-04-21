@@ -15,7 +15,7 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 
 **v0.3.0** — **Parallel Research & Human-Readable Lint.** New `--plan` flag for `/wiki:research` decomposes a topic into 3-5 independent research paths, presents the plan for confirmation, then dispatches all paths as parallel agent groups. Parallel ingest with path-prefixed raw files (no collisions), sequential compilation for cross-path synthesis. Extends `.research-session.json` with `mode` and `paths` fields (backward-compatible). Lint reports now lead with plain-English descriptions instead of internal check codes. C4 extended to catch broken inline body links. Test counter bug fixed — all 86 assertions now run.
 
-**v0.2.1** — **Codex packaging.** Repo-local Codex plugin (`plugins/llm-wiki/`) and marketplace entry alongside the Claude plugin — same wiki-manager skill, two thin packaging layers. References are a single source of truth: the Codex tree symlinks into `claude-plugin/skills/wiki-manager/references/`. `./scripts/sync-codex-plugin.sh` regenerates the mirror; `tests/test-codex-sync.sh` catches drift inside the agent's own test loop with self-healing fix instructions. `tests/test-plugin-validate.sh` extended with 19 checks for symlink integrity, Codex manifests, and `agents/openai.yaml`.
+**v0.2.1** — **Codex packaging.** Repo-local Codex plugin (`plugins/llm-wiki/`) and marketplace entry alongside the Claude plugin — same wiki-manager skill, two thin packaging layers. `./scripts/sync-codex-plugin.sh` regenerates the mirror; `tests/test-codex-sync.sh` catches drift inside the agent's own test loop with self-healing fix instructions. `tests/test-plugin-validate.sh` extended with Codex manifest, reference bundle, and `agents/openai.yaml` checks.
 
 **v0.2.0t** — **Tests.** Three-layer test suite: structural validation (84 assertions, no LLM, runs in seconds), behavioral evals via Promptfoo with Claude Agent SDK, and GitHub Actions CI workflow. Golden wiki fixture with 11 defect variants (one per lint rule) for negative testing. `CLAUDE.md` dev guide added.
 
@@ -61,7 +61,7 @@ The Codex plugin should stay generated, not hand-maintained. Rebuild it from the
 That script:
 
 - copies `claude-plugin/skills/wiki-manager/SKILL.md` into the Codex tree and reapplies a small list of Codex-specific wording patches
-- (re)creates `plugins/llm-wiki/skills/wiki-manager/references` as a **symlink** to `claude-plugin/skills/wiki-manager/references` — references are runtime-neutral and shared verbatim, no copy
+- copies `claude-plugin/skills/wiki-manager/references/` into the Codex tree so the installed bundle stays self-contained
 - recreates `agents/openai.yaml` for Codex UI metadata
 - syncs the Codex plugin version to match `claude-plugin/.claude-plugin/plugin.json`
 
@@ -100,7 +100,7 @@ git -C ~/llm-wiki pull   # or clone if you don't have it yet
 # .agents/plugins/marketplace.json, and install (or reinstall) "LLM Wiki".
 ```
 
-The Codex plugin is generated from the same Claude source — `plugins/llm-wiki/`'s `references/` is a symlink into `claude-plugin/skills/wiki-manager/references/`, so updates land identically across both runtimes.
+The Codex plugin is generated from the same Claude source. `plugins/llm-wiki/skills/wiki-manager/references/` is copied from `claude-plugin/skills/wiki-manager/references/` during sync so the installed Codex cache has everything it needs locally.
 
 **AGENTS.md** — just pull the latest and replace:
 ```bash

@@ -2,7 +2,7 @@
 
 > This is an "idea file" in the spirit of [Karpathy's LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f). Paste it into any LLM agent (OpenAI Codex, Claude Code, OpenCode, Gemini Code Assist, or similar) and it will build and manage a wiki for you. The agent customizes the specifics; this file communicates the system.
 
-> **Editing the llm-wiki repo itself?** This file is the portable wiki *protocol* for end users. The dev contract for the plugin codebase (testing, sync workflow, project structure, symlink invariant) lives in [`CLAUDE.md`](CLAUDE.md) — read it in addition to this file. Both Claude Code and Codex agents working on the repo should treat `CLAUDE.md` as the source of truth for repo-level workflow.
+> **Editing the llm-wiki repo itself?** This file is the portable wiki *protocol* for end users. The dev contract for the plugin codebase (testing, sync workflow, project structure, and the self-contained Codex bundle) lives in [`CLAUDE.md`](CLAUDE.md) — read it in addition to this file. Both Claude Code and Codex agents working on the repo should treat `CLAUDE.md` as the source of truth for repo-level workflow.
 
 ## What This Is
 

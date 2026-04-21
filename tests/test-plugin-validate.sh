@@ -10,8 +10,8 @@ PASS=0
 FAIL=0
 TOTAL=0
 
-log_pass() { ((PASS++)); ((TOTAL++)); printf "  \033[32mPASS\033[0m: %s\n" "$1"; }
-log_fail() { ((FAIL++)); ((TOTAL++)); printf "  \033[31mFAIL\033[0m: %s — %s\n" "$1" "$2"; }
+log_pass() { PASS=$((PASS + 1)); TOTAL=$((TOTAL + 1)); printf "  \033[32mPASS\033[0m: %s\n" "$1"; }
+log_fail() { FAIL=$((FAIL + 1)); TOTAL=$((TOTAL + 1)); printf "  \033[31mFAIL\033[0m: %s — %s\n" "$1" "$2"; }
 
 echo "=== Plugin Validation ==="
 
@@ -82,29 +82,27 @@ echo "=== Codex Mirror Validation ==="
 CODEX_PLUGIN="$PROJECT_ROOT/plugins/llm-wiki"
 CODEX_SKILL="$CODEX_PLUGIN/skills/wiki-manager"
 
-# References symlink: must be a symlink AND must resolve AND each of the 9
-# expected reference files must be reachable through it. This is the only
-# Codex-side failure mode test-codex-sync.sh cannot detect — git diff doesn't
-# traverse symlinks and the sync script doesn't read through this one either.
+# References directory: the generated Codex bundle must carry a real copy of
+# the reference docs so the installed plugin cache is self-contained.
 echo ""
-echo "--- References symlink ---"
-REFS_LINK="$CODEX_SKILL/references"
-if [ -L "$REFS_LINK" ]; then
-  log_pass "references is a symlink"
-  if [ -e "$REFS_LINK" ]; then
-    log_pass "references symlink resolves"
-    for ref in command-prelude compilation hub-resolution indexing ingestion linting projects research-infrastructure wiki-structure; do
-      if [ -f "$REFS_LINK/${ref}.md" ]; then
-        log_pass "references/$ref.md reachable via symlink"
-      else
-        log_fail "references/$ref.md not reachable via symlink" "broken target"
-      fi
-    done
+echo "--- References directory ---"
+REFS_DIR="$CODEX_SKILL/references"
+if [ -d "$REFS_DIR" ]; then
+  log_pass "references directory exists"
+  if [ -L "$REFS_DIR" ]; then
+    log_fail "references is a symlink" "installed Codex bundles must be self-contained"
   else
-    log_fail "references symlink target does not exist" "$(readlink "$REFS_LINK")"
+    log_pass "references is a real directory"
   fi
+  for ref in command-prelude compilation hub-resolution indexing ingestion linting projects research-infrastructure wiki-structure; do
+    if [ -f "$REFS_DIR/${ref}.md" ]; then
+      log_pass "references/$ref.md exists in Codex bundle"
+    else
+      log_fail "references/$ref.md missing from Codex bundle" "missing file"
+    fi
+  done
 else
-  log_fail "references is not a symlink" "expected symlink to claude-plugin source"
+  log_fail "references directory missing" "Codex bundle is incomplete"
 fi
 
 # Codex plugin manifest

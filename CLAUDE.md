@@ -36,9 +36,9 @@ Requires `ANTHROPIC_API_KEY`. Costs ~$2-5 per run.
 - **Changed frontmatter schema** (new required field, renamed enum): update the golden wiki fixture files to match, update `test-structure.sh` field/enum lists, regenerate defect fixtures.
 - **Added a new command**: add a frontmatter check to `test-plugin-validate.sh` if it's not picked up by the wildcard. Add a behavioral eval in `promptfooconfig.yaml` for routing.
 - **Changed the fuzzy router**: add or update test cases in `promptfooconfig.yaml` covering the new routing behavior plus negative controls.
-- **Added a new reference file**: `test-plugin-validate.sh` has two `for ref in ...` loops (one Claude-side existence, one Codex-side symlink reachability) — add the new filename to both.
+- **Added a new reference file**: `test-plugin-validate.sh` has two `for ref in ...` loops (one Claude-side existence, one Codex-bundle existence) — add the new filename to both.
 - **Changed directory structure** (new `raw/` or `wiki/` subdirectory): update `test-structure.sh` C1 directory list and C11 placement checks. Update the golden wiki fixture if needed.
-- **Edited `claude-plugin/skills/wiki-manager/`**: `test-codex-sync.sh` will fail until you re-run `./scripts/sync-codex-plugin.sh` and commit `plugins/llm-wiki/`. Never edit `plugins/llm-wiki/skills/wiki-manager/` by hand — it is generated, and `references/` is a symlink into the Claude source.
+- **Edited `claude-plugin/skills/wiki-manager/`**: `test-codex-sync.sh` will fail until you re-run `./scripts/sync-codex-plugin.sh` and commit `plugins/llm-wiki/`. Never edit `plugins/llm-wiki/skills/wiki-manager/` by hand — it is generated, and `references/` is copied from the Claude source into a self-contained Codex bundle.
 - **Added a Codex-specific text rewrite to the sync script**: also update `scripts/sync-codex-plugin.sh`'s SKILL.md replacement list. References are runtime-neutral and shared verbatim — do not add per-file replacements there.
 
 ### Test file locations
@@ -62,7 +62,7 @@ claude-plugin/                  — source of truth, primary distribution target
 plugins/llm-wiki/               — generated Codex packaging mirror (do NOT hand-edit)
   skills/wiki-manager/
     SKILL.md                    — patched copy of claude-plugin SKILL.md
-    references → ../../../../claude-plugin/skills/wiki-manager/references  (symlink)
+    references/*.md             — copied reference docs for the self-contained Codex bundle
     agents/openai.yaml          — Codex UI metadata (generated)
   .codex-plugin/plugin.json     — Codex manifest (version synced from Claude)
 .agents/plugins/marketplace.json — repo-local Codex marketplace entry

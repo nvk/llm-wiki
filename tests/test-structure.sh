@@ -264,6 +264,19 @@ if [ -d "$DEFECTS" ]; then
       || log_fail "retracted-marker: no marker" "fixture broken"
   }
 
+  [ -d "$DEFECTS/duplicate-tags" ] && {
+    grep -q "tags: \[ml, patterns\]" "$DEFECTS/duplicate-tags/raw/articles/2026-01-01-sample-article.md" 2>/dev/null \
+      && grep -q "tags: \[machine-learning, patterns, evals\]" "$DEFECTS/duplicate-tags/wiki/concepts/sample-concept.md" 2>/dev/null \
+      && log_pass "duplicate-tags: C5 defect present" \
+      || log_fail "duplicate-tags: defect not correct" "fixture broken"
+  }
+
+  [ -d "$DEFECTS/orphan-source" ] && {
+    [ -f "$DEFECTS/orphan-source/raw/articles/2026-01-03-orphan.md" ] \
+      && log_pass "orphan-source: C6 defect present" \
+      || log_fail "orphan-source: no orphan file" "fixture broken"
+  }
+
   [ -d "$DEFECTS/misplaced-file" ] && {
     [ -f "$DEFECTS/misplaced-file/wiki/references/sample-concept.md" ] \
       && grep -q "^category: concept" "$DEFECTS/misplaced-file/wiki/references/sample-concept.md" 2>/dev/null \

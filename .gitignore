@@ -5,3 +5,9 @@
 
 # macOS
 .DS_Store
+
+# Generated test artifacts
+tests/fixtures/defects/
+tests/workspace/
+tests/results.json
+tests/.promptfoo/

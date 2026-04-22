@@ -96,6 +96,38 @@ Drift between the two trees is caught by `./tests/test-codex-sync.sh`, which run
 
 Practical rule: design workflows first for Claude commands and behavior, but keep the underlying knowledge model and references runtime-neutral. The Codex wrapper should adapt invocation and metadata, not fork the wiki logic.
 
+## Nono Sandbox Permissions
+
+If you run Claude Code inside a [nono](https://github.com/nicholasgasior/nono) sandbox, the wiki needs filesystem access beyond the default `claude-code` profile. Add these to your nono profile (e.g., `~/.config/nono/profiles/custom-ai.json`):
+
+```json
+{
+  "extends": "claude-code",
+  "policy": {
+    "add_allow_read": [
+      "$HOME/.config/llm-wiki"
+    ],
+    "add_allow_readwrite": [
+      "$HOME/wiki"
+    ]
+  }
+}
+```
+
+If your wiki lives on iCloud Drive, use the resolved path (nono follows symlinks):
+
+```json
+"add_allow_readwrite": [
+  "$HOME/Library/Mobile Documents/com~apple~CloudDocs/wiki"
+]
+```
+
+**What each path does:**
+- `$HOME/.config/llm-wiki` (read) — hub path config file
+- `$HOME/wiki` or iCloud path (readwrite) — the wiki data itself
+
+Without these, Seatbelt silently blocks file access — reads return empty, writes disappear, and the plugin looks broken with no error messages. Use `nono why --profile <profile> --path <path> --op read` to diagnose access issues.
+
 ## Upgrade
 
 **Claude Code** — if `claude plugin update` pulls the latest correctly:

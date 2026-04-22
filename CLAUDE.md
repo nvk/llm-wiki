@@ -74,6 +74,12 @@ plugins/llm-wiki/               — generated Codex packaging mirror (do NOT han
   .codex-plugin/plugin.json     — Codex manifest (version synced from Claude)
 .agents/plugins/marketplace.json — repo-local Codex marketplace entry
 scripts/sync-codex-plugin.sh    — regenerates plugins/llm-wiki/ from claude-plugin/
+scripts/sync-cowork-plugin.sh   — regenerates cowork/ from claude-plugin/
+cowork/                         — generated Cowork packaging mirror (do NOT hand-edit)
+  skills/wiki-manager/
+    SKILL.md                    — patched copy for non-technical Cowork users
+    references → ../../../claude-plugin/skills/wiki-manager/references  (symlink)
+  .claude-plugin/plugin.json    — Cowork manifest (version synced from Claude)
 AGENTS.md                       — portable single-file protocol for non-Claude agents
 tests/                          — test suite (see above)
 ```

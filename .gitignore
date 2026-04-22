@@ -3,5 +3,9 @@
 .claude/worktrees/
 .claude/plans/
 
+# Codex local/project-local state
+.codex/
+.tmp/
+
 # macOS
 .DS_Store

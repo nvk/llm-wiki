@@ -10,33 +10,47 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
 
 ## Test
 
-3. **Invoke `/wiki status`** — verify the skill resolves and shows the hub status table
+2. **Run structural + Codex packaging checks**:
+   ```bash
+   ./scripts/sync-codex-plugin.sh
+   ./tests/test-plugin-validate.sh
+   ./tests/test-structure.sh
+   ./tests/test-codex-sync.sh
+   ./tests/test-codex-runtime.sh
+   ```
+
+3. **Invoke `/wiki status` in Claude Code** — verify the skill resolves and shows the hub status table
    - If `/wiki` doesn't resolve, check that `~/.claude/commands/wiki.md` shim exists (delegates to `wiki:wiki`)
 
-4. **Test the changed feature** — whatever was added/fixed in this release:
+4. **Invoke `@wiki test` in Codex** — verify the plugin resolves from a fresh session
+   - For repo-local validation, run `./scripts/bootstrap-codex-plugin.sh --scope project --verify`
+   - If verify reports `PENDING`, open `/plugins`, enable `LLM Wiki`, restart Codex if needed, and rerun the verify command
+   - If project scope fails outright, confirm the project is trusted before assuming the plugin is broken
+
+5. **Test the changed feature** — whatever was added/fixed in this release:
    - Invoke the relevant `/wiki:*` subcommand
    - Confirm expected behavior, no errors
 
-5. **Spot-check routing** (if routing changed):
+6. **Spot-check routing** (if routing changed):
    - `/wiki <url>` → should route to ingest
    - `/wiki what is X?` → should route to query
    - `/wiki research Y` → should route to research
 
 ## Ship
 
-6. **Commit version bumps** — both files in one commit:
+7. **Commit version bumps** — both files in one commit:
    ```bash
    git add .claude-plugin/marketplace.json claude-plugin/.claude-plugin/plugin.json
    git commit -m "Bump to v0.0.XX"
    ```
 
-7. **Push to master**:
+8. **Push to master**:
    ```bash
    git push origin <branch>:master
    ```
    - If in a worktree: `git push origin worktree-<name>:master`
 
-8. **Create GitHub release**:
+9. **Create GitHub release**:
    ```bash
    GH_TOKEN="" gh release create v0.0.XX \
      --repo nvk/llm-wiki \
@@ -54,7 +68,7 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
    - `GH_TOKEN=""` is required to clear a bad env token and use `gh auth` credentials
    - Release title format: `v0.0.XX — <Feature Name>`
 
-9. **Update plugin cache** (so local Claude Code picks up new version):
+10. **Update plugin cache** (so local Claude Code picks up new version):
    ```bash
    # The marketplace repo auto-pulls on `claude plugin install`
    # But for dev: symlink or copy to cache
@@ -63,7 +77,10 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
    ```
    - Or just run `claude plugin install llm-wiki` if marketplace is updated
 
-10. **Verify install** — start a fresh Claude Code session and run `/wiki status`
+11. **Verify install**:
+   - Claude Code: start a fresh session and run `/wiki status`
+   - Codex: start a fresh session and run `@wiki test` or `./scripts/verify-codex-plugin.sh --scope project`
+   - If the verify script reports `PENDING`, finish the first-time enable in `/plugins` and rerun it
 
 ## Post-ship: README
 
@@ -84,8 +101,11 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
 
 ## Notes
 
-- Plugin name in marketplace: `wiki@llm-wiki`
-- Plugin cache path: `~/.claude/plugins/cache/llm-wiki/wiki/<version>/`
-- Marketplace repo: `~/.claude/plugins/marketplaces/llm-wiki/`
+- Claude marketplace plugin name: `wiki@llm-wiki`
+- Codex plugin invocation name: `@wiki`
+- Claude plugin cache path: `~/.claude/plugins/cache/llm-wiki/wiki/<version>/`
+- Claude marketplace repo: `~/.claude/plugins/marketplaces/llm-wiki/`
+- Codex project config path: `<project>/.codex/config.toml` (local, gitignored in this repo)
+- Codex user config path: `~/.codex/config.toml`
 - Hub wiki path: `~/Library/Mobile Documents/com~apple~CloudDocs/wiki/`
 - The `/wiki` bare command needs `~/.claude/commands/wiki.md` shim (user-level, not in repo)

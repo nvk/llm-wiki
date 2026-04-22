@@ -12,6 +12,12 @@ Run tests before declaring any change to plugin code done.
 ./tests/test-codex-sync.sh         # Codex plugin mirror matches Claude source
 ```
 
+### Codex runtime smoke test (run when touching Codex packaging/docs)
+
+```bash
+./tests/test-codex-runtime.sh      # bootstrap + headless prompt-input check for @wiki
+```
+
 `test-codex-sync.sh` is self-healing: if it fails, the sync script has already
 regenerated `plugins/llm-wiki/` — stage and commit the result, then re-run.
 Read its FAIL message; it tells you exactly what to do.
@@ -40,6 +46,7 @@ Requires `ANTHROPIC_API_KEY`. Costs ~$2-5 per run.
 - **Changed directory structure** (new `raw/` or `wiki/` subdirectory): update `test-structure.sh` C1 directory list and C11 placement checks. Update the golden wiki fixture if needed.
 - **Edited `claude-plugin/skills/wiki-manager/`**: `test-codex-sync.sh` will fail until you re-run `./scripts/sync-codex-plugin.sh` and commit `plugins/llm-wiki/`. Never edit `plugins/llm-wiki/skills/wiki-manager/` by hand — it is generated, and `references/` is a symlink into the Claude source.
 - **Added a Codex-specific text rewrite to the sync script**: also update `scripts/sync-codex-plugin.sh`'s SKILL.md replacement list. References are runtime-neutral and shared verbatim — do not add per-file replacements there.
+- **Changed Codex install docs or bootstrap flow**: run `./tests/test-codex-runtime.sh` to verify the bootstrap flow either resolves `@wiki` from a clean scratch Codex home or cleanly reports that `/plugins` still needs to be opened once for first-time materialization.
 
 ### Test file locations
 

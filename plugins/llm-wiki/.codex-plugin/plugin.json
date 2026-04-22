@@ -1,5 +1,5 @@
 {
-  "name": "llm-wiki",
+  "name": "wiki",
   "version": "0.3.3",
   "description": "LLM-compiled knowledge bases for Codex. Build topic-scoped wikis, ingest sources, compile articles, query, lint, research, and generate outputs.",
   "author": {

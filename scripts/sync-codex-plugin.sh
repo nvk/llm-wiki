@@ -83,7 +83,7 @@ text = frontmatter + text[end + 5 :]
 replacements = [
     (
         "You manage an LLM-compiled knowledge base. Source documents are ingested into `raw/`, then incrementally compiled into a wiki of interconnected markdown articles. Claude Code is both the compiler and the query engine — no Obsidian, no external tools.\n",
-        "You manage an LLM-compiled knowledge base. Source documents are ingested into `raw/`, then incrementally compiled into a wiki of interconnected markdown articles. Codex is both the compiler and the query engine.\n\n## Codex Plugin Notes\n\nCodex plugins package skills, MCP servers, apps, and metadata. They do not register Claude-style custom `/wiki:*` commands. Treat any `/wiki`, `/wiki:*`, or command-flag examples in this skill and its references as shorthand for the same workflow expressed in natural language, or via explicit invocation such as `@llm-wiki` or `@wiki-manager`.\n",
+        "You manage an LLM-compiled knowledge base. Source documents are ingested into `raw/`, then incrementally compiled into a wiki of interconnected markdown articles. Codex is both the compiler and the query engine.\n\n## Codex Plugin Notes\n\nCodex plugins package skills, MCP servers, apps, and metadata. They do not register Claude-style custom `/wiki:*` commands. Treat any `/wiki`, `/wiki:*`, or command-flag examples in this skill and its references as shorthand for the same workflow expressed in natural language, or via explicit invocation such as `@wiki` or `@wiki-manager`.\n",
     ),
     (
         "**Dual-linking for Obsidian + Claude.** Cross-references use both `[[wikilink]]` (for Obsidian graph view) and standard markdown `[text](path)` (for Claude navigation) on the same line: `[[slug|Name]] ([Name](../category/slug.md))`. Bidirectional when it makes sense.",
@@ -91,7 +91,7 @@ replacements = [
     ),
     (
         "When this skill activates outside of an explicit `/wiki:*` command:",
-        "When this skill activates outside of an explicit `@llm-wiki`, `@wiki-manager`, or `/wiki`-style shorthand:",
+        "When this skill activates outside of an explicit `@wiki`, `@wiki-manager`, or `/wiki`-style shorthand:",
     ),
     (
         '4. If no relevant content → answer normally, optionally suggest: "This could be added to your wiki with `/wiki:ingest`"',
@@ -133,6 +133,7 @@ skill_path.write_text(text)
 claude = json.loads(claude_manifest.read_text())
 codex = json.loads(codex_manifest.read_text())
 codex["version"] = claude["version"]
+codex["name"] = "wiki"
 codex["license"] = claude.get("license", codex.get("license"))
 codex["homepage"] = claude.get("homepage", codex.get("homepage", "https://github.com/nvk/llm-wiki"))
 codex["repository"] = claude.get("repository", codex.get("repository", "https://github.com/nvk/llm-wiki"))

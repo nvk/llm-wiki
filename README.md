@@ -33,7 +33,34 @@ claude plugin install wiki@llm-wiki
 ```
 
 **OpenAI Codex** (repo-local plugin):
-Use the repo-local marketplace in this repo, then install `LLM Wiki` from Codex's `/plugins` UI. The plugin lives at `plugins/llm-wiki/` and is a thin wrapper around the same wiki-manager skill.
+
+Quickstart (recommended, project-local):
+```bash
+git clone https://github.com/nvk/llm-wiki.git
+cd llm-wiki
+./scripts/bootstrap-codex-plugin.sh --scope project --verify
+```
+
+This does two things:
+- registers this checkout as the `llm-wiki-local` marketplace in your selected Codex home
+- writes a managed `@wiki` enable block to `.codex/config.toml` in the current project
+
+If the verify step prints `PENDING`, Codex has the marketplace and config but still wants the interactive `/plugins` enable/materialization step for the first local install. Open `/plugins`, enable `LLM Wiki`, restart Codex if needed, then rerun `./scripts/verify-codex-plugin.sh --scope project`.
+
+Manual `/plugins` install:
+```bash
+codex plugin marketplace add /absolute/path/to/llm-wiki
+# Then open /plugins in Codex, enable "LLM Wiki", and invoke it as @wiki
+```
+
+Troubleshooting:
+- Project scope requires a trusted project. If `.codex/config.toml` exists but `@wiki` does not resolve, trust the project and rerun `./scripts/verify-codex-plugin.sh --scope project`.
+- If the helper reports that `llm-wiki-local` already points at another checkout, Codex already has a conflicting local marketplace entry in this `HOME`. Remove/re-add that marketplace or use the checkout that already owns it.
+- A fresh local install may need one interactive `/plugins` enable before headless verification works. The verify script reports this as `PENDING`, not a silent failure.
+- Restart Codex after changing config if an existing session does not pick up the new plugin state.
+- If `~/.codex/config.toml` is symlinked into dotfiles and user scope writes fail, use `--scope project` instead or make the target writable.
+- If you run Codex under a sandbox wrapper like `nono`, Codex needs its own profile allowances for `~/.codex`, any symlink targets, and the wiki data paths.
+- The Codex plugin lives at `plugins/llm-wiki/` and is a thin wrapper around the same wiki-manager skill.
 
 **OpenAI Codex / Any LLM Agent** (idea file):
 ```bash
@@ -96,18 +123,21 @@ cp -R "$REPO/.claude-plugin" "$REPO/commands" "$REPO/skills" "$DEST/$VERSION/"
 **Codex** — pull the repo and reinstall from the local marketplace:
 ```bash
 git -C ~/llm-wiki pull   # or clone if you don't have it yet
-# In Codex, open /plugins, point at the repo's marketplace at
-# .agents/plugins/marketplace.json, and install (or reinstall) "LLM Wiki".
+cd ~/llm-wiki
+./scripts/bootstrap-codex-plugin.sh --scope project --verify
 ```
 
-The Codex plugin is generated from the same Claude source — `plugins/llm-wiki/`'s `references/` is a symlink into `claude-plugin/skills/wiki-manager/references/`, so updates land identically across both runtimes.
+The Codex plugin is generated from the same Claude source — `plugins/llm-wiki/`'s `references/` is a symlink into `claude-plugin/skills/wiki-manager/references/`, so updates land identically across both runtimes. If `--verify` reports `PENDING`, finish the first-time enable in `/plugins` and rerun the verify command.
 
 **AGENTS.md** — just pull the latest and replace:
 ```bash
 curl -sL https://raw.githubusercontent.com/nvk/llm-wiki/master/AGENTS.md > ~/your-project/AGENTS.md
 ```
 
-Check your installed version: look for the version in `/wiki` status output or check `~/.claude/plugins/installed_plugins.json`.
+Check your installed version:
+- Claude Code: look for the version in `/wiki` status output or check `~/.claude/plugins/installed_plugins.json`
+- Codex: run `./scripts/verify-codex-plugin.sh --scope project` (or `--scope user`) and confirm the resolved skill path points at this repo
+- If the verify script reports `PENDING`, finish the first-time enable in `/plugins` and rerun it
 
 > **New to a topic? One command, from anywhere:**
 > ```

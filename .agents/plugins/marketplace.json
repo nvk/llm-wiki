@@ -5,7 +5,7 @@
   },
   "plugins": [
     {
-      "name": "llm-wiki",
+      "name": "wiki",
       "source": {
         "source": "local",
         "path": "./plugins/llm-wiki"

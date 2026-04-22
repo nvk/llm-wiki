@@ -70,31 +70,34 @@ cp AGENTS.md ~/your-project/AGENTS.md
 
 The `AGENTS.md` file contains the complete wiki protocol as a single portable document — works with any LLM agent that can read/write files and search the web.
 
-## Claude-First, Codex-Compatible
+## Claude-First, Multi-Runtime
 
-If Claude Code is the principal user, do not try to make one plugin manifest serve both runtimes. Keep one shared behavior layer and two thin packaging layers:
+Claude Code is the principal user. One shared behavior layer, three thin packaging layers:
 
-- `claude-plugin/` is the primary distribution target and UX surface.
-- `claude-plugin/skills/wiki-manager/` is the behavioral source of truth.
-- `plugins/llm-wiki/` is the Codex packaging target.
-- `.agents/plugins/marketplace.json` makes the Codex plugin installable from this repo.
+- `claude-plugin/` — primary distribution target and UX surface (Claude Code CLI, Desktop, Web, IDE extensions).
+- `claude-plugin/skills/wiki-manager/` — behavioral source of truth. All wiki logic lives here.
+- `plugins/llm-wiki/` — Codex packaging target (generated, do not hand-edit).
+- `cowork/` — Cowork packaging target for non-technical org users (generated, do not hand-edit).
+- `.agents/plugins/marketplace.json` — makes the Codex plugin installable from this repo.
 
-The Codex plugin should stay generated, not hand-maintained. Rebuild it from the Claude source of truth with:
+Each runtime target is generated from the Claude source and stays generated:
 
 ```bash
-./scripts/sync-codex-plugin.sh
+./scripts/sync-codex-plugin.sh   # regenerates plugins/llm-wiki/
+./scripts/sync-cowork-plugin.sh  # regenerates cowork/
 ```
 
-That script:
+Both scripts:
 
-- copies `claude-plugin/skills/wiki-manager/SKILL.md` into the Codex tree and reapplies a small list of Codex-specific wording patches
-- (re)creates `plugins/llm-wiki/skills/wiki-manager/references` as a **symlink** to `claude-plugin/skills/wiki-manager/references` — references are runtime-neutral and shared verbatim, no copy
-- recreates `agents/openai.yaml` for Codex UI metadata
-- syncs the Codex plugin version to match `claude-plugin/.claude-plugin/plugin.json`
+- copy `claude-plugin/skills/wiki-manager/SKILL.md` into the target tree and reapply runtime-specific wording patches
+- (re)create `references/` as a **symlink** to `claude-plugin/skills/wiki-manager/references/` — references are runtime-neutral and shared verbatim, no copy
+- sync the plugin version to match `claude-plugin/.claude-plugin/plugin.json`
 
-Drift between the two trees is caught by `./tests/test-codex-sync.sh`, which runs the sync script and fails (with a self-healing fix instruction) if `plugins/` differs from `HEAD`. This runs alongside the other structural tests, so any LLM following the test-before-done rule catches a missed sync inside its own loop.
+The Codex script also creates `agents/openai.yaml` for Codex UI metadata. The Cowork script rewrites the SKILL.md description for non-technical users (natural language instead of slash commands, folder-picker guidance instead of `~/wiki/`).
 
-Practical rule: design workflows first for Claude commands and behavior, but keep the underlying knowledge model and references runtime-neutral. The Codex wrapper should adapt invocation and metadata, not fork the wiki logic.
+Drift is caught by sync tests (`test-codex-sync.sh`, `test-cowork-sync.sh`), which run the sync scripts and fail with self-healing fix instructions if the generated trees differ from `HEAD`.
+
+Practical rule: design workflows for Claude Code commands and behavior first. Keep references runtime-neutral. Packaging layers adapt invocation style and metadata, never fork wiki logic.
 
 ## Nono Sandbox Permissions
 

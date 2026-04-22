@@ -10,8 +10,8 @@ PASS=0
 FAIL=0
 TOTAL=0
 
-log_pass() { ((PASS++)); ((TOTAL++)); printf "  \033[32mPASS\033[0m: %s\n" "$1"; }
-log_fail() { ((FAIL++)); ((TOTAL++)); printf "  \033[31mFAIL\033[0m: %s — %s\n" "$1" "$2"; }
+log_pass() { PASS=$((PASS + 1)); TOTAL=$((TOTAL + 1)); printf "  \033[32mPASS\033[0m: %s\n" "$1"; }
+log_fail() { FAIL=$((FAIL + 1)); TOTAL=$((TOTAL + 1)); printf "  \033[31mFAIL\033[0m: %s — %s\n" "$1" "$2"; }
 
 echo "=== Plugin Validation ==="
 

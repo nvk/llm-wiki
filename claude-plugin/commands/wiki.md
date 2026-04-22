@@ -110,6 +110,7 @@ The user typed something that isn't a known keyword. Detect their intent and rou
 | 8 | **Output** | "write a summary", "generate a report", "slides", "create a", "write a" | `Skill: wiki:output` with the request |
 | 9 | **Assess** | "compare to", "assess", "gap analysis" | `Skill: wiki:assess` |
 | 10 | **Plan** | "plan for", "implementation plan", "architecture for" | `Skill: wiki:plan` |
+| 10b | **Lessons Learned** | "learn this", "learn that", "lesson learned", "lessons learned", "absorb this", "capture what we learned", "what did we learn", "session takeaways", "ll" | `Skill: wiki:ll` with the topic hint |
 | 11 | **Retract** | "remove source", "retract", "delete source", "pull out" | `Skill: wiki:retract` |
 | 12 | **Project (new)** | "new project", "start a project", "create project" (+ slug and goal) | `Skill: wiki:project` with `new <slug> "goal"` |
 | 13 | **Project (list)** | "list projects", "what projects", "show projects", "my projects" | `Skill: wiki:project` with `list` |

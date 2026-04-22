@@ -63,7 +63,7 @@ When `--retardmax` is set:
 
 3. **Generate**: Create the artifact in the format specified for the output type. Draw domain content from the primary wiki and craft/technique guidance from `--with` wikis.
 
-3. **Save**: Write to `output/{type}-{topic-slug}-{YYYY-MM-DD}.md` with frontmatter:
+3. **Save**: Write to `output/{type}-{topic-slug}-{YYYY-MM-DD}.md`. Follow core principle #9 (chunked writes): Write frontmatter + first section, then Edit to append remaining sections. With frontmatter:
    ```
    ---
    title: "Output Title"

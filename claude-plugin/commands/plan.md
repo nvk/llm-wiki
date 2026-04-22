@@ -195,7 +195,7 @@ Technical specification:
 
 ## Stage 6: Save & Log
 
-1. **Save** to `output/plan-{slug}-{YYYY-MM-DD}.md` with frontmatter:
+1. **Save** to `output/plan-{slug}-{YYYY-MM-DD}.md`. Follow core principle #9 (chunked writes): Write the frontmatter + executive summary first, then use sequential Edit calls to append each phase/section. With frontmatter:
    ```
    ---
    title: "Plan: {goal}"

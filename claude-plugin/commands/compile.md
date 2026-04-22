@@ -31,8 +31,8 @@ Read the compilation protocol at `skills/wiki-manager/references/compilation.md`
    - Decide: create new article, update existing, or mention within another article
    - Classify new articles as concept, topic, or reference
 
-5. **Write/Update articles**: Follow the protocol in `references/compilation.md`:
-   - New articles: full frontmatter, abstract, body, See Also, Sources
+5. **Write/Update articles**: Follow the protocol in `references/compilation.md` and core principle #9 (chunked writes):
+   - New articles: Write frontmatter + abstract first, then Edit to append body, See Also, Sources
    - Updated articles: use Edit to integrate new information, update frontmatter dates
    - Every article must link to at least one other via See Also
 

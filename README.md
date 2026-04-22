@@ -11,6 +11,12 @@
 
 LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, thesis-driven investigation, source ingestion, wiki compilation, querying, and artifact generation. Ships as a Claude Code plugin, an OpenAI Codex plugin, or a portable AGENTS.md for any other LLM agent. Obsidian-compatible.
 
+---
+
+[Install](#install) · [Quick Start](#quick-start) · [Commands](#commands) · [How It Works](#how-it-works) · [Research Modes](#research-modes) · [Thesis Research](#thesis-driven-research) · [Query Depths](#query-depths) · [Linking](#linking-works-everywhere) · [Obsidian](#obsidian-integration) · [Architecture](#claude-first-codex-compatible) · [Nono Sandbox](#nono-sandbox-permissions) · [Upgrade](#upgrade) · [Changelog](#changelog) · [Credits](#credits)
+
+---
+
 ## Changelog
 
 **v0.3.6** — **Codex Bootstrap & Runtime Guidance.** Added a first-class Codex bootstrap helper that registers the local marketplace and writes managed `@wiki` enable config, plus a headless verify script and smoke test for the generated Codex plugin. The new verifier distinguishes real misconfiguration from Codex's current first-install `/plugins` materialization behavior and reports a concrete `PENDING` next step instead of failing opaquely. README, repo workflow docs, and release checklist now document the Codex-local install path and troubleshooting.

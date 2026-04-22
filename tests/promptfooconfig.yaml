@@ -113,6 +113,31 @@ tests:
       - type: cost
         threshold: 0.50
 
+  # --- Librarian routing ---
+  - description: "Router: quality scan routes to librarian"
+    vars:
+      prompt: "Scan my wiki for quality issues and stale articles"
+    assert:
+      - type: skill-used
+        value: wiki
+      - type: llm-rubric
+        value: "Recognized as a librarian/quality scan request and routed to the librarian command, not lint or refresh."
+        threshold: 0.75
+      - type: cost
+        threshold: 0.50
+
+  - description: "Router: librarian report routes correctly"
+    vars:
+      prompt: "Show me the librarian report"
+    assert:
+      - type: skill-used
+        value: wiki
+      - type: llm-rubric
+        value: "Recognized as a request for the librarian report, not a generic query."
+        threshold: 0.75
+      - type: cost
+        threshold: 0.50
+
   # --- Negative controls ---
   - description: "Router: ambiguous single word asks for clarification"
     vars:

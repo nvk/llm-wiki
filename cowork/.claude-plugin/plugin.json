@@ -1,0 +1,18 @@
+{
+  "name": "wiki",
+  "version": "0.3.6",
+  "description": "Research any topic, build a knowledge base, ask questions, and generate reports. Works with local folders \u2014 mount your wiki folder in Cowork to get started.",
+  "author": {
+    "name": "nvk"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/nvk/llm-wiki",
+  "repository": "https://github.com/nvk/llm-wiki",
+  "keywords": [
+    "wiki",
+    "knowledge-base",
+    "research",
+    "cowork",
+    "non-technical"
+  ]
+}

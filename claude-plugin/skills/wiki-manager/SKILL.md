@@ -104,6 +104,9 @@ Flow: Scan indexes for summary/tag matches → Grep full-text → rank results �
 ### Output
 Flow: Gather relevant articles → generate artifact (summary/report/slides/etc) → save to `output/` → update indexes.
 
+### Lessons Learned (ll)
+Flow: Scan session for error→fix patterns, corrections, discoveries → extract structured lessons → write to `raw/notes/` with `type: lessons-learned` → optionally update relevant articles → optionally suggest CLAUDE.md rules.
+
 ## Links: File Paths and URLs
 
 Terminal links break when they wrap to a second line. Rules for all wiki operations:

@@ -10,10 +10,11 @@ providers:
   - id: anthropic:claude-agent-sdk
     config:
       model: claude-sonnet-4-6
-      working_dir: ./tests/workspace
+      # Paths here resolve relative to this config file.
+      working_dir: ./workspace
       plugins:
         - type: local
-          path: ./claude-plugin
+          path: ../claude-plugin
       append_allowed_tools: ['Skill', 'Read', 'Write', 'Edit', 'Bash', 'Glob', 'Grep']
       permission_mode: acceptEdits
       max_budget_usd: 2.00

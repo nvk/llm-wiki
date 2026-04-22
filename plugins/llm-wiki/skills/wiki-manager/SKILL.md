@@ -14,7 +14,7 @@ You manage an LLM-compiled knowledge base. Source documents are ingested into `r
 
 ## Codex Plugin Notes
 
-Codex plugins package skills, MCP servers, apps, and metadata. They do not register Claude-style custom `/wiki:*` commands. Treat any `/wiki`, `/wiki:*`, or command-flag examples in this skill and its references as shorthand for the same workflow expressed in natural language, or via explicit invocation such as `@llm-wiki` or `@wiki-manager`.
+Codex plugins package skills, MCP servers, apps, and metadata. They do not register Claude-style custom `/wiki:*` commands. Treat any `/wiki`, `/wiki:*`, or command-flag examples in this skill and its references as shorthand for the same workflow expressed in natural language, or via explicit invocation such as `@wiki` or `@wiki-manager`.
 
 ## Hub Path
 
@@ -61,9 +61,11 @@ See [references/wiki-structure.md](references/wiki-structure.md) for the complet
 
 8. **Multi-wiki awareness.** When querying, answer from the primary wiki first. Then peek at sibling wiki indexes (via `HUB/wikis.json`) for relevant overlap. Flag connections but never merge content across wikis.
 
+9. **Chunk large writes.** Never create files longer than ~200 lines in a single Write call — the API stream idles during large generations, causing timeout errors. Write the skeleton (frontmatter + headers + first section) first, then use sequential Edit calls to append remaining sections. For plans, articles, and raw notes: write one section per tool call.
+
 ## Ambient Behavior
 
-When this skill activates outside of an explicit `@llm-wiki`, `@wiki-manager`, or `/wiki`-style shorthand:
+When this skill activates outside of an explicit `@wiki`, `@wiki-manager`, or `/wiki`-style shorthand:
 
 1. Resolve the hub path (see Hub Path section above), then check if `HUB/_index.md` or `.wiki/_index.md` exists
 2. Read the master `_index.md` to assess if the wiki might cover the user's question

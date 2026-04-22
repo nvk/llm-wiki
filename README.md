@@ -33,7 +33,7 @@ claude plugin install wiki@llm-wiki
 ```
 
 **OpenAI Codex** (repo-local plugin):
-Use the repo-local marketplace in this repo, then install `LLM Wiki` from Codex's `/plugins` UI. The plugin lives at `plugins/llm-wiki/` and is a thin wrapper around the same wiki-manager skill.
+Use the repo-local marketplace in this repo, then install `LLM Wiki` from Codex's `/plugins` UI. Invoke it as `@wiki` (or `@wiki-manager`). The plugin lives at `plugins/llm-wiki/` and is a thin wrapper around the same wiki-manager skill.
 
 **OpenAI Codex / Any LLM Agent** (idea file):
 ```bash

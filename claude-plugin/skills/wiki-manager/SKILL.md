@@ -5,7 +5,8 @@ description: >
   directories, mentions knowledge base management, asks knowledge questions
   in a project with a wiki, wants to ingest/compile/query/lint knowledge,
   or uses /wiki commands. Also activates when user says "wiki", "knowledge base",
-  "ingest", "compile wiki", "add to wiki", "search wiki", or asks a factual
+  "ingest", "compile wiki", "add to wiki", "search wiki", "librarian",
+  "scan quality", "article quality", "content review", or asks a factual
   question in a directory containing .wiki/ or when ~/wiki/ exists or the
   configured hub path exists (check ~/.config/llm-wiki/config.json for hub_path).
 tools:
@@ -67,6 +68,8 @@ See [references/wiki-structure.md](references/wiki-structure.md) for the complet
 7. **Honest gaps.** When answering questions, if the wiki doesn't have the answer, say so. Never hallucinate. Suggest what to ingest to fill the gap.
 
 8. **Multi-wiki awareness.** When querying, answer from the primary wiki first. Then peek at sibling wiki indexes (via `HUB/wikis.json`) for relevant overlap. Flag connections but never merge content across wikis.
+
+9. **Chunk large writes.** Never create files longer than ~200 lines in a single Write call — the API stream idles during large generations, causing timeout errors. Write the skeleton (frontmatter + headers + first section) first, then use sequential Edit calls to append remaining sections. For plans, articles, and raw notes: write one section per tool call.
 
 ## Ambient Behavior
 

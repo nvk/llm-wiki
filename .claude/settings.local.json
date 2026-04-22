@@ -70,7 +70,11 @@
       "Bash(curl -s \"https://raw.githubusercontent.com/bitcoin/bips/master/README.mediawiki\")",
       "Bash(curl -s \"https://raw.githubusercontent.com/bitcoin/bips/master/bip-0003.md\")",
       "Skill(wiki:research)",
-      "Bash(find /Users/nvk -name config.json -path *llm-wiki*)"
+      "Bash(find /Users/nvk -name config.json -path *llm-wiki*)",
+      "Bash(./tests/test-structure.sh)",
+      "Bash(./tests/test-plugin-validate.sh)",
+      "Bash(./tests/test-codex-sync.sh)",
+      "Skill(wiki:wiki)"
     ]
   }
 }

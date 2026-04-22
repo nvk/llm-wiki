@@ -199,7 +199,7 @@ In `--retardmax` mode: add rabbit-hole agents + skip decomposition confirmation.
 - Reference articles for tools, examples, and further reading
 
 **Step 4: Generate playbook.** After compilation, automatically create an output artifact:
-- Save to `output/playbook-{slug}-{YYYY-MM-DD}.md`
+- Save to `output/playbook-{slug}-{YYYY-MM-DD}.md` following core principle #9 (chunked writes): Write frontmatter + intro first, then Edit to append each section
 - Structure: the original question, key findings per sub-question, actionable steps, examples, sources
 - This is the deliverable — a practical, actionable answer filed back into the wiki
 

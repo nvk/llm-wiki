@@ -81,7 +81,7 @@ In `--retardmax` mode, add:
 
 #### Phase 5: Report
 
-Generate a comprehensive comparison report saved to the wiki's `output/` directory.
+Generate a comprehensive comparison report saved to the wiki's `output/` directory. Follow core principle #9 (chunked writes): Write frontmatter + executive summary first, then Edit to append each section.
 
 File: `output/assess-{repo-name}-{YYYY-MM-DD}.md`
 

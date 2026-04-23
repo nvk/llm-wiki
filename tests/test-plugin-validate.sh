@@ -180,7 +180,7 @@ if [ -L "$OC_REFS_LINK" ]; then
   log_pass "OpenCode references is a symlink"
   if [ -e "$OC_REFS_LINK" ]; then
     log_pass "OpenCode references symlink resolves"
-    for ref in command-prelude compilation hub-resolution indexing ingestion linting projects research-infrastructure wiki-structure; do
+    for ref in command-prelude compilation hub-resolution indexing ingestion librarian linting projects research-infrastructure wiki-structure; do
       if [ -f "$OC_REFS_LINK/${ref}.md" ]; then
         log_pass "OpenCode references/$ref.md reachable via symlink"
       else

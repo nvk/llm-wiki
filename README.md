@@ -129,7 +129,7 @@ Practical rule: design workflows first for Claude commands and behavior, but kee
 
 ## Nono Sandbox Permissions
 
-If you run Claude Code inside a [nono](https://github.com/nicholasgasior/nono) sandbox, the wiki needs filesystem access beyond the default `claude-code` profile. Add these to your nono profile (e.g., `~/.config/nono/profiles/custom-ai.json`):
+If you run any AI coding agent inside a [nono](https://github.com/nicholasgasior/nono) sandbox, the wiki needs filesystem access beyond the default profile. The same policy block works for Claude Code, Codex, and OpenCode — only the `extends` base changes:
 
 ```json
 {
@@ -145,7 +145,7 @@ If you run Claude Code inside a [nono](https://github.com/nicholasgasior/nono) s
 }
 ```
 
-If your wiki lives on iCloud Drive, use the resolved path (nono follows symlinks):
+Replace `"extends": "claude-code"` with `"codex"` or `"opencode"` for the other runtimes. If your wiki lives on iCloud Drive, use the resolved path (nono follows symlinks):
 
 ```json
 "add_allow_readwrite": [
@@ -156,6 +156,10 @@ If your wiki lives on iCloud Drive, use the resolved path (nono follows symlinks
 **What each path does:**
 - `$HOME/.config/llm-wiki` (read) — hub path config file
 - `$HOME/wiki` or iCloud path (readwrite) — the wiki data itself
+
+**Runtime-specific notes:**
+- **Codex** may also need `"security": { "groups": ["user_caches_macos"] }` and read access to the llm-wiki repo directory if the plugin is installed from a local marketplace checkout.
+- **OpenCode** also needs the `external_directory` permission in `opencode.json` (see [Install](#install)) — nono and OpenCode have independent sandboxes that both need the same paths allowed.
 
 Without these, Seatbelt silently blocks file access — reads return empty, writes disappear, and the plugin looks broken with no error messages. Use `nono why --profile <profile> --path <path> --op read` to diagnose access issues.
 

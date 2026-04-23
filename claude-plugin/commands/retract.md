@@ -19,7 +19,11 @@ Retract (remove) a source that was previously ingested into the wiki. This handl
 
 ### Resolve HUB and wiki
 
-Follow the standard prelude in `skills/wiki-manager/references/command-prelude.md` (variant: **wiki-required** — stop with "No wiki found." if missing).
+**Resolve the wiki.** Do NOT search the filesystem or read reference files — follow these steps:
+1. Read `$HOME/wiki/_index.md`. If it exists → HUB = `$HOME/wiki`. Skip to step 3.
+2. If not → read `$HOME/.config/llm-wiki/config.json`. Use `resolved_path` as HUB. If only `hub_path` exists, expand leading `~` only (not tildes in `com~apple~CloudDocs`), set HUB, write `resolved_path` back. If no config → HUB = `$HOME/wiki`.
+3. **Wiki location** (first match): `--local` → `.wiki/` in CWD; `--wiki <name>` → `HUB/wikis.json` lookup; CWD has `.wiki/` → use it; else → HUB.
+4. Read `<wiki>/_index.md` to verify. If missing → stop with "No wiki found."
 
 ### Phase 1: Identify the Source
 

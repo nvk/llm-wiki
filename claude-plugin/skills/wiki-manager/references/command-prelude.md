@@ -1,5 +1,10 @@
 # Command Prelude
 
+> **Note (v0.4.1):** The hub resolution steps are now inlined directly in each
+> command file. Commands no longer depend on reading this file at runtime. This
+> file remains as canonical developer documentation for the protocol, but is not
+> load-bearing for command execution.
+
 Every `/wiki:*` command starts with the same handful of steps: resolve the hub path, figure out which wiki to use, and decide what to do if no wiki exists. This file is the canonical version of those steps so each command can reference it instead of restating it.
 
 ## Why this file exists

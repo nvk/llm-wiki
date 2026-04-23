@@ -8,7 +8,11 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(mkdir:*), Bash(mv
 
 Manage projects — folders inside a topic wiki's `output/projects/` directory that group related outputs. The only required file in a project is `WHY.md`, which captures the goal/rationale in plain markdown.
 
-Follow the standard prelude in `skills/wiki-manager/references/command-prelude.md` (variant: **wiki-neutral** — see deviation below for the step-4 fallback).
+**Resolve the wiki.** Do NOT search the filesystem or read reference files — follow these steps:
+1. Read `$HOME/wiki/_index.md`. If it exists → HUB = `$HOME/wiki`. Skip to step 3.
+2. If not → read `$HOME/.config/llm-wiki/config.json`. Use `resolved_path` as HUB. If only `hub_path` exists, expand leading `~` only (not tildes in `com~apple~CloudDocs`), set HUB, write `resolved_path` back. If no config → HUB = `$HOME/wiki`.
+3. **Wiki location** (first match): `--local` → `.wiki/` in CWD; `--wiki <name>` → `HUB/wikis.json` lookup; CWD has `.wiki/` → use it; else → HUB.
+4. Read `<wiki>/_index.md` if found. Variant: **wiki-neutral** — see deviation below for the step-4 fallback.
 
 Read the projects architecture at `skills/wiki-manager/references/projects.md` for the full rationale — particularly *why* `WHY.md` is the only required file (it holds the precious, non-derivable rationale) and *why* everything else is derived from filesystem state.
 

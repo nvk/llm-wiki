@@ -19,6 +19,8 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 
 ## Changelog
 
+**v0.4.0** — **Librarian & Full Distribution Parity.** New `/wiki:librarian` command scores every article for staleness and quality — two-tier scan (metadata-fast then content-deep), checkpoint recovery, machine-readable `.librarian/scan-results.json` plus human-readable `REPORT.md`. Staleness uses exponential decay scaled by article volatility; quality measures source diversity, content depth, cross-reference density, and summary quality. AGENTS.md updated with four previously missing operations (librarian, plan, project, ll) and the `--plan` research flag. Codex and OpenCode sync script frontmatter now includes all activation keywords (librarian, scan quality, content review, lessons learned, implementation plan).
+
 **v0.3.7** — **OpenCode First-Class Support.** Added OpenCode as a third distribution target alongside Claude Code and Codex. New `scripts/sync-opencode-plugin.sh` generates `plugins/llm-wiki-opencode/` from the Claude source with OpenCode-specific wording patches. `tests/test-opencode-sync.sh` guards against drift. `test-plugin-validate.sh` extended with 15 OpenCode mirror checks (SKILL.md, references symlink, no leaked Claude Code references, README). Install via `opencode.json`'s `"instructions"` key or copy to `~/.config/opencode/AGENTS.md`. Architecture section renamed to "Claude-First, Multi-Runtime".
 
 **v0.3.6** — **Codex Bootstrap & Runtime Guidance.** Added a first-class Codex bootstrap helper that registers the local marketplace and writes managed `@wiki` enable config, plus a headless verify script and smoke test for the generated Codex plugin. The new verifier distinguishes real misconfiguration from Codex's current first-install `/plugins` materialization behavior and reports a concrete `PENDING` next step instead of failing opaquely. README, repo workflow docs, and release checklist now document the Codex-local install path and troubleshooting.
@@ -28,8 +30,6 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 **v0.3.0** — **Parallel Research & Human-Readable Lint.** New `--plan` flag for `/wiki:research` decomposes a topic into 3-5 independent research paths, presents the plan for confirmation, then dispatches all paths as parallel agent groups. Parallel ingest with path-prefixed raw files (no collisions), sequential compilation for cross-path synthesis. Extends `.research-session.json` with `mode` and `paths` fields (backward-compatible). Lint reports now lead with plain-English descriptions instead of internal check codes. C4 extended to catch broken inline body links. Test counter bug fixed — all 86 assertions now run.
 
 **v0.2.1** — **Codex packaging.** Repo-local Codex plugin (`plugins/llm-wiki/`) and marketplace entry alongside the Claude plugin — same wiki-manager skill, two thin packaging layers. References are a single source of truth: the Codex tree symlinks into `claude-plugin/skills/wiki-manager/references/`. `./scripts/sync-codex-plugin.sh` regenerates the mirror; `tests/test-codex-sync.sh` catches drift inside the agent's own test loop with self-healing fix instructions. `tests/test-plugin-validate.sh` extended with 19 checks for symlink integrity, Codex manifests, and `agents/openai.yaml`.
-
-**v0.2.0t** — **Tests.** Three-layer test suite: structural validation (84 assertions, no LLM, runs in seconds), behavioral evals via Promptfoo with Claude Agent SDK, and GitHub Actions CI workflow. Golden wiki fixture with 11 defect variants (one per lint rule) for negative testing. `CLAUDE.md` dev guide added.
 
 ## Install
 
@@ -263,6 +263,9 @@ Check your installed version:
 | `/wiki:lint` | Run health checks on the wiki |
 | `/wiki:lint --fix` | Auto-fix structural issues |
 | `/wiki:lint --deep` | Web-verify facts and suggest improvements |
+| `/wiki:librarian` | Scan all articles for staleness and quality — scored report, checkpoint recovery |
+| `/wiki:librarian --article <path>` | Scan a single article |
+| `/wiki:librarian report` | Display the latest librarian scan report |
 | `/wiki:output <type>` | Generate: summary, report, study-guide, slides, timeline, glossary, comparison |
 | `/wiki:output <type> --retardmax` | Ship it now — rough but comprehensive, iterate later |
 | `/wiki:ll` | Extract lessons learned from the current session into the wiki |

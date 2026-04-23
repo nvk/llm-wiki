@@ -106,7 +106,8 @@ The user typed something that isn't a known keyword. Detect their intent and rou
 | 5 | **Thesis** | "prove that", "is it true that", "verify", "test the claim", "test the hypothesis" | `Skill: wiki:research` with `--mode thesis "<claim>"` |
 | 6 | **Compile** | "compile", "process sources", "synthesize", "update articles" | `Skill: wiki:compile` |
 | 7 | **Lint** | "check health", "fix wiki", "broken", "problems", "cleanup" | `Skill: wiki:lint` |
-| 7b | **Refresh** | "check freshness", "still current", "up to date", "stale", "outdated", "refresh" | `Skill: wiki:refresh` |
+| 7b | **Librarian** | "librarian", "quality scan", "scan quality", "quality issues", "article quality", "content review", "review my wiki", "review articles", "librarian report", "quality report", "stale articles" | `Skill: wiki:librarian` |
+| 7c | **Refresh** | "check freshness", "still current", "up to date", "outdated", "refresh" | `Skill: wiki:refresh` |
 | 8 | **Output** | "write a summary", "generate a report", "slides", "create a", "write a" | `Skill: wiki:output` with the request |
 | 9 | **Assess** | "compare to", "assess", "gap analysis" | `Skill: wiki:assess` |
 | 10 | **Plan** | "plan for", "implementation plan", "architecture for" | `Skill: wiki:plan` |

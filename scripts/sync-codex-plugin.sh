@@ -67,10 +67,11 @@ frontmatter = """---
 name: wiki-manager
 description: >
   LLM-compiled knowledge base manager for Codex. Use it to initialize, ingest,
-  compile, query, lint, research, and generate outputs from topic-scoped wikis.
+  compile, query, lint, research, plan, and generate outputs from topic-scoped wikis.
   Activates when the user mentions wiki workflows, knowledge-base management,
-  ingestion, compilation, querying, linting, research, or uses /wiki-style
-  shorthand in a repo with .wiki/, ~/wiki/, or a configured hub path.
+  ingestion, compilation, querying, linting, research, librarian, scan quality,
+  article quality, content review, lessons learned, implementation plan, or uses
+  /wiki-style shorthand in a repo with .wiki/, ~/wiki/, or a configured hub path.
 ---
 """
 

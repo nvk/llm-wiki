@@ -225,7 +225,7 @@ Automated pipeline: search → ingest → compile. Launch parallel agents. Auto-
 4. Auto-generate a playbook output artifact (the actionable deliverable)
 5. Suggest 2-3 testable theses from findings → feed into `--mode thesis`
 
-**Modifiers**: `--new-topic` (create wiki + research in one shot), `--mode thesis "<claim>"` (thesis-driven research with for/against framing and verdict), `--min-time <duration>` (sustained multi-round research), `--sources <N>` (per round).
+**Modifiers**: `--new-topic` (create wiki + research in one shot), `--plan` (decompose into 3-5 parallel paths, confirm, dispatch all at once — parallel ingest, sequential compile), `--mode thesis "<claim>"` (thesis-driven research with for/against framing and verdict), `--min-time <duration>` (sustained multi-round research), `--sources <N>` (per round).
 
 Each agent receives a standardized prompt template: Objective, Context, Current wiki state, Constraints, Return format, Quality scoring guide (5=peer-reviewed → 1=spam). Deduplicate across agents.
 
@@ -304,6 +304,55 @@ Compare a local repo against wiki research + market.
 4. **Market scan** (3-5 parallel agents): competitors, best practices, emerging trends
 
 Output: comparison report with feature matrix, competitive landscape, and recommended actions (specific research and build suggestions).
+
+### Librarian
+
+Content-level wiki maintenance: staleness detection, quality scoring, factual verification, semantic coherence, deduplication. Produces scored reports — never modifies content without confirmation.
+
+**Subcommands**:
+- **scan**: Score all wiki articles for staleness and quality. Two-tier: quick metadata scan first, deep content read only for articles below threshold or with `volatility: hot`. Checkpoints after each article for crash recovery. Results to `.librarian/scan-results.json` and `.librarian/REPORT.md`.
+- **report**: Display the latest scan report.
+- **fix <id>**: Apply a proposed fix from the report (Phase 3 — not yet implemented).
+
+**Staleness scoring** (0-100): four dimensions at 25 points each — source freshness, verification recency, compilation recency, source chain integrity. Decay curves scaled by article `volatility` tier (hot/warm/cold).
+
+**Quality scoring** (0-100): four dimensions at 25 points each — source diversity, content depth, cross-reference density, summary quality. Articles scoring below 40 on either dimension are flagged.
+
+Flags: `--article <path>` (single article), `--resume` (from checkpoint), `--passes <list>` (staleness, quality — future: verification, coherence, dedup).
+
+### Plan
+
+Generate implementation plans grounded in wiki research. Six-stage pipeline: context assembly → interview → gap research → synthesis → plan generation → save.
+
+1. **Context assembly**: Read wiki deeply, identify relevant articles, supporting context, and knowledge gaps
+2. **Interview** (skip with `--no-interview` or `--quick`): 3-7 clarifying questions informed by wiki content
+3. **Gap research** (skip with `--no-research` or `--quick`): Targeted web searches to fill knowledge gaps
+4. **Synthesis**: Merge wiki evidence + interview answers + gap research
+5. **Plan generation**: Output in requested format
+6. **Save**: Write to `output/plan-{slug}-{date}.md`, update indexes and log
+
+**Formats**: `--format roadmap` (default — phased plan with architecture decisions), `--format rfc` (Google/Uber style), `--format adr` (Architecture Decision Records), `--format spec` (technical specification).
+
+Use `--with <wiki>` to load supplementary wikis as craft/skill context alongside the primary domain wiki.
+
+### Project
+
+Manage projects within a topic wiki. Projects are folders under `output/projects/` that group related outputs with a goal captured in `WHY.md`.
+
+- **new <slug> "goal"**: Create project directory with `WHY.md`
+- **list**: Show all projects with status and output counts
+- **show <slug>**: Display project details, WHY.md, and outputs
+- **archive <slug>**: Mark project as archived
+
+Projects are a lightweight overlay — they don't move or copy wiki content.
+
+### Lessons Learned (ll)
+
+Extract lessons from the current session — error→fix patterns, user corrections, discoveries, gotchas — and save structured knowledge to the wiki pipeline.
+
+**7-stage pipeline**: scan conversation → extract patterns → target topic wiki → write raw note → update relevant articles → suggest rule additions → log.
+
+Flags: `--dry-run` (preview without writing), `--rules` (also propose CLAUDE.md/AGENTS.md rule additions).
 
 ## Structural Guardian
 

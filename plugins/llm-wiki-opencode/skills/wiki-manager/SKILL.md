@@ -19,6 +19,8 @@ This skill is loaded as an instruction file. OpenCode does not have Claude-style
 
 OpenCode's built-in tools (`read`, `write`, `edit`, `glob`, `grep`, `bash`, `webfetch`, `websearch`) map directly to the tools this skill requires. Web search requires `OPENCODE_ENABLE_EXA=1` in the environment.
 
+**Permissions**: OpenCode sandboxes file access to the project directory. The wiki hub at `~/wiki/` is external. Add `external_directory` permissions in `opencode.json` to allow access: `{ "permission": { "external_directory": { "~/wiki/**": "allow", "~/.config/llm-wiki/**": "allow" } } }`. Alternatively, use `--local` mode to keep everything in `.wiki/` inside the project.
+
 ## Hub Path
 
 The hub defaults to `~/wiki/`. If `~/wiki/` exists and is initialized (has `_index.md`), it is used directly — no config file needed. This is the simplest, most reliable path.

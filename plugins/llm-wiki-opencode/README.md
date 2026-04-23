@@ -18,6 +18,35 @@ Or copy to your global config:
 cp plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md ~/.config/opencode/AGENTS.md
 ```
 
+## Permissions
+
+OpenCode sandboxes file access to the project directory by default. The wiki hub lives at `~/wiki/` (or a custom path), which is outside any project. Add this to your `opencode.json`:
+
+```json
+{
+  "permission": {
+    "external_directory": {
+      "~/wiki/**": "allow",
+      "~/.config/llm-wiki/**": "allow"
+    }
+  }
+}
+```
+
+If your hub is on iCloud Drive:
+```json
+{
+  "permission": {
+    "external_directory": {
+      "~/Library/Mobile Documents/com~apple~CloudDocs/wiki/**": "allow",
+      "~/.config/llm-wiki/**": "allow"
+    }
+  }
+}
+```
+
+Alternatively, use `--local` mode (`.wiki/` in the project) to avoid external path issues entirely.
+
 ## Web Search
 
 Research operations require web search. Enable it:

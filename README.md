@@ -73,7 +73,13 @@ Troubleshooting:
 Option A — load via `opencode.json`:
 ```json
 {
-  "instructions": ["path/to/llm-wiki/plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md"]
+  "instructions": ["path/to/llm-wiki/plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md"],
+  "permission": {
+    "external_directory": {
+      "~/wiki/**": "allow",
+      "~/.config/llm-wiki/**": "allow"
+    }
+  }
 }
 ```
 
@@ -82,7 +88,9 @@ Option B — copy to global config:
 cp plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md ~/.config/opencode/AGENTS.md
 ```
 
-Web search requires `export OPENCODE_ENABLE_EXA=1`. The OpenCode SKILL.md provides activation triggers, fuzzy routing, and ambient behavior. OpenCode also reads the repo's `AGENTS.md` automatically for the portable protocol.
+The `external_directory` permission is required because the wiki hub lives at `~/wiki/`, which is outside the project directory. If your hub is on iCloud, use `~/Library/Mobile Documents/com~apple~CloudDocs/wiki/**` instead. Alternatively, use `--local` mode (`.wiki/` in the project) to skip permissions entirely.
+
+Web search requires `export OPENCODE_ENABLE_EXA=1`.
 
 **Any LLM Agent** (idea file):
 ```bash

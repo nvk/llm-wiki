@@ -9,9 +9,17 @@
 
 [github.com/nvk/llm-wiki](https://github.com/nvk/llm-wiki)
 
-LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, thesis-driven investigation, source ingestion, wiki compilation, querying, and artifact generation. Ships as a Claude Code plugin, an OpenAI Codex plugin, or a portable AGENTS.md for any other LLM agent. Obsidian-compatible.
+LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, thesis-driven investigation, source ingestion, wiki compilation, querying, and artifact generation. Ships as a Claude Code plugin, an OpenAI Codex plugin, an OpenCode instruction file, or a portable AGENTS.md for any other LLM agent. Obsidian-compatible.
+
+---
+
+[Install](#install) · [Quick Start](#quick-start) · [Commands](#commands) · [How It Works](#how-it-works) · [Research Modes](#research-modes) · [Thesis Research](#thesis-driven-research) · [Query Depths](#query-depths) · [Linking](#linking-works-everywhere) · [Obsidian](#obsidian-integration) · [Architecture](#claude-first-multi-runtime) · [Nono Sandbox](#nono-sandbox-permissions) · [Upgrade](#upgrade) · [Changelog](#changelog) · [Credits](#credits)
+
+---
 
 ## Changelog
+
+**v0.3.7** — **OpenCode First-Class Support.** Added OpenCode as a third distribution target alongside Claude Code and Codex. New `scripts/sync-opencode-plugin.sh` generates `plugins/llm-wiki-opencode/` from the Claude source with OpenCode-specific wording patches. `tests/test-opencode-sync.sh` guards against drift. `test-plugin-validate.sh` extended with 15 OpenCode mirror checks (SKILL.md, references symlink, no leaked Claude Code references, README). Install via `opencode.json`'s `"instructions"` key or copy to `~/.config/opencode/AGENTS.md`. Architecture section renamed to "Claude-First, Multi-Runtime".
 
 **v0.3.6** — **Codex Bootstrap & Runtime Guidance.** Added a first-class Codex bootstrap helper that registers the local marketplace and writes managed `@wiki` enable config, plus a headless verify script and smoke test for the generated Codex plugin. The new verifier distinguishes real misconfiguration from Codex's current first-install `/plugins` materialization behavior and reports a concrete `PENDING` next step instead of failing opaquely. README, repo workflow docs, and release checklist now document the Codex-local install path and troubleshooting.
 
@@ -22,8 +30,6 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 **v0.2.1** — **Codex packaging.** Repo-local Codex plugin (`plugins/llm-wiki/`) and marketplace entry alongside the Claude plugin — same wiki-manager skill, two thin packaging layers. References are a single source of truth: the Codex tree symlinks into `claude-plugin/skills/wiki-manager/references/`. `./scripts/sync-codex-plugin.sh` regenerates the mirror; `tests/test-codex-sync.sh` catches drift inside the agent's own test loop with self-healing fix instructions. `tests/test-plugin-validate.sh` extended with 19 checks for symlink integrity, Codex manifests, and `agents/openai.yaml`.
 
 **v0.2.0t** — **Tests.** Three-layer test suite: structural validation (84 assertions, no LLM, runs in seconds), behavioral evals via Promptfoo with Claude Agent SDK, and GitHub Actions CI workflow. Golden wiki fixture with 11 defect variants (one per lint rule) for negative testing. `CLAUDE.md` dev guide added.
-
-**v0.2.0** — **Nice Cleanup.** Lint is the migration — `lint --fix` heals misplaced files and legacy layouts automatically. No migrate command needed. Projects simplified — `_project.md` manifest → plain `WHY.md`. Focus sessions removed. Thesis folded into research — `/wiki:research --mode thesis "<claim>"` replaces `/wiki:thesis`. Same logic, no duplication. Old command still works as shim. Hub resolution hardened — `resolved_path` cached in config, symlink recommended for iCloud. Tilde expansion runs at most once. −8% plugin size (3,933 → 3,610 lines) with zero rationale loss.
 
 ## Install
 
@@ -62,7 +68,23 @@ Troubleshooting:
 - If you run Codex under a sandbox wrapper like `nono`, Codex needs its own profile allowances for `~/.codex`, any symlink targets, and the wiki data paths.
 - The Codex plugin lives at `plugins/llm-wiki/` and is a thin wrapper around the same wiki-manager skill.
 
-**OpenAI Codex / Any LLM Agent** (idea file):
+**OpenCode** (instruction file):
+
+Option A — load via `opencode.json`:
+```json
+{
+  "instructions": ["path/to/llm-wiki/plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md"]
+}
+```
+
+Option B — copy to global config:
+```bash
+cp plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md ~/.config/opencode/AGENTS.md
+```
+
+Web search requires `export OPENCODE_ENABLE_EXA=1`. The OpenCode SKILL.md provides activation triggers, fuzzy routing, and ambient behavior. OpenCode also reads the repo's `AGENTS.md` automatically for the portable protocol.
+
+**Any LLM Agent** (idea file):
 ```bash
 # Copy AGENTS.md into your agent's context or project root
 cp AGENTS.md ~/your-project/AGENTS.md
@@ -70,31 +92,64 @@ cp AGENTS.md ~/your-project/AGENTS.md
 
 The `AGENTS.md` file contains the complete wiki protocol as a single portable document — works with any LLM agent that can read/write files and search the web.
 
-## Claude-First, Codex-Compatible
+## Claude-First, Multi-Runtime
 
-If Claude Code is the principal user, do not try to make one plugin manifest serve both runtimes. Keep one shared behavior layer and two thin packaging layers:
+Claude Code is the principal user. Keep one shared behavior layer and three thin packaging layers:
 
 - `claude-plugin/` is the primary distribution target and UX surface.
 - `claude-plugin/skills/wiki-manager/` is the behavioral source of truth.
 - `plugins/llm-wiki/` is the Codex packaging target.
+- `plugins/llm-wiki-opencode/` is the OpenCode packaging target.
 - `.agents/plugins/marketplace.json` makes the Codex plugin installable from this repo.
 
-The Codex plugin should stay generated, not hand-maintained. Rebuild it from the Claude source of truth with:
+Both runtime mirrors are generated, not hand-maintained. Rebuild from the Claude source of truth:
 
 ```bash
-./scripts/sync-codex-plugin.sh
+./scripts/sync-codex-plugin.sh      # regenerates plugins/llm-wiki/
+./scripts/sync-opencode-plugin.sh   # regenerates plugins/llm-wiki-opencode/
 ```
 
-That script:
+Each sync script:
 
-- copies `claude-plugin/skills/wiki-manager/SKILL.md` into the Codex tree and reapplies a small list of Codex-specific wording patches
-- (re)creates `plugins/llm-wiki/skills/wiki-manager/references` as a **symlink** to `claude-plugin/skills/wiki-manager/references` — references are runtime-neutral and shared verbatim, no copy
-- recreates `agents/openai.yaml` for Codex UI metadata
-- syncs the Codex plugin version to match `claude-plugin/.claude-plugin/plugin.json`
+- copies `claude-plugin/skills/wiki-manager/SKILL.md` into the target tree and reapplies a small list of runtime-specific wording patches
+- (re)creates `references` as a **symlink** to `claude-plugin/skills/wiki-manager/references` — references are runtime-neutral and shared verbatim, no copy
+- (Codex only) recreates `agents/openai.yaml` for Codex UI metadata and syncs the plugin version
 
-Drift between the two trees is caught by `./tests/test-codex-sync.sh`, which runs the sync script and fails (with a self-healing fix instruction) if `plugins/` differs from `HEAD`. This runs alongside the other structural tests, so any LLM following the test-before-done rule catches a missed sync inside its own loop.
+Drift is caught by `./tests/test-codex-sync.sh` and `./tests/test-opencode-sync.sh`, which run the sync scripts and fail (with self-healing fix instructions) if the generated directories differ from `HEAD`.
 
-Practical rule: design workflows first for Claude commands and behavior, but keep the underlying knowledge model and references runtime-neutral. The Codex wrapper should adapt invocation and metadata, not fork the wiki logic.
+Practical rule: design workflows first for Claude commands and behavior, but keep the underlying knowledge model and references runtime-neutral. Runtime wrappers adapt invocation and metadata, not wiki logic.
+
+## Nono Sandbox Permissions
+
+If you run Claude Code inside a [nono](https://github.com/nicholasgasior/nono) sandbox, the wiki needs filesystem access beyond the default `claude-code` profile. Add these to your nono profile (e.g., `~/.config/nono/profiles/custom-ai.json`):
+
+```json
+{
+  "extends": "claude-code",
+  "policy": {
+    "add_allow_read": [
+      "$HOME/.config/llm-wiki"
+    ],
+    "add_allow_readwrite": [
+      "$HOME/wiki"
+    ]
+  }
+}
+```
+
+If your wiki lives on iCloud Drive, use the resolved path (nono follows symlinks):
+
+```json
+"add_allow_readwrite": [
+  "$HOME/Library/Mobile Documents/com~apple~CloudDocs/wiki"
+]
+```
+
+**What each path does:**
+- `$HOME/.config/llm-wiki` (read) — hub path config file
+- `$HOME/wiki` or iCloud path (readwrite) — the wiki data itself
+
+Without these, Seatbelt silently blocks file access — reads return empty, writes disappear, and the plugin looks broken with no error messages. Use `nono why --profile <profile> --path <path> --op read` to diagnose access issues.
 
 ## Upgrade
 
@@ -128,6 +183,14 @@ cd ~/llm-wiki
 ```
 
 The Codex plugin is generated from the same Claude source — `plugins/llm-wiki/`'s `references/` is a symlink into `claude-plugin/skills/wiki-manager/references/`, so updates land identically across both runtimes. If `--verify` reports `PENDING`, finish the first-time enable in `/plugins` and rerun the verify command.
+
+**OpenCode** — pull the repo and re-copy:
+```bash
+git -C ~/llm-wiki pull
+cp ~/llm-wiki/plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md ~/.config/opencode/AGENTS.md
+```
+
+Or if using `opencode.json` instructions, just pull — the path already points at the repo.
 
 **AGENTS.md** — just pull the latest and replace:
 ```bash
@@ -261,7 +324,7 @@ The hub is just a registry — no content directories, no `.obsidian/`. All cont
 - **Confidence scoring** — articles rated high/medium/low based on source quality and corroboration.
 - **Structural guardian** — auto-checks wiki integrity after operations, fixes trivial issues silently.
 - **Activity log** — `log.md` tracks every operation, append-only, grep-friendly.
-- **Zero dependencies** — runs entirely on Claude Code built-in tools.
+- **Zero dependencies** — runs entirely on built-in tools (Claude Code, OpenCode, or Codex).
 
 ## Research Modes
 

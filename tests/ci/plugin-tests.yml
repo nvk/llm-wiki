@@ -27,6 +27,9 @@ jobs:
       - name: Run structural tests
         run: chmod +x tests/test-structure.sh && ./tests/test-structure.sh
 
+      - name: Verify Codex plugin sync
+        run: chmod +x tests/test-codex-sync.sh && ./tests/test-codex-sync.sh
+
   behavioral:
     name: "Layer 2: Behavioral Evals"
     runs-on: ubuntu-latest

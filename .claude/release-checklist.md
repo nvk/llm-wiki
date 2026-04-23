@@ -10,12 +10,14 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
 
 ## Test
 
-2. **Run structural + Codex packaging checks**:
+2. **Run structural + packaging checks**:
    ```bash
    ./scripts/sync-codex-plugin.sh
+   ./scripts/sync-opencode-plugin.sh
    ./tests/test-plugin-validate.sh
    ./tests/test-structure.sh
    ./tests/test-codex-sync.sh
+   ./tests/test-opencode-sync.sh
    ./tests/test-codex-runtime.sh
    ```
 
@@ -27,7 +29,11 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
    - If verify reports `PENDING`, open `/plugins`, enable `LLM Wiki`, restart Codex if needed, and rerun the verify command
    - If project scope fails outright, confirm the project is trusted before assuming the plugin is broken
 
-5. **Test the changed feature** — whatever was added/fixed in this release:
+5. **Verify OpenCode skill loads** — start OpenCode with the instruction file and ask "what wiki commands do you know?"
+   - Load via: `"instructions": ["plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md"]` in `opencode.json`
+   - Verify web search works with `OPENCODE_ENABLE_EXA=1`
+
+6. **Test the changed feature** — whatever was added/fixed in this release:
    - Invoke the relevant `/wiki:*` subcommand
    - Confirm expected behavior, no errors
 
@@ -80,7 +86,8 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
 11. **Verify install**:
    - Claude Code: start a fresh session and run `/wiki status`
    - Codex: start a fresh session and run `@wiki test` or `./scripts/verify-codex-plugin.sh --scope project`
-   - If the verify script reports `PENDING`, finish the first-time enable in `/plugins` and rerun it
+   - OpenCode: start a session with the SKILL.md loaded and ask "wiki status"
+   - If the Codex verify script reports `PENDING`, finish the first-time enable in `/plugins` and rerun it
 
 ## Post-ship: README
 
@@ -103,6 +110,7 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
 
 - Claude marketplace plugin name: `wiki@llm-wiki`
 - Codex plugin invocation name: `@wiki`
+- OpenCode: loaded via `"instructions"` in `opencode.json` or copied to `~/.config/opencode/AGENTS.md`
 - Claude plugin cache path: `~/.claude/plugins/cache/llm-wiki/wiki/<version>/`
 - Claude marketplace repo: `~/.claude/plugins/marketplaces/llm-wiki/`
 - Codex project config path: `<project>/.codex/config.toml` (local, gitignored in this repo)

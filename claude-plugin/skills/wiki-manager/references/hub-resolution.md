@@ -30,6 +30,8 @@ The hub path can be `~/wiki/` (simple), a symlink at `~/wiki/` pointing to an iC
 
 Most sessions hit step 1 or step 4 and never touch tilde expansion. The fragile path (step 5) runs at most once per install.
 
+> **OpenCode divergence (v0.4.1):** OpenCode uses config-first order — read `~/.config/llm-wiki/config.json` before trying `~/wiki/`. This avoids noisy sandbox probe errors when `~/wiki/` doesn't exist. See the generated OpenCode SKILL.md for details. Claude and Codex follow the canonical order above.
+
 > **CRITICAL — Do NOT confuse directory existence with hub existence.**
 > The `~/wiki/` DIRECTORY may exist (e.g., leftover `.DS_Store`, empty folder, or a symlink to an uninitialized path) without being an initialized hub. Only `~/wiki/_index.md` existing counts as an initialized hub. If the directory exists but `_index.md` does not, fall through to config — do NOT initialize there.
 

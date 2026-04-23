@@ -163,6 +163,64 @@ else
   log_fail "agents/openai.yaml not found" "missing file"
 fi
 
+# OpenCode mirror validation — the artifacts that OpenCode loads via the
+# "instructions" key in opencode.json. Drift between Claude source and this
+# mirror is covered by test-opencode-sync.sh; what's checked here is whether
+# the mirror itself is well-formed.
+echo ""
+echo "=== OpenCode Mirror Validation ==="
+OPENCODE_PLUGIN="$PROJECT_ROOT/plugins/llm-wiki-opencode"
+OPENCODE_SKILL="$OPENCODE_PLUGIN/skills/wiki-manager"
+
+# References symlink
+echo ""
+echo "--- OpenCode references symlink ---"
+OC_REFS_LINK="$OPENCODE_SKILL/references"
+if [ -L "$OC_REFS_LINK" ]; then
+  log_pass "OpenCode references is a symlink"
+  if [ -e "$OC_REFS_LINK" ]; then
+    log_pass "OpenCode references symlink resolves"
+    for ref in command-prelude compilation hub-resolution indexing ingestion linting projects research-infrastructure wiki-structure; do
+      if [ -f "$OC_REFS_LINK/${ref}.md" ]; then
+        log_pass "OpenCode references/$ref.md reachable via symlink"
+      else
+        log_fail "OpenCode references/$ref.md not reachable via symlink" "broken target"
+      fi
+    done
+  else
+    log_fail "OpenCode references symlink target does not exist" "$(readlink "$OC_REFS_LINK")"
+  fi
+else
+  log_fail "OpenCode references is not a symlink" "expected symlink to claude-plugin source"
+fi
+
+# OpenCode SKILL.md
+echo ""
+echo "--- OpenCode skill files ---"
+if [ -f "$OPENCODE_SKILL/SKILL.md" ]; then
+  log_pass "OpenCode SKILL.md exists"
+  if head -1 "$OPENCODE_SKILL/SKILL.md" | grep -q "^---$"; then
+    log_pass "OpenCode SKILL.md has frontmatter"
+  else
+    log_fail "OpenCode SKILL.md has no frontmatter" "missing ---"
+  fi
+  # Verify no Claude Code references leaked through
+  if ! grep -q "Claude Code" "$OPENCODE_SKILL/SKILL.md"; then
+    log_pass "OpenCode SKILL.md has no 'Claude Code' references"
+  else
+    log_fail "OpenCode SKILL.md contains 'Claude Code'" "sync script missed a replacement"
+  fi
+else
+  log_fail "OpenCode SKILL.md not found" "missing file"
+fi
+
+# OpenCode README
+if [ -f "$OPENCODE_PLUGIN/README.md" ]; then
+  log_pass "OpenCode README.md exists"
+else
+  log_fail "OpenCode README.md not found" "missing file"
+fi
+
 echo ""
 echo "==========================================="
 printf "Results: \033[32m%d passed\033[0m, \033[31m%d failed\033[0m, %d total\n" "$PASS" "$FAIL" "$TOTAL"

@@ -4,21 +4,22 @@ Every wiki operation must resolve the hub path before doing anything else. Follo
 
 ## Why this protocol exists
 
-The hub path can be `~/wiki/` (simple), a symlink at `~/wiki/` pointing to an iCloud path (common), or a custom path from config (rare). Earlier versions of this protocol required LLMs to read a config file, expand tildes carefully (only the leading one — `com~apple~CloudDocs` has literal tildes), and quote paths with spaces. That was three fragile steps that LLMs got wrong regularly. The v0.2 protocol below eliminates most of this by: (a) preferring the `~/wiki/` symlink path which just works, and (b) caching the resolved absolute path in config so tilde expansion happens at most once.
+The hub path can come from config (most common — iCloud, Dropbox, NAS), a symlink at `~/wiki/` pointing elsewhere, or `~/wiki/` directly (simple). Earlier versions checked `~/wiki/` first, but that fails in sandboxed environments where `~/wiki/` isn't an allowed path. The v0.3 protocol below checks config first (one file read), falling back to `~/wiki/` only when no config exists.
+
+> **Note (v0.4.1):** The resolution steps are now inlined directly in each
+> command file. Commands no longer depend on reading this file at runtime. This
+> file remains as canonical developer documentation for the protocol, but is not
+> load-bearing for command execution.
 
 ## Resolution Steps
 
-**This is a sequential file-read protocol. Do NOT use Explore agents, `find`, `ls -R`, or any filesystem search. Each step is a single Read tool call. Most sessions resolve at step 1.**
+**This is a sequential file-read protocol. Do NOT use Explore agents, `find`, `ls -R`, or any filesystem search. Each step is a single Read tool call. Most sessions resolve at step 1 or step 2.**
 
-1. **Try `~/wiki/_index.md`** (expand `~` to `$HOME`). This works whether `~/wiki/` is a real directory or a symlink to an iCloud/custom path.
+1. **Read `~/.config/llm-wiki/config.json`** (expand `~` to `$HOME`).
 
-2. **If it exists** → **HUB** = `$HOME/wiki`. Done. Skip everything below.
+2. **If config has `resolved_path`** → **HUB** = that value verbatim (it's already an absolute path — no expansion needed). Done.
 
-3. **If it does not exist** → read `~/.config/llm-wiki/config.json`.
-
-4. **If config has `resolved_path`** → **HUB** = that value verbatim (it's already an absolute path — no expansion needed). Done.
-
-5. **If config has only `hub_path`** (no `resolved_path`) → expand the leading `~` ONLY (see Tilde Expansion below), set **HUB**, then **write `resolved_path` back to config** so this expansion never has to happen again:
+3. **If config has only `hub_path`** (no `resolved_path`) → expand the leading `~` ONLY (see Tilde Expansion below), set **HUB**, then **write `resolved_path` back to config** so this expansion never has to happen again:
    ```json
    {
      "hub_path": "~/Library/Mobile Documents/com~apple~CloudDocs/wiki",
@@ -26,30 +27,32 @@ The hub path can be `~/wiki/` (simple), a symlink at `~/wiki/` pointing to an iC
    }
    ```
 
-6. **If no config exists** → **HUB** = `$HOME/wiki` (for initialization).
+4. **If no config exists** → try `$HOME/wiki/_index.md`. If it exists, **HUB** = `$HOME/wiki`. Done.
 
-Most sessions hit step 1 or step 4 and never touch tilde expansion. The fragile path (step 5) runs at most once per install.
+5. **If nothing found** → ask the user where they want the wiki before creating anything.
+
+Most sessions hit step 1-2 and resolve from config. The `~/wiki/` fallback (step 4) is only for users with no config file.
 
 > **CRITICAL — Do NOT confuse directory existence with hub existence.**
-> The `~/wiki/` DIRECTORY may exist (e.g., leftover `.DS_Store`, empty folder, or a symlink to an uninitialized path) without being an initialized hub. Only `~/wiki/_index.md` existing counts as an initialized hub. If the directory exists but `_index.md` does not, fall through to config — do NOT initialize there.
+> A directory may exist (e.g., leftover `.DS_Store`, empty folder, or a symlink to an uninitialized path) without being an initialized hub. Only `_index.md` existing at the hub root counts as an initialized hub.
 
-> **NEVER initialize a new hub at `~/wiki/` if config exists with a `hub_path` or `resolved_path`.** The config is authoritative for where hubs are created. If step 3 reads a config, all initialization MUST happen at the config path, never at `~/wiki/`.
+> **Config is authoritative.** If `~/.config/llm-wiki/config.json` exists with a `hub_path` or `resolved_path`, ALL initialization MUST happen at the config path. Never create a hub at `~/wiki/` when config points elsewhere.
 
-## Recommended setup: symlink
+> **Never access `~/wiki/` when config exists.** In sandboxed environments, `~/wiki/` may not be an allowed path. The config path is the only path the agent should touch.
 
-For users whose wiki lives outside `~/wiki/` (iCloud, Dropbox, NAS), the most robust setup is a symlink:
+## Optional setup: symlink
+
+For users who want the convenience of `~/wiki/` without granting sandbox access to their real wiki path, a symlink works:
 
 ```bash
 ln -s "/Users/jane/Library/Mobile Documents/com~apple~CloudDocs/wiki" ~/wiki
 ```
 
-After this, step 1 always succeeds immediately. The complex iCloud path never appears in LLM context — agents just see `~/wiki/`. The config still exists as a record of the real path but is never consulted during resolution.
-
-macOS handles this correctly: iCloud syncs the target directory, not the symlink itself. If the symlink is deleted, the wiki data at the iCloud path is unaffected.
+This is optional — config-based resolution (steps 1-2) works without it. The symlink is a convenience for shell access, not a requirement for the agent.
 
 ## Tilde Expansion — Correct Method
 
-Only needed when step 5 runs (first use with an old config that lacks `resolved_path`). Replace ONLY the leading `~` with the user's home directory. **Do NOT expand tildes anywhere else** — characters like `~` in `com~apple~CloudDocs` are literal directory names.
+Only needed when step 3 runs (first use with an old config that lacks `resolved_path`). Replace ONLY the leading `~` with the user's home directory. **Do NOT expand tildes anywhere else** — characters like `~` in `com~apple~CloudDocs` are literal directory names.
 
 ```bash
 hub_path="~/Library/Mobile Documents/com~apple~CloudDocs/wiki"  # from config

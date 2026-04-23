@@ -9,11 +9,7 @@ Every `/wiki:*` command starts with the same handful of steps: resolve the hub p
 
 ## Why this file exists
 
-The prelude appeared verbatim in 11 command files. Every time the hub resolution protocol changed (v0.0.12, v0.0.13, v0.0.14, and again when the iCloud path handling got fixed), it had to be edited in every command. That's a drift trap and an LLM token tax — every command spent ~15 lines repeating the same boilerplate before getting to its actual work. Factoring it out means:
-
-- **One place to update** when the resolution protocol evolves.
-- **Commands read leaner** — the interesting work is front-and-center, not buried below 15 lines of setup.
-- **No rationale loss** — the *why* of each step (why check `~/wiki/` first, why ask instead of guess, why stop if missing) lives here, cited by the commands that apply it.
+The prelude appeared verbatim in 14 command files. Every time the hub resolution protocol changed, it had to be edited in every command. That's a drift trap and an LLM token tax. As of v0.4.1, the steps are inlined in each command file for reliability, but this file remains as the canonical reference for the protocol design.
 
 ## Standard prelude
 
@@ -21,7 +17,7 @@ The prelude appeared verbatim in 11 command files. Every time the hub resolution
 
 Every command that needs a wiki follows these steps in order:
 
-1. **Resolve HUB.** Follow the protocol in [`hub-resolution.md`](hub-resolution.md). Short version: use the Read tool on `~/wiki/_index.md` (expand `~` to `$HOME`). If it exists, HUB = `$HOME/wiki`, done — skip everything else. If not, read `~/.config/llm-wiki/config.json` and use `resolved_path`. That's it — two file reads at most.
+1. **Resolve HUB.** Follow the protocol in [`hub-resolution.md`](hub-resolution.md). Short version: read `~/.config/llm-wiki/config.json` (expand `~` to `$HOME`). If it has `resolved_path`, HUB = that value, done. If no config exists, try `$HOME/wiki/_index.md` as fallback. That's it — one or two file reads at most.
 
 2. **Resolve wiki location.** The target wiki is determined by this order (first match wins):
    1. `--local` flag → `.wiki/` in the current directory

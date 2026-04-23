@@ -1,13 +1,13 @@
 # Wiki Directory Structure
 
-> **Configurable hub path**: `~/wiki/` is the default hub location. If `~/.config/llm-wiki/config.json` exists with a `hub_path` field, that path is used instead. Throughout this document, `~/wiki/` means "the resolved hub path" (HUB). See [hub-resolution.md](hub-resolution.md) for the full resolution protocol (tilde expansion, space handling, iCloud paths).
+> **Configurable hub path**: The hub location is read from `~/.config/llm-wiki/config.json` (`resolved_path` field). If no config exists, `~/wiki/` is the fallback. Throughout this document, `HUB/` means "the resolved hub path". See [hub-resolution.md](hub-resolution.md) for the full resolution protocol (tilde expansion, space handling, iCloud paths).
 
-## Hub (~/wiki/)
+## Hub (HUB/)
 
 The hub is lightweight — it has NO content directories. It only tracks topic wikis.
 
 ```
-~/wiki/                            # or custom path from config.json
+HUB/                               # resolved from ~/.config/llm-wiki/config.json
 ├── wikis.json                     # Registry of all topic wikis
 ├── _index.md                      # Lists topic wikis with stats
 ├── log.md                         # Global activity log
@@ -17,12 +17,12 @@ The hub is lightweight — it has NO content directories. It only tracks topic w
     └── ...
 ```
 
-## Topic Sub-Wiki (~/wiki/topics/<name>/)
+## Topic Sub-Wiki (HUB/topics/<name>/)
 
 All content lives here. Each topic wiki has the full structure:
 
 ```
-~/wiki/topics/<name>/
+HUB/topics/<name>/
 ├── .obsidian/                     # Obsidian vault config
 ├── _index.md                      # Master index: stats, quick nav, recent changes
 ├── config.md                      # Title, scope, conventions
@@ -83,7 +83,7 @@ Same structure as above but rooted at `<project>/.wiki/` without `wikis.json` or
 
 ## Wiki Resolution Order
 
-When a command runs, first resolve the hub path (HUB) from `~/.config/llm-wiki/config.json`, defaulting to `~/wiki/`. Then resolve which wiki to use:
+When a command runs, first resolve the hub path (HUB) from `~/.config/llm-wiki/config.json` (see `hub-resolution.md`). Then resolve which wiki to use:
 
 1. `--local` flag present → `<cwd>/.wiki/`
 2. `--wiki <name>` flag present → look up name in `HUB/wikis.json`
@@ -94,10 +94,10 @@ When a command runs, first resolve the hub path (HUB) from `~/.config/llm-wiki/c
 
 ```json
 {
-  "default": "~/wiki",
+  "default": "<HUB>",
   "wikis": {
-    "hub": { "path": "~/wiki", "description": "Global knowledge base" },
-    "<topic>": { "path": "~/wiki/topics/<topic>", "description": "..." }
+    "hub": { "path": "<HUB>", "description": "Global knowledge base" },
+    "<topic>": { "path": "<HUB>/topics/<topic>", "description": "..." }
   },
   "local_wikis": [
     { "path": "/absolute/path/.wiki", "description": "..." }

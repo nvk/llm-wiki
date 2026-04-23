@@ -7,8 +7,8 @@ allowed-tools: Read, Write, Edit, Glob, Bash(ls:*), Bash(wc:*), Bash(mkdir:*), B
 ## Your task
 
 **Resolve the wiki.** Do NOT search the filesystem or read reference files — follow these steps:
-1. Read `$HOME/wiki/_index.md`. If it exists → HUB = `$HOME/wiki`. Skip to step 3.
-2. If not → read `$HOME/.config/llm-wiki/config.json`. Use `resolved_path` as HUB. If only `hub_path` exists, expand leading `~` only (not tildes in `com~apple~CloudDocs`), set HUB, write `resolved_path` back. If no config → HUB = `$HOME/wiki`.
+1. Read `$HOME/.config/llm-wiki/config.json`. If it has `resolved_path` → HUB = that value, skip to step 3. If only `hub_path`, expand leading `~` only (not tildes in `com~apple~CloudDocs`), set HUB, write `resolved_path` back, skip to step 3.
+2. If no config → read `$HOME/wiki/_index.md`. If it exists → HUB = `$HOME/wiki`. If nothing found, ask the user where to create the wiki.
 3. **Wiki location** (first match): `--local` → `.wiki/` in CWD; `--wiki <name>` → `HUB/wikis.json` lookup; CWD has `.wiki/` → use it; else → HUB.
 4. Read `<wiki>/_index.md` if found. Variant: **wiki-neutral** — `wiki.md` is the router, init, and config command, so "wiki missing" is not always an error; the init subcommand creates the wiki, status shows an empty hub gracefully, and the natural-language router explains how to create one.
 
@@ -186,14 +186,14 @@ The user is new or hasn't initialized a wiki yet. Instead of dumping a command l
 > Just tell me the topic, and I'll set everything up.
 
 **Step 2: On user response,** derive a slug from their topic (lowercase, hyphens, max 40 chars) and run the full init protocol:
-1. Create the hub if it doesn't exist (`~/wiki/` with wikis.json, _index.md, log.md, topics/)
+1. Create the hub if it doesn't exist (at the resolved HUB path from config, or ask the user where to create it if no config exists — never assume `~/wiki/`)
 2. Create the topic wiki at `HUB/topics/<slug>/` with full directory structure
 3. Register in wikis.json and update hub _index.md
 4. Create config.md using the user's topic description
 
 **Step 3: After init completes,** suggest the immediate next action based on what's most likely useful:
 
-> **Wiki created at `~/wiki/topics/<slug>/`**
+> **Wiki created at `HUB/topics/<slug>/`**
 >
 > What would you like to do first?
 >
@@ -203,7 +203,7 @@ The user is new or hasn't initialized a wiki yet. Instead of dumping a command l
 > 2. **Add a specific source** — paste a URL or file path
 >    → Just say: `/wiki:ingest <url>`
 >
-> 3. **Import existing notes** — drop files into `~/wiki/topics/<slug>/inbox/`
+> 3. **Import existing notes** — drop files into `HUB/topics/<slug>/inbox/`
 >    → Then run: `/wiki:ingest --inbox`
 
 Do NOT show the full command reference, config options, or advanced flags during onboarding. Keep it to these three options. The user can discover the rest via `/wiki` (status view) once they have a wiki.
@@ -242,7 +242,7 @@ Set a custom hub location. Creates `~/.config/llm-wiki/config.json`.
    - Suggest creating a symlink for maximum robustness:
      > For fastest hub resolution, also run: `ln -s "<resolved_path>" ~/wiki`
      > This makes `~/wiki/` always resolve immediately, even without reading config.
-   - If a wiki already exists at the OLD hub location (default `~/wiki/` or previous config):
+   - If a wiki already exists at the OLD hub location (previous config path or `~/wiki/` fallback):
      - Ask: "Move existing wiki data from `<old>` to `<new>`? (y/n)"
      - If yes: move contents (`mv <old>/* <new>/`), update `wikis.json` paths to reflect new base
      - If no: just update the config — user will move data manually
@@ -252,7 +252,7 @@ Set a custom hub location. Creates `~/.config/llm-wiki/config.json`.
    - Read `~/.config/llm-wiki/config.json` if it exists
    - Report current hub path (use `resolved_path` if present, otherwise `hub_path`)
    - If `resolved_path` is missing from config, compute it now and write it back
-   - Report: "Current hub path: `<path>`" or "Hub path: `~/wiki/` (default — no custom config)"
+   - Report: "Current hub path: `<path>`" or "No hub configured. Run `config hub-path <path>` to set one."
 
 #### `config` (no subcommand)
 

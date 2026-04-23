@@ -1,6 +1,6 @@
 {
   "name": "wiki",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "LLM-compiled knowledge bases for Codex. Build topic-scoped wikis, ingest sources, compile articles, query, lint, research, and generate outputs.",
   "author": {
     "name": "nvk",

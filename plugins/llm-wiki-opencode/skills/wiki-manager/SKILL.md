@@ -19,11 +19,11 @@ This skill is loaded as an instruction file. OpenCode does not have Claude-style
 
 OpenCode's built-in tools (`read`, `write`, `edit`, `glob`, `grep`, `bash`, `webfetch`, `websearch`) map directly to the tools this skill requires. Web search requires `OPENCODE_ENABLE_EXA=1` in the environment.
 
-**Permissions**: OpenCode sandboxes file access to the project directory. The wiki hub at `~/wiki/` is external. Add `external_directory` permissions in `opencode.json` to allow access: `{ "permission": { "external_directory": { "~/wiki/**": "allow", "~/.config/llm-wiki/**": "allow" } } }`. Alternatively, use `--local` mode to keep everything in `.wiki/` inside the project.
+**Permissions**: OpenCode sandboxes file access to the project directory. The wiki hub at `~/wiki/` is external. Add `external_directory` permissions in `opencode.json` to allow access: `{ "permission": { "external_directory": { "~/wiki/**": "allow", "~/.config/llm-wiki/**": "allow" } } }`. If your configured hub uses another absolute path (for example iCloud Drive), add that path too. Alternatively, use `--local` mode to keep everything in `.wiki/` inside the project.
 
 ## Hub Path
 
-The hub defaults to `~/wiki/`. If `~/wiki/` exists and is initialized (has `_index.md`), it is used directly — no config file needed. This is the simplest, most reliable path.
+OpenCode hub resolution prefers config-first behavior: if `~/.config/llm-wiki/config.json` exists and defines `hub_path`, use that path first. If config is missing or invalid, fall back to `~/wiki/` and use it when initialized (has `_index.md`).
 
 To use a different location (e.g., iCloud Drive) when `~/wiki/` is not set up, create `~/.config/llm-wiki/config.json`:
 
@@ -31,7 +31,7 @@ To use a different location (e.g., iCloud Drive) when `~/wiki/` is not set up, c
 { "hub_path": "~/Library/Mobile Documents/com~apple~CloudDocs/wiki" }
 ```
 
-**Resolution**: At the start of every operation, resolve **HUB** by following the protocol in [references/hub-resolution.md](references/hub-resolution.md) — check `~/wiki/` first, then fall back to config. This handles tilde expansion, paths with spaces, and iCloud directory names correctly. All references to `~/wiki/` below mean HUB.
+**Resolution**: At the start of every operation, resolve **HUB** by following the protocol in [references/hub-resolution.md](references/hub-resolution.md), with one OpenCode optimization: if `~/.config/llm-wiki/config.json` exists and has `hub_path`, use that path first, then fall back to `~/wiki/`. This avoids noisy sandbox probe errors when `~/wiki/` is absent. This still handles tilde expansion, paths with spaces, and iCloud directory names correctly. All references to `~/wiki/` below mean HUB.
 
 ## Wiki Location
 

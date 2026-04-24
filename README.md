@@ -70,25 +70,25 @@ Troubleshooting:
 
 **OpenCode** (instruction file):
 
-Option A — load via `opencode.json`:
+Add to your `opencode.json` (project-level or `~/.config/opencode/.opencode.json` for global):
 ```json
 {
-  "instructions": ["path/to/llm-wiki/plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md"],
+  "instructions": ["https://raw.githubusercontent.com/nvk/llm-wiki/master/plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md"],
   "permission": {
     "external_directory": {
-      "~/wiki/**": "allow",
-      "~/.config/llm-wiki/**": "allow"
+      "~/.config/llm-wiki/**": "allow",
+      "~/Library/Mobile Documents/com~apple~CloudDocs/wiki/**": "allow"
     }
   }
 }
 ```
 
-Option B — copy to global config:
+OpenCode fetches the URL fresh on every session start — no manual updates needed. If you prefer a local copy instead:
 ```bash
-cp plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md ~/.config/opencode/AGENTS.md
+curl -sL https://raw.githubusercontent.com/nvk/llm-wiki/master/plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md > ~/.config/opencode/AGENTS.md
 ```
 
-The `external_directory` permission is required because the wiki hub lives at `~/wiki/`, which is outside the project directory. If your hub is on iCloud, use `~/Library/Mobile Documents/com~apple~CloudDocs/wiki/**` instead. Alternatively, use `--local` mode (`.wiki/` in the project) to skip permissions entirely.
+The `external_directory` permission is required because the wiki hub lives outside the project directory. Set the paths to match your hub location. Alternatively, use `--local` mode (`.wiki/` in the project) to skip permissions entirely.
 
 Web search requires `export OPENCODE_ENABLE_EXA=1`.
 
@@ -227,13 +227,10 @@ cp -R "$REPO/.claude-plugin" "$REPO/commands" "$REPO/skills" "$DEST/$VERSION/"
 codex plugin marketplace upgrade llm-wiki
 ```
 
-**OpenCode** — pull the repo and re-copy:
+**OpenCode** — if using the GitHub URL in `instructions`, updates are automatic (fetched every session). If using a local copy:
 ```bash
-git -C ~/llm-wiki pull
-cp ~/llm-wiki/plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md ~/.config/opencode/AGENTS.md
+curl -sL https://raw.githubusercontent.com/nvk/llm-wiki/master/plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md > ~/.config/opencode/AGENTS.md
 ```
-
-Or if using `opencode.json` instructions, just pull — the path already points at the repo.
 
 **AGENTS.md** — just pull the latest and replace:
 ```bash

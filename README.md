@@ -92,6 +92,22 @@ The `external_directory` permission is required because the wiki hub lives outsi
 
 Web search requires `export OPENCODE_ENABLE_EXA=1`.
 
+**Pi** (instruction file — best for local models):
+
+Pi's minimal system prompt (~1K tokens) leaves room for the full wiki skill on 32K context local models.
+
+```bash
+pi --instructions path/to/llm-wiki/plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md
+```
+
+With a local llama-server backend (no cloud API needed):
+```bash
+OPENAI_BASE_URL=http://127.0.0.1:8080/v1 OPENAI_API_KEY=local \
+  pi --instructions path/to/llm-wiki/plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md
+```
+
+Pi uses the same OpenCode skill file — no separate packaging needed.
+
 **Any LLM Agent** (idea file):
 ```bash
 # Copy AGENTS.md into your agent's context or project root
@@ -102,13 +118,24 @@ The `AGENTS.md` file contains the complete wiki protocol as a single portable do
 
 ## Claude-First, Multi-Runtime
 
-Claude Code is the principal user. Keep one shared behavior layer and three thin packaging layers:
+Claude Code is the principal user. Keep one shared behavior layer and thin packaging layers per runtime:
 
 - `claude-plugin/` is the primary distribution target and UX surface.
 - `claude-plugin/skills/wiki-manager/` is the behavioral source of truth.
 - `plugins/llm-wiki/` is the Codex packaging target.
-- `plugins/llm-wiki-opencode/` is the OpenCode packaging target.
+- `plugins/llm-wiki-opencode/` is the OpenCode and Pi packaging target.
 - `.agents/plugins/marketplace.json` makes the Codex plugin installable from this repo.
+- `AGENTS.md` is the portable single-file protocol for any other LLM agent.
+
+**Supported clients:**
+
+| Client | Install method | System prompt size | Best for |
+|--------|---------------|-------------------|----------|
+| Claude Code | `claude plugin install wiki@llm-wiki` | ~22K tokens | Full agentic research, 200K context |
+| Codex | `codex plugin marketplace add nvk/llm-wiki` | ~3K tokens | OpenAI ecosystem |
+| OpenCode | `opencode.json` instructions | ~3K tokens | Multi-provider, Go binary |
+| Pi | `--instructions SKILL.md` | ~1K tokens | Local models, minimal overhead |
+| Any agent | Copy `AGENTS.md` to project | Varies | Universal fallback |
 
 Both runtime mirrors are generated, not hand-maintained. Rebuild from the Claude source of truth:
 

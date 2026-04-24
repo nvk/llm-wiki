@@ -1,5 +1,5 @@
 ---
-name: wiki-manager
+name: wiki
 description: >
   LLM-compiled knowledge base manager for Codex. Use it to initialize, ingest,
   compile, query, lint, research, plan, and generate outputs from topic-scoped wikis.

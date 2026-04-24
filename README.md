@@ -19,6 +19,8 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 
 ## Changelog
 
+**v0.4.2** — **Config-first hub resolution & Codex marketplace install.** Hub resolution now checks `~/.config/llm-wiki/config.json` first, falling back to `~/wiki` only when no config exists. Fixes sandbox permission errors in nono where `~/wiki` isn't an allowed path. Codex plugin installable directly from GitHub via `codex plugin marketplace add nvk/llm-wiki`. References changed from symlink to real copy so Codex marketplace caching works. Nono docs updated with per-runtime profiles and `$HOME/.codex` r+w requirement for Codex plugin install.
+
 **v0.4.0** — **Librarian & Full Distribution Parity.** New `/wiki:librarian` command scores every article for staleness and quality — two-tier scan (metadata-fast then content-deep), checkpoint recovery, machine-readable `.librarian/scan-results.json` plus human-readable `REPORT.md`. Staleness uses exponential decay scaled by article volatility; quality measures source diversity, content depth, cross-reference density, and summary quality. AGENTS.md updated with four previously missing operations (librarian, plan, project, ll) and the `--plan` research flag. Codex and OpenCode sync script frontmatter now includes all activation keywords (librarian, scan quality, content review, lessons learned, implementation plan).
 
 **v0.3.7** — **OpenCode First-Class Support.** Added OpenCode as a third distribution target alongside Claude Code and Codex. New `scripts/sync-opencode-plugin.sh` generates `plugins/llm-wiki-opencode/` from the Claude source with OpenCode-specific wording patches. `tests/test-opencode-sync.sh` guards against drift. `test-plugin-validate.sh` extended with 15 OpenCode mirror checks (SKILL.md, references symlink, no leaked Claude Code references, README). Install via `opencode.json`'s `"instructions"` key or copy to `~/.config/opencode/AGENTS.md`. Architecture section renamed to "Claude-First, Multi-Runtime".
@@ -38,35 +40,33 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 claude plugin install wiki@llm-wiki
 ```
 
-**OpenAI Codex** (repo-local plugin):
+**OpenAI Codex** (marketplace plugin):
 
-Quickstart (recommended, project-local):
+Install from GitHub:
 ```bash
-git clone https://github.com/nvk/llm-wiki.git
-cd llm-wiki
-./scripts/bootstrap-codex-plugin.sh --scope project --verify
+codex plugin marketplace add nvk/llm-wiki
+# Then open /plugins in Codex, enable "LLM Wiki", and invoke @wiki
 ```
 
-This does two things:
-- registers this checkout as the `llm-wiki-local` marketplace in your selected Codex home
-- writes a managed `@wiki` enable block to `.codex/config.toml` in the current project
-
-If the verify step prints `PENDING`, Codex has the marketplace and config but still wants the interactive `/plugins` enable/materialization step for the first local install. Open `/plugins`, enable `LLM Wiki`, restart Codex if needed, then rerun `./scripts/verify-codex-plugin.sh --scope project`.
-
-Manual `/plugins` install:
+Or install from a local checkout:
 ```bash
 codex plugin marketplace add /absolute/path/to/llm-wiki
-# Then open /plugins in Codex, enable "LLM Wiki", and invoke it as @wiki
+```
+
+Upgrade:
+```bash
+codex plugin marketplace upgrade llm-wiki
+```
+
+Remove:
+```bash
+codex plugin marketplace remove llm-wiki
 ```
 
 Troubleshooting:
-- Project scope requires a trusted project. If `.codex/config.toml` exists but `@wiki` does not resolve, trust the project and rerun `./scripts/verify-codex-plugin.sh --scope project`.
-- If the helper reports that `llm-wiki-local` already points at another checkout, Codex already has a conflicting local marketplace entry in this `HOME`. Remove/re-add that marketplace or use the checkout that already owns it.
-- A fresh local install may need one interactive `/plugins` enable before headless verification works. The verify script reports this as `PENDING`, not a silent failure.
+- After installing the marketplace, open `/plugins` in Codex and enable "LLM Wiki" — first install requires the interactive enable step.
 - Restart Codex after changing config if an existing session does not pick up the new plugin state.
-- If `~/.codex/config.toml` is symlinked into dotfiles and user scope writes fail, use `--scope project` instead or make the target writable.
-- If you run Codex under a sandbox wrapper like `nono`, Codex needs its own profile allowances for `~/.codex`, any symlink targets, and the wiki data paths.
-- The Codex plugin lives at `plugins/llm-wiki/` and is a thin wrapper around the same wiki-manager skill.
+- If you run Codex under a sandbox wrapper like `nono`, see [Nono Sandbox Permissions](#nono-sandbox-permissions) — Codex needs r+w to `$HOME/.codex` for plugin install.
 
 **OpenCode** (instruction file):
 
@@ -120,7 +120,7 @@ Both runtime mirrors are generated, not hand-maintained. Rebuild from the Claude
 Each sync script:
 
 - copies `claude-plugin/skills/wiki-manager/SKILL.md` into the target tree and reapplies a small list of runtime-specific wording patches
-- (re)creates `references` as a **symlink** to `claude-plugin/skills/wiki-manager/references` — references are runtime-neutral and shared verbatim, no copy
+- copies `references/` from the Claude source — references are runtime-neutral and shared verbatim (previously a symlink, now a real copy so Codex marketplace caching works)
 - (Codex only) recreates `agents/openai.yaml` for Codex UI metadata and syncs the plugin version
 
 Drift is caught by `./tests/test-codex-sync.sh` and `./tests/test-opencode-sync.sh`, which run the sync scripts and fail (with self-healing fix instructions) if the generated directories differ from `HEAD`.
@@ -129,7 +129,9 @@ Practical rule: design workflows first for Claude commands and behavior, but kee
 
 ## Nono Sandbox Permissions
 
-If you run any AI coding agent inside a [nono](https://github.com/nicholasgasior/nono) sandbox, the wiki needs filesystem access beyond the default profile. The same policy block works for Claude Code, Codex, and OpenCode — only the `extends` base changes:
+If you run any AI coding agent inside a [nono](https://github.com/always-further/nono) sandbox, the wiki needs filesystem access beyond the default profile.
+
+### Claude Code / OpenCode
 
 ```json
 {
@@ -139,29 +141,62 @@ If you run any AI coding agent inside a [nono](https://github.com/nicholasgasior
       "$HOME/.config/llm-wiki"
     ],
     "add_allow_readwrite": [
-      "$HOME/wiki"
+      "$HOME/Library/Mobile Documents/com~apple~CloudDocs/wiki"
     ]
   }
 }
 ```
 
-Replace `"extends": "claude-code"` with `"codex"` or `"opencode"` for the other runtimes. If your wiki lives on iCloud Drive, use the resolved path (nono follows symlinks):
+Replace `"extends": "claude-code"` with `"opencode"` for OpenCode.
+
+### Codex
+
+Codex needs r+w to its own `$HOME/.codex` directory for plugin install, marketplace cache, state, and skill registration:
 
 ```json
-"add_allow_readwrite": [
-  "$HOME/Library/Mobile Documents/com~apple~CloudDocs/wiki"
-]
+{
+  "extends": "codex",
+  "policy": {
+    "add_allow_read": [
+      "$HOME/.config/llm-wiki"
+    ],
+    "add_allow_readwrite": [
+      "$HOME/.codex",
+      "$HOME/Library/Mobile Documents/com~apple~CloudDocs/wiki"
+    ]
+  }
+}
 ```
 
-**What each path does:**
-- `$HOME/.config/llm-wiki` (read) — hub path config file
-- `$HOME/wiki` or iCloud path (readwrite) — the wiki data itself
+### Path reference
 
-**Runtime-specific notes:**
-- **Codex** may also need `"security": { "groups": ["user_caches_macos"] }` and read access to the llm-wiki repo directory if the plugin is installed from a local marketplace checkout.
-- **OpenCode** also needs the `external_directory` permission in `opencode.json` (see [Install](#install)) — nono and OpenCode have independent sandboxes that both need the same paths allowed.
+| Path | Access | Purpose |
+|------|--------|---------|
+| `$HOME/.config/llm-wiki` | read | Hub path config — checked first during resolution (v0.4.2+) |
+| Wiki data dir | readwrite | The wiki itself — use the actual path, not `$HOME/wiki` (see below) |
+| `$HOME/.codex` | readwrite | Codex only — plugin cache, skills, state, marketplace temp files |
 
-Without these, Seatbelt silently blocks file access — reads return empty, writes disappear, and the plugin looks broken with no error messages. Use `nono why --profile <profile> --path <path> --op read` to diagnose access issues.
+### Hub resolution and `~/wiki`
+
+As of v0.4.2, hub resolution checks `~/.config/llm-wiki/config.json` first and only falls back to `~/wiki` when no config exists. If your wiki lives on iCloud or any non-default path, set the config and you don't need `$HOME/wiki` in the sandbox at all:
+
+```bash
+# Set once — agents will resolve from config, never touch ~/wiki
+/wiki config hub-path "~/Library/Mobile Documents/com~apple~CloudDocs/wiki"
+```
+
+If you prefer `~/wiki` as a symlink to iCloud, nono's Seatbelt follows symlinks — the target path must be allowed, not the symlink itself.
+
+### Diagnosing access issues
+
+Without the right permissions, Seatbelt silently blocks file access — reads return empty, writes disappear, and the plugin looks broken with no error messages. Use `nono why` to diagnose:
+
+```bash
+nono why --path ~/.config/llm-wiki --op read
+nono why --path ~/Library/Mobile\ Documents/com~apple~CloudDocs/wiki --op readwrite
+```
+
+**OpenCode** also needs the `external_directory` permission in `opencode.json` (see [Install](#install)) — nono and OpenCode have independent sandboxes that both need the same paths allowed.
 
 ## Upgrade
 
@@ -187,14 +222,10 @@ cp -R "$REPO/.claude-plugin" "$REPO/commands" "$REPO/skills" "$DEST/$VERSION/"
 # Restart Claude Code to apply
 ```
 
-**Codex** — pull the repo and reinstall from the local marketplace:
+**Codex** — upgrade from the marketplace:
 ```bash
-git -C ~/llm-wiki pull   # or clone if you don't have it yet
-cd ~/llm-wiki
-./scripts/bootstrap-codex-plugin.sh --scope project --verify
+codex plugin marketplace upgrade llm-wiki
 ```
-
-The Codex plugin is generated from the same Claude source — `plugins/llm-wiki/`'s `references/` is a symlink into `claude-plugin/skills/wiki-manager/references/`, so updates land identically across both runtimes. If `--verify` reports `PENDING`, finish the first-time enable in `/plugins` and rerun the verify command.
 
 **OpenCode** — pull the repo and re-copy:
 ```bash

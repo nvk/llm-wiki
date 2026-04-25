@@ -45,12 +45,24 @@ claude plugin install wiki@llm-wiki
 Install from GitHub:
 ```bash
 codex plugin marketplace add nvk/llm-wiki
-# Then open /plugins in Codex, enable "LLM Wiki", and invoke @wiki
+# Then open /plugins in Codex, enable "LLM Wiki", and use @wiki
 ```
 
-Or install from a local checkout:
+Install from a local checkout with the managed bootstrap helper:
+```bash
+./scripts/bootstrap-codex-plugin.sh --scope user --verify
+```
+
+Or register the local checkout manually:
 ```bash
 codex plugin marketplace add /absolute/path/to/llm-wiki
+```
+
+Canonical explicit invocation:
+```text
+@wiki research "hardware wallet threat models"
+@wiki ingest https://example.com/article
+@wiki ll "codex plugin install gotchas"
 ```
 
 Upgrade:
@@ -65,6 +77,7 @@ codex plugin marketplace remove llm-wiki
 
 Troubleshooting:
 - After installing the marketplace, open `/plugins` in Codex and enable "LLM Wiki" — first install requires the interactive enable step.
+- `@wiki` is the canonical explicit entry point in Codex. Natural-language wiki requests can still auto-activate the skill.
 - Restart Codex after changing config if an existing session does not pick up the new plugin state.
 - If you run Codex under a sandbox wrapper like `nono`, see [Nono Sandbox Permissions](#nono-sandbox-permissions) — Codex needs r+w to `$HOME/.codex` for plugin install.
 
@@ -122,7 +135,7 @@ Claude Code is the principal user. Keep one shared behavior layer and thin packa
 
 - `claude-plugin/` is the primary distribution target and UX surface.
 - `claude-plugin/skills/wiki-manager/` is the behavioral source of truth.
-- `plugins/llm-wiki/` is the Codex packaging target.
+- `plugins/llm-wiki/skills/wiki/` is the generated Codex packaging target behind `@wiki`.
 - `plugins/llm-wiki-opencode/` is the OpenCode and Pi packaging target.
 - `.agents/plugins/marketplace.json` makes the Codex plugin installable from this repo.
 - `AGENTS.md` is the portable single-file protocol for any other LLM agent.

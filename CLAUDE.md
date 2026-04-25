@@ -43,9 +43,9 @@ Requires `ANTHROPIC_API_KEY`. Costs ~$2-5 per run.
 - **Changed frontmatter schema** (new required field, renamed enum): update the golden wiki fixture files to match, update `test-structure.sh` field/enum lists, regenerate defect fixtures.
 - **Added a new command**: add a frontmatter check to `test-plugin-validate.sh` if it's not picked up by the wildcard. Add a behavioral eval in `promptfooconfig.yaml` for routing.
 - **Changed the fuzzy router**: add or update test cases in `promptfooconfig.yaml` covering the new routing behavior plus negative controls.
-- **Added a new reference file**: `test-plugin-validate.sh` has three `for ref in ...` loops (Claude-side existence, Codex-side symlink reachability, OpenCode-side symlink reachability) — add the new filename to all three.
+- **Added a new reference file**: `test-plugin-validate.sh` has three `for ref in ...` loops (Claude-side existence, Codex-side copied-reference validation, OpenCode-side symlink reachability) — add the new filename to all three.
 - **Changed directory structure** (new `raw/` or `wiki/` subdirectory): update `test-structure.sh` C1 directory list and C11 placement checks. Update the golden wiki fixture if needed.
-- **Edited `claude-plugin/skills/wiki-manager/`**: both `test-codex-sync.sh` and `test-opencode-sync.sh` will fail until you re-run both sync scripts and commit `plugins/`. Never edit `plugins/llm-wiki/` or `plugins/llm-wiki-opencode/` by hand — they are generated, and `references/` is a symlink into the Claude source.
+- **Edited `claude-plugin/skills/wiki-manager/`**: both `test-codex-sync.sh` and `test-opencode-sync.sh` will fail until you re-run both sync scripts and commit `plugins/`. Never edit `plugins/llm-wiki/` or `plugins/llm-wiki-opencode/` by hand — they are generated. Codex gets copied references for marketplace caching; OpenCode keeps a symlink into the Claude source.
 - **Added a runtime-specific text rewrite to a sync script**: update the corresponding sync script's SKILL.md replacement list. References are runtime-neutral and shared verbatim — do not add per-file replacements there.
 - **Changed Codex install docs or bootstrap flow**: run `./tests/test-codex-runtime.sh` to verify the bootstrap flow either resolves `@wiki` from a clean scratch Codex home or cleanly reports that `/plugins` still needs to be opened once for first-time materialization.
 
@@ -68,9 +68,9 @@ claude-plugin/                  — source of truth, primary distribution target
   .claude-plugin/
     plugin.json                 — plugin manifest
 plugins/llm-wiki/               — generated Codex packaging mirror (do NOT hand-edit)
-  skills/wiki-manager/
+  skills/wiki/
     SKILL.md                    — patched copy of claude-plugin SKILL.md
-    references → ../../../../claude-plugin/skills/wiki-manager/references  (symlink)
+    references/*.md             — copied from claude-plugin/skills/wiki-manager/references
     agents/openai.yaml          — Codex UI metadata (generated)
   .codex-plugin/plugin.json     — Codex manifest (version synced from Claude)
 plugins/llm-wiki-opencode/      — generated OpenCode packaging mirror (do NOT hand-edit)

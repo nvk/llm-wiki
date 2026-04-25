@@ -5,14 +5,14 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 SCOPE="project"
 PROJECT_ROOT="${PWD}"
 USER_HOME="${HOME}"
-MARKETPLACE_NAME="llm-wiki-local"
+MARKETPLACE_NAME="llm-wiki"
 PLUGIN_KEY="wiki@${MARKETPLACE_NAME}"
 
 usage() {
   cat <<'EOF'
 Usage: ./scripts/verify-codex-plugin.sh [options]
 
-Verify that Codex resolves @wiki to this repo's generated wiki-manager skill.
+Verify that Codex resolves @wiki to this repo's generated Codex wiki skill.
 
 Options:
   --scope project|user   Verify project or user install (default: project)
@@ -61,7 +61,7 @@ esac
 
 PROJECT_ROOT="$(cd "$PROJECT_ROOT" && pwd)"
 USER_HOME="$(cd "$USER_HOME" && pwd)"
-EXPECTED_SKILL_PATH="$ROOT/plugins/llm-wiki/skills/wiki-manager/SKILL.md"
+EXPECTED_SKILL_PATH="$ROOT/plugins/llm-wiki/skills/wiki/SKILL.md"
 TMP_OUTPUT="$(mktemp)"
 PROBE_DIR="$ROOT/.tmp/codex-runtime-probe"
 USER_CONFIG="$USER_HOME/.codex/config.toml"
@@ -136,7 +136,7 @@ else
   HOME="$USER_HOME" codex -C "$PROBE_DIR" debug prompt-input '@wiki test' >"$TMP_OUTPUT"
 fi
 
-if grep -Fq 'wiki:wiki-manager' "$TMP_OUTPUT" && grep -Fq "$EXPECTED_SKILL_PATH" "$TMP_OUTPUT"; then
+if grep -Fq 'wiki:wiki' "$TMP_OUTPUT" && grep -Fq "$EXPECTED_SKILL_PATH" "$TMP_OUTPUT"; then
   echo "OK: Codex resolves @wiki from this repo."
   echo "Skill path:"
   echo "  $EXPECTED_SKILL_PATH"
@@ -149,7 +149,7 @@ import sys
 from pathlib import Path
 
 text = Path(sys.argv[1]).read_text()
-match = re.search(r'(/[^\n"]*wiki-manager/SKILL\.md)', text)
+match = re.search(r'(/[^\n"]*skills/wiki/SKILL\.md)', text)
 print(match.group(1) if match else "")
 PY
 )"

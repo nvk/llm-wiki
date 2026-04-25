@@ -80,31 +80,24 @@ fi
 echo ""
 echo "=== Codex Mirror Validation ==="
 CODEX_PLUGIN="$PROJECT_ROOT/plugins/llm-wiki"
-CODEX_SKILL="$CODEX_PLUGIN/skills/wiki-manager"
+CODEX_SKILL="$CODEX_PLUGIN/skills/wiki"
 
-# References symlink: must be a symlink AND must resolve AND each of the 9
-# expected reference files must be reachable through it. This is the only
-# Codex-side failure mode test-codex-sync.sh cannot detect — git diff doesn't
-# traverse symlinks and the sync script doesn't read through this one either.
+# Codex copies references into the generated tree because the marketplace cache
+# needs real files, not a symlink back into the repo checkout.
 echo ""
-echo "--- References symlink ---"
-REFS_LINK="$CODEX_SKILL/references"
-if [ -L "$REFS_LINK" ]; then
-  log_pass "references is a symlink"
-  if [ -e "$REFS_LINK" ]; then
-    log_pass "references symlink resolves"
-    for ref in command-prelude compilation hub-resolution indexing ingestion librarian linting projects research-infrastructure wiki-structure; do
-      if [ -f "$REFS_LINK/${ref}.md" ]; then
-        log_pass "references/$ref.md reachable via symlink"
-      else
-        log_fail "references/$ref.md not reachable via symlink" "broken target"
-      fi
-    done
-  else
-    log_fail "references symlink target does not exist" "$(readlink "$REFS_LINK")"
-  fi
+echo "--- Codex references copy ---"
+REFS_DIR="$CODEX_SKILL/references"
+if [ -d "$REFS_DIR" ] && [ ! -L "$REFS_DIR" ]; then
+  log_pass "Codex references directory exists"
+  for ref in command-prelude compilation hub-resolution indexing ingestion librarian linting projects research-infrastructure wiki-structure; do
+    if [ -f "$REFS_DIR/${ref}.md" ]; then
+      log_pass "Codex references/$ref.md exists"
+    else
+      log_fail "Codex references/$ref.md missing" "missing copied reference file"
+    fi
+  done
 else
-  log_fail "references is not a symlink" "expected symlink to claude-plugin source"
+  log_fail "Codex references directory invalid" "expected copied files under plugins/llm-wiki/skills/wiki/references"
 fi
 
 # Codex plugin manifest
@@ -144,6 +137,11 @@ if [ -f "$CODEX_SKILL/SKILL.md" ]; then
     log_pass "Codex SKILL.md has frontmatter"
   else
     log_fail "Codex SKILL.md has no frontmatter" "missing ---"
+  fi
+  if grep -q "^name: wiki$" "$CODEX_SKILL/SKILL.md"; then
+    log_pass "Codex SKILL.md uses the wiki skill name"
+  else
+    log_fail "Codex SKILL.md uses the wrong skill name" "expected 'name: wiki'"
   fi
 else
   log_fail "Codex SKILL.md not found" "missing file"

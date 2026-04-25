@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 SOURCE_SKILL="$ROOT/claude-plugin/skills/wiki-manager"
 TARGET_PLUGIN="$ROOT/plugins/llm-wiki"
-TARGET_SKILL="$TARGET_PLUGIN/skills/wiki-manager"
+TARGET_SKILL="$TARGET_PLUGIN/skills/wiki"
 CLAUDE_MANIFEST="$ROOT/claude-plugin/.claude-plugin/plugin.json"
 CODEX_MANIFEST="$TARGET_PLUGIN/.codex-plugin/plugin.json"
 
@@ -24,19 +24,14 @@ if [ ! -f "$CODEX_MANIFEST" ]; then
 fi
 
 mkdir -p "$TARGET_PLUGIN/skills"
-# references/ is a symlink into the Claude source — exclude from rsync so it's
-# preserved, and recreate it idempotently below. agents/ is Codex-only so also
-# exclude it from --delete.
+# The Codex marketplace caches plugin contents eagerly, so references/ must be
+# copied into the generated tree rather than left as a symlink. agents/ is
+# Codex-only metadata and is recreated below.
+rm -rf "$TARGET_PLUGIN/skills/wiki-manager"
 rsync -a --delete \
-  --exclude='references/' \
-  --exclude='references' \
   --exclude='agents/' \
   --exclude='agents' \
   "$SOURCE_SKILL/" "$TARGET_SKILL/"
-
-# Recreate the references symlink (idempotent — works on fresh checkout too).
-rm -rf "$TARGET_SKILL/references"
-ln -s "../../../../claude-plugin/skills/wiki-manager/references" "$TARGET_SKILL/references"
 
 mkdir -p "$TARGET_SKILL/agents"
 
@@ -64,7 +59,7 @@ skill_path = target_skill / "SKILL.md"
 text = skill_path.read_text()
 
 frontmatter = """---
-name: wiki-manager
+name: wiki
 description: >
   LLM-compiled knowledge base manager for Codex. Use it to initialize, ingest,
   compile, query, lint, research, plan, and generate outputs from topic-scoped wikis.
@@ -84,7 +79,7 @@ text = frontmatter + text[end + 5 :]
 replacements = [
     (
         "You manage an LLM-compiled knowledge base. Source documents are ingested into `raw/`, then incrementally compiled into a wiki of interconnected markdown articles. Claude Code is both the compiler and the query engine — no Obsidian, no external tools.\n",
-        "You manage an LLM-compiled knowledge base. Source documents are ingested into `raw/`, then incrementally compiled into a wiki of interconnected markdown articles. Codex is both the compiler and the query engine.\n\n## Codex Plugin Notes\n\nCodex plugins package skills, MCP servers, apps, and metadata. They do not register Claude-style custom `/wiki:*` commands. Treat any `/wiki`, `/wiki:*`, or command-flag examples in this skill and its references as shorthand for the same workflow expressed in natural language, or via explicit invocation such as `@wiki` or `@wiki-manager`.\n",
+        "You manage an LLM-compiled knowledge base. Source documents are ingested into `raw/`, then incrementally compiled into a wiki of interconnected markdown articles. Codex is both the compiler and the query engine.\n\n## Codex Plugin Notes\n\nCodex plugins package skills, MCP servers, apps, and metadata. They do not register Claude-style custom `/wiki:*` commands. Treat any `/wiki`, `/wiki:*`, or command-flag examples in this skill and its references as shorthand for the same workflow expressed in natural language, or via explicit `@wiki` invocation.\n",
     ),
     (
         "**Dual-linking for Obsidian + Claude.** Cross-references use both `[[wikilink]]` (for Obsidian graph view) and standard markdown `[text](path)` (for Claude navigation) on the same line: `[[slug|Name]] ([Name](../category/slug.md))`. Bidirectional when it makes sense.",
@@ -92,15 +87,15 @@ replacements = [
     ),
     (
         "When this skill activates outside of an explicit `/wiki:*` command:",
-        "When this skill activates outside of an explicit `@wiki`, `@wiki-manager`, or `/wiki`-style shorthand:",
+        "When this skill activates outside of an explicit `@wiki` invocation or `/wiki`-style shorthand:",
     ),
     (
         '4. If no relevant content → answer normally, optionally suggest: "This could be added to your wiki with `/wiki:ingest`"',
-        '4. If no relevant content → answer normally, optionally suggest: "This could be added to your wiki; ask `@wiki-manager` to ingest it."',
+        '4. If no relevant content → answer normally, optionally suggest: "This could be added to your wiki; ask `@wiki` to ingest it."',
     ),
     (
         'Track uncompiled sources by comparing `raw/_index.md` ingestion dates against the last compile date in `_index.md`. If 5+ uncompiled sources exist after an ingestion, suggest: "You have N uncompiled sources. Run `/wiki:compile` to integrate them."',
-        'Track uncompiled sources by comparing `raw/_index.md` ingestion dates against the last compile date in `_index.md`. If 5+ uncompiled sources exist after an ingestion, suggest: "You have N uncompiled sources. Ask `@wiki-manager` to compile them."',
+        'Track uncompiled sources by comparing `raw/_index.md` ingestion dates against the last compile date in `_index.md`. If 5+ uncompiled sources exist after an ingestion, suggest: "You have N uncompiled sources. Ask `@wiki` to compile them."',
     ),
     (
         'Suggest `/wiki:lint --fix`, which will move contents to the appropriate topic wiki or quarantine to `inbox/.unknown/` per C11/C12 in `references/linting.md`.',
@@ -127,9 +122,9 @@ for old, new in replacements:
 
 skill_path.write_text(text)
 
-# references/ is a symlink to claude-plugin/skills/wiki-manager/references and
-# is shared verbatim — no per-file replacements needed. Source references use
-# runtime-neutral wording ("the agent") so they read correctly under both.
+# references/ is a copied mirror of claude-plugin/skills/wiki-manager/references
+# and is shared verbatim — no per-file replacements needed. Source references
+# use runtime-neutral wording ("the agent") so they read correctly under both.
 
 claude = json.loads(claude_manifest.read_text())
 codex = json.loads(codex_manifest.read_text())

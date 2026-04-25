@@ -19,6 +19,8 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 
 ## Changelog
 
+**v0.4.3** — **Codex first-class install fixes.** Codex packaging, bootstrap, and verification now line up with the current `@wiki` plugin layout. The generated Codex mirror lives under `plugins/llm-wiki/skills/wiki/`, references are validated as copied files for marketplace installs, and the local bootstrap flow now uses the real `llm-wiki` marketplace name instead of the stale `llm-wiki-local` alias.
+
 **v0.4.2** — **Config-first hub resolution & Codex marketplace install.** Hub resolution now checks `~/.config/llm-wiki/config.json` first, falling back to `~/wiki` only when no config exists. Fixes sandbox permission errors in nono where `~/wiki` isn't an allowed path. Codex plugin installable directly from GitHub via `codex plugin marketplace add nvk/llm-wiki`. References changed from symlink to real copy so Codex marketplace caching works. Nono docs updated with per-runtime profiles and `$HOME/.codex` r+w requirement for Codex plugin install.
 
 **v0.4.0** — **Librarian & Full Distribution Parity.** New `/wiki:librarian` command scores every article for staleness and quality — two-tier scan (metadata-fast then content-deep), checkpoint recovery, machine-readable `.librarian/scan-results.json` plus human-readable `REPORT.md`. Staleness uses exponential decay scaled by article volatility; quality measures source diversity, content depth, cross-reference density, and summary quality. AGENTS.md updated with four previously missing operations (librarian, plan, project, ll) and the `--plan` research flag. Codex and OpenCode sync script frontmatter now includes all activation keywords (librarian, scan quality, content review, lessons learned, implementation plan).
@@ -30,8 +32,6 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 **v0.3.5** — **Lessons Learned & Chunked Writes.** New `/wiki:ll` command extracts lessons from the current session — error→fix patterns, user corrections, discoveries, gotchas — and saves structured knowledge to the wiki pipeline. 7-stage: scan → extract → target → write → update articles → suggest rules → log. Supports `--dry-run` and `--rules` (proposes CLAUDE.md additions). Core principle #9 added: chunk large writes to avoid stream idle timeouts. Codex plugin renamed from `llm-wiki` to `wiki` (`@wiki` invocation).
 
 **v0.3.0** — **Parallel Research & Human-Readable Lint.** New `--plan` flag for `/wiki:research` decomposes a topic into 3-5 independent research paths, presents the plan for confirmation, then dispatches all paths as parallel agent groups. Parallel ingest with path-prefixed raw files (no collisions), sequential compilation for cross-path synthesis. Extends `.research-session.json` with `mode` and `paths` fields (backward-compatible). Lint reports now lead with plain-English descriptions instead of internal check codes. C4 extended to catch broken inline body links. Test counter bug fixed — all 86 assertions now run.
-
-**v0.2.1** — **Codex packaging.** Repo-local Codex plugin (`plugins/llm-wiki/`) and marketplace entry alongside the Claude plugin — same wiki-manager skill, two thin packaging layers. References are a single source of truth: the Codex tree symlinks into `claude-plugin/skills/wiki-manager/references/`. `./scripts/sync-codex-plugin.sh` regenerates the mirror; `tests/test-codex-sync.sh` catches drift inside the agent's own test loop with self-healing fix instructions. `tests/test-plugin-validate.sh` extended with 19 checks for symlink integrity, Codex manifests, and `agents/openai.yaml`.
 
 ## Install
 
@@ -45,12 +45,24 @@ claude plugin install wiki@llm-wiki
 Install from GitHub:
 ```bash
 codex plugin marketplace add nvk/llm-wiki
-# Then open /plugins in Codex, enable "LLM Wiki", and invoke @wiki
+# Then open /plugins in Codex, enable "LLM Wiki", and use @wiki
 ```
 
-Or install from a local checkout:
+Install from a local checkout with the managed bootstrap helper:
+```bash
+./scripts/bootstrap-codex-plugin.sh --scope user --verify
+```
+
+Or register the local checkout manually:
 ```bash
 codex plugin marketplace add /absolute/path/to/llm-wiki
+```
+
+Canonical explicit invocation:
+```text
+@wiki research "hardware wallet threat models"
+@wiki ingest https://example.com/article
+@wiki ll "codex plugin install gotchas"
 ```
 
 Upgrade:
@@ -65,6 +77,7 @@ codex plugin marketplace remove llm-wiki
 
 Troubleshooting:
 - After installing the marketplace, open `/plugins` in Codex and enable "LLM Wiki" — first install requires the interactive enable step.
+- `@wiki` is the canonical explicit entry point in Codex. Natural-language wiki requests can still auto-activate the skill.
 - Restart Codex after changing config if an existing session does not pick up the new plugin state.
 - If you run Codex under a sandbox wrapper like `nono`, see [Nono Sandbox Permissions](#nono-sandbox-permissions) — Codex needs r+w to `$HOME/.codex` for plugin install.
 
@@ -122,7 +135,7 @@ Claude Code is the principal user. Keep one shared behavior layer and thin packa
 
 - `claude-plugin/` is the primary distribution target and UX surface.
 - `claude-plugin/skills/wiki-manager/` is the behavioral source of truth.
-- `plugins/llm-wiki/` is the Codex packaging target.
+- `plugins/llm-wiki/skills/wiki/` is the generated Codex packaging target behind `@wiki`.
 - `plugins/llm-wiki-opencode/` is the OpenCode and Pi packaging target.
 - `.agents/plugins/marketplace.json` makes the Codex plugin installable from this repo.
 - `AGENTS.md` is the portable single-file protocol for any other LLM agent.

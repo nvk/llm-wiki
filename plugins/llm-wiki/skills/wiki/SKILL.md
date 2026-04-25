@@ -15,22 +15,19 @@ You manage an LLM-compiled knowledge base. Source documents are ingested into `r
 
 ## Codex Plugin Notes
 
-Codex plugins package skills, MCP servers, apps, and metadata. They do not register Claude-style custom `/wiki:*` commands. Treat any `/wiki`, `/wiki:*`, or command-flag examples in this skill and its references as shorthand for the same workflow expressed in natural language, or via explicit invocation such as `@wiki` or `@wiki-manager`.
+Codex plugins package skills, MCP servers, apps, and metadata. They do not register Claude-style custom `/wiki:*` commands. Treat any `/wiki`, `/wiki:*`, or command-flag examples in this skill and its references as shorthand for the same workflow expressed in natural language, or via explicit `@wiki` invocation.
 
 ## Hub Path
 
-**Resolution**: At the start of every operation, resolve **HUB** by reading `~/.config/llm-wiki/config.json` first. If it has `resolved_path`, use that value directly. If it has only `hub_path`, expand the leading `~` only (not tildes in `com~apple~CloudDocs`), set HUB, and write `resolved_path` back. If no config file exists, try `~/wiki/_index.md` as a fallback. See [references/hub-resolution.md](references/hub-resolution.md) for the full protocol.
+The hub defaults to `~/wiki/`. If `~/wiki/` exists and is initialized (has `_index.md`), it is used directly — no config file needed. This is the simplest, most reliable path.
 
-The config file looks like:
+To use a different location (e.g., iCloud Drive) when `~/wiki/` is not set up, create `~/.config/llm-wiki/config.json`:
 
 ```json
-{
-  "hub_path": "~/Library/Mobile Documents/com~apple~CloudDocs/wiki",
-  "resolved_path": "/Users/jane/Library/Mobile Documents/com~apple~CloudDocs/wiki"
-}
+{ "hub_path": "~/Library/Mobile Documents/com~apple~CloudDocs/wiki" }
 ```
 
-If no config exists and `~/wiki/` has `_index.md`, that works too. But config is checked first — in sandboxed environments `~/wiki/` may not be accessible. All references to `~/wiki/` below mean HUB.
+**Resolution**: At the start of every operation, resolve **HUB** by following the protocol in [references/hub-resolution.md](references/hub-resolution.md) — check `~/wiki/` first, then fall back to config. This handles tilde expansion, paths with spaces, and iCloud directory names correctly. All references to `~/wiki/` below mean HUB.
 
 ## Wiki Location
 
@@ -69,12 +66,12 @@ See [references/wiki-structure.md](references/wiki-structure.md) for the complet
 
 ## Ambient Behavior
 
-When this skill activates outside of an explicit `@wiki`, `@wiki-manager`, or `/wiki`-style shorthand:
+When this skill activates outside of an explicit `@wiki` invocation or `/wiki`-style shorthand:
 
 1. Resolve the hub path (see Hub Path section above), then check if `HUB/_index.md` or `.wiki/_index.md` exists
 2. Read the master `_index.md` to assess if the wiki might cover the user's question
 3. If relevant content exists → read the relevant articles and answer with citations
-4. If no relevant content → answer normally, optionally suggest: "This could be added to your wiki; ask `@wiki-manager` to ingest it."
+4. If no relevant content → answer normally, optionally suggest: "This could be added to your wiki; ask `@wiki` to ingest it."
 5. When peeking at sibling wikis, only read their `_index.md` — do not read full articles unless the user asks
 
 ## Workflows
@@ -134,7 +131,7 @@ When answering queries, note confidence levels. When linting, flag `low` confide
 
 ## Compilation Nudge
 
-Track uncompiled sources by comparing `raw/_index.md` ingestion dates against the last compile date in `_index.md`. If 5+ uncompiled sources exist after an ingestion, suggest: "You have N uncompiled sources. Ask `@wiki-manager` to compile them."
+Track uncompiled sources by comparing `raw/_index.md` ingestion dates against the last compile date in `_index.md`. If 5+ uncompiled sources exist after an ingestion, suggest: "You have N uncompiled sources. Ask `@wiki` to compile them."
 
 ## Structural Guardian
 

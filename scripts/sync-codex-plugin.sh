@@ -48,6 +48,7 @@ EOF
 
 python3 - "$TARGET_SKILL" "$CLAUDE_MANIFEST" "$CODEX_MANIFEST" <<'PY'
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -119,6 +120,59 @@ for old, new in replacements:
     if old not in text:
         raise SystemExit(f"Expected text not found in {skill_path}: {old[:80]!r}")
     text = text.replace(old, new)
+
+def replace_section(src, heading, replacement, next_heading=None):
+    if next_heading is None:
+        pattern = re.compile(rf"(?ms)^## {re.escape(heading)}\n.*\Z")
+    else:
+        pattern = re.compile(
+            rf"(?ms)^## {re.escape(heading)}\n.*?(?=^## {re.escape(next_heading)}\n)"
+        )
+    if not pattern.search(src):
+        raise SystemExit(f"Missing section heading in {skill_path}: {heading}")
+    return pattern.sub(replacement, src, count=1)
+
+text = replace_section(
+    text,
+    "Workflows",
+    """## Workflows
+
+Choose the smallest workflow that matches the request, then load only the
+reference material you need for that workflow:
+
+- `ingest` → `references/ingestion.md`
+- `compile` → `references/compilation.md` and `references/indexing.md`
+- `query` → read the relevant `_index.md` files first, then only the articles
+  needed to answer
+- `lint` → `references/linting.md`
+- `research`, `plan`, `output`, `assess` → `references/research-infrastructure.md`
+- `project` → `references/projects.md`
+- `librarian` → `references/librarian.md`
+- wiki structure, indexes, log format, file placement, init → `references/wiki-structure.md`
+- hub lookup and path handling → `references/hub-resolution.md`
+
+Keep the first response short and action-oriented. Read deeper references only
+after the user intent is clear or a write action is needed.
+
+""",
+    next_heading="Links: File Paths and URLs",
+)
+
+text = replace_section(
+    text,
+    "Links: File Paths and URLs",
+    """## Operational Rules
+
+- Use absolute file paths in saved-output messages and markdown links for URLs.
+- Append to `log.md` for every wiki write operation; never rewrite old log entries.
+- Keep large writes chunked into multiple edits rather than one long generation.
+- Read `_index.md` files before broader scans, and treat indexes as derived data.
+- Use article `confidence` fields when answering and flag weak sourcing when seen.
+- If structure or placement looks wrong, use the `lint --fix` workflow from
+  `references/linting.md` instead of inventing a one-off repair path.
+
+""",
+)
 
 skill_path.write_text(text)
 

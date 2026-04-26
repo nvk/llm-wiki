@@ -76,112 +76,30 @@ When this skill activates outside of an explicit `@wiki` invocation or `/wiki`-s
 
 ## Workflows
 
-### Ingestion
-See [references/ingestion.md](references/ingestion.md).
-Flow: Source (URL/file/text/tweet/inbox) → fetch/read → extract metadata → write to `raw/{type}/` → update indexes → suggest compile if many uncompiled.
+Choose the smallest workflow that matches the request, then load only the
+reference material you need for that workflow:
 
-### Compilation
-See [references/compilation.md](references/compilation.md).
-Flow: Survey uncompiled sources → plan articles → classify (concept/topic/reference) → write/update articles with cross-references → update all indexes.
+- `ingest` → `references/ingestion.md`
+- `compile` → `references/compilation.md` and `references/indexing.md`
+- `query` → read the relevant `_index.md` files first, then only the articles
+  needed to answer
+- `lint` → `references/linting.md`
+- `research`, `plan`, `output`, `assess` → `references/research-infrastructure.md`
+- `project` → `references/projects.md`
+- `librarian` → `references/librarian.md`
+- wiki structure, indexes, log format, file placement, init → `references/wiki-structure.md`
+- hub lookup and path handling → `references/hub-resolution.md`
 
-### Query
-Flow: Read `_index.md` → identify relevant articles by summary/tag → read articles → follow See Also links → Grep for additional matches → synthesize answer with citations → note gaps → peek sibling wikis. Supports `--resume` to reload context after a session break — reads session files, recent log entries, wiki stats, and last-updated articles to produce a "where you left off" briefing.
+Keep the first response short and action-oriented. Read deeper references only
+after the user intent is clear or a write action is needed.
 
-### Linting
-See [references/linting.md](references/linting.md).
-Flow: Check structure → indexes → links → content → coverage → report → optionally auto-fix.
+## Operational Rules
 
-### Search
-Flow: Scan indexes for summary/tag matches → Grep full-text → rank results → present.
+- Use absolute file paths in saved-output messages and markdown links for URLs.
+- Append to `log.md` for every wiki write operation; never rewrite old log entries.
+- Keep large writes chunked into multiple edits rather than one long generation.
+- Read `_index.md` files before broader scans, and treat indexes as derived data.
+- Use article `confidence` fields when answering and flag weak sourcing when seen.
+- If structure or placement looks wrong, use the `lint --fix` workflow from
+  `references/linting.md` instead of inventing a one-off repair path.
 
-### Output
-Flow: Gather relevant articles → generate artifact (summary/report/slides/etc) → save to `output/` → update indexes.
-
-### Lessons Learned (ll)
-Flow: Scan session for error→fix patterns, corrections, discoveries → extract structured lessons → write to `raw/notes/` with `type: lessons-learned` → optionally update relevant articles → optionally suggest CLAUDE.md rules.
-
-## Links: File Paths and URLs
-
-Terminal links break when they wrap to a second line. Rules for all wiki operations:
-
-1. **Full absolute paths** — expand `~`, HUB, and all relative segments. Relative paths are not clickable.
-2. **Markdown link syntax for URLs** — use `[short text](url)`, never bare long URLs that wrap and break.
-3. **No indentation before links** — indentation eats terminal width. Put links flush-left on their own line.
-4. **One link per line** — don't embed a long path mid-sentence. Break it out:
-   ```
-   Saved to:
-   /Users/name/wiki/topics/my-topic/output/report-2026-04-08.md
-   ```
-
-See `references/research-infrastructure.md` § Agent Prompt Templates for examples. Applies to ingest, compile, research, output, assess.
-
-## Activity Log
-
-Every wiki operation appends to `log.md` in the wiki root. Format: `## [YYYY-MM-DD] operation | Description`. See [references/wiki-structure.md](references/wiki-structure.md) for full format. Never edit or delete existing log entries — append only.
-
-## Confidence Scoring
-
-Wiki articles include a `confidence` field in frontmatter: `high`, `medium`, or `low`.
-
-- **high**: Multiple peer-reviewed sources agree, well-established knowledge
-- **medium**: Single source, or sources partially agree, or recent findings not yet replicated
-- **low**: Anecdotal, single non-peer-reviewed source, or sources disagree
-
-When answering queries, note confidence levels. When linting, flag `low` confidence articles for review.
-
-## Compilation Nudge
-
-Track uncompiled sources by comparing `raw/_index.md` ingestion dates against the last compile date in `_index.md`. If 5+ uncompiled sources exist after an ingestion, suggest: "You have N uncompiled sources. Ask `@wiki` to compile them."
-
-## Structural Guardian
-
-Automatically run a quick structural check when any of these triggers occur:
-
-### Triggers
-- **After any write operation** (ingest, compile, research, output) — verify what was just written
-- **When the skill activates** and the wiki hasn't been linted in 7+ days (check "Last lint" in `_index.md`)
-- **When content is found in the wrong place** — articles in the global hub instead of a topic sub-wiki
-- **When a user mentions wiki problems** — "wiki is broken", "empty", "missing", "wrong"
-- **When no wiki exists** (first-run) — switch to guided onboarding flow instead of showing a command list. Walk the user through topic selection → init → first action suggestion. See `commands/wiki.md` § "If no wiki exists".
-
-### Quick Structure Check (lightweight, runs inline — not a full lint)
-
-1. **Hub integrity**: The hub (HUB) should ONLY contain `wikis.json`, `_index.md`, `log.md`, and `topics/`. If `raw/`, `wiki/`, `output/`, `inbox/`, or `config.md` exist at the hub level → **warn, do not delete**. These may hold user data from an older wiki layout. Suggest the `lint --fix` workflow, which will move contents to the appropriate topic wiki or quarantine to `inbox/.unknown/` per C11/C12 in `references/linting.md`.
-
-2. **Index freshness**: For the active topic wiki, compare actual file count in `wiki/concepts/`, `wiki/topics/`, `wiki/references/` against the rows in their `_index.md`. If mismatched → auto-fix by adding missing entries or removing dead ones.
-
-3. **Orphan detection**: Check if any `.md` files exist in wiki directories but are not listed in any `_index.md`. If found → add them to the index.
-
-4. **Missing directories**: Verify all expected subdirectories exist in the topic wiki (`raw/articles/`, `raw/papers/`, etc.). If missing → create them with empty `_index.md`.
-
-5. **wikis.json sync**: Check that all topic sub-wikis under `HUB/topics/` are registered in `wikis.json`. If a directory exists but isn't registered → add it. If registered but directory is missing → remove the entry.
-
-6. **Log existence**: Verify `log.md` exists in the active wiki and at the hub. If missing → create it.
-
-### Behavior
-
-- **Silent when clean** — don't report anything if everything checks out
-- **Auto-fix trivial issues** — missing indexes, unregistered wikis, orphan files. Just fix and note in log.
-- **Warn on structural problems** — content in wrong place, missing directories, stale indexes. Tell the user what's wrong and suggest the equivalent of `lint --fix`.
-- **Never block the user's request** — run the check, fix what you can, report issues, then continue with what the user actually asked for.
-
-## Concurrency
-
-Multiple Codex sessions can safely read and write to the same wiki simultaneously. No locks are needed.
-
-- **Indexes** are derived from the actual files on disk. If two sessions write articles at the same time, the next read rebuilds the index from whatever files exist. Both rebuilds converge to the same correct result.
-- **log.md** is append-only with small atomic writes. Concurrent appends are safe.
-- **Article/source files** are written independently. Two sessions creating different files never conflict. Two sessions editing the same file is unlikely and handled by last-write-wins (acceptable for a wiki — the content is always rebuildable from raw sources).
-
-See [references/indexing.md](references/indexing.md) for the Derived Index Protocol.
-
-## Session Management
-
-### Research Session Registry
-
-When a `--min-time` research or thesis session is active, the wiki root contains a `.research-session.json` or `.thesis-session.json` file.
-
-**Structural Guardian behavior**:
-- If a session file exists with `status: "in_progress"` and `start_time` > 7 days ago → warn: "Stale research session found. Resume or rerun the research workflow, or delete it manually."
-- Session files are ephemeral — never included in structural health checks or index counts
-- Session files should NOT be committed to git

@@ -19,6 +19,8 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 
 ## Changelog
 
+**v0.4.4** — **Faster Codex first `@wiki` load.** The generated Codex skill now ships as a smaller router prompt instead of loading the full workflow prose up front. Shared Claude/OpenCode behavior stays unchanged, but Codex first-hit prompt expansion is materially smaller and faster.
+
 **v0.4.3** — **Codex first-class install fixes.** Codex packaging, bootstrap, and verification now line up with the current `@wiki` plugin layout. The generated Codex mirror lives under `plugins/llm-wiki/skills/wiki/`, references are validated as copied files for marketplace installs, and the local bootstrap flow now uses the real `llm-wiki` marketplace name instead of the stale `llm-wiki-local` alias.
 
 **v0.4.2** — **Config-first hub resolution & Codex marketplace install.** Hub resolution now checks `~/.config/llm-wiki/config.json` first, falling back to `~/wiki` only when no config exists. Fixes sandbox permission errors in nono where `~/wiki` isn't an allowed path. Codex plugin installable directly from GitHub via `codex plugin marketplace add nvk/llm-wiki`. References changed from symlink to real copy so Codex marketplace caching works. Nono docs updated with per-runtime profiles and `$HOME/.codex` r+w requirement for Codex plugin install.

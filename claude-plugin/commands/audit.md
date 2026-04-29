@@ -107,6 +107,22 @@ For each escalated item:
    - `missing`
 3. Report provenance limitations clearly, but do not confuse them with content errors.
 
+#### 4b. Maintain durable audit provenance
+
+1. At audit start, append an `audit_started` event to `.session-events.jsonl`.
+2. After the output scan and any fresh truth-seeking research, append milestone events such as:
+   - `audit_output_scan_completed`
+   - `audit_truth_escalation_completed`
+3. Refresh `.session-checkpoint.json` with:
+   - `command: "audit"`
+   - audit scope
+   - targeted artifact paths
+   - current trust verdict counts
+   - provenance state
+   - hashes or paths for `.audit/scan-results.json` and `.audit/REPORT.md` once written
+4. After the report files are written, append `audit_completed` and refresh `.session-checkpoint.json` one last time.
+5. Do not delete `.session-events.jsonl` or `.session-checkpoint.json` on normal completion.
+
 #### 5. Write reports
 
 1. Write `.audit/scan-results.json` with summary counts, wiki findings, output findings, truth investigations, and provenance state.

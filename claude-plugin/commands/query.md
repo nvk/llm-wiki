@@ -128,15 +128,17 @@ Skip the synthesized answer, sources used, and knowledge gaps sections. Just ret
 Context reload for new sessions. Reads persistent state and outputs a briefing so you can pick up where you left off.
 
 1. **Check for interrupted sessions**: Try to read `.research-session.json` and `.thesis-session.json` in the wiki root. If either exists with `status: "in_progress"`, report: topic/thesis, current round, sources so far, last round's gaps or verdict direction.
+2. **Durable provenance fallback**: If no active session file exists, read `.session-checkpoint.json` and the recent tail of `.session-events.jsonl`. Use them to summarize the most recent completed research/audit/output work instead of reporting "nothing active."
 
-2. **Recent activity**: Read `log.md`. Extract the last 10 entries (grep for `^## \[`). Present them as a compact timeline.
+3. **Recent activity**: Read `log.md`. Extract the last 10 entries (grep for `^## \[`). Present them as a compact timeline.
 
-3. **Wiki stats**: Read `_index.md` — pull total source count, article count, and output count from the stats section.
+4. **Wiki stats**: Read `_index.md` — pull total source count, article count, and output count from the stats section.
 
-4. **Most recent work**: Read the master `_index.md` table. Identify the 3 most recently updated articles by their `Updated` column. Show their titles, paths, and summaries from the index (do NOT read full articles — keep it fast).
+5. **Most recent work**: Read the master `_index.md` table. Identify the 3 most recently updated articles by their `Updated` column. Show their titles, paths, and summaries from the index (do NOT read full articles — keep it fast).
 
-5. **Suggested next steps**: Based on what you found:
+6. **Suggested next steps**: Based on what you found:
    - If interrupted session exists → suggest resuming it (e.g., "Run `/wiki:research --min-time ...` to continue")
+   - If durable provenance shows a recent completed audit → suggest reviewing `.audit/REPORT.md` or acting on its next steps
    - If recent research logged gaps → suggest addressing them
    - If recent ingests have no corresponding compile → suggest `/wiki:compile`
    - If nothing recent → suggest `/wiki:research` or `/wiki:ingest` to add material

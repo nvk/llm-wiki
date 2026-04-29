@@ -197,7 +197,16 @@ See [references/indexing.md](references/indexing.md) for the Derived Index Proto
 
 When a `--min-time` research or thesis session is active, the wiki root contains a `.research-session.json` or `.thesis-session.json` file.
 
+Durable provenance should also live in the wiki root:
+
+- `.session-events.jsonl` — append-only event log for replayable history
+- `.session-checkpoint.json` — latest compact summary for resume briefings and audits
+
+The session registry files are ephemeral crash-recovery state. The event log and
+checkpoint are the durable provenance trail.
+
 **Structural Guardian behavior**:
 - If a session file exists with `status: "in_progress"` and `start_time` > 7 days ago → warn: "Stale research session found. Clean up with `/wiki:research` or delete manually."
 - Session files are ephemeral — never included in structural health checks or index counts
 - Session files should NOT be committed to git
+- `.session-events.jsonl` and `.session-checkpoint.json` should normally be preserved after completion so `/wiki:audit` can classify provenance as `replayable` instead of `partial`

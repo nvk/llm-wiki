@@ -49,9 +49,16 @@ There is no ambient project focus — pass `--project` explicitly when you want 
 
 #### Multi-Round Session State
 
-When `--min-time` is set, create and maintain a session registry file for crash recovery and round-to-round state:
+When `--min-time` is set, create and maintain:
 
-**Location**: `<wiki-root>/.research-session.json`
+- an **ephemeral session registry** for crash recovery and round-to-round state
+- **durable provenance artifacts** for replayable audit trails and resume briefings
+
+**Ephemeral location**: `<wiki-root>/.research-session.json`
+
+**Durable locations**:
+- `<wiki-root>/.session-events.jsonl`
+- `<wiki-root>/.session-checkpoint.json`
 
 **Schema**:
 ```json
@@ -89,10 +96,12 @@ When `--min-time` is set, create and maintain a session registry file for crash 
 The `mode` field defaults to `"single"` for backward compatibility. When `--plan` is set, `mode` is `"plan"` and `paths` is populated. For single-path sessions, `paths` is omitted. See `references/research-infrastructure.md` § Research Plan Schema for the full schema and resume protocol.
 
 **Lifecycle**:
-1. **Create** at session start (Round 1 begins)
-2. **Update** after each round completes — sources, articles, gaps, progress score
-3. **On completion** → set status to "completed", delete file (data is in log.md)
-4. **On interruption** → file persists with status "in_progress"
+1. **Create** `.research-session.json` at session start (Round 1 begins)
+2. **Append** `research_started` to `.session-events.jsonl` and write an initial `.session-checkpoint.json`
+3. **Update** after each round completes — sources, articles, gaps, progress score
+4. **Append** round and reflection events after each meaningful milestone; refresh `.session-checkpoint.json`
+5. **On completion** → set status to `completed`, append `research_completed`, refresh `.session-checkpoint.json`, delete only `.research-session.json`
+6. **On interruption** → `.research-session.json` persists with status `in_progress`; durable provenance files remain
 
 **Resume detection**: At command start, if `.research-session.json` exists with `status: "in_progress"`:
 - Read the file to understand what was already done
@@ -100,7 +109,9 @@ The `mode` field defaults to `"single"` for backward compatibility. When `--plan
 - If continue: skip Phase 1, read round N's gaps as starting point for round N+1
 - If fresh: delete the file and start over
 
-**Cleanup**: Delete `.research-session.json` when research completes normally. The data lives in `log.md` permanently.
+If no active `.research-session.json` exists but `.session-checkpoint.json` does, read the checkpoint and recent `.session-events.jsonl` entries to summarize the most recent completed research before starting fresh.
+
+**Cleanup**: Delete `.research-session.json` when research completes normally. Keep `.session-events.jsonl` and `.session-checkpoint.json` as durable provenance.
 
 When `--min-time` is set, research runs in ROUNDS until the time budget is spent:
 
@@ -108,6 +119,7 @@ When `--min-time` is set, research runs in ROUNDS until the time budget is spent
 Round 1: Run full research protocol (Phase 1-5)
          → Produces gaps, progress score, and suggested follow-ups
          → Update .research-session.json
+         → Append to .session-events.jsonl and refresh .session-checkpoint.json
          → Check elapsed time
 
 Reflect: Review ALL findings so far holistically (not just this round's gaps)
@@ -119,6 +131,7 @@ Reflect: Review ALL findings so far holistically (not just this round's gaps)
 Round 2: Run research on top 3 gaps as subtopics
          → Compile into wiki, discover new gaps
          → Update .research-session.json
+         → Append to .session-events.jsonl and refresh .session-checkpoint.json
          → Check elapsed time
 
 Reflect: Same holistic reflection — look for cross-topic connections between rounds
@@ -132,6 +145,7 @@ Round 3+: Continue pattern (research → reflect → decide) until:
 Final:   Run /wiki:lint --fix to clean up
          → Generate a summary of everything researched
          → Report total: rounds, sources, articles, progress trajectory, time spent
+         → Append completion event, refresh .session-checkpoint.json
          → Delete .research-session.json
 ```
 
@@ -297,7 +311,7 @@ Update frontmatter: `status: completed`, `verdict: <result>`, `confidence: <leve
 - **Round 3+**: Follow up on specific sub-questions, confounders, or moderating variables
 - **Final**: Synthesize verdict, update thesis file
 
-Session state uses `.thesis-session.json` instead of `.research-session.json`, tracking evidence for/against counts and current verdict direction per round. Same lifecycle: create → update → delete on completion. Resume detection: "Found interrupted thesis session (Round N, current leaning: X). Continue?"
+Session state uses `.thesis-session.json` instead of `.research-session.json`, tracking evidence for/against counts and current verdict direction per round. Keep the same provenance pattern: the thesis session file is ephemeral, while `.session-events.jsonl` and `.session-checkpoint.json` persist across normal completion. Resume detection: "Found interrupted thesis session (Round N, current leaning: X). Continue?"
 
 ### Plan Mode (`--plan`)
 

@@ -287,28 +287,115 @@ Persistent state for multi-round research and thesis sessions, enabling crash re
 }
 ```
 
+### Durable Provenance Files
+
+The session registry files above are for **live recovery**. They are not the
+best long-term provenance format because they are overwritten in place and
+deleted on normal completion.
+
+Research, thesis, audit, and related long-running wiki workflows should also
+maintain two durable provenance artifacts in the wiki root:
+
+- `.session-events.jsonl` — append-only event log
+- `.session-checkpoint.json` — latest replayable summary
+
+These files persist after normal completion and are what the audit layer uses
+to classify provenance as `replayable` instead of merely `partial`.
+
+### Event Log Schema (.session-events.jsonl)
+
+Each line is one JSON object. Append only; never rewrite prior entries.
+
+```json
+{"ts":"2026-04-29T12:00:00Z","command":"research","phase":"start","event":"research_started","session_id":"2026-04-29-120000","topic":"cerebral amyloid angiopathy","mode":"single","min_time_budget":"2h"}
+{"ts":"2026-04-29T12:38:00Z","command":"research","phase":"round","event":"research_round_completed","session_id":"2026-04-29-120000","round":1,"sources_ingested":5,"articles_compiled":3,"progress_score":65}
+{"ts":"2026-04-29T12:42:00Z","command":"research","phase":"reflection","event":"research_reflection_completed","session_id":"2026-04-29-120000","round":1,"top_gaps":["gap1","gap2","gap3"]}
+{"ts":"2026-04-29T14:05:00Z","command":"research","phase":"finish","event":"research_completed","session_id":"2026-04-29-120000","rounds_completed":3,"cumulative_sources":14,"cumulative_articles":9}
+```
+
+Recommended fields:
+
+| Field | Type | Purpose |
+|-------|------|---------|
+| `ts` | string | ISO 8601 timestamp |
+| `command` | string | `research`, `audit`, `output`, `refresh`, etc. |
+| `phase` | string | `start`, `round`, `reflection`, `scan`, `finish`, etc. |
+| `event` | string | Stable event name |
+| `session_id` | string | Correlates all entries from one run |
+| `topic` / `thesis` / `scope` | string | Human-readable target |
+| `round` | number | Research/thesis round when applicable |
+| `sources_ingested` | number | Per-round or cumulative count when relevant |
+| `articles_compiled` | number | Per-round or cumulative count when relevant |
+| `progress_score` | number | Round quality signal when relevant |
+| `artifacts` | array | Paths written in that step |
+| `notes` | string | Short freeform summary, optional |
+
+### Checkpoint Schema (.session-checkpoint.json)
+
+The checkpoint is the latest compact summary of the most recent important run.
+Rewrite atomically after each meaningful milestone.
+
+```json
+{
+  "updated_at": "2026-04-29T14:05:00Z",
+  "command": "research",
+  "session_id": "2026-04-29-120000",
+  "status": "completed",
+  "topic": "cerebral amyloid angiopathy",
+  "current_round": 3,
+  "summary": {
+    "cumulative_sources": 14,
+    "cumulative_articles": 9,
+    "last_progress_score": 82,
+    "top_open_gaps": ["gap4", "gap5"]
+  },
+  "artifacts": [
+    {
+      "path": "output/2026-04-29-caa-summary.md",
+      "sha256": "abc123..."
+    }
+  ]
+}
+```
+
+Recommended fields:
+
+| Field | Type | Purpose |
+|-------|------|---------|
+| `updated_at` | string | ISO 8601 timestamp |
+| `command` | string | Command that owns the checkpoint |
+| `session_id` | string | Correlates with event log and ephemeral session file |
+| `status` | string | `in_progress`, `completed`, `interrupted`, `failed` |
+| `topic` / `thesis` / `scope` | string | Human-readable target |
+| `current_round` | number | Most recent completed round, when applicable |
+| `summary` | object | Compact state for resume briefings |
+| `artifacts` | array | Written artifact paths and hashes, when available |
+
 ### Lifecycle
 
 | Event | Action |
 |-------|--------|
-| --min-time research starts | Create .research-session.json |
-| Round N completes | Update rounds_completed, cumulative counts, status |
-| Research completes normally | Delete file (data persists in log.md) |
-| Session interrupted | File persists with status: "in_progress" |
+| --min-time research starts | Create `.research-session.json`; append `research_started`; write `.session-checkpoint.json` |
+| Round N completes | Update `.research-session.json`; append round event(s); refresh checkpoint |
+| Research completes normally | Append completion event; refresh checkpoint; delete `.research-session.json` |
+| Session interrupted | `.research-session.json` persists with `status: "in_progress"`; durable files remain |
 | Next invocation detects file | Ask: continue or start fresh? |
 | File > 7 days old | Structural Guardian warns about stale session |
 
 ### Resume Protocol
 
 1. Detect `.research-session.json` or `.thesis-session.json` in wiki root
-2. Read file, extract last completed round
-3. Ask user: "Found interrupted session (Round N, M sources). Continue or start fresh?"
-4. If continue: use round N's gaps/reflection as starting point for round N+1
-5. If fresh: delete file, proceed normally
+2. If found, read it first and extract the last completed round
+3. If no active session exists, read `.session-checkpoint.json` and the tail of `.session-events.jsonl` for the latest durable context
+4. Ask user: "Found interrupted session (Round N, M sources). Continue or start fresh?"
+5. If continue: use round N's gaps/reflection as starting point for round N+1
+6. If fresh: delete only the ephemeral session file, preserve durable provenance
 
 ### Notes
 
-- Session files are ephemeral — never commit to git
+- Session files are ephemeral — they are for crash recovery only
+- `.session-events.jsonl` and `.session-checkpoint.json` are durable provenance
+  artifacts and should normally persist after completion
 - Never include in index counts or structural health checks
 - One session per wiki at a time (new session overwrites old)
 

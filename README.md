@@ -9,7 +9,7 @@
 
 [github.com/nvk/llm-wiki](https://github.com/nvk/llm-wiki)
 
-LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, thesis-driven investigation, source ingestion, wiki compilation, querying, and artifact generation. Ships as a Claude Code plugin, an OpenAI Codex plugin, an OpenCode instruction file, or a portable AGENTS.md for any other LLM agent. Obsidian-compatible.
+LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, thesis-driven investigation, source ingestion, wiki compilation, truth-seeking audits, querying, and artifact generation. Ships as a Claude Code plugin, an OpenAI Codex plugin, an OpenCode instruction file, or a portable AGENTS.md for any other LLM agent. Obsidian-compatible.
 
 ---
 
@@ -18,6 +18,8 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 ---
 
 ## Changelog
+
+**v0.5.0** — **Truth-seeking umbrella audit.** New `/wiki:audit` command combines the wiki-only librarian pass with output drift checks, provenance review, and fresh research when local evidence is not enough. `/wiki:librarian` stays available as the focused tool for keeping the `wiki/` layer in check.
 
 **v0.4.4** — **Faster Codex first `@wiki` load.** The generated Codex skill now ships as a smaller router prompt instead of loading the full workflow prose up front. Shared Claude/OpenCode behavior stays unchanged, but Codex first-hit prompt expansion is materially smaller and faster.
 
@@ -29,11 +31,6 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 
 **v0.3.7** — **OpenCode First-Class Support.** Added OpenCode as a third distribution target alongside Claude Code and Codex. New `scripts/sync-opencode-plugin.sh` generates `plugins/llm-wiki-opencode/` from the Claude source with OpenCode-specific wording patches. `tests/test-opencode-sync.sh` guards against drift. `test-plugin-validate.sh` extended with 15 OpenCode mirror checks (SKILL.md, references symlink, no leaked Claude Code references, README). Install via `opencode.json`'s `"instructions"` key or copy to `~/.config/opencode/AGENTS.md`. Architecture section renamed to "Claude-First, Multi-Runtime".
 
-**v0.3.6** — **Codex Bootstrap & Runtime Guidance.** Added a first-class Codex bootstrap helper that registers the local marketplace and writes managed `@wiki` enable config, plus a headless verify script and smoke test for the generated Codex plugin. The new verifier distinguishes real misconfiguration from Codex's current first-install `/plugins` materialization behavior and reports a concrete `PENDING` next step instead of failing opaquely. README, repo workflow docs, and release checklist now document the Codex-local install path and troubleshooting.
-
-**v0.3.5** — **Lessons Learned & Chunked Writes.** New `/wiki:ll` command extracts lessons from the current session — error→fix patterns, user corrections, discoveries, gotchas — and saves structured knowledge to the wiki pipeline. 7-stage: scan → extract → target → write → update articles → suggest rules → log. Supports `--dry-run` and `--rules` (proposes CLAUDE.md additions). Core principle #9 added: chunk large writes to avoid stream idle timeouts. Codex plugin renamed from `llm-wiki` to `wiki` (`@wiki` invocation).
-
-**v0.3.0** — **Parallel Research & Human-Readable Lint.** New `--plan` flag for `/wiki:research` decomposes a topic into 3-5 independent research paths, presents the plan for confirmation, then dispatches all paths as parallel agent groups. Parallel ingest with path-prefixed raw files (no collisions), sequential compilation for cross-path synthesis. Extends `.research-session.json` with `mode` and `paths` fields (backward-compatible). Lint reports now lead with plain-English descriptions instead of internal check codes. C4 extended to catch broken inline body links. Test counter bug fixed — all 86 assertions now run.
 
 ## Install
 
@@ -64,6 +61,7 @@ Canonical explicit invocation:
 ```text
 @wiki research "hardware wallet threat models"
 @wiki ingest https://example.com/article
+@wiki audit --project coldcard-threat-model
 @wiki ll "codex plugin install gotchas"
 ```
 
@@ -308,6 +306,7 @@ Check your installed version:
 /wiki:ingest https://example.com/article          # Manually ingest a source
 /wiki:ingest --inbox                              # Process files dropped in inbox/
 /wiki:compile                                     # Compile any unprocessed sources
+/wiki:audit --project gut-brain-playbook          # Truth-seeking audit across outputs + wiki + fresh research
 /wiki:output report --topic gut-brain             # Generate a report
 /wiki:output slides --retardmax                   # Ship a rough slide deck NOW
 /wiki:assess /path/to/my-app --wiki nutrition     # Gap analysis: repo vs wiki vs market
@@ -345,7 +344,11 @@ Check your installed version:
 | `/wiki:lint` | Run health checks on the wiki |
 | `/wiki:lint --fix` | Auto-fix structural issues |
 | `/wiki:lint --deep` | Web-verify facts and suggest improvements |
-| `/wiki:librarian` | Scan all articles for staleness and quality — scored report, checkpoint recovery |
+| `/wiki:audit` | Umbrella trust audit: wiki, outputs, provenance, and fresh research when needed |
+| `/wiki:audit --artifact <path>` | Audit one article or output artifact and follow its evidence chain |
+| `/wiki:audit --project <slug>` | Audit one project's outputs and upstream wiki state |
+| `/wiki:audit report` | Display the latest umbrella audit report |
+| `/wiki:librarian` | Focused wiki maintenance: staleness and quality scan for the `wiki/` layer |
 | `/wiki:librarian --article <path>` | Scan a single article |
 | `/wiki:librarian report` | Display the latest librarian scan report |
 | `/wiki:output <type>` | Generate: summary, report, study-guide, slides, timeline, glossary, comparison |
@@ -357,6 +360,8 @@ Check your installed version:
 | `/wiki:assess <path> --retardmax` | Wide net — adds adjacent fields and failure analysis |
 
 All commands accept `--wiki <name>` to target a specific topic wiki and `--local` to target the project wiki. Commands that generate content (`query`, `output`, `plan`) also accept `--with <wiki>` to load supplementary wikis as cross-wiki context — e.g., `--with article-writing` applies writing craft knowledge when generating output from a domain wiki.
+
+`/wiki:librarian` is the focused wiki-maintenance tool. `/wiki:audit` is broader and may perform fresh research to decide whether the current knowledge or generated outputs are still trustworthy.
 
 ## How It Works
 

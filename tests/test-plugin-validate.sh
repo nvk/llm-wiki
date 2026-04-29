@@ -56,7 +56,7 @@ fi
 # Reference files exist
 echo ""
 echo "--- Reference files ---"
-for ref in command-prelude compilation hub-resolution indexing ingestion librarian linting projects research-infrastructure wiki-structure; do
+for ref in audit command-prelude compilation hub-resolution indexing ingestion librarian linting projects research-infrastructure wiki-structure; do
   reffile="$PLUGIN_DIR/skills/wiki-manager/references/${ref}.md"
   if [ -f "$reffile" ]; then
     log_pass "references/$ref.md exists"
@@ -89,7 +89,7 @@ echo "--- Codex references copy ---"
 REFS_DIR="$CODEX_SKILL/references"
 if [ -d "$REFS_DIR" ] && [ ! -L "$REFS_DIR" ]; then
   log_pass "Codex references directory exists"
-  for ref in command-prelude compilation hub-resolution indexing ingestion librarian linting projects research-infrastructure wiki-structure; do
+  for ref in audit command-prelude compilation hub-resolution indexing ingestion librarian linting projects research-infrastructure wiki-structure; do
     if [ -f "$REFS_DIR/${ref}.md" ]; then
       log_pass "Codex references/$ref.md exists"
     else
@@ -178,7 +178,7 @@ if [ -L "$OC_REFS_LINK" ]; then
   log_pass "OpenCode references is a symlink"
   if [ -e "$OC_REFS_LINK" ]; then
     log_pass "OpenCode references symlink resolves"
-    for ref in command-prelude compilation hub-resolution indexing ingestion librarian linting projects research-infrastructure wiki-structure; do
+    for ref in audit command-prelude compilation hub-resolution indexing ingestion librarian linting projects research-infrastructure wiki-structure; do
       if [ -f "$OC_REFS_LINK/${ref}.md" ]; then
         log_pass "OpenCode references/$ref.md reachable via symlink"
       else

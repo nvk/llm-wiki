@@ -51,6 +51,7 @@ promptfoo eval -c tests/promptfooconfig.yaml --repeat 3
 ### What it tests
 
 - Fuzzy router dispatches research/URL/question intents correctly
+- Audit/trust prompts dispatch to the audit workflow
 - Negative control: ambiguous input triggers clarification
 - Plugin loads without errors
 

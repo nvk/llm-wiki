@@ -2,11 +2,12 @@
 name: wiki
 description: >
   LLM-compiled knowledge base manager for Codex. Use it to initialize, ingest,
-  compile, query, lint, research, plan, and generate outputs from topic-scoped wikis.
+  compile, query, lint, audit, research, plan, and generate outputs from topic-scoped wikis.
   Activates when the user mentions wiki workflows, knowledge-base management,
-  ingestion, compilation, querying, linting, research, librarian, scan quality,
-  article quality, content review, lessons learned, implementation plan, or uses
-  /wiki-style shorthand in a repo with .wiki/, ~/wiki/, or a configured hub path.
+  ingestion, compilation, querying, linting, audit, research, librarian,
+  scan quality, article quality, content review, output drift, provenance,
+  implementation plan, or uses /wiki-style shorthand in a repo with .wiki/,
+  ~/wiki/, or a configured hub path.
 ---
 
 # LLM Wiki Manager
@@ -74,6 +75,10 @@ When this skill activates outside of an explicit `@wiki` invocation or `/wiki`-s
 4. If no relevant content → answer normally, optionally suggest: "This could be added to your wiki; ask `@wiki` to ingest it."
 5. When peeking at sibling wikis, only read their `_index.md` — do not read full articles unless the user asks
 
+If the user asks whether they can trust a wiki artifact, requests an audit,
+mentions provenance or drift, or asks for content verification beyond a normal
+query, use the Audit workflow instead of treating it as plain Q&A.
+
 ## Workflows
 
 Choose the smallest workflow that matches the request, then load only the
@@ -84,6 +89,7 @@ reference material you need for that workflow:
 - `query` → read the relevant `_index.md` files first, then only the articles
   needed to answer
 - `lint` → `references/linting.md`
+- `audit` → `references/audit.md`
 - `research`, `plan`, `output`, `assess` → `references/research-infrastructure.md`
 - `project` → `references/projects.md`
 - `librarian` → `references/librarian.md`

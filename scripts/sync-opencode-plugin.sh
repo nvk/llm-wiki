@@ -42,11 +42,12 @@ frontmatter = """---
 name: wiki-manager
 description: >
   LLM-compiled knowledge base manager for OpenCode. Use it to initialize, ingest,
-  compile, query, lint, research, plan, and generate outputs from topic-scoped wikis.
+  compile, query, lint, audit, research, plan, and generate outputs from topic-scoped wikis.
   Activates when the user mentions wiki workflows, knowledge-base management,
-  ingestion, compilation, querying, linting, research, librarian, scan quality,
-  article quality, content review, lessons learned, implementation plan, or uses
-  wiki-related shorthand in a repo with .wiki/, ~/wiki/, or a configured hub path.
+  ingestion, compilation, querying, linting, audit, research, librarian,
+  scan quality, article quality, content review, output drift, provenance,
+  lessons learned, implementation plan, or uses wiki-related shorthand in a
+  repo with .wiki/, ~/wiki/, or a configured hub path.
 ---
 """
 

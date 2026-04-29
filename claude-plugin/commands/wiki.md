@@ -1,5 +1,5 @@
 ---
-description: "LLM wiki knowledge base — understands natural language. Say what you want (add a URL, ask a question, research a topic, resume work) and it routes to the right subcommand. Also handles init, status, and config."
+description: "LLM wiki knowledge base — understands natural language. Say what you want (add a URL, ask a question, research a topic, audit an output, resume work) and it routes to the right subcommand. Also handles init, status, and config."
 argument-hint: "[<natural language request>] [init <topic-name> [--local]] [config hub-path [<path>]] [--wiki <name>]"
 allowed-tools: Read, Write, Edit, Glob, Bash(ls:*), Bash(wc:*), Bash(mkdir:*), Bash(date:*), Bash(mv:*)
 ---
@@ -105,22 +105,23 @@ The user typed something that isn't a known keyword. Detect their intent and rou
 |----------|--------|----------------|----------|
 | 1 | **Ingest** | Contains a URL (`http://`, `https://`), a file path (`/`, `~/`), or words: "add", "save", "ingest", "read this", "grab this" | `Skill: wiki:ingest` with the URL/path/text |
 | 2 | **Resume** | "where was I", "pick up where", "continue", "resume", "get back to", "catch me up", "what was I working on" | `Skill: wiki:query` with `--resume` |
-| 3 | **Query** | Starts with what/why/how/when/where/who, contains "?", or words: "tell me about", "explain", "what do we know about" | `Skill: wiki:query` with the question |
-| 4 | **Research** | "research", "find out about", "look into", "deep dive", "investigate" | `Skill: wiki:research` with the topic |
-| 5 | **Thesis** | "prove that", "is it true that", "verify", "test the claim", "test the hypothesis" | `Skill: wiki:research` with `--mode thesis "<claim>"` |
-| 6 | **Compile** | "compile", "process sources", "synthesize", "update articles" | `Skill: wiki:compile` |
-| 7 | **Lint** | "check health", "fix wiki", "broken", "problems", "cleanup" | `Skill: wiki:lint` |
-| 7b | **Librarian** | "librarian", "quality scan", "scan quality", "quality issues", "article quality", "content review", "review my wiki", "review articles", "librarian report", "quality report", "stale articles" | `Skill: wiki:librarian` |
-| 7c | **Refresh** | "check freshness", "still current", "up to date", "outdated", "refresh" | `Skill: wiki:refresh` |
-| 8 | **Output** | "write a summary", "generate a report", "slides", "create a", "write a" | `Skill: wiki:output` with the request |
-| 9 | **Assess** | "compare to", "assess", "gap analysis" | `Skill: wiki:assess` |
-| 10 | **Plan** | "plan for", "implementation plan", "architecture for" | `Skill: wiki:plan` |
-| 10b | **Lessons Learned** | "learn this", "learn that", "lesson learned", "lessons learned", "absorb this", "capture what we learned", "what did we learn", "session takeaways", "ll" | `Skill: wiki:ll` with the topic hint |
-| 11 | **Retract** | "remove source", "retract", "delete source", "pull out" | `Skill: wiki:retract` |
-| 12 | **Project (new)** | "new project", "start a project", "create project" (+ slug and goal) | `Skill: wiki:project` with `new <slug> "goal"` |
-| 13 | **Project (list)** | "list projects", "what projects", "show projects", "my projects" | `Skill: wiki:project` with `list` |
-| 14 | **Project (show)** | "show project X", "what's in project X", "open project X" | `Skill: wiki:project` with `show <slug>` |
-| 15 | **Project (archive)** | "archive project", "I'm done with project", "close project" | `Skill: wiki:project` with `archive <slug>` |
+| 3 | **Audit** | "audit", "full audit", "can I trust", "trust this", "verify this output", "verify this report", "fact-check this artifact", "check everything", "provenance", "drift report", "follow the evidence", "find the truth" | `Skill: wiki:audit` |
+| 4 | **Query** | Starts with what/why/how/when/where/who, contains "?", or words: "tell me about", "explain", "what do we know about" | `Skill: wiki:query` with the question |
+| 5 | **Research** | "research", "find out about", "look into", "deep dive", "investigate" | `Skill: wiki:research` with the topic |
+| 6 | **Thesis** | "prove that", "is it true that", "verify", "test the claim", "test the hypothesis" | `Skill: wiki:research` with `--mode thesis "<claim>"` |
+| 7 | **Compile** | "compile", "process sources", "synthesize", "update articles" | `Skill: wiki:compile` |
+| 8 | **Lint** | "check health", "fix wiki", "broken", "problems", "cleanup" | `Skill: wiki:lint` |
+| 8b | **Librarian** | "librarian", "quality scan", "scan quality", "article quality", "content review", "keep the wiki in check", "review articles", "librarian report", "quality report", "stale articles" | `Skill: wiki:librarian` |
+| 8c | **Refresh** | "check freshness", "still current", "up to date", "outdated", "refresh" | `Skill: wiki:refresh` |
+| 9 | **Output** | "write a summary", "generate a report", "slides", "create a", "write a" | `Skill: wiki:output` with the request |
+| 10 | **Assess** | "compare to", "assess", "gap analysis" | `Skill: wiki:assess` |
+| 11 | **Plan** | "plan for", "implementation plan", "architecture for" | `Skill: wiki:plan` |
+| 11b | **Lessons Learned** | "learn this", "learn that", "lesson learned", "lessons learned", "absorb this", "capture what we learned", "what did we learn", "session takeaways", "ll" | `Skill: wiki:ll` with the topic hint |
+| 12 | **Retract** | "remove source", "retract", "delete source", "pull out" | `Skill: wiki:retract` |
+| 13 | **Project (new)** | "new project", "start a project", "create project" (+ slug and goal) | `Skill: wiki:project` with `new <slug> "goal"` |
+| 14 | **Project (list)** | "list projects", "what projects", "show projects", "my projects" | `Skill: wiki:project` with `list` |
+| 15 | **Project (show)** | "show project X", "what's in project X", "open project X" | `Skill: wiki:project` with `show <slug>` |
+| 16 | **Project (archive)** | "archive project", "I'm done with project", "close project" | `Skill: wiki:project` with `archive <slug>` |
 
 **Confidence routing:**
 

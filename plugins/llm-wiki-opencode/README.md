@@ -64,6 +64,7 @@ Talk to OpenCode naturally:
 - "Ingest https://example.com/article into my wiki"
 - "Compile the wiki"
 - "What does my wiki know about X?"
+- "Audit this playbook and follow the evidence wherever it leads"
 - "Lint the wiki and fix issues"
 
 ## Alternative: AGENTS.md

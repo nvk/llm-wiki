@@ -115,6 +115,18 @@ tests:
         threshold: 0.50
 
   # --- Librarian routing ---
+  - description: "Router: audit intent routes to umbrella audit"
+    vars:
+      prompt: "Audit this playbook and tell me if I can trust it"
+    assert:
+      - type: skill-used
+        value: wiki
+      - type: llm-rubric
+        value: "Recognized this as a broad trust audit request. It should route to the umbrella audit workflow, not a plain query and not the narrower librarian-only maintenance scan."
+        threshold: 0.75
+      - type: cost
+        threshold: 0.50
+
   - description: "Router: quality scan routes to librarian"
     vars:
       prompt: "Scan my wiki for quality issues and stale articles"

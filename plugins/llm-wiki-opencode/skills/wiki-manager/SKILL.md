@@ -2,11 +2,12 @@
 name: wiki-manager
 description: >
   LLM-compiled knowledge base manager for OpenCode. Use it to initialize, ingest,
-  compile, query, lint, research, plan, and generate outputs from topic-scoped wikis.
+  compile, query, lint, audit, research, plan, and generate outputs from topic-scoped wikis.
   Activates when the user mentions wiki workflows, knowledge-base management,
-  ingestion, compilation, querying, linting, research, librarian, scan quality,
-  article quality, content review, lessons learned, implementation plan, or uses
-  wiki-related shorthand in a repo with .wiki/, ~/wiki/, or a configured hub path.
+  ingestion, compilation, querying, linting, audit, research, librarian,
+  scan quality, article quality, content review, output drift, provenance,
+  lessons learned, implementation plan, or uses wiki-related shorthand in a
+  repo with .wiki/, ~/wiki/, or a configured hub path.
 ---
 
 # LLM Wiki Manager
@@ -23,18 +24,15 @@ OpenCode's built-in tools (`read`, `write`, `edit`, `glob`, `grep`, `bash`, `web
 
 ## Hub Path
 
-**Resolution**: At the start of every operation, resolve **HUB** by reading `~/.config/llm-wiki/config.json` first. If it has `resolved_path`, use that value directly. If it has only `hub_path`, expand the leading `~` only (not tildes in `com~apple~CloudDocs`), set HUB, and write `resolved_path` back. If no config file exists, try `~/wiki/_index.md` as a fallback. See [references/hub-resolution.md](references/hub-resolution.md) for the full protocol.
+The hub defaults to `~/wiki/`. If `~/wiki/` exists and is initialized (has `_index.md`), it is used directly — no config file needed. This is the simplest, most reliable path.
 
-The config file looks like:
+To use a different location (e.g., iCloud Drive) when `~/wiki/` is not set up, create `~/.config/llm-wiki/config.json`:
 
 ```json
-{
-  "hub_path": "~/Library/Mobile Documents/com~apple~CloudDocs/wiki",
-  "resolved_path": "/Users/jane/Library/Mobile Documents/com~apple~CloudDocs/wiki"
-}
+{ "hub_path": "~/Library/Mobile Documents/com~apple~CloudDocs/wiki" }
 ```
 
-If no config exists and `~/wiki/` has `_index.md`, that works too. But config is checked first — in sandboxed environments `~/wiki/` may not be accessible. All references to `~/wiki/` below mean HUB.
+**Resolution**: At the start of every operation, resolve **HUB** by following the protocol in [references/hub-resolution.md](references/hub-resolution.md) — check `~/wiki/` first, then fall back to config. This handles tilde expansion, paths with spaces, and iCloud directory names correctly. All references to `~/wiki/` below mean HUB.
 
 ## Wiki Location
 
@@ -81,6 +79,10 @@ When this skill activates outside of an explicit wiki-related request:
 4. If no relevant content → answer normally, optionally suggest: "This could be added to your wiki — just ask me to ingest it."
 5. When peeking at sibling wikis, only read their `_index.md` — do not read full articles unless the user asks
 
+If the user asks whether they can trust a wiki artifact, requests an audit,
+mentions provenance or drift, or asks for content verification beyond a normal
+query, use the Audit workflow instead of treating it as plain Q&A.
+
 ## Workflows
 
 ### Ingestion
@@ -97,6 +99,10 @@ Flow: Read `_index.md` → identify relevant articles by summary/tag → read ar
 ### Linting
 See [references/linting.md](references/linting.md).
 Flow: Check structure → indexes → links → content → coverage → report → optionally auto-fix.
+
+### Audit
+See [references/audit.md](references/audit.md).
+Flow: Run or reuse the librarian pass → inspect artifact dependency chains across `output/`, `wiki/`, and `raw/` → escalate with fresh source checks and targeted research until trust verdicts converge → write `.audit/REPORT.md`.
 
 ### Search
 Flow: Scan indexes for summary/tag matches → Grep full-text → rank results → present.

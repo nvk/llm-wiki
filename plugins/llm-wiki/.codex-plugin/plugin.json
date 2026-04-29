@@ -1,7 +1,7 @@
 {
   "name": "wiki",
-  "version": "0.4.4",
-  "description": "LLM-compiled knowledge bases for Codex. Build topic-scoped wikis, ingest sources, compile articles, query, lint, research, and generate outputs.",
+  "version": "0.5.0",
+  "description": "LLM-compiled knowledge bases for Codex. Build topic-scoped wikis, ingest sources, compile articles, run truth-seeking audits, query, lint, research, and generate outputs.",
   "author": {
     "name": "nvk",
     "url": "https://github.com/nvk"
@@ -15,13 +15,15 @@
     "research",
     "markdown",
     "obsidian",
-    "codex"
+    "codex",
+    "audit",
+    "librarian"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "LLM Wiki",
-    "shortDescription": "Build and maintain topic-scoped research wikis",
-    "longDescription": "Bundle the llm-wiki workflow for Codex: initialize a wiki, ingest sources, compile articles, query knowledge, lint structure, run research, and generate outputs.",
+    "shortDescription": "Build, audit, and maintain topic-scoped research wikis",
+    "longDescription": "Bundle the llm-wiki workflow for Codex: initialize a wiki, ingest sources, compile articles, audit outputs and provenance, query knowledge, lint structure, run research, and generate outputs.",
     "developerName": "nvk",
     "category": "Productivity",
     "capabilities": [
@@ -32,6 +34,7 @@
     "defaultPrompt": [
       "Research a new topic and compile it into a wiki.",
       "Ingest these notes into my wiki and update the indexes.",
+      "Audit this wiki output and tell me if I can trust it.",
       "Lint this wiki and fix structural issues."
     ],
     "brandColor": "#2F855A"

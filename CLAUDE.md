@@ -61,10 +61,10 @@ Requires `ANTHROPIC_API_KEY`. Costs ~$2-5 per run.
 
 ```
 claude-plugin/                  — source of truth, primary distribution target
-  commands/*.md                 — 12 subcommand definitions
+  commands/*.md                 — 16 command files (15 user commands + wiki router)
   skills/wiki-manager/
     SKILL.md                    — skill manifest + fuzzy router
-    references/*.md             — 9 reference docs (hub-resolution, linting, etc.)
+    references/*.md             — 10 reference docs (hub-resolution, linting, audit, etc.)
   .claude-plugin/
     plugin.json                 — plugin manifest
 plugins/llm-wiki/               — generated Codex packaging mirror (do NOT hand-edit)

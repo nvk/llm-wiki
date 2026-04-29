@@ -1,5 +1,5 @@
 ---
-description: "Review wiki content for staleness, quality, accuracy, and coherence. Produces scored reports; never modifies content without confirmation."
+description: "Keep the wiki article layer in check: staleness, quality, accuracy, and coherence. Focused maintenance tool; broader trust audits belong to /wiki:audit."
 argument-hint: "scan [--article <path>] [--resume] [--passes <list>] | report | fix <id> [--wiki <name>] [--local]"
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:*), Bash(mv:*), Bash(mkdir:*), WebFetch, WebSearch, Agent
 ---
@@ -13,6 +13,8 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:
 4. Read `<wiki>/_index.md` to verify. If missing → stop with "No wiki found. Run `/wiki init` first."
 
 Read the librarian reference at `skills/wiki-manager/references/librarian.md`. Then execute the requested subcommand.
+
+`/wiki:librarian` is the focused wiki-maintenance tool. It reviews the `wiki/` layer only. If the user wants a broader trust inspection across outputs, provenance, and fresh research, direct them to `/wiki:audit`.
 
 ### Parse $ARGUMENTS
 

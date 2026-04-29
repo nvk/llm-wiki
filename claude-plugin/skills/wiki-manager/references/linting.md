@@ -190,7 +190,7 @@ Any file that is not in the canonical allowlist for its location is either a use
 | Location | Allowed items |
 |----------|--------------|
 | HUB | `wikis.json`, `_index.md`, `log.md`, `topics/` |
-| Topic wiki root | `_index.md`, `config.md`, `log.md`, `raw/`, `wiki/`, `output/`, `inbox/`, `.obsidian/`, `.research-session.json`, `.thesis-session.json` |
+| Topic wiki root | `_index.md`, `config.md`, `log.md`, `raw/`, `wiki/`, `output/`, `inbox/`, `.obsidian/`, `.librarian/`, `.audit/`, `.research-session.json`, `.thesis-session.json`, `.session-events.jsonl`, `.session-checkpoint.json` |
 | `raw/` | `_index.md`, `articles/`, `papers/`, `repos/`, `notes/`, `data/` |
 | `wiki/` | `_index.md`, `concepts/`, `topics/`, `references/`, `theses/` |
 | `raw/<type>/` | `_index.md` + `*.md` files with valid frontmatter |

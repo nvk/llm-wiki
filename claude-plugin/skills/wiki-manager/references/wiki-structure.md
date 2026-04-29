@@ -25,6 +25,12 @@ All content lives here. Each topic wiki has the full structure:
 HUB/topics/<name>/
 ├── .obsidian/                     # Obsidian vault config
 ├── _index.md                      # Master index: stats, quick nav, recent changes
+├── .librarian/                    # Optional: wiki-only maintenance reports
+│   ├── REPORT.md
+│   └── scan-results.json
+├── .audit/                        # Optional: umbrella audit reports
+│   ├── REPORT.md
+│   └── scan-results.json
 ├── config.md                      # Title, scope, conventions
 ├── log.md                         # Topic-level activity log
 ├── inbox/                         # Drop zone for this topic
@@ -172,7 +178,7 @@ Append-only chronological activity log. Every wiki operation appends an entry. N
 
 Each entry: `## [YYYY-MM-DD] operation | Description`
 
-Operations: `init`, `ingest`, `compile`, `query`, `lint`, `research`, `output`, `refresh`
+Operations: `init`, `ingest`, `compile`, `query`, `lint`, `research`, `output`, `refresh`, `librarian`, `audit`, `plan`, `project`, `ll`, `assess`
 
 Useful for: `grep "^## \[" log.md | tail -10` to see recent activity.
 

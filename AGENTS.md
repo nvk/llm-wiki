@@ -44,6 +44,8 @@ All content lives here. One topic per wiki. Isolated indexes, focused queries.
 ```
 ~/wiki/topics/<name>/
 ├── .obsidian/                     # Obsidian vault config (optional)
+├── .librarian/                    # Optional: wiki-only maintenance reports
+├── .audit/                        # Optional: umbrella audit reports
 ├── _index.md                      # Master index: stats, navigation, recent changes
 ├── config.md                      # Title, scope, conventions
 ├── log.md                         # Activity log for this topic
@@ -162,7 +164,7 @@ Body includes abstract, sections, `## See Also` (dual-links, bidirectional), `##
 ## [YYYY-MM-DD] operation | Description
 ```
 
-Operations: `init`, `ingest`, `compile`, `query`, `lint`, `research`, `thesis`, `output`, `assess`
+Operations: `init`, `ingest`, `compile`, `query`, `lint`, `research`, `thesis`, `output`, `assess`, `refresh`, `librarian`, `audit`, `plan`, `project`, `ll`
 
 ## Operations
 
@@ -304,6 +306,29 @@ Compare a local repo against wiki research + market.
 4. **Market scan** (3-5 parallel agents): competitors, best practices, emerging trends
 
 Output: comparison report with feature matrix, competitive landscape, and recommended actions (specific research and build suggestions).
+
+### Audit
+
+Truth-seeking umbrella inspection across the whole artifact graph. If librarian
+keeps the `wiki/` layer in check, audit answers the broader question: can the
+user trust the current knowledge and outputs right now?
+
+**Default behavior**:
+- Reuse or rerun the librarian pass for wiki articles
+- Audit output artifacts across `output/`, `wiki/`, and `raw/` dependency chains
+- Follow the evidence outward when local material is weak, stale, contradictory,
+  or missing
+- Run targeted support and attack research before settling on a verdict
+- Write `.audit/REPORT.md` and `.audit/scan-results.json`
+
+**Verdicts**:
+- `supported`
+- `weakened`
+- `contradicted`
+- `unresolved`
+
+Flags: `--artifact <path>`, `--project <slug>`, `--wiki-only`, `--outputs-only`,
+`--quick`, `--fresh`.
 
 ### Librarian
 

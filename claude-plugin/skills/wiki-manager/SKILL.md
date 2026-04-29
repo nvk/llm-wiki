@@ -3,12 +3,13 @@ name: wiki-manager
 description: >
   LLM-compiled knowledge base manager. Activates when user works with wiki
   directories, mentions knowledge base management, asks knowledge questions
-  in a project with a wiki, wants to ingest/compile/query/lint knowledge,
+  in a project with a wiki, wants to ingest/compile/query/lint/audit knowledge,
   or uses /wiki commands. Also activates when user says "wiki", "knowledge base",
-  "ingest", "compile wiki", "add to wiki", "search wiki", "librarian",
-  "scan quality", "article quality", "content review", or asks a factual
-  question in a directory containing .wiki/ or when ~/wiki/ exists or the
-  configured hub path exists (check ~/.config/llm-wiki/config.json for hub_path).
+  "ingest", "compile wiki", "add to wiki", "search wiki", "audit", "librarian",
+  "scan quality", "article quality", "content review", "output drift",
+  "provenance", "trust this", or asks a factual question in a directory
+  containing .wiki/ or when ~/wiki/ exists or the configured hub path exists
+  (check ~/.config/llm-wiki/config.json for hub_path).
 tools:
   - Read
   - Write
@@ -81,6 +82,10 @@ When this skill activates outside of an explicit `/wiki:*` command:
 4. If no relevant content → answer normally, optionally suggest: "This could be added to your wiki with `/wiki:ingest`"
 5. When peeking at sibling wikis, only read their `_index.md` — do not read full articles unless the user asks
 
+If the user asks whether they can trust a wiki artifact, requests an audit,
+mentions provenance or drift, or asks for content verification beyond a normal
+query, use the Audit workflow instead of treating it as plain Q&A.
+
 ## Workflows
 
 ### Ingestion
@@ -97,6 +102,10 @@ Flow: Read `_index.md` → identify relevant articles by summary/tag → read ar
 ### Linting
 See [references/linting.md](references/linting.md).
 Flow: Check structure → indexes → links → content → coverage → report → optionally auto-fix.
+
+### Audit
+See [references/audit.md](references/audit.md).
+Flow: Run or reuse the librarian pass → inspect artifact dependency chains across `output/`, `wiki/`, and `raw/` → escalate with fresh source checks and targeted research until trust verdicts converge → write `.audit/REPORT.md`.
 
 ### Search
 Flow: Scan indexes for summary/tag matches → Grep full-text → rank results → present.

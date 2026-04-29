@@ -19,6 +19,8 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 
 ## Changelog
 
+**v0.5.1** — **Durable session provenance.** Multi-round research now distinguishes ephemeral crash-recovery state from durable provenance. `research` keeps `.session-events.jsonl` and `.session-checkpoint.json` for replayable audits and resume briefings, `audit` records its own provenance milestones, and `query --resume` can fall back to the checkpoint trail when no active session is running.
+
 **v0.5.0** — **Truth-seeking umbrella audit.** New `/wiki:audit` command combines the wiki-only librarian pass with output drift checks, provenance review, and fresh research when local evidence is not enough. `/wiki:librarian` stays available as the focused tool for keeping the `wiki/` layer in check.
 
 **v0.4.4** — **Faster Codex first `@wiki` load.** The generated Codex skill now ships as a smaller router prompt instead of loading the full workflow prose up front. Shared Claude/OpenCode behavior stays unchanged, but Codex first-hit prompt expansion is materially smaller and faster.

@@ -20,19 +20,22 @@ This skill is loaded as an instruction file. OpenCode does not have Claude-style
 
 OpenCode's built-in tools (`read`, `write`, `edit`, `glob`, `grep`, `bash`, `webfetch`, `websearch`) map directly to the tools this skill requires. Web search requires `OPENCODE_ENABLE_EXA=1` in the environment.
 
-**Permissions**: OpenCode sandboxes file access to the project directory. The wiki hub at `~/wiki/` is external. Add `external_directory` permissions in `opencode.json` to allow access: `{ "permission": { "external_directory": { "~/wiki/**": "allow", "~/.config/llm-wiki/**": "allow" } } }`. Alternatively, use `--local` mode to keep everything in `.wiki/` inside the project.
+**Permissions**: OpenCode sandboxes file access to the project directory. The wiki hub at `~/wiki/` is external. Add `external_directory` permissions in `opencode.json` to allow access: `{ "permission": { "external_directory": { "~/wiki/**": "allow", "~/.config/llm-wiki/**": "allow" } } }`. If your configured hub uses another absolute path (for example iCloud Drive), add that path too. Alternatively, use `--local` mode to keep everything in `.wiki/` inside the project.
 
 ## Hub Path
 
-The hub defaults to `~/wiki/`. If `~/wiki/` exists and is initialized (has `_index.md`), it is used directly — no config file needed. This is the simplest, most reliable path.
+**Resolution**: At the start of every operation, resolve **HUB** by reading `~/.config/llm-wiki/config.json` first. If it has `resolved_path`, use that value directly. If it has only `hub_path`, expand the leading `~` only (not tildes in `com~apple~CloudDocs`), set HUB, and write `resolved_path` back. If no config file exists, try `~/wiki/_index.md` as a fallback. See [references/hub-resolution.md](references/hub-resolution.md) for the full protocol.
 
-To use a different location (e.g., iCloud Drive) when `~/wiki/` is not set up, create `~/.config/llm-wiki/config.json`:
+The config file looks like:
 
 ```json
-{ "hub_path": "~/Library/Mobile Documents/com~apple~CloudDocs/wiki" }
+{
+  "hub_path": "~/Library/Mobile Documents/com~apple~CloudDocs/wiki",
+  "resolved_path": "/Users/jane/Library/Mobile Documents/com~apple~CloudDocs/wiki"
+}
 ```
 
-**Resolution**: At the start of every operation, resolve **HUB** by following the protocol in [references/hub-resolution.md](references/hub-resolution.md) — check `~/wiki/` first, then fall back to config. This handles tilde expansion, paths with spaces, and iCloud directory names correctly. All references to `~/wiki/` below mean HUB.
+If no config exists and `~/wiki/` has `_index.md`, that works too. But config is checked first — in sandboxed environments `~/wiki/` may not be accessible. All references to `~/wiki/` below mean HUB.
 
 ## Wiki Location
 

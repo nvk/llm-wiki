@@ -1,26 +1,5 @@
 # llm-wiki Development Guide
 
-## Repo Workspace Discipline
-
-When editing `llm-wiki`, run the agent from the actual `llm-wiki` repo root or
-from a dedicated `git worktree` created for this repo. Do not keep the agent
-rooted in some other repository and mutate `llm-wiki` via cross-repo working
-trees or ad hoc `git -C /path/to/llm-wiki ...` commands.
-
-Why: agent tools, relative paths, sync scripts, and git status checks all
-assume the current project is the repo being edited. Cross-repo sessions make
-it easy to read the wrong files, run tests in the wrong tree, or reason from
-the wrong git state.
-
-Recommended patterns:
-
-- Normal work: open the agent in the target repo root and work there directly.
-- Parallel or isolated work: create a sibling worktree with `git worktree add`
-  and run the agent inside that worktree as its own project root.
-- Emergency inspection only: if sandbox constraints force a one-off `git -C`
-  read from a neutral directory, do that only for short inspection commands, not
-  as the steady-state way of editing the repo.
-
 ## Testing
 
 Run tests before declaring any change to plugin code done.

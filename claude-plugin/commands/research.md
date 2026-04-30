@@ -1,6 +1,6 @@
 ---
-description: "Deep multi-agent research on a topic, question, or thesis. Launches parallel agents to search the web, ingests sources, and compiles them into wiki articles. Thesis mode provides for/against evidence framing with a verdict."
-argument-hint: "<topic|question> [--plan] [--mode thesis \"<claim>\"] [--new-topic] [--sources <N>] [--deep] [--retardmax] [--min-time <duration>] [--wiki <name>] [--local] [--project <slug>]"
+description: "Deep multi-agent research on a topic, question, or thesis. Launches parallel agents to search the web, ingests sources, and compiles them into wiki articles. Supports --resume/--continue after interrupted runs."
+argument-hint: "<topic|question> [--plan] [--mode thesis \"<claim>\"] [--new-topic] [--sources <N>] [--deep] [--retardmax] [--min-time <duration>] [--resume|--continue] [--wiki <name>] [--local] [--project <slug>]"
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:*), Bash(mkdir:*), WebFetch, WebSearch, Agent
 ---
 
@@ -21,6 +21,7 @@ Conduct deep research on the topic in $ARGUMENTS. This is an automated pipeline:
 - **--local**: Use project-local `.wiki/`
 - **--plan**: Decompose the topic into 3-5 independent research paths, present the plan for confirmation, then execute all paths in parallel. Each path gets its own agent group (5 agents standard, 8 with `--deep`). Ingest runs in parallel across paths (each path writes unique raw files); compilation runs once after all paths complete (single pass sees all sources for better cross-referencing). Without `--plan`, research runs a single path as before. See Plan Mode below.
 - **--project <slug>**: Tag all new outputs with this project. The research playbook/summary artifact is saved inside `output/projects/<slug>/` instead of flat `output/`. Compiled wiki articles get `project: <slug>` frontmatter. If the project doesn't exist, fail early with a helpful error. See `references/projects.md` for the projects architecture.
+- **--resume** / **--continue**: Resume the last interrupted research run instead of replanning from scratch. These are aliases. Read `.research-session.json` first, fall back to `.session-checkpoint.json`, `.session-events.jsonl`, and `log.md`, then re-run only missing/unfinished agents or paths and continue to the final compile.
 
 ### `--project <slug>` flag
 
@@ -45,14 +46,33 @@ There is no ambient project focus — pass `--project` explicitly when you want 
 
 **When `--new-topic` is NOT set**, the standard prelude resolution applies, with one deviation: step 4 (fallback to HUB) becomes "ask which topic wiki to target" — research against an empty hub doesn't make sense.
 
+### Explicit Resume / Continue
+
+`--resume` and `--continue` are exact aliases. If either flag is present, do **not** create a new plan and do **not** relaunch the whole swarm until you have inspected prior state.
+
+Resume order:
+1. Read `<wiki-root>/.research-session.json` if it exists.
+2. If missing, read `<wiki-root>/.session-checkpoint.json` and the recent tail of `<wiki-root>/.session-events.jsonl`.
+3. Read recent `log.md` entries to identify the last research operation, ingested raw files, completed compile step, and any recorded gaps.
+4. Briefly report what was recovered: topic, mode, completed agents/paths, pending agents/paths, sources already ingested, and whether compilation already ran.
+5. Continue from the earliest incomplete phase:
+   - If source-discovery agents/paths are incomplete, relaunch only entries with `status: pending`, `in_progress`, or retryable `failed`.
+   - If all agents/paths completed but no compile event/artifact is recorded, skip search and run the final compile/synthesis only.
+   - If compile completed but summary/output is missing, regenerate only the summary/output artifact.
+6. If no recoverable research state exists, say so and ask whether to start fresh with the supplied topic. Do not pretend a clean run is a resume.
+
+For an interrupted `in_progress` agent/path, assume it may have partially written raw files. That is safe: keep any existing raw files, deduplicate by URL/content during the normal dedupe pass, and only launch the missing work. Never delete raw files during resume unless the user explicitly asks.
+
 ### Minimum Time Research (`--min-time`)
 
 #### Multi-Round Session State
 
-When `--min-time` is set, create and maintain:
+For every research run, create and maintain:
 
-- an **ephemeral session registry** for crash recovery and round-to-round state
+- an **ephemeral session registry** for crash recovery, agent/path status, and round-to-round state
 - **durable provenance artifacts** for replayable audit trails and resume briefings
+
+For a single standard run, the session still exists: it tracks Phase 2 agent completion and whether final compile/synthesis happened. `--min-time` adds multiple rounds on top of the same machinery.
 
 **Ephemeral location**: `<wiki-root>/.research-session.json`
 
@@ -69,6 +89,16 @@ When `--min-time` is set, create and maintain:
   "start_time": "ISO 8601",
   "min_time_budget": "2h",
   "current_round": 1,
+  "agents": [
+    {
+      "role": "Academic",
+      "focus": "Peer-reviewed / primary evidence",
+      "status": "pending|in_progress|completed|failed",
+      "sources_ingested": 3,
+      "raw_files": ["raw/articles/2026-04-30-example.md"],
+      "error": null
+    }
+  ],
   "paths": [
     {
       "name": "Path name",
@@ -78,6 +108,7 @@ When `--min-time` is set, create and maintain:
       "sources_ingested": 3
     }
   ],
+  "compile_status": "pending|in_progress|completed|failed",
   "rounds_completed": [
     {
       "round": 1,
@@ -93,21 +124,25 @@ When `--min-time` is set, create and maintain:
 }
 ```
 
-The `mode` field defaults to `"single"` for backward compatibility. When `--plan` is set, `mode` is `"plan"` and `paths` is populated. For single-path sessions, `paths` is omitted. See `references/research-infrastructure.md` § Research Plan Schema for the full schema and resume protocol.
+The `mode` field defaults to `"single"` for backward compatibility. Populate `agents` before launching the Phase 2 swarm so an interrupted run knows exactly which roles finished. When `--plan` is set, `mode` is `"plan"` and `paths` is populated; path agents may also maintain their own nested agent state. For single-path sessions, `paths` is omitted. See `references/research-infrastructure.md` § Research Plan Schema for the full schema and resume protocol.
 
 **Lifecycle**:
-1. **Create** `.research-session.json` at session start (Round 1 begins)
-2. **Append** `research_started` to `.session-events.jsonl` and write an initial `.session-checkpoint.json`
-3. **Update** after each round completes — sources, articles, gaps, progress score
-4. **Append** round and reflection events after each meaningful milestone; refresh `.session-checkpoint.json`
-5. **On completion** → set status to `completed`, append `research_completed`, refresh `.session-checkpoint.json`, delete only `.research-session.json`
-6. **On interruption** → `.research-session.json` persists with status `in_progress`; durable provenance files remain
+1. **Create** `.research-session.json` at session start before launching agents. Include topic, flags, mode, agent/path list, `compile_status: "pending"`, and `status: "in_progress"`.
+2. **Append** `research_started` to `.session-events.jsonl` and write an initial `.session-checkpoint.json`.
+3. **Update before and after each agent/path**: mark `in_progress` before launch; on return mark `completed`, record `sources_ingested` and `raw_files`; on failure mark `failed` with `error`.
+4. **After source dedupe and compile/synthesis**, update `compile_status` and append `research_compiled` / summary events.
+5. **For `--min-time` rounds**, additionally update rounds — sources, articles, gaps, progress score — after each round.
+6. **On completion** → set status to `completed`, append `research_completed`, refresh `.session-checkpoint.json`, delete only `.research-session.json`.
+7. **On interruption** → `.research-session.json` persists with status `in_progress`; durable provenance files remain.
 
-**Resume detection**: At command start, if `.research-session.json` exists with `status: "in_progress"`:
+**Resume detection**: At command start, if `.research-session.json` exists with `status: "in_progress"`, or if the user passed `--resume` / `--continue`:
 - Read the file to understand what was already done
-- Ask: "Found interrupted session (Round N, M sources so far). Continue from Round N+1, or start fresh?"
-- If continue: skip Phase 1, read round N's gaps as starting point for round N+1
-- If fresh: delete the file and start over
+- Ask only when the user's intent is ambiguous: "Found interrupted session (Round N, M sources so far). Continue, or start fresh?"
+- If the user explicitly passed `--resume` / `--continue`, continue without another confirmation unless destructive cleanup would be required
+- Relaunch only `agents[]` or `paths[]` whose status is `pending`, `in_progress`, or retryable `failed`
+- If all agents/paths are completed and `compile_status != "completed"`, skip search and run compile/synthesis only
+- If continue across rounds: skip Phase 1, read round N's gaps as starting point for round N+1
+- If fresh: delete only the ephemeral session file and start over; keep raw files and durable provenance
 
 If no active `.research-session.json` exists but `.session-checkpoint.json` does, read the checkpoint and recent `.session-events.jsonl` entries to summarize the most recent completed research before starting fresh.
 

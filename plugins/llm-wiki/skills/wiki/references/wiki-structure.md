@@ -169,6 +169,7 @@ Append-only chronological activity log. Every wiki operation appends an entry. N
 ## [2026-04-04] init | Wiki initialized
 ## [2026-04-04] ingest | Attention Is All You Need (raw/papers/2026-04-04-attention-is-all-you-need.md)
 ## [2026-04-04] ingest | Illustrated Transformer (raw/articles/2026-04-04-illustrated-transformer.md)
+## [2026-04-04] ingest-collection | bitcoin-bips via git: 389 new, 0 skipped, 389 total candidates
 ## [2026-04-04] compile | 2 sources → 3 new articles, 1 updated (transformer-architecture, self-attention, sequence-modeling + updated attention-mechanisms)
 ## [2026-04-04] query | "How does self-attention work?" → answered from 2 articles
 ## [2026-04-05] lint | 12 checks, 0 critical, 2 warnings, 3 suggestions, 1 auto-fixed
@@ -178,7 +179,7 @@ Append-only chronological activity log. Every wiki operation appends an entry. N
 
 Each entry: `## [YYYY-MM-DD] operation | Description`
 
-Operations: `init`, `ingest`, `compile`, `query`, `lint`, `research`, `output`, `refresh`, `librarian`, `audit`, `plan`, `project`, `ll`, `assess`
+Operations: `init`, `ingest`, `ingest-collection`, `compile`, `query`, `lint`, `research`, `output`, `refresh`, `librarian`, `audit`, `plan`, `project`, `ll`, `assess`
 
 Useful for: `grep "^## \[" log.md | tail -10` to see recent activity.
 
@@ -219,6 +220,33 @@ summary: "2-3 sentence summary"
 
 [Full content]
 ```
+
+### Optional Collection Provenance
+
+Raw files created by `/wiki:ingest-collection` may include additional
+frontmatter. These keys are canonical and should not be linted as unknown:
+
+```yaml
+collection: "<stable collection slug>"
+adapter: git|mediawiki-dump|mediawiki-api
+upstream_id: "<repo path, page id, or page title>"
+upstream_type: git-file|mediawiki-page
+revision: "<commit sha, dump revision id, or timestamp>"
+sha: "<blob sha or content hash>"
+canonical_url: "<stable upstream URL>"
+content_format: markdown|mediawiki|wikitext|text
+license: "<detected license or unknown>"
+authors: [optional names]
+categories: [optional upstream categories]
+outlinks: [optional upstream links]
+fetched: YYYY-MM-DD
+```
+
+Collection manifests live in `raw/repos/` with `type: repos` and
+`tags: [collection, collection-manifest, <adapter>]`. Child pages/specs usually
+live in `raw/articles/` with `type: articles`. The raw layer is still immutable:
+if an upstream page changes, ingest the new revision as a new raw source instead
+of overwriting the old one.
 
 ## Wiki Article Format (wiki/)
 

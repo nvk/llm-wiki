@@ -3,9 +3,9 @@ name: wiki-manager
 description: >
   LLM-compiled knowledge base manager. Activates when user works with wiki
   directories, mentions knowledge base management, asks knowledge questions
-  in a project with a wiki, wants to ingest/compile/query/lint/audit knowledge,
+  in a project with a wiki, wants to ingest/import/compile/query/lint/audit knowledge,
   or uses /wiki commands. Also activates when user says "wiki", "knowledge base",
-  "ingest", "compile wiki", "add to wiki", "search wiki", "audit", "librarian",
+  "ingest", "import wiki", "ingest collection", "compile wiki", "add to wiki", "search wiki", "audit", "librarian",
   "scan quality", "article quality", "content review", "output drift",
   "provenance", "trust this", or asks a factual question in a directory
   containing .wiki/ or when ~/wiki/ exists or the configured hub path exists
@@ -94,6 +94,10 @@ query, use the Audit workflow instead of treating it as plain Q&A.
 ### Ingestion
 See [references/ingestion.md](references/ingestion.md).
 Flow: Source (URL/file/text/tweet/inbox) → fetch/read → extract metadata → write to `raw/{type}/` → update indexes → suggest compile if many uncompiled.
+
+### Collection Ingestion
+See [references/ingestion.md](references/ingestion.md) § Collection Ingestion.
+Flow: structured upstream collection (Git repo, BIP-style proposal set, MediaWiki dump/API) → inventory items → write a `raw/repos/` manifest plus immutable child sources → rebuild raw indexes → optionally compile synthesized clusters. Use `/wiki:ingest-collection` for bulk imports; never recursively crawl HTML.
 
 ### Compilation
 See [references/compilation.md](references/compilation.md).

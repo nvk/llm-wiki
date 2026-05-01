@@ -2,9 +2,9 @@
 name: wiki-manager
 description: >
   LLM-compiled knowledge base manager for OpenCode. Use it to initialize, ingest,
-  compile, query, lint, audit, research, plan, and generate outputs from topic-scoped wikis.
+  import source collections, compile, query, lint, audit, research, plan, and generate outputs from topic-scoped wikis.
   Activates when the user mentions wiki workflows, knowledge-base management,
-  ingestion, compilation, querying, linting, audit, research, librarian,
+  ingestion, collection ingestion, import wiki, compilation, querying, linting, audit, research, librarian,
   scan quality, article quality, content review, output drift, provenance,
   lessons learned, implementation plan, or uses wiki-related shorthand in a
   repo with .wiki/, ~/wiki/, or a configured hub path.
@@ -91,6 +91,10 @@ query, use the Audit workflow instead of treating it as plain Q&A.
 ### Ingestion
 See [references/ingestion.md](references/ingestion.md).
 Flow: Source (URL/file/text/tweet/inbox) → fetch/read → extract metadata → write to `raw/{type}/` → update indexes → suggest compile if many uncompiled.
+
+### Collection Ingestion
+See [references/ingestion.md](references/ingestion.md) § Collection Ingestion.
+Flow: structured upstream collection (Git repo, BIP-style proposal set, MediaWiki dump/API) → inventory items → write a `raw/repos/` manifest plus immutable child sources → rebuild raw indexes → optionally compile synthesized clusters. Use `/wiki:ingest-collection` for bulk imports; never recursively crawl HTML.
 
 ### Compilation
 See [references/compilation.md](references/compilation.md).

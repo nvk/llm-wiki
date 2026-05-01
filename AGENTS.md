@@ -164,7 +164,7 @@ Body includes abstract, sections, `## See Also` (dual-links, bidirectional), `##
 ## [YYYY-MM-DD] operation | Description
 ```
 
-Operations: `init`, `ingest`, `compile`, `query`, `lint`, `research`, `thesis`, `output`, `assess`, `refresh`, `librarian`, `audit`, `plan`, `project`, `ll`
+Operations: `init`, `ingest`, `ingest-collection`, `compile`, `query`, `lint`, `research`, `thesis`, `output`, `assess`, `refresh`, `librarian`, `audit`, `plan`, `project`, `ll`
 
 ## Operations
 
@@ -186,6 +186,39 @@ Auto-detect type: arxiv/scholar → papers, github → repos, .csv/.json → dat
 **Auto-classify** (when no `--wiki` specified): After fetching content, match against topic wiki scopes. Single items get a numbered choice (pick wiki, create new, or skip). Batch/inbox mode presents a classification table for bulk routing. Skipped when `--wiki` or `--local` is explicit.
 
 Slug: `YYYY-MM-DD-descriptive-slug.md`. Update all indexes after each ingestion. If 5+ uncompiled sources, suggest compilation.
+
+### Ingest Collection
+
+Bulk-ingest bounded upstream corpora without turning them directly into compiled
+wiki articles. Use this for Git document repositories, BIP-style proposal sets,
+MediaWiki XML dumps, and MediaWiki API sites. Never recursively crawl HTML; use
+structured upstream interfaces.
+
+Adapters:
+- **git**: clone shallowly or read a local repo; inventory text files with blob
+  SHAs and HEAD commit. For BIP-style repos, prioritize `bip-####.mediawiki`
+  and `bip-####.md`, parse proposal headers, and store each proposal as a child
+  raw source.
+- **mediawiki-dump**: read official `.xml`, `.xml.bz2`, or `.xml.gz` dumps with
+  streaming XML parsing; default to namespace 0; skip redirects and non-content
+  namespaces unless explicitly included.
+- **mediawiki-api**: use `api.php` with `allpages` and `revisions` for targeted
+  imports or dumpless sites; follow continuation tokens and respect throttling.
+
+Every collection import writes a manifest to `raw/repos/` tagged
+`collection-manifest`, plus one immutable child source per upstream page/spec in
+`raw/articles/` unless another type is more appropriate. Child frontmatter may
+include `collection`, `adapter`, `upstream_id`, `upstream_type`, `revision`,
+`sha`, `canonical_url`, `content_format`, `license`, `authors`, `categories`,
+`outlinks`, and `fetched`. Deduplicate by `collection + upstream_id +
+revision/sha`; if upstream content changes, write a new raw source instead of
+overwriting the old one.
+
+Compile collections selectively: synthesize concepts, topics, timelines,
+glossaries, standards families, and reference indexes. Do not create one
+compiled wiki article per upstream page by default. For BIPs, publication is
+provenance for proposal text, not proof of adoption or consensus. For community
+wikis, default confidence to medium unless corroborated by stronger sources.
 
 ### Compile
 

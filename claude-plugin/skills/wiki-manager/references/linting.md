@@ -52,6 +52,10 @@ There is no `/wiki:migrate` command and there should never be one. Lint rules **
 - [ ] `category` is one of: concept, topic, reference
 - [ ] `type` is one of: articles, papers, repos, notes, data
 - [ ] `tags` is a list, not empty
+- [ ] Optional collection provenance fields are valid when present:
+  `collection`, `adapter`, `upstream_id`, `upstream_type`, `revision`, `sha`,
+  `canonical_url`, `content_format`, `license`, `authors`, `categories`,
+  `outlinks`, `fetched`
 
 ### C3: Index Consistency (Warning)
 
@@ -71,6 +75,7 @@ There is no `/wiki:migrate` command and there should never be one. Lint rules **
 - [ ] All `sources:` entries in wiki article frontmatter point to existing raw files (no dangling references to deleted/retracted sources)
 - [ ] No `<!--RETRACTED-SOURCE-->` markers remain in article body (these should be resolved via `--recompile` or manual review)
 - [ ] No raw source file is referenced by zero wiki articles (orphan source — suggest compilation or removal)
+- [ ] Exempt raw files tagged `collection-manifest` from orphan-source warnings. A collection manifest is operational provenance for a batch import; child sources should be compiled, but the manifest itself does not need to appear in article `sources:`.
 
 ### C5: Tag Hygiene (Warning)
 
@@ -81,6 +86,7 @@ There is no `/wiki:migrate` command and there should never be one. Lint rules **
 ### C6: Coverage (Suggestion)
 
 - [ ] Every raw source is referenced by at least one wiki article's `sources` field
+- [ ] Raw sources tagged `collection-manifest` are exempt from this coverage check
 - [ ] No wiki article has an empty `sources` field
 - [ ] Articles with overlapping tags that don't link to each other via "See Also" — suggest connection
 - [ ] Orphan articles: no incoming "See Also" links from other articles
@@ -215,6 +221,11 @@ Any file that is not in the canonical allowlist for its location is either a use
 Legacy field names and enum values are rewritten to their canonical form. This is the one place where schema evolution is encoded — add aliases here instead of writing migrations. Run this check **before** C2 and C11 so downstream checks see canonical field names.
 
 **Why this check exists at all (even while empty):** we want the *framework* for schema evolution in place before we need it, so the first rename ever made to a frontmatter field is a one-line addition to a table rather than "let's design a migration system." The dev note at the top of this file explains the full lint-as-migration principle. C13 itself is the mechanism.
+
+**Canonical optional raw-source keys** (do not warn as unknown):
+`collection`, `adapter`, `upstream_id`, `upstream_type`, `revision`, `sha`,
+`canonical_url`, `content_format`, `license`, `authors`, `categories`,
+`outlinks`, `fetched`.
 
 **Key aliases** (old → canonical, append-only — never remove an entry). Populate this table when a real field rename happens; do not pre-populate with speculative entries.
 

@@ -5,6 +5,8 @@ tracing:
   otlp:
     http:
       enabled: true
+      port: 4318
+      acceptFormats: ['json']
 
 providers:
   - id: anthropic:claude-agent-sdk
@@ -31,12 +33,6 @@ providers:
             - 'Grep(*)'
             - 'Bash(*)'
 
-defaultTest:
-  options:
-    provider:
-      config:
-        max_budget_usd: 0.50
-
 tests:
   # --- Fuzzy Router ---
   - description: "Router: research intent dispatches correctly"
@@ -59,6 +55,18 @@ tests:
         value: wiki
       - type: llm-rubric
         value: "Agent recognized the URL and routed to ingestion, not query or research"
+        threshold: 0.75
+      - type: cost
+        threshold: 0.50
+
+  - description: "Router: collection import routes to ingest-collection"
+    vars:
+      prompt: "Import the bitcoin BIPs repo into my bitcoin wiki: https://github.com/bitcoin/bips"
+    assert:
+      - type: skill-used
+        value: wiki
+      - type: llm-rubric
+        value: "Agent recognized this as a bounded collection import and routed to the ingest-collection workflow, not single-source URL ingestion."
         threshold: 0.75
       - type: cost
         threshold: 0.50
@@ -170,7 +178,7 @@ tests:
       - type: not-contains
         value: "error loading"
       - type: llm-rubric
-        value: "Agent listed wiki subcommands — at minimum ingest, compile, query, lint, research"
+        value: "Agent listed wiki subcommands — at minimum ingest, ingest-collection, compile, query, lint, research"
         threshold: 0.75
       - type: cost
         threshold: 0.30

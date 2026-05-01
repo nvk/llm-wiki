@@ -14,6 +14,134 @@ Ingestion converts external material into a standardized raw source file in the 
 | notes | raw/notes/ | Freeform text, tweets, no URL |
 | data | raw/data/ | .csv, .json, .tsv URLs or files, dataset references |
 
+## Collection Ingestion
+
+Collection ingestion is for bounded upstream corpora: Git document repositories,
+BIP-style proposal sets, MediaWiki XML dumps, and MediaWiki API sites. Treat
+these as **source collections**, not as compiled wiki content. The ingest step
+preserves raw sources and provenance; the compile step later synthesizes useful
+concept/topic/reference articles.
+
+Use `/wiki:ingest-collection` when the user asks to import, mirror, bulk ingest,
+or ingest another wiki/repository. Do not recursively crawl HTML. Use structured
+upstream interfaces:
+
+| Adapter | Use for | Primary access path |
+|---------|---------|---------------------|
+| `git` | GitHub/GitLab/local repos containing specs, proposals, docs | `git clone --depth 1`, `git ls-tree`, raw file reads |
+| `mediawiki-dump` | Full MediaWiki imports or large snapshots | Official `.xml`, `.xml.bz2`, `.xml.gz` dumps |
+| `mediawiki-api` | Targeted MediaWiki imports or dumpless sites | `api.php` with `allpages` + `revisions` |
+
+### Collection Manifest
+
+Every collection import writes a manifest source to `raw/repos/`:
+
+```yaml
+---
+title: "Collection: <name>"
+source: "<upstream URL or path>"
+type: repos
+ingested: YYYY-MM-DD
+tags: [collection, collection-manifest, <adapter>]
+summary: "Manifest for a collection ingest of <name>: N child sources captured from <revision>."
+collection: "<collection-slug>"
+adapter: git|mediawiki-dump|mediawiki-api
+revision: "<commit sha, dump filename/date, or API snapshot timestamp>"
+canonical_url: "<canonical upstream URL>"
+license: "<detected license or unknown>"
+---
+```
+
+The manifest is operational provenance. Lint should not treat
+`collection-manifest` sources as coverage failures just because no compiled
+article cites them directly.
+
+### Child Sources
+
+Each upstream page/proposal/spec becomes its own immutable raw source, usually
+under `raw/articles/`:
+
+```yaml
+---
+title: "<upstream title>"
+source: "<canonical upstream URL or file path>"
+type: articles
+ingested: YYYY-MM-DD
+tags: [collection, <collection-slug>, ...]
+summary: "2-3 sentence factual summary."
+collection: "<collection-slug>"
+adapter: git|mediawiki-dump|mediawiki-api
+upstream_id: "<path, page id, or title>"
+upstream_type: git-file|mediawiki-page
+revision: "<revision id, timestamp, or commit sha>"
+sha: "<blob sha or content hash when available>"
+canonical_url: "<per-item URL>"
+content_format: markdown|mediawiki|wikitext|text
+license: "<detected license or unknown>"
+authors: [optional names]
+categories: [optional upstream categories]
+outlinks: [optional upstream links]
+fetched: YYYY-MM-DD
+---
+```
+
+Deduplication key: `collection` + `upstream_id` + `revision`/`sha`. If the exact
+same upstream item was already ingested, skip it. If the item changed upstream,
+write a new raw source; never overwrite the old one.
+
+### Git Collections
+
+Use Git for repositories such as `bitcoin/bips`; do not scrape GitHub HTML.
+
+1. Clone shallowly or use the local repo path.
+2. Record HEAD commit SHA and each blob SHA.
+3. Include text-like files (`.md`, `.mediawiki`, `.wiki`, `.rst`, `.txt`,
+   `.adoc`).
+4. Exclude `.git/`, `.github/`, generated assets, binaries, images, archives,
+   vendored dependencies, scripts, and test vectors unless explicitly included.
+5. For BIP-style repos, prioritize root `bip-####.mediawiki` and `bip-####.md`
+   files. Parse proposal headers such as `BIP`, `Layer`, `Title`, `Authors`,
+   `Status`, `Type`, `Requires`, `License`, and `Discussion`.
+
+For BIPs, publication in the repo is provenance for the proposal text, not proof
+of adoption or consensus. Compilation must preserve that distinction.
+
+### MediaWiki Dumps
+
+Use official dumps when available. They are stable, polite to the upstream site,
+and carry revision metadata.
+
+1. Download or read the dump file.
+2. Decompress `.bz2` with `bunzip2 -c` or `.gz` with `gunzip -c`.
+3. Parse streaming XML; do not load a large dump entirely into memory.
+4. Default to namespace `0`. Skip redirects and titles with `:` unless the user
+   explicitly includes them.
+5. Store page id/title, latest revision id, timestamp, contributor when
+   available, and raw wikitext.
+
+### MediaWiki API
+
+Use the API for targeted imports or when dumps are unavailable:
+
+1. Discover `api.php` from the site URL.
+2. List pages via `action=query&list=allpages&apnamespace=0&aplimit=max`.
+3. Follow continuation tokens.
+4. Fetch content in batches with `prop=revisions`, `rvslots=main`, and
+   `rvprop=ids|timestamp|user|comment|content`.
+5. Optionally fetch categories and links for graph-aware compilation.
+6. Respect throttling; never fall back to uncontrolled HTML crawling.
+
+### Collection Compilation
+
+After collection ingestion, compile selectively:
+
+- Prefer synthesized clusters over one compiled article per page.
+- Use reference articles for indexes/timelines/glossaries.
+- For BIPs, likely clusters are activation mechanisms, wallet standards, script
+  upgrades, peer services, Taproot/Schnorr, mining/RPC, and the BIP process.
+- For community wikis, default confidence to `medium` unless corroborated by
+  authoritative specs, code, papers, or multiple independent sources.
+
 ## URL Ingestion
 
 1. **Detect X.com / Twitter URLs**: If the URL matches `x.com/*/status/*` or `twitter.com/*/status/*`, follow this fallback chain in order:

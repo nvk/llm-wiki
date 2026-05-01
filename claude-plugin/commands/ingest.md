@@ -14,6 +14,19 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:
 
 Read the ingestion protocol at `skills/wiki-manager/references/ingestion.md` and the structure spec at `skills/wiki-manager/references/wiki-structure.md`. Then ingest source material.
 
+### Collection handoff
+
+If the user is trying to import a bounded upstream corpus rather than one source
+item, stop and hand off to `/wiki:ingest-collection` with the same wiki flags.
+Signals include: "import wiki", "mirror wiki", "bulk ingest", "ingest
+collection", "ingest repo", "import repo", MediaWiki dumps (`.xml`, `.xml.bz2`,
+`.xml.gz`), MediaWiki `api.php`, or a GitHub/GitLab repo plus words like
+"all", "docs", "BIPs", "wiki", or "collection".
+
+Do not reduce a collection to the repository README or one fetched web page.
+Collection imports need a manifest plus one raw child source per upstream
+page/spec/proposal.
+
 ### `--new-topic` branch
 
 When `--new-topic` is set, override the standard resolution:

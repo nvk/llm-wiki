@@ -1,5 +1,5 @@
 ---
-description: "LLM wiki knowledge base — understands natural language. Say what you want (add a URL, ask a question, research a topic, audit an output, resume work) and it routes to the right subcommand. Also handles init, status, and config."
+description: "LLM wiki knowledge base — understands natural language. Say what you want (add a URL, import a collection, ask a question, research a topic, audit an output, resume work) and it routes to the right subcommand. Also handles init, status, and config."
 argument-hint: "[<natural language request>] [init <topic-name> [--local]] [config hub-path [<path>]] [--wiki <name>]"
 allowed-tools: Read, Write, Edit, Glob, Bash(ls:*), Bash(wc:*), Bash(mkdir:*), Bash(date:*), Bash(mv:*)
 ---
@@ -90,6 +90,7 @@ Initialize a new wiki. Parse arguments:
 8. Report what was created and suggest:
    - `/wiki:research "topic" --sources 10` — auto-research to bootstrap
    - `/wiki:ingest <url|file|text>` — add source material
+   - `/wiki:ingest-collection <repo|wiki-dump>` — bulk import a bounded upstream collection
    - `/wiki:compile` — compile sources into wiki articles
    - `/wiki:query <question>` — ask questions
 
@@ -103,6 +104,7 @@ The user typed something that isn't a known keyword. Detect their intent and rou
 
 | Priority | Intent | Signal patterns | Route to |
 |----------|--------|----------------|----------|
+| 0 | **Collection Ingest** | Words: "import wiki", "mirror wiki", "bulk ingest", "ingest collection", "import collection", "ingest repo", "import repo"; or a URL/path plus collection signals: `dump.xml`, `.xml.bz2`, `.xml.gz`, `api.php`, `MediaWiki`, `github.com/*/*` with "all", "repo", "docs", "BIPs", or "collection" | `Skill: wiki:ingest-collection` with the source and filters |
 | 1 | **Ingest** | Contains a URL (`http://`, `https://`), a file path (`/`, `~/`), or words: "add", "save", "ingest", "read this", "grab this" | `Skill: wiki:ingest` with the URL/path/text |
 | 2 | **Resume** | "where was I", "pick up where", "continue", "resume", "get back to", "catch me up", "what was I working on" | `Skill: wiki:query` with `--resume` |
 | 3 | **Audit** | "audit", "full audit", "can I trust", "trust this", "verify this output", "verify this report", "fact-check this artifact", "check everything", "provenance", "drift report", "follow the evidence", "find the truth" | `Skill: wiki:audit` |
@@ -206,8 +208,11 @@ The user is new or hasn't initialized a wiki yet. Instead of dumping a command l
 >
 > 3. **Import existing notes** — drop files into `HUB/topics/<slug>/inbox/`
 >    → Then run: `/wiki:ingest --inbox`
+>
+> 4. **Import an existing wiki/repo** — ingest a Git docs repo or MediaWiki dump
+>    → Just say: `/wiki:ingest-collection <url-or-path>`
 
-Do NOT show the full command reference, config options, or advanced flags during onboarding. Keep it to these three options. The user can discover the rest via `/wiki` (status view) once they have a wiki.
+Do NOT show the full command reference, config options, or advanced flags during onboarding. Keep it to these starter options. The user can discover the rest via `/wiki` (status view) once they have a wiki.
 
 **Permission hint (one-time):** If this is the first wiki being created, also append:
 

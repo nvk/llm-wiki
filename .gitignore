@@ -3,6 +3,9 @@
 .claude/worktrees/
 .claude/plans/
 
+# Git worktrees (superpowers convention)
+.worktrees/
+
 # Codex local/project-local state
 .codex/
 .tmp/

@@ -9,6 +9,8 @@
 
 [github.com/nvk/llm-wiki](https://github.com/nvk/llm-wiki)
 
+[![Plugin Tests](https://github.com/nvk/llm-wiki/actions/workflows/plugin-tests.yml/badge.svg)](https://github.com/nvk/llm-wiki/actions/workflows/plugin-tests.yml)
+
 LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, thesis-driven investigation, source ingestion, wiki compilation, truth-seeking audits, querying, and artifact generation. Ships as a Claude Code plugin, an OpenAI Codex plugin, an OpenCode instruction file, or a portable AGENTS.md for any other LLM agent. Obsidian-compatible.
 
 ---
@@ -511,6 +513,28 @@ Claude Code is the compiler. Obsidian is an optional viewer.
 | Standard | *(default)* | Reads relevant articles + full-text search. For most questions. |
 | Deep | `--deep` | Reads everything, searches raw sources, peeks sibling wikis. For complex questions. |
 | List | `--list` | Returns ranked article list instead of synthesized answer. Supports `--tag` and `--category` filters. |
+
+## Develop
+
+Contributions welcome. See [CONTRIBUTING.md](.github/CONTRIBUTING.md) for the
+full workflow, the test layers, and the non-obvious rules (don't hand-edit
+the generated `plugins/` mirrors, re-run the sync scripts after editing
+`claude-plugin/skills/wiki-manager/`, etc.).
+
+Quick start:
+
+```bash
+./tests/test-plugin-validate.sh   # ~1s — manifest + frontmatter checks
+./tests/test-structure.sh         # ~1s — wiki fixture validation
+./tests/test-codex-sync.sh        # ~1s — Codex mirror drift
+./tests/test-opencode-sync.sh     # ~1s — OpenCode mirror drift
+```
+
+Behavioral evals (`npx promptfoo@latest eval -c tests/promptfooconfig.yaml`)
+require `ANTHROPIC_API_KEY` and cost ~$2-5 per run. CI runs them on every PR.
+
+For LLM agents working in this repo, [`CLAUDE.md`](CLAUDE.md) is the deeper
+dev guide.
 
 ## Credits
 

@@ -55,7 +55,7 @@ Requires `ANTHROPIC_API_KEY`. Costs ~$2-5 per run.
 - `tests/fixtures/defects/` — generated broken wikis (one per lint rule)
 - `tests/promptfooconfig.yaml` — Promptfoo behavioral eval config
 - `tests/evals/assertions/*.js` — custom JS assertions for file-system checks
-- `tests/ci/plugin-tests.yml` — GitHub Actions workflow (copy to `.github/workflows/` to activate)
+- `.github/workflows/plugin-tests.yml` — GitHub Actions workflow (runs on every PR + push)
 
 ## Project Structure
 

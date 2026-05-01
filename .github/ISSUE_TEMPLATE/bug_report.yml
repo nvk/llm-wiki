@@ -1,0 +1,75 @@
+name: Bug report
+description: Something is broken or behaves unexpectedly
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a bug. Please include enough detail for someone else
+        to reproduce the issue without asking follow-up questions.
+
+  - type: dropdown
+    id: runtime
+    attributes:
+      label: Runtime
+      description: Which client/runtime are you using?
+      options:
+        - Claude Code (native plugin)
+        - Codex (marketplace plugin)
+        - OpenCode (instructions URL)
+        - Pi (instructions file)
+        - Other / portable AGENTS.md
+        - Not runtime-specific
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: llm-wiki version
+      description: Output of `claude plugin list` / `codex plugin marketplace list` / commit SHA if running from source.
+      placeholder: "v0.5.1 (or commit 717e250)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the actual behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      description: A clear description of the expected behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      description: Minimum sequence of commands or actions to trigger the bug.
+      placeholder: |
+        1. Run `/wiki:research "topic" --new-topic`
+        2. Wait for round 2
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs / output
+      description: Paste any error messages, stack traces, or anomalous output. Wrap in triple backticks.
+      render: shell
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, shell, anything else that might matter (e.g. running under nono sandbox, custom hub path).
+      placeholder: "macOS 14.5, zsh, hub at ~/Library/Mobile Documents/.../wiki"

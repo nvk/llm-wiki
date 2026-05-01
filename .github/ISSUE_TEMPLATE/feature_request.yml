@@ -1,0 +1,58 @@
+name: Feature request
+description: Suggest a new command, flag, or behavior change
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement. Before filing, please scan the
+        existing issues — there's a good chance someone has already asked.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the user-facing pain point. Skip the proposed solution for a moment — what's the underlying gap?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How would you like this to work? A new command? A flag? A behavior change to an existing command?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other ways to solve the same problem, and why you didn't pick them.
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      description: Which surface does this touch?
+      multiple: true
+      options:
+        - A specific command
+        - The fuzzy router
+        - The skill / reference docs
+        - A sync script (Codex / OpenCode)
+        - Tests / CI
+        - Documentation
+        - Cross-runtime (Claude + Codex + OpenCode)
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How will we know this is done? List concrete, verifiable items.
+      placeholder: |
+        - [ ] `/wiki:research --new-flag` produces ...
+        - [ ] Promptfoo eval covers the new behavior
+        - [ ] README command table includes the flag

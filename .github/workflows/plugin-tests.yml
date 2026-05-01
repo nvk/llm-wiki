@@ -6,10 +6,12 @@ on:
       - 'claude-plugin/**'
       - 'tests/**'
       - 'AGENTS.md'
+      - '.github/workflows/plugin-tests.yml'
   pull_request:
     paths:
       - 'claude-plugin/**'
       - 'tests/**'
+      - '.github/workflows/plugin-tests.yml'
 
 jobs:
   structural:

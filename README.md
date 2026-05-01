@@ -239,8 +239,18 @@ nono why --path ~/Library/Mobile\ Documents/com~apple~CloudDocs/wiki --op readwr
 
 ## Upgrade
 
+Agents and sandboxed sessions should use GitHub CLI web login with HTTPS git
+transport, not SSH. This avoids SSH host-key prompts and `known_hosts` writes
+inside nono:
+
+```bash
+gh auth login --web --git-protocol https
+gh auth setup-git
+```
+
 **Claude Code** — if `claude plugin update` pulls the latest correctly:
 ```bash
+git -C ~/.claude/plugins/marketplaces/llm-wiki remote set-url origin https://github.com/nvk/llm-wiki.git
 claude plugin update wiki@llm-wiki
 # Restart Claude Code to apply
 ```

@@ -4,6 +4,20 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
 
 ## Pre-release: Version Bump
 
+0. **Verify GitHub auth uses HTTPS, not SSH**:
+   ```bash
+   gh auth status
+   gh auth login --web --git-protocol https   # only if not already logged in
+   gh auth setup-git
+   ```
+   - Agents should use GitHub CLI web login and HTTPS git transport, not SSH.
+   - SSH host-key prompts and `known_hosts` writes are fragile under nono.
+   - If the local repo or Claude marketplace checkout uses SSH, switch it:
+     ```bash
+     git remote set-url origin https://github.com/nvk/llm-wiki.git
+     git -C ~/.claude/plugins/marketplaces/llm-wiki remote set-url origin https://github.com/nvk/llm-wiki.git
+     ```
+
 1. **Bump `plugin.json`** — both files must match:
    - `claude-plugin/.claude-plugin/plugin.json`
    - `plugins/llm-wiki/.codex-plugin/plugin.json`
@@ -52,9 +66,10 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
 
 8. **Push to master**:
    ```bash
-   git push origin <branch>:master
+   git -c credential.helper='!gh auth git-credential' push https://github.com/nvk/llm-wiki.git <branch>:master
    ```
-   - If in a worktree: `git push origin worktree-<name>:master`
+   - If in a worktree: replace `<branch>` with `worktree-<name>`
+   - Do not use SSH remotes from agent sessions; use `gh auth` + HTTPS.
 
 9. **Create GitHub release**:
    ```bash
@@ -76,12 +91,16 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
 
 10. **Update plugin cache** (so local Claude Code picks up new version):
    ```bash
+   git -C ~/.claude/plugins/marketplaces/llm-wiki remote set-url origin https://github.com/nvk/llm-wiki.git
+   claude plugin update wiki@llm-wiki
+   ```
+   - If the update path is stale during development, copy to cache:
+   ```bash
    # The marketplace repo auto-pulls on `claude plugin install`
    # But for dev: symlink or copy to cache
    mkdir -p ~/.claude/plugins/cache/llm-wiki/wiki/0.0.XX
    # Copy commands/ skills/ .claude-plugin/ from the repo's claude-plugin/ dir
    ```
-   - Or just run `claude plugin install llm-wiki` if marketplace is updated
 
 11. **Verify install**:
    - Claude Code: start a fresh session and run `/wiki status`

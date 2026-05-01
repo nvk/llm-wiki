@@ -4,6 +4,33 @@
 
 Run tests before declaring any change to plugin code done.
 
+## GitHub Auth And Transport
+
+Agents should use GitHub CLI web login and HTTPS git transport, not SSH. SSH
+host-key prompts and `known_hosts` writes are fragile inside nono profiles, and
+public plugin updates do not need SSH.
+
+Expected setup:
+
+```bash
+gh auth login --web --git-protocol https
+gh auth setup-git
+```
+
+When pushing from an agent session, prefer an explicit HTTPS URL with gh's git
+credential helper so the command does not depend on the checkout's `origin`
+remote using SSH:
+
+```bash
+git -c credential.helper='!gh auth git-credential' push https://github.com/nvk/llm-wiki.git <branch>:master
+```
+
+If a marketplace checkout has an SSH remote, switch it to HTTPS before updating:
+
+```bash
+git -C ~/.claude/plugins/marketplaces/llm-wiki remote set-url origin https://github.com/nvk/llm-wiki.git
+```
+
 ### Structural tests (always run — no LLM, instant)
 
 ```bash

@@ -19,6 +19,8 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 
 ## Changelog
 
+**v0.7.0** — **PDF, message archive, and Wayback adapters.** PDF ingest now prefers real markdown extraction over metadata stubs, with `pdftotext` plus Python-library fallback guidance. Collection ingestion now covers CSV/TSV/JSON/JSONL message archives as per-message markdown sources and Internet Archive CDX inventories as readability-to-markdown Wayback snapshot imports.
+
 **v0.6.0** — **Collection ingestion for external wikis and spec repos.** Added first-class `/wiki:ingest-collection` for bounded upstream corpora such as Git document repositories, BIP-style proposal sets, MediaWiki XML dumps, and MediaWiki API sites. Collection imports now create a `raw/repos/` manifest plus immutable child sources with upstream revision metadata, while compilation stays synthesized instead of copying another wiki wholesale. The router now detects bulk import intent, and lint/schema docs recognize collection provenance fields and manifest coverage exemptions.
 
 **v0.5.0–v0.5.1** — **Truth-seeking umbrella audit & durable session provenance.** `/wiki:audit` combines the wiki-only librarian pass with output drift checks, provenance review, and fresh research when local evidence is not enough, while the follow-up provenance work makes multi-round research replayable: `research` keeps `.session-events.jsonl` and `.session-checkpoint.json`, `audit` records its own provenance milestones, and `query --resume` can fall back to the checkpoint trail when no active session is running. `/wiki:librarian` stays available as the focused tool for keeping the `wiki/` layer in check.
@@ -28,8 +30,6 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 **v0.4.3** — **Codex first-class install fixes.** Codex packaging, bootstrap, and verification now line up with the current `@wiki` plugin layout. The generated Codex mirror lives under `plugins/llm-wiki/skills/wiki/`, references are validated as copied files for marketplace installs, and the local bootstrap flow now uses the real `llm-wiki` marketplace name instead of the stale `llm-wiki-local` alias.
 
 **v0.4.2** — **Config-first hub resolution & Codex marketplace install.** Hub resolution now checks `~/.config/llm-wiki/config.json` first, falling back to `~/wiki` only when no config exists. Fixes sandbox permission errors in nono where `~/wiki` isn't an allowed path. Codex plugin installable directly from GitHub via `codex plugin marketplace add nvk/llm-wiki`. References changed from symlink to real copy so Codex marketplace caching works. Nono docs updated with per-runtime profiles and `$HOME/.codex` r+w requirement for Codex plugin install.
-
-**v0.4.0** — **Librarian & Full Distribution Parity.** New `/wiki:librarian` command scores every article for staleness and quality — two-tier scan (metadata-fast then content-deep), checkpoint recovery, machine-readable `.librarian/scan-results.json` plus human-readable `REPORT.md`. Staleness uses exponential decay scaled by article volatility; quality measures source diversity, content depth, cross-reference density, and summary quality. AGENTS.md updated with four previously missing operations (librarian, plan, project, ll) and the `--plan` research flag. Codex and OpenCode sync script frontmatter now includes all activation keywords (librarian, scan quality, content review, lessons learned, implementation plan).
 
 ## Install
 
@@ -316,6 +316,8 @@ Check your installed version:
 /wiki:ingest --inbox                              # Process files dropped in inbox/
 /wiki:ingest-collection https://github.com/bitcoin/bips --wiki bitcoin  # Bulk import spec repos
 /wiki:ingest-collection https://dump.bitcoin.it/dump_20260429_en.xml.bz2 --wiki bitcoin  # Import MediaWiki dumps
+/wiki:ingest-collection messages.csv --adapter csv-messages --wiki bitcoin  # Split message archives
+/wiki:ingest-collection "https://example.com/*" --adapter wayback-cdx --from 20100101 --to 20200101  # Import archived snapshots
 /wiki:compile                                     # Compile any unprocessed sources
 /wiki:audit --project gut-brain-playbook          # Truth-seeking audit across outputs + wiki + fresh research
 /wiki:output report --topic gut-brain             # Generate a report
@@ -332,10 +334,10 @@ Check your installed version:
 | `/wiki` | Show wiki status, stats, and list all topic wikis |
 | `/wiki init <name>` | Create a topic wiki at `~/wiki/topics/<name>/` |
 | `/wiki init <name> --local` | Create a project-local wiki at `.wiki/` |
-| `/wiki:ingest <source>` | Ingest a URL, file path, or quoted text |
+| `/wiki:ingest <source>` | Ingest a URL, file path, PDF, or quoted text |
 | `/wiki:ingest --inbox` | Process all files in the topic wiki's inbox/ |
-| `/wiki:ingest-collection <source>` | Bulk-ingest Git doc repos, BIP-style proposal sets, MediaWiki dumps, or MediaWiki API sites |
-| `/wiki:ingest-collection <source> --adapter git\|mediawiki-dump\|mediawiki-api` | Force a collection adapter |
+| `/wiki:ingest-collection <source>` | Bulk-ingest Git doc repos, BIP-style proposal sets, MediaWiki dumps/API sites, message archives, or Wayback CDX snapshots |
+| `/wiki:ingest-collection <source> --adapter git\|mediawiki-dump\|mediawiki-api\|csv-messages\|wayback-cdx` | Force a collection adapter |
 | `/wiki:ingest-collection <source> --limit <N> --dry-run` | Preview or cap a large collection import |
 | `/wiki:compile` | Compile new sources into wiki articles |
 | `/wiki:compile --full` | Recompile everything from scratch |

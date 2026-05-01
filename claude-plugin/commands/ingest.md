@@ -1,7 +1,7 @@
 ---
-description: "Ingest source material into the wiki. Accepts URLs, file paths, freeform text, or processes the inbox. Supports tweets via Grok MCP."
+description: "Ingest source material into the wiki. Accepts URLs, file paths, PDFs, freeform text, or processes the inbox. Supports tweets via Grok MCP."
 argument-hint: "<url|filepath|\"text\"> [--type articles|papers|repos|notes|data] [--title \"Title\"] [--inbox] [--keep] [--wiki <name>] [--local] [--auto-classify] [--new-topic <name>] [--project <slug>]"
-allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:*), Bash(mv:*), Bash(mkdir:*), Bash(basename:*), Bash(file:*), WebFetch, WebSearch
+allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:*), Bash(mv:*), Bash(mkdir:*), Bash(basename:*), Bash(file:*), Bash(curl:*), Bash(mktemp:*), Bash(rm:*), Bash(pdftotext:*), Bash(python3:*), WebFetch, WebSearch
 ---
 
 ## Your task
@@ -19,9 +19,10 @@ Read the ingestion protocol at `skills/wiki-manager/references/ingestion.md` and
 If the user is trying to import a bounded upstream corpus rather than one source
 item, stop and hand off to `/wiki:ingest-collection` with the same wiki flags.
 Signals include: "import wiki", "mirror wiki", "bulk ingest", "ingest
-collection", "ingest repo", "import repo", MediaWiki dumps (`.xml`, `.xml.bz2`,
-`.xml.gz`), MediaWiki `api.php`, or a GitHub/GitLab repo plus words like
-"all", "docs", "BIPs", "wiki", or "collection".
+collection", "ingest repo", "import repo", "split CSV into messages", "Wayback
+snapshots", MediaWiki dumps (`.xml`, `.xml.bz2`, `.xml.gz`), MediaWiki
+`api.php`, CDX API URLs, or a GitHub/GitLab repo plus words like "all", "docs",
+"BIPs", "wiki", or "collection".
 
 Do not reduce a collection to the repository README or one fetched web page.
 Collection imports need a manifest plus one raw child source per upstream
@@ -80,7 +81,12 @@ Follow the inbox processing protocol from `references/ingestion.md`:
    - Use WebFetch with repo-specific extraction prompt
    - Type: repos (unless overridden)
 
-3. All other URLs:
+3. Detect PDF URLs (`.pdf` extension or PDF content type):
+   - Download to a temporary file
+   - Extract to markdown with the PDF file ingestion flow in `references/ingestion.md`
+   - Type: papers by default, unless overridden or clearly a legal/regulatory article
+
+4. All other URLs:
    - Use WebFetch to extract article content
    - Auto-detect type from URL patterns (arxiv → papers, etc.)
 
@@ -88,7 +94,13 @@ Follow the inbox processing protocol from `references/ingestion.md`:
 
 1. Read the file
 2. Auto-detect type from extension and content
-3. For structured data (.json, .csv), describe schema + sample
+3. For `.pdf`, extract to markdown. Try `pdftotext -layout` only if it works;
+   otherwise create a temporary Python venv and use a PDF library such as
+   `pypdf` or `pymupdf`. If the PDF is image-only and no OCR path is available,
+   write a metadata stub with `extraction_status: ocr-needed`.
+4. For structured data (.json, .csv), describe schema + sample for a single
+   data source. If the user wants per-message markdown, hand off to
+   `/wiki:ingest-collection --adapter csv-messages`.
 
 ### If quoted text source
 

@@ -176,12 +176,18 @@ Create a topic wiki. Always require a topic name. If the hub doesn't exist, crea
 
 Convert external material into a raw source file.
 
-- **URLs**: Fetch content, extract title/author/date/text, write to `raw/articles/` or `raw/papers/`
-- **Files**: Read directly, preserve formatting
+- **URLs**: Fetch content, extract title/author/date/text, write to `raw/articles/` or `raw/papers/`; download PDF URLs and run PDF extraction
+- **Files**: Read directly, preserve formatting; convert PDFs to markdown when possible
 - **Text**: User provides quoted text, write to `raw/notes/`
 - **Inbox**: Scan `inbox/` for dumped files, process each by type, move to `inbox/.processed/`
 
-Auto-detect type: arxiv/scholar → papers, github → repos, .csv/.json → data, everything else → articles.
+Auto-detect type: arxiv/scholar/PDF papers → papers, github → repos, .csv/.json → data, everything else → articles.
+
+PDFs are single-source ingests. Try `pdftotext -layout` only if local poppler is
+working and produces non-trivial text; otherwise use a temporary Python venv
+with a PDF library such as `pypdf` or `pymupdf`. Preserve page boundaries when
+available. If the PDF is image-only and no OCR path is available, write a
+metadata stub with `extraction_status: ocr-needed` rather than inventing text.
 
 **Auto-classify** (when no `--wiki` specified): After fetching content, match against topic wiki scopes. Single items get a numbered choice (pick wiki, create new, or skip). Batch/inbox mode presents a classification table for bulk routing. Skipped when `--wiki` or `--local` is explicit.
 
@@ -191,8 +197,9 @@ Slug: `YYYY-MM-DD-descriptive-slug.md`. Update all indexes after each ingestion.
 
 Bulk-ingest bounded upstream corpora without turning them directly into compiled
 wiki articles. Use this for Git document repositories, BIP-style proposal sets,
-MediaWiki XML dumps, and MediaWiki API sites. Never recursively crawl HTML; use
-structured upstream interfaces.
+MediaWiki XML dumps/API sites, CSV/JSON message archives, and Wayback CDX
+snapshot sets. Never recursively crawl HTML; use structured upstream
+interfaces.
 
 Adapters:
 - **git**: clone shallowly or read a local repo; inventory text files with blob
@@ -204,15 +211,23 @@ Adapters:
   namespaces unless explicitly included.
 - **mediawiki-api**: use `api.php` with `allpages` and `revisions` for targeted
   imports or dumpless sites; follow continuation tokens and respect throttling.
+- **csv-messages**: parse `.csv`, `.tsv`, `.json`, or `.jsonl` message archives
+  with Python stdlib; infer id/date/author/subject/body fields; write one raw
+  markdown source per message, usually under `raw/notes/`.
+- **wayback-cdx**: use Internet Archive CDX as the bounded inventory; fetch
+  selected captures with `id_` replay URLs; run readability-to-markdown; write
+  one raw article per readable snapshot.
 
 Every collection import writes a manifest to `raw/repos/` tagged
 `collection-manifest`, plus one immutable child source per upstream page/spec in
 `raw/articles/` unless another type is more appropriate. Child frontmatter may
 include `collection`, `adapter`, `upstream_id`, `upstream_type`, `revision`,
 `sha`, `canonical_url`, `content_format`, `license`, `authors`, `categories`,
-`outlinks`, and `fetched`. Deduplicate by `collection + upstream_id +
-revision/sha`; if upstream content changes, write a new raw source instead of
-overwriting the old one.
+`outlinks`, `fetched`, and adapter-specific provenance such as `message_id`,
+`row_number`, `wayback_timestamp`, or `wayback_digest`. Deduplicate by
+`collection + upstream_id + revision/sha` or the adapter's stable row/snapshot
+key; if upstream content changes, write a new raw source instead of overwriting
+the old one.
 
 Compile collections selectively: synthesize concepts, topics, timelines,
 glossaries, standards families, and reference indexes. Do not create one

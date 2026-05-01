@@ -242,6 +242,13 @@ Answer questions from wiki content only. Three depths:
 
 Always cite sources. Note confidence levels. Identify gaps. Never use training data — only wiki content.
 
+For any boot, resume, or "where you left off" briefing, start with the active
+wiki identity: `<wiki-name> booted from <wiki-root-path>`. Prefer the title from
+`config.md`; for local `.wiki/` projects, fall back to the parent directory name
+(for example `bitcoin-wiki` for `.../claude-sandbox/bitcoin-wiki/.wiki`); for
+`HUB/topics/<slug>/`, fall back to the slug. Include this line even when there
+is nothing in flight to resume.
+
 ### Research
 
 Automated pipeline: search → ingest → compile. Launch parallel agents. Auto-detects input type.

@@ -85,6 +85,12 @@ When this skill activates outside of an explicit `/wiki:*` command:
 4. If no relevant content → answer normally, optionally suggest: "This could be added to your wiki with `/wiki:ingest`"
 5. When peeking at sibling wikis, only read their `_index.md` — do not read full articles unless the user asks
 
+When giving any boot, resume, or "where you left off" briefing, start with the
+active wiki identity: `<wiki-name> booted from <wiki-root-path>`. Prefer the
+`config.md` title; for local `.wiki/` projects, fall back to the parent
+directory name; for `HUB/topics/<slug>/`, fall back to the slug. Include this
+line even when there is nothing in flight to resume.
+
 If the user asks whether they can trust a wiki artifact, requests an audit,
 mentions provenance or drift, or asks for content verification beyond a normal
 query, use the Audit workflow instead of treating it as plain Q&A.

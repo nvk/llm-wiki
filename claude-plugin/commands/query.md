@@ -127,16 +127,22 @@ Skip the synthesized answer, sources used, and knowledge gaps sections. Just ret
 
 Context reload for new sessions. Reads persistent state and outputs a briefing so you can pick up where you left off.
 
-1. **Check for interrupted sessions**: Try to read `.research-session.json` and `.thesis-session.json` in the wiki root. If either exists with `status: "in_progress"`, report: topic/thesis, current round, sources so far, last round's gaps or verdict direction.
-2. **Durable provenance fallback**: If no active session file exists, read `.session-checkpoint.json` and the recent tail of `.session-events.jsonl`. Use them to summarize the most recent completed research/audit/output work instead of reporting "nothing active."
+1. **Identify the active wiki**: Determine a display name and root path before any status text.
+   - Prefer `title` from `config.md` frontmatter.
+   - If this is a local `.wiki/`, fall back to the parent directory basename (for example `bitcoin-wiki` for `.../claude-sandbox/bitcoin-wiki/.wiki`).
+   - If this is `HUB/topics/<slug>/`, fall back to `<slug>`.
+   - Include the resolved wiki root path in the first two lines of the briefing. This must happen even when there is nothing in flight.
 
-3. **Recent activity**: Read `log.md`. Extract the last 10 entries (grep for `^## \[`). Present them as a compact timeline.
+2. **Check for interrupted sessions**: Try to read `.research-session.json` and `.thesis-session.json` in the wiki root. If either exists with `status: "in_progress"`, report: topic/thesis, current round, sources so far, last round's gaps or verdict direction.
+3. **Durable provenance fallback**: If no active session file exists, read `.session-checkpoint.json` and the recent tail of `.session-events.jsonl`. Use them to summarize the most recent completed research/audit/output work instead of reporting "nothing active."
 
-4. **Wiki stats**: Read `_index.md` — pull total source count, article count, and output count from the stats section.
+4. **Recent activity**: Read `log.md`. Extract the last 10 entries (grep for `^## \[`). Present them as a compact timeline.
 
-5. **Most recent work**: Read the master `_index.md` table. Identify the 3 most recently updated articles by their `Updated` column. Show their titles, paths, and summaries from the index (do NOT read full articles — keep it fast).
+5. **Wiki stats**: Read `_index.md` — pull total source count, article count, and output count from the stats section.
 
-6. **Suggested next steps**: Based on what you found:
+6. **Most recent work**: Read the master `_index.md` table. Identify the 3 most recently updated articles by their `Updated` column. Show their titles, paths, and summaries from the index (do NOT read full articles — keep it fast).
+
+7. **Suggested next steps**: Based on what you found:
    - If interrupted session exists → suggest resuming it (e.g., "Run `/wiki:research --min-time ...` to continue")
    - If durable provenance shows a recent completed audit → suggest reviewing `.audit/REPORT.md` or acting on its next steps
    - If recent research logged gaps → suggest addressing them
@@ -146,7 +152,9 @@ Context reload for new sessions. Reads persistent state and outputs a briefing s
 **Output format:**
 
 ```
-## Resume: <wiki-title>
+## Resume: <wiki-name>
+
+`<wiki-name>` booted from `<wiki-root-path>`.
 
 **Interrupted session?** Yes — research on "<topic>", round N, M sources so far. Last gaps: ...
 (or: No interrupted sessions.)

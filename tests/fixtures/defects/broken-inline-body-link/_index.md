@@ -4,8 +4,8 @@ Research on testing patterns for validation purposes.
 
 ## Stats
 - Articles: 2
-- Sources: 3
-- Last updated: 2026-01-02
+- Sources: 4
+- Last updated: 2026-01-03
 
 ## Articles
 
@@ -21,7 +21,7 @@ Research on testing patterns for validation purposes.
 
 ## Raw Sources
 
-See [raw/_index.md](raw/_index.md) for 3 ingested sources.
+See [raw/_index.md](raw/_index.md) for 4 ingested sources.
 
 ## Quick Navigation
 

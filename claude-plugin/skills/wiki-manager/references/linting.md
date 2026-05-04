@@ -68,11 +68,11 @@ There is no `/wiki:migrate` command and there should never be one. Lint rules **
 
 - [ ] All markdown links `[text](path)` in wiki articles resolve to existing files
 - [ ] All "See Also" links are bidirectional (if A→B, then B→A)
-- [ ] All "Sources" links in wiki articles point to existing raw files
+- [ ] All "Sources" links in wiki articles point to existing raw files. Links to paths with spaces should use angle-bracket markdown destinations, e.g. `[Title](<../../raw/articles/File Name.md>)`.
 
 ### C4b: Source Provenance (Warning)
 
-- [ ] All `sources:` entries in wiki article frontmatter point to existing raw files (no dangling references to deleted/retracted sources)
+- [ ] All `sources:` entries in wiki article frontmatter point to existing raw files (no dangling references to deleted/retracted sources). Resolve entries with the Source Reference Resolution protocol in `wiki-structure.md`: parse the full YAML scalar/path, preserve whitespace, exact path first, then slug fallback. Never split on whitespace.
 - [ ] No `<!--RETRACTED-SOURCE-->` markers remain in article body (these should be resolved via `--recompile` or manual review)
 - [ ] No raw source file is referenced by zero wiki articles (orphan source — suggest compilation or removal)
 - [ ] Exempt raw files tagged `collection-manifest` from orphan-source warnings. A collection manifest is operational provenance for a batch import; child sources should be compiled, but the manifest itself does not need to appear in article `sources:`.
@@ -107,7 +107,7 @@ Validates projects under `output/projects/`. The architecture was simplified in 
 - [ ] **C8c** Legacy `_project.md` migration (**Critical** — auto-fixable). See migration rule below. Runs first so any legacy manifests are healed into `WHY.md` before the presence check looks for them.
 - [ ] **C8a** Every `output/projects/<slug>/` directory has a `WHY.md` with non-empty content (**Critical** — projects without rationale become black boxes; LLMs rebuild wrong without the why). The file has no frontmatter requirement. Any `#` heading + body counts as non-empty.
 - [ ] **C8d** Slug conforms to spec: lowercase, hyphen-separated, ≤40 chars, no dates (**Warning**).
-- [ ] **C8b** Staleness check — for every project, compute transitive source freshness (**Suggestion**). For each member file with `sources:` frontmatter, follow the chain to raw sources. If any raw source's `ingested:` date is newer than the member's `updated:` date, the project may be stale. Report as: `Project <slug> may be stale: N source(s) newer than member artifacts.` Never auto-fixed — staleness triggers human re-evaluation, not automatic regeneration.
+- [ ] **C8b** Staleness check — for every project, compute transitive source freshness (**Suggestion**). For each member file with `sources:` frontmatter, follow the chain to raw sources using the Source Reference Resolution protocol in `wiki-structure.md`. If any raw source's `ingested:` date is newer than the member's `updated:` date, the project may be stale. Report as: `Project <slug> may be stale: N source(s) newer than member artifacts.` Never auto-fixed — staleness triggers human re-evaluation, not automatic regeneration.
 
 **C8c migration rule** (legacy `_project.md` → `WHY.md`):
 
@@ -291,7 +291,7 @@ Flags wiki articles that lack the `volatility` field. New articles should always
 | Missing bidirectional link | Add "See Also" entry to the article missing the backlink |
 | Empty frontmatter field | Infer: title from `# heading`, summary from first paragraph |
 | Near-duplicate tags | Replace all instances with the canonical form |
-| Dangling source reference | Remove the entry from `sources:` frontmatter |
+| Dangling source reference | Remove the entry from `sources:` frontmatter only after exact path resolution and slug fallback from `wiki-structure.md` both fail; ambiguous slug matches are reported for human review, not auto-removed |
 | Unresolved retraction marker | Warn: "Retracted claim not yet reviewed — run `/wiki:retract --recompile` or edit manually" |
 | **C8a** `output/projects/<slug>/` missing `WHY.md` | **Warn only** — a project without rationale is a malformed project. Report and prompt the user to create one. Auto-creation would manufacture a fake goal, which is worse than the missing file. |
 | **C8b** Staleness detected | **Never auto-fix** — staleness is a signal for human re-evaluation, not automatic content regeneration. |

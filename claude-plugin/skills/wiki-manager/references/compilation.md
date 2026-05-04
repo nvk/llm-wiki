@@ -49,8 +49,9 @@ Read `wiki/_index.md` and category indexes. For each key concept:
 2. Write the body — explain using information from source(s). Synthesize, contextualize, explain. Do NOT copy-paste.
 3. When referencing another wiki article inline, use dual-link format: `[[slug|Name]] ([Name](../category/slug.md))` — this serves both Obsidian and the agent.
 4. Add "See Also" links to related wiki articles using dual-link format (check wiki index for related tags/concepts)
-5. Add "Sources" section linking back to raw files
+5. Add "Sources" section linking back to raw files. If a raw path contains spaces, use angle-bracket markdown destinations such as `[Title](<../../raw/articles/File Name.md>)`.
 6. Generate frontmatter per `references/wiki-structure.md` — include `aliases` for alternate names
+   - In `sources:` frontmatter, write exact wiki-root-relative raw paths. Use block-list YAML and quote any path with spaces or punctuation. Do not cite raw files by display title or whitespace-delimited slug.
 7. Add `aliases` in frontmatter for any common alternate names (e.g., `aliases: [GPT, Generative Pre-trained Transformer]`)
 8. Set `confidence` in frontmatter based on source credibility AND corroboration:
    - `high`: multiple sources with credibility score 4+ agree, OR single peer-reviewed meta-analysis/systematic review

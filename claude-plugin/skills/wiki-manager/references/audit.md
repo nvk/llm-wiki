@@ -76,9 +76,9 @@ For each output artifact:
 1. Read frontmatter and capture `sources:`, `generated:`, `project:`, and
    related metadata if present.
 2. If `sources:` is missing or empty, flag `missing-provenance`.
-3. Resolve each dependency path:
-   - `raw/...`, `wiki/...`, `output/...` resolve from the wiki root
-   - `../...` resolves relative to the artifact file
+3. Resolve each dependency with the Source Reference Resolution protocol in
+   `wiki-structure.md`. Preserve the whole YAML scalar/path, including spaces;
+   never split dependency entries on whitespace.
 4. Flag `broken-source-ref` for any dependency that does not resolve.
 5. Compare dependency freshness against the output's `generated:` date:
    - if dependency `updated:` / `ingested:` / `generated:` is newer than the

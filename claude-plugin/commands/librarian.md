@@ -52,7 +52,7 @@ For each pending article:
 
 1. Read the article's YAML frontmatter (do NOT read the full body yet — Tier 1 is metadata-only).
 2. Read `volatility` (default: `warm`), `verified`, `updated`, `created`, `sources`, `confidence`.
-3. For each entry in `sources:`, check if the raw file exists (Glob or Read). Record resolved count.
+3. For each entry in `sources:`, resolve it with the Source Reference Resolution protocol in `references/wiki-structure.md`. Treat each entry as a complete YAML scalar/path — never split on whitespace. Record resolved count, ambiguous count, and unresolved count.
 4. For resolved sources, read their `ingested:` date from frontmatter.
 5. Compute staleness score using the formula in `references/librarian.md` § Staleness Scoring.
 6. Write result to `checkpoint.json` (atomic: write `.checkpoint.tmp`, rename).

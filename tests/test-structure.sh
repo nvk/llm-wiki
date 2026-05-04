@@ -148,7 +148,7 @@ while IFS= read -r -d '' file; do
     fi
     if $in_sources; then
       if echo "$line" | grep -q "^  - "; then
-        ref=$(echo "$line" | sed 's/^  - //')
+        ref=$(echo "$line" | sed 's/^  - //' | sed 's/^"//;s/"$//;s/^'\''//;s/'\''$//')
         if [ -f "$GOLDEN/$ref" ]; then
           log_pass "source ref exists: $ref (in $bn)"
         else
@@ -175,7 +175,7 @@ echo "--- C4: Link integrity (all body links) ---"
 while IFS= read -r -d '' file; do
   bn=$(basename "$file")
   filedir=$(dirname "$file")
-  # Match ](<path>.md) anywhere in the file — body prose, See Also, or Sources
+  # Match ](path.md) and ](<path with spaces.md>) anywhere in the file.
   while IFS= read -r link; do
     target=$(python3 -c "import os,sys; print(os.path.normpath(sys.argv[1]))" "$filedir/$link")
     if [ -f "$target" ]; then
@@ -183,7 +183,17 @@ while IFS= read -r -d '' file; do
     else
       log_fail "broken link: $link (in $bn)" "C4 violation"
     fi
-  done < <(grep -oE ']\([^])( ]+\.md\)' "$file" | sed 's/^](//;s/)$//')
+  done < <(python3 - "$file" <<'PY'
+import re
+import sys
+
+text = open(sys.argv[1], encoding="utf-8").read()
+for match in re.finditer(r"\]\((<([^>\n]+\.md)>|([^)\n]+\.md))\)", text):
+    link = match.group(2) or match.group(3)
+    if "://" not in link:
+        print(link)
+PY
+)
 done < <(find "$GOLDEN/wiki" -name "*.md" -not -name "_index.md" -print0)
 
 echo ""

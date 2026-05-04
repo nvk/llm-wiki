@@ -11,51 +11,57 @@ if [ ! -d "$GOLDEN" ]; then
   exit 1
 fi
 
-rm -rf "$DEFECTS"
 mkdir -p "$DEFECTS"
+find "$DEFECTS" -depth -type d -name '* 2' -exec rm -rf {} +
+
+copy_golden() {
+  local name="$1"
+  mkdir -p "$DEFECTS/$name"
+  rsync -a --delete "$GOLDEN/" "$DEFECTS/$name/"
+}
 
 echo "Generating defect fixtures from golden wiki..."
 
 # C1: missing-index — delete raw/articles/_index.md
-cp -r "$GOLDEN" "$DEFECTS/missing-index"
+copy_golden "missing-index"
 rm "$DEFECTS/missing-index/raw/articles/_index.md"
 echo "  Created: missing-index (C1)"
 
 # C2: bad-frontmatter — invalid type enum
-cp -r "$GOLDEN" "$DEFECTS/bad-frontmatter"
+copy_golden "bad-frontmatter"
 sed -i.bak 's/^type: articles$/type: invalid/' \
   "$DEFECTS/bad-frontmatter/raw/articles/2026-01-01-sample-article.md"
 rm -f "$DEFECTS/bad-frontmatter/raw/articles/2026-01-01-sample-article.md.bak"
 echo "  Created: bad-frontmatter (C2)"
 
 # C3: stale-index — file exists but not in index
-cp -r "$GOLDEN" "$DEFECTS/stale-index"
+copy_golden "stale-index"
 cp "$DEFECTS/stale-index/raw/articles/2026-01-01-sample-article.md" \
    "$DEFECTS/stale-index/raw/articles/2026-01-03-unlisted.md"
 echo "  Created: stale-index (C3)"
 
 # C3: dead-index-entry — index row points to nonexistent file
-cp -r "$GOLDEN" "$DEFECTS/dead-index-entry"
+copy_golden "dead-index-entry"
 echo '| 2026-01-05 | [Ghost Article](nonexistent.md) | 3/5 | ghost |' \
   >> "$DEFECTS/dead-index-entry/raw/articles/_index.md"
 echo "  Created: dead-index-entry (C3)"
 
 # C4: broken-link — See Also points to nonexistent article
-cp -r "$GOLDEN" "$DEFECTS/broken-link"
+copy_golden "broken-link"
 sed -i.bak 's|sample-reference.md|nonexistent.md|g' \
   "$DEFECTS/broken-link/wiki/concepts/sample-concept.md"
 rm -f "$DEFECTS/broken-link/wiki/concepts/sample-concept.md.bak"
 echo "  Created: broken-link (C4)"
 
 # C4: broken-inline-body-link — inline body prose link points to nonexistent article
-cp -r "$GOLDEN" "$DEFECTS/broken-inline-body-link"
+copy_golden "broken-inline-body-link"
 sed -i.bak 's|(../references/sample-reference.md)|(../references/nonexistent-inline.md)|' \
   "$DEFECTS/broken-inline-body-link/wiki/concepts/sample-concept.md"
 rm -f "$DEFECTS/broken-inline-body-link/wiki/concepts/sample-concept.md.bak"
 echo "  Created: broken-inline-body-link (C4)"
 
 # C4b: dangling-source-ref — sources: entry points to deleted file
-cp -r "$GOLDEN" "$DEFECTS/dangling-source-ref"
+copy_golden "dangling-source-ref"
 sed -i.bak '/^  - raw\/papers/a\
   - raw/articles/2026-01-03-deleted.md' \
   "$DEFECTS/dangling-source-ref/wiki/concepts/sample-concept.md"
@@ -63,13 +69,13 @@ rm -f "$DEFECTS/dangling-source-ref/wiki/concepts/sample-concept.md.bak"
 echo "  Created: dangling-source-ref (C4b)"
 
 # C4b: retracted-marker — <!--RETRACTED-SOURCE--> left in body
-cp -r "$GOLDEN" "$DEFECTS/retracted-marker"
+copy_golden "retracted-marker"
 echo '<!--RETRACTED-SOURCE: previously cited claim from deleted source-->' \
   >> "$DEFECTS/retracted-marker/wiki/concepts/sample-concept.md"
 echo "  Created: retracted-marker (C4b)"
 
 # C5: duplicate-tags — ml and machine-learning
-cp -r "$GOLDEN" "$DEFECTS/duplicate-tags"
+copy_golden "duplicate-tags"
 sed -i.bak 's/tags: \[testing, patterns\]/tags: [ml, patterns]/' \
   "$DEFECTS/duplicate-tags/raw/articles/2026-01-01-sample-article.md"
 sed -i.bak 's/tags: \[testing, patterns, evals\]/tags: [machine-learning, patterns, evals]/' \
@@ -78,7 +84,7 @@ rm -f "$DEFECTS"/duplicate-tags/raw/articles/*.bak "$DEFECTS"/duplicate-tags/wik
 echo "  Created: duplicate-tags (C5)"
 
 # C6: orphan-source — raw source referenced by zero articles
-cp -r "$GOLDEN" "$DEFECTS/orphan-source"
+copy_golden "orphan-source"
 cat > "$DEFECTS/orphan-source/raw/articles/2026-01-03-orphan.md" << 'ENDOFFILE'
 ---
 title: "Orphan Source"
@@ -96,27 +102,27 @@ ENDOFFILE
 echo "  Created: orphan-source (C6)"
 
 # C11: misplaced-file — concept article in references/ directory
-cp -r "$GOLDEN" "$DEFECTS/misplaced-file"
+copy_golden "misplaced-file"
 mv "$DEFECTS/misplaced-file/wiki/concepts/sample-concept.md" \
    "$DEFECTS/misplaced-file/wiki/references/sample-concept.md"
 echo "  Created: misplaced-file (C11)"
 
 # C12: unknown-file — .txt file in raw/
-cp -r "$GOLDEN" "$DEFECTS/unknown-file"
+copy_golden "unknown-file"
 echo "this is not a markdown file" > "$DEFECTS/unknown-file/raw/stray.txt"
 echo "  Created: unknown-file (C12)"
 
 # C14: stale-article — hot article verified over 30 days ago
-cp -r "$GOLDEN" "$DEFECTS/stale-article"
+copy_golden "stale-article"
 sed -i.bak 's/volatility: warm/volatility: hot/' \
   "$DEFECTS/stale-article/wiki/concepts/sample-concept.md"
-sed -i.bak 's/verified: 2026-01-01/verified: 2025-01-01/' \
+sed -i.bak 's/^verified: .*/verified: 2025-01-01/' \
   "$DEFECTS/stale-article/wiki/concepts/sample-concept.md"
 rm -f "$DEFECTS/stale-article/wiki/concepts/sample-concept.md.bak"
 echo "  Created: stale-article (C14)"
 
 # C15: missing-volatility — article without volatility field
-cp -r "$GOLDEN" "$DEFECTS/missing-volatility"
+copy_golden "missing-volatility"
 sed -i.bak '/^volatility:/d' \
   "$DEFECTS/missing-volatility/wiki/concepts/sample-concept.md"
 sed -i.bak '/^verified:/d' \

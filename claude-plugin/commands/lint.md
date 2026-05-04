@@ -59,7 +59,7 @@ For each `output/projects/<slug>/` directory. Sub-check execution order matters 
 1. **C8c** (run first): if a legacy `_project.md` is present, migrate it to `WHY.md` per the rule in `references/linting.md` § C8 (critical, auto-fixable — this is the first real application of lint-is-the-migration principle).
 2. **C8a**: verify `WHY.md` exists and is non-empty (critical — projects without rationale become black boxes; LLMs rebuild wrong without the why).
 3. **C8d**: slug format (warning — lowercase, hyphen-separated, ≤40 chars, no dates).
-4. **C8b**: compute staleness by following each member file's `sources:` chain. If any raw source has an `ingested:` newer than the member's `updated:`, flag the project (suggestion — human re-evaluates, never auto-fixed).
+4. **C8b**: compute staleness by following each member file's `sources:` chain with the Source Reference Resolution protocol in `references/wiki-structure.md`. Preserve complete path entries, including spaces; never split source refs on whitespace. If any raw source has an `ingested:` newer than the member's `updated:`, flag the project (suggestion — human re-evaluates, never auto-fixed).
 
 See `references/linting.md` § C8 for the full migration rule and `references/projects.md` for the architecture rationale.
 

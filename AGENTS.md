@@ -145,6 +145,21 @@ summary: "2-3 sentence summary"
 
 Body includes abstract, sections, `## See Also` (dual-links, bidirectional), `## Sources` (links to raw/).
 
+### Source Reference Resolution
+
+Treat `sources:` entries as exact paths first, not whitespace-delimited slugs.
+Parse them as YAML list scalars; if falling back to line parsing, preserve the
+complete value after `- ` and strip only matching wrapping quotes. Resolve
+`raw/...`, `wiki/...`, and `output/...` from the wiki root; resolve `../...`
+relative to the file that owns the `sources:` field. If exact resolution fails,
+slugify both the requested value and raw-file stems (lowercase, whitespace or
+underscores to hyphens, remove other special characters, collapse hyphens; also
+try raw stems with a leading `YYYY-MM-DD-` stripped) and accept only a single
+match. Report zero matches as unresolved and multiple matches as ambiguous.
+Never rename raw files during resolution. When linking to raw filenames with
+spaces in markdown, use angle-bracket destinations:
+`[Title](<../../raw/articles/File Name.md>)`.
+
 ### wikis.json
 
 ```json

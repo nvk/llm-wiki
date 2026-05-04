@@ -26,7 +26,7 @@ For each article being refreshed:
 
 #### Tier 1: Source Check
 
-1. Read the article's `sources:` frontmatter to get the list of raw source files
+1. Read the article's `sources:` frontmatter to get the list of raw source files. Resolve each entry with the Source Reference Resolution protocol in `references/wiki-structure.md`; preserve paths with whitespace and never split entries on whitespace.
 2. For each raw source, read its `source:` URL from frontmatter
 3. Use WebFetch to re-fetch the URL content
 4. Compare the fetched content against the stored raw source using key-fact extraction:

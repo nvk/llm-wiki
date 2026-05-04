@@ -311,6 +311,10 @@ The `inbox/` directory is a drop zone. Users dump files there via Finder, `cp`, 
 3. Truncate to 60 characters max (not counting .md extension)
 4. Example: "Attention Is All You Need" → `2026-04-04-attention-is-all-you-need.md`
 5. If a file with that slug already exists, append `-2`, `-3`, etc.
+6. This canonicalization applies to new ingests. If a legacy or imported raw
+   file already exists with spaces, title case, or upstream naming, do not
+   rename it during later maintenance; provenance workflows resolve exact paths
+   and slug fallbacks per `wiki-structure.md` Source Reference Resolution.
 
 ## Post-Ingestion Index Updates
 

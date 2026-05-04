@@ -24,7 +24,7 @@ Python-native, pytest-based. Eight agent-specific metrics including Task Complet
 
 ## See Also
 
-- [[sample-concept|Sample Concept]]([Sample Concept](../concepts/sample-concept.md)) — the testing methodology these tools implement
+- [[sample-concept|Sample Concept]] ([Sample Concept](../concepts/sample-concept.md)) — the testing methodology these tools implement
 
 ## Sources
 

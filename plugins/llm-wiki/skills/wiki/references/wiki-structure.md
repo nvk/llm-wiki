@@ -287,6 +287,39 @@ This ensures both Obsidian (reads [[wikilink]]) and the agent (follows relative 
 - [Source Title](../../raw/type/file.md) — what this source contributed
 ```
 
+## Source Reference Resolution
+
+The `sources:` field is a path list, not a bag of slugs. Maintenance workflows
+that follow provenance (`librarian`, `lint`, `audit`, `refresh`, and project
+staleness checks) must resolve source references with this protocol:
+
+1. Parse `sources:` as structured YAML when possible. If using a line-based
+   fallback, preserve the complete scalar after `- ` through the end of the line
+   and strip only matching wrapping quotes. Never split source entries on
+   whitespace.
+2. Resolve exact paths first:
+   - `raw/...`, `wiki/...`, and `output/...` are relative to the wiki root.
+   - `../...` and `./...` are relative to the file that owns the `sources:`
+     field.
+   - Absolute paths are allowed only when they point inside the resolved wiki
+     root; report outside paths as external/unmanaged.
+3. If exact path resolution fails, use slug fallback for legacy or human-entered
+   references. Normalize both the requested value and every candidate raw file
+   stem by lowercasing, replacing whitespace/underscores with hyphens, removing
+   non-alphanumeric characters except hyphens, collapsing repeated hyphens, and
+   trimming leading/trailing hyphens. Also compare candidate stems after removing
+   a leading `YYYY-MM-DD-` date prefix. A single match resolves; zero or
+   multiple matches must be reported as unresolved or ambiguous.
+4. Do not rename raw files during resolution. Raw immutability means old or
+   imported filenames may contain spaces, title case, or upstream identifiers.
+   Canonicalize future ingests, but preserve existing raw file paths.
+5. When writing new `sources:` entries for filenames with spaces or punctuation,
+   prefer block-list YAML and quote the path:
+   `- "raw/articles/2026-01-03-Title Cased Source.md"`.
+6. When linking to a raw file whose path contains spaces in article body
+   markdown, use angle-bracket link destinations:
+   `[Source Title](<../../raw/articles/2026-01-03-Title Cased Source.md>)`.
+
 ## Volatility Classification
 
 Wiki articles carry a `volatility` field that controls how quickly their freshness score decays. The `verified` field records when a human last confirmed the article's conclusions are still accurate.

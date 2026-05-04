@@ -23,6 +23,13 @@ Composite score 0-100 across four dimensions, each contributing 0-25 points. Use
 | Compilation recency | Article currency | `updated:` date | Days since updated |
 | Source chain integrity | Referenced sources exist | `sources:` entries | Percentage of sources that resolve to actual files |
 
+Resolve `sources:` entries with the Source Reference Resolution protocol in
+`wiki-structure.md`. A source entry is a complete YAML scalar/path and may
+contain spaces. Do not split on whitespace, and do not classify a source as
+missing until exact path resolution and the slug fallback have both failed.
+Ambiguous slug fallback matches count as unresolved for scoring and should be
+listed separately in the report factors.
+
 ### Decay Curves by Volatility
 
 Each dimension's raw day-count is converted to a 0-25 score using exponential decay scaled by the article's `volatility` tier:

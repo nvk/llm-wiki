@@ -16,6 +16,12 @@ Manage projects — folders inside a topic wiki's `output/projects/` directory t
 
 Read the projects architecture at `skills/wiki-manager/references/projects.md` for the full rationale — particularly *why* `WHY.md` is the only required file (it holds the precious, non-derivable rationale) and *why* everything else is derived from filesystem state.
 
+Inventory awareness: projects group outputs around a goal; inventory tracks
+durable items with status, priority, and next action. If the user asks for a
+project backlog, source queue, watch list, or task list, suggest inventory
+records or a saved inventory view linked from the project instead of putting
+tracking state directly in `WHY.md`.
+
 ### Deviation: wiki resolution step 4
 
 The standard prelude's step 4 (fallback to HUB) becomes: **ask the user which topic wiki, or fail if no topic wikis exist.** Project operations against an empty hub have nothing to operate on. All project paths below are relative to the resolved wiki root (`<wiki-root>/output/projects/<slug>/`).

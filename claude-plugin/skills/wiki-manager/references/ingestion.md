@@ -12,7 +12,18 @@ Ingestion converts external material into a standardized raw source file in the 
 | papers | raw/papers/ | arxiv.org, scholar.google, .pdf URLs/files, academic language |
 | repos | raw/repos/ | github.com, gitlab.com URLs |
 | notes | raw/notes/ | Freeform text, tweets, no URL |
-| data | raw/data/ | .csv, .json, .tsv URLs or files, dataset references |
+| data | raw/data/ | small .csv, .json, .tsv URLs or files, dataset references |
+
+If the data is large, mutable, remote, sensitive, or better queried in its
+native format, use the dataset registry (`references/datasets.md`) instead of
+copying it into `raw/data/`.
+
+If the user wants to remember, rank, watch, or decide later about a source,
+create or suggest an inventory record instead of ingesting immediately. Ingest
+is for accepted source material; inventory is for durable candidates and next
+actions. After ingesting a source that was tracked in inventory, link the raw
+path back from the inventory record and report any status update the user should
+approve.
 
 ## Collection Ingestion
 

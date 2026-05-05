@@ -14,6 +14,12 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:
 
 Read the audit reference at `skills/wiki-manager/references/audit.md`. If you need a fresh wiki-only pass, also read `commands/librarian.md` and reuse its scan protocol rather than inventing a parallel one.
 
+Inventory awareness: audit findings that require future action should be
+offered as inventory candidates, not only buried in `.audit/REPORT.md`. Examples
+include blocked verification work, stale source queues, watch items, and
+important missing corpora. Show a small sample before creating more than a few
+records, and never treat inventory records as evidence for factual verdicts.
+
 ### Parse $ARGUMENTS
 
 Default subcommand is `scan`.

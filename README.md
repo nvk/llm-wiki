@@ -19,6 +19,8 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 
 ## Changelog
 
+**v0.8.0** — **Inventory tracking and dataset manifests.** Added first-class `/wiki:inventory` for durable items, candidates, entities, corpora, saved views, and opinionated migration previews, plus `/wiki:dataset` manifests for large or external datasets that should be indexed by the wiki without being copied into it. Lint, query, ingest, research, audit, plan, and output workflows now know how to surface inventory and dataset state while keeping raw evidence, compiled knowledge, and generated artifacts separate.
+
 **v0.7.0** — **PDF, message archive, and Wayback adapters.** PDF ingest now prefers real markdown extraction over metadata stubs, with `pdftotext` plus Python-library fallback guidance. Collection ingestion now covers CSV/TSV/JSON/JSONL message archives as per-message markdown sources and Internet Archive CDX inventories as readability-to-markdown Wayback snapshot imports.
 
 **v0.6.0** — **Collection ingestion for external wikis and spec repos.** Added first-class `/wiki:ingest-collection` for bounded upstream corpora such as Git document repositories, BIP-style proposal sets, MediaWiki XML dumps, and MediaWiki API sites. Collection imports now create a `raw/repos/` manifest plus immutable child sources with upstream revision metadata, while compilation stays synthesized instead of copying another wiki wholesale. The router now detects bulk import intent, and lint/schema docs recognize collection provenance fields and manifest coverage exemptions.
@@ -28,8 +30,6 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 **v0.4.4** — **Faster Codex first `@wiki` load.** The generated Codex skill now ships as a smaller router prompt instead of loading the full workflow prose up front. Shared Claude/OpenCode behavior stays unchanged, but Codex first-hit prompt expansion is materially smaller and faster.
 
 **v0.4.3** — **Codex first-class install fixes.** Codex packaging, bootstrap, and verification now line up with the current `@wiki` plugin layout. The generated Codex mirror lives under `plugins/llm-wiki/skills/wiki/`, references are validated as copied files for marketplace installs, and the local bootstrap flow now uses the real `llm-wiki` marketplace name instead of the stale `llm-wiki-local` alias.
-
-**v0.4.2** — **Config-first hub resolution & Codex marketplace install.** Hub resolution now checks `~/.config/llm-wiki/config.json` first, falling back to `~/wiki` only when no config exists. Fixes sandbox permission errors in nono where `~/wiki` isn't an allowed path. Codex plugin installable directly from GitHub via `codex plugin marketplace add nvk/llm-wiki`. References changed from symlink to real copy so Codex marketplace caching works. Nono docs updated with per-runtime profiles and `$HOME/.codex` r+w requirement for Codex plugin install.
 
 ## Install
 
@@ -318,6 +318,13 @@ Check your installed version:
 /wiki:ingest-collection https://dump.bitcoin.it/dump_20260429_en.xml.bz2 --wiki bitcoin  # Import MediaWiki dumps
 /wiki:ingest-collection messages.csv --adapter csv-messages --wiki bitcoin  # Split message archives
 /wiki:ingest-collection "https://example.com/*" --adapter wayback-cdx --from 20100101 --to 20200101  # Import archived snapshots
+/wiki:inventory add ingest-candidate "Bitcointalk archive" --wiki bitcoin  # Track source queues and next actions
+/wiki:inventory add item "TRX-4M ring and pinion" --wiki trx4m-1-18  # Track actual parts, tools, hosts, or assets
+/wiki:inventory list --view actions --limit 10   # Compact chat table of current inventory next actions
+/wiki:inventory scan-outputs --dry-run          # Preview queues/backlogs before any inventory pivot
+/wiki:dataset add "Bitcointalk Temporal Graph" --location https://figshare.com/articles/dataset/BitcoinTemporalGraph/26305093 --wiki bitcoin  # Index data that stays external
+/wiki:dataset list --view schema --limit 10      # Compact chat table of dataset schema/readiness state
+/wiki:dataset scan-outputs --dry-run            # Find legacy data reports that could become dataset manifests
 /wiki:compile                                     # Compile any unprocessed sources
 /wiki:audit --project gut-brain-playbook          # Truth-seeking audit across outputs + wiki + fresh research
 /wiki:output report --topic gut-brain             # Generate a report
@@ -339,6 +346,17 @@ Check your installed version:
 | `/wiki:ingest-collection <source>` | Bulk-ingest Git doc repos, BIP-style proposal sets, MediaWiki dumps/API sites, message archives, or Wayback CDX snapshots |
 | `/wiki:ingest-collection <source> --adapter git\|mediawiki-dump\|mediawiki-api\|csv-messages\|wayback-cdx` | Force a collection adapter |
 | `/wiki:ingest-collection <source> --limit <N> --dry-run` | Preview or cap a large collection import |
+| `/wiki:inventory list` | List durable tracking records as compact chat-friendly tables or bullets |
+| `/wiki:inventory list --view actions` | Show current inventory next actions without dumping full records |
+| `/wiki:inventory add <kind> "title"` | Add an inventory record after checking that inventory is the right layer |
+| `/wiki:inventory save-view "name"` | Save a derived reusable table/list under `inventory/views/` |
+| `/wiki:inventory scan-outputs --dry-run` | Find old queue/backlog outputs and preview sample records before migration |
+| `/wiki:inventory migrate-output <path> --apply` | Additively create inventory records from a legacy output; never moves or deletes the output |
+| `/wiki:dataset list` | List dataset manifests as compact chat-friendly tables or bullets |
+| `/wiki:dataset list --view schema` | Show schema/readiness state without opening samples or data |
+| `/wiki:dataset add "title" --location <path-or-url>` | Add a dataset manifest without copying data into the wiki |
+| `/wiki:dataset profile <slug> --dry-run` | Preview lightweight profiling of size, format, headers, or schema observations |
+| `/wiki:dataset migrate-output <path> --apply` | Additively create dataset manifests from a legacy output; never moves or copies the underlying data |
 | `/wiki:compile` | Compile new sources into wiki articles |
 | `/wiki:compile --full` | Recompile everything from scratch |
 | `/wiki:query <question>` | Q&A against the wiki (standard depth) |
@@ -392,6 +410,8 @@ All commands accept `--wiki <name>` to target a specific topic wiki and `--local
     ├── nutrition/                      # Example topic wiki
     │   ├── .obsidian/                  # Obsidian vault config
     │   ├── inbox/                      # Drop zone for this topic
+    │   ├── inventory/                  # Durable tracking records + derived views
+    │   ├── datasets/                   # Manifests for large/external data
     │   ├── raw/                        # Immutable sources
     │   ├── wiki/                       # Compiled articles
     │   │   ├── concepts/
@@ -411,12 +431,14 @@ The hub is just a registry — no content directories, no `.obsidian/`. All cont
 
 1. **Research** a topic — parallel agents search the web, ingest sources, and compile articles in one command
 2. **Ingest** additional sources — URLs, files, text, tweets (via Grok MCP), or bulk via inbox
-3. **Compile** raw sources into synthesized wiki articles with cross-references and confidence scores
-4. **Query** the wiki — quick (indexes), standard (articles), or deep (everything)
-5. **Lessons learned** — extract knowledge from the current session (errors, fixes, gotchas) into the wiki
-6. **Assess** a repo against the wiki — gap analysis: what aligns, what's missing, what the market offers
-7. **Lint** for consistency — broken links, missing indexes, orphan articles
-8. **Output** artifacts — summaries, reports, slides — filed back into the wiki
+3. **Inventory** items, candidates, entities, corpora, watch lists, and next actions that should persist; the agent tells you when inventory is the wrong layer
+4. **Index datasets** that are too large for markdown — manifests, profiles, samples, and query recipes
+5. **Compile** raw sources into synthesized wiki articles with cross-references and confidence scores
+6. **Query** the wiki — quick (indexes), standard (articles), or deep (everything)
+7. **Lessons learned** — extract knowledge from the current session (errors, fixes, gotchas) into the wiki
+8. **Assess** a repo against the wiki — gap analysis: what aligns, what's missing, what the market offers
+9. **Lint** for consistency — broken links, missing indexes, orphan articles
+10. **Output** artifacts — summaries, reports, slides — filed back into the wiki
 
 ### Key Design
 
@@ -430,6 +452,9 @@ The hub is just a registry — no content directories, no `.obsidian/`. All cont
 - **Confidence scoring** — articles rated high/medium/low based on source quality and corroboration.
 - **Structural guardian** — auto-checks wiki integrity after operations, fixes trivial issues silently.
 - **Activity log** — `log.md` tracks every operation, append-only, grep-friendly.
+- **Opinionated inventory** — durable tracking gets records; one-off sources stay
+  ingest/query; large row-like data becomes datasets or collection ingests. Big
+  pivots start with a sample table before records are written.
 - **Zero dependencies** — runs entirely on built-in tools (Claude Code, OpenCode, or Codex).
 
 ## Research Modes

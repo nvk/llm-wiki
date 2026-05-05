@@ -16,6 +16,12 @@ Read the librarian reference at `skills/wiki-manager/references/librarian.md`. T
 
 `/wiki:librarian` is the focused wiki-maintenance tool. It reviews the `wiki/` layer only. If the user wants a broader trust inspection across outputs, provenance, and fresh research, direct them to `/wiki:audit`.
 
+Inventory awareness: librarian reports may recommend inventory records for
+durable maintenance follow-ups such as stale article clusters, weak source
+chains, recurring refresh tasks, or watch items. Do not create records during a
+scan unless the user explicitly asks; include a compact sample shape when
+suggesting a larger maintenance backlog.
+
 ### Parse $ARGUMENTS
 
 First argument is the subcommand:

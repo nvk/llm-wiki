@@ -9,6 +9,7 @@ PLUGIN_JSON="$PLUGIN_DIR/.claude-plugin/plugin.json"
 PASS=0
 FAIL=0
 TOTAL=0
+REFERENCE_NAMES="audit command-prelude compilation datasets hub-resolution indexing ingestion inventory librarian linting projects research-infrastructure wiki-structure"
 
 log_pass() { PASS=$((PASS + 1)); TOTAL=$((TOTAL + 1)); printf "  \033[32mPASS\033[0m: %s\n" "$1"; }
 log_fail() { FAIL=$((FAIL + 1)); TOTAL=$((TOTAL + 1)); printf "  \033[31mFAIL\033[0m: %s — %s\n" "$1" "$2"; }
@@ -56,7 +57,7 @@ fi
 # Reference files exist
 echo ""
 echo "--- Reference files ---"
-for ref in audit command-prelude compilation hub-resolution indexing ingestion librarian linting projects research-infrastructure wiki-structure; do
+for ref in $REFERENCE_NAMES; do
   reffile="$PLUGIN_DIR/skills/wiki-manager/references/${ref}.md"
   if [ -f "$reffile" ]; then
     log_pass "references/$ref.md exists"
@@ -89,7 +90,7 @@ echo "--- Codex references copy ---"
 REFS_DIR="$CODEX_SKILL/references"
 if [ -d "$REFS_DIR" ] && [ ! -L "$REFS_DIR" ]; then
   log_pass "Codex references directory exists"
-  for ref in audit command-prelude compilation hub-resolution indexing ingestion librarian linting projects research-infrastructure wiki-structure; do
+  for ref in $REFERENCE_NAMES; do
     if [ -f "$REFS_DIR/${ref}.md" ]; then
       log_pass "Codex references/$ref.md exists"
     else
@@ -178,7 +179,7 @@ if [ -L "$OC_REFS_LINK" ]; then
   log_pass "OpenCode references is a symlink"
   if [ -e "$OC_REFS_LINK" ]; then
     log_pass "OpenCode references symlink resolves"
-    for ref in audit command-prelude compilation hub-resolution indexing ingestion librarian linting projects research-infrastructure wiki-structure; do
+    for ref in $REFERENCE_NAMES; do
       if [ -f "$OC_REFS_LINK/${ref}.md" ]; then
         log_pass "OpenCode references/$ref.md reachable via symlink"
       else

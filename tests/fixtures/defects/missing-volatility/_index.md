@@ -5,6 +5,8 @@ Research on testing patterns for validation purposes.
 ## Stats
 - Articles: 2
 - Sources: 4
+- Inventory records: 2
+- Datasets: 1
 - Last updated: 2026-01-03
 
 ## Articles
@@ -26,6 +28,8 @@ See [raw/_index.md](raw/_index.md) for 4 ingested sources.
 ## Quick Navigation
 
 - [All Sources](raw/_index.md)
+- [Inventory](inventory/_index.md)
+- [Datasets](datasets/_index.md)
 - [Concepts](wiki/concepts/_index.md)
 - [Topics](wiki/topics/_index.md)
 - [References](wiki/references/_index.md)

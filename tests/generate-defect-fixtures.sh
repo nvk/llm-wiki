@@ -57,7 +57,10 @@ echo "  Created: broken-link (C4)"
 copy_golden "broken-inline-body-link"
 sed -i.bak 's|(../references/sample-reference.md)|(../references/nonexistent-inline.md)|' \
   "$DEFECTS/broken-inline-body-link/wiki/concepts/sample-concept.md"
-rm -f "$DEFECTS/broken-inline-body-link/wiki/concepts/sample-concept.md.bak"
+sed -i.bak 's|(../../wiki/references/sample-reference.md)|(../../wiki/references/nonexistent-inventory-inline.md)|' \
+  "$DEFECTS/broken-inline-body-link/inventory/items/trx4m-ring-and-pinion.md"
+rm -f "$DEFECTS/broken-inline-body-link/wiki/concepts/sample-concept.md.bak" \
+  "$DEFECTS/broken-inline-body-link/inventory/items/trx4m-ring-and-pinion.md.bak"
 echo "  Created: broken-inline-body-link (C4)"
 
 # C4b: dangling-source-ref — sources: entry points to deleted file
@@ -65,7 +68,11 @@ copy_golden "dangling-source-ref"
 sed -i.bak '/^  - raw\/papers/a\
   - raw/articles/2026-01-03-deleted.md' \
   "$DEFECTS/dangling-source-ref/wiki/concepts/sample-concept.md"
-rm -f "$DEFECTS/dangling-source-ref/wiki/concepts/sample-concept.md.bak"
+sed -i.bak '/^  - wiki\/references/a\
+  - wiki/references/deleted-inventory-source.md' \
+  "$DEFECTS/dangling-source-ref/inventory/items/trx4m-ring-and-pinion.md"
+rm -f "$DEFECTS/dangling-source-ref/wiki/concepts/sample-concept.md.bak" \
+  "$DEFECTS/dangling-source-ref/inventory/items/trx4m-ring-and-pinion.md.bak"
 echo "  Created: dangling-source-ref (C4b)"
 
 # C4b: retracted-marker — <!--RETRACTED-SOURCE--> left in body
@@ -129,6 +136,16 @@ sed -i.bak '/^verified:/d' \
   "$DEFECTS/missing-volatility/wiki/concepts/sample-concept.md"
 rm -f "$DEFECTS/missing-volatility/wiki/concepts/sample-concept.md.bak"
 echo "  Created: missing-volatility (C15)"
+
+# C16: missing-inventory — inventory structure missing an index
+copy_golden "missing-inventory"
+rm "$DEFECTS/missing-inventory/inventory/_index.md"
+echo "  Created: missing-inventory (C16)"
+
+# C17: missing-datasets — dataset registry missing an index
+copy_golden "missing-datasets"
+rm "$DEFECTS/missing-datasets/datasets/_index.md"
+echo "  Created: missing-datasets (C17)"
 
 COUNT=$(ls -d "$DEFECTS"/*/ 2>/dev/null | wc -l | tr -d ' ')
 echo ""

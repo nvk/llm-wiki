@@ -14,6 +14,11 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:
 
 Check whether wiki articles are still current by re-examining their sources. This is NOT automatic recompilation — it's a human-gated assessment of what may have changed.
 
+Inventory awareness: if refresh finds a source that needs later follow-up,
+monitoring, replacement, or access repair, offer an inventory record or update
+an existing one. Do not create records for every minor stale article; reserve
+inventory for durable watch items and blocked actions.
+
 ### Parse $ARGUMENTS
 
 - **article-path**: Path to a specific wiki article to refresh (e.g., `wiki/concepts/nvidia-spark.md`)

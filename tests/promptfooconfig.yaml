@@ -71,6 +71,42 @@ tests:
       - type: cost
         threshold: 0.50
 
+  - description: "Router: inventory intent routes to inventory"
+    vars:
+      prompt: "Keep inventory of this Bitcointalk archive as an ingest candidate"
+    assert:
+      - type: skill-used
+        value: wiki
+      - type: llm-rubric
+        value: "Agent recognized this as an inventory/tracking request and routed to the inventory workflow, not immediate ingestion, compilation, or output generation."
+        threshold: 0.75
+      - type: cost
+        threshold: 0.50
+
+  - description: "Router: inventory question beats generic query"
+    vars:
+      prompt: "What content in my wiki should become inventory?"
+    assert:
+      - type: skill-used
+        value: wiki
+      - type: llm-rubric
+        value: "Agent recognized the inventory signal inside a question and routed to inventory analysis/listing instead of treating it as a generic factual query."
+        threshold: 0.75
+      - type: cost
+        threshold: 0.50
+
+  - description: "Router: dataset intent routes to dataset"
+    vars:
+      prompt: "Index this large Bitcointalk dataset so the wiki can query it without copying the data"
+    assert:
+      - type: skill-used
+        value: wiki
+      - type: llm-rubric
+        value: "Agent recognized this as a dataset registry request and routed to the dataset workflow, not single-source ingestion or compilation."
+        threshold: 0.75
+      - type: cost
+        threshold: 0.50
+
   - description: "Router: question dispatches to query"
     vars:
       prompt: "What testing patterns exist for LLM tools?"
@@ -178,7 +214,7 @@ tests:
       - type: not-contains
         value: "error loading"
       - type: llm-rubric
-        value: "Agent listed wiki subcommands — at minimum ingest, ingest-collection, compile, query, lint, research"
+        value: "Agent listed wiki subcommands — at minimum ingest, ingest-collection, inventory, dataset, compile, query, lint, research"
         threshold: 0.75
       - type: cost
         threshold: 0.30

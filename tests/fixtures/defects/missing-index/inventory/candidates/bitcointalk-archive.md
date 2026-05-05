@@ -27,3 +27,7 @@ Proposed for future ingestion.
 ## Next Action
 
 Profile available archive formats before ingestion.
+
+## Related
+
+- [Sample output](../../output/sample-output.md)

@@ -53,10 +53,18 @@ All content lives here. One topic per wiki. Isolated indexes, focused queries.
 │   └── .processed/
 ├── inventory/                     # Durable tracking records
 │   ├── _index.md
+│   ├── items/*.md                 # Physical/digital items, parts, tools, assets
 │   ├── candidates/*.md            # Ingest candidates, questions, tasks, watch items
 │   ├── entities/*.md              # People, orgs, projects, standards bodies
 │   ├── corpora/*.md               # Source collections, archives, datasets, forums
-│   └── views/*.md                 # Generated inventory views
+│   └── views/*.md                 # Derived chat/list views over inventory
+├── datasets/                      # Manifests for large/external data
+│   ├── _index.md
+│   └── <dataset-slug>/
+│       ├── MANIFEST.md
+│       ├── samples/
+│       ├── profiles/
+│       └── queries/
 ├── raw/                           # Immutable source material
 │   ├── _index.md
 │   ├── articles/*.md
@@ -156,7 +164,7 @@ Body includes abstract, sections, `## See Also` (dual-links, bidirectional), `##
 ```yaml
 ---
 title: "Thing To Track"
-kind: ingest-candidate|entity|corpus|question|task|artifact|watch
+kind: item|ingest-candidate|entity|corpus|question|task|artifact|watch
 status: proposed|active|blocked|ingested|superseded|archived
 priority: p0|p1|p2|p3|p4
 created: YYYY-MM-DD
@@ -170,7 +178,66 @@ sources:
 
 Inventory records are durable wiki-adjacent tracking objects. They can point at
 `raw/`, `wiki/`, `output/`, URLs, or external paths, but they do not move or copy
-those artifacts.
+those artifacts. Local `sources:` paths and body links in inventory records
+should resolve; lint checks them as operational provenance, not factual
+evidence.
+
+Inventory is opinionated. Use it when something should persist across sessions
+with status, priority, ownership, or a next action. Actual physical/digital
+items such as parts, tools, hosts, SKUs, subscriptions, and assets are good
+fits when their owned/wanted/selected/rejected state matters. It is too small
+for a one-off source to ingest now, a factual question, or a note with no future
+action. It is too large for hundreds/thousands of row-like data records; use one
+corpus record plus a dataset manifest or collection ingest instead. It is out of
+scope for authoritative source text (`raw/`), synthesized knowledge (`wiki/`),
+generated deliverables (`output/`), project rationale (`WHY.md`), or secrets.
+For bigger pivots, show a 1-3 row sample of proposed records before asking to
+apply.
+
+### Inventory View (inventory/views/)
+
+```yaml
+---
+title: "Active Inventory Actions"
+view: actions
+filters:
+  status: active
+updated: YYYY-MM-DD
+summary: "Derived table of active inventory records with next actions."
+---
+```
+
+Inventory views are derived list/table views, not inventory records. They should
+link to records and may be regenerated from record frontmatter. Do not require
+`kind`, `status`, or `priority` on view files.
+
+### Dataset Manifest (datasets/)
+
+```yaml
+---
+title: "Dataset Title"
+dataset_id: dataset-slug
+status: proposed|active|external|archived|unavailable
+storage: local|remote|external|hybrid
+locations: ["/path/or/url"]
+formats: [csv, jsonl, parquet]
+schema_status: unknown|inferred|declared|validated
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+tags: [tag1, tag2]
+summary: "What this dataset contains and why the wiki indexes it"
+---
+```
+
+Dataset manifests let the wiki serve as an index/interface for data that is too
+large or unsuitable to store in markdown. Store locations, schema notes, small
+samples, profiles, and query recipes; never copy the underlying dataset into the
+wiki.
+
+Be opinionated about the boundary: small stable data belongs in `raw/data/`;
+large, mutable, remote, compressed, binary, or query-oriented data belongs in
+`datasets/`; next-action tracking belongs in linked inventory records; many
+independent source pages belong in `ingest-collection`.
 
 ### Source Reference Resolution
 
@@ -206,7 +273,7 @@ spaces in markdown, use angle-bracket destinations:
 ## [YYYY-MM-DD] operation | Description
 ```
 
-Operations: `init`, `ingest`, `ingest-collection`, `compile`, `query`, `lint`, `research`, `thesis`, `output`, `assess`, `refresh`, `librarian`, `audit`, `plan`, `project`, `inventory`, `ll`
+Operations: `init`, `ingest`, `ingest-collection`, `compile`, `query`, `lint`, `research`, `thesis`, `output`, `assess`, `refresh`, `librarian`, `audit`, `plan`, `project`, `inventory`, `dataset`, `ll`
 
 ## Operations
 
@@ -234,6 +301,11 @@ metadata stub with `extraction_status: ocr-needed` rather than inventing text.
 **Auto-classify** (when no `--wiki` specified): After fetching content, match against topic wiki scopes. Single items get a numbered choice (pick wiki, create new, or skip). Batch/inbox mode presents a classification table for bulk routing. Skipped when `--wiki` or `--local` is explicit.
 
 Slug: `YYYY-MM-DD-descriptive-slug.md`. Update all indexes after each ingestion. If 5+ uncompiled sources, suggest compilation.
+
+If the user wants to track or decide later about a source, use inventory instead
+of ingesting immediately. If a source is large or query-oriented, use a dataset
+manifest or collection ingest. After ingesting a tracked candidate, suggest
+linking the raw path from the inventory record.
 
 ### Ingest Collection
 
@@ -277,6 +349,11 @@ compiled wiki article per upstream page by default. For BIPs, publication is
 provenance for proposal text, not proof of adoption or consensus. For community
 wikis, default confidence to medium unless corroborated by stronger sources.
 
+For large imports, preview the collection manifest shape and estimated child
+count first. If the user only wants to remember the corpus for later, create one
+inventory record; if the corpus is row-like data, create a dataset manifest plus
+one linked inventory record.
+
 ### Compile
 
 Transform raw sources into wiki articles. Incremental by default (only new sources).
@@ -289,6 +366,9 @@ Transform raw sources into wiki articles. Incremental by default (only new sourc
 6. Bidirectional links: if A links to B, ensure B links to A
 7. Update all indexes
 
+Do not compile inventory records as articles. They may explain priorities or
+next actions, but factual article claims need raw/wiki sources.
+
 ### Query
 
 Answer questions from wiki content only. Three depths:
@@ -298,6 +378,10 @@ Answer questions from wiki content only. Three depths:
 - **Deep**: Read everything, search raw sources, peek sibling wikis.
 
 Always cite sources. Note confidence levels. Identify gaps. Never use training data — only wiki content.
+
+For meta-questions about inventory, candidates, backlogs, or next actions, read
+inventory indexes and answer as an operational listing. For factual questions,
+inventory is not evidence.
 
 For any boot, resume, or "where you left off" briefing, start with the active
 wiki identity: `<wiki-name> booted from <wiki-root-path>`. Prefer the title from
@@ -372,20 +456,66 @@ Freshness check for wiki articles. Re-fetches source URLs, detects changes (cosm
 
 Track durable things the wiki should remember but that are not raw sources,
 compiled articles, or generated outputs: ingest candidates, source queues,
-entities, corpora, open questions, tasks, artifacts, and watch items.
+items, entities, corpora, open questions, tasks, artifacts, and watch items.
+
+Before writing or migrating records, state the fit judgment: appropriate for
+inventory, too small, too big, or out of scope. For bulk pivots, preview the
+record shape first and default to dry-run.
 
 Subcommands:
 - **list**: Show records, optionally filtered by kind/status/priority
 - **add <kind> "title"**: Create a record under the canonical inventory subdir
 - **show <slug-or-path>**: Read one record
 - **update <path>**: Edit one record
+- **save-view "name"**: Save a derived table/list under `inventory/views/`
 - **scan-outputs**: Find legacy output artifacts that look like queues/backlogs
 - **migrate-output <path>**: Dry-run by default; `--apply` additively creates
   inventory records and never moves or deletes the source output
 
+For chat responses, inventory listing must be efficient and readable: read
+indexes/frontmatter first, present compact Markdown tables or short bullets, cap
+long lists with a visible omitted count, and open full record bodies only when
+the user asks for detail. Common views: `summary`, `actions`, `items`,
+`records`, `sources`.
+
+Other operations should be inventory-aware. Ingest links completed candidates;
+dataset manifests link to corpus records when next actions matter; compile and
+query may surface inventory gaps but must not cite inventory as factual
+evidence; research, audit, librarian, refresh, plan, assess, and output may
+propose records for durable follow-ups, but should not create large backlogs
+without a sample preview and explicit approval.
+
 Migration path: `lint --fix` may create missing empty inventory directories and
 indexes, but it must never convert output artifacts. Output-to-inventory
 migration is explicit, dry-run-first, and additive.
+
+### Dataset
+
+Manage manifests for data that is too large, mutable, sensitive, or operationally
+awkward to store directly in the wiki. The wiki becomes the index/interface; the
+actual data remains at its filesystem path, URL, database, object store, or
+archive.
+
+Subcommands:
+- **list**: Show dataset manifests
+- **add "title" --location <path-or-url>**: Create `datasets/<slug>/MANIFEST.md`
+- **show <slug-or-path>**: Read one manifest and related profile/sample indexes
+- **profile <slug>**: Record lightweight metadata such as size, format, headers,
+  and schema observations; dry-run unless `--apply`
+- **sample <slug>**: Save a tiny sample or sampling recipe; dry-run unless
+  `--apply`
+- **scan-outputs**: Find legacy output artifacts that look like dataset notes
+- **migrate-output <path>**: Dry-run by default; `--apply` additively creates
+  dataset manifests and never moves/deletes the source output or copies data
+
+For chat responses, dataset listing must read `datasets/_index.md` first and
+only manifest frontmatter when needed. Never inspect samples, profiles, queries,
+or the underlying dataset for a plain list. Use compact table/list views such as
+`summary`, `manifests`, `schema`, and `locations`.
+
+Migration path: `lint --fix` may create missing empty `datasets/` indexes and
+per-dataset sample/profile/query indexes, but it must never convert content.
+Output-to-dataset migration is explicit, dry-run-first, and additive.
 
 ### Lint
 
@@ -393,13 +523,14 @@ Health checks with auto-fix capability. Lint **is** the migration path — there
 
 - **Mechanical (C11/C12/C13)** — `raw/` + `wiki/` file placement and frontmatter schema. Fully auto-fixable.
 - **Project-level (C8/C9)** — `output/projects/` structure, `WHY.md` presence, staleness detection, and grouping candidates. Migration of legacy `_project.md` manifests (from pre-v0.2 wikis) is auto-fixed (C8c); everything else is surfaced as suggestions or ready-to-paste commands.
-- **Inventory-level (C16)** — `inventory/` structure, record schema, and output-to-inventory migration candidates. Missing empty structure is auto-creatable; content migration is human-gated.
+- **Inventory-level (C16)** — `inventory/` structure, record/view schemas, and output-to-inventory migration candidates. Missing empty structure is auto-creatable; content migration is human-gated.
+- **Dataset-level (C17)** — `datasets/` structure, manifest schema, and output-to-dataset migration candidates. Missing empty structure is auto-creatable; content migration is human-gated.
 
-**Checks**: structure integrity, frontmatter validity (plus legacy key/value aliases C13), canonical placement of raw/wiki files (C11), unknown-file quarantine for raw/wiki/inventory/root (C12), index consistency, link integrity, source provenance (dangling refs, unresolved retraction markers), tag hygiene, coverage, project `WHY.md` presence (C8a), project staleness via source chain (C8b), legacy `_project.md` migration to `WHY.md` (C8c), project candidates (C9), inventory migration candidates (C16), deep fact-checking (optional).
+**Checks**: structure integrity, frontmatter validity (plus legacy key/value aliases C13), canonical placement of raw/wiki files (C11), unknown-file quarantine for raw/wiki/inventory/datasets/root (C12), index consistency, link integrity, source provenance (dangling refs, unresolved retraction markers), tag hygiene, coverage, project `WHY.md` presence (C8a), project staleness via source chain (C8b), legacy `_project.md` migration to `WHY.md` (C8c), project candidates (C9), inventory migration candidates (C16), dataset migration candidates (C17), deep fact-checking (optional).
 
-**Auto-fix** (`--fix`): rewrite legacy frontmatter keys/values to canonical (C13), move misplaced raw/wiki files to their canonical directory (C11), quarantine unknown files to `inbox/.unknown/` (C12), migrate legacy `_project.md` to `WHY.md` (C8c), create missing empty inventory directories/indexes (C16), missing indexes, orphan files, dead index entries, statistics mismatch, missing bidirectional links, empty frontmatter fields, dangling source references, regenerate projects-aware `output/_index.md`. Never auto-delete unknown directories. Never auto-create `WHY.md` with placeholder goals (C8a is warn-only — manufactured rationale is worse than missing). Never auto-move files into projects (C9 is human-authored via `/wiki:project`). Never auto-migrate output artifacts into inventory records (C16 is explicit via `/wiki:inventory migrate-output --apply`). On slug collisions during a placement move, skip and warn.
+**Auto-fix** (`--fix`): rewrite legacy frontmatter keys/values to canonical (C13), move misplaced raw/wiki files to their canonical directory (C11), quarantine unknown files to `inbox/.unknown/` (C12), migrate legacy `_project.md` to `WHY.md` (C8c), create missing empty inventory directories/indexes (C16), create missing empty dataset directories/indexes (C17), missing indexes, orphan files, dead index entries, statistics mismatch, missing bidirectional links, empty frontmatter fields, dangling source references, regenerate projects-aware `output/_index.md`. Never auto-delete unknown directories. Never auto-create `WHY.md` with placeholder goals (C8a is warn-only — manufactured rationale is worse than missing). Never auto-move files into projects (C9 is human-authored via `/wiki:project`). Never auto-migrate output artifacts into inventory or dataset records (C16/C17 are explicit via `/wiki:inventory migrate-output --apply` and `/wiki:dataset migrate-output --apply`). On slug collisions during a placement move, skip and warn.
 
-**Schema evolution**: when canonical paths or frontmatter fields for `raw/`, `wiki/`, or `inventory/` change, update the rules in `skills/wiki-manager/references/linting.md` (C11/C16 placement maps, C12 allowlist, C13 alias table). When the project model changes, update C8/C9 and `projects.md`. Never write version-specific migration code. Lint rules are the schema.
+**Schema evolution**: when canonical paths or frontmatter fields for `raw/`, `wiki/`, `inventory/`, or `datasets/` change, update the rules in `skills/wiki-manager/references/linting.md` (C11/C16/C17 placement maps, C12 allowlist, C13 alias table). When the project model changes, update C8/C9 and `projects.md`. Never write version-specific migration code. Lint rules are the schema.
 
 ### Search
 
@@ -501,9 +632,9 @@ Flags: `--dry-run` (preview without writing), `--rules` (also propose CLAUDE.md/
 Auto-run lightweight checks after write operations:
 
 1. Hub should only have wikis.json, _index.md, log.md, topics/. Delete anything else.
-2. Index freshness: file counts match index rows, including inventory indexes. Auto-fix mismatches.
+2. Index freshness: file counts match index rows, including inventory and dataset indexes. Auto-fix mismatches.
 3. Orphan detection: files not in any index → add them.
-4. Missing directories, including inventory dirs → create with empty _index.md.
+4. Missing directories, including inventory and dataset dirs → create with empty _index.md.
 5. wikis.json sync: all topic dirs registered, no ghost entries.
 
 Silent when clean. Auto-fix trivial issues. Warn on structural problems. Never block the user.
@@ -513,6 +644,8 @@ Silent when clean. Auto-fix trivial issues. Warn on structural problems. Never b
 - Raw sources: `YYYY-MM-DD-descriptive-slug.md`
 - Wiki articles: `descriptive-slug.md` (no date — living documents)
 - Inventory records: `descriptive-slug.md` (no date — durable tracking state)
+- Inventory views: `descriptive-view-slug.md` under `inventory/views/`
+- Dataset manifests: `datasets/descriptive-slug/MANIFEST.md`
 - Output artifacts: `{type}-{topic-slug}-{YYYY-MM-DD}.md`
 - All lowercase, hyphens, no special chars, max 60 chars
 

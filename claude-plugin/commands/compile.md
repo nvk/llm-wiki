@@ -14,6 +14,13 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:
 
 Read the compilation protocol at `skills/wiki-manager/references/compilation.md` and the indexing protocol at `skills/wiki-manager/references/indexing.md`. Then compile raw sources into wiki articles.
 
+Inventory awareness: compile consumes `raw/` and writes `wiki/`; it does not
+compile inventory records into articles. Read `inventory/_index.md` only to
+notice active candidates, blocked source queues, or next actions that explain
+why sources were ingested. If compilation completes work represented by an
+inventory record, report the recommended record update instead of silently
+changing operational state.
+
 ### Parse $ARGUMENTS
 
 - **--full**: Recompile everything from scratch

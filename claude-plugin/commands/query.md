@@ -14,6 +14,14 @@ allowed-tools: Read, Glob, Grep, Bash(ls:*), Edit
 
 Answer the question in $ARGUMENTS using ONLY the knowledge in the wiki. Follow the Q&A protocol below.
 
+Inventory awareness: for factual questions, inventory is not evidence. Cite
+compiled wiki articles and raw sources, not operational inventory records. For
+meta-questions about candidates, backlogs, next actions, what to track, or
+"what should become inventory", read inventory indexes and answer as an
+inventory/listing task. Keep the output compact and say when an item is too
+small for inventory, too large and should become a dataset/collection, or out
+of scope.
+
 ### Parse $ARGUMENTS
 
 - **question**: Everything that is not a flag

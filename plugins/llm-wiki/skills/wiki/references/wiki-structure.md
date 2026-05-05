@@ -37,6 +37,9 @@ HUB/topics/<name>/
 │   └── .processed/
 ├── inventory/                     # Durable tracking records (see inventory.md)
 │   ├── _index.md
+│   ├── items/                     # Physical/digital items, parts, tools, assets
+│   │   ├── _index.md
+│   │   └── *.md
 │   ├── candidates/                # Ingest candidates, tasks, questions, watch items
 │   │   ├── _index.md
 │   │   └── *.md
@@ -46,9 +49,17 @@ HUB/topics/<name>/
 │   ├── corpora/                   # Source collections, archives, datasets, forums
 │   │   ├── _index.md
 │   │   └── *.md
-│   └── views/                     # Generated inventory views
+│   └── views/                     # Derived chat/list views over inventory
 │       ├── _index.md
 │       └── *.md
+├── datasets/                      # Dataset manifests for large/external data
+│   ├── _index.md
+│   └── <dataset-slug>/
+│       ├── _index.md
+│       ├── MANIFEST.md
+│       ├── samples/_index.md
+│       ├── profiles/_index.md
+│       └── queries/_index.md
 ├── raw/                           # Immutable source material
 │   ├── _index.md
 │   ├── articles/
@@ -95,9 +106,11 @@ HUB/topics/<name>/
     └── *.md                       # Loose outputs (backward compatible)
 ```
 
-See [inventory.md](inventory.md) for inventory records and [projects.md](projects.md)
-for the full projects architecture (lifecycle, multi-membership, explicit
-`--project <slug>` scoping).
+See [inventory.md](inventory.md) for inventory records, [datasets.md](datasets.md)
+for dataset manifests, and [projects.md](projects.md) for the full projects
+architecture (lifecycle, multi-membership, explicit `--project <slug>` scoping).
+Files under `inventory/views/` are derived list/table views. They are not
+inventory records and should not be treated as authoritative tracking state.
 
 ## Local Wiki (--local flag)
 
@@ -163,6 +176,7 @@ Additionally includes:
 - Sources: N raw documents
 - Articles: N compiled wiki articles
 - Inventory records: N tracked items
+- Datasets: N manifests
 - Outputs: N generated artifacts
 - Last compiled: YYYY-MM-DD
 - Last lint: YYYY-MM-DD
@@ -171,6 +185,7 @@ Additionally includes:
 
 - [All Sources](raw/_index.md)
 - [Inventory](inventory/_index.md)
+- [Datasets](datasets/_index.md)
 - [Concepts](wiki/concepts/_index.md)
 - [Topics](wiki/topics/_index.md)
 - [References](wiki/references/_index.md)
@@ -197,7 +212,7 @@ Append-only chronological activity log. Every wiki operation appends an entry. N
 
 Each entry: `## [YYYY-MM-DD] operation | Description`
 
-Operations: `init`, `ingest`, `ingest-collection`, `compile`, `query`, `lint`, `research`, `output`, `refresh`, `librarian`, `audit`, `plan`, `project`, `inventory`, `ll`, `assess`
+Operations: `init`, `ingest`, `ingest-collection`, `compile`, `query`, `lint`, `research`, `output`, `refresh`, `librarian`, `audit`, `plan`, `project`, `inventory`, `dataset`, `ll`, `assess`
 
 Useful for: `grep "^## \[" log.md | tail -10` to see recent activity.
 
@@ -410,6 +425,7 @@ generated: YYYY-MM-DD
 - **Raw sources**: `YYYY-MM-DD-descriptive-slug.md` (date prefix for chronological order)
 - **Wiki articles**: `descriptive-slug.md` (no date — living documents)
 - **Inventory records**: `descriptive-slug.md` (no date — durable tracking state)
+- **Dataset manifests**: `datasets/descriptive-slug/MANIFEST.md`
 - **Output artifacts**: `{type}-{topic-slug}-{YYYY-MM-DD}.md`
 - All filenames: lowercase, hyphens for spaces, no special characters, max 60 chars
 

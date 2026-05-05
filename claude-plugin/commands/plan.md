@@ -14,6 +14,13 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:
 
 Generate an implementation plan for what the user wants to build, grounded in the wiki's accumulated research. Follow the 6-stage pipeline below.
 
+Inventory awareness: use active inventory records as planning constraints when
+they are relevant to the goal, especially blocked tasks, candidate corpora,
+open questions, and watch items. If the plan creates a durable work queue,
+suggest inventory records or a saved inventory view and show a sample before
+creating them. Keep project rationale in `WHY.md`; inventory is for trackable
+items and next actions.
+
 ### Parse $ARGUMENTS
 
 - **goal**: What to build — everything that is not a flag. This is the planning objective.

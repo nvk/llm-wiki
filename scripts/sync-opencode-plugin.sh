@@ -42,13 +42,14 @@ frontmatter = """---
 name: wiki-manager
 description: >
   LLM-compiled knowledge base manager for OpenCode. Use it to initialize, ingest,
-  import source collections, track inventory, compile, query, lint, audit, research, plan, and generate outputs from topic-scoped wikis.
+  import source collections, track inventory, index datasets, compile, query, lint, audit, research, plan, and generate outputs from topic-scoped wikis.
   Activates when the user mentions wiki workflows, knowledge-base management,
   ingestion, collection ingestion, import wiki, inventory, source queue,
-  candidate list, watch list, backlog, compilation, querying, linting, audit,
-  research, librarian, scan quality, article quality, content review, output
-  drift, provenance, lessons learned, implementation plan, or uses wiki-related
-  shorthand in a repo with .wiki/, ~/wiki/, or a configured hub path.
+  candidate list, watch list, backlog, dataset, large data, data registry,
+  dataset manifest, compilation, querying, linting, audit, research, librarian,
+  scan quality, article quality, content review, output drift, provenance,
+  lessons learned, implementation plan, or uses wiki-related shorthand in a repo
+  with .wiki/, ~/wiki/, or a configured hub path.
 ---
 """
 
@@ -80,8 +81,8 @@ replacements = [
         'Track uncompiled sources by comparing `raw/_index.md` ingestion dates against the last compile date in `_index.md`. If 5+ uncompiled sources exist after an ingestion, suggest: "You have N uncompiled sources. Ask me to compile them."',
     ),
     (
-        'Suggest `/wiki:lint --fix`, which will move contents to the appropriate topic wiki or quarantine to `inbox/.unknown/` per C11/C12/C16 in `references/linting.md`.',
-        'Suggest running the lint --fix workflow, which will move contents to the appropriate topic wiki or quarantine to `inbox/.unknown/` per C11/C12/C16 in `references/linting.md`.',
+        'Suggest `/wiki:lint --fix`, which will move contents to the appropriate topic wiki or quarantine to `inbox/.unknown/` per C11/C12/C16/C17 in `references/linting.md`.',
+        'Suggest running the lint --fix workflow, which will move contents to the appropriate topic wiki or quarantine to `inbox/.unknown/` per C11/C12/C16/C17 in `references/linting.md`.',
     ),
     (
         "Tell the user what's wrong and suggest `/wiki:lint --fix`.",

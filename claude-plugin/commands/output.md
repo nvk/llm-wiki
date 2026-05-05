@@ -14,6 +14,13 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(date:*), Bash(pyt
 
 Generate an output artifact from wiki content based on $ARGUMENTS.
 
+Inventory awareness: if the requested output is really a durable queue,
+candidate list, watch list, source backlog, or next-action table, recommend
+`/wiki:inventory` instead of creating another loose output. If an output report
+discovers durable follow-ups, include a short "Inventory candidates" section
+with a sample shape and ask before creating records. Do not bury ongoing
+tracking state in a generated report.
+
 ### Parse $ARGUMENTS
 
 - **type** (required): One of: `summary`, `report`, `study-guide`, `slides`, `timeline`, `glossary`, `comparison`

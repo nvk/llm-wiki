@@ -22,7 +22,8 @@ echo "--- C1: Structure (every directory has _index.md) ---"
 
 for dirname in raw raw/articles raw/papers raw/repos raw/notes raw/data \
                wiki wiki/concepts wiki/topics wiki/references wiki/theses \
-               inventory inventory/candidates inventory/entities inventory/corpora inventory/views \
+               inventory inventory/items inventory/candidates inventory/entities inventory/corpora inventory/views \
+               datasets datasets/bitcointalk-temporal-graph datasets/bitcointalk-temporal-graph/samples datasets/bitcointalk-temporal-graph/profiles datasets/bitcointalk-temporal-graph/queries \
                output; do
   if [ -f "$GOLDEN/$dirname/_index.md" ]; then
     log_pass "_index.md exists in $dirname"
@@ -71,7 +72,31 @@ while IFS= read -r -d '' file; do
       log_fail "$field missing in $bn" "C16 violation"
     fi
   done
-done < <(find "$GOLDEN/inventory" -name "*.md" -not -name "_index.md" -print0)
+done < <(find "$GOLDEN/inventory/items" "$GOLDEN/inventory/candidates" "$GOLDEN/inventory/entities" "$GOLDEN/inventory/corpora" -name "*.md" -not -name "_index.md" -print0)
+
+# Inventory views: title, view, updated, summary
+while IFS= read -r -d '' file; do
+  bn=$(basename "$file")
+  for field in title view updated summary; do
+    if grep -q "^${field}:" "$file"; then
+      log_pass "$field present in inventory view $bn"
+    else
+      log_fail "$field missing in inventory view $bn" "C16 violation"
+    fi
+  done
+done < <(find "$GOLDEN/inventory/views" -name "*.md" -not -name "_index.md" -print0)
+
+# Dataset manifests: title, dataset_id, status, storage, locations, formats, schema_status, created, updated, tags, summary
+while IFS= read -r -d '' file; do
+  bn=$(basename "$(dirname "$file")")/$(basename "$file")
+  for field in title dataset_id status storage locations formats schema_status created updated tags summary; do
+    if grep -q "^${field}:" "$file"; then
+      log_pass "$field present in $bn"
+    else
+      log_fail "$field missing in $bn" "C17 violation"
+    fi
+  done
+done < <(find "$GOLDEN/datasets" -name "MANIFEST.md" -print0)
 
 echo ""
 echo "--- C2: Enum validation ---"
@@ -101,7 +126,7 @@ while IFS= read -r -d '' file; do
   bn=$(basename "$file")
   kind_val=$(grep "^kind:" "$file" | head -1 | sed 's/kind: *//')
   case "$kind_val" in
-    ingest-candidate|entity|corpus|question|task|artifact|watch) log_pass "valid kind '$kind_val' in $bn" ;;
+    item|ingest-candidate|entity|corpus|question|task|artifact|watch) log_pass "valid kind '$kind_val' in $bn" ;;
     *) log_fail "invalid kind '$kind_val' in $bn" "C16 violation" ;;
   esac
 
@@ -116,7 +141,29 @@ while IFS= read -r -d '' file; do
     p0|p1|p2|p3|p4) log_pass "valid priority '$priority_val' in $bn" ;;
     *) log_fail "invalid priority '$priority_val' in $bn" "C16 violation" ;;
   esac
-done < <(find "$GOLDEN/inventory" -name "*.md" -not -name "_index.md" -print0)
+done < <(find "$GOLDEN/inventory/items" "$GOLDEN/inventory/candidates" "$GOLDEN/inventory/entities" "$GOLDEN/inventory/corpora" -name "*.md" -not -name "_index.md" -print0)
+
+# status/storage/schema_status enums for dataset manifests
+while IFS= read -r -d '' file; do
+  bn=$(basename "$(dirname "$file")")/$(basename "$file")
+  status_val=$(grep "^status:" "$file" | head -1 | sed 's/status: *//')
+  case "$status_val" in
+    proposed|active|external|archived|unavailable) log_pass "valid dataset status '$status_val' in $bn" ;;
+    *) log_fail "invalid dataset status '$status_val' in $bn" "C17 violation" ;;
+  esac
+
+  storage_val=$(grep "^storage:" "$file" | head -1 | sed 's/storage: *//')
+  case "$storage_val" in
+    local|remote|external|hybrid) log_pass "valid storage '$storage_val' in $bn" ;;
+    *) log_fail "invalid storage '$storage_val' in $bn" "C17 violation" ;;
+  esac
+
+  schema_val=$(grep "^schema_status:" "$file" | head -1 | sed 's/schema_status: *//')
+  case "$schema_val" in
+    unknown|inferred|declared|validated) log_pass "valid schema_status '$schema_val' in $bn" ;;
+    *) log_fail "invalid schema_status '$schema_val' in $bn" "C17 violation" ;;
+  esac
+done < <(find "$GOLDEN/datasets" -name "MANIFEST.md" -print0)
 
 # confidence enum
 while IFS= read -r -d '' file; do
@@ -172,7 +219,7 @@ for subdir in concepts topics references theses; do
   done < <(find "$dir" -maxdepth 1 -name "*.md" -not -name "_index.md" -print0)
 done
 
-for subdir in candidates entities corpora views; do
+for subdir in items candidates entities corpora views; do
   dir="$GOLDEN/inventory/$subdir"
   index="$dir/_index.md"
   [ -f "$index" ] || continue
@@ -186,30 +233,59 @@ for subdir in candidates entities corpora views; do
   done < <(find "$dir" -maxdepth 1 -name "*.md" -not -name "_index.md" -print0)
 done
 
+while IFS= read -r -d '' manifest; do
+  slug=$(basename "$(dirname "$manifest")")
+  index="$GOLDEN/datasets/_index.md"
+  if grep -q "$slug/MANIFEST.md" "$index"; then
+    log_pass "$slug/MANIFEST.md listed in datasets/_index.md"
+  else
+    log_fail "$slug/MANIFEST.md NOT listed in datasets/_index.md" "C17 violation"
+  fi
+done < <(find "$GOLDEN/datasets" -name "MANIFEST.md" -print0)
+
 echo ""
 echo "--- C4b: Source provenance ---"
 
-while IFS= read -r -d '' file; do
-  bn=$(basename "$file")
-  in_sources=false
-  while IFS= read -r line; do
-    if echo "$line" | grep -q "^sources:"; then
-      in_sources=true; continue
-    fi
-    if $in_sources; then
-      if echo "$line" | grep -q "^  - "; then
-        ref=$(echo "$line" | sed 's/^  - //' | sed 's/^"//;s/"$//;s/^'\''//;s/'\''$//')
-        if [ -f "$GOLDEN/$ref" ]; then
-          log_pass "source ref exists: $ref (in $bn)"
-        else
-          log_fail "dangling source ref: $ref (in $bn)" "C4b violation"
-        fi
-      else
-        in_sources=false
+check_sources() {
+  local label="$1"
+  shift
+  while IFS= read -r -d '' file; do
+    bn=$(basename "$file")
+    in_sources=false
+    while IFS= read -r line; do
+      if echo "$line" | grep -q "^sources:"; then
+        in_sources=true; continue
       fi
-    fi
-  done < "$file"
-done < <(find "$GOLDEN/wiki" -name "*.md" -not -name "_index.md" -print0)
+      if $in_sources; then
+        if echo "$line" | grep -q "^  - "; then
+          ref=$(echo "$line" | sed 's/^  - //' | sed 's/^"//;s/"$//;s/^'\''//;s/'\''$//')
+          case "$ref" in
+            http://*|https://*) log_pass "$label external source allowed: $ref (in $bn)" ;;
+            /*)
+              if [ -f "$ref" ]; then
+                log_pass "$label source ref exists: $ref (in $bn)"
+              else
+                log_fail "$label dangling source ref: $ref (in $bn)" "C4b violation"
+              fi
+              ;;
+            *)
+              if [ -f "$GOLDEN/$ref" ]; then
+                log_pass "$label source ref exists: $ref (in $bn)"
+              else
+                log_fail "$label dangling source ref: $ref (in $bn)" "C4b violation"
+              fi
+              ;;
+          esac
+        else
+          in_sources=false
+        fi
+      fi
+    done < "$file"
+  done < <(find "$@" -name "*.md" -not -name "_index.md" -print0)
+}
+
+check_sources "wiki" "$GOLDEN/wiki"
+check_sources "inventory" "$GOLDEN/inventory/items" "$GOLDEN/inventory/candidates" "$GOLDEN/inventory/entities" "$GOLDEN/inventory/corpora"
 
 if grep -rl "RETRACTED-SOURCE" "$GOLDEN" >/dev/null 2>&1; then
   log_fail "retracted-source marker found" "C4b violation"
@@ -220,20 +296,23 @@ fi
 echo ""
 echo "--- C4: Link integrity (all body links) ---"
 
-# Extract ALL relative .md links from wiki articles and check they resolve.
-# This covers See Also, Sources, and inline body prose links.
-while IFS= read -r -d '' file; do
-  bn=$(basename "$file")
-  filedir=$(dirname "$file")
-  # Match ](path.md) and ](<path with spaces.md>) anywhere in the file.
-  while IFS= read -r link; do
-    target=$(python3 -c "import os,sys; print(os.path.normpath(sys.argv[1]))" "$filedir/$link")
-    if [ -f "$target" ]; then
-      log_pass "link resolves: $link (in $bn)"
-    else
-      log_fail "broken link: $link (in $bn)" "C4 violation"
-    fi
-  done < <(python3 - "$file" <<'PY'
+# Extract ALL relative .md links from wiki articles and inventory records and
+# check they resolve. This covers See Also, Sources, and inline body prose links.
+check_body_links() {
+  local label="$1"
+  shift
+  while IFS= read -r -d '' file; do
+    bn=$(basename "$file")
+    filedir=$(dirname "$file")
+    # Match ](path.md) and ](<path with spaces.md>) anywhere in the file.
+    while IFS= read -r link; do
+      target=$(python3 -c "import os,sys; print(os.path.normpath(sys.argv[1]))" "$filedir/$link")
+      if [ -f "$target" ]; then
+        log_pass "$label link resolves: $link (in $bn)"
+      else
+        log_fail "$label broken link: $link (in $bn)" "C4 violation"
+      fi
+    done < <(python3 - "$file" <<'PY'
 import re
 import sys
 
@@ -244,7 +323,11 @@ for match in re.finditer(r"\]\((<([^>\n]+\.md)>|([^)\n]+\.md))\)", text):
         print(link)
 PY
 )
-done < <(find "$GOLDEN/wiki" -name "*.md" -not -name "_index.md" -print0)
+  done < <(find "$@" -name "*.md" -not -name "_index.md" -print0)
+}
+
+check_body_links "wiki" "$GOLDEN/wiki"
+check_body_links "inventory" "$GOLDEN/inventory"
 
 echo ""
 echo "--- C11: File placement ---"
@@ -278,6 +361,7 @@ while IFS= read -r -d '' file; do
   [ "$parent_dir" = "views" ] && continue
   kind_val=$(grep "^kind:" "$file" | head -1 | sed 's/kind: *//')
   case "$kind_val" in
+    item) expected="items" ;;
     entity) expected="entities" ;;
     corpus) expected="corpora" ;;
     ingest-candidate|question|task|artifact|watch) expected="candidates" ;;
@@ -289,6 +373,16 @@ while IFS= read -r -d '' file; do
     log_fail "misplaced: $bn (kind=$kind_val but in $parent_dir/)" "C16 violation"
   fi
 done < <(find "$GOLDEN/inventory" -name "*.md" -not -name "_index.md" -print0)
+
+while IFS= read -r -d '' manifest; do
+  slug=$(basename "$(dirname "$manifest")")
+  manifest_id=$(grep "^dataset_id:" "$manifest" | head -1 | sed 's/dataset_id: *//')
+  if [ "$slug" = "$manifest_id" ]; then
+    log_pass "placement correct: $slug/MANIFEST.md (dataset_id=$manifest_id)"
+  else
+    log_fail "misplaced: $slug/MANIFEST.md (dataset_id=$manifest_id)" "C17 violation"
+  fi
+done < <(find "$GOLDEN/datasets" -name "MANIFEST.md" -print0)
 
 echo ""
 echo "--- Log format ---"
@@ -339,12 +433,14 @@ if [ -d "$DEFECTS" ]; then
 
   [ -d "$DEFECTS/broken-inline-body-link" ] && {
     grep -q "nonexistent-inline.md" "$DEFECTS/broken-inline-body-link/wiki/concepts/sample-concept.md" 2>/dev/null \
+      && grep -q "nonexistent-inventory-inline.md" "$DEFECTS/broken-inline-body-link/inventory/items/trx4m-ring-and-pinion.md" 2>/dev/null \
       && log_pass "broken-inline-body-link: C4 defect present" \
       || log_fail "broken-inline-body-link: no broken inline link" "fixture broken"
   }
 
   [ -d "$DEFECTS/dangling-source-ref" ] && {
     grep -q "2026-01-03-deleted.md" "$DEFECTS/dangling-source-ref/wiki/concepts/sample-concept.md" 2>/dev/null \
+      && grep -q "deleted-inventory-source.md" "$DEFECTS/dangling-source-ref/inventory/items/trx4m-ring-and-pinion.md" 2>/dev/null \
       && log_pass "dangling-source-ref: C4b defect present" \
       || log_fail "dangling-source-ref: no dangling ref" "fixture broken"
   }
@@ -398,6 +494,12 @@ if [ -d "$DEFECTS" ]; then
     [ ! -f "$DEFECTS/missing-inventory/inventory/_index.md" ] \
       && log_pass "missing-inventory: C16 defect present" \
       || log_fail "missing-inventory: inventory index still exists" "fixture broken"
+  }
+
+  [ -d "$DEFECTS/missing-datasets" ] && {
+    [ ! -f "$DEFECTS/missing-datasets/datasets/_index.md" ] \
+      && log_pass "missing-datasets: C17 defect present" \
+      || log_fail "missing-datasets: dataset index still exists" "fixture broken"
   }
 else
   echo ""

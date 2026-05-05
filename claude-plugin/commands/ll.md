@@ -14,6 +14,11 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:
 
 Extract lessons learned from the current session and save them to the wiki's knowledge pipeline.
 
+Inventory awareness: if a lesson implies a durable follow-up, recurring watch
+item, or source/corpus candidate, suggest an inventory record in addition to the
+raw lesson note. Do not turn every lesson into inventory; only use it when there
+is status, priority, or a next action to track.
+
 ### Parse $ARGUMENTS
 
 - **topic hint** (positional, optional): A phrase describing what the session was about. If omitted, infer from conversation context.

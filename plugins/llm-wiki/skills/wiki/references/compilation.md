@@ -4,6 +4,11 @@
 
 Compilation transforms raw sources into wiki articles. This is the core "LLM compiler" operation — read sources and produce synthesized, cross-referenced knowledge articles.
 
+Inventory records are not compilation inputs. They can explain why a source was
+ingested or what should happen next, but article facts must come from `raw/` and
+other cited wiki articles. If compilation satisfies an inventory next action,
+report the suggested record update instead of silently changing tracking state.
+
 ## Incremental vs Full
 
 - **Incremental** (default): Only process sources ingested since the last compilation date (from master `_index.md`). Compare source `ingested` dates against `Last compiled` in master index.

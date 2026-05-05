@@ -19,6 +19,8 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 
 ## Changelog
 
+**v0.8.0** — **Inventory tracking and dataset manifests.** Added first-class `/wiki:inventory` for durable items, candidates, entities, corpora, saved views, and opinionated migration previews, plus `/wiki:dataset` manifests for large or external datasets that should be indexed by the wiki without being copied into it. Lint, query, ingest, research, audit, plan, and output workflows now know how to surface inventory and dataset state while keeping raw evidence, compiled knowledge, and generated artifacts separate.
+
 **v0.7.0** — **PDF, message archive, and Wayback adapters.** PDF ingest now prefers real markdown extraction over metadata stubs, with `pdftotext` plus Python-library fallback guidance. Collection ingestion now covers CSV/TSV/JSON/JSONL message archives as per-message markdown sources and Internet Archive CDX inventories as readability-to-markdown Wayback snapshot imports.
 
 **v0.6.0** — **Collection ingestion for external wikis and spec repos.** Added first-class `/wiki:ingest-collection` for bounded upstream corpora such as Git document repositories, BIP-style proposal sets, MediaWiki XML dumps, and MediaWiki API sites. Collection imports now create a `raw/repos/` manifest plus immutable child sources with upstream revision metadata, while compilation stays synthesized instead of copying another wiki wholesale. The router now detects bulk import intent, and lint/schema docs recognize collection provenance fields and manifest coverage exemptions.
@@ -28,8 +30,6 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 **v0.4.4** — **Faster Codex first `@wiki` load.** The generated Codex skill now ships as a smaller router prompt instead of loading the full workflow prose up front. Shared Claude/OpenCode behavior stays unchanged, but Codex first-hit prompt expansion is materially smaller and faster.
 
 **v0.4.3** — **Codex first-class install fixes.** Codex packaging, bootstrap, and verification now line up with the current `@wiki` plugin layout. The generated Codex mirror lives under `plugins/llm-wiki/skills/wiki/`, references are validated as copied files for marketplace installs, and the local bootstrap flow now uses the real `llm-wiki` marketplace name instead of the stale `llm-wiki-local` alias.
-
-**v0.4.2** — **Config-first hub resolution & Codex marketplace install.** Hub resolution now checks `~/.config/llm-wiki/config.json` first, falling back to `~/wiki` only when no config exists. Fixes sandbox permission errors in nono where `~/wiki` isn't an allowed path. Codex plugin installable directly from GitHub via `codex plugin marketplace add nvk/llm-wiki`. References changed from symlink to real copy so Codex marketplace caching works. Nono docs updated with per-runtime profiles and `$HOME/.codex` r+w requirement for Codex plugin install.
 
 ## Install
 

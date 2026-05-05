@@ -28,6 +28,23 @@ Do not reduce a collection to the repository README or one fetched web page.
 Collection imports need a manifest plus one raw child source per upstream
 page/spec/proposal.
 
+### Inventory and dataset awareness
+
+If the user asks to "track", "watch", "keep inventory", "candidate", "queue",
+or "decide later" instead of ingesting now, stop and hand off to
+`/wiki:inventory`. A durable candidate record is better than ingesting a source
+the user has not accepted.
+
+If the source is a large dataset, archive, compressed dump, database, or
+query-oriented corpus, stop and hand off to `/wiki:dataset` or
+`/wiki:ingest-collection` as appropriate. Do not squeeze large data into
+`raw/data/` because it is technically readable.
+
+After a successful ingest, check active inventory records by title/source when
+cheap. If a matching record exists, report the suggested linkage and status
+change (`sources:` add raw path, maybe status `ingested`) instead of silently
+leaving the tracking state stale.
+
 ### `--new-topic` branch
 
 When `--new-topic` is set, override the standard resolution:

@@ -16,6 +16,25 @@ After resolving the wiki, read the inventory reference at `skills/wiki-manager/r
 
 Inventory records are durable tracking objects, not compiled articles and not raw sources. Use them for ingest candidates, important entities, corpora to watch, open questions, recurring tasks, or "things we want to keep inventory of." They live under `inventory/` and can point at raw/wiki/output files without moving them.
 
+Be opinionated. Before writing or migrating records, tell the user whether
+inventory is the right layer:
+
+- Good fit: durable state with priority/status/next action, a source/corpus to
+  evaluate later, an entity/watch item, or a follow-up that should survive the
+  chat session.
+- Too small: one-off source to ingest now, a factual question, or a note with no
+  future action. Route to ingest, query, or raw notes instead.
+- Too big: hundreds of row-like items, datasets, message archives, snapshots, or
+  collections. Create one corpus inventory record plus a dataset manifest or
+  collection ingest, not one inventory record per row.
+- Out of scope: authoritative source text (`raw/`), synthesized knowledge
+  (`wiki/`), generated deliverables (`output/`), project goals (`WHY.md`), or
+  secrets/private operational data.
+
+For bigger pivots, show a sample table of 1-3 proposed records and the
+recommendation before asking to apply. Default to dry-run for migrations and
+bulk conversions.
+
 ### Parse $ARGUMENTS
 
 Subcommands:
@@ -101,7 +120,11 @@ This is the migration discovery path. It must not write inventory files.
    - frontmatter titles containing those same terms
    - bodies with repeated tables of sources, priorities, statuses, URLs, or next actions
 3. For each candidate, suggest a `migrate-output` command and likely kind.
-4. Report: "No files were migrated. Run `inventory migrate-output <path> --apply` to create inventory records."
+4. For promising candidates, show a small sample of the proposed inventory
+   shape: title, kind, status, priority, source, and next action. If the source
+   looks too large, recommend one corpus record plus a dataset manifest or
+   collection ingest instead of many inventory records.
+5. Report: "No files were migrated. Run `inventory migrate-output <path> --apply` to create inventory records."
 
 ### Migrate Output
 
@@ -115,7 +138,10 @@ Default mode is dry-run. This creates a migration plan only:
 3. Preserve the original output path in frontmatter as `origin: output/...`.
 4. Do **not** move or delete the source output. Inventory migration is additive.
 5. In dry-run, show the proposed filenames and frontmatter only.
-6. With `--apply`, write the proposed inventory records, update indexes, and append to `log.md`:
+6. If the output would create more than about 10 records, dry-run must include
+   only a representative sample and a recommendation. Ask for confirmation
+   before `--apply`, unless the user already explicitly supplied `--apply`.
+7. With `--apply`, write the proposed inventory records, update indexes, and append to `log.md`:
    `## [YYYY-MM-DD] inventory | migrated <output-path> -> N inventory records`
 
 ### Report

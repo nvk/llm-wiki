@@ -109,23 +109,23 @@ The user typed something that isn't a known keyword. Detect their intent and rou
 | Priority | Intent | Signal patterns | Route to |
 |----------|--------|----------------|----------|
 | 0 | **Collection Ingest** | Words: "import wiki", "mirror wiki", "bulk ingest", "ingest collection", "import collection", "ingest repo", "import repo"; or a URL/path plus collection signals: `dump.xml`, `.xml.bz2`, `.xml.gz`, `api.php`, `MediaWiki`, `github.com/*/*` with "all", "repo", "docs", "BIPs", or "collection" | `Skill: wiki:ingest-collection` with the source and filters |
-| 1 | **Ingest** | Contains a URL (`http://`, `https://`), a file path (`/`, `~/`), or words: "add", "save", "ingest", "read this", "grab this" | `Skill: wiki:ingest` with the URL/path/text |
-| 2 | **Resume** | "where was I", "pick up where", "continue", "resume", "get back to", "catch me up", "what was I working on" | `Skill: wiki:query` with `--resume` |
-| 3 | **Audit** | "audit", "full audit", "can I trust", "trust this", "verify this output", "verify this report", "fact-check this artifact", "check everything", "provenance", "drift report", "follow the evidence", "find the truth" | `Skill: wiki:audit` |
-| 4 | **Query** | Starts with what/why/how/when/where/who, contains "?", or words: "tell me about", "explain", "what do we know about" | `Skill: wiki:query` with the question |
-| 5 | **Research** | "research", "find out about", "look into", "deep dive", "investigate" | `Skill: wiki:research` with the topic |
-| 6 | **Thesis** | "prove that", "is it true that", "verify", "test the claim", "test the hypothesis" | `Skill: wiki:research` with `--mode thesis "<claim>"` |
-| 7 | **Compile** | "compile", "process sources", "synthesize", "update articles" | `Skill: wiki:compile` |
-| 8 | **Lint** | "check health", "fix wiki", "broken", "problems", "cleanup" | `Skill: wiki:lint` |
-| 8b | **Librarian** | "librarian", "quality scan", "scan quality", "article quality", "content review", "keep the wiki in check", "review articles", "librarian report", "quality report", "stale articles" | `Skill: wiki:librarian` |
-| 8c | **Refresh** | "check freshness", "still current", "up to date", "outdated", "refresh" | `Skill: wiki:refresh` |
-| 9 | **Output** | "write a summary", "generate a report", "slides", "create a", "write a" | `Skill: wiki:output` with the request |
-| 10 | **Assess** | "compare to", "assess", "gap analysis" | `Skill: wiki:assess` |
-| 11 | **Plan** | "plan for", "implementation plan", "architecture for" | `Skill: wiki:plan` |
-| 11b | **Lessons Learned** | "learn this", "learn that", "lesson learned", "lessons learned", "absorb this", "capture what we learned", "what did we learn", "session takeaways", "ll" | `Skill: wiki:ll` with the topic hint |
-| 12 | **Retract** | "remove source", "retract", "delete source", "pull out" | `Skill: wiki:retract` |
-| 13 | **Inventory** | "inventory", "ingest queue", "source queue", "candidate list", "watch list", "backlog", "track this", "keep inventory", "migrate output to inventory" | `Skill: wiki:inventory` |
-| 14 | **Dataset** | "dataset", "large data", "too big for the wiki", "index this data", "data registry", "dataset manifest", "corpus manifest", "external data", "query this dataset", "profile dataset" | `Skill: wiki:dataset` |
+| 1 | **Inventory** | "inventory", "ingest queue", "source queue", "candidate list", "watch list", "backlog", "track this", "keep inventory", "what should become inventory", "migrate output to inventory" | `Skill: wiki:inventory` |
+| 2 | **Dataset** | "dataset", "large data", "too big for the wiki", "index this data", "data registry", "dataset manifest", "corpus manifest", "external data", "query this dataset", "profile dataset" | `Skill: wiki:dataset` |
+| 3 | **Ingest** | Contains a URL (`http://`, `https://`), a file path (`/`, `~/`), or words: "add", "save", "ingest", "read this", "grab this" | `Skill: wiki:ingest` with the URL/path/text |
+| 4 | **Resume** | "where was I", "pick up where", "continue", "resume", "get back to", "catch me up", "what was I working on" | `Skill: wiki:query` with `--resume` |
+| 5 | **Audit** | "audit", "full audit", "can I trust", "trust this", "verify this output", "verify this report", "fact-check this artifact", "check everything", "provenance", "drift report", "follow the evidence", "find the truth" | `Skill: wiki:audit` |
+| 6 | **Query** | Starts with what/why/how/when/where/who, contains "?", or words: "tell me about", "explain", "what do we know about" | `Skill: wiki:query` with the question |
+| 7 | **Research** | "research", "find out about", "look into", "deep dive", "investigate" | `Skill: wiki:research` with the topic |
+| 8 | **Thesis** | "prove that", "is it true that", "verify", "test the claim", "test the hypothesis" | `Skill: wiki:research` with `--mode thesis "<claim>"` |
+| 9 | **Compile** | "compile", "process sources", "synthesize", "update articles" | `Skill: wiki:compile` |
+| 10 | **Lint** | "check health", "fix wiki", "broken", "problems", "cleanup" | `Skill: wiki:lint` |
+| 10b | **Librarian** | "librarian", "quality scan", "scan quality", "article quality", "content review", "keep the wiki in check", "review articles", "librarian report", "quality report", "stale articles" | `Skill: wiki:librarian` |
+| 10c | **Refresh** | "check freshness", "still current", "up to date", "outdated", "refresh" | `Skill: wiki:refresh` |
+| 11 | **Output** | "write a summary", "generate a report", "slides", "create a", "write a" | `Skill: wiki:output` with the request |
+| 12 | **Assess** | "compare to", "assess", "gap analysis" | `Skill: wiki:assess` |
+| 13 | **Plan** | "plan for", "implementation plan", "architecture for" | `Skill: wiki:plan` |
+| 13b | **Lessons Learned** | "learn this", "learn that", "lesson learned", "lessons learned", "absorb this", "capture what we learned", "what did we learn", "session takeaways", "ll" | `Skill: wiki:ll` with the topic hint |
+| 14 | **Retract** | "remove source", "retract", "delete source", "pull out" | `Skill: wiki:retract` |
 | 15 | **Project (new)** | "new project", "start a project", "create project" (+ slug and goal) | `Skill: wiki:project` with `new <slug> "goal"` |
 | 16 | **Project (list)** | "list projects", "what projects", "show projects", "my projects" | `Skill: wiki:project` with `list` |
 | 17 | **Project (show)** | "show project X", "what's in project X", "open project X" | `Skill: wiki:project` with `show <slug>` |
@@ -153,6 +153,11 @@ The user typed something that isn't a known keyword. Detect their intent and rou
 
 **Key rules:**
 - Never guess when ambiguous. A quick menu is faster than undoing the wrong action.
+- Inventory and dataset signals outrank generic question or URL patterns. For
+  example, "what should become inventory?" routes to inventory, and "track this
+  URL as a candidate" routes to inventory rather than immediate ingest.
+- For inventory/dataset routing, be opinionated about fit and show a small
+  sample shape before asking the user to approve a larger pivot.
 - Strip the signal words when passing args to the target command (e.g., "add https://example.com" → pass just the URL to ingest, not "add https://example.com").
 - Include `--wiki`, `--local`, and `--project` flags from the original args when routing.
 - **No ambient project focus**: `--project <slug>` must be passed explicitly by the user. The focus-session mechanism was removed in the v0.2 projects simplification (see `skills/wiki-manager/references/projects.md` § "Focus"). If the user says "work on project X" without a clear sub-intent, treat it as a request to `show` the project — not as a focus state change.

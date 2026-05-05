@@ -18,6 +18,13 @@ If the data is large, mutable, remote, sensitive, or better queried in its
 native format, use the dataset registry (`references/datasets.md`) instead of
 copying it into `raw/data/`.
 
+If the user wants to remember, rank, watch, or decide later about a source,
+create or suggest an inventory record instead of ingesting immediately. Ingest
+is for accepted source material; inventory is for durable candidates and next
+actions. After ingesting a source that was tracked in inventory, link the raw
+path back from the inventory record and report any status update the user should
+approve.
+
 ## Collection Ingestion
 
 Collection ingestion is for bounded upstream corpora: Git document repositories,

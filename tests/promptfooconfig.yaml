@@ -83,6 +83,18 @@ tests:
       - type: cost
         threshold: 0.50
 
+  - description: "Router: inventory question beats generic query"
+    vars:
+      prompt: "What content in my wiki should become inventory?"
+    assert:
+      - type: skill-used
+        value: wiki
+      - type: llm-rubric
+        value: "Agent recognized the inventory signal inside a question and routed to inventory analysis/listing instead of treating it as a generic factual query."
+        threshold: 0.75
+      - type: cost
+        threshold: 0.50
+
   - description: "Router: dataset intent routes to dataset"
     vars:
       prompt: "Index this large Bitcointalk dataset so the wiki can query it without copying the data"

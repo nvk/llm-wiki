@@ -16,6 +16,22 @@ Bulk-ingest a collection into the wiki as immutable raw sources. A collection is
 
 Read `skills/wiki-manager/references/ingestion.md` and `skills/wiki-manager/references/wiki-structure.md`, then follow the collection ingestion protocol.
 
+## Inventory and dataset awareness
+
+Before writing a large collection, be explicit about fit:
+
+- If the user only wants to remember a possible collection for later, create or
+  suggest one inventory `corpus` record instead of ingesting.
+- If the collection is row-like data that should be queried in place, create or
+  suggest a dataset manifest plus one linked inventory record.
+- If the user is about to ingest hundreds of child sources, show the collection
+  manifest shape, estimated child count, and any inventory/dataset companion
+  record before asking for confirmation.
+
+After ingesting a collection, if a matching inventory record exists, link the
+raw collection manifest from that record and report the recommended status/next
+action update.
+
 ## Parse arguments
 
 - **Source**: repo URL/path, MediaWiki site URL, dump file/URL, CSV/TSV/JSON/JSONL path/URL, CDX API URL, or original URL to query through the Wayback CDX API.

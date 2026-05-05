@@ -14,6 +14,12 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:
 
 Compare a local repository against the wiki's knowledge base and the broader market. Produce a comprehensive gap analysis.
 
+Inventory awareness: repo/wiki/market gaps that are durable follow-ups should
+be offered as inventory candidates, especially feature candidates, source
+queues, competitor watch items, or blocked research tasks. Show a compact sample
+before creating a larger backlog. Do not use inventory records as evidence in
+the competitive analysis; cite wiki articles, raw sources, or fresh research.
+
 ### Deviation: wiki resolution order
 
 Unlike other commands, `assess` does NOT default to HUB when no wiki is specified — gap analysis against an empty hub is meaningless. The resolution order is:

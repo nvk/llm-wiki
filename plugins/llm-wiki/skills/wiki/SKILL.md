@@ -109,6 +109,14 @@ reference material you need for that workflow:
 - wiki structure, indexes, log format, file placement, init → `references/wiki-structure.md`
 - hub lookup and path handling → `references/hub-resolution.md`
 
+Inventory is first-class operational state, not a silo. Ingest and collection
+workflows should suggest inventory when the user wants to track or decide later.
+Dataset manifests should link to inventory records when next actions or
+acceptance state matter. Compile and query may surface inventory gaps, but
+factual claims still need raw/wiki sources. Research, audit, librarian, refresh,
+plan, output, and assess may propose durable follow-ups as inventory records,
+but larger pivots should start with a small sample preview.
+
 Keep the first response short and action-oriented. Read deeper references only
 after the user intent is clear or a write action is needed.
 

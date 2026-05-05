@@ -320,7 +320,7 @@ Check your installed version:
 /wiki:ingest-collection "https://example.com/*" --adapter wayback-cdx --from 20100101 --to 20200101  # Import archived snapshots
 /wiki:inventory add ingest-candidate "Bitcointalk archive" --wiki bitcoin  # Track source queues and next actions
 /wiki:inventory list --view actions --limit 10   # Compact chat table of current inventory next actions
-/wiki:inventory scan-outputs --dry-run          # Find legacy queues/backlogs that could become inventory
+/wiki:inventory scan-outputs --dry-run          # Preview queues/backlogs before any inventory pivot
 /wiki:dataset add "Bitcointalk Temporal Graph" --location https://figshare.com/articles/dataset/BitcoinTemporalGraph/26305093 --wiki bitcoin  # Index data that stays external
 /wiki:dataset list --view schema --limit 10      # Compact chat table of dataset schema/readiness state
 /wiki:dataset scan-outputs --dry-run            # Find legacy data reports that could become dataset manifests
@@ -347,9 +347,9 @@ Check your installed version:
 | `/wiki:ingest-collection <source> --limit <N> --dry-run` | Preview or cap a large collection import |
 | `/wiki:inventory list` | List durable tracking records as compact chat-friendly tables or bullets |
 | `/wiki:inventory list --view actions` | Show current inventory next actions without dumping full records |
-| `/wiki:inventory add <kind> "title"` | Add an inventory record without ingesting or compiling it |
+| `/wiki:inventory add <kind> "title"` | Add an inventory record after checking that inventory is the right layer |
 | `/wiki:inventory save-view "name"` | Save a derived reusable table/list under `inventory/views/` |
-| `/wiki:inventory scan-outputs --dry-run` | Find old queue/backlog outputs that look like inventory migration candidates |
+| `/wiki:inventory scan-outputs --dry-run` | Find old queue/backlog outputs and preview sample records before migration |
 | `/wiki:inventory migrate-output <path> --apply` | Additively create inventory records from a legacy output; never moves or deletes the output |
 | `/wiki:dataset list` | List dataset manifests as compact chat-friendly tables or bullets |
 | `/wiki:dataset list --view schema` | Show schema/readiness state without opening samples or data |
@@ -430,7 +430,7 @@ The hub is just a registry — no content directories, no `.obsidian/`. All cont
 
 1. **Research** a topic — parallel agents search the web, ingest sources, and compile articles in one command
 2. **Ingest** additional sources — URLs, files, text, tweets (via Grok MCP), or bulk via inbox
-3. **Inventory** candidates, entities, corpora, watch lists, and next actions that should persist
+3. **Inventory** candidates, entities, corpora, watch lists, and next actions that should persist; the agent tells you when inventory is the wrong layer
 4. **Index datasets** that are too large for markdown — manifests, profiles, samples, and query recipes
 5. **Compile** raw sources into synthesized wiki articles with cross-references and confidence scores
 6. **Query** the wiki — quick (indexes), standard (articles), or deep (everything)
@@ -451,6 +451,9 @@ The hub is just a registry — no content directories, no `.obsidian/`. All cont
 - **Confidence scoring** — articles rated high/medium/low based on source quality and corroboration.
 - **Structural guardian** — auto-checks wiki integrity after operations, fixes trivial issues silently.
 - **Activity log** — `log.md` tracks every operation, append-only, grep-friendly.
+- **Opinionated inventory** — durable tracking gets records; one-off sources stay
+  ingest/query; large row-like data becomes datasets or collection ingests. Big
+  pivots start with a sample table before records are written.
 - **Zero dependencies** — runs entirely on built-in tools (Claude Code, OpenCode, or Codex).
 
 ## Research Modes

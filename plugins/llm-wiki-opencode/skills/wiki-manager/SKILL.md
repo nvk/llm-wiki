@@ -106,7 +106,7 @@ Flow: structured upstream collection (Git repo, BIP-style proposal set, MediaWik
 
 ### Inventory
 See [references/inventory.md](references/inventory.md).
-Flow: Track durable wiki-adjacent things (ingest candidates, entities, corpora, questions, tasks, watch items) as markdown records under `inventory/` → answer list requests from indexes/frontmatter as compact chat tables or bullets → optionally save derived views under `inventory/views/` → optionally convert legacy queue-like outputs through explicit dry-run-first migration. Inventory migration is additive and human-gated.
+Flow: Run an inventory fit check → track durable wiki-adjacent things (ingest candidates, entities, corpora, questions, tasks, watch items) as markdown records under `inventory/` → answer list requests from indexes/frontmatter as compact chat tables or bullets → optionally save derived views under `inventory/views/` → optionally convert legacy queue-like outputs through explicit dry-run-first migration. Inventory migration is additive and human-gated. Be explicit when something is too small for inventory, too large and should be a dataset/collection, or outside wiki scope.
 
 ### Dataset Registry
 See [references/datasets.md](references/datasets.md).
@@ -129,6 +129,22 @@ Flow: Run or reuse the librarian pass → inspect artifact dependency chains acr
 
 ### Search
 Flow: Scan indexes for summary/tag matches → Grep full-text → rank results → present.
+
+### Cross-Workflow Inventory Awareness
+Inventory is first-class operational state, not a silo. Other workflows should
+notice it without treating it as factual evidence:
+
+- Ingest and ingest-collection: if the user wants to track before ingesting, or
+  a source is too large/ambiguous, suggest an inventory record. When an
+  inventory candidate is ingested, link the resulting raw or collection
+  manifest from the record.
+- Dataset: link dataset manifests to inventory records when the user cares
+  about next actions, priority, acceptance state, or why the corpus matters.
+- Compile and query: use inventory to surface gaps, candidates, and next
+  actions, but cite raw/wiki sources for factual claims.
+- Research, audit, librarian, refresh, plan, and output: propose inventory
+  records for durable follow-ups, stale items, source queues, or watch lists,
+  but show a sample before creating a larger backlog.
 
 ### Output
 Flow: Gather relevant articles → generate artifact (summary/report/slides/etc) → save to `output/` → update indexes.

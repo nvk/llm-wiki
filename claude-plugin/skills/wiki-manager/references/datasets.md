@@ -24,6 +24,19 @@ usable.
 Do not copy large datasets into `datasets/`. Store paths, URLs, checksums,
 profiles, samples, and query recipes instead.
 
+Be opinionated about the boundary:
+
+- If the data is small, stable, and useful as markdown, ingest it into
+  `raw/data/` instead of creating a dataset manifest.
+- If the data is large, mutable, remote, sensitive, binary, compressed, or
+  better queried in its native format, use a dataset manifest.
+- If the user mostly needs next actions or acceptance state for a corpus, create
+  or link an inventory record. The dataset manifest answers "where/how is the
+  data accessed"; inventory answers "why do we care and what happens next."
+- If a proposed dataset would become hundreds of inventory records, create one
+  dataset manifest plus one corpus inventory record and show that sample shape
+  before asking to apply a larger pivot.
+
 ## Chat Views
 
 Dataset commands should make large data feel easy to inspect without loading the

@@ -324,6 +324,10 @@ this directory; that is a migration opportunity, not corruption.
 - Never auto-convert output artifacts into inventory records. Report suggested
   commands such as:
   `/wiki:inventory migrate-output output/ingest-queue-2026-05-03.md --kind ingest-candidate --dry-run`
+- When reporting candidates, include a short fit note: good inventory fit, too
+  small and better left as query/ingest/raw note, or too large and better as a
+  dataset manifest or collection ingest. For high-confidence pivots, show a
+  sample record shape before suggesting `--apply`.
 
 ### C17: Dataset Registry Structure and Migration Candidates (Suggestion)
 

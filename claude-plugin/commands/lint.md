@@ -85,7 +85,10 @@ Check the inventory layer from `references/inventory.md` and `references/linting
 2. If `--fix` is set, create only the missing inventory directories and empty indexes. Do not migrate content.
 3. Validate inventory record frontmatter when records exist.
 4. Scan `output/**/*.md` for artifacts that look like durable inventory records, such as ingest queues, source backlogs, watch lists, candidate lists, or corpus inventories.
-5. Report suggested `inventory migrate-output <path> --dry-run` commands. Never auto-convert outputs into inventory records.
+5. Report suggested `inventory migrate-output <path> --dry-run` commands with
+   a compact sample shape when useful. Say when a candidate looks too small for
+   inventory or too large and should become a dataset/collection instead. Never
+   auto-convert outputs into inventory records.
 
 #### 16. C17: Dataset Registry Structure and Migration Candidates (Suggestion)
 Check the dataset registry from `references/datasets.md` and `references/linting.md` § C17:

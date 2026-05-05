@@ -179,6 +179,16 @@ Inventory records are durable wiki-adjacent tracking objects. They can point at
 `raw/`, `wiki/`, `output/`, URLs, or external paths, but they do not move or copy
 those artifacts.
 
+Inventory is opinionated. Use it when something should persist across sessions
+with status, priority, ownership, or a next action. It is too small for a
+one-off source to ingest now, a factual question, or a note with no future
+action. It is too large for hundreds/thousands of row-like items; use one corpus
+record plus a dataset manifest or collection ingest instead. It is out of scope
+for authoritative source text (`raw/`), synthesized knowledge (`wiki/`),
+generated deliverables (`output/`), project rationale (`WHY.md`), or secrets.
+For bigger pivots, show a 1-3 row sample of proposed records before asking to
+apply.
+
 ### Inventory View (inventory/views/)
 
 ```yaml
@@ -218,6 +228,11 @@ Dataset manifests let the wiki serve as an index/interface for data that is too
 large or unsuitable to store in markdown. Store locations, schema notes, small
 samples, profiles, and query recipes; never copy the underlying dataset into the
 wiki.
+
+Be opinionated about the boundary: small stable data belongs in `raw/data/`;
+large, mutable, remote, compressed, binary, or query-oriented data belongs in
+`datasets/`; next-action tracking belongs in linked inventory records; many
+independent source pages belong in `ingest-collection`.
 
 ### Source Reference Resolution
 
@@ -282,6 +297,11 @@ metadata stub with `extraction_status: ocr-needed` rather than inventing text.
 
 Slug: `YYYY-MM-DD-descriptive-slug.md`. Update all indexes after each ingestion. If 5+ uncompiled sources, suggest compilation.
 
+If the user wants to track or decide later about a source, use inventory instead
+of ingesting immediately. If a source is large or query-oriented, use a dataset
+manifest or collection ingest. After ingesting a tracked candidate, suggest
+linking the raw path from the inventory record.
+
 ### Ingest Collection
 
 Bulk-ingest bounded upstream corpora without turning them directly into compiled
@@ -324,6 +344,11 @@ compiled wiki article per upstream page by default. For BIPs, publication is
 provenance for proposal text, not proof of adoption or consensus. For community
 wikis, default confidence to medium unless corroborated by stronger sources.
 
+For large imports, preview the collection manifest shape and estimated child
+count first. If the user only wants to remember the corpus for later, create one
+inventory record; if the corpus is row-like data, create a dataset manifest plus
+one linked inventory record.
+
 ### Compile
 
 Transform raw sources into wiki articles. Incremental by default (only new sources).
@@ -336,6 +361,9 @@ Transform raw sources into wiki articles. Incremental by default (only new sourc
 6. Bidirectional links: if A links to B, ensure B links to A
 7. Update all indexes
 
+Do not compile inventory records as articles. They may explain priorities or
+next actions, but factual article claims need raw/wiki sources.
+
 ### Query
 
 Answer questions from wiki content only. Three depths:
@@ -345,6 +373,10 @@ Answer questions from wiki content only. Three depths:
 - **Deep**: Read everything, search raw sources, peek sibling wikis.
 
 Always cite sources. Note confidence levels. Identify gaps. Never use training data — only wiki content.
+
+For meta-questions about inventory, candidates, backlogs, or next actions, read
+inventory indexes and answer as an operational listing. For factual questions,
+inventory is not evidence.
 
 For any boot, resume, or "where you left off" briefing, start with the active
 wiki identity: `<wiki-name> booted from <wiki-root-path>`. Prefer the title from
@@ -421,6 +453,10 @@ Track durable things the wiki should remember but that are not raw sources,
 compiled articles, or generated outputs: ingest candidates, source queues,
 entities, corpora, open questions, tasks, artifacts, and watch items.
 
+Before writing or migrating records, state the fit judgment: appropriate for
+inventory, too small, too big, or out of scope. For bulk pivots, preview the
+record shape first and default to dry-run.
+
 Subcommands:
 - **list**: Show records, optionally filtered by kind/status/priority
 - **add <kind> "title"**: Create a record under the canonical inventory subdir
@@ -436,6 +472,13 @@ indexes/frontmatter first, present compact Markdown tables or short bullets, cap
 long lists with a visible omitted count, and open full record bodies only when
 the user asks for detail. Common views: `summary`, `actions`, `records`,
 `sources`.
+
+Other operations should be inventory-aware. Ingest links completed candidates;
+dataset manifests link to corpus records when next actions matter; compile and
+query may surface inventory gaps but must not cite inventory as factual
+evidence; research, audit, librarian, refresh, plan, assess, and output may
+propose records for durable follow-ups, but should not create large backlogs
+without a sample preview and explicit approval.
 
 Migration path: `lint --fix` may create missing empty inventory directories and
 indexes, but it must never convert output artifacts. Output-to-inventory

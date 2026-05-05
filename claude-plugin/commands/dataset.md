@@ -19,6 +19,22 @@ Dataset manifests are for large or external data that should not be copied into
 profiles, query recipes, and provenance. Actual datasets remain at their
 original filesystem path, object store, URL, database, or archive.
 
+Be opinionated about whether a dataset manifest is warranted:
+
+- Good fit: large, mutable, remote, compressed, binary, database-backed, or
+  query-oriented data that should stay outside markdown.
+- Too small: a short CSV/JSON/text file that can be ingested as one immutable
+  `raw/data/` source.
+- Too operational: a next-action queue about a corpus belongs in inventory,
+  with an optional link to a dataset manifest.
+- Too broad: many independent sources/pages should usually be
+  `ingest-collection`, not a dataset manifest.
+
+Before larger pivots, preview the shape: one dataset manifest plus any linked
+inventory record, sample/profile/query notes, and what data will remain
+external. Do not ask the user to approve a big migration without showing this
+sample.
+
 ### Parse $ARGUMENTS
 
 Subcommands:
@@ -89,7 +105,10 @@ This is the migration discovery path. It must not write dataset manifests.
    - filenames or titles containing `dataset`, `data`, `corpus`, `archive`, `dump`, `warehouse`, `lake`, `parquet`, `sqlite`, `duckdb`, `csv`, `jsonl`, or `snapshot`
    - bodies with fields/tables for size, rows, schema, license, storage path, query recipes, or sample excerpts
 3. Suggest a `dataset migrate-output <path> --dry-run` command for each candidate.
-4. Report: "No dataset manifests were created. Run `dataset migrate-output <path> --apply` to create manifests."
+4. For strong candidates, show a small sample shape: manifest slug, status,
+   storage, locations, schema status, and whether an inventory record should be
+   linked for next actions.
+5. Report: "No dataset manifests were created. Run `dataset migrate-output <path> --apply` to create manifests."
 
 ### Migrate Output
 
@@ -101,7 +120,9 @@ Default mode is dry-run. This creates a migration plan only:
 4. Preserve any cited data locations in `locations:`.
 5. Do **not** move or delete the source output.
 6. Do **not** copy the underlying dataset into the wiki.
-7. In dry-run, show proposed manifest paths and frontmatter only.
+7. In dry-run, show proposed manifest paths and frontmatter only. If the output
+   is mostly an operational queue, recommend inventory instead; if it is a
+   source collection, recommend `ingest-collection`.
 8. With `--apply`, write proposed manifests, update indexes, and append to `log.md`:
    `## [YYYY-MM-DD] dataset | migrated <output-path> -> N manifests`
 

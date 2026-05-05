@@ -53,6 +53,7 @@ All content lives here. One topic per wiki. Isolated indexes, focused queries.
 │   └── .processed/
 ├── inventory/                     # Durable tracking records
 │   ├── _index.md
+│   ├── items/*.md                 # Physical/digital items, parts, tools, assets
 │   ├── candidates/*.md            # Ingest candidates, questions, tasks, watch items
 │   ├── entities/*.md              # People, orgs, projects, standards bodies
 │   ├── corpora/*.md               # Source collections, archives, datasets, forums
@@ -163,7 +164,7 @@ Body includes abstract, sections, `## See Also` (dual-links, bidirectional), `##
 ```yaml
 ---
 title: "Thing To Track"
-kind: ingest-candidate|entity|corpus|question|task|artifact|watch
+kind: item|ingest-candidate|entity|corpus|question|task|artifact|watch
 status: proposed|active|blocked|ingested|superseded|archived
 priority: p0|p1|p2|p3|p4
 created: YYYY-MM-DD
@@ -180,11 +181,13 @@ Inventory records are durable wiki-adjacent tracking objects. They can point at
 those artifacts.
 
 Inventory is opinionated. Use it when something should persist across sessions
-with status, priority, ownership, or a next action. It is too small for a
-one-off source to ingest now, a factual question, or a note with no future
-action. It is too large for hundreds/thousands of row-like items; use one corpus
-record plus a dataset manifest or collection ingest instead. It is out of scope
-for authoritative source text (`raw/`), synthesized knowledge (`wiki/`),
+with status, priority, ownership, or a next action. Actual physical/digital
+items such as parts, tools, hosts, SKUs, subscriptions, and assets are good
+fits when their owned/wanted/selected/rejected state matters. It is too small
+for a one-off source to ingest now, a factual question, or a note with no future
+action. It is too large for hundreds/thousands of row-like data records; use one
+corpus record plus a dataset manifest or collection ingest instead. It is out of
+scope for authoritative source text (`raw/`), synthesized knowledge (`wiki/`),
 generated deliverables (`output/`), project rationale (`WHY.md`), or secrets.
 For bigger pivots, show a 1-3 row sample of proposed records before asking to
 apply.
@@ -451,7 +454,7 @@ Freshness check for wiki articles. Re-fetches source URLs, detects changes (cosm
 
 Track durable things the wiki should remember but that are not raw sources,
 compiled articles, or generated outputs: ingest candidates, source queues,
-entities, corpora, open questions, tasks, artifacts, and watch items.
+items, entities, corpora, open questions, tasks, artifacts, and watch items.
 
 Before writing or migrating records, state the fit judgment: appropriate for
 inventory, too small, too big, or out of scope. For bulk pivots, preview the
@@ -470,8 +473,8 @@ Subcommands:
 For chat responses, inventory listing must be efficient and readable: read
 indexes/frontmatter first, present compact Markdown tables or short bullets, cap
 long lists with a visible omitted count, and open full record bodies only when
-the user asks for detail. Common views: `summary`, `actions`, `records`,
-`sources`.
+the user asks for detail. Common views: `summary`, `actions`, `items`,
+`records`, `sources`.
 
 Other operations should be inventory-aware. Ingest links completed candidates;
 dataset manifests link to corpus records when next actions matter; compile and

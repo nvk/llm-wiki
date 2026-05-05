@@ -81,7 +81,7 @@ Flag wiki articles lacking the `volatility` field. See `references/linting.md` ย
 #### 15. C16: Inventory Structure and Migration Candidates (Suggestion)
 Check the inventory layer from `references/inventory.md` and `references/linting.md` ยง C16:
 
-1. Verify `inventory/`, `inventory/candidates/`, `inventory/entities/`, `inventory/corpora/`, and `inventory/views/` have `_index.md` files. Missing inventory structure is a migration opportunity for older wikis, not corruption.
+1. Verify `inventory/`, `inventory/items/`, `inventory/candidates/`, `inventory/entities/`, `inventory/corpora/`, and `inventory/views/` have `_index.md` files. Missing inventory structure is a migration opportunity for older wikis, not corruption.
 2. If `--fix` is set, create only the missing inventory directories and empty indexes. Do not migrate content.
 3. Validate inventory record frontmatter when records exist.
 4. Scan `output/**/*.md` for artifacts that look like durable inventory records, such as ingest queues, source backlogs, watch lists, candidate lists, or corpus inventories.

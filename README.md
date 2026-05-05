@@ -319,6 +319,7 @@ Check your installed version:
 /wiki:ingest-collection messages.csv --adapter csv-messages --wiki bitcoin  # Split message archives
 /wiki:ingest-collection "https://example.com/*" --adapter wayback-cdx --from 20100101 --to 20200101  # Import archived snapshots
 /wiki:inventory add ingest-candidate "Bitcointalk archive" --wiki bitcoin  # Track source queues and next actions
+/wiki:inventory add item "TRX-4M ring and pinion" --wiki trx4m-1-18  # Track actual parts, tools, hosts, or assets
 /wiki:inventory list --view actions --limit 10   # Compact chat table of current inventory next actions
 /wiki:inventory scan-outputs --dry-run          # Preview queues/backlogs before any inventory pivot
 /wiki:dataset add "Bitcointalk Temporal Graph" --location https://figshare.com/articles/dataset/BitcoinTemporalGraph/26305093 --wiki bitcoin  # Index data that stays external
@@ -430,7 +431,7 @@ The hub is just a registry — no content directories, no `.obsidian/`. All cont
 
 1. **Research** a topic — parallel agents search the web, ingest sources, and compile articles in one command
 2. **Ingest** additional sources — URLs, files, text, tweets (via Grok MCP), or bulk via inbox
-3. **Inventory** candidates, entities, corpora, watch lists, and next actions that should persist; the agent tells you when inventory is the wrong layer
+3. **Inventory** items, candidates, entities, corpora, watch lists, and next actions that should persist; the agent tells you when inventory is the wrong layer
 4. **Index datasets** that are too large for markdown — manifests, profiles, samples, and query recipes
 5. **Compile** raw sources into synthesized wiki articles with cross-references and confidence scores
 6. **Query** the wiki — quick (indexes), standard (articles), or deep (everything)

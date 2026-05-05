@@ -2,8 +2,9 @@
 
 Inventory is a wiki-owned tracking layer for durable "things we care about" that
 are not necessarily raw sources, compiled articles, or output artifacts. It is
-for ingest candidates, entities, corpora, open questions, recurring tasks, watch
-items, and other records the user wants the wiki to remember and revisit.
+for physical or digital items, ingest candidates, entities, corpora, open
+questions, recurring tasks, watch items, and other records the user wants the
+wiki to remember and revisit.
 
 Inventory records are markdown files with frontmatter. They can cite `raw/`,
 `wiki/`, `datasets/`, `output/`, URLs, or external paths, but they do not move
@@ -18,6 +19,8 @@ Good fits:
 
 - The user wants the wiki to remember something across sessions.
 - The item has state, priority, owner, next action, or a follow-up date.
+- The item is a real object, SKU, part, host, tool, asset, or component whose
+  owned/wanted/selected/rejected state should be listed and revisited.
 - The item is a candidate source/corpus/entity/question that may be acted on
   later, but is not ready to ingest, compile, or turn into an output.
 - The item needs to be listed, filtered, revisited, or linked from datasets,
@@ -86,6 +89,9 @@ Inventory lives at the wiki root:
 ```text
 inventory/
 ├── _index.md
+├── items/
+│   ├── _index.md
+│   └── *.md
 ├── candidates/
 │   ├── _index.md
 │   └── *.md
@@ -102,6 +108,8 @@ inventory/
 
 The subdirectories are intentionally broad:
 
+- `items/`: physical or digital inventory items such as parts, tools, hosts,
+  products, SKUs, subscriptions, and owned/wanted/rejected assets.
 - `candidates/`: ingest candidates, open questions, tasks, watch items, and
   proposed follow-up work.
 - `entities/`: people, organizations, projects, venues, standards bodies, or
@@ -138,6 +146,7 @@ Recommended chat views:
 |------|---------|-----|
 | `summary` | counts by kind/status, top priorities | quick status checks |
 | `actions` | title, priority, status, next action, updated | planning the next work |
+| `items` | item, status, priority, quantity, next action, updated | actual inventory checks |
 | `records` | title, kind, status, priority, updated | complete compact inventory |
 | `sources` | title, source/origin pointers, status | provenance and migration review |
 
@@ -236,6 +245,7 @@ Recommended fields:
 
 Kinds:
 
+- `item`
 - `ingest-candidate`
 - `entity`
 - `corpus`
@@ -243,6 +253,18 @@ Kinds:
 - `task`
 - `artifact`
 - `watch`
+
+For `kind: item`, use optional fields when they help list or filter the record:
+
+- `category`: domain-specific group such as `drivetrain`, `hardware`, `host`, or
+  `subscription`
+- `quantity`: owned or target quantity when known
+- `unit`: unit for `quantity` when useful
+- `state`: domain-specific state such as `owned`, `wanted`, `selected`,
+  `rejected`, `spare`, or `unknown`
+- `default_choice`: preferred SKU, part, tool, host, or option
+- `alternatives`: short list of acceptable replacements
+- `needed_for`: build, project, host role, or workflow that needs the item
 
 Statuses:
 
@@ -268,13 +290,14 @@ Priorities:
 ```markdown
 # Inventory Index
 
-> Durable tracking records for candidates, entities, corpora, and watch items.
+> Durable tracking records for items, candidates, entities, corpora, and watch items.
 
 Last updated: YYYY-MM-DD
 
 ## Statistics
 
 - Total records: N
+- Items: N
 - Candidates: N
 - Entities: N
 - Corpora: N
@@ -283,6 +306,7 @@ Last updated: YYYY-MM-DD
 
 ## Quick Navigation
 
+- [Items](items/_index.md)
 - [Candidates](candidates/_index.md)
 - [Entities](entities/_index.md)
 - [Corpora](corpora/_index.md)
@@ -312,9 +336,10 @@ outputs during migration.
 records:
 
 - filenames containing `queue`, `backlog`, `inventory`, `candidate`, `watch`,
-  `sources`, `corpus`, or `dataset`
+  `sources`, `corpus`, `dataset`, `parts`, `skus`, `gear`, or `assets`
 - titles containing those terms
-- tables with URL/source/status/priority/next-action columns
+- tables with URL/source/status/priority/next-action columns, or part/SKU/
+  quantity/default/alternative columns
 
 It reports suggested `inventory migrate-output ... --apply` commands. It must
 not write inventory files.

@@ -111,7 +111,7 @@ Flow: structured upstream collection (Git repo, BIP-style proposal set, MediaWik
 
 ### Inventory
 See [references/inventory.md](references/inventory.md).
-Flow: Run an inventory fit check → track durable wiki-adjacent things (ingest candidates, entities, corpora, questions, tasks, watch items) as markdown records under `inventory/` → answer list requests from indexes/frontmatter as compact chat tables or bullets → optionally save derived views under `inventory/views/` → optionally convert legacy queue-like outputs through explicit dry-run-first migration. Inventory migration is additive and human-gated. Be explicit when something is too small for inventory, too large and should be a dataset/collection, or outside wiki scope.
+Flow: Run an inventory fit check → track durable wiki-adjacent things (items, ingest candidates, entities, corpora, questions, tasks, watch items) as markdown records under `inventory/` → answer list requests from indexes/frontmatter as compact chat tables or bullets → optionally save derived views under `inventory/views/` → optionally convert legacy queue-like outputs through explicit dry-run-first migration. Inventory migration is additive and human-gated. Be explicit when something is too small for inventory, too large and should be a dataset/collection, or outside wiki scope.
 
 ### Dataset Registry
 See [references/datasets.md](references/datasets.md).
@@ -209,7 +209,7 @@ Automatically run a quick structural check when any of these triggers occur:
 
 3. **Orphan detection**: Check if any `.md` files exist in wiki directories but are not listed in any `_index.md`. If found → add them to the index.
 
-4. **Missing directories**: Verify all expected subdirectories exist in the topic wiki (`raw/articles/`, `wiki/concepts/`, `inventory/candidates/`, `datasets/`, etc.). If missing → create them with empty `_index.md`.
+4. **Missing directories**: Verify all expected subdirectories exist in the topic wiki (`raw/articles/`, `wiki/concepts/`, `inventory/items/`, `inventory/candidates/`, `datasets/`, etc.). If missing → create them with empty `_index.md`.
 
 5. **wikis.json sync**: Check that all topic sub-wikis under `HUB/topics/` are registered in `wikis.json`. If a directory exists but isn't registered → add it. If registered but directory is missing → remove the entry.
 

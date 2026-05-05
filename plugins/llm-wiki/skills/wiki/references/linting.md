@@ -205,11 +205,11 @@ Any file that is not in the canonical allowlist for its location is either a use
 | Topic wiki root | `_index.md`, `config.md`, `log.md`, `raw/`, `wiki/`, `inventory/`, `datasets/`, `output/`, `inbox/`, `.obsidian/`, `.librarian/`, `.audit/`, `.research-session.json`, `.thesis-session.json`, `.session-events.jsonl`, `.session-checkpoint.json` |
 | `raw/` | `_index.md`, `articles/`, `papers/`, `repos/`, `notes/`, `data/` |
 | `wiki/` | `_index.md`, `concepts/`, `topics/`, `references/`, `theses/` |
-| `inventory/` | `_index.md`, `candidates/`, `entities/`, `corpora/`, `views/` |
+| `inventory/` | `_index.md`, `items/`, `candidates/`, `entities/`, `corpora/`, `views/` |
 | `datasets/` | `_index.md` + dataset slug directories |
 | `raw/<type>/` | `_index.md` + `*.md` files with valid frontmatter |
 | `wiki/<category>/` | `_index.md` + `*.md` files with valid frontmatter |
-| `inventory/{candidates,entities,corpora}/` | `_index.md` + `*.md` files with valid inventory record frontmatter |
+| `inventory/{items,candidates,entities,corpora}/` | `_index.md` + `*.md` files with valid inventory record frontmatter |
 | `inventory/views/` | `_index.md` + derived `*.md` view files with lightweight view frontmatter |
 | `datasets/<slug>/` | `_index.md`, `MANIFEST.md`, `samples/`, `profiles/`, `queries/` |
 | `datasets/<slug>/{samples,profiles,queries}/` | `_index.md` + `*.md` notes |
@@ -297,16 +297,16 @@ Flags wiki articles that lack the `volatility` field. New articles should always
 Validates the optional-but-first-class `inventory/` layer. Older wikis may lack
 this directory; that is a migration opportunity, not corruption.
 
-- [ ] `inventory/`, `inventory/candidates/`, `inventory/entities/`,
-  `inventory/corpora/`, and `inventory/views/` exist with `_index.md`
-- [ ] Inventory records under `inventory/candidates/`, `inventory/entities/`,
-  and `inventory/corpora/` have valid frontmatter when present:
+- [ ] `inventory/`, `inventory/items/`, `inventory/candidates/`,
+  `inventory/entities/`, `inventory/corpora/`, and `inventory/views/` exist with `_index.md`
+- [ ] Inventory records under `inventory/items/`, `inventory/candidates/`,
+  `inventory/entities/`, and `inventory/corpora/` have valid frontmatter when present:
   `title`, `kind`, `status`, `priority`, `created`, `updated`, `tags`,
   `summary`
 - [ ] Inventory view files under `inventory/views/` have lightweight view
   frontmatter when present: `title`, `view`, `updated`, `summary`
-- [ ] `kind` is one of: `ingest-candidate`, `entity`, `corpus`, `question`,
-  `task`, `artifact`, `watch`
+- [ ] `kind` is one of: `item`, `ingest-candidate`, `entity`, `corpus`,
+  `question`, `task`, `artifact`, `watch`
 - [ ] `status` is one of: `proposed`, `active`, `blocked`, `ingested`,
   `superseded`, `archived`
 - [ ] `priority` is one of: `p0`, `p1`, `p2`, `p3`, `p4`
@@ -390,7 +390,7 @@ opportunity, not corruption.
 | **C13** Legacy enum value | Rewrite value to canonical per alias table |
 | **C14** Article below freshness score threshold | **Warn/Info only** — composite score below `freshness_threshold` (default 70). Report score breakdown and suggest `/wiki:refresh`. |
 | **C15** Missing volatility field | Add `volatility: warm` and `verified: <updated>` — safe defaults |
-| **C16** Missing inventory directories/indexes | Create empty `inventory/`, `inventory/candidates/`, `inventory/entities/`, `inventory/corpora/`, and `inventory/views/` indexes |
+| **C16** Missing inventory directories/indexes | Create empty `inventory/`, `inventory/items/`, `inventory/candidates/`, `inventory/entities/`, `inventory/corpora/`, and `inventory/views/` indexes |
 | **C16** Output looks like inventory | Warn only — suggest `/wiki:inventory migrate-output <path> --dry-run`; never auto-migrate |
 | **C17** Missing dataset registry directories/indexes | Create empty `datasets/_index.md` and missing per-dataset `samples/`, `profiles/`, and `queries/` indexes only |
 | **C17** Output looks like a dataset manifest | Warn only — suggest `/wiki:dataset migrate-output <path> --dry-run`; never auto-migrate |

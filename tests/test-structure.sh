@@ -22,7 +22,7 @@ echo "--- C1: Structure (every directory has _index.md) ---"
 
 for dirname in raw raw/articles raw/papers raw/repos raw/notes raw/data \
                wiki wiki/concepts wiki/topics wiki/references wiki/theses \
-               inventory inventory/candidates inventory/entities inventory/corpora inventory/views \
+               inventory inventory/items inventory/candidates inventory/entities inventory/corpora inventory/views \
                datasets datasets/bitcointalk-temporal-graph datasets/bitcointalk-temporal-graph/samples datasets/bitcointalk-temporal-graph/profiles datasets/bitcointalk-temporal-graph/queries \
                output; do
   if [ -f "$GOLDEN/$dirname/_index.md" ]; then
@@ -72,7 +72,7 @@ while IFS= read -r -d '' file; do
       log_fail "$field missing in $bn" "C16 violation"
     fi
   done
-done < <(find "$GOLDEN/inventory/candidates" "$GOLDEN/inventory/entities" "$GOLDEN/inventory/corpora" -name "*.md" -not -name "_index.md" -print0)
+done < <(find "$GOLDEN/inventory/items" "$GOLDEN/inventory/candidates" "$GOLDEN/inventory/entities" "$GOLDEN/inventory/corpora" -name "*.md" -not -name "_index.md" -print0)
 
 # Inventory views: title, view, updated, summary
 while IFS= read -r -d '' file; do
@@ -126,7 +126,7 @@ while IFS= read -r -d '' file; do
   bn=$(basename "$file")
   kind_val=$(grep "^kind:" "$file" | head -1 | sed 's/kind: *//')
   case "$kind_val" in
-    ingest-candidate|entity|corpus|question|task|artifact|watch) log_pass "valid kind '$kind_val' in $bn" ;;
+    item|ingest-candidate|entity|corpus|question|task|artifact|watch) log_pass "valid kind '$kind_val' in $bn" ;;
     *) log_fail "invalid kind '$kind_val' in $bn" "C16 violation" ;;
   esac
 
@@ -141,7 +141,7 @@ while IFS= read -r -d '' file; do
     p0|p1|p2|p3|p4) log_pass "valid priority '$priority_val' in $bn" ;;
     *) log_fail "invalid priority '$priority_val' in $bn" "C16 violation" ;;
   esac
-done < <(find "$GOLDEN/inventory/candidates" "$GOLDEN/inventory/entities" "$GOLDEN/inventory/corpora" -name "*.md" -not -name "_index.md" -print0)
+done < <(find "$GOLDEN/inventory/items" "$GOLDEN/inventory/candidates" "$GOLDEN/inventory/entities" "$GOLDEN/inventory/corpora" -name "*.md" -not -name "_index.md" -print0)
 
 # status/storage/schema_status enums for dataset manifests
 while IFS= read -r -d '' file; do
@@ -219,7 +219,7 @@ for subdir in concepts topics references theses; do
   done < <(find "$dir" -maxdepth 1 -name "*.md" -not -name "_index.md" -print0)
 done
 
-for subdir in candidates entities corpora views; do
+for subdir in items candidates entities corpora views; do
   dir="$GOLDEN/inventory/$subdir"
   index="$dir/_index.md"
   [ -f "$index" ] || continue
@@ -335,6 +335,7 @@ while IFS= read -r -d '' file; do
   [ "$parent_dir" = "views" ] && continue
   kind_val=$(grep "^kind:" "$file" | head -1 | sed 's/kind: *//')
   case "$kind_val" in
+    item) expected="items" ;;
     entity) expected="entities" ;;
     corpus) expected="corpora" ;;
     ingest-candidate|question|task|artifact|watch) expected="candidates" ;;

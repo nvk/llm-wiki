@@ -5,7 +5,7 @@ Research on testing patterns for validation purposes.
 ## Stats
 - Articles: 2
 - Sources: 4
-- Inventory records: 1
+- Inventory records: 2
 - Datasets: 1
 - Last updated: 2026-01-03
 

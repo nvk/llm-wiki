@@ -30,14 +30,14 @@ There is no ambient project focus — pass `--project` explicitly when you want 
 
 ### Inventory awareness
 
-At the start, read inventory indexes when cheap. Active `p0`/`p1` candidates,
-corpora, questions, and watch items can seed research paths or explain why a
-topic matters. Do not treat inventory records as evidence; they are operational
-state.
+At the start, read inventory indexes when cheap. Active `p0`/`p1` items,
+candidates, corpora, questions, and watch items can seed research paths or
+explain why a topic matters. Do not treat inventory records as evidence; they
+are operational state.
 
 At the end, propose inventory records only for durable follow-ups: important
-unresolved gaps, candidate sources/corpora to revisit, watch items, or blocked
-tasks. Do not create a backlog for every minor search tangent. For larger
+unresolved gaps, item/part decisions, candidate sources/corpora to revisit,
+watch items, or blocked tasks. Do not create a backlog for every minor search tangent. For larger
 pivots, show a 1-3 row sample of proposed records and ask before writing.
 
 ### Resolve HUB and wiki

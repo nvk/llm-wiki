@@ -36,7 +36,7 @@ Initialize a new wiki. Parse arguments:
 
 2. Create the topic wiki directory structure:
    - `inbox/`, `inbox/.processed/`
-   - `inventory/`, `inventory/candidates/`, `inventory/entities/`, `inventory/corpora/`, `inventory/views/`
+   - `inventory/`, `inventory/items/`, `inventory/candidates/`, `inventory/entities/`, `inventory/corpora/`, `inventory/views/`
    - `datasets/`
    - `raw/`, `raw/articles/`, `raw/papers/`, `raw/repos/`, `raw/notes/`, `raw/data/`
    - `wiki/`, `wiki/concepts/`, `wiki/topics/`, `wiki/references/`, `wiki/theses/`

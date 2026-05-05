@@ -1,6 +1,6 @@
 ---
-description: "Track wiki-adjacent things the user cares about: ingest candidates, entities, corpora, open questions, tasks, and other durable inventory records."
-argument-hint: "list [--kind <kind>] [--status <status>] [--priority p0-p4] [--view summary|actions|records|sources] [--limit N] [--format table|list] | add <kind> \"<title>\" [--priority p0-p4] [--source <path-or-url>] | show <slug-or-path> | update <path> | save-view \"<name>\" [filters] | scan-outputs [--dry-run] | migrate-output <output-path> [--kind <kind>] [--dry-run|--apply] [--wiki <name>] [--local]"
+description: "Track wiki-adjacent things the user cares about: items, ingest candidates, entities, corpora, open questions, tasks, and other durable inventory records."
+argument-hint: "list [--kind <kind>] [--status <status>] [--priority p0-p4] [--view summary|actions|items|records|sources] [--limit N] [--format table|list] | add <kind> \"<title>\" [--priority p0-p4] [--source <path-or-url>] | show <slug-or-path> | update <path> | save-view \"<name>\" [filters] | scan-outputs [--dry-run] | migrate-output <output-path> [--kind <kind>] [--dry-run|--apply] [--wiki <name>] [--local]"
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:*), Bash(mkdir:*)
 ---
 
@@ -14,14 +14,14 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:
 
 After resolving the wiki, read the inventory reference at `skills/wiki-manager/references/inventory.md`, then run the requested subcommand.
 
-Inventory records are durable tracking objects, not compiled articles and not raw sources. Use them for ingest candidates, important entities, corpora to watch, open questions, recurring tasks, or "things we want to keep inventory of." They live under `inventory/` and can point at raw/wiki/output files without moving them.
+Inventory records are durable tracking objects, not compiled articles and not raw sources. Use them for physical or digital items, ingest candidates, important entities, corpora to watch, open questions, recurring tasks, or "things we want to keep inventory of." They live under `inventory/` and can point at raw/wiki/output files without moving them.
 
 Be opinionated. Before writing or migrating records, tell the user whether
 inventory is the right layer:
 
-- Good fit: durable state with priority/status/next action, a source/corpus to
-  evaluate later, an entity/watch item, or a follow-up that should survive the
-  chat session.
+- Good fit: durable state with priority/status/next action, a physical/digital
+  item to own/use/compare, a source/corpus to evaluate later, an entity/watch
+  item, or a follow-up that should survive the chat session.
 - Too small: one-off source to ingest now, a factual question, or a note with no
   future action. Route to ingest, query, or raw notes instead.
 - Too big: hundreds of row-like items, datasets, message archives, snapshots, or
@@ -48,7 +48,7 @@ Subcommands:
 - **migrate-output <output-path> [--kind <kind>] [--dry-run|--apply]**: Convert one legacy output artifact into an inventory record. Default is **dry-run**. `--apply` is required to write a new inventory file.
 
 Kinds:
-`ingest-candidate`, `entity`, `corpus`, `question`, `task`, `artifact`, `watch`.
+`item`, `ingest-candidate`, `entity`, `corpus`, `question`, `task`, `artifact`, `watch`.
 
 Statuses:
 `proposed`, `active`, `blocked`, `ingested`, `superseded`, `archived`.
@@ -62,6 +62,7 @@ Before any write:
 
 1. Ensure these directories exist, each with `_index.md`:
    - `inventory/`
+   - `inventory/items/`
    - `inventory/candidates/`
    - `inventory/entities/`
    - `inventory/corpora/`
@@ -72,6 +73,7 @@ Before any write:
 
 1. Slugify the title using normal wiki filename rules.
 2. Pick the target directory:
+   - `item` → `inventory/items/`
    - `ingest-candidate`, `question`, `task`, `artifact`, `watch` → `inventory/candidates/`
    - `entity` → `inventory/entities/`
    - `corpus` → `inventory/corpora/`
@@ -90,6 +92,7 @@ Before any write:
 4. Use `--view` to choose columns:
    - `summary`: counts by kind/status plus the top records by priority
    - `actions`: records with `next_action`, sorted by priority then updated
+   - `items`: item records with status, priority, quantity, next action, and updated date
    - `records`: one row per record with title/kind/status/priority/updated
    - `sources`: title plus compact source/origin pointers
 5. Use `--format list` for short bullets when there are only a few records or
@@ -132,6 +135,7 @@ Default mode is dry-run. This creates a migration plan only:
 
 1. Read the output artifact.
 2. Infer one or more inventory records:
+   - part lists, owned gear, SKUs, tools, hosts, or equipment rows → `item`
    - queue rows → `ingest-candidate`
    - named people/org/projects → `entity`
    - corpus/dataset/source collection descriptions → `corpus`

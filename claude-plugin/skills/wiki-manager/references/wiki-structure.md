@@ -37,6 +37,9 @@ HUB/topics/<name>/
 │   └── .processed/
 ├── inventory/                     # Durable tracking records (see inventory.md)
 │   ├── _index.md
+│   ├── items/                     # Physical/digital items, parts, tools, assets
+│   │   ├── _index.md
+│   │   └── *.md
 │   ├── candidates/                # Ingest candidates, tasks, questions, watch items
 │   │   ├── _index.md
 │   │   └── *.md

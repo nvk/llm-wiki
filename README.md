@@ -319,8 +319,10 @@ Check your installed version:
 /wiki:ingest-collection messages.csv --adapter csv-messages --wiki bitcoin  # Split message archives
 /wiki:ingest-collection "https://example.com/*" --adapter wayback-cdx --from 20100101 --to 20200101  # Import archived snapshots
 /wiki:inventory add ingest-candidate "Bitcointalk archive" --wiki bitcoin  # Track source queues and next actions
+/wiki:inventory list --view actions --limit 10   # Compact chat table of current inventory next actions
 /wiki:inventory scan-outputs --dry-run          # Find legacy queues/backlogs that could become inventory
 /wiki:dataset add "Bitcointalk Temporal Graph" --location https://figshare.com/articles/dataset/BitcoinTemporalGraph/26305093 --wiki bitcoin  # Index data that stays external
+/wiki:dataset list --view schema --limit 10      # Compact chat table of dataset schema/readiness state
 /wiki:dataset scan-outputs --dry-run            # Find legacy data reports that could become dataset manifests
 /wiki:compile                                     # Compile any unprocessed sources
 /wiki:audit --project gut-brain-playbook          # Truth-seeking audit across outputs + wiki + fresh research
@@ -343,11 +345,14 @@ Check your installed version:
 | `/wiki:ingest-collection <source>` | Bulk-ingest Git doc repos, BIP-style proposal sets, MediaWiki dumps/API sites, message archives, or Wayback CDX snapshots |
 | `/wiki:ingest-collection <source> --adapter git\|mediawiki-dump\|mediawiki-api\|csv-messages\|wayback-cdx` | Force a collection adapter |
 | `/wiki:ingest-collection <source> --limit <N> --dry-run` | Preview or cap a large collection import |
-| `/wiki:inventory list` | List durable tracking records: candidates, entities, corpora, questions, tasks, watch items |
+| `/wiki:inventory list` | List durable tracking records as compact chat-friendly tables or bullets |
+| `/wiki:inventory list --view actions` | Show current inventory next actions without dumping full records |
 | `/wiki:inventory add <kind> "title"` | Add an inventory record without ingesting or compiling it |
+| `/wiki:inventory save-view "name"` | Save a derived reusable table/list under `inventory/views/` |
 | `/wiki:inventory scan-outputs --dry-run` | Find old queue/backlog outputs that look like inventory migration candidates |
 | `/wiki:inventory migrate-output <path> --apply` | Additively create inventory records from a legacy output; never moves or deletes the output |
-| `/wiki:dataset list` | List dataset manifests for large or external data indexed by the wiki |
+| `/wiki:dataset list` | List dataset manifests as compact chat-friendly tables or bullets |
+| `/wiki:dataset list --view schema` | Show schema/readiness state without opening samples or data |
 | `/wiki:dataset add "title" --location <path-or-url>` | Add a dataset manifest without copying data into the wiki |
 | `/wiki:dataset profile <slug> --dry-run` | Preview lightweight profiling of size, format, headers, or schema observations |
 | `/wiki:dataset migrate-output <path> --apply` | Additively create dataset manifests from a legacy output; never moves or copies the underlying data |
@@ -404,7 +409,7 @@ All commands accept `--wiki <name>` to target a specific topic wiki and `--local
     ├── nutrition/                      # Example topic wiki
     │   ├── .obsidian/                  # Obsidian vault config
     │   ├── inbox/                      # Drop zone for this topic
-    │   ├── inventory/                  # Durable tracking records
+    │   ├── inventory/                  # Durable tracking records + derived views
     │   ├── datasets/                   # Manifests for large/external data
     │   ├── raw/                        # Immutable sources
     │   ├── wiki/                       # Compiled articles

@@ -1,6 +1,6 @@
 ---
 description: "Manage dataset manifests for data that is too large or unsuitable to store directly in the wiki. The wiki becomes the index/interface; the data stays external."
-argument-hint: "list | add \"<title>\" [--location <path-or-url>] [--format <fmt>] | show <slug-or-path> | scan-outputs [--dry-run] | migrate-output <output-path> [--dry-run|--apply] | profile <slug> [--dry-run|--apply] | sample <slug> [--limit N] [--dry-run|--apply] [--wiki <name>] [--local]"
+argument-hint: "list [--status <status>] [--storage <mode>] [--view summary|manifests|schema|locations] [--limit N] [--format table|list] | add \"<title>\" [--location <path-or-url>] [--format <fmt>] | show <slug-or-path> | scan-outputs [--dry-run] | migrate-output <output-path> [--dry-run|--apply] | profile <slug> [--dry-run|--apply] | sample <slug> [--limit N] [--dry-run|--apply] [--wiki <name>] [--local]"
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:*), Bash(mkdir:*), Bash(du:*), Bash(stat:*), Bash(head:*), Bash(file:*)
 ---
 
@@ -23,7 +23,7 @@ original filesystem path, object store, URL, database, or archive.
 
 Subcommands:
 
-- **list**: List dataset manifests.
+- **list**: List dataset manifests, optionally filtered by status/storage and view mode.
 - **add "<title>"**: Create a dataset manifest under `datasets/<slug>/`.
 - **show <slug-or-path>**: Read one dataset manifest and related profile/sample indexes.
 - **scan-outputs [--dry-run]**: Find output artifacts that describe datasets but still live in `output/`.
@@ -62,6 +62,23 @@ Before any write:
 5. Append to `log.md`:
    `## [YYYY-MM-DD] dataset | added <slug>`
 6. Rebuild `datasets/_index.md`.
+
+### List
+
+1. Read `datasets/_index.md` first.
+2. If filters require fields not present in the index, read only
+   `datasets/*/MANIFEST.md` frontmatter. Do not inspect samples, profiles,
+   queries, or underlying data for a list operation.
+3. Present a compact chat-friendly result. Default to a Markdown table with
+   dataset, status, storage, formats, size, records, schema status, and updated
+   date.
+4. Use `--view` to choose columns:
+   - `summary`: counts by status/storage plus the most actionable manifests
+   - `manifests`: one row per manifest
+   - `schema`: schema status, formats, record count, profile availability
+   - `locations`: compact storage/access/location pointers
+5. Use `--format list` for short bullets when paths or URLs would make a table
+   unreadable. Use `--limit N` to cap rows in chat and report the hidden count.
 
 ### Scan Outputs
 

@@ -41,6 +41,70 @@ The subdirectories are intentionally broad:
 - `views/`: generated inventory views such as "P0 blocked candidates" or
   "active corpora by license." Views are derived and may be regenerated.
 
+## Chat And Saved Views
+
+Inventory needs to be useful in a chat session before it is useful as files on
+disk. Default to efficient, readable list/table views instead of dumping full
+records.
+
+### Chat View Rules
+
+- Read `inventory/_index.md` and subdirectory indexes first.
+- Use record frontmatter for filtering and sorting. Do not open every record
+  body just to answer "list inventory."
+- Default chat output is a compact Markdown table. Keep columns narrow and
+  action-oriented.
+- If there are more than about 12 rows, show the highest-priority or most
+  recently updated rows first, then report how many rows were omitted and where
+  the full index lives.
+- Use bullets instead of a table when long URLs, paths, or prose next actions
+  would make a table unreadable.
+- Open full records only when the user asks for detail or when requested columns
+  are not present in the indexes/frontmatter.
+
+Recommended chat views:
+
+| View | Columns | Use |
+|------|---------|-----|
+| `summary` | counts by kind/status, top priorities | quick status checks |
+| `actions` | title, priority, status, next action, updated | planning the next work |
+| `records` | title, kind, status, priority, updated | complete compact inventory |
+| `sources` | title, source/origin pointers, status | provenance and migration review |
+
+### Saved Views
+
+When the user wants a reusable view, save it under `inventory/views/`. View files
+are derived markdown views, not inventory records. They may be regenerated from
+record frontmatter and should not be treated as authoritative state.
+
+Suggested view frontmatter:
+
+```yaml
+---
+title: "Active Inventory Actions"
+view: actions
+filters:
+  status: active
+updated: YYYY-MM-DD
+summary: "Derived table of active inventory records with next actions."
+---
+```
+
+Suggested body:
+
+```markdown
+# Active Inventory Actions
+
+Generated from inventory record frontmatter on YYYY-MM-DD.
+
+| Record | Kind | Priority | Next Action | Updated |
+|--------|------|----------|-------------|---------|
+```
+
+Saved views should link to records rather than duplicate long record bodies.
+If a view starts needing hundreds or thousands of rows, promote the underlying
+collection to a dataset manifest and keep the view as a small summary.
+
 ## Record Format
 
 ```markdown
@@ -162,6 +226,10 @@ Last updated: YYYY-MM-DD
 
 Subdirectory indexes use the same table shape. Indexes are derived caches; the
 frontmatter in inventory record files is authoritative.
+
+`inventory/views/_index.md` may use the standard file/summary/tags/updated table
+for saved views. View files are derived from record frontmatter; they are not
+required to have `kind`, `status`, or `priority`.
 
 ## Migration Paths
 

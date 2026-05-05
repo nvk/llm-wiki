@@ -111,11 +111,11 @@ Flow: structured upstream collection (Git repo, BIP-style proposal set, MediaWik
 
 ### Inventory
 See [references/inventory.md](references/inventory.md).
-Flow: Track durable wiki-adjacent things (ingest candidates, entities, corpora, questions, tasks, watch items) as markdown records under `inventory/` → rebuild inventory indexes → optionally convert legacy queue-like outputs through explicit dry-run-first migration. Inventory migration is additive and human-gated.
+Flow: Track durable wiki-adjacent things (ingest candidates, entities, corpora, questions, tasks, watch items) as markdown records under `inventory/` → answer list requests from indexes/frontmatter as compact chat tables or bullets → optionally save derived views under `inventory/views/` → optionally convert legacy queue-like outputs through explicit dry-run-first migration. Inventory migration is additive and human-gated.
 
 ### Dataset Registry
 See [references/datasets.md](references/datasets.md).
-Flow: Keep large or external datasets out of the wiki while indexing them through `datasets/<slug>/MANIFEST.md` → store locations, schema notes, small samples, profiles, and query recipes → optionally convert legacy dataset outputs through explicit dry-run-first migration. Dataset migration is additive and never copies the underlying data into the wiki.
+Flow: Keep large or external datasets out of the wiki while indexing them through `datasets/<slug>/MANIFEST.md` → store locations, schema notes, small samples, profiles, and query recipes → answer list requests from `datasets/_index.md` plus manifest frontmatter only → optionally convert legacy dataset outputs through explicit dry-run-first migration. Dataset migration is additive and never copies the underlying data into the wiki.
 
 ### Compilation
 See [references/compilation.md](references/compilation.md).

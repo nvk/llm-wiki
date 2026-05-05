@@ -24,6 +24,35 @@ usable.
 Do not copy large datasets into `datasets/`. Store paths, URLs, checksums,
 profiles, samples, and query recipes instead.
 
+## Chat Views
+
+Dataset commands should make large data feel easy to inspect without loading the
+data. A normal `dataset list` should be fast and index-driven.
+
+Rules:
+
+- Read `datasets/_index.md` first.
+- For filters or columns not present in the index, read only
+  `datasets/*/MANIFEST.md` frontmatter.
+- Never open samples, profiles, query notes, or the underlying dataset for a
+  plain list operation.
+- Default chat output is a compact Markdown table. Use bullets when long paths
+  or URLs would dominate the table.
+- Cap long lists in chat with `--limit` or a sensible default, then report the
+  omitted count and the registry path.
+
+Recommended chat views:
+
+| View | Columns | Use |
+|------|---------|-----|
+| `summary` | counts by status/storage/schema status, newest manifests | quick status checks |
+| `manifests` | dataset, status, storage, formats, size, records, updated | complete compact registry |
+| `schema` | dataset, schema status, formats, record count, latest profile | deciding what to profile next |
+| `locations` | dataset, storage, access, compact location pointer | finding where the data lives |
+
+If a dataset is linked from an inventory record, include the inventory next
+action only when it can be read cheaply from the linked record frontmatter.
+
 ## Directory Layout
 
 ```text

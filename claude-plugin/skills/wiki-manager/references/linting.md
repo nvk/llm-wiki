@@ -209,7 +209,8 @@ Any file that is not in the canonical allowlist for its location is either a use
 | `datasets/` | `_index.md` + dataset slug directories |
 | `raw/<type>/` | `_index.md` + `*.md` files with valid frontmatter |
 | `wiki/<category>/` | `_index.md` + `*.md` files with valid frontmatter |
-| `inventory/<category>/` | `_index.md` + `*.md` files with valid inventory frontmatter |
+| `inventory/{candidates,entities,corpora}/` | `_index.md` + `*.md` files with valid inventory record frontmatter |
+| `inventory/views/` | `_index.md` + derived `*.md` view files with lightweight view frontmatter |
 | `datasets/<slug>/` | `_index.md`, `MANIFEST.md`, `samples/`, `profiles/`, `queries/` |
 | `datasets/<slug>/{samples,profiles,queries}/` | `_index.md` + `*.md` notes |
 | `inbox/` | `.processed/`, `.unknown/`, user-dropped files |
@@ -298,9 +299,12 @@ this directory; that is a migration opportunity, not corruption.
 
 - [ ] `inventory/`, `inventory/candidates/`, `inventory/entities/`,
   `inventory/corpora/`, and `inventory/views/` exist with `_index.md`
-- [ ] Inventory records have valid frontmatter when present:
+- [ ] Inventory records under `inventory/candidates/`, `inventory/entities/`,
+  and `inventory/corpora/` have valid frontmatter when present:
   `title`, `kind`, `status`, `priority`, `created`, `updated`, `tags`,
   `summary`
+- [ ] Inventory view files under `inventory/views/` have lightweight view
+  frontmatter when present: `title`, `view`, `updated`, `summary`
 - [ ] `kind` is one of: `ingest-candidate`, `entity`, `corpus`, `question`,
   `task`, `artifact`, `watch`
 - [ ] `status` is one of: `proposed`, `active`, `blocked`, `ingested`,
@@ -315,6 +319,8 @@ this directory; that is a migration opportunity, not corruption.
 **Auto-fix**:
 
 - With `--fix`, create only missing inventory directories and empty indexes.
+- With `--fix`, regenerate `inventory/views/_index.md` from saved view
+  frontmatter, but do not fabricate saved views.
 - Never auto-convert output artifacts into inventory records. Report suggested
   commands such as:
   `/wiki:inventory migrate-output output/ingest-queue-2026-05-03.md --kind ingest-candidate --dry-run`

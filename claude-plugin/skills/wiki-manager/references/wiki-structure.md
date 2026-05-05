@@ -46,7 +46,7 @@ HUB/topics/<name>/
 │   ├── corpora/                   # Source collections, archives, datasets, forums
 │   │   ├── _index.md
 │   │   └── *.md
-│   └── views/                     # Generated inventory views
+│   └── views/                     # Derived chat/list views over inventory
 │       ├── _index.md
 │       └── *.md
 ├── datasets/                      # Dataset manifests for large/external data
@@ -106,6 +106,8 @@ HUB/topics/<name>/
 See [inventory.md](inventory.md) for inventory records, [datasets.md](datasets.md)
 for dataset manifests, and [projects.md](projects.md) for the full projects
 architecture (lifecycle, multi-membership, explicit `--project <slug>` scoping).
+Files under `inventory/views/` are derived list/table views. They are not
+inventory records and should not be treated as authoritative tracking state.
 
 ## Local Wiki (--local flag)
 

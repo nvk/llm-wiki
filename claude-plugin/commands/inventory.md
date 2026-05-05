@@ -1,6 +1,6 @@
 ---
 description: "Track wiki-adjacent things the user cares about: ingest candidates, entities, corpora, open questions, tasks, and other durable inventory records."
-argument-hint: "list [--kind <kind>] [--status <status>] | add <kind> \"<title>\" [--priority p0-p4] [--source <path-or-url>] | show <slug-or-path> | update <path> | scan-outputs [--dry-run] | migrate-output <output-path> [--kind <kind>] [--dry-run|--apply] [--wiki <name>] [--local]"
+argument-hint: "list [--kind <kind>] [--status <status>] [--priority p0-p4] [--view summary|actions|records|sources] [--limit N] [--format table|list] | add <kind> \"<title>\" [--priority p0-p4] [--source <path-or-url>] | show <slug-or-path> | update <path> | save-view \"<name>\" [filters] | scan-outputs [--dry-run] | migrate-output <output-path> [--kind <kind>] [--dry-run|--apply] [--wiki <name>] [--local]"
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:*), Bash(mkdir:*)
 ---
 
@@ -24,6 +24,7 @@ Subcommands:
 - **add <kind> "<title>"**: Create a new inventory record in the canonical subdirectory for `kind`.
 - **show <slug-or-path>**: Read one inventory record.
 - **update <path>**: Edit one inventory record based on the user's instructions.
+- **save-view "<name>" [filters]**: Save a derived table/list under `inventory/views/`.
 - **scan-outputs [--dry-run]**: Look for output artifacts that look like inventory but still live in `output/`.
 - **migrate-output <output-path> [--kind <kind>] [--dry-run|--apply]**: Convert one legacy output artifact into an inventory record. Default is **dry-run**. `--apply` is required to write a new inventory file.
 
@@ -65,7 +66,30 @@ Before any write:
 
 1. Read `inventory/_index.md` first.
 2. If filters are present, search inventory records by frontmatter.
-3. Present a compact table with title, kind, status, priority, next action, and updated date.
+3. Present a compact chat-friendly result. Default to a Markdown table with
+   title, kind, status, priority, next action, and updated date.
+4. Use `--view` to choose columns:
+   - `summary`: counts by kind/status plus the top records by priority
+   - `actions`: records with `next_action`, sorted by priority then updated
+   - `records`: one row per record with title/kind/status/priority/updated
+   - `sources`: title plus compact source/origin pointers
+5. Use `--format list` for short bullets when there are only a few records or
+   when table cells would wrap badly. Use `--limit N` to cap the rows shown in
+   chat. If more rows exist, report the hidden count and where the full index
+   or saved view lives.
+6. Do not read every record body just to list inventory. Use indexes and
+   frontmatter first; open full records only when requested fields are not in an
+   index or the user asks for detail.
+
+### Save View
+
+1. Build the same filtered result as `list`, using the requested `--view`,
+   `--kind`, `--status`, `--priority`, and `--limit` filters.
+2. Write a derived markdown view under `inventory/views/<slug>.md`.
+3. View files are not inventory records. Use lightweight view frontmatter:
+   `title`, `view`, `filters`, `updated`, `summary`.
+4. Rebuild `inventory/views/_index.md` and append to `log.md`:
+   `## [YYYY-MM-DD] inventory | saved view <slug>`
 
 ### Scan Outputs
 

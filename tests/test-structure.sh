@@ -72,7 +72,19 @@ while IFS= read -r -d '' file; do
       log_fail "$field missing in $bn" "C16 violation"
     fi
   done
-done < <(find "$GOLDEN/inventory" -name "*.md" -not -name "_index.md" -print0)
+done < <(find "$GOLDEN/inventory/candidates" "$GOLDEN/inventory/entities" "$GOLDEN/inventory/corpora" -name "*.md" -not -name "_index.md" -print0)
+
+# Inventory views: title, view, updated, summary
+while IFS= read -r -d '' file; do
+  bn=$(basename "$file")
+  for field in title view updated summary; do
+    if grep -q "^${field}:" "$file"; then
+      log_pass "$field present in inventory view $bn"
+    else
+      log_fail "$field missing in inventory view $bn" "C16 violation"
+    fi
+  done
+done < <(find "$GOLDEN/inventory/views" -name "*.md" -not -name "_index.md" -print0)
 
 # Dataset manifests: title, dataset_id, status, storage, locations, formats, schema_status, created, updated, tags, summary
 while IFS= read -r -d '' file; do
@@ -129,7 +141,7 @@ while IFS= read -r -d '' file; do
     p0|p1|p2|p3|p4) log_pass "valid priority '$priority_val' in $bn" ;;
     *) log_fail "invalid priority '$priority_val' in $bn" "C16 violation" ;;
   esac
-done < <(find "$GOLDEN/inventory" -name "*.md" -not -name "_index.md" -print0)
+done < <(find "$GOLDEN/inventory/candidates" "$GOLDEN/inventory/entities" "$GOLDEN/inventory/corpora" -name "*.md" -not -name "_index.md" -print0)
 
 # status/storage/schema_status enums for dataset manifests
 while IFS= read -r -d '' file; do

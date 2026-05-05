@@ -13,14 +13,17 @@ There are two layers where this principle applies, each with its own rules:
 - **Inventory layer (C16)** — durable tracking records under `inventory/`.
   Missing inventory structure is auto-creatable, but migrating old queue-like
   outputs into inventory records is human-gated.
+- **Dataset layer (C17)** — dataset manifests under `datasets/`.
+  Missing registry structure is auto-creatable, but converting outputs or raw
+  data into dataset manifests is human-gated.
 
 Concretely, when evolving the schema:
 
-- **Renamed a `raw/`, `wiki/`, or `inventory/` directory?** Update the placement map in C11/C16 and the allowlist in C12. Every existing wiki self-heals on the next lint.
+- **Renamed a `raw/`, `wiki/`, `inventory/`, or `datasets/` directory?** Update the placement map in C11/C16/C17 and the allowlist in C12. Every existing wiki self-heals on the next lint.
 - **Renamed a frontmatter field?** Append an entry to C13's alias table (old → new). Never remove old aliases.
 - **Changed an enum value?** Add a value alias in C13. Never remove old values.
 - **Added a required field?** Add it to C2 and give it an inference rule (derive from body/filename) or a sane default.
-- **New directory under `raw/`, `wiki/`, or `inventory/`?** Add it to C12's allowlist and C11/C16's placement map.
+- **New directory under `raw/`, `wiki/`, `inventory/`, or `datasets/`?** Add it to C12's allowlist and C11/C16/C17's placement map.
 - **New project-level structure or manifest rule?** Update C8 (and projects.md). Candidate heuristics go in C9.
 
 There is no `/wiki:migrate` command and there should never be one. Lint rules **are** the schema.
@@ -43,7 +46,7 @@ There is no `/wiki:migrate` command and there should never be one. Lint rules **
 
 - [ ] Master `_index.md` exists
 - [ ] `config.md` exists
-- [ ] Every subdirectory under `raw/`, `wiki/`, and `inventory/` has `_index.md`
+- [ ] Every subdirectory under `raw/`, `wiki/`, `inventory/`, and `datasets/` has `_index.md` where applicable
 - [ ] `output/` has `_index.md`
 - [ ] Every `.md` file (excluding `_index.md` and `config.md`) has valid YAML frontmatter delimited by `---`
 
@@ -192,25 +195,28 @@ A `raw/` or `wiki/` file's correct path is a pure function of its frontmatter. M
 
 ### C12: Unknown File Quarantine (Warning)
 
-Any file that is not in the canonical allowlist for its location is either a user mistake, a stale artifact from an older wiki version, or a legitimate new kind of thing that the schema hasn't caught up to. Lint surfaces it either way. Like C11, this is scoped to `raw/`, `wiki/`, `inventory/`, and the wiki root — not `output/projects/` (C8 handles that).
+Any file that is not in the canonical allowlist for its location is either a user mistake, a stale artifact from an older wiki version, or a legitimate new kind of thing that the schema hasn't caught up to. Lint surfaces it either way. Like C11, this is scoped to `raw/`, `wiki/`, `inventory/`, `datasets/`, and the wiki root — not `output/projects/` (C8 handles that).
 
 **Allowlists** (per location):
 
 | Location | Allowed items |
 |----------|--------------|
 | HUB | `wikis.json`, `_index.md`, `log.md`, `topics/` |
-| Topic wiki root | `_index.md`, `config.md`, `log.md`, `raw/`, `wiki/`, `inventory/`, `output/`, `inbox/`, `.obsidian/`, `.librarian/`, `.audit/`, `.research-session.json`, `.thesis-session.json`, `.session-events.jsonl`, `.session-checkpoint.json` |
+| Topic wiki root | `_index.md`, `config.md`, `log.md`, `raw/`, `wiki/`, `inventory/`, `datasets/`, `output/`, `inbox/`, `.obsidian/`, `.librarian/`, `.audit/`, `.research-session.json`, `.thesis-session.json`, `.session-events.jsonl`, `.session-checkpoint.json` |
 | `raw/` | `_index.md`, `articles/`, `papers/`, `repos/`, `notes/`, `data/` |
 | `wiki/` | `_index.md`, `concepts/`, `topics/`, `references/`, `theses/` |
 | `inventory/` | `_index.md`, `candidates/`, `entities/`, `corpora/`, `views/` |
+| `datasets/` | `_index.md` + dataset slug directories |
 | `raw/<type>/` | `_index.md` + `*.md` files with valid frontmatter |
 | `wiki/<category>/` | `_index.md` + `*.md` files with valid frontmatter |
 | `inventory/<category>/` | `_index.md` + `*.md` files with valid inventory frontmatter |
+| `datasets/<slug>/` | `_index.md`, `MANIFEST.md`, `samples/`, `profiles/`, `queries/` |
+| `datasets/<slug>/{samples,profiles,queries}/` | `_index.md` + `*.md` notes |
 | `inbox/` | `.processed/`, `.unknown/`, user-dropped files |
 
 **Checks**:
 
-- [ ] Walk `raw/`, `wiki/`, `inventory/`, and the wiki root. For each entry, check against the allowlist for that location.
+- [ ] Walk `raw/`, `wiki/`, `inventory/`, `datasets/`, and the wiki root. For each entry, check against the allowlist for that location.
 - [ ] Flag unknown files and directories.
 - [ ] Skip `output/` — C8 and C9 own that subtree.
 
@@ -313,6 +319,39 @@ this directory; that is a migration opportunity, not corruption.
   commands such as:
   `/wiki:inventory migrate-output output/ingest-queue-2026-05-03.md --kind ingest-candidate --dry-run`
 
+### C17: Dataset Registry Structure and Migration Candidates (Suggestion)
+
+Validates the optional-but-first-class `datasets/` registry for large or
+external data. Older wikis may lack this directory; that is a migration
+opportunity, not corruption.
+
+- [ ] `datasets/` exists with `_index.md`
+- [ ] Every `datasets/<slug>/` directory has `_index.md` and `MANIFEST.md`
+- [ ] Every dataset folder has `samples/_index.md`, `profiles/_index.md`, and
+  `queries/_index.md`
+- [ ] Dataset manifests have valid frontmatter:
+  `title`, `dataset_id`, `status`, `storage`, `locations`, `formats`,
+  `schema_status`, `created`, `updated`, `tags`, `summary`
+- [ ] `status` is one of: `proposed`, `active`, `external`, `archived`,
+  `unavailable`
+- [ ] `storage` is one of: `local`, `remote`, `external`, `hybrid`
+- [ ] `schema_status` is one of: `unknown`, `inferred`, `declared`,
+  `validated`
+- [ ] Loose output artifacts that look like dataset descriptions are reported
+  as dataset migration candidates. Heuristics: filename or title contains
+  `dataset`, `data`, `corpus`, `archive`, `dump`, `warehouse`, `lake`,
+  `parquet`, `sqlite`, `duckdb`, `csv`, `jsonl`, or `snapshot`; body has size,
+  rows, schema, storage path, license, sample, or query recipe sections.
+
+**Auto-fix**:
+
+- With `--fix`, create only missing `datasets/` directories and empty indexes.
+- With `--fix`, create missing `samples/`, `profiles/`, and `queries/`
+  directories/indexes for existing dataset manifests.
+- Never auto-convert output artifacts, raw data files, or inventory records into
+  dataset manifests. Report suggested commands such as:
+  `/wiki:dataset migrate-output output/bitcointalk-data-2026-05-03.md --dry-run`
+
 ## Auto-Fix Rules (when --fix is set)
 
 | Issue | Auto-Fix Action |
@@ -343,6 +382,8 @@ this directory; that is a migration opportunity, not corruption.
 | **C15** Missing volatility field | Add `volatility: warm` and `verified: <updated>` — safe defaults |
 | **C16** Missing inventory directories/indexes | Create empty `inventory/`, `inventory/candidates/`, `inventory/entities/`, `inventory/corpora/`, and `inventory/views/` indexes |
 | **C16** Output looks like inventory | Warn only — suggest `/wiki:inventory migrate-output <path> --dry-run`; never auto-migrate |
+| **C17** Missing dataset registry directories/indexes | Create empty `datasets/_index.md` and missing per-dataset `samples/`, `profiles/`, and `queries/` indexes only |
+| **C17** Output looks like a dataset manifest | Warn only — suggest `/wiki:dataset migrate-output <path> --dry-run`; never auto-migrate |
 
 ## Report Format
 
@@ -384,6 +425,12 @@ this directory; that is a migration opportunity, not corruption.
 - Inventory records: [count by kind/status]
 - Missing inventory structure created: [yes/no]
 - Output artifacts that look like inventory: [list with suggested migrate-output commands]
+
+### Datasets
+- Dataset manifests: [count by status/storage]
+- Missing dataset registry structure created: [yes/no]
+- Dataset manifest/schema issues: [list]
+- Output artifacts that look like datasets: [list with suggested migrate-output commands]
 
 ### File Placement & Schema
 - Misplaced files moved to canonical location: [count, list of moves as `old → new`]

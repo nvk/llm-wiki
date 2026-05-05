@@ -38,7 +38,7 @@ mkdir -p "$TARGET_SKILL/agents"
 cat > "$TARGET_SKILL/agents/openai.yaml" <<'EOF'
 interface:
   display_name: "Wiki Manager"
-  short_description: "Initialize, ingest collections, track inventory, compile, audit, query, research, and lint llm-wiki knowledge bases."
+  short_description: "Initialize, ingest collections, track inventory, index datasets, compile, audit, query, research, and lint llm-wiki knowledge bases."
   brand_color: "#2F855A"
   default_prompt: "Research a topic and compile it into a structured wiki."
 
@@ -63,13 +63,14 @@ frontmatter = """---
 name: wiki
 description: >
   LLM-compiled knowledge base manager for Codex. Use it to initialize, ingest,
-  import source collections, track inventory, compile, query, lint, audit, research, plan, and generate outputs from topic-scoped wikis.
+  import source collections, track inventory, index datasets, compile, query, lint, audit, research, plan, and generate outputs from topic-scoped wikis.
   Activates when the user mentions wiki workflows, knowledge-base management,
   ingestion, collection ingestion, import wiki, inventory, source queue,
-  candidate list, watch list, backlog, compilation, querying, linting, audit,
-  research, librarian, scan quality, article quality, content review, output
-  drift, provenance, implementation plan, or uses /wiki-style shorthand in a
-  repo with .wiki/, ~/wiki/, or a configured hub path.
+  candidate list, watch list, backlog, dataset, large data, data registry,
+  dataset manifest, compilation, querying, linting, audit, research, librarian,
+  scan quality, article quality, content review, output drift, provenance,
+  implementation plan, or uses /wiki-style shorthand in a repo with .wiki/,
+  ~/wiki/, or a configured hub path.
 ---
 """
 
@@ -101,8 +102,8 @@ replacements = [
         'Track uncompiled sources by comparing `raw/_index.md` ingestion dates against the last compile date in `_index.md`. If 5+ uncompiled sources exist after an ingestion, suggest: "You have N uncompiled sources. Ask `@wiki` to compile them."',
     ),
     (
-        'Suggest `/wiki:lint --fix`, which will move contents to the appropriate topic wiki or quarantine to `inbox/.unknown/` per C11/C12/C16 in `references/linting.md`.',
-        'Suggest the `lint --fix` workflow, which will move contents to the appropriate topic wiki or quarantine to `inbox/.unknown/` per C11/C12/C16 in `references/linting.md`.',
+        'Suggest `/wiki:lint --fix`, which will move contents to the appropriate topic wiki or quarantine to `inbox/.unknown/` per C11/C12/C16/C17 in `references/linting.md`.',
+        'Suggest the `lint --fix` workflow, which will move contents to the appropriate topic wiki or quarantine to `inbox/.unknown/` per C11/C12/C16/C17 in `references/linting.md`.',
     ),
     (
         'Tell the user what\'s wrong and suggest `/wiki:lint --fix`.',
@@ -144,6 +145,7 @@ reference material you need for that workflow:
 
 - `ingest` and `ingest-collection` → `references/ingestion.md`
 - `inventory` → `references/inventory.md`
+- `dataset` → `references/datasets.md`
 - `compile` → `references/compilation.md` and `references/indexing.md`
 - `query` → read the relevant `_index.md` files first, then only the articles
   needed to answer

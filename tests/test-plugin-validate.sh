@@ -9,7 +9,7 @@ PLUGIN_JSON="$PLUGIN_DIR/.claude-plugin/plugin.json"
 PASS=0
 FAIL=0
 TOTAL=0
-REFERENCE_NAMES="audit command-prelude compilation hub-resolution indexing ingestion inventory librarian linting projects research-infrastructure wiki-structure"
+REFERENCE_NAMES="audit command-prelude compilation datasets hub-resolution indexing ingestion inventory librarian linting projects research-infrastructure wiki-structure"
 
 log_pass() { PASS=$((PASS + 1)); TOTAL=$((TOTAL + 1)); printf "  \033[32mPASS\033[0m: %s\n" "$1"; }
 log_fail() { FAIL=$((FAIL + 1)); TOTAL=$((TOTAL + 1)); printf "  \033[31mFAIL\033[0m: %s — %s\n" "$1" "$2"; }

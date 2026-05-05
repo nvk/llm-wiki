@@ -6,8 +6,8 @@ for ingest candidates, entities, corpora, open questions, recurring tasks, watch
 items, and other records the user wants the wiki to remember and revisit.
 
 Inventory records are markdown files with frontmatter. They can cite `raw/`,
-`wiki/`, `output/`, URLs, or external paths, but they do not move or copy those
-artifacts.
+`wiki/`, `datasets/`, `output/`, URLs, or external paths, but they do not move
+or copy those artifacts.
 
 ## Directory Layout
 
@@ -208,8 +208,8 @@ wikis, not as corruption:
 
 - `raw/`: immutable ingested source content.
 - `wiki/`: synthesized knowledge articles.
+- `datasets/`: manifests and query interfaces for large/external data.
 - `output/`: generated deliverables.
 - `inventory/`: durable tracking records and next-action state.
 
-Inventory records can point at all three other layers, but they do not replace
-them.
+Inventory records can point at the other layers, but they do not replace them.

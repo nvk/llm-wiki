@@ -83,6 +83,18 @@ tests:
       - type: cost
         threshold: 0.50
 
+  - description: "Router: dataset intent routes to dataset"
+    vars:
+      prompt: "Index this large Bitcointalk dataset so the wiki can query it without copying the data"
+    assert:
+      - type: skill-used
+        value: wiki
+      - type: llm-rubric
+        value: "Agent recognized this as a dataset registry request and routed to the dataset workflow, not single-source ingestion or compilation."
+        threshold: 0.75
+      - type: cost
+        threshold: 0.50
+
   - description: "Router: question dispatches to query"
     vars:
       prompt: "What testing patterns exist for LLM tools?"
@@ -190,7 +202,7 @@ tests:
       - type: not-contains
         value: "error loading"
       - type: llm-rubric
-        value: "Agent listed wiki subcommands — at minimum ingest, ingest-collection, inventory, compile, query, lint, research"
+        value: "Agent listed wiki subcommands — at minimum ingest, ingest-collection, inventory, dataset, compile, query, lint, research"
         threshold: 0.75
       - type: cost
         threshold: 0.30

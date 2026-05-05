@@ -135,6 +135,11 @@ copy_golden "missing-inventory"
 rm "$DEFECTS/missing-inventory/inventory/_index.md"
 echo "  Created: missing-inventory (C16)"
 
+# C17: missing-datasets — dataset registry missing an index
+copy_golden "missing-datasets"
+rm "$DEFECTS/missing-datasets/datasets/_index.md"
+echo "  Created: missing-datasets (C17)"
+
 COUNT=$(ls -d "$DEFECTS"/*/ 2>/dev/null | wc -l | tr -d ' ')
 echo ""
 echo "Generated $COUNT defect fixtures"

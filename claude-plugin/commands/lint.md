@@ -24,7 +24,7 @@ Read the linting rules at `skills/wiki-manager/references/linting.md`. Then run 
 Execute checks from `references/linting.md`. Order matters: C13 (alias rewrite) must run before C2 and C11 so downstream checks see canonical field names, and C11 (placement) must run before C3 so the index pass sees final file locations.
 
 #### 1. C1: Structure (Critical)
-Verify all required directories and `_index.md` files exist, including the `inventory/` layer when present.
+Verify all required directories and `_index.md` files exist, including the `inventory/` and `datasets/` layers when present.
 
 #### 2. C13: Frontmatter Aliases (Warning, runs early)
 For every `.md` file's frontmatter, rewrite legacy keys and enum values to canonical form using the alias tables in `references/linting.md`. This is how frontmatter schema evolution is handled — there is no migration command. Fix first so subsequent checks see canonical fields.
@@ -36,7 +36,7 @@ Read each `.md` file's frontmatter. Check required fields exist and have valid v
 For every `.md` file under `raw/` and `wiki/`, derive the expected directory from its frontmatter using the placement map in `references/linting.md` (raw `type` → `raw/<type>/`; wiki `category` → `wiki/concepts|topics|references/`; `type: thesis` → `wiki/theses/`). Flag files whose actual path doesn't match; auto-fix by `mv`. Flag content directories at the hub level. This heals both user mistakes and stale layouts from older wiki versions with the same code path. Does not touch `output/projects/` — that's C8's territory.
 
 #### 5. C12: Unknown File Quarantine (Warning)
-Walk `raw/`, `wiki/`, `inventory/`, and the wiki root. Flag files and directories that are not in the allowlist for their location (per `references/linting.md` C12 table). Skip `output/` — C8 and C9 own that subtree.
+Walk `raw/`, `wiki/`, `inventory/`, `datasets/`, and the wiki root. Flag files and directories that are not in the allowlist for their location (per `references/linting.md` C12 table). Skip `output/` — C8 and C9 own that subtree.
 
 #### 6. C3: Index Consistency (Warning)
 Compare actual directory contents against `_index.md` entries. Verify statistics match. Runs after C11 because placement fixes may have changed which files live where — stale indexes will rebuild on next read per the Derived Index Protocol.
@@ -87,15 +87,25 @@ Check the inventory layer from `references/inventory.md` and `references/linting
 4. Scan `output/**/*.md` for artifacts that look like durable inventory records, such as ingest queues, source backlogs, watch lists, candidate lists, or corpus inventories.
 5. Report suggested `inventory migrate-output <path> --dry-run` commands. Never auto-convert outputs into inventory records.
 
+#### 16. C17: Dataset Registry Structure and Migration Candidates (Suggestion)
+Check the dataset registry from `references/datasets.md` and `references/linting.md` § C17:
+
+1. Verify `datasets/` has `_index.md`. Missing dataset registry structure is a migration opportunity for older wikis, not corruption.
+2. For each `datasets/<slug>/MANIFEST.md`, verify `datasets/<slug>/_index.md`, `samples/_index.md`, `profiles/_index.md`, and `queries/_index.md`.
+3. If `--fix` is set, create only missing dataset directories and empty indexes. Do not migrate content.
+4. Validate dataset manifest frontmatter when manifests exist.
+5. Scan `output/**/*.md` for artifacts that look like dataset manifests, such as corpus descriptions, archive inventories, dump summaries, parquet/sqlite/duckdb notes, or data profile reports.
+6. Report suggested `dataset migrate-output <path> --dry-run` commands. Never auto-convert outputs, raw files, or inventory records into dataset manifests.
+
 ### If --fix
 
 For each fixable issue, apply the auto-fix from the rules table in `references/linting.md`. Report what was fixed.
 
-IMPORTANT: Only auto-fix issues with clear, unambiguous fixes — missing index entries, broken stats, legacy `_project.md` → `WHY.md` migration (C8c), stale `output/_index.md` when `projects/` exists, legacy frontmatter keys/values (C13), files in the wrong canonical `raw/` or `wiki/` directory (C11), missing empty inventory directories/indexes (C16), etc. Do NOT auto-fix content quality issues. Do NOT create `WHY.md` with placeholder goals (C8a is warn-only — manufactured rationale is worse than the missing file). Do NOT move files into projects — C9 candidates are human-authored via `/wiki:project new` + `/wiki:project add`. Do NOT migrate output artifacts into inventory records — C16 migration is explicit via `/wiki:inventory migrate-output --apply`. Never auto-delete unknown directories (C12) — warn only. On slug collisions during a C11 placement move, skip and warn. Do NOT rewrite articles.
+IMPORTANT: Only auto-fix issues with clear, unambiguous fixes — missing index entries, broken stats, legacy `_project.md` → `WHY.md` migration (C8c), stale `output/_index.md` when `projects/` exists, legacy frontmatter keys/values (C13), files in the wrong canonical `raw/` or `wiki/` directory (C11), missing empty inventory directories/indexes (C16), missing empty dataset registry directories/indexes (C17), etc. Do NOT auto-fix content quality issues. Do NOT create `WHY.md` with placeholder goals (C8a is warn-only — manufactured rationale is worse than the missing file). Do NOT move files into projects — C9 candidates are human-authored via `/wiki:project new` + `/wiki:project add`. Do NOT migrate output artifacts into inventory or dataset records — C16/C17 migration is explicit via `/wiki:inventory migrate-output --apply` or `/wiki:dataset migrate-output --apply`. Never auto-delete unknown directories (C12) — warn only. On slug collisions during a C11 placement move, skip and warn. Do NOT rewrite articles.
 
 ### Report
 
-Present the lint report in the format specified in `references/linting.md`, including the **Projects**, **Project Candidates**, **Inventory**, and **File Placement & Schema** sections. **Lead every user-visible line with a plain-English description of what happened — never with a check code (C1, C8c, etc.).** Check codes are internal identifiers for developers; humans reading the report need to see what was found and what was fixed, not which rule triggered it.
+Present the lint report in the format specified in `references/linting.md`, including the **Projects**, **Project Candidates**, **Inventory**, **Datasets**, and **File Placement & Schema** sections. **Lead every user-visible line with a plain-English description of what happened — never with a check code (C1, C8c, etc.).** Check codes are internal identifiers for developers; humans reading the report need to see what was found and what was fixed, not which rule triggered it.
 
 When listing a recommended fix priority, describe the action in human terms:
 - Good: `Migrate 3 legacy project manifests (_project.md → WHY.md)`

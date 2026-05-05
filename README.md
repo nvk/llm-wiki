@@ -320,6 +320,8 @@ Check your installed version:
 /wiki:ingest-collection "https://example.com/*" --adapter wayback-cdx --from 20100101 --to 20200101  # Import archived snapshots
 /wiki:inventory add ingest-candidate "Bitcointalk archive" --wiki bitcoin  # Track source queues and next actions
 /wiki:inventory scan-outputs --dry-run          # Find legacy queues/backlogs that could become inventory
+/wiki:dataset add "Bitcointalk Temporal Graph" --location https://figshare.com/articles/dataset/BitcoinTemporalGraph/26305093 --wiki bitcoin  # Index data that stays external
+/wiki:dataset scan-outputs --dry-run            # Find legacy data reports that could become dataset manifests
 /wiki:compile                                     # Compile any unprocessed sources
 /wiki:audit --project gut-brain-playbook          # Truth-seeking audit across outputs + wiki + fresh research
 /wiki:output report --topic gut-brain             # Generate a report
@@ -345,6 +347,10 @@ Check your installed version:
 | `/wiki:inventory add <kind> "title"` | Add an inventory record without ingesting or compiling it |
 | `/wiki:inventory scan-outputs --dry-run` | Find old queue/backlog outputs that look like inventory migration candidates |
 | `/wiki:inventory migrate-output <path> --apply` | Additively create inventory records from a legacy output; never moves or deletes the output |
+| `/wiki:dataset list` | List dataset manifests for large or external data indexed by the wiki |
+| `/wiki:dataset add "title" --location <path-or-url>` | Add a dataset manifest without copying data into the wiki |
+| `/wiki:dataset profile <slug> --dry-run` | Preview lightweight profiling of size, format, headers, or schema observations |
+| `/wiki:dataset migrate-output <path> --apply` | Additively create dataset manifests from a legacy output; never moves or copies the underlying data |
 | `/wiki:compile` | Compile new sources into wiki articles |
 | `/wiki:compile --full` | Recompile everything from scratch |
 | `/wiki:query <question>` | Q&A against the wiki (standard depth) |
@@ -399,6 +405,7 @@ All commands accept `--wiki <name>` to target a specific topic wiki and `--local
     │   ├── .obsidian/                  # Obsidian vault config
     │   ├── inbox/                      # Drop zone for this topic
     │   ├── inventory/                  # Durable tracking records
+    │   ├── datasets/                   # Manifests for large/external data
     │   ├── raw/                        # Immutable sources
     │   ├── wiki/                       # Compiled articles
     │   │   ├── concepts/
@@ -419,12 +426,13 @@ The hub is just a registry — no content directories, no `.obsidian/`. All cont
 1. **Research** a topic — parallel agents search the web, ingest sources, and compile articles in one command
 2. **Ingest** additional sources — URLs, files, text, tweets (via Grok MCP), or bulk via inbox
 3. **Inventory** candidates, entities, corpora, watch lists, and next actions that should persist
-4. **Compile** raw sources into synthesized wiki articles with cross-references and confidence scores
-5. **Query** the wiki — quick (indexes), standard (articles), or deep (everything)
-6. **Lessons learned** — extract knowledge from the current session (errors, fixes, gotchas) into the wiki
-7. **Assess** a repo against the wiki — gap analysis: what aligns, what's missing, what the market offers
-8. **Lint** for consistency — broken links, missing indexes, orphan articles
-9. **Output** artifacts — summaries, reports, slides — filed back into the wiki
+4. **Index datasets** that are too large for markdown — manifests, profiles, samples, and query recipes
+5. **Compile** raw sources into synthesized wiki articles with cross-references and confidence scores
+6. **Query** the wiki — quick (indexes), standard (articles), or deep (everything)
+7. **Lessons learned** — extract knowledge from the current session (errors, fixes, gotchas) into the wiki
+8. **Assess** a repo against the wiki — gap analysis: what aligns, what's missing, what the market offers
+9. **Lint** for consistency — broken links, missing indexes, orphan articles
+10. **Output** artifacts — summaries, reports, slides — filed back into the wiki
 
 ### Key Design
 

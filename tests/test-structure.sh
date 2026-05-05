@@ -23,6 +23,7 @@ echo "--- C1: Structure (every directory has _index.md) ---"
 for dirname in raw raw/articles raw/papers raw/repos raw/notes raw/data \
                wiki wiki/concepts wiki/topics wiki/references wiki/theses \
                inventory inventory/candidates inventory/entities inventory/corpora inventory/views \
+               datasets datasets/bitcointalk-temporal-graph datasets/bitcointalk-temporal-graph/samples datasets/bitcointalk-temporal-graph/profiles datasets/bitcointalk-temporal-graph/queries \
                output; do
   if [ -f "$GOLDEN/$dirname/_index.md" ]; then
     log_pass "_index.md exists in $dirname"
@@ -73,6 +74,18 @@ while IFS= read -r -d '' file; do
   done
 done < <(find "$GOLDEN/inventory" -name "*.md" -not -name "_index.md" -print0)
 
+# Dataset manifests: title, dataset_id, status, storage, locations, formats, schema_status, created, updated, tags, summary
+while IFS= read -r -d '' file; do
+  bn=$(basename "$(dirname "$file")")/$(basename "$file")
+  for field in title dataset_id status storage locations formats schema_status created updated tags summary; do
+    if grep -q "^${field}:" "$file"; then
+      log_pass "$field present in $bn"
+    else
+      log_fail "$field missing in $bn" "C17 violation"
+    fi
+  done
+done < <(find "$GOLDEN/datasets" -name "MANIFEST.md" -print0)
+
 echo ""
 echo "--- C2: Enum validation ---"
 
@@ -117,6 +130,28 @@ while IFS= read -r -d '' file; do
     *) log_fail "invalid priority '$priority_val' in $bn" "C16 violation" ;;
   esac
 done < <(find "$GOLDEN/inventory" -name "*.md" -not -name "_index.md" -print0)
+
+# status/storage/schema_status enums for dataset manifests
+while IFS= read -r -d '' file; do
+  bn=$(basename "$(dirname "$file")")/$(basename "$file")
+  status_val=$(grep "^status:" "$file" | head -1 | sed 's/status: *//')
+  case "$status_val" in
+    proposed|active|external|archived|unavailable) log_pass "valid dataset status '$status_val' in $bn" ;;
+    *) log_fail "invalid dataset status '$status_val' in $bn" "C17 violation" ;;
+  esac
+
+  storage_val=$(grep "^storage:" "$file" | head -1 | sed 's/storage: *//')
+  case "$storage_val" in
+    local|remote|external|hybrid) log_pass "valid storage '$storage_val' in $bn" ;;
+    *) log_fail "invalid storage '$storage_val' in $bn" "C17 violation" ;;
+  esac
+
+  schema_val=$(grep "^schema_status:" "$file" | head -1 | sed 's/schema_status: *//')
+  case "$schema_val" in
+    unknown|inferred|declared|validated) log_pass "valid schema_status '$schema_val' in $bn" ;;
+    *) log_fail "invalid schema_status '$schema_val' in $bn" "C17 violation" ;;
+  esac
+done < <(find "$GOLDEN/datasets" -name "MANIFEST.md" -print0)
 
 # confidence enum
 while IFS= read -r -d '' file; do
@@ -185,6 +220,16 @@ for subdir in candidates entities corpora views; do
     fi
   done < <(find "$dir" -maxdepth 1 -name "*.md" -not -name "_index.md" -print0)
 done
+
+while IFS= read -r -d '' manifest; do
+  slug=$(basename "$(dirname "$manifest")")
+  index="$GOLDEN/datasets/_index.md"
+  if grep -q "$slug/MANIFEST.md" "$index"; then
+    log_pass "$slug/MANIFEST.md listed in datasets/_index.md"
+  else
+    log_fail "$slug/MANIFEST.md NOT listed in datasets/_index.md" "C17 violation"
+  fi
+done < <(find "$GOLDEN/datasets" -name "MANIFEST.md" -print0)
 
 echo ""
 echo "--- C4b: Source provenance ---"
@@ -289,6 +334,16 @@ while IFS= read -r -d '' file; do
     log_fail "misplaced: $bn (kind=$kind_val but in $parent_dir/)" "C16 violation"
   fi
 done < <(find "$GOLDEN/inventory" -name "*.md" -not -name "_index.md" -print0)
+
+while IFS= read -r -d '' manifest; do
+  slug=$(basename "$(dirname "$manifest")")
+  manifest_id=$(grep "^dataset_id:" "$manifest" | head -1 | sed 's/dataset_id: *//')
+  if [ "$slug" = "$manifest_id" ]; then
+    log_pass "placement correct: $slug/MANIFEST.md (dataset_id=$manifest_id)"
+  else
+    log_fail "misplaced: $slug/MANIFEST.md (dataset_id=$manifest_id)" "C17 violation"
+  fi
+done < <(find "$GOLDEN/datasets" -name "MANIFEST.md" -print0)
 
 echo ""
 echo "--- Log format ---"
@@ -398,6 +453,12 @@ if [ -d "$DEFECTS" ]; then
     [ ! -f "$DEFECTS/missing-inventory/inventory/_index.md" ] \
       && log_pass "missing-inventory: C16 defect present" \
       || log_fail "missing-inventory: inventory index still exists" "fixture broken"
+  }
+
+  [ -d "$DEFECTS/missing-datasets" ] && {
+    [ ! -f "$DEFECTS/missing-datasets/datasets/_index.md" ] \
+      && log_pass "missing-datasets: C17 defect present" \
+      || log_fail "missing-datasets: dataset index still exists" "fixture broken"
   }
 else
   echo ""

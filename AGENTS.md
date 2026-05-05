@@ -178,7 +178,9 @@ sources:
 
 Inventory records are durable wiki-adjacent tracking objects. They can point at
 `raw/`, `wiki/`, `output/`, URLs, or external paths, but they do not move or copy
-those artifacts.
+those artifacts. Local `sources:` paths and body links in inventory records
+should resolve; lint checks them as operational provenance, not factual
+evidence.
 
 Inventory is opinionated. Use it when something should persist across sessions
 with status, priority, ownership, or a next action. Actual physical/digital

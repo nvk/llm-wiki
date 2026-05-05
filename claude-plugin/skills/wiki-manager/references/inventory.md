@@ -10,6 +10,10 @@ Inventory records are markdown files with frontmatter. They can cite `raw/`,
 `wiki/`, `datasets/`, `output/`, URLs, or external paths, but they do not move
 or copy those artifacts.
 
+Local `sources:` paths and body links in inventory records should resolve.
+Lint checks them as provenance for tracking state, not as evidence for factual
+claims.
+
 ## Fit Check
 
 Inventory is opinionated. Before creating records or proposing a migration, say

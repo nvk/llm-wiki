@@ -246,27 +246,46 @@ done < <(find "$GOLDEN/datasets" -name "MANIFEST.md" -print0)
 echo ""
 echo "--- C4b: Source provenance ---"
 
-while IFS= read -r -d '' file; do
-  bn=$(basename "$file")
-  in_sources=false
-  while IFS= read -r line; do
-    if echo "$line" | grep -q "^sources:"; then
-      in_sources=true; continue
-    fi
-    if $in_sources; then
-      if echo "$line" | grep -q "^  - "; then
-        ref=$(echo "$line" | sed 's/^  - //' | sed 's/^"//;s/"$//;s/^'\''//;s/'\''$//')
-        if [ -f "$GOLDEN/$ref" ]; then
-          log_pass "source ref exists: $ref (in $bn)"
-        else
-          log_fail "dangling source ref: $ref (in $bn)" "C4b violation"
-        fi
-      else
-        in_sources=false
+check_sources() {
+  local label="$1"
+  shift
+  while IFS= read -r -d '' file; do
+    bn=$(basename "$file")
+    in_sources=false
+    while IFS= read -r line; do
+      if echo "$line" | grep -q "^sources:"; then
+        in_sources=true; continue
       fi
-    fi
-  done < "$file"
-done < <(find "$GOLDEN/wiki" -name "*.md" -not -name "_index.md" -print0)
+      if $in_sources; then
+        if echo "$line" | grep -q "^  - "; then
+          ref=$(echo "$line" | sed 's/^  - //' | sed 's/^"//;s/"$//;s/^'\''//;s/'\''$//')
+          case "$ref" in
+            http://*|https://*) log_pass "$label external source allowed: $ref (in $bn)" ;;
+            /*)
+              if [ -f "$ref" ]; then
+                log_pass "$label source ref exists: $ref (in $bn)"
+              else
+                log_fail "$label dangling source ref: $ref (in $bn)" "C4b violation"
+              fi
+              ;;
+            *)
+              if [ -f "$GOLDEN/$ref" ]; then
+                log_pass "$label source ref exists: $ref (in $bn)"
+              else
+                log_fail "$label dangling source ref: $ref (in $bn)" "C4b violation"
+              fi
+              ;;
+          esac
+        else
+          in_sources=false
+        fi
+      fi
+    done < "$file"
+  done < <(find "$@" -name "*.md" -not -name "_index.md" -print0)
+}
+
+check_sources "wiki" "$GOLDEN/wiki"
+check_sources "inventory" "$GOLDEN/inventory/items" "$GOLDEN/inventory/candidates" "$GOLDEN/inventory/entities" "$GOLDEN/inventory/corpora"
 
 if grep -rl "RETRACTED-SOURCE" "$GOLDEN" >/dev/null 2>&1; then
   log_fail "retracted-source marker found" "C4b violation"
@@ -277,20 +296,23 @@ fi
 echo ""
 echo "--- C4: Link integrity (all body links) ---"
 
-# Extract ALL relative .md links from wiki articles and check they resolve.
-# This covers See Also, Sources, and inline body prose links.
-while IFS= read -r -d '' file; do
-  bn=$(basename "$file")
-  filedir=$(dirname "$file")
-  # Match ](path.md) and ](<path with spaces.md>) anywhere in the file.
-  while IFS= read -r link; do
-    target=$(python3 -c "import os,sys; print(os.path.normpath(sys.argv[1]))" "$filedir/$link")
-    if [ -f "$target" ]; then
-      log_pass "link resolves: $link (in $bn)"
-    else
-      log_fail "broken link: $link (in $bn)" "C4 violation"
-    fi
-  done < <(python3 - "$file" <<'PY'
+# Extract ALL relative .md links from wiki articles and inventory records and
+# check they resolve. This covers See Also, Sources, and inline body prose links.
+check_body_links() {
+  local label="$1"
+  shift
+  while IFS= read -r -d '' file; do
+    bn=$(basename "$file")
+    filedir=$(dirname "$file")
+    # Match ](path.md) and ](<path with spaces.md>) anywhere in the file.
+    while IFS= read -r link; do
+      target=$(python3 -c "import os,sys; print(os.path.normpath(sys.argv[1]))" "$filedir/$link")
+      if [ -f "$target" ]; then
+        log_pass "$label link resolves: $link (in $bn)"
+      else
+        log_fail "$label broken link: $link (in $bn)" "C4 violation"
+      fi
+    done < <(python3 - "$file" <<'PY'
 import re
 import sys
 
@@ -301,7 +323,11 @@ for match in re.finditer(r"\]\((<([^>\n]+\.md)>|([^)\n]+\.md))\)", text):
         print(link)
 PY
 )
-done < <(find "$GOLDEN/wiki" -name "*.md" -not -name "_index.md" -print0)
+  done < <(find "$@" -name "*.md" -not -name "_index.md" -print0)
+}
+
+check_body_links "wiki" "$GOLDEN/wiki"
+check_body_links "inventory" "$GOLDEN/inventory"
 
 echo ""
 echo "--- C11: File placement ---"
@@ -407,12 +433,14 @@ if [ -d "$DEFECTS" ]; then
 
   [ -d "$DEFECTS/broken-inline-body-link" ] && {
     grep -q "nonexistent-inline.md" "$DEFECTS/broken-inline-body-link/wiki/concepts/sample-concept.md" 2>/dev/null \
+      && grep -q "nonexistent-inventory-inline.md" "$DEFECTS/broken-inline-body-link/inventory/items/trx4m-ring-and-pinion.md" 2>/dev/null \
       && log_pass "broken-inline-body-link: C4 defect present" \
       || log_fail "broken-inline-body-link: no broken inline link" "fixture broken"
   }
 
   [ -d "$DEFECTS/dangling-source-ref" ] && {
     grep -q "2026-01-03-deleted.md" "$DEFECTS/dangling-source-ref/wiki/concepts/sample-concept.md" 2>/dev/null \
+      && grep -q "deleted-inventory-source.md" "$DEFECTS/dangling-source-ref/inventory/items/trx4m-ring-and-pinion.md" 2>/dev/null \
       && log_pass "dangling-source-ref: C4b defect present" \
       || log_fail "dangling-source-ref: no dangling ref" "fixture broken"
   }

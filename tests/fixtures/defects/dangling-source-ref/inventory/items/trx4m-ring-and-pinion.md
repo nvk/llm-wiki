@@ -19,7 +19,8 @@ alternatives:
 needed_for: trx4m-build
 next_action: "Decide whether this is the selected drivetrain default."
 sources:
-  - wiki/references/parts-master-checklist.md
+  - wiki/references/sample-reference.md
+  - wiki/references/deleted-inventory-source.md
 tags: [trx4m, parts, drivetrain, item]
 summary: "Sample physical part inventory record used to validate item inventory structure."
 ---
@@ -38,3 +39,7 @@ Proposed as the selected drivetrain default for a TRX-4M build.
 ## Next Action
 
 Decide whether this is the selected drivetrain default.
+
+## Related
+
+- [Sample reference](../../wiki/references/sample-reference.md)

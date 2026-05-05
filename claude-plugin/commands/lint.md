@@ -42,7 +42,10 @@ Walk `raw/`, `wiki/`, `inventory/`, `datasets/`, and the wiki root. Flag files a
 Compare actual directory contents against `_index.md` entries. Verify statistics match. Runs after C11 because placement fixes may have changed which files live where — stale indexes will rebuild on next read per the Derived Index Protocol.
 
 #### 7. C4: Link Integrity (Warning)
-For each wiki article, extract all markdown links. Verify each resolves to an existing file. Check bidirectional "See Also" links.
+For each wiki article and inventory record, extract all markdown links. Verify each local markdown link resolves to an existing file. Check bidirectional "See Also" links for wiki articles.
+
+#### 7b. C4b: Source Provenance (Warning)
+For wiki articles, verify `sources:` frontmatter resolves to existing raw sources using the Source Reference Resolution protocol. For inventory records, verify local `sources:` entries resolve to existing `raw/`, `wiki/`, `output/`, `datasets/`, or `inventory/` paths; external URLs are allowed. Inventory sources are provenance for tracking state, not factual evidence.
 
 #### 8. C5: Tag Hygiene (Warning)
 Collect all tags across all files. Find near-duplicates. Check consistency between files and indexes.

@@ -1,6 +1,6 @@
 ---
-description: "Ask questions against the compiled wiki. Supports quick/standard/deep depth levels, --list for browsing, and --resume to reload context after a session break. Answers from wiki content only, with citations."
-argument-hint: "<question> [--quick] [--deep] [--raw] [--list] [--resume] [--tag <tag>] [--category concepts|topics|references] [--with <wiki>...] [--wiki <name>] [--local]"
+description: "Ask questions against the compiled wiki. Supports quick/standard/deep depth levels, --list for browsing, and --resume/--continue to reload context after a session break. Answers from wiki content only, with citations."
+argument-hint: "<question> [--quick] [--deep] [--raw] [--list] [--resume|--continue] [--tag <tag>] [--category concepts|topics|references] [--with <wiki>...] [--wiki <name>] [--local]"
 allowed-tools: Read, Glob, Grep, Bash(ls:*), Edit
 ---
 
@@ -21,7 +21,7 @@ Answer the question in $ARGUMENTS using ONLY the knowledge in the wiki. Follow t
 - **--deep**: Thorough answer — read all related articles, follow all links, search raw, peek sibling wikis
 - **--raw**: Also search raw sources (implied by --deep)
 - **--list**: Return a ranked list of matching articles instead of a synthesized answer. Useful for browsing what the wiki has on a topic before diving in.
-- **--resume**: Load recent activity context and show a "where you left off" briefing. If a question is also provided, answer it after the briefing using standard depth.
+- **--resume** / **--continue**: Load recent activity context and show a "where you left off" briefing. These are aliases. If a question is also provided, answer it after the briefing using standard depth.
 - **--tag <tag>**: Filter to articles with this tag in frontmatter
 - **--category <cat>**: Search only in concepts, topics, or references
 - **--with <wiki>**: Load a supplementary wiki as additional context when answering. The primary wiki provides the subject; `--with` wikis provide craft/skill knowledge. Multiple `--with` flags allowed.
@@ -123,7 +123,7 @@ If no results found, suggest alternative search terms or `/wiki:ingest` to add s
 
 Skip the synthesized answer, sources used, and knowledge gaps sections. Just return the list.
 
-### Resume Mode (`--resume`)
+### Resume Mode (`--resume` / `--continue`)
 
 Context reload for new sessions. Reads persistent state and outputs a briefing so you can pick up where you left off.
 
@@ -178,7 +178,7 @@ Context reload for new sessions. Reads persistent state and outputs a briefing s
 
 **If no question**: Skip the Sources used / Knowledge gaps sections entirely — just the briefing.
 
-**Log**: Append `## [YYYY-MM-DD] query | --resume briefing`
+**Log**: Append `## [YYYY-MM-DD] query | --resume briefing` even when invoked via `--continue` (canonical log label stays `--resume`).
 
 ### Output Format (all depths, not --list)
 

@@ -369,27 +369,39 @@ Recommended fields:
 | `topic` / `thesis` / `scope` | string | Human-readable target |
 | `current_round` | number | Most recent completed round, when applicable |
 | `summary` | object | Compact state for resume briefings |
+| `agents` | array | Standard/deep/retardmax source-discovery agents with status, source count, raw files, and error |
+| `compile_status` | string | `pending`, `in_progress`, `completed`, or `failed` for the sequential compile/synthesis phase |
 | `artifacts` | array | Written artifact paths and hashes, when available |
 
 ### Lifecycle
 
 | Event | Action |
 |-------|--------|
-| --min-time research starts | Create `.research-session.json`; append `research_started`; write `.session-checkpoint.json` |
-| Round N completes | Update `.research-session.json`; append round event(s); refresh checkpoint |
+| Any research starts | Create `.research-session.json` before launching agents; append `research_started`; write `.session-checkpoint.json` |
+| Agent/path starts | Mark that `agents[]` or `paths[]` entry `in_progress`; refresh checkpoint |
+| Agent/path completes | Mark it `completed`; record source count and raw file paths; append event; refresh checkpoint |
+| Agent/path fails | Mark it `failed` with an error string; keep partial raw files |
+| Compile starts/completes | Update `compile_status`; append `research_compiled` on success |
+| Round N completes (`--min-time`) | Update `.research-session.json`; append round event(s); refresh checkpoint |
 | Research completes normally | Append completion event; refresh checkpoint; delete `.research-session.json` |
 | Session interrupted | `.research-session.json` persists with `status: "in_progress"`; durable files remain |
-| Next invocation detects file | Ask: continue or start fresh? |
+| Next invocation detects file | Ask: continue or start fresh, unless `--resume`/`--continue` was explicit |
 | File > 7 days old | Structural Guardian warns about stale session |
 
 ### Resume Protocol
 
-1. Detect `.research-session.json` or `.thesis-session.json` in wiki root
-2. If found, read it first and extract the last completed round
-3. If no active session exists, read `.session-checkpoint.json` and the tail of `.session-events.jsonl` for the latest durable context
-4. Ask user: "Found interrupted session (Round N, M sources). Continue or start fresh?"
-5. If continue: use round N's gaps/reflection as starting point for round N+1
-6. If fresh: delete only the ephemeral session file, preserve durable provenance
+`--resume` and `--continue` are aliases. The command should also offer resume automatically when it sees an active session file.
+
+1. Detect `.research-session.json` or `.thesis-session.json` in wiki root.
+2. If found, read it first and extract topic/thesis, mode, last completed round, `agents[]`, `paths[]`, and `compile_status`.
+3. If no active session exists, read `.session-checkpoint.json`, the tail of `.session-events.jsonl`, and recent `log.md` entries for the latest durable context.
+4. Ask user: "Found interrupted session (Round N, M sources). Continue or start fresh?" only when the user did not explicitly pass `--resume` or `--continue`.
+5. If continuing source discovery: relaunch only `pending`, `in_progress`, or retryable `failed` agents/paths. Treat `in_progress` as uncertain because the prior process may have died mid-write.
+6. If every agent/path is `completed` but `compile_status` is not `completed`, skip research and run compile/synthesis only.
+7. If compile completed but output/summary is missing, regenerate only the missing artifact.
+8. If fresh: delete only the ephemeral session file, preserve raw files and durable provenance.
+
+Resume must be conservative: never delete partially written raw files, and rely on URL/content dedupe to handle overlap from a re-run agent.
 
 ### Notes
 
@@ -411,7 +423,7 @@ The architectural insight: parallel ingest is safe (each path writes unique raw 
 
 ### Schema Extension
 
-When `mode: "plan"` is set in `.research-session.json`, the following fields are added:
+When `mode: "plan"` is set in `.research-session.json`, the following fields are added. Standard single-path research still uses top-level `agents[]` for the Phase 2 swarm; plan mode adds `paths[]` so the outer path dispatch can resume independently.
 
 | Field | Type | Purpose |
 |-------|------|---------|

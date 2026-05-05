@@ -112,8 +112,8 @@ replacements = [
         "Multiple Codex sessions can safely read and write to the same wiki simultaneously. No locks are needed.",
     ),
     (
-        'warn: "Stale research session found. Clean up with `/wiki:research` or delete manually."',
-        'warn: "Stale research session found. Resume or rerun the research workflow, or delete it manually."',
+        'warn: "Stale research session found. Resume with `/wiki:research --resume`, start fresh, or delete manually."',
+        'warn: "Stale research session found. Resume or rerun the research workflow, start fresh, or delete it manually."',
     ),
 ]
 

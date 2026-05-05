@@ -1,5 +1,5 @@
 ---
-description: "LLM wiki knowledge base — understands natural language. Say what you want (add a URL, import a collection, ask a question, research a topic, audit an output, resume work) and it routes to the right subcommand. Also handles init, status, and config."
+description: "LLM wiki knowledge base — understands natural language. Say what you want (add a URL, import a collection, track inventory, ask a question, research a topic, audit an output, resume work) and it routes to the right subcommand. Also handles init, status, and config."
 argument-hint: "[<natural language request>] [init <topic-name> [--local]] [config hub-path [<path>]] [--wiki <name>]"
 allowed-tools: Read, Write, Edit, Glob, Bash(ls:*), Bash(wc:*), Bash(mkdir:*), Bash(date:*), Bash(mv:*)
 ---
@@ -32,12 +32,13 @@ Initialize a new wiki. Parse arguments:
    - `HUB/_index.md` (hub index with empty topic wiki table)
    - `HUB/log.md` (global activity log)
    - `HUB/topics/` directory
-   - NO `raw/`, `wiki/`, `output/`, `inbox/`, `config.md`, or `.obsidian/` at the hub level.
+   - NO `raw/`, `wiki/`, `inventory/`, `output/`, `inbox/`, `config.md`, or `.obsidian/` at the hub level.
 
 2. Create the topic wiki directory structure:
    - `inbox/`, `inbox/.processed/`
+   - `inventory/`, `inventory/candidates/`, `inventory/entities/`, `inventory/corpora/`, `inventory/views/`
    - `raw/`, `raw/articles/`, `raw/papers/`, `raw/repos/`, `raw/notes/`, `raw/data/`
-   - `wiki/`, `wiki/concepts/`, `wiki/topics/`, `wiki/references/`
+   - `wiki/`, `wiki/concepts/`, `wiki/topics/`, `wiki/references/`, `wiki/theses/`
    - `output/`
    - For local wikis (`--local`): append `.wiki/` to the project's `.gitignore`.
 
@@ -91,6 +92,7 @@ Initialize a new wiki. Parse arguments:
    - `/wiki:research "topic" --sources 10` — auto-research to bootstrap
    - `/wiki:ingest <url|file|text>` — add source material
    - `/wiki:ingest-collection <repo|wiki-dump>` — bulk import a bounded upstream collection
+   - `/wiki:inventory add ingest-candidate "title"` — track a candidate, corpus, entity, or next action
    - `/wiki:compile` — compile sources into wiki articles
    - `/wiki:query <question>` — ask questions
 
@@ -120,10 +122,11 @@ The user typed something that isn't a known keyword. Detect their intent and rou
 | 11 | **Plan** | "plan for", "implementation plan", "architecture for" | `Skill: wiki:plan` |
 | 11b | **Lessons Learned** | "learn this", "learn that", "lesson learned", "lessons learned", "absorb this", "capture what we learned", "what did we learn", "session takeaways", "ll" | `Skill: wiki:ll` with the topic hint |
 | 12 | **Retract** | "remove source", "retract", "delete source", "pull out" | `Skill: wiki:retract` |
-| 13 | **Project (new)** | "new project", "start a project", "create project" (+ slug and goal) | `Skill: wiki:project` with `new <slug> "goal"` |
-| 14 | **Project (list)** | "list projects", "what projects", "show projects", "my projects" | `Skill: wiki:project` with `list` |
-| 15 | **Project (show)** | "show project X", "what's in project X", "open project X" | `Skill: wiki:project` with `show <slug>` |
-| 16 | **Project (archive)** | "archive project", "I'm done with project", "close project" | `Skill: wiki:project` with `archive <slug>` |
+| 13 | **Inventory** | "inventory", "ingest queue", "source queue", "candidate list", "watch list", "backlog", "track this", "keep inventory", "migrate output to inventory" | `Skill: wiki:inventory` |
+| 14 | **Project (new)** | "new project", "start a project", "create project" (+ slug and goal) | `Skill: wiki:project` with `new <slug> "goal"` |
+| 15 | **Project (list)** | "list projects", "what projects", "show projects", "my projects" | `Skill: wiki:project` with `list` |
+| 16 | **Project (show)** | "show project X", "what's in project X", "open project X" | `Skill: wiki:project` with `show <slug>` |
+| 17 | **Project (archive)** | "archive project", "I'm done with project", "close project" | `Skill: wiki:project` with `archive <slug>` |
 
 **Confidence routing:**
 
@@ -167,7 +170,7 @@ Show wiki status. Before reading any `_index.md`, stale-check it: count `.md` fi
    - Read its `_index.md` for statistics and recent changes
    - Read `config.md` for title and description
    - Count actual files for accuracy
-   - Show: title, location, source/article/output counts, inbox pending, last compiled/lint dates, last 5 recent changes
+   - Show: title, location, source/article/inventory/output counts, inbox pending, last compiled/lint dates, last 5 recent changes
 
 3. List available subcommands
 

@@ -21,7 +21,9 @@ echo ""
 echo "--- C1: Structure (every directory has _index.md) ---"
 
 for dirname in raw raw/articles raw/papers raw/repos raw/notes raw/data \
-               wiki wiki/concepts wiki/topics wiki/references wiki/theses output; do
+               wiki wiki/concepts wiki/topics wiki/references wiki/theses \
+               inventory inventory/candidates inventory/entities inventory/corpora inventory/views \
+               output; do
   if [ -f "$GOLDEN/$dirname/_index.md" ]; then
     log_pass "_index.md exists in $dirname"
   else
@@ -59,6 +61,18 @@ while IFS= read -r -d '' file; do
   done
 done < <(find "$GOLDEN/wiki" -name "*.md" -not -name "_index.md" -print0)
 
+# Inventory records: title, kind, status, priority, created, updated, tags, summary
+while IFS= read -r -d '' file; do
+  bn=$(basename "$file")
+  for field in title kind status priority created updated tags summary; do
+    if grep -q "^${field}:" "$file"; then
+      log_pass "$field present in $bn"
+    else
+      log_fail "$field missing in $bn" "C16 violation"
+    fi
+  done
+done < <(find "$GOLDEN/inventory" -name "*.md" -not -name "_index.md" -print0)
+
 echo ""
 echo "--- C2: Enum validation ---"
 
@@ -81,6 +95,28 @@ while IFS= read -r -d '' file; do
     *) log_fail "invalid category '$cat_val' in $bn" "C2 violation" ;;
   esac
 done < <(find "$GOLDEN/wiki" -name "*.md" -not -name "_index.md" -print0)
+
+# kind/status/priority enums for inventory records
+while IFS= read -r -d '' file; do
+  bn=$(basename "$file")
+  kind_val=$(grep "^kind:" "$file" | head -1 | sed 's/kind: *//')
+  case "$kind_val" in
+    ingest-candidate|entity|corpus|question|task|artifact|watch) log_pass "valid kind '$kind_val' in $bn" ;;
+    *) log_fail "invalid kind '$kind_val' in $bn" "C16 violation" ;;
+  esac
+
+  status_val=$(grep "^status:" "$file" | head -1 | sed 's/status: *//')
+  case "$status_val" in
+    proposed|active|blocked|ingested|superseded|archived) log_pass "valid status '$status_val' in $bn" ;;
+    *) log_fail "invalid status '$status_val' in $bn" "C16 violation" ;;
+  esac
+
+  priority_val=$(grep "^priority:" "$file" | head -1 | sed 's/priority: *//')
+  case "$priority_val" in
+    p0|p1|p2|p3|p4) log_pass "valid priority '$priority_val' in $bn" ;;
+    *) log_fail "invalid priority '$priority_val' in $bn" "C16 violation" ;;
+  esac
+done < <(find "$GOLDEN/inventory" -name "*.md" -not -name "_index.md" -print0)
 
 # confidence enum
 while IFS= read -r -d '' file; do
@@ -132,6 +168,20 @@ for subdir in concepts topics references theses; do
       log_pass "$bn listed in wiki/$subdir/_index.md"
     else
       log_fail "$bn NOT listed in wiki/$subdir/_index.md" "C3 violation"
+    fi
+  done < <(find "$dir" -maxdepth 1 -name "*.md" -not -name "_index.md" -print0)
+done
+
+for subdir in candidates entities corpora views; do
+  dir="$GOLDEN/inventory/$subdir"
+  index="$dir/_index.md"
+  [ -f "$index" ] || continue
+  while IFS= read -r -d '' file; do
+    bn=$(basename "$file")
+    if grep -q "$bn" "$index"; then
+      log_pass "$bn listed in inventory/$subdir/_index.md"
+    else
+      log_fail "$bn NOT listed in inventory/$subdir/_index.md" "C16 violation"
     fi
   done < <(find "$dir" -maxdepth 1 -name "*.md" -not -name "_index.md" -print0)
 done
@@ -221,6 +271,24 @@ while IFS= read -r -d '' file; do
     log_fail "misplaced: $bn (category=$cat_val but in $parent_dir/)" "C11 violation"
   fi
 done < <(find "$GOLDEN/wiki" -name "*.md" -not -name "_index.md" -print0)
+
+while IFS= read -r -d '' file; do
+  bn=$(basename "$file")
+  parent_dir=$(basename "$(dirname "$file")")
+  [ "$parent_dir" = "views" ] && continue
+  kind_val=$(grep "^kind:" "$file" | head -1 | sed 's/kind: *//')
+  case "$kind_val" in
+    entity) expected="entities" ;;
+    corpus) expected="corpora" ;;
+    ingest-candidate|question|task|artifact|watch) expected="candidates" ;;
+    *) expected="" ;;
+  esac
+  if [ -n "$expected" ] && [ "$expected" = "$parent_dir" ]; then
+    log_pass "placement correct: $bn (kind=$kind_val)"
+  else
+    log_fail "misplaced: $bn (kind=$kind_val but in $parent_dir/)" "C16 violation"
+  fi
+done < <(find "$GOLDEN/inventory" -name "*.md" -not -name "_index.md" -print0)
 
 echo ""
 echo "--- Log format ---"
@@ -324,6 +392,12 @@ if [ -d "$DEFECTS" ]; then
     ! grep -q "^volatility:" "$DEFECTS/missing-volatility/wiki/concepts/sample-concept.md" 2>/dev/null \
       && log_pass "missing-volatility: C15 defect present" \
       || log_fail "missing-volatility: volatility field still present" "fixture broken"
+  }
+
+  [ -d "$DEFECTS/missing-inventory" ] && {
+    [ ! -f "$DEFECTS/missing-inventory/inventory/_index.md" ] \
+      && log_pass "missing-inventory: C16 defect present" \
+      || log_fail "missing-inventory: inventory index still exists" "fixture broken"
   }
 else
   echo ""

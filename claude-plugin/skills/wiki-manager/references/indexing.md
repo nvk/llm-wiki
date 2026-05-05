@@ -37,7 +37,7 @@ When an index is stale:
 5. Write the new `_index.md`
 6. Continue with the original operation
 
-### Write Operations (ingest, compile, research)
+### Write Operations (ingest, compile, research, inventory)
 
 - Write the article/source file with correct frontmatter — this is the source of truth
 - Index updates are **best-effort** — update if convenient, but if skipped or if a concurrent session overwrites, no data is lost
@@ -89,6 +89,7 @@ But these updates are optional. If skipped (e.g., due to a crash or concurrent w
 The root `_index.md` statistics are derived from actual file counts, not manual tracking:
 - Sources: count .md files in `raw/` subdirectories (excluding `_index.md`)
 - Articles: count .md files in `wiki/` subdirectories (excluding `_index.md`)
+- Inventory records: count .md files in `inventory/` subdirectories (excluding `_index.md`)
 - Outputs: count .md files in `output/` (excluding `_index.md`)
 
 ## Cross-Wiki Index Peek

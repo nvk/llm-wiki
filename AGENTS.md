@@ -51,6 +51,12 @@ All content lives here. One topic per wiki. Isolated indexes, focused queries.
 ├── log.md                         # Activity log for this topic
 ├── inbox/                         # Drop zone — user dumps files here
 │   └── .processed/
+├── inventory/                     # Durable tracking records
+│   ├── _index.md
+│   ├── candidates/*.md            # Ingest candidates, questions, tasks, watch items
+│   ├── entities/*.md              # People, orgs, projects, standards bodies
+│   ├── corpora/*.md               # Source collections, archives, datasets, forums
+│   └── views/*.md                 # Generated inventory views
 ├── raw/                           # Immutable source material
 │   ├── _index.md
 │   ├── articles/*.md
@@ -145,6 +151,27 @@ summary: "2-3 sentence summary"
 
 Body includes abstract, sections, `## See Also` (dual-links, bidirectional), `## Sources` (links to raw/).
 
+### Inventory Record (inventory/)
+
+```yaml
+---
+title: "Thing To Track"
+kind: ingest-candidate|entity|corpus|question|task|artifact|watch
+status: proposed|active|blocked|ingested|superseded|archived
+priority: p0|p1|p2|p3|p4
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+tags: [tag1, tag2]
+summary: "Why this record exists"
+sources:
+  - output/original-output.md
+---
+```
+
+Inventory records are durable wiki-adjacent tracking objects. They can point at
+`raw/`, `wiki/`, `output/`, URLs, or external paths, but they do not move or copy
+those artifacts.
+
 ### Source Reference Resolution
 
 Treat `sources:` entries as exact paths first, not whitespace-delimited slugs.
@@ -179,7 +206,7 @@ spaces in markdown, use angle-bracket destinations:
 ## [YYYY-MM-DD] operation | Description
 ```
 
-Operations: `init`, `ingest`, `ingest-collection`, `compile`, `query`, `lint`, `research`, `thesis`, `output`, `assess`, `refresh`, `librarian`, `audit`, `plan`, `project`, `ll`
+Operations: `init`, `ingest`, `ingest-collection`, `compile`, `query`, `lint`, `research`, `thesis`, `output`, `assess`, `refresh`, `librarian`, `audit`, `plan`, `project`, `inventory`, `ll`
 
 ## Operations
 
@@ -341,18 +368,38 @@ Remove a regretted source and clean up its downstream effects. Requires `--reaso
 
 Freshness check for wiki articles. Re-fetches source URLs, detects changes (cosmetic, additive, contradictory), and presents a human-gated assessment. Three tiers: source check → change assessment → action decision (skip/update/flag/retract). `--due` flag shows all articles past their volatility threshold. Never auto-recompiles — human confirms every change.
 
+### Inventory
+
+Track durable things the wiki should remember but that are not raw sources,
+compiled articles, or generated outputs: ingest candidates, source queues,
+entities, corpora, open questions, tasks, artifacts, and watch items.
+
+Subcommands:
+- **list**: Show records, optionally filtered by kind/status/priority
+- **add <kind> "title"**: Create a record under the canonical inventory subdir
+- **show <slug-or-path>**: Read one record
+- **update <path>**: Edit one record
+- **scan-outputs**: Find legacy output artifacts that look like queues/backlogs
+- **migrate-output <path>**: Dry-run by default; `--apply` additively creates
+  inventory records and never moves or deletes the source output
+
+Migration path: `lint --fix` may create missing empty inventory directories and
+indexes, but it must never convert output artifacts. Output-to-inventory
+migration is explicit, dry-run-first, and additive.
+
 ### Lint
 
-Health checks with auto-fix capability. Lint **is** the migration path — there is no separate `/wiki:migrate` command. A file in the wrong place from an old wiki layout and a file in the wrong place from user error are treated as the same defect. Two layers:
+Health checks with auto-fix capability. Lint **is** the migration path — there is no separate `/wiki:migrate` command. A file in the wrong place from an old wiki layout and a file in the wrong place from user error are treated as the same defect. Three layers:
 
 - **Mechanical (C11/C12/C13)** — `raw/` + `wiki/` file placement and frontmatter schema. Fully auto-fixable.
 - **Project-level (C8/C9)** — `output/projects/` structure, `WHY.md` presence, staleness detection, and grouping candidates. Migration of legacy `_project.md` manifests (from pre-v0.2 wikis) is auto-fixed (C8c); everything else is surfaced as suggestions or ready-to-paste commands.
+- **Inventory-level (C16)** — `inventory/` structure, record schema, and output-to-inventory migration candidates. Missing empty structure is auto-creatable; content migration is human-gated.
 
-**Checks**: structure integrity, frontmatter validity (plus legacy key/value aliases C13), canonical placement of raw/wiki files (C11), unknown-file quarantine for raw/wiki/root (C12), index consistency, link integrity, source provenance (dangling refs, unresolved retraction markers), tag hygiene, coverage, project `WHY.md` presence (C8a), project staleness via source chain (C8b), legacy `_project.md` migration to `WHY.md` (C8c), project candidates (C9), deep fact-checking (optional).
+**Checks**: structure integrity, frontmatter validity (plus legacy key/value aliases C13), canonical placement of raw/wiki files (C11), unknown-file quarantine for raw/wiki/inventory/root (C12), index consistency, link integrity, source provenance (dangling refs, unresolved retraction markers), tag hygiene, coverage, project `WHY.md` presence (C8a), project staleness via source chain (C8b), legacy `_project.md` migration to `WHY.md` (C8c), project candidates (C9), inventory migration candidates (C16), deep fact-checking (optional).
 
-**Auto-fix** (`--fix`): rewrite legacy frontmatter keys/values to canonical (C13), move misplaced raw/wiki files to their canonical directory (C11), quarantine unknown files to `inbox/.unknown/` (C12), migrate legacy `_project.md` to `WHY.md` (C8c), missing indexes, orphan files, dead index entries, statistics mismatch, missing bidirectional links, empty frontmatter fields, dangling source references, regenerate projects-aware `output/_index.md`. Never auto-delete unknown directories. Never auto-create `WHY.md` with placeholder goals (C8a is warn-only — manufactured rationale is worse than missing). Never auto-move files into projects (C9 is human-authored via `/wiki:project`). On slug collisions during a placement move, skip and warn.
+**Auto-fix** (`--fix`): rewrite legacy frontmatter keys/values to canonical (C13), move misplaced raw/wiki files to their canonical directory (C11), quarantine unknown files to `inbox/.unknown/` (C12), migrate legacy `_project.md` to `WHY.md` (C8c), create missing empty inventory directories/indexes (C16), missing indexes, orphan files, dead index entries, statistics mismatch, missing bidirectional links, empty frontmatter fields, dangling source references, regenerate projects-aware `output/_index.md`. Never auto-delete unknown directories. Never auto-create `WHY.md` with placeholder goals (C8a is warn-only — manufactured rationale is worse than missing). Never auto-move files into projects (C9 is human-authored via `/wiki:project`). Never auto-migrate output artifacts into inventory records (C16 is explicit via `/wiki:inventory migrate-output --apply`). On slug collisions during a placement move, skip and warn.
 
-**Schema evolution**: when canonical paths or frontmatter fields for `raw/` or `wiki/` change, update the rules in `skills/wiki-manager/references/linting.md` (C11 placement map, C12 allowlist, C13 alias table). When the project model changes, update C8/C9 and `projects.md`. Never write version-specific migration code. Lint rules are the schema.
+**Schema evolution**: when canonical paths or frontmatter fields for `raw/`, `wiki/`, or `inventory/` change, update the rules in `skills/wiki-manager/references/linting.md` (C11/C16 placement maps, C12 allowlist, C13 alias table). When the project model changes, update C8/C9 and `projects.md`. Never write version-specific migration code. Lint rules are the schema.
 
 ### Search
 
@@ -454,9 +501,9 @@ Flags: `--dry-run` (preview without writing), `--rules` (also propose CLAUDE.md/
 Auto-run lightweight checks after write operations:
 
 1. Hub should only have wikis.json, _index.md, log.md, topics/. Delete anything else.
-2. Index freshness: file counts match index rows. Auto-fix mismatches.
+2. Index freshness: file counts match index rows, including inventory indexes. Auto-fix mismatches.
 3. Orphan detection: files not in any index → add them.
-4. Missing directories → create with empty _index.md.
+4. Missing directories, including inventory dirs → create with empty _index.md.
 5. wikis.json sync: all topic dirs registered, no ghost entries.
 
 Silent when clean. Auto-fix trivial issues. Warn on structural problems. Never block the user.
@@ -465,6 +512,7 @@ Silent when clean. Auto-fix trivial issues. Warn on structural problems. Never b
 
 - Raw sources: `YYYY-MM-DD-descriptive-slug.md`
 - Wiki articles: `descriptive-slug.md` (no date — living documents)
+- Inventory records: `descriptive-slug.md` (no date — durable tracking state)
 - Output artifacts: `{type}-{topic-slug}-{YYYY-MM-DD}.md`
 - All lowercase, hyphens, no special chars, max 60 chars
 

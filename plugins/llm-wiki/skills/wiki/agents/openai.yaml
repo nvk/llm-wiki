@@ -1,6 +1,6 @@
 interface:
   display_name: "Wiki Manager"
-  short_description: "Initialize, ingest collections, compile, audit, query, research, and lint llm-wiki knowledge bases."
+  short_description: "Initialize, ingest collections, track inventory, compile, audit, query, research, and lint llm-wiki knowledge bases."
   brand_color: "#2F855A"
   default_prompt: "Research a topic and compile it into a structured wiki."
 

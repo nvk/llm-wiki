@@ -2,12 +2,13 @@
 name: wiki
 description: >
   LLM-compiled knowledge base manager for Codex. Use it to initialize, ingest,
-  import source collections, compile, query, lint, audit, research, plan, and generate outputs from topic-scoped wikis.
+  import source collections, track inventory, compile, query, lint, audit, research, plan, and generate outputs from topic-scoped wikis.
   Activates when the user mentions wiki workflows, knowledge-base management,
-  ingestion, collection ingestion, import wiki, compilation, querying, linting, audit, research, librarian,
-  scan quality, article quality, content review, output drift, provenance,
-  implementation plan, or uses /wiki-style shorthand in a repo with .wiki/,
-  ~/wiki/, or a configured hub path.
+  ingestion, collection ingestion, import wiki, inventory, source queue,
+  candidate list, watch list, backlog, compilation, querying, linting, audit,
+  research, librarian, scan quality, article quality, content review, output
+  drift, provenance, implementation plan, or uses /wiki-style shorthand in a
+  repo with .wiki/, ~/wiki/, or a configured hub path.
 ---
 
 # LLM Wiki Manager
@@ -94,6 +95,7 @@ Choose the smallest workflow that matches the request, then load only the
 reference material you need for that workflow:
 
 - `ingest` and `ingest-collection` → `references/ingestion.md`
+- `inventory` → `references/inventory.md`
 - `compile` → `references/compilation.md` and `references/indexing.md`
 - `query` → read the relevant `_index.md` files first, then only the articles
   needed to answer

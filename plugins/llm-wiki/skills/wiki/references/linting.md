@@ -10,14 +10,17 @@ There are two layers where this principle applies, each with its own rules:
 
 - **Mechanical layer (C11/C12/C13)** — raw-source and wiki-article placement and frontmatter schema. Fully auto-fixable because the canonical location and field shape are pure functions of frontmatter. No judgment required.
 - **Editorial layer (C8/C9)** — project grouping inside `output/projects/`. **Never auto-fixed** because "these files belong together" requires human sense-making. C9 surfaces candidates and emits ready-to-paste `/wiki:project new` + `/wiki:project add` blocks for the user to run.
+- **Inventory layer (C16)** — durable tracking records under `inventory/`.
+  Missing inventory structure is auto-creatable, but migrating old queue-like
+  outputs into inventory records is human-gated.
 
 Concretely, when evolving the schema:
 
-- **Renamed a `raw/` or `wiki/` directory?** Update the placement map in C11 and the allowlist in C12. Every existing wiki self-heals on the next lint.
+- **Renamed a `raw/`, `wiki/`, or `inventory/` directory?** Update the placement map in C11/C16 and the allowlist in C12. Every existing wiki self-heals on the next lint.
 - **Renamed a frontmatter field?** Append an entry to C13's alias table (old → new). Never remove old aliases.
 - **Changed an enum value?** Add a value alias in C13. Never remove old values.
 - **Added a required field?** Add it to C2 and give it an inference rule (derive from body/filename) or a sane default.
-- **New directory under `raw/` or `wiki/`?** Add it to C12's allowlist and C11's placement map.
+- **New directory under `raw/`, `wiki/`, or `inventory/`?** Add it to C12's allowlist and C11/C16's placement map.
 - **New project-level structure or manifest rule?** Update C8 (and projects.md). Candidate heuristics go in C9.
 
 There is no `/wiki:migrate` command and there should never be one. Lint rules **are** the schema.
@@ -40,7 +43,7 @@ There is no `/wiki:migrate` command and there should never be one. Lint rules **
 
 - [ ] Master `_index.md` exists
 - [ ] `config.md` exists
-- [ ] Every subdirectory under `raw/` and `wiki/` has `_index.md`
+- [ ] Every subdirectory under `raw/`, `wiki/`, and `inventory/` has `_index.md`
 - [ ] `output/` has `_index.md`
 - [ ] Every `.md` file (excluding `_index.md` and `config.md`) has valid YAML frontmatter delimited by `---`
 
@@ -189,23 +192,25 @@ A `raw/` or `wiki/` file's correct path is a pure function of its frontmatter. M
 
 ### C12: Unknown File Quarantine (Warning)
 
-Any file that is not in the canonical allowlist for its location is either a user mistake, a stale artifact from an older wiki version, or a legitimate new kind of thing that the schema hasn't caught up to. Lint surfaces it either way. Like C11, this is scoped to `raw/`, `wiki/`, and the wiki root — not `output/projects/` (C8 handles that).
+Any file that is not in the canonical allowlist for its location is either a user mistake, a stale artifact from an older wiki version, or a legitimate new kind of thing that the schema hasn't caught up to. Lint surfaces it either way. Like C11, this is scoped to `raw/`, `wiki/`, `inventory/`, and the wiki root — not `output/projects/` (C8 handles that).
 
 **Allowlists** (per location):
 
 | Location | Allowed items |
 |----------|--------------|
 | HUB | `wikis.json`, `_index.md`, `log.md`, `topics/` |
-| Topic wiki root | `_index.md`, `config.md`, `log.md`, `raw/`, `wiki/`, `output/`, `inbox/`, `.obsidian/`, `.librarian/`, `.audit/`, `.research-session.json`, `.thesis-session.json`, `.session-events.jsonl`, `.session-checkpoint.json` |
+| Topic wiki root | `_index.md`, `config.md`, `log.md`, `raw/`, `wiki/`, `inventory/`, `output/`, `inbox/`, `.obsidian/`, `.librarian/`, `.audit/`, `.research-session.json`, `.thesis-session.json`, `.session-events.jsonl`, `.session-checkpoint.json` |
 | `raw/` | `_index.md`, `articles/`, `papers/`, `repos/`, `notes/`, `data/` |
 | `wiki/` | `_index.md`, `concepts/`, `topics/`, `references/`, `theses/` |
+| `inventory/` | `_index.md`, `candidates/`, `entities/`, `corpora/`, `views/` |
 | `raw/<type>/` | `_index.md` + `*.md` files with valid frontmatter |
 | `wiki/<category>/` | `_index.md` + `*.md` files with valid frontmatter |
+| `inventory/<category>/` | `_index.md` + `*.md` files with valid inventory frontmatter |
 | `inbox/` | `.processed/`, `.unknown/`, user-dropped files |
 
 **Checks**:
 
-- [ ] Walk `raw/`, `wiki/`, and the wiki root. For each entry, check against the allowlist for that location.
+- [ ] Walk `raw/`, `wiki/`, `inventory/`, and the wiki root. For each entry, check against the allowlist for that location.
 - [ ] Flag unknown files and directories.
 - [ ] Skip `output/` — C8 and C9 own that subtree.
 
@@ -280,6 +285,34 @@ Flags wiki articles that lack the `volatility` field. New articles should always
 
 **Auto-fix**: Add `volatility: warm` and `verified: <updated date from frontmatter>` — safe defaults that put the article into the standard monitoring cadence.
 
+### C16: Inventory Structure and Migration Candidates (Suggestion)
+
+Validates the optional-but-first-class `inventory/` layer. Older wikis may lack
+this directory; that is a migration opportunity, not corruption.
+
+- [ ] `inventory/`, `inventory/candidates/`, `inventory/entities/`,
+  `inventory/corpora/`, and `inventory/views/` exist with `_index.md`
+- [ ] Inventory records have valid frontmatter when present:
+  `title`, `kind`, `status`, `priority`, `created`, `updated`, `tags`,
+  `summary`
+- [ ] `kind` is one of: `ingest-candidate`, `entity`, `corpus`, `question`,
+  `task`, `artifact`, `watch`
+- [ ] `status` is one of: `proposed`, `active`, `blocked`, `ingested`,
+  `superseded`, `archived`
+- [ ] `priority` is one of: `p0`, `p1`, `p2`, `p3`, `p4`
+- [ ] Loose output artifacts that look like durable tracking records are
+  reported as inventory migration candidates. Heuristics: filename or title
+  contains `queue`, `backlog`, `inventory`, `candidate`, `watch`, `sources`,
+  `corpus`, or `dataset`; body has repeated URL/source/status/priority/next
+  action tables.
+
+**Auto-fix**:
+
+- With `--fix`, create only missing inventory directories and empty indexes.
+- Never auto-convert output artifacts into inventory records. Report suggested
+  commands such as:
+  `/wiki:inventory migrate-output output/ingest-queue-2026-05-03.md --kind ingest-candidate --dry-run`
+
 ## Auto-Fix Rules (when --fix is set)
 
 | Issue | Auto-Fix Action |
@@ -308,6 +341,8 @@ Flags wiki articles that lack the `volatility` field. New articles should always
 | **C13** Legacy enum value | Rewrite value to canonical per alias table |
 | **C14** Article below freshness score threshold | **Warn/Info only** — composite score below `freshness_threshold` (default 70). Report score breakdown and suggest `/wiki:refresh`. |
 | **C15** Missing volatility field | Add `volatility: warm` and `verified: <updated>` — safe defaults |
+| **C16** Missing inventory directories/indexes | Create empty `inventory/`, `inventory/candidates/`, `inventory/entities/`, `inventory/corpora/`, and `inventory/views/` indexes |
+| **C16** Output looks like inventory | Warn only — suggest `/wiki:inventory migrate-output <path> --dry-run`; never auto-migrate |
 
 ## Report Format
 
@@ -344,6 +379,11 @@ Flags wiki articles that lack the `volatility` field. New articles should always
 
 ### Project Candidates
 - [grouped suggestions, formatted as the candidate report block above]
+
+### Inventory
+- Inventory records: [count by kind/status]
+- Missing inventory structure created: [yes/no]
+- Output artifacts that look like inventory: [list with suggested migrate-output commands]
 
 ### File Placement & Schema
 - Misplaced files moved to canonical location: [count, list of moves as `old → new`]

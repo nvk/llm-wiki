@@ -35,6 +35,20 @@ HUB/topics/<name>/
 ├── log.md                         # Topic-level activity log
 ├── inbox/                         # Drop zone for this topic
 │   └── .processed/
+├── inventory/                     # Durable tracking records (see inventory.md)
+│   ├── _index.md
+│   ├── candidates/                # Ingest candidates, tasks, questions, watch items
+│   │   ├── _index.md
+│   │   └── *.md
+│   ├── entities/                  # People, orgs, projects, venues, standards bodies
+│   │   ├── _index.md
+│   │   └── *.md
+│   ├── corpora/                   # Source collections, archives, datasets, forums
+│   │   ├── _index.md
+│   │   └── *.md
+│   └── views/                     # Generated inventory views
+│       ├── _index.md
+│       └── *.md
 ├── raw/                           # Immutable source material
 │   ├── _index.md
 │   ├── articles/
@@ -81,7 +95,9 @@ HUB/topics/<name>/
     └── *.md                       # Loose outputs (backward compatible)
 ```
 
-See [projects.md](projects.md) for the full projects architecture (lifecycle, multi-membership, explicit `--project <slug>` scoping).
+See [inventory.md](inventory.md) for inventory records and [projects.md](projects.md)
+for the full projects architecture (lifecycle, multi-membership, explicit
+`--project <slug>` scoping).
 
 ## Local Wiki (--local flag)
 
@@ -146,6 +162,7 @@ Additionally includes:
 
 - Sources: N raw documents
 - Articles: N compiled wiki articles
+- Inventory records: N tracked items
 - Outputs: N generated artifacts
 - Last compiled: YYYY-MM-DD
 - Last lint: YYYY-MM-DD
@@ -153,6 +170,7 @@ Additionally includes:
 ## Quick Navigation
 
 - [All Sources](raw/_index.md)
+- [Inventory](inventory/_index.md)
 - [Concepts](wiki/concepts/_index.md)
 - [Topics](wiki/topics/_index.md)
 - [References](wiki/references/_index.md)
@@ -179,7 +197,7 @@ Append-only chronological activity log. Every wiki operation appends an entry. N
 
 Each entry: `## [YYYY-MM-DD] operation | Description`
 
-Operations: `init`, `ingest`, `ingest-collection`, `compile`, `query`, `lint`, `research`, `output`, `refresh`, `librarian`, `audit`, `plan`, `project`, `ll`, `assess`
+Operations: `init`, `ingest`, `ingest-collection`, `compile`, `query`, `lint`, `research`, `output`, `refresh`, `librarian`, `audit`, `plan`, `project`, `inventory`, `ll`, `assess`
 
 Useful for: `grep "^## \[" log.md | tail -10` to see recent activity.
 
@@ -391,6 +409,7 @@ generated: YYYY-MM-DD
 
 - **Raw sources**: `YYYY-MM-DD-descriptive-slug.md` (date prefix for chronological order)
 - **Wiki articles**: `descriptive-slug.md` (no date — living documents)
+- **Inventory records**: `descriptive-slug.md` (no date — durable tracking state)
 - **Output artifacts**: `{type}-{topic-slug}-{YYYY-MM-DD}.md`
 - All filenames: lowercase, hyphens for spaces, no special characters, max 60 chars
 

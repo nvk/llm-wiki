@@ -4,9 +4,11 @@ description: >
   LLM-compiled knowledge base manager. Activates when user works with wiki
   directories, mentions knowledge base management, asks knowledge questions
   in a project with a wiki, wants to ingest/import/compile/query/lint/audit knowledge,
+  track inventory, manage source queues, candidates, corpora, entities, or watch lists,
   or uses /wiki commands. Also activates when user says "wiki", "knowledge base",
   "ingest", "import wiki", "ingest collection", "compile wiki", "add to wiki", "search wiki", "audit", "librarian",
-  "scan quality", "article quality", "content review", "output drift",
+  "scan quality", "article quality", "content review", "output drift", "inventory",
+  "ingest queue", "source queue", "candidate list", "watch list", "backlog",
   "provenance", "trust this", or asks a factual question in a directory
   containing .wiki/ or when ~/wiki/ exists or the configured hub path exists
   (check ~/.config/llm-wiki/config.json for hub_path).
@@ -103,7 +105,11 @@ Flow: Source (URL/file/text/tweet/inbox) → fetch/read → extract metadata →
 
 ### Collection Ingestion
 See [references/ingestion.md](references/ingestion.md) § Collection Ingestion.
-Flow: structured upstream collection (Git repo, BIP-style proposal set, MediaWiki dump/API) → inventory items → write a `raw/repos/` manifest plus immutable child sources → rebuild raw indexes → optionally compile synthesized clusters. Use `/wiki:ingest-collection` for bulk imports; never recursively crawl HTML.
+Flow: structured upstream collection (Git repo, BIP-style proposal set, MediaWiki dump/API) → upstream item inventory → write a `raw/repos/` manifest plus immutable child sources → rebuild raw indexes → optionally compile synthesized clusters. Use `/wiki:ingest-collection` for bulk imports; never recursively crawl HTML.
+
+### Inventory
+See [references/inventory.md](references/inventory.md).
+Flow: Track durable wiki-adjacent things (ingest candidates, entities, corpora, questions, tasks, watch items) as markdown records under `inventory/` → rebuild inventory indexes → optionally convert legacy queue-like outputs through explicit dry-run-first migration. Inventory migration is additive and human-gated.
 
 ### Compilation
 See [references/compilation.md](references/compilation.md).
@@ -167,7 +173,7 @@ Track uncompiled sources by comparing `raw/_index.md` ingestion dates against th
 Automatically run a quick structural check when any of these triggers occur:
 
 ### Triggers
-- **After any write operation** (ingest, compile, research, output) — verify what was just written
+- **After any write operation** (ingest, compile, research, output, inventory) — verify what was just written
 - **When the skill activates** and the wiki hasn't been linted in 7+ days (check "Last lint" in `_index.md`)
 - **When content is found in the wrong place** — articles in the global hub instead of a topic sub-wiki
 - **When a user mentions wiki problems** — "wiki is broken", "empty", "missing", "wrong"
@@ -175,13 +181,13 @@ Automatically run a quick structural check when any of these triggers occur:
 
 ### Quick Structure Check (lightweight, runs inline — not a full lint)
 
-1. **Hub integrity**: The hub (HUB) should ONLY contain `wikis.json`, `_index.md`, `log.md`, and `topics/`. If `raw/`, `wiki/`, `output/`, `inbox/`, or `config.md` exist at the hub level → **warn, do not delete**. These may hold user data from an older wiki layout. Suggest `/wiki:lint --fix`, which will move contents to the appropriate topic wiki or quarantine to `inbox/.unknown/` per C11/C12 in `references/linting.md`.
+1. **Hub integrity**: The hub (HUB) should ONLY contain `wikis.json`, `_index.md`, `log.md`, and `topics/`. If `raw/`, `wiki/`, `inventory/`, `output/`, `inbox/`, or `config.md` exist at the hub level → **warn, do not delete**. These may hold user data from an older wiki layout. Suggest `/wiki:lint --fix`, which will move contents to the appropriate topic wiki or quarantine to `inbox/.unknown/` per C11/C12/C16 in `references/linting.md`.
 
-2. **Index freshness**: For the active topic wiki, compare actual file count in `wiki/concepts/`, `wiki/topics/`, `wiki/references/` against the rows in their `_index.md`. If mismatched → auto-fix by adding missing entries or removing dead ones.
+2. **Index freshness**: For the active topic wiki, compare actual file counts in `raw/`, `wiki/`, and `inventory/` subdirectories against the rows in their `_index.md`. If mismatched → auto-fix by adding missing entries or removing dead ones.
 
 3. **Orphan detection**: Check if any `.md` files exist in wiki directories but are not listed in any `_index.md`. If found → add them to the index.
 
-4. **Missing directories**: Verify all expected subdirectories exist in the topic wiki (`raw/articles/`, `raw/papers/`, etc.). If missing → create them with empty `_index.md`.
+4. **Missing directories**: Verify all expected subdirectories exist in the topic wiki (`raw/articles/`, `wiki/concepts/`, `inventory/candidates/`, etc.). If missing → create them with empty `_index.md`.
 
 5. **wikis.json sync**: Check that all topic sub-wikis under `HUB/topics/` are registered in `wikis.json`. If a directory exists but isn't registered → add it. If registered but directory is missing → remove the entry.
 

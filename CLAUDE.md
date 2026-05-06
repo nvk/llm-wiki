@@ -91,7 +91,7 @@ claude-plugin/                  — source of truth, primary distribution target
   commands/*.md                 — 16 command files (15 user commands + wiki router)
   skills/wiki-manager/
     SKILL.md                    — skill manifest + fuzzy router
-    references/*.md             — 10 reference docs (hub-resolution, linting, audit, etc.)
+    references/*.md             — shared workflow references (hub-resolution, linting, audit, model-router, etc.)
   .claude-plugin/
     plugin.json                 — plugin manifest
 plugins/llm-wiki/               — generated Codex packaging mirror (do NOT hand-edit)
@@ -108,6 +108,8 @@ plugins/llm-wiki-opencode/      — generated OpenCode packaging mirror (do NOT 
 .agents/plugins/marketplace.json — repo-local Codex marketplace entry
 scripts/sync-codex-plugin.sh    — regenerates plugins/llm-wiki/ from claude-plugin/
 scripts/sync-opencode-plugin.sh — regenerates plugins/llm-wiki-opencode/ from claude-plugin/
+scripts/wiki-router             — optional experimental model-router sidecar client
+examples/model-router.yaml      — placeholder config for the dormant router
 AGENTS.md                       — portable single-file protocol for non-Claude agents
 tests/                          — test suite (see above)
 ```

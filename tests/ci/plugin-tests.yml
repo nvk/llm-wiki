@@ -30,6 +30,15 @@ jobs:
       - name: Verify Codex plugin sync
         run: chmod +x tests/test-codex-sync.sh && ./tests/test-codex-sync.sh
 
+      - name: Verify OpenCode plugin sync
+        run: chmod +x tests/test-opencode-sync.sh && ./tests/test-opencode-sync.sh
+
+      - name: Verify model router packaging
+        run: |
+          chmod +x tests/test-model-router-disabled.sh tests/test-model-router-config-parse.sh
+          ./tests/test-model-router-disabled.sh
+          ./tests/test-model-router-config-parse.sh
+
   behavioral:
     name: "Layer 2: Behavioral Evals"
     runs-on: ubuntu-latest

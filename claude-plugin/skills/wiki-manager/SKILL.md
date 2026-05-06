@@ -151,6 +151,15 @@ notice it without treating it as factual evidence:
   records for durable follow-ups, stale items, source queues, or watch lists,
   but show a sample before creating a larger backlog.
 
+### Experimental Model Router
+See [references/model-router.md](references/model-router.md).
+This workflow is dormant by default. Only use it when the user explicitly asks
+for the model router/multi-model local stack, `LLM_WIKI_MODEL_ROUTER=1` is
+present, or an explicit experimental model-router flag is in scope. The
+orchestrating agent remains the only filesystem writer; local model workers
+return proposals for synthesis, compilation, retrieval, reranking, or critic
+passes.
+
 ### Output
 Flow: Gather relevant articles → generate artifact (summary/report/slides/etc) → save to `output/` → update indexes.
 

@@ -1,0 +1,329 @@
+#!/usr/bin/env python3
+"""Optional OpenAI-compatible sidecar client for llm-wiki model routing.
+
+This helper never writes wiki files. It reads local router config, prints status
+or dry-run payloads, and can call chat/embedding/rerank endpoints when the
+experimental router is explicitly enabled.
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import sys
+import urllib.error
+import urllib.request
+from pathlib import Path
+from typing import Any
+
+
+ENABLE_ENV = "LLM_WIKI_MODEL_ROUTER"
+CONFIG_ENV = "LLM_WIKI_MODEL_ROUTER_CONFIG"
+
+
+def parse_scalar(value: str) -> Any:
+    value = value.strip()
+    if not value:
+        return ""
+    if value in {"true", "True"}:
+        return True
+    if value in {"false", "False"}:
+        return False
+    if value in {"null", "None", "~"}:
+        return None
+    if value.startswith("[") and value.endswith("]"):
+        inner = value[1:-1].strip()
+        if not inner:
+            return []
+        return [parse_scalar(part.strip()) for part in inner.split(",")]
+    if (value.startswith('"') and value.endswith('"')) or (
+        value.startswith("'") and value.endswith("'")
+    ):
+        return value[1:-1]
+    try:
+        return int(value)
+    except ValueError:
+        pass
+    try:
+        return float(value)
+    except ValueError:
+        return value
+
+
+def parse_simple_yaml(text: str) -> dict[str, Any]:
+    """Parse the limited YAML subset used by examples/model-router.yaml."""
+    root: dict[str, Any] = {}
+    stack: list[tuple[int, dict[str, Any]]] = [(-1, root)]
+
+    for lineno, raw in enumerate(text.splitlines(), start=1):
+        if not raw.strip() or raw.lstrip().startswith("#"):
+            continue
+        raw = raw.rstrip()
+        indent = len(raw) - len(raw.lstrip(" "))
+        line = raw.strip()
+        if ":" not in line:
+            raise ValueError(f"line {lineno}: expected key: value")
+        key, value = line.split(":", 1)
+        key = key.strip()
+        value = value.strip()
+        if not key:
+            raise ValueError(f"line {lineno}: empty key")
+        while stack and stack[-1][0] >= indent:
+            stack.pop()
+        if not stack:
+            raise ValueError(f"line {lineno}: invalid indentation")
+        parent = stack[-1][1]
+        if value == "":
+            child: dict[str, Any] = {}
+            parent[key] = child
+            stack.append((indent, child))
+        else:
+            parent[key] = parse_scalar(value)
+    return root
+
+
+def load_config(path: Path) -> dict[str, Any]:
+    if not path.exists():
+        raise FileNotFoundError(f"model router config not found: {path}")
+    text = path.read_text()
+    if path.suffix == ".json":
+        data = json.loads(text)
+    else:
+        data = parse_simple_yaml(text)
+    if not isinstance(data, dict) or not isinstance(data.get("models"), dict):
+        raise ValueError("config must contain a top-level 'models' mapping")
+    for role, spec in data["models"].items():
+        if not isinstance(spec, dict):
+            raise ValueError(f"role {role!r} must map to an object")
+        if "model" not in spec:
+            raise ValueError(f"role {role!r} is missing model")
+        if "endpoint" not in spec and "base_url" not in spec:
+            raise ValueError(f"role {role!r} is missing endpoint/base_url")
+    return data
+
+
+def default_config_candidates() -> list[Path]:
+    candidates: list[Path] = []
+    if os.environ.get(CONFIG_ENV):
+        candidates.append(Path(os.environ[CONFIG_ENV]).expanduser())
+    candidates.append(Path.cwd() / ".runtime" / "model-router.yaml")
+    candidates.append(Path.home() / ".config" / "llm-wiki" / "model-router.yaml")
+    return candidates
+
+
+def resolve_config(path_arg: str | None) -> Path | None:
+    if path_arg:
+        return Path(path_arg).expanduser()
+    for candidate in default_config_candidates():
+        if candidate.exists():
+            return candidate
+    return None
+
+
+def router_enabled(args: argparse.Namespace) -> bool:
+    return bool(args.enable or os.environ.get(ENABLE_ENV) == "1")
+
+
+def role_spec(config: dict[str, Any], role: str) -> dict[str, Any]:
+    models = config.get("models", {})
+    if role not in models:
+        raise KeyError(f"role not found in model router config: {role}")
+    return models[role]
+
+
+def endpoint_for(spec: dict[str, Any], kind: str) -> str:
+    base = str(spec.get("endpoint") or spec.get("base_url")).rstrip("/")
+    if base.endswith(("/chat/completions", "/embeddings", "/rerank")):
+        return base
+    if kind == "chat":
+        return f"{base}/chat/completions"
+    if kind == "embed":
+        return f"{base}/embeddings"
+    if kind == "rerank":
+        return f"{base}/rerank"
+    raise ValueError(f"unknown endpoint kind: {kind}")
+
+
+def headers_for(spec: dict[str, Any]) -> dict[str, str]:
+    headers = {"Content-Type": "application/json"}
+    api_key_env = spec.get("api_key_env")
+    if api_key_env and os.environ.get(str(api_key_env)):
+        headers["Authorization"] = f"Bearer {os.environ[str(api_key_env)]}"
+    return headers
+
+
+def post_json(url: str, payload: dict[str, Any], headers: dict[str, str]) -> dict[str, Any]:
+    request = urllib.request.Request(
+        url,
+        data=json.dumps(payload).encode("utf-8"),
+        headers=headers,
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=120) as response:
+            return json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"HTTP {exc.code} from {url}: {body}") from exc
+
+
+def read_text_input(args: argparse.Namespace) -> str:
+    if getattr(args, "prompt", None):
+        return args.prompt
+    if getattr(args, "input", None):
+        return Path(args.input).read_text()
+    if not sys.stdin.isatty():
+        return sys.stdin.read()
+    raise SystemExit("provide --prompt, --input, or stdin")
+
+
+def print_json(data: Any) -> None:
+    print(json.dumps(data, indent=2, sort_keys=True))
+
+
+def cmd_status(args: argparse.Namespace) -> int:
+    config_path = resolve_config(args.config)
+    status: dict[str, Any] = {
+        "enabled": router_enabled(args),
+        "enable_env": ENABLE_ENV,
+        "config_env": CONFIG_ENV,
+        "config_path": str(config_path) if config_path else None,
+        "roles": [],
+    }
+    if config_path:
+        config = load_config(config_path)
+        status["roles"] = sorted(config.get("models", {}).keys())
+    print_json(status)
+    return 0
+
+
+def load_required_config(args: argparse.Namespace) -> tuple[Path, dict[str, Any]]:
+    config_path = resolve_config(args.config)
+    if not config_path:
+        raise SystemExit(
+            "model router config not found; pass --config or set "
+            f"{CONFIG_ENV}. Router is disabled by default."
+        )
+    return config_path, load_config(config_path)
+
+
+def maybe_print_dry_run(
+    kind: str,
+    args: argparse.Namespace,
+    role: str,
+    spec: dict[str, Any],
+    payload: dict[str, Any],
+) -> bool:
+    if args.dry_run:
+        print_json(
+            {
+                "dry_run": True,
+                "kind": kind,
+                "role": role,
+                "model": spec["model"],
+                "endpoint": endpoint_for(spec, kind),
+                "payload": payload,
+            }
+        )
+        return True
+    return False
+
+
+def ensure_enabled(args: argparse.Namespace) -> None:
+    if not router_enabled(args):
+        raise SystemExit(
+            f"model router disabled; set {ENABLE_ENV}=1 or pass --enable. "
+            "Use --dry-run to inspect payloads without enabling."
+        )
+
+
+def cmd_chat(args: argparse.Namespace) -> int:
+    _, config = load_required_config(args)
+    spec = role_spec(config, args.role)
+    payload = {
+        "model": spec["model"],
+        "messages": [{"role": "user", "content": read_text_input(args)}],
+        "temperature": args.temperature,
+    }
+    if maybe_print_dry_run("chat", args, args.role, spec, payload):
+        return 0
+    ensure_enabled(args)
+    print_json(post_json(endpoint_for(spec, "chat"), payload, headers_for(spec)))
+    return 0
+
+
+def cmd_embed(args: argparse.Namespace) -> int:
+    _, config = load_required_config(args)
+    spec = role_spec(config, args.role)
+    payload = {"model": spec["model"], "input": read_text_input(args)}
+    if maybe_print_dry_run("embed", args, args.role, spec, payload):
+        return 0
+    ensure_enabled(args)
+    print_json(post_json(endpoint_for(spec, "embed"), payload, headers_for(spec)))
+    return 0
+
+
+def cmd_rerank(args: argparse.Namespace) -> int:
+    _, config = load_required_config(args)
+    spec = role_spec(config, args.role)
+    if args.documents_json:
+        documents = json.loads(args.documents_json)
+    elif args.documents_file:
+        documents = json.loads(Path(args.documents_file).read_text())
+    else:
+        raise SystemExit("rerank requires --documents-json or --documents-file")
+    payload = {"model": spec["model"], "query": args.query, "documents": documents}
+    if maybe_print_dry_run("rerank", args, args.role, spec, payload):
+        return 0
+    ensure_enabled(args)
+    print_json(post_json(endpoint_for(spec, "rerank"), payload, headers_for(spec)))
+    return 0
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--config", help="Path to model-router.yaml/json")
+    parser.add_argument("--enable", action="store_true", help="Enable live endpoint calls")
+    parser.add_argument("--dry-run", action="store_true", help="Print payload instead of calling endpoint")
+    sub = parser.add_subparsers(dest="command", required=True)
+
+    status = sub.add_parser("status", help="Show router enabled/config status")
+    status.set_defaults(func=cmd_status)
+
+    chat = sub.add_parser("chat", help="Call a chat role")
+    chat.add_argument("--role", default="synthesize")
+    chat.add_argument("--prompt")
+    chat.add_argument("--input")
+    chat.add_argument("--temperature", type=float, default=0.2)
+    chat.set_defaults(func=cmd_chat)
+
+    embed = sub.add_parser("embed", help="Call an embedding role")
+    embed.add_argument("--role", default="embed")
+    embed.add_argument("--prompt")
+    embed.add_argument("--input")
+    embed.set_defaults(func=cmd_embed)
+
+    rerank = sub.add_parser("rerank", help="Call a reranking role")
+    rerank.add_argument("--role", default="rerank")
+    rerank.add_argument("--query", required=True)
+    rerank.add_argument("--documents-json")
+    rerank.add_argument("--documents-file")
+    rerank.set_defaults(func=cmd_rerank)
+
+    return parser
+
+
+def main() -> int:
+    parser = build_parser()
+    args = parser.parse_args()
+    try:
+        return args.func(args)
+    except Exception as exc:
+        print(f"wiki-router: {exc}", file=sys.stderr)
+        return 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
+

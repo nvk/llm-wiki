@@ -13,7 +13,7 @@ LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, th
 
 ---
 
-[Install](#install) · [Quick Start](#quick-start) · [Commands](#commands) · [How It Works](#how-it-works) · [Research Modes](#research-modes) · [Thesis Research](#thesis-driven-research) · [Query Depths](#query-depths) · [Linking](#linking-works-everywhere) · [Obsidian](#obsidian-integration) · [Architecture](#claude-first-multi-runtime) · [Nono Sandbox](#nono-sandbox-permissions) · [Upgrade](#upgrade) · [Changelog](#changelog) · [Credits](#credits)
+[Install](#install) · [Quick Start](#quick-start) · [Commands](#commands) · [How It Works](#how-it-works) · [Research Modes](#research-modes) · [Thesis Research](#thesis-driven-research) · [Query Depths](#query-depths) · [Linking](#linking-works-everywhere) · [Obsidian](#obsidian-integration) · [Architecture](#claude-first-multi-runtime) · [Model Router](#experimental-model-router) · [Nono Sandbox](#nono-sandbox-permissions) · [Upgrade](#upgrade) · [Changelog](#changelog) · [Credits](#credits)
 
 ---
 
@@ -165,6 +165,46 @@ Each sync script:
 Drift is caught by `./tests/test-codex-sync.sh` and `./tests/test-opencode-sync.sh`, which run the sync scripts and fail (with self-healing fix instructions) if the generated directories differ from `HEAD`.
 
 Practical rule: design workflows first for Claude commands and behavior, but keep the underlying knowledge model and references runtime-neutral. Runtime wrappers adapt invocation and metadata, not wiki logic.
+
+## Experimental Model Router
+
+llm-wiki ships a dormant multi-model router protocol for local/open model
+experiments. It is disabled by default and does not change normal wiki behavior.
+
+Package contents:
+
+- `claude-plugin/skills/wiki-manager/references/model-router.md` — shared opt-in protocol
+- `examples/model-router.yaml` — placeholder config with no secrets or real endpoints
+- `scripts/wiki-router` — tiny stdlib-only OpenAI-compatible helper for `chat`, `embed`, and `rerank`
+- `tests/test-model-router-disabled.sh` and `tests/test-model-router-config-parse.sh` — dependency-free packaging checks
+
+Enable explicitly:
+
+```bash
+export LLM_WIKI_MODEL_ROUTER=1
+export LLM_WIKI_MODEL_ROUTER_CONFIG=~/.config/llm-wiki/model-router.yaml
+```
+
+Dry-run without any live models:
+
+```bash
+./scripts/wiki-router --config examples/model-router.yaml status
+./scripts/wiki-router --config examples/model-router.yaml --dry-run chat \
+  --role synthesize \
+  --prompt "Summarize this wiki source."
+```
+
+Runtime config is local state, not wiki content. Put it in one of:
+
+```text
+~/.config/llm-wiki/model-router.yaml
+<hub>/.runtime/model-router.yaml
+<topic>/.runtime/model-router.yaml
+```
+
+The orchestrating agent remains the only filesystem writer. Local model workers
+return proposals for synthesis, compilation, retrieval, reranking, or critic
+passes; the orchestrator validates paths and citations before writing anything.
 
 ## Nono Sandbox Permissions
 

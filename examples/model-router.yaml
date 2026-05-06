@@ -1,0 +1,42 @@
+# Example llm-wiki model router config.
+#
+# Copy to one of:
+#   ~/.config/llm-wiki/model-router.yaml
+#   <hub>/.runtime/model-router.yaml
+#   <topic>/.runtime/model-router.yaml
+#
+# This file is intentionally inert: endpoints are placeholders and no API keys
+# are included. Enable with LLM_WIKI_MODEL_ROUTER=1 or an explicit experimental
+# model-router flag in the calling workflow.
+
+models:
+  synthesize:
+    model: qwen3.6-35b-a3b
+    endpoint: http://m5-max.local:11434/v1
+    use_for: [query, research_summary, source_synthesis, planning]
+    api_key_env: LLM_WIKI_ROUTER_API_KEY
+
+  compiler:
+    model: qwen3-coder-next
+    endpoint: http://spark.local:8000/v1
+    use_for: [compile, article_update, frontmatter, crosslinks, indexes]
+    api_key_env: LLM_WIKI_ROUTER_API_KEY
+
+  embed:
+    model: qwen3-embedding-8b
+    endpoint: http://spark.local:8081/v1
+    use_for: [search, dedup, source_recall, article_similarity]
+    api_key_env: LLM_WIKI_ROUTER_API_KEY
+
+  rerank:
+    model: qwen3-reranker-8b
+    endpoint: http://spark.local:8082/v1
+    use_for: [claim_support, source_ordering, contamination_control]
+    api_key_env: LLM_WIKI_ROUTER_API_KEY
+
+  critic:
+    model: qwen3.6-35b-a3b
+    endpoint: http://m5-max.local:11434/v1
+    use_for: [verify_article, find_unsupported_claims, staleness_check]
+    api_key_env: LLM_WIKI_ROUTER_API_KEY
+

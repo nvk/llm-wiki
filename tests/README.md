@@ -15,6 +15,10 @@ No LLM calls. Validates wiki file structure, frontmatter schema, index integrity
 
 # Validate plugin manifest
 ./tests/test-plugin-validate.sh
+
+# Validate experimental model-router packaging stays dormant and parseable
+./tests/test-model-router-disabled.sh
+./tests/test-model-router-config-parse.sh
 ```
 
 ### What it checks
@@ -28,6 +32,8 @@ No LLM calls. Validates wiki file structure, frontmatter schema, index integrity
 - C6: No orphan sources (via defect fixture)
 - C11: File placement matches frontmatter type/category
 - C12: No unknown file types in raw/wiki directories
+- Packaging: the experimental model router is disabled by default and its
+  example config generates valid dry-run payloads without live model endpoints
 
 ### Defect fixtures
 

@@ -106,6 +106,8 @@ reference material you need for that workflow:
 - `research`, `plan`, `output`, `assess` → `references/research-infrastructure.md`
 - `project` → `references/projects.md`
 - `librarian` → `references/librarian.md`
+- experimental model router → `references/model-router.md` (opt-in only; the
+  orchestrating agent remains the only filesystem writer)
 - wiki structure, indexes, log format, file placement, init → `references/wiki-structure.md`
 - hub lookup and path handling → `references/hub-resolution.md`
 

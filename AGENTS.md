@@ -46,6 +46,7 @@ All content lives here. One topic per wiki. Isolated indexes, focused queries.
 ├── .obsidian/                     # Obsidian vault config (optional)
 ├── .librarian/                    # Optional: wiki-only maintenance reports
 ├── .audit/                        # Optional: umbrella audit reports
+├── .runtime/                      # Optional local sidecar config, ignored by indexes
 ├── _index.md                      # Master index: stats, navigation, recent changes
 ├── config.md                      # Title, scope, conventions
 ├── log.md                         # Activity log for this topic
@@ -99,6 +100,7 @@ Same structure as a topic wiki but at `<project>/.wiki/`. Add `.wiki/` to `.giti
 8. **Multi-wiki peek.** When querying, answer from the target wiki, then peek at sibling wiki `_index.md` files for overlap.
 9. **Confidence scoring.** Articles get `confidence: high|medium|low` in frontmatter based on source quality.
 10. **Activity log.** Append every operation to `log.md`. Format: `## [YYYY-MM-DD] operation | Description`. Never edit existing entries.
+11. **Experimental sidecars are opt-in.** If a model router or other local sidecar is configured under `.runtime/` or `~/.config/llm-wiki/`, use it only when explicitly requested. Sidecar workers return proposals; the agent remains the only filesystem writer.
 
 ## File Formats
 

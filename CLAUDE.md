@@ -169,5 +169,38 @@ Generalizable patterns from building `plugins/llm-wiki-hermes/`:
    reasoning errors are real and waste cycles.
 
 8. **Subagent-driven development runs ONE subagent per task.** Parallel implementer
-   subagents conflict on shared files. Dispatch sequentially; review between tasks.
+    subagents conflict on shared files. Dispatch sequentially; review between tasks.
+
+ 9. **`_score_articles` must handle `[[Title]](path)` wikilinks, not just `[Title](path)`.**
+    The original regex `r"\[([^\]]+)\]\(([^)]+)\)"` only matches single-bracket markdown
+    links. Wiki `_index.md` files use Obsidian-style `[[Wikilink]](path)` format. The
+    fix is `_parse_article_entry()` with regex `r"\[\[?([^\]]+)\]\]?\(([^)]+)\)"` that
+    handles both. Without this, `retrieve_wiki_context` silently returns empty because
+    zero articles are parsed from the index.
+
+10. **`_score_articles` needs a topics/ directory fallback.** If the hub `_index.md`
+    has no `topics/` slug references (e.g., a fresh hub or non-standard layout),
+    `slugs` is empty and scoring skips all topics. Fall back to enumerating
+    `hub/topics/` directory entries.
+
+11. **Dedup logic in `_score_articles` must include unique entries, not duplicates.**
+    The correct pattern is `if rel not in seen: add; append`. An inverted condition
+    (`if rel in seen: append`) silently produces empty output because every first
+    encounter of a unique path is skipped.
+
+12. **Verify hook evidence through three channels, not one.** A single signal (e.g.,
+    "plugin is enabled") is insufficient. Check: (a) `journalctl` for registration
+    logs, (b) `~/.wiki/.sessions/queue/*.jsonl` for captured events, (c) Hermes
+    agent logs for injected context blocks. All three must confirm the hook fires
+    and produces output.
+
+13. **`on_session_finalize` only fires on session teardown.** The `PreCompact` event
+    appears in the session queue only after `/new`, GC eviction, or CLI quit — never
+    during an active conversation. Test by issuing `/new` in Hermes and checking the
+    queue file afterward.
+
+14. **Hermes caches plugin bytecode in `__pycache__`.** Code changes to a plugin are
+    invisible to the running gateway until you clear `__pycache__` AND restart with
+    `hermes gateway restart`. `hermes restart` is incorrect; only `hermes gateway
+    restart` reloads the plugin process.
 

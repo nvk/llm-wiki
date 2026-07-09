@@ -1,904 +1,119 @@
-# LLM Wiki — Agent Instructions
+# AGENTS.md — nvk/llm-wiki Development Guide
 
-> This is an "idea file" in the spirit of [Karpathy's LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f). Paste it into any LLM agent (OpenAI Codex, Claude Code, OpenCode, Gemini Code Assist, or similar) and it will build and manage a wiki for you. The agent customizes the specifics; this file communicates the system.
+## Project Structure
 
-> **Editing the llm-wiki repo itself?** This file is the portable wiki *protocol* for end users. The dev contract for the plugin codebase (testing, sync workflow, project structure, symlink invariant) lives in [`CLAUDE.md`](CLAUDE.md) — read it in addition to this file. Both Claude Code and Codex agents working on the repo should treat `CLAUDE.md` as the source of truth for repo-level workflow.
+This repo is the `llm-wiki` project with a Hermes plugin adapter at `plugins/llm-wiki-hermes/`.
+The plugin replaces Hermes' built-in `llm-wiki` skill with the full `wiki-manager` skill.
 
-## What This Is
+### Key Files
 
-An LLM-compiled knowledge base. You (the LLM agent) are both the compiler and the query engine. Raw source documents are ingested, then incrementally compiled into a wiki of interconnected markdown articles. The human rarely edits the wiki directly — that's your domain.
+| File | Purpose |
+|------|---------|
+| `plugins/llm-wiki-hermes/hooks/adapter.py` | Hook adapters for Hermes — the core of the plugin |
+| `plugins/llm-wiki-hermes/__init__.py` | Plugin entrypoint — registers hooks, tools, and skill |
+| `plugins/llm-wiki-hermes/hooks/llm_wiki_session.py` | Shared session engine (imported by adapter) |
+| `plugins/llm-wiki/hooks/llm_wiki_session.py` | Upstream session engine (same file, different path) |
 
-**The metaphor**: raw sources are source code, you are the compiler, the wiki is the executable.
+### Hook Flow
 
-## Architecture
+The Hermes plugin registers 5 hooks via `PluginContext.register_hook()`:
 
-### Hub Path
+| Hook | Engine Event | Purpose |
+|------|-------------|---------|
+| `on_session_start` | `SessionStart` | Capture session start, prefetch context |
+| `pre_llm_call` | `UserPromptSubmit` | Inject wiki memory + session rehydration + steering nudge |
+| `post_tool_call` | `PostToolUse` | Record tool usage for session digests |
+| `on_session_finalize` | `PreCompact` | Capture before session compaction (fires on `/new`, GC, CLI quit) |
+| `on_session_end` | `SessionEnd` | Capture session end, write digest checkpoint |
 
-Defaults to `~/wiki/`. Optionally configured via `~/.config/llm-wiki/config.json`:
+### `pre_llm_call` Injection
 
-```json
-{ "hub_path": "~/Library/Mobile Documents/com~apple~CloudDocs/wiki" }
+This hook injects three components into the user message before the LLM call:
+
+1. **Session rehydration** — `_capture("UserPromptSubmit", ...)` returns distilled session digests
+2. **Wiki memory** — `retrieve_wiki_context()` scores wiki articles against the user query and returns top matches
+3. **Steering nudge** — `_steer_to_our_skill()` adds a hint to use the `wiki-manager` skill for wiki-related queries
+
+All three are joined with `"\n\n"` and injected as `plugin_user_context` by Hermes at `conversation_loop.py:797-798`.
+
+### Critical: `_score_articles` Wikilink Parsing
+
+The `_parse_article_entry()` function must handle **both** link formats:
+- `[[Title]](path)` — Obsidian wikilinks (used by the user's wiki indexes)
+- `[Title](path)` — Standard markdown links
+
+The regex `\[\[?([^\]]+)\]\]?\(([^)]+)\)` handles both. If you only match `[Title](path)` (single bracket), wikilinks in `_index.md` files will be silently skipped and `retrieve_wiki_context` returns empty.
+
+### Debugging Hooks in Production
+
+#### Finding Evidence Hooks Are Called
+
+**1. Plugin registration** (appears on gateway start):
+```bash
+journalctl --user -u hermes-gateway --no-pager | grep "llm-wiki-hermes registered"
+```
+Shows: `Plugin llm-wiki-hermes registered hook: pre_llm_call` etc.
+
+**2. Session events** (appears in wiki session queue):
+```bash
+python3 -c "
+import json
+with open('/home/nathan/wiki/.sessions/queue/2026-07-09.jsonl') as f:
+    for line in f:
+        d = json.loads(line.strip())
+        print(f\"{d['hook_event_name']:20s}  ts={d['ts']}\")
+"
+```
+Shows events: `SessionStart`, `UserPromptSubmit`, `PostToolUse`, `PreCompact`, `SessionEnd`
+
+**3. LLM request logs** (appears in Hermes agent logs):
+```bash
+strings ~/.hermes/logs/agent.log | grep "llm-wiki memory\|llm-wiki session\|llm-wiki-hermes"
+```
+Shows injected context blocks in the user message sent to the LLM.
+
+**4. Hermes debug mode** (set `HERMES_DEBUG=1` on gateway process):
+Shows plugin registration details including hook callbacks.
+
+#### Common Pitfalls
+
+| Symptom | Cause | Fix |
+|---------|-------|-----|
+| Hook registered but no output | `pre_llm_call` returns `None` because all sub-components returned empty | Check each component: rehydrate, memory, steer |
+| Memory returns empty | `_score_articles` regex doesn't match wiki link format | Use `_parse_article_entry()` which handles `[[Title]](path)` |
+| Memory returns empty | `cwd` passed as `query` argument (wrong order) | Call `retrieve_wiki_context(cwd=cwd, query=user_message)` |
+| `PreCompact` never appears | Session still active — `on_session_finalize` only fires on `/new`, GC, or CLI quit | Trigger with `/new` in Hermes |
+| Code changes not picked up | Hermes cached `__pycache__` bytecode | Clear `__pycache__` + restart gateway |
+| Hook not registered at all | Plugin not in `~/.hermes/plugins/` or not enabled | Check `hermes plugins list` |
+
+#### Testing `retrieve_wiki_context` Directly
+
+```bash
+source ~/.hermes/hermes-agent/venv/bin/activate
+python3 -c "
+import sys, os
+sys.path.insert(0, os.path.expanduser('~/.local/share/llm-wiki/plugins/llm-wiki-hermes'))
+from hooks.adapter import retrieve_wiki_context
+result = retrieve_wiki_context(cwd='/home/nathan/.hermes', query='OPNsense')
+print(result)
+"
 ```
 
-If the config exists, prefer `hub_path` (expand only the leading `~`) instead of
-`~/wiki/` everywhere below. Treat `resolved_path` from older configs as a
-machine-specific fallback cache, not as the source of truth; do not write it
-into shared configs. If the path can be statted but reading `wikis.json` or
-listing `topics/` fails with `Operation not permitted`, the path is correct and
-macOS/iCloud privacy is blocking the launcher; ask the user to grant Full Disk
-Access or iCloud Drive access and restart, rather than falling back to another
-machine path. Store the selected path as **HUB**. Use
-`/wiki config hub-path <path>` to set it up, or create the JSON manually.
+## Constraints
 
-### Hub (~/wiki/)
+- One subagent at a time (never parallel)
+- All install actions must be idempotent and fail-open
+- Python 3.9+, stdlib only
+- Do NOT hand-edit `plugins/llm-wiki/` or `plugins/llm-wiki-opencode/` (generated mirrors)
 
-The hub is lightweight — NO content, just a registry.
+## Production Install
 
-```
-~/wiki/                         # or custom path from config.json
-├── wikis.json          # Registry of all topic wikis
-├── _index.md           # Lists topic wikis with stats
-├── log.md              # Global activity log
-├── .sessions/          # Optional automated agent-session capture + feedback candidates
-└── topics/
-    ├── nutrition/      # Each topic is a full, isolated wiki
-    ├── robotics/
-    ├── .archive/       # Archived topic wikis, hidden by default
-    └── ...
-```
+- Fork: `dfein38347g/llm-wiki` on `feat/hermes-plugin` branch
+- Production copy: `~/.local/share/llm-wiki/` (symlinked to `~/.hermes/plugins/llm-wiki-hermes/`)
+- Dev build: `/tmp/opencode/llm-wiki-upstream/` (mirrors fork)
+- Hermes gateway: `hermes gateway restart` to reload plugins
 
-### Topic Wiki (~/wiki/topics/<name>/)
+## Known Issues
 
-All content lives here. One topic per wiki. Isolated indexes, focused queries.
-
-```
-~/wiki/topics/<name>/
-├── .obsidian/                     # Obsidian vault config (optional)
-├── .librarian/                    # Optional: maintenance reports + derived caches
-├── .audit/                        # Optional: umbrella audit reports
-├── .research-session.json         # Ephemeral: live recovery for --min-time research
-├── .thesis-session.json           # Ephemeral: live recovery for thesis runs
-├── .session-events.jsonl          # Durable: append-only event log for replayable provenance
-├── .session-checkpoint.json       # Durable: latest run summary for resume/audit
-├── _index.md                      # Master index: stats, navigation, recent changes
-├── config.md                      # Title, scope, conventions
-├── schema.md                      # Topic-local vocabulary/conventions (default)
-├── log.md                         # Activity log for this topic
-├── inbox/                         # Drop zone — user dumps files here
-│   └── .processed/
-├── inventory/                     # Lazy: durable tracking records
-│   ├── _index.md
-│   ├── items/*.md                 # Physical/digital items, parts, tools, assets
-│   ├── candidates/*.md            # Ingest candidates, questions, tasks, watch items
-│   ├── entities/*.md              # People, orgs, projects, standards bodies
-│   ├── corpora/*.md               # Source collections, archives, datasets, forums
-│   └── views/*.md                 # Derived chat/list views over inventory
-├── datasets/                      # Lazy: manifests for large/external data
-│   ├── _index.md
-│   └── <dataset-slug>/
-│       ├── MANIFEST.md
-│       ├── samples/
-│       ├── profiles/
-│       └── queries/
-├── raw/                           # Immutable source material
-│   ├── _index.md
-│   ├── articles/*.md
-│   ├── papers/*.md
-│   ├── repos/*.md
-│   ├── notes/*.md
-│   └── data/*.md
-├── wiki/                          # Compiled articles (LLM-maintained)
-│   ├── _index.md
-│   ├── concepts/*.md              # Bounded ideas
-│   ├── topics/*.md                # Broad themes
-│   ├── references/*.md            # Curated collections
-│   └── theses/*.md                # Thesis investigations with verdicts
-└── output/                        # Generated artifacts
-    ├── _index.md
-    └── *.md
-```
-
-### Local Wiki (.wiki/)
-
-Same structure as a topic wiki but at `<project>/.wiki/`. Add `.wiki/` to `.gitignore`.
-
-## Core Principles
-
-1. **One topic, one wiki.** Never mix unrelated topics. The hub is just a registry.
-   For collection families that can grow across subjects, prefer kind-first
-   topic slugs such as `memes-bitcoin`, `memes-ethereum`, `tools-bitcoin`, or
-   `examples-seedqr`. Use subject-first slugs when the subject is the primary
-   research area and the collection is only one artifact within that topic.
-2. **Indexes are navigation.** Every existing wiki-managed directory has `_index.md` with a contents table. Read indexes first, never scan blindly. Keep them current. Optional layers do not need placeholder indexes before they exist.
-3. **Raw is immutable.** Once ingested, sources are never modified. All synthesis happens in `wiki/`.
-4. **Articles are synthesized, not copied.** Draw from multiple sources, contextualize, connect. Think textbook, not clipboard.
-5. **Dual-linking.** Every cross-reference uses both formats on the same line: `[[slug|Name]] ([Name](../category/slug.md))`. Obsidian reads the wikilink, the agent reads the markdown link, GitHub renders it. Not locked into any tool.
-6. **Incremental by default.** Only compile new sources unless explicitly asked for full recompile.
-7. **Honest gaps.** If the wiki doesn't have the answer, say so. Suggest what to ingest.
-8. **Multi-wiki peek.** When querying, answer from the target wiki, then peek at sibling wiki `_index.md` files for overlap.
-9. **Confidence scoring.** Articles get `confidence: high|medium|low` in frontmatter based on source quality.
-10. **Archive is quiet preservation.** Archived topic wikis move to
-`HUB/topics/.archive/<slug>/`, remain structurally maintainable, and stay out of
-normal query/compile/research/collect/output context unless explicitly included. Deep
-queries may surface archived index matches separately.
-11. **Activity log.** Append every operation to `log.md`. Format: `## [YYYY-MM-DD] operation | Description`. Never edit existing entries.
-12. **Session capture is operational memory.** Automated harness-session capture lives under `HUB/.sessions/` or `.wiki/.sessions/`. It can preserve redacted checkpoints automatically, but topic wiki promotion is explicit and user-directed. Feedback candidates live under `.sessions/feedback/` and capture only high-signal corrections, preferences, approvals, or plan acceptance; generic acknowledgements are ignored.
-
-## File Formats
-
-### _index.md (every existing wiki-managed directory)
-
-```markdown
-# [Directory Name] Index
-
-> [One-line description]
-
-Last updated: YYYY-MM-DD
-
-## Contents
-
-| File | Summary | Tags | Updated |
-|------|---------|------|---------|
-| [file.md](file.md) | One-sentence summary | tag1, tag2 | YYYY-MM-DD |
-
-## Categories
-
-- **category**: file1.md, file2.md
-
-## Recent Changes
-
-- YYYY-MM-DD: Description
-```
-
-Master `_index.md` additionally has Statistics and Quick Navigation sections.
-
-### Topic Guide (`schema.md`)
-
-```yaml
----
-title: "Topic Guide"
-schema_state: advisory
-created: YYYY-MM-DD
-updated: YYYY-MM-DD
-summary: "Human-owned topic guide for local vocabulary and conventions."
----
-```
-
-`schema.md` is a **topic guide**, not a database schema. It is human-owned and
-default for topic wikis. It may define topic-local entity types, relationship
-verbs, article subtypes, source conventions, and inventory/dataset boundaries.
-It must not redefine global llm-wiki primitives such as raw source folders,
-article categories, inventory kinds, or required frontmatter.
-`schema_state: advisory` means suggestions only. `strict` is advanced explicit
-opt-in and still never permits automatic article rewrites.
-
-Existing wikis without `schema.md` are valid. Adopt a starter guide with
-`llm-wiki schema adopt`, or run a librarian conventions pass first for
-established wikis and copy only the useful proposal parts into `schema.md`.
-
-### Raw Source (raw/)
-
-```yaml
----
-title: "Title"
-source: "URL or filepath or MANUAL"
-type: articles|papers|repos|notes|data
-ingested: YYYY-MM-DD
-tags: [tag1, tag2]
-summary: "2-3 sentence summary"
----
-```
-
-### Wiki Article (wiki/)
-
-```yaml
----
-title: "Article Title"
-category: concept|topic|reference
-sources: [raw/type/file1.md, raw/type/file2.md]
-created: YYYY-MM-DD
-updated: YYYY-MM-DD
-tags: [tag1, tag2]
-aliases: [alternate names]
-confidence: high|medium|low
-summary: "2-3 sentence summary"
----
-```
-
-Body includes abstract, sections, `## See Also` (dual-links, bidirectional), `## Sources` (links to raw/).
-
-### Inventory Record (inventory/)
-
-```yaml
----
-title: "Thing To Track"
-kind: item|ingest-candidate|entity|corpus|question|task|artifact|watch
-status: proposed|active|blocked|ingested|superseded|archived
-priority: p0|p1|p2|p3|p4
-created: YYYY-MM-DD
-updated: YYYY-MM-DD
-tags: [tag1, tag2]
-summary: "Why this record exists"
-sources:
-  - output/original-output.md
----
-```
-
-Inventory records are durable wiki-adjacent tracking objects. They can point at
-`raw/`, `wiki/`, `output/`, URLs, or external paths, but they do not move or copy
-those artifacts. Local `sources:` paths and body links in inventory records
-should resolve; lint checks them as operational provenance, not factual
-evidence.
-
-Inventory is opinionated. Use it when something should persist across sessions
-with status, priority, ownership, or a next action. Actual physical/digital
-items such as parts, tools, hosts, SKUs, subscriptions, and assets are good
-fits when their owned/wanted/selected/rejected state matters. It is too small
-for a one-off source to ingest now, a factual question, or a note with no future
-action. It is too large for hundreds/thousands of row-like data records; use one
-corpus record plus a dataset manifest or collection ingest instead. It is out of
-scope for authoritative source text (`raw/`), synthesized knowledge (`wiki/`),
-generated deliverables (`output/`), project rationale (`WHY.md`), or secrets.
-For bigger pivots, show a 1-3 row sample of proposed records before asking to
-apply.
-
-### Inventory View (inventory/views/)
-
-```yaml
----
-title: "Active Inventory Actions"
-view: actions
-filters:
-  status: active
-updated: YYYY-MM-DD
-summary: "Derived table of active inventory records with next actions."
----
-```
-
-Inventory views are derived list/table views, not inventory records. They should
-link to records and may be regenerated from record frontmatter. Do not require
-`kind`, `status`, or `priority` on view files.
-
-### Dataset Manifest (datasets/)
-
-```yaml
----
-title: "Dataset Title"
-dataset_id: dataset-slug
-status: proposed|active|external|archived|unavailable
-storage: local|remote|external|hybrid
-locations: ["/path/or/url"]
-formats: [csv, jsonl, parquet]
-schema_status: unknown|inferred|declared|validated
-created: YYYY-MM-DD
-updated: YYYY-MM-DD
-tags: [tag1, tag2]
-summary: "What this dataset contains and why the wiki indexes it"
----
-```
-
-Dataset manifests let the wiki serve as an index/interface for data that is too
-large or unsuitable to store in markdown. Store locations, schema notes, small
-samples, profiles, and query recipes; never copy the underlying dataset into the
-wiki.
-
-Be opinionated about the boundary: small stable data belongs in `raw/data/`;
-large, mutable, remote, compressed, binary, or query-oriented data belongs in
-`datasets/`; next-action tracking belongs in linked inventory records; many
-independent source pages belong in `ingest-collection`.
-
-### Source Reference Resolution
-
-Treat `sources:` entries as exact paths first, not whitespace-delimited slugs.
-Parse them as YAML list scalars; if falling back to line parsing, preserve the
-complete value after `- ` and strip only matching wrapping quotes. Resolve
-`raw/...`, `wiki/...`, and `output/...` from the wiki root; resolve `../...`
-relative to the file that owns the `sources:` field. If exact resolution fails,
-slugify both the requested value and raw-file stems (lowercase, whitespace or
-underscores to hyphens, remove other special characters, collapse hyphens; also
-try raw stems with a leading `YYYY-MM-DD-` stripped) and accept only a single
-match. Report zero matches as unresolved and multiple matches as ambiguous.
-Never rename raw files during resolution. When linking to raw filenames with
-spaces in markdown, use angle-bracket destinations:
-`[Title](<../../raw/articles/File Name.md>)`.
-
-### wikis.json
-
-```json
-{
-  "default": "<HUB>",
-  "wikis": {
-    "hub": { "path": "<HUB>", "description": "Hub" },
-    "<name>": { "path": "topics/<name>", "description": "...", "status": "active" },
-    "<archived-name>": {
-      "path": "topics/.archive/<archived-name>",
-      "description": "...",
-      "status": "archived",
-      "archived": "YYYY-MM-DD",
-      "archive_reason": "optional"
-    }
-  },
-  "local_wikis": []
-}
-```
-
-Resolve `wikis.json` paths as `<HUB>`, leading `~`, absolute, or relative to
-HUB. For topic wikis inside the shared hub, store portable relative paths like
-`topics/<name>`, not `/Users/<name>/...` absolute paths; absolute user-home
-paths break when an iCloud wiki is opened from another Mac. If a registry path
-is stale but `HUB/topics/<name>/_index.md` exists, use that topic path and
-repair the registry on the next sync.
-
-Archived topic wikis use portable paths under `topics/.archive/<name>` and
-`status: archived`. Normal tools skip these entries unless the user explicitly
-asks for archived content or structural maintenance.
-
-### log.md
-
-```
-## [YYYY-MM-DD] operation | Description
-```
-
-Operations: `init`, `ingest`, `ingest-collection`, `compile`, `query`, `lint`, `research`, `thesis`, `collect`, `output`, `assess`, `refresh`, `librarian`, `audit`, `plan`, `project`, `inventory`, `dataset`, `schema`, `archive`, `ll`
-
-## Operations
-
-### Init
-
-Create a topic wiki. Always require a topic name. If the hub doesn't exist,
-create it first (just wikis.json + _index.md + log.md + topics/). Refuse to
-create a new active topic over an existing `HUB/topics/<slug>` or
-`HUB/topics/.archive/<slug>`; if an archived topic has the requested slug, ask
-whether to restore it or choose a different slug. Create the core topic wiki
-structure, empty `_index.md` files for created directories, config.md, log.md,
-schema.md, and optionally .obsidian/ vault config. Create `inventory/`, `datasets/`, and
-per-dataset sample/profile/query folders lazily when those commands need them.
-Start `schema.md` as a human-owned topic guide in `schema_state: advisory` with a small default vocabulary;
-the human can trim it later and opt into strict mode only explicitly.
-
-### Ingest
-
-Convert external material into a raw source file.
-
-- **URLs**: Fetch content, extract title/author/date/text, write to `raw/articles/` or `raw/papers/`; download PDF URLs and run PDF extraction
-- **Files**: Read directly, preserve formatting; convert PDFs to markdown when possible
-- **Text**: User provides quoted text, write to `raw/notes/`
-- **Inbox**: Scan `inbox/` for dumped files, process each by type, move to `inbox/.processed/`
-
-Auto-detect type: arxiv/scholar/PDF papers → papers, github → repos, .csv/.json → data, everything else → articles.
-
-PDFs are single-source ingests. Try `pdftotext -layout` only if local poppler is
-working and produces non-trivial text; otherwise use a temporary Python venv
-with a PDF library such as `pypdf` or `pymupdf`. Preserve page boundaries when
-available. If the PDF is image-only and no OCR path is available, write a
-metadata stub with `extraction_status: ocr-needed` rather than inventing text.
-
-**Auto-classify** (when no `--wiki` specified): After fetching content, match against topic wiki scopes. Single items get a numbered choice (pick wiki, create new, or skip). Batch/inbox mode presents a classification table for bulk routing. Skipped when `--wiki` or `--local` is explicit.
-
-Slug: `YYYY-MM-DD-descriptive-slug.md`. Update all indexes after each ingestion. If 5+ uncompiled sources, suggest compilation.
-
-If the user wants to track or decide later about a source, use inventory instead
-of ingesting immediately. If a source is large or query-oriented, use a dataset
-manifest or collection ingest. After ingesting a tracked candidate, suggest
-linking the raw path from the inventory record.
-
-### Ingest Collection
-
-Bulk-ingest bounded upstream corpora without turning them directly into compiled
-wiki articles. Use this for Git document repositories, BIP-style proposal sets,
-MediaWiki XML dumps/API sites, CSV/JSON message archives, and Wayback CDX
-snapshot sets. Never recursively crawl HTML; use structured upstream
-interfaces.
-
-Adapters:
-- **git**: clone shallowly or read a local repo; inventory text files with blob
-  SHAs and HEAD commit. For BIP-style repos, prioritize `bip-####.mediawiki`
-  and `bip-####.md`, parse proposal headers, and store each proposal as a child
-  raw source.
-- **mediawiki-dump**: read official `.xml`, `.xml.bz2`, or `.xml.gz` dumps with
-  streaming XML parsing; default to namespace 0; skip redirects and non-content
-  namespaces unless explicitly included.
-- **mediawiki-api**: use `api.php` with `allpages` and `revisions` for targeted
-  imports or dumpless sites; follow continuation tokens and respect throttling.
-- **csv-messages**: parse `.csv`, `.tsv`, `.json`, or `.jsonl` message archives
-  with Python stdlib; infer id/date/author/subject/body fields; write one raw
-  markdown source per message, usually under `raw/notes/`.
-- **wayback-cdx**: use Internet Archive CDX as the bounded inventory; fetch
-  selected captures with `id_` replay URLs; run readability-to-markdown; write
-  one raw article per readable snapshot.
-
-Every collection import writes a manifest to `raw/repos/` tagged
-`collection-manifest`, plus one immutable child source per upstream page/spec in
-`raw/articles/` unless another type is more appropriate. Child frontmatter may
-include `collection`, `adapter`, `upstream_id`, `upstream_type`, `revision`,
-`sha`, `canonical_url`, `content_format`, `license`, `authors`, `categories`,
-`outlinks`, `fetched`, and adapter-specific provenance such as `message_id`,
-`row_number`, `wayback_timestamp`, or `wayback_digest`. Deduplicate by
-`collection + upstream_id + revision/sha` or the adapter's stable row/snapshot
-key; if upstream content changes, write a new raw source instead of overwriting
-the old one.
-
-Compile collections selectively: synthesize concepts, topics, timelines,
-glossaries, standards families, and reference indexes. Do not create one
-compiled wiki article per upstream page by default. For BIPs, publication is
-provenance for proposal text, not proof of adoption or consensus. For community
-wikis, default confidence to medium unless corroborated by stronger sources.
-
-For large imports, preview the collection manifest shape and estimated child
-count first. If the user only wants to remember the corpus for later, create one
-inventory record; if the corpus is row-like data, create a dataset manifest plus
-one linked inventory record.
-
-### Compile
-
-Transform raw sources into wiki articles. Incremental by default (only new sources).
-
-1. Survey: read indexes, identify uncompiled sources
-2. Extract: key concepts, facts, relationships from each source
-3. Map: which concepts need new articles vs updates to existing
-4. Classify: concept (bounded idea), topic (broad theme), reference (curated list)
-5. Write: synthesized articles with dual-links, frontmatter, confidence scores, aliases
-6. Bidirectional links: if A links to B, ensure B links to A
-7. Update all indexes
-
-Do not compile inventory records as articles. They may explain priorities or
-next actions, but factual article claims need raw/wiki sources.
-
-Archived topics are skipped by default. If a target wiki is archived, require an
-explicit archived include or restore it first. Compiling an archived target must
-keep all writes inside that archived topic and must not make it active.
-
-### Query
-
-Answer questions from wiki content only. Three depths:
-
-- **Quick**: Read indexes only. Fastest.
-- **Standard** (default): Read relevant articles + full-text search. Follow See Also links.
-- **Deep**: Read everything active, search raw sources, peek sibling wikis.
-
-Always cite sources. Note confidence levels. Identify gaps. Never use training data — only wiki content.
-
-Archived topic wikis are excluded from quick, standard, and list queries. Deep
-queries may read archived sibling `_index.md` files and report a separate
-Archived Matches section, but archived article bodies and raw sources are read
-only when the user explicitly includes archived content. Label archived
-citations clearly.
-
-For meta-questions about inventory, candidates, backlogs, or next actions, read
-inventory indexes and answer as an operational listing. For factual questions,
-inventory is not evidence.
-
-For any boot, resume, or "where you left off" briefing, start with the active
-wiki identity: `<wiki-name> booted from <wiki-root-path>`. Prefer the title from
-`config.md`; for local `.wiki/` projects, fall back to the parent directory name
-(for example `bitcoin-wiki` for `.../claude-sandbox/bitcoin-wiki/.wiki`); for
-`HUB/topics/<slug>/`, fall back to the slug. Include this line even when there
-is nothing in flight to resume.
-
-### Research
-
-Automated pipeline: search → ingest → compile. Launch parallel agents. Auto-detects input type.
-
-**Input detection**: If the input is a question (starts with what/why/how, contains "?", phrased as a goal), enters Question Mode. Otherwise, Topic Mode.
-
-**Topic Mode** — explore a subject area:
-- **Standard (5 agents)**: Academic, Technical, Applied, News/Trends, Contrarian
-- **Deep (8 agents)**: Adds Historical, Adjacent fields, Data/Stats
-- **Retardmax (10 agents)**: Adds 2 Rabbit Hole agents. Skip planning, ingest aggressively.
-
-**Question Mode** — answer a specific question with a deliverable:
-1. Decompose into 3-5 sub-questions (what/why/how/who/data)
-2. One agent per sub-question (focused, not generic angles)
-3. Compile into wiki articles + a synthesis "playbook" topic article
-4. Auto-generate a playbook output artifact (the actionable deliverable)
-5. Suggest 2-3 testable theses from findings → feed into `--mode thesis`
-
-**Modifiers**: `--new-topic` (create wiki + research in one shot), `--plan` (decompose into 3-5 parallel paths, confirm, dispatch all at once — parallel ingest, sequential compile), `--mode thesis "<claim>"` (thesis-driven research with for/against framing and verdict), `--min-time <duration>` (sustained multi-round research), `--sources <N>` (per round).
-
-Each agent receives a standardized prompt template: Objective, Context, Current wiki state, Constraints, Return format, Quality scoring guide (5=peer-reviewed → 1=spam). Deduplicate across agents.
-
-**Phase 2b: Credibility Review** — after agents return, before ingestion: score each source on peer-review status (+2), recency (+1), author authority (+1), vendor primary source (-1), potential bias (-1), corroboration (+1 per agent, max +2). Tiers: High (4-6) → Medium (2-3) → Low (0-1) → Reject (<0). Bias signals do not stack.
-
-**Session Files** (`--min-time` research, thesis, audit, refresh, output): use
-two ephemeral files plus two durable files in the wiki root.
-
-- *Ephemeral*: `.research-session.json` and `.thesis-session.json` track live
-  round number, sources, articles, gaps, and progress score for crash recovery.
-  Create at session start, update each round, delete on normal completion, and
-  leave in place with `status: "in_progress"` if interrupted.
-- *Durable*: `.session-events.jsonl` is an append-only event log, and
-  `.session-checkpoint.json` is the latest summary/checkpoint. Both persist
-  after normal completion; never delete them as routine cleanup.
-- *Resume*: on a new invocation, check active ephemeral files first. If absent,
-  read `.session-checkpoint.json` and the tail of `.session-events.jsonl` for
-  durable context. Warn when files are older than 7 days before resuming.
-
-**Progress Scoring**: Each round scored 0-100: sources×3 + articles×5 + cross-refs×2 + credibility×4. Trajectory triggers: 3 consecutive declines totaling 30+ points → warn. Score ≥80 + no gaps → early completion. Score <40 → change strategy.
-
-**Plan Reflection**: Between rounds, reflect holistically on ALL prior findings (not just latest gaps). Priority: draw cross-topic connections → update cross-references → re-evaluate gaps → score remaining gaps (Impact × Feasibility × Specificity) → adjust direction only if clearly needed.
-
-Compile all ingested sources. Report gaps and suggest follow-ups.
-
-### Thesis (mode of Research)
-
-Thesis-driven research. Activated via `--mode thesis "<claim>"` on the research command. Previously a separate `/wiki:thesis` command (merged to eliminate duplicated infrastructure).
-
-1. Decompose thesis into: core claim, key variables, testable prediction, falsification criteria, scope boundary
-2. Agents split by purpose: Supporting, Opposing, Mechanistic, Meta/Review, Adjacent (+ Historical, Quantitative, Confounders in deep mode)
-3. The thesis is the bloat filter — sources irrelevant to the claim's variables get skipped
-4. Compile evidence into wiki articles + a thesis file with evidence tables (for/against/nuance)
-5. Verdict: Supported / Partially Supported / Contradicted / Insufficient Evidence / Mixed (with confidence level)
-6. Anti-confirmation-bias: in `--min-time` mode, Round 2 focuses harder on the WEAKER side of Round 1's evidence
-7. Suggest follow-up theses derived from findings
-
-### Collect
-
-Find, catalog, deduplicate, and optionally inventory bounded sets of
-discoverable things: memes, examples, tools, projects, products, people,
-companies, quotes, source candidates, media, or other artifacts where the list
-itself is the deliverable.
-
-Collect outputs are a provenance-rich discovery layer for the LLM: "I found
-these things, with this context and confidence, but I have not yet decided what
-they mean." Later workflows may promote selected context pages into `raw/`,
-synthesize stable knowledge into `wiki/`, create durable tracking records in
-`inventory/`, or index large media/data collections in `datasets/`.
-
-Collect is distinct from research and collection ingest. Use research for an
-answer, thesis, or synthesized article. Use ingest-collection for structured
-upstream corpora such as Git repos, MediaWiki dumps/API sites, message archives,
-or Wayback CDX inventories. Use collect when the user asks to find, gather,
-catalog, curate, or inventory many objects. "All" means all discovered within
-the stated strategy and limit, not the whole internet.
-
-Scale is based on operational cost, not just row count:
-
-| Scale | Rows | Source Shape | Default Behavior |
-|-------|------|--------------|------------------|
-| tiny | 1-3 | Known items | Skip collect; use ingest, query, or inventory directly |
-| small | 4-25 | Discoverable with normal search | Write catalog output; per-item inventory allowed |
-| medium | 26-100 | Open web or mixed sources | Write catalog output; inventory as one corpus record by default |
-| large | 101-500 | Many candidates or unstable sources | Dry-run first; require confirmation |
-| huge | 501+ | Structured corpus, dataset, archive, or large media set | Use dataset or ingest-collection |
-
-Flow:
-1. State the fit judgment: appropriate for collect, too source-like, too
-   analytical, too operational, or too large.
-2. Define scope, scale, media policy, inclusion/exclusion criteria, collection
-   kind, tags, and a default cap.
-3. Search several angles, fetch only promising pages, and prefer provenance-rich
-   sources such as original posts, creator pages, official pages, GitHub repos,
-   archives, Know Your Meme-style references, or well-cited retrospectives.
-4. Extract catalog rows with `title`, `aliases`, `type`, `canonical_url`,
-   `media_url`, `source_url`, `source_title`, `media_filename`, origin
-   platform/publisher, creator/date when known, description, evidence,
-   `found_in_context`, provenance confidence, rights/license if visible, media
-   metadata/hashes when available, tags, and next action.
-5. Treat `found_in_context` as first-class provenance. Store context URL, title,
-   platform, found date, collector query, role (`original`, `near-original`,
-   `repost`, `reference`, `retrospective`, `usage-example`,
-   `archive-snapshot`, or `unclear`), surrounding label, context summary, and
-   confidence.
-6. Download bounded public binary media for media-bearing collections by
-   default. Never put binaries in `raw/`; raw is for source text. Cache
-   originals or thumbnails under `output/assets/collect-<slug>/`, record local
-   paths, sizes, hashes, formats, and skipped/failed downloads in the catalog,
-   and use `datasets/` for hundreds of media items or very large payloads. Use
-   defensive download settings: timeouts, file-size caps, content-type checks,
-   and IPv4 retry (`curl -4`) when media hosts hang on IPv6.
-7. Deduplicate reposts/rehosts using canonical URLs, media URLs, aliases,
-   filenames, checksums/perceptual hashes when available, and context evidence.
-8. Save `output/collect-<query-slug>-YYYY-MM-DD.md` with `type: collection`,
-   `query`, `collect_kind`, `scale`, `media_policy`, `media_assets`, download
-   counts, source URLs, scope, search strategy, catalog table, media handling,
-   gaps, inventory recommendation, and sources checked.
-9. Update `output/_index.md`, the master `_index.md`, and `log.md` with a
-   `collect` entry.
-10. If inventory is requested, create per-item records only for small durable
-   sets; otherwise create one `inventory/corpora/` record pointing at the
-   collection output. Use `kind: artifact` for memes/media artifacts, `item` for
-   products/tools/assets, `entity` for people/orgs, and `corpus` for large
-   source pools.
-
-Do not cite collect outputs as strong factual evidence in compiled articles.
-For factual claims, ingest the best supporting context pages into `raw/`.
-
-### Retract
-
-Remove a regretted source and clean up its downstream effects. Requires `--reason`.
-
-1. **Identify**: Find the source file (by path or filename search)
-2. **Map blast radius**: Grep all wiki articles for references — classify as frontmatter, body-inline, or see-also
-3. **Clean up articles**: Remove metadata references, flag inline claims with `<!--RETRACTED-SOURCE-->` markers
-4. **Delete raw source**: Remove file, update all indexes
-5. **Log**: Permanent retraction record with reason
-6. **Recompile** (optional `--recompile`): Rewrite flagged sections from remaining sources, remove markers
-7. **Report**: Summary of changes + remaining review items
-
-`--dry-run` shows blast radius without making changes. If a source is the only source for an article, warn prominently.
-
-### Refresh
-
-Freshness check for wiki articles. Re-fetches source URLs, detects changes (cosmetic, additive, contradictory), and presents a human-gated assessment. Three tiers: source check → change assessment → action decision (skip/update/flag/retract). `--due` flag shows all articles past their volatility threshold. Never auto-recompiles — human confirms every change.
-
-### Inventory
-
-Track durable things the wiki should remember but that are not raw sources,
-compiled articles, or generated outputs: ingest candidates, source queues,
-items, entities, corpora, open questions, tasks, artifacts, and watch items.
-
-Before writing or migrating records, state the fit judgment: appropriate for
-inventory, too small, too big, or out of scope. For bulk pivots, preview the
-record shape first and default to dry-run.
-
-Subcommands:
-- **list**: Show records, optionally filtered by kind/status/priority
-- **add <kind> "title"**: Create a record under the canonical inventory subdir
-- **show <slug-or-path>**: Read one record
-- **update <path>**: Edit one record
-- **save-view "name"**: Save a derived table/list under `inventory/views/`
-- **scan-outputs**: Find legacy output artifacts that look like queues/backlogs
-- **migrate-output <path>**: Dry-run by default; `--apply` additively creates
-  inventory records and never moves or deletes the source output
-
-For chat responses, inventory listing must be efficient and readable: read
-indexes/frontmatter first, present compact Markdown tables or short bullets, cap
-long lists with a visible omitted count, and open full record bodies only when
-the user asks for detail. Common views: `summary`, `actions`, `items`,
-`records`, `sources`.
-
-Other operations should be inventory-aware. Ingest links completed candidates;
-dataset manifests link to corpus records when next actions matter; compile and
-query may surface inventory gaps but must not cite inventory as factual
-evidence; collect writes catalog outputs first and only creates inventory for
-durable tracking state; research, audit, librarian, refresh, plan, assess, and output may
-propose records for durable follow-ups, but should not create large backlogs
-without a sample preview and explicit approval.
-
-Migration path: `lint --fix` may repair indexes for an inventory layer that
-already exists, but it should not create a completely absent empty inventory
-tree and it must never convert output artifacts. Output-to-inventory
-migration is explicit, dry-run-first, and additive.
-
-### Dataset
-
-Manage manifests for data that is too large, mutable, sensitive, or operationally
-awkward to store directly in the wiki. The wiki becomes the index/interface; the
-actual data remains at its filesystem path, URL, database, object store, or
-archive.
-
-Subcommands:
-- **list**: Show dataset manifests
-- **add "title" --location <path-or-url>**: Create `datasets/<slug>/MANIFEST.md`
-- **show <slug-or-path>**: Read one manifest and related profile/sample indexes
-- **profile <slug>**: Record lightweight metadata such as size, format, headers,
-  and schema observations; dry-run unless `--apply`
-- **sample <slug>**: Save a tiny sample or sampling recipe; dry-run unless
-  `--apply`
-- **scan-outputs**: Find legacy output artifacts that look like dataset notes
-- **migrate-output <path>**: Dry-run by default; `--apply` additively creates
-  dataset manifests and never moves/deletes the source output or copies data
-
-For chat responses, dataset listing must read `datasets/_index.md` first and
-only manifest frontmatter when needed. Never inspect samples, profiles, queries,
-or the underlying dataset for a plain list. Use compact table/list views such as
-`summary`, `manifests`, `schema`, and `locations`.
-
-Migration path: `lint --fix` may repair indexes for a dataset registry that
-already exists, but it should not create a completely absent empty `datasets/`
-tree or unused per-dataset sample/profile/query folders, and it must never convert content.
-Output-to-dataset migration is explicit, dry-run-first, and additive.
-
-### Archive
-
-Quietly preserve whole topic wikis the user no longer wants in normal context.
-Archive is hub-level in v1; do not move project-local `.wiki/` directories and
-do not archive individual `raw/` or `wiki/` files.
-
-Subcommands:
-- **list**: Show active topics and archived counts; `--archived` shows archived topics too
-- **topic <slug>**: Move `HUB/topics/<slug>` to `HUB/topics/.archive/<slug>` and set `wikis.json` status to `archived`
-- **restore <slug>**: Move `HUB/topics/.archive/<slug>` back to `HUB/topics/<slug>` and set status to `active`
-- **peek <query>**: Search archived topic indexes only, without reading archived article bodies
-
-Other tools hide archive by default. Query, output, plan, and assess only use
-archived material with explicit archived inclusion. Compile, ingest,
-ingest-collection, research, collect, inventory, dataset, project, and lessons-learned
-reject an archived target unless the user restores or explicitly includes it,
-and explicit archived writes must stay inside the archived topic path. Librarian
-and refresh skip archived topics so old interests do not create maintenance
-chores. Audit follows archived dependencies only when the audited artifact cites
-them.
-
-### Lint
-
-Health checks with auto-fix capability. Lint **is** the migration path — there is no separate `/wiki:migrate` command. A file in the wrong place from an old wiki layout and a file in the wrong place from user error are treated as the same defect. Three layers:
-
-- **Mechanical (C11/C12/C13)** — `raw/` + `wiki/` file placement and frontmatter schema. Fully auto-fixable.
-- **Project-level (C8/C9)** — `output/projects/` structure, `WHY.md` presence, staleness detection, and grouping candidates. Migration of legacy `_project.md` manifests (from pre-v0.2 wikis) is auto-fixed (C8c); everything else is surfaced as suggestions or ready-to-paste commands.
-- **Inventory-level (C16)** — `inventory/` structure, record/view schemas, and output-to-inventory migration candidates. Missing empty structure is a suggestion; partially existing structure is repairable; content migration is human-gated.
-- **Dataset-level (C17)** — `datasets/` structure, manifest schema, and output-to-dataset migration candidates. Missing empty structure is a suggestion; partially existing structure is repairable; content migration is human-gated.
-- **Archive-level (C19)** — `HUB/topics/.archive/` lifecycle and `wikis.json`
-  path/status drift. Normal lint reports archived topics as skipped;
-  `--include-archived` or `--archived-only` structurally maintains them.
-
-**Checks**: structure integrity, frontmatter validity (plus legacy key/value aliases C13), canonical placement of raw/wiki files (C11), unknown-file quarantine for raw/wiki/inventory/datasets/root (C12), index consistency, link integrity, source provenance (dangling refs, unresolved retraction markers), tag hygiene, coverage, project `WHY.md` presence (C8a), project staleness via source chain (C8b), legacy `_project.md` migration to `WHY.md` (C8c), project candidates (C9), inventory migration candidates (C16), dataset migration candidates (C17), archive registry drift and active/archive collisions (C19), deep fact-checking (optional).
-
-**Auto-fix** (`--fix`): rewrite legacy frontmatter keys/values to canonical (C13), move misplaced raw/wiki files to their canonical directory (C11), quarantine unknown files to `inbox/.unknown` (C12), migrate legacy `_project.md` to `WHY.md` (C8c), add a default human-owned `schema.md` in advisory mode when missing, repair missing indexes inside existing inventory/dataset layers (C16/C17), repair unambiguous archive registry path/status drift (C19), missing indexes, orphan files, dead index entries, statistics mismatch, missing bidirectional links, empty frontmatter fields, dangling source references, regenerate projects-aware `output/_index.md`. Never auto-delete unknown directories. Never auto-create `WHY.md` with placeholder goals (C8a is warn-only — manufactured rationale is worse than missing). Never create completely absent optional inventory or dataset trees just to populate placeholders. Never auto-move files into projects (C9 is human-authored via `/wiki:project`). Never auto-migrate output artifacts into inventory or dataset records (C16/C17 are explicit via `/wiki:inventory migrate-output --apply` and `/wiki:dataset migrate-output --apply`). Never move topics into or out of archive during lint; archive/restore is explicit. On slug collisions during a placement move, skip and warn.
-
-**Schema evolution**: when canonical paths or frontmatter fields for `raw/`, `wiki/`, `inventory/`, `datasets/`, or archive lifecycle paths change, update the rules in `skills/wiki-manager/references/linting.md` (C11/C16/C17 placement maps, C12/C19 allowlists, C13 alias table). When the project model changes, update C8/C9 and `projects.md`. Never write version-specific migration code. Lint rules are the schema.
-
-### Search
-
-Find content by keyword, tag, or category. Scan indexes first (fast), then full-text search.
-
-### Output
-
-Generate artifacts from wiki content: summary, report, study-guide, slides, timeline, glossary, comparison. Collect uses output files too, but `type: collection` catalogs are produced by the collect workflow because they require discovery, dedupe, media policy, and inventory fit checks.
-
-**Retardmax mode**: Read ALL articles, generate immediately without planning structure. Ship rough, iterate later.
-
-Save to `output/`. Update indexes.
-
-### Assess
-
-Compare a local repo against wiki research + market.
-
-1. **Repo scan** (3 parallel agents): structure, features, docs
-2. **Wiki scan**: knowledge map from indexes and articles
-3. **Gap analysis**: alignment, research gaps (repo does it, wiki doesn't), opportunities (wiki knows it, repo doesn't), neither covers
-4. **Market scan** (3-5 parallel agents): competitors, best practices, emerging trends
-
-Output: comparison report with feature matrix, competitive landscape, and recommended actions (specific research and build suggestions).
-
-### Audit
-
-Truth-seeking umbrella inspection across the whole artifact graph. If librarian
-keeps the `wiki/` layer in check, audit answers the broader question: can the
-user trust the current knowledge and outputs right now?
-
-**Default behavior**:
-- Reuse or rerun the librarian pass for active wiki articles
-- Audit output artifacts across `output/`, `wiki/`, and `raw/` dependency chains
-- Follow the evidence outward when local material is weak, stale, contradictory,
-  or missing
-- Run targeted support and attack research before settling on a verdict
-- Write `.audit/REPORT.md` and `.audit/scan-results.json`
-
-**Verdicts**:
-- `supported`
-- `weakened`
-- `contradicted`
-- `unresolved`
-
-**Provenance classification**: Audit reads `.session-events.jsonl` and
-`.session-checkpoint.json` to grade the audited run. Both present, recent, and
-matching the session id means `replayable`; missing or stale durable provenance
-means `partial`.
-
-Flags: `--artifact <path>`, `--project <slug>`, `--wiki-only`, `--outputs-only`,
-`--quick`, `--fresh`. Archived material is skipped by default unless the
-targeted artifact depends on it or the user explicitly includes archived
-content.
-
-### Librarian
-
-Content-level wiki maintenance: staleness detection, quality scoring, factual
-verification, semantic coherence, deduplication, and proposal-only topic-guide
-advice. Produces scored reports — never modifies content without confirmation.
-Archived topics are skipped by default.
-
-**Subcommands**:
-- **scan**: Score all wiki articles for staleness and quality. Two-tier: quick metadata scan first, deep content read only for articles below threshold or with `volatility: hot`. Checkpoints after each article for crash recovery. Results to `.librarian/scan-results.json` and `.librarian/REPORT.md`. `--passes conventions` (or legacy `schema`) may write `output/schema-proposal-<topic>-YYYY-MM-DD.md`; it must not create/update `schema.md` without explicit acceptance.
-- **report**: Display the latest scan report.
-- **fix <id>**: Apply a proposed fix from the report (Phase 3 — not yet implemented).
-
-**Staleness scoring** (0-100): four dimensions at 25 points each — source freshness, verification recency, compilation recency, source chain integrity. Decay curves scaled by article `volatility` tier (hot/warm/cold).
-
-**Quality scoring** (0-100): four dimensions at 25 points each — source diversity, content depth, cross-reference density, summary quality. Articles scoring below 40 on either dimension are flagged.
-
-Flags: `--article <path>` (single article), `--resume` (from checkpoint),
-`--passes <list>` (staleness, quality, optional conventions/schema — future:
-verification, coherence, dedup).
-
-Topic guides are the default for topic wikis. New wikis should include an
-advisory `schema.md` starter file. Existing wikis without `schema.md` remain
-valid, but status/resume and lint may show a non-blocking adoption nudge. The
-adoption path is:
-
-1. Small/simple wiki: create the default advisory topic guide with
-   `llm-wiki schema adopt` or `llm-wiki lint --fix`.
-2. Established wiki: run the librarian conventions pass first, then apply only the
-   useful parts of the proposal into the human-owned `schema.md`.
-3. Keep `schema_state: advisory` until reports are low-noise; switch to
-   `strict` only by explicit user decision.
-
-### Plan
-
-Generate implementation plans grounded in wiki research. Six-stage pipeline: context assembly → interview → gap research → synthesis → plan generation → save.
-
-1. **Context assembly**: Read wiki deeply, identify relevant articles, supporting context, and knowledge gaps
-2. **Interview** (skip with `--no-interview` or `--quick`): 3-7 clarifying questions informed by wiki content
-3. **Gap research** (skip with `--no-research` or `--quick`): Targeted web searches to fill knowledge gaps
-4. **Synthesis**: Merge wiki evidence + interview answers + gap research
-5. **Plan generation**: Output in requested format
-6. **Save**: Write to `output/plan-{slug}-{date}.md`, update indexes and log
-
-**Formats**: `--format roadmap` (default — phased plan with architecture decisions), `--format rfc` (Google/Uber style), `--format adr` (Architecture Decision Records), `--format spec` (technical specification).
-
-Use `--with <wiki>` to load supplementary wikis as craft/skill context alongside the primary domain wiki.
-
-### Project
-
-Manage projects within a topic wiki. Projects are folders under `output/projects/` that group related outputs with a goal captured in `WHY.md`.
-
-- **new <slug> "goal"**: Create project directory with `WHY.md`
-- **list**: Show all projects with status and output counts
-- **show <slug>**: Display project details, WHY.md, and outputs
-- **archive <slug>**: Mark project as archived
-
-Projects are a lightweight overlay — they don't move or copy wiki content.
-Project archive is separate from topic archive: it moves one folder under
-`output/projects/.archive/` inside the selected topic wiki.
-
-### Feedback
-
-Review and promote high-signal user-feedback candidates. Hooks may capture
-redacted candidates for corrections, preferences, explicit approvals, and plan
-acceptance under `.sessions/feedback/`; generic `ok`/`thanks` acknowledgements
-are ignored. Use `feedback list`, `feedback show`, and `feedback promote <id> --topic <slug>` to move selected candidates into topic `raw/notes/`. Promotion is explicit and appends a `feedback` log entry.
-
-### Lessons Learned (ll)
-
-Extract lessons from the current session — error→fix patterns, user corrections, discoveries, gotchas — and save structured knowledge to the wiki pipeline.
-
-**7-stage pipeline**: scan conversation → extract patterns → target topic wiki → write raw note → update relevant articles → suggest rule additions → log.
-
-Flags: `--dry-run` (preview without writing), `--rules` (also propose CLAUDE.md/AGENTS.md rule additions), `--include-archived` (explicitly write lessons to an archived topic).
-
-## Structural Guardian
-
-Auto-run lightweight checks after write operations:
-
-1. Hub should only have wikis.json, _index.md, log.md, topics/. `topics/.archive/` is allowed for archived topic wikis. Warn on anything else; never delete hub-level content automatically.
-2. Index freshness: file counts match index rows, including inventory and dataset indexes. Ignore maintenance/report directories such as `.librarian/` and `.audit/`. Auto-fix mismatches by regenerating the affected directory index.
-3. Orphan detection: files not in any index → add them.
-4. Missing core topic directories → create with empty _index.md. Inventory and dataset layers are lazy: repair indexes when they already exist, but do not create absent optional trees unless the current inventory or dataset workflow needs them. For older compiled articles, infer safe schema fields from the directory/body and rewrite fuzzy raw-source refs only when they resolve unambiguously.
-5. wikis.json sync: all active topic dirs registered with portable relative paths (`topics/<slug>`), archived topic dirs registered as `topics/.archive/<slug>` with `status: archived`, stale absolute paths repaired when the corresponding topic dir exists, no ghost entries.
-
-Silent when clean. Auto-fix trivial issues. Warn on structural problems. Never block the user.
-
-## File Naming
-
-- Raw sources: `YYYY-MM-DD-descriptive-slug.md`
-- Wiki articles: `descriptive-slug.md` (no date — living documents)
-- Inventory records: `descriptive-slug.md` (no date — durable tracking state)
-- Inventory views: `descriptive-view-slug.md` under `inventory/views/`
-- Dataset manifests: `datasets/descriptive-slug/MANIFEST.md`
-- Collection outputs: `collect-{query-slug}-{YYYY-MM-DD}.md`
-- Output artifacts: `{type}-{topic-slug}-{YYYY-MM-DD}.md`
-- All lowercase, hyphens, no special chars, max 60 chars
-
-## Tag Convention
-
-Lowercase, hyphenated. Specific over general (`transformer-architecture` not `ai`). Normalize — no near-duplicates.
-
-## Obsidian Compatibility
-
-Each topic wiki can be opened as an Obsidian vault. The `.obsidian/` config is created on init with sane defaults. Dual-links power the graph view. Aliases enable search by alternate names. Tags are natively read. The hub has NO `.obsidian/` to avoid nested vault confusion.
-
-## Platform-Specific Notes
-
-This AGENTS.md works with any LLM agent that can read/write files and search the web. Adapt tool names as needed:
-
-| Capability | Claude Code | OpenAI Codex | Generic |
-|-----------|------------|-------------|---------|
-| Read file | `Read` | `file_read` | read the file |
-| Write file | `Write` | `file_write` | write the file |
-| Edit file | `Edit` | `file_edit` | edit the file |
-| Search files | `Grep` | `shell(grep)` | search file contents |
-| Find files | `Glob` | `shell(find)` | find files by pattern |
-| Web search | `WebSearch` | `browser` | search the web |
-| Fetch URL | `WebFetch` | `browser` | fetch URL content |
-| Run command | `Bash` | `shell` | run shell command |
-| Subagents | `Agent` | parallel tasks | spawn parallel work |
+- `on_session_finalize` (`PreCompact`) only fires on session teardown (`/new`, GC, CLI quit), not during active conversation
+- `LLM_WIKI_HERMES_DEBUG=1` env var on the gateway process enables debug logging to stderr (visible in `journalctl --user -u hermes-gateway`)

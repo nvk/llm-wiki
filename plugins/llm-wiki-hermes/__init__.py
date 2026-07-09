@@ -25,12 +25,24 @@ _spec2.loader.exec_module(_tools_mod)
 adapter = _adapter_mod
 tools = _tools_mod
 
+from pathlib import Path as _Path
+
+_SKILL_DIR = _Path(__file__).resolve().parent / "skills" / "wiki-manager"
+
 
 def register(ctx):
-    """Hermes plugin entrypoint. Wires session-capture hooks and the wiki tool."""
+    """Hermes plugin entrypoint. Wires session-capture hooks, the wiki tool, and the bundled skill."""
     ctx.register_hook("on_session_start", adapter.on_session_start)
     ctx.register_hook("pre_llm_call", adapter.pre_llm_call)
     ctx.register_hook("post_tool_call", adapter.post_tool_call)
     ctx.register_hook("on_session_finalize", adapter.on_session_finalize)
     ctx.register_hook("on_session_end", adapter.on_session_end)
     tools.register(ctx)
+    try:
+        ctx.register_skill(
+            "wiki-manager",
+            _SKILL_DIR,
+            description="LLM-compiled knowledge base manager: ingest, compile, query, collect, audit, research, output.",
+        )
+    except Exception as exc:  # pragma: no cover - defensive
+        print(f"[llm-wiki-hermes] skill registration failed: {exc}", file=sys.stderr)

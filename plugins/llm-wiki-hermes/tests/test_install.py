@@ -19,14 +19,17 @@ def test_disable_is_idempotent_when_api_unavailable():
 
 def test_seed_copies_skill_to_fake_home(tmp_path, monkeypatch):
     monkeypatch.setattr(install_mod.Path, "home", lambda: tmp_path)
-    # Ensure the source SKILL.md exists in the plugin tree.
-    src = Path(__file__).resolve().parents[1] / "skills" / "wiki-manager" / "SKILL.md"
-    assert src.exists(), "bundled wiki-manager SKILL.md must exist"
+    # Ensure the source skill dir exists in the plugin tree.
+    src_dir = Path(__file__).resolve().parents[1] / "skills" / "wiki-manager"
+    assert (src_dir / "SKILL.md").exists(), "bundled wiki-manager SKILL.md must exist"
     # First call writes.
     assert install_mod.seed_wiki_manager_skill() is True
-    dst = tmp_path / ".hermes" / "skills" / "wiki-manager" / "SKILL.md"
-    assert dst.exists()
-    assert dst.read_text() == src.read_text()
+    dst = tmp_path / ".hermes" / "skills" / "wiki-manager"
+    assert (dst / "SKILL.md").exists()
+    assert (dst / "SKILL.md").read_text() == (src_dir / "SKILL.md").read_text()
+    # references/ are also copied.
+    refs = list((dst / "references").glob("*.md"))
+    assert len(refs) > 0, "references/ should be copied alongside SKILL.md"
     # Second call is a no-op (idempotent).
     assert install_mod.seed_wiki_manager_skill() is False
 

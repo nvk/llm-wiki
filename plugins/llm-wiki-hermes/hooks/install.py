@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import shutil
 import sys
 from pathlib import Path
 
@@ -51,24 +52,33 @@ def disable_builtin_llm_wiki_skill() -> bool:
         return False
 
 
-def seed_wiki_manager_skill() -> bool:
-    """Copy our bundled wiki-manager SKILL.md into ~/.hermes/skills/wiki-manager/
+def _skill_src_dir() -> Path:
+    return Path(__file__).resolve().parents[1] / "skills" / "wiki-manager"
 
-    so it enters Hermes' <available_skills> index and auto-loads for wiki
-    requests (plugin-registered skills are intentionally NOT indexed —
-    plugins.py:1208). Idempotent: skips if the destination already exists.
-    Returns True if a file was written.
+
+def _skill_dst_dir() -> Path:
+    return Path.home() / ".hermes" / "skills" / "wiki-manager"
+
+
+def seed_wiki_manager_skill() -> bool:
+    """Copy our bundled wiki-manager skill (SKILL.md + references/) into
+    ~/.hermes/skills/wiki-manager/ so it enters Hermes' <available_skills>
+    index and auto-loads for wiki requests (plugin-registered skills are
+    intentionally NOT indexed — plugins.py:1208). Idempotent: skips if the
+    destination SKILL.md already exists. Returns True if files were written.
     """
-    src = Path(__file__).resolve().parents[1] / "skills" / "wiki-manager" / "SKILL.md"
-    dst = Path.home() / ".hermes" / "skills" / "wiki-manager" / "SKILL.md"
-    if not src.exists():
+    src = _skill_src_dir()
+    dst = _skill_dst_dir()
+    dst_skill = dst / "SKILL.md"
+    if not (src / "SKILL.md").exists():
         print(f"[llm-wiki-hermes] bundled skill not found at {src}", file=sys.stderr)
         return False
-    if dst.exists():
+    if dst_skill.exists():
         return False
     try:
-        dst.parent.mkdir(parents=True, exist_ok=True)
-        dst.write_text(src.read_text(encoding="utf-8"), encoding="utf-8")
+        if dst.exists():
+            shutil.rmtree(dst)
+        shutil.copytree(src, dst)
         print(
             "[llm-wiki-hermes] Seeded wiki-manager skill into ~/.hermes/skills/ "
             "so it replaces the built-in llm-wiki skill.",

@@ -13,3 +13,15 @@ __pycache__/
 # Planning docs (design specs / implementation plans) — local working artifacts,
 # not part of the distributed plugin or the upstream PR.
 docs/superpowers/
+config.py
+plugins.py
+plugins_cmd.py
+prompt_builder.py
+skill_bundles.py
+skill_commands.py
+skill_preprocessing.py
+skill_utils.py
+skills_config.py
+skills_tool.py
+subcommands_plugins.py
+tools_init.py

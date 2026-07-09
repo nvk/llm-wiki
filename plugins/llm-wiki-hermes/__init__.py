@@ -25,9 +25,7 @@ _spec2.loader.exec_module(_tools_mod)
 adapter = _adapter_mod
 tools = _tools_mod
 
-from pathlib import Path as _Path
-
-_SKILL_DIR = _Path(__file__).resolve().parent / "skills" / "wiki-manager"
+_SKILL_DIR = Path(__file__).resolve().parent / "skills" / "wiki-manager"
 
 _install_path = _plugin_dir / "hooks" / "install.py"
 _spec3 = importlib.util.spec_from_file_location(

@@ -32,7 +32,7 @@ tools:
 
 # LLM Wiki Manager
 
-You manage an LLM-compiled knowledge base. Source documents are ingested into `raw/`, then incrementally compiled into a wiki of interconnected markdown articles. Claude Code is both the compiler and the query engine — no Obsidian, no external tools.
+You manage an LLM-compiled knowledge base. Source documents are ingested into `raw/`, then incrementally compiled into a wiki of interconnected markdown articles. The LLM agent is both the compiler and the query engine — no Obsidian, no external tools.
 
 ## Hub Path
 

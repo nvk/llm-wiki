@@ -160,6 +160,33 @@ def _read_text(path):
         return ""
 
 
+def _parse_article_entry(line):
+    """Extract (title, path, summary) from an _index.md line.
+
+    Handles multiple formats resiliently:
+      - [[Wikilink]](./wiki/concepts/foo.md) — summary
+      - [Markdown](./wiki/concepts/foo.md) — summary
+      - | [slug](topics/slug/_index.md) | Title | Description |
+    Returns None when the line doesn't contain an article entry.
+    """
+    # Wikilink or markdown link: [[Title]](path) or [Title](path)
+    m = re.search(r"\[\[?([^\]]+)\]\]?\(([^)]+)\)", line)
+    if m:
+        title = m.group(1).strip()
+        rel = m.group(2).strip()
+        summary = line[m.end() :].lstrip(" —-:").strip()
+        return title, rel, summary
+    # Table row: | [slug](topics/slug/...) | Title | Description |
+    m = re.search(r"\|.*?\[[^\]]*\]\([^)]+\)\s*\|\s*([^|]*)\|\s*([^|]*)", line)
+    if m:
+        title = m.group(1).strip()
+        summary = m.group(2).strip()
+        pm = re.search(r"\(([^)]+)\)", line)
+        rel = pm.group(1).strip() if pm else ""
+        return title, rel, summary
+    return None
+
+
 def _score_articles(hub, query, limit):
     q_tokens = TOKEN_RE.findall(query.lower())
     q_set = {t for t in q_tokens if t not in STOPWORDS}
@@ -168,18 +195,27 @@ def _score_articles(hub, query, limit):
     hub_index = _read_text(hub / "_index.md")
     slugs = re.findall(r"topics/([^/\s)]+)", hub_index)
     slugs = [s for s in dict.fromkeys(slugs) if not s.startswith(".")]
+    if not slugs:
+        # Fallback: enumerate topics/ directory
+        topics_dir = hub / "topics"
+        if topics_dir.is_dir():
+            slugs = [
+                d.name
+                for d in topics_dir.iterdir()
+                if d.is_dir() and not d.name.startswith(".")
+            ]
     scored = []
     for slug in slugs:
         topic = hub / "topics" / slug
         if not topic.is_dir():
             continue
         for line in _read_text(topic / "_index.md").splitlines():
-            m = re.search(r"\[([^\]]+)\]\(([^)]+)\)", line)
-            if not m:
+            entry = _parse_article_entry(line)
+            if entry is None:
                 continue
-            title = m.group(1).strip()
-            rel = m.group(2).strip()
-            summary = line[m.end() :].lstrip(" —-:").strip()
+            title, rel, summary = entry
+            if not rel:
+                continue
             hay = (title + " " + summary).lower()
             score = sum(1 for tok in q_set if tok in hay)
             title_hits = len(q_set & set(TOKEN_RE.findall(title.lower())))
@@ -190,12 +226,11 @@ def _score_articles(hub, query, limit):
     seen = set()
     out = []
     for _score, title, rel, summary in scored:
-        if rel in seen:
-            continue
-        seen.add(rel)
-        out.append((title, rel, summary))
-        if len(out) >= limit:
-            break
+        if rel not in seen:
+            seen.add(rel)
+            out.append((title, rel, summary))
+            if len(out) >= limit:
+                break
     return out
 
 

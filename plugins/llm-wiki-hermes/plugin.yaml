@@ -1,0 +1,15 @@
+name: llm-wiki-hermes
+manifest_version: 1
+version: 0.15.0
+description: >
+  LLM-compiled knowledge bases for the Hermes agent. Session capture + rehydration
+  hooks, a wiki tool for deterministic checks, and proactive wiki-as-memory
+  injection, with the full wiki-manager skill for research/query/collect/compile/audit.
+author: nvk
+license: MIT
+hooks:
+  - pre_llm_call
+  - on_session_start
+  - post_tool_call
+  - on_session_finalize
+  - on_session_end

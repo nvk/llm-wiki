@@ -23,7 +23,6 @@ SESSION_COMMANDS = {
     "promote",
     "feedback",
     "status",
-    "session",
 }
 
 
@@ -69,7 +68,7 @@ def register(ctx):
             "properties": {
                 "command": {
                     "type": "string",
-                    "description": "llm-wiki subcommand: lint|schema|archive|session|feedback",
+                    "description": "llm-wiki subcommand: enable|disable|hook|capture|list|show|rehydrate|promote|feedback|status (session engine) or lint|archive|schema (CLI)",
                 },
                 "args": {
                     "type": "string",

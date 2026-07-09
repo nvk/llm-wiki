@@ -15,7 +15,7 @@ def test_handle_wiki_routes_to_session_script(tmp_path, monkeypatch):
     fake.write_text("#!/usr/bin/env python3\nimport sys; print('SESSION-OK')\n")
     monkeypatch.setattr(tools_mod, "SESSION_SCRIPT", fake)
     monkeypatch.setattr(tools_mod, "CLI_SCRIPT", tmp_path / "cli.py")
-    out = json.loads(tools_mod.handle_wiki({"command": "session", "args": "status"}))
+    out = json.loads(tools_mod.handle_wiki({"command": "status", "args": "--check"}))
     assert out["success"] is True
     assert "SESSION-OK" in out["output"]
 
@@ -72,7 +72,6 @@ def test_handle_wiki_routes_known_session_command_to_session_script(
         "promote",
         "feedback",
         "status",
-        "session",
     ]:
         out = json.loads(tools_mod.handle_wiki({"command": cmd}))
         assert out["success"] is True, f"command {cmd!r} should route to session script"

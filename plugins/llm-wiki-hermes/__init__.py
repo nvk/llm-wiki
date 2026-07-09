@@ -52,3 +52,7 @@ def register(ctx):
         _install.disable_builtin_llm_wiki_skill()
     except Exception as exc:  # pragma: no cover - defensive
         print(f"[llm-wiki-hermes] install step failed: {exc}", file=sys.stderr)
+    try:
+        _install.seed_wiki_manager_skill()
+    except Exception as exc:  # pragma: no cover - defensive
+        print(f"[llm-wiki-hermes] seed step failed: {exc}", file=sys.stderr)

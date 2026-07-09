@@ -49,3 +49,35 @@ def disable_builtin_llm_wiki_skill() -> bool:
             file=sys.stderr,
         )
         return False
+
+
+def seed_wiki_manager_skill() -> bool:
+    """Copy our bundled wiki-manager SKILL.md into ~/.hermes/skills/wiki-manager/
+
+    so it enters Hermes' <available_skills> index and auto-loads for wiki
+    requests (plugin-registered skills are intentionally NOT indexed —
+    plugins.py:1208). Idempotent: skips if the destination already exists.
+    Returns True if a file was written.
+    """
+    src = Path(__file__).resolve().parents[1] / "skills" / "wiki-manager" / "SKILL.md"
+    dst = Path.home() / ".hermes" / "skills" / "wiki-manager" / "SKILL.md"
+    if not src.exists():
+        print(f"[llm-wiki-hermes] bundled skill not found at {src}", file=sys.stderr)
+        return False
+    if dst.exists():
+        return False
+    try:
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        dst.write_text(src.read_text(encoding="utf-8"), encoding="utf-8")
+        print(
+            "[llm-wiki-hermes] Seeded wiki-manager skill into ~/.hermes/skills/ "
+            "so it replaces the built-in llm-wiki skill.",
+            file=sys.stderr,
+        )
+        return True
+    except Exception as exc:  # pragma: no cover - defensive
+        print(
+            f"[llm-wiki-hermes] failed to seed wiki-manager skill: {exc}",
+            file=sys.stderr,
+        )
+        return False

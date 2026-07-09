@@ -49,3 +49,47 @@ def test_register_calls_ctx(tmp_path, monkeypatch):
     tools_mod.register(Ctx())
     assert captured["name"] == "wiki"
     assert callable(captured["handler"])
+
+
+def test_handle_wiki_routes_known_session_command_to_session_script(
+    tmp_path, monkeypatch
+):
+    """Every session subcommand must hit scripts/llm-wiki-session, not the CLI."""
+    session_script = tmp_path / "llm-wiki-session"
+    cli_script = tmp_path / "llm-wiki"
+    for p in (session_script, cli_script):
+        p.write_text("#!/usr/bin/env python3\nimport sys; print(sys.argv[0])\n")
+        p.chmod(0o755)
+    monkeypatch.setattr(tools_mod, "SESSION_SCRIPT", session_script)
+    monkeypatch.setattr(tools_mod, "CLI_SCRIPT", cli_script)
+    for cmd in [
+        "enable",
+        "disable",
+        "capture",
+        "list",
+        "show",
+        "rehydrate",
+        "promote",
+        "feedback",
+        "status",
+        "session",
+    ]:
+        out = json.loads(tools_mod.handle_wiki({"command": cmd}))
+        assert out["success"] is True, f"command {cmd!r} should route to session script"
+        assert "llm-wiki-session" in out["output"], f"{cmd!r} routed to wrong script"
+
+
+def test_handle_wiki_routes_cli_commands_to_cli_script(tmp_path, monkeypatch):
+    session_script = tmp_path / "llm-wiki-session"
+    cli_script = tmp_path / "llm-wiki"
+    for p in (session_script, cli_script):
+        p.write_text("#!/usr/bin/env python3\nimport sys; print(sys.argv[0])\n")
+        p.chmod(0o755)
+    monkeypatch.setattr(tools_mod, "SESSION_SCRIPT", session_script)
+    monkeypatch.setattr(tools_mod, "CLI_SCRIPT", cli_script)
+    for cmd in ["lint", "archive", "schema"]:
+        out = json.loads(tools_mod.handle_wiki({"command": cmd}))
+        assert out["success"] is True, f"command {cmd!r} should route to CLI script"
+        assert "llm-wiki" in out["output"] and "session" not in out["output"], (
+            f"{cmd!r} routed to wrong script"
+        )

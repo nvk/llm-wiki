@@ -10,6 +10,22 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 SESSION_SCRIPT = REPO_ROOT / "scripts" / "llm-wiki-session"
 CLI_SCRIPT = REPO_ROOT / "scripts" / "llm-wiki"
 
+# Subcommands that live in the session engine (scripts/llm-wiki-session).
+# Everything else (lint, archive, schema) lives in the CLI tool (scripts/llm-wiki).
+SESSION_COMMANDS = {
+    "enable",
+    "disable",
+    "hook",
+    "capture",
+    "list",
+    "show",
+    "rehydrate",
+    "promote",
+    "feedback",
+    "status",
+    "session",
+}
+
 
 def _run(script, command, rest):
     try:
@@ -35,7 +51,7 @@ def handle_wiki(params, **kwargs):
     rest = params.get("args", "") or ""
     if not command:
         return json.dumps({"success": False, "error": "missing 'command'"})
-    script = SESSION_SCRIPT if command in ("session", "feedback") else CLI_SCRIPT
+    script = SESSION_SCRIPT if command in SESSION_COMMANDS else CLI_SCRIPT
     if not script.exists():
         return json.dumps({"success": False, "error": f"script not found: {script}"})
     return _run(script, command, rest)

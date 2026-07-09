@@ -29,7 +29,13 @@ from pathlib import Path as _Path
 
 _SKILL_DIR = _Path(__file__).resolve().parent / "skills" / "wiki-manager"
 
-from .hooks import install as _install  # noqa: E402
+_install_path = _plugin_dir / "hooks" / "install.py"
+_spec3 = importlib.util.spec_from_file_location(
+    "llm_wiki_hermes_install", str(_install_path)
+)
+_install_mod = importlib.util.module_from_spec(_spec3)
+sys.modules["llm_wiki_hermes_install"] = _install_mod
+_spec3.loader.exec_module(_install_mod)
 
 
 def register(ctx):
@@ -49,10 +55,10 @@ def register(ctx):
     except Exception as exc:  # pragma: no cover - defensive
         print(f"[llm-wiki-hermes] skill registration failed: {exc}", file=sys.stderr)
     try:
-        _install.disable_builtin_llm_wiki_skill()
+        _install_mod.disable_builtin_llm_wiki_skill()
     except Exception as exc:  # pragma: no cover - defensive
         print(f"[llm-wiki-hermes] install step failed: {exc}", file=sys.stderr)
     try:
-        _install.seed_wiki_manager_skill()
+        _install_mod.seed_wiki_manager_skill()
     except Exception as exc:  # pragma: no cover - defensive
         print(f"[llm-wiki-hermes] seed step failed: {exc}", file=sys.stderr)

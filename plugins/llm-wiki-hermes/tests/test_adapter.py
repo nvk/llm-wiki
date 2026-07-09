@@ -2,19 +2,14 @@ from __future__ import annotations
 
 import importlib.util
 import re
+import sys
 import types
 from pathlib import Path
 from unittest import mock
 
 import pytest
 
-_adapter_path = (
-    Path(__file__).resolve().parents[1]
-    / "plugins"
-    / "llm-wiki-hermes"
-    / "hooks"
-    / "adapter.py"
-)
+_adapter_path = Path(__file__).resolve().parents[1] / "hooks" / "adapter.py"
 _spec = importlib.util.spec_from_file_location("adapter", str(_adapter_path))
 adapter_mod = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(adapter_mod)

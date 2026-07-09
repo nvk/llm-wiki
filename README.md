@@ -132,6 +132,23 @@ cp AGENTS.md ~/your-project/AGENTS.md
 
 The `AGENTS.md` file contains the complete wiki protocol as a single portable document — works with any LLM agent that can read/write files and search the web.
 
+**Hermes** (plugin):
+
+Drop the plugin directory into your Hermes plugins folder and restart Hermes:
+
+```bash
+git clone https://github.com/nvk/llm-wiki.git /tmp/llm-wiki
+mkdir -p ~/.hermes/plugins
+ln -s /tmp/llm-wiki/plugins/llm-wiki-hermes ~/.hermes/plugins/llm-wiki-hermes
+```
+
+Hermes auto-discovers the plugin: the five session-capture hooks and the `wiki`
+tool activate immediately, and the wiki-manager skill enables agentic commands
+(`research`, `query`, `collect`, `ingest`, `compile`, `audit`, `output`, …).
+Hermes also proactively injects relevant wiki notes as memory on each user
+prompt (toggle with `LLM_WIKI_HERMES_MEMORY=0` or `memory.inject: false` in
+`HUB/.sessions/config.json`).
+
 ## Claude-First, Multi-Runtime
 
 Claude Code is the principal user. Keep one shared behavior layer and thin packaging layers per runtime:
@@ -152,6 +169,7 @@ Claude Code is the principal user. Keep one shared behavior layer and thin packa
 | OpenCode | `opencode.json` instructions | ~3K tokens | Multi-provider, Go binary |
 | Pi | `--instructions SKILL.md` | ~1K tokens | Local models, minimal overhead |
 | Any agent | Copy `AGENTS.md` to project | Varies | Universal fallback |
+| Hermes | `~/.hermes/plugins/llm-wiki-hermes` | ~3K tokens | NousResearch agent |
 
 Both runtime mirrors are generated, not hand-maintained. Rebuild from the Claude source of truth:
 
@@ -512,7 +530,7 @@ The hub is just a registry — no content directories, no `.obsidian/`. All cont
 6. **Archive** whole topic wikis that should stay preserved but quiet
 7. **Compile** raw sources into synthesized wiki articles with cross-references and confidence scores
 8. **Query** the wiki — quick (indexes), standard (articles), or deep (everything active, archived indexes separated)
-9. **Session capture** — automatically preserve redacted Codex/Claude/OpenCode/Gemini checkpoints under `.sessions/` and rehydrate future turns
+9. **Session capture** — automatically preserve redacted Claude/Codex/OpenCode/Gemini/Hermes checkpoints under `.sessions/` and rehydrate future turns (Hermes additionally injects matching wiki notes as memory on each prompt)
 10. **Feedback curator** — capture reviewable correction/preference/approval candidates under `.sessions/feedback/` and promote only what matters
 11. **Lessons learned** — extract knowledge from the current session (errors, fixes, gotchas) into the wiki
 12. **Assess** a repo against the wiki — gap analysis: what aligns, what's missing, what the market offers

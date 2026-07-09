@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import re
 import types
 from pathlib import Path
 from unittest import mock
@@ -114,3 +115,75 @@ def test_hook_exception_is_swallowed(fake_engine):
         assert (
             adapter_mod.pre_llm_call(session_id="z", user_message="q", cwd="/x") is None
         )
+
+
+def _make_wiki(hub_root, slug, articles):
+    topic = hub_root / "topics" / slug
+    topic.mkdir(parents=True, exist_ok=True)
+    lines = ["# Index\n"]
+    for title, rel, summary in articles:
+        lines.append(f"- [{title}]({rel}) — {summary}\n")
+    (topic / "_index.md").write_text("".join(lines))
+    hub_idx = hub_root / "_index.md"
+    existing = hub_idx.read_text() if hub_idx.exists() else "# Hub\n"
+    hub_idx.write_text(existing + f"- [Topics](topics/{slug}/) — a topic\n")
+
+
+def test_memory_retrieval_matches_title(fake_engine, tmp_path):
+    eng = _fake_engine(tmp_path / "hub")
+    _make_wiki(
+        tmp_path / "hub",
+        "nutrition",
+        [
+            (
+                "Gut-Brain Axis",
+                "concepts/gut-brain.md",
+                "Links gut microbiome to cognition",
+            ),
+            ("Cold Exposure", "concepts/cold.md", "Activates brown fat"),
+        ],
+    )
+    with mock.patch.object(adapter_mod, "_get_engine", return_value=eng):
+        ctx = adapter_mod.retrieve_wiki_context(
+            cwd=str(tmp_path), query="tell me about the gut brain axis", limit=3
+        )
+    assert "Gut-Brain Axis" in ctx
+    assert "Cold Exposure" not in ctx
+
+
+def test_memory_retrieval_no_match_is_empty(fake_engine, tmp_path):
+    eng = _fake_engine(tmp_path / "hub")
+    _make_wiki(tmp_path / "hub", "nutrition", [("Gut-Brain Axis", "c/g.md", "x")])
+    with mock.patch.object(adapter_mod, "_get_engine", return_value=eng):
+        ctx = adapter_mod.retrieve_wiki_context(
+            cwd=str(tmp_path), query="cryptocurrency trading strategies", limit=3
+        )
+    assert ctx == ""
+
+
+def test_memory_respects_disable_env(fake_engine, tmp_path, monkeypatch):
+    monkeypatch.setenv("LLM_WIKI_HERMES_MEMORY", "0")
+    eng = _fake_engine(tmp_path / "hub")
+    _make_wiki(tmp_path / "hub", "nutrition", [("Gut-Brain Axis", "c/g.md", "x")])
+    with mock.patch.object(adapter_mod, "_get_engine", return_value=eng):
+        assert (
+            adapter_mod.retrieve_wiki_context(
+                cwd=str(tmp_path), query="gut brain", limit=3
+            )
+            == ""
+        )
+
+
+def test_pre_llm_call_combines_rehydrate_and_memory(fake_engine, tmp_path):
+    eng = _fake_engine(tmp_path / "hub", rehydrate_return="REHYDRATE_CTX")
+    _make_wiki(
+        tmp_path / "hub",
+        "nutrition",
+        [("Gut-Brain Axis", "c/g.md", "links gut to cognition")],
+    )
+    with mock.patch.object(adapter_mod, "_get_engine", return_value=eng):
+        out = adapter_mod.pre_llm_call(
+            session_id="s9", user_message="gut brain axis please", cwd=str(tmp_path)
+        )
+    assert "REHYDRATE_CTX" in out
+    assert "Gut-Brain Axis" in out

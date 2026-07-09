@@ -16,6 +16,7 @@
 - **Version** — `plugins/llm-wiki-hermes/plugin.yaml` `version:` MUST equal `0.15.0` (repo-wide version).
 - **Behavior parity** — `run_hook` (Claude/Codex subprocess path) MUST remain byte-for-byte equivalent in stdout; the refactor is internal only (proven by `test-session-capture.sh` staying green).
 - **Never block the agent** — every hook is wrapped so any exception degrades to a stderr log + `None`/empty, never a raised error into the harness.
+- **Rehydrate timing** — Hermes discards `on_session_start` return values; only `pre_llm_call` returns are injected into the prompt. The `rehydrate.session_start` config flag therefore has no effect under Hermes — rehydration happens on the first `UserPromptSubmit` via `pre_llm_call`. This is by Hermes design and not a bug.
 - **Branch** — all work on branch `feat/hermes-plugin` (already created, pushed to fork `dfein38347g/llm-wiki`).
 
 ---

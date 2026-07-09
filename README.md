@@ -134,13 +134,34 @@ The `AGENTS.md` file contains the complete wiki protocol as a single portable do
 
 **Hermes** (plugin):
 
-Drop the plugin directory into your Hermes plugins folder and restart Hermes:
+Clone the repo, symlink the plugin into your Hermes plugins folder, enable it, and restart Hermes:
 
 ```bash
 git clone https://github.com/nvk/llm-wiki.git /tmp/llm-wiki
 mkdir -p ~/.hermes/plugins
 ln -s /tmp/llm-wiki/plugins/llm-wiki-hermes ~/.hermes/plugins/llm-wiki-hermes
+hermes plugins enable llm-wiki-hermes
+hermes restart   # or restart the gateway/desktop app
 ```
+
+On first load, the plugin **automatically replaces** Hermes' built-in `llm-wiki`
+skill with our richer `wiki-manager` skill:
+
+1. It disables the bundled `llm-wiki` skill (adds it to `skills.disabled`).
+2. It seeds `wiki-manager` into `~/.hermes/skills/` so it appears in the
+   agent's available-skills index and auto-loads for wiki/knowledge-base requests.
+
+No manual config editing is required. If you ever want the built-in back,
+re-enable it with `hermes skills` (toggle `llm-wiki` on) or remove
+`wiki-manager` from `~/.hermes/skills/`.
+
+> **Why not `hermes config set skills.disabled`?** That CLI command only
+> accepts scalar values (bool/int/float/string) — it cannot write a YAML
+> list, so `hermes config set skills.disabled '[llm-wiki]'` would store the
+> broken literal string `"[llm-wiki]"`. The plugin uses Hermes' own
+> `skills_config` Python API instead, which is list-safe. You can still
+> disable it manually by adding `skills: { disabled: [llm-wiki] }` to
+> `~/.hermes/config.yaml` and restarting.
 
 Hermes auto-discovers the plugin: the five session-capture hooks and the `wiki`
 tool activate immediately, and the wiki-manager skill enables agentic commands

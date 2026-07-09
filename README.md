@@ -52,6 +52,16 @@ Install from a local checkout with the managed bootstrap helper:
 ./scripts/bootstrap-codex-plugin.sh --scope user --verify
 ```
 
+Windows PowerShell:
+```powershell
+.\scripts\bootstrap-codex-plugin.ps1 -Scope user -Verify
+```
+
+Windows `cmd.exe`:
+```bat
+scripts\bootstrap-codex-plugin.cmd --scope user --verify
+```
+
 Or register the local checkout manually:
 ```bash
 codex plugin marketplace add /absolute/path/to/llm-wiki

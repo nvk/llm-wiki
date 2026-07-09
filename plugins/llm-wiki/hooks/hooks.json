@@ -5,7 +5,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --if-enabled",
+            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --event-name SessionStart --if-enabled",
+            "commandWindows": "cmd.exe /d /s /c \"\"%PLUGIN_ROOT%\\hooks\\llm-wiki-hook.cmd\" hook --harness codex --event-name SessionStart --if-enabled\"",
             "timeout": 5,
             "statusMessage": "Loading llm-wiki session context"
           }
@@ -17,7 +18,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --if-enabled",
+            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --event-name UserPromptSubmit --if-enabled",
+            "commandWindows": "cmd.exe /d /s /c \"\"%PLUGIN_ROOT%\\hooks\\llm-wiki-hook.cmd\" hook --harness codex --event-name UserPromptSubmit --if-enabled\"",
             "timeout": 5,
             "statusMessage": "Checking llm-wiki session context"
           }
@@ -30,7 +32,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --if-enabled",
+            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --event-name PostToolUse --if-enabled",
+            "commandWindows": "cmd.exe /d /s /c \"\"%PLUGIN_ROOT%\\hooks\\llm-wiki-hook.cmd\" hook --harness codex --event-name PostToolUse --if-enabled\"",
             "timeout": 5,
             "statusMessage": "Recording llm-wiki session event"
           }
@@ -43,7 +46,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --if-enabled",
+            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --event-name PreCompact --if-enabled",
+            "commandWindows": "cmd.exe /d /s /c \"\"%PLUGIN_ROOT%\\hooks\\llm-wiki-hook.cmd\" hook --harness codex --event-name PreCompact --if-enabled\"",
             "timeout": 5,
             "statusMessage": "Capturing llm-wiki pre-compact session context"
           }
@@ -56,7 +60,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --if-enabled",
+            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --event-name PostCompact --if-enabled",
+            "commandWindows": "cmd.exe /d /s /c \"\"%PLUGIN_ROOT%\\hooks\\llm-wiki-hook.cmd\" hook --harness codex --event-name PostCompact --if-enabled\"",
             "timeout": 5,
             "statusMessage": "Capturing llm-wiki post-compact session context"
           }
@@ -68,7 +73,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --if-enabled",
+            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --event-name Stop --if-enabled",
+            "commandWindows": "cmd.exe /d /s /c \"\"%PLUGIN_ROOT%\\hooks\\llm-wiki-hook.cmd\" hook --harness codex --event-name Stop --if-enabled\"",
             "timeout": 5,
             "statusMessage": "Saving llm-wiki session checkpoint"
           }

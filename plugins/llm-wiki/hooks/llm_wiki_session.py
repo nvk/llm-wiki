@@ -246,6 +246,55 @@ def read_json(path: Path, default: Any) -> Any:
             return default
 
 
+def read_stdin_text() -> str:
+    data = sys.stdin.buffer.read()
+    if not data:
+        return ""
+
+    encodings: list[str] = []
+    if data.startswith(b"\xef\xbb\xbf"):
+        encodings.append("utf-8-sig")
+    elif data.startswith((b"\xff\xfe", b"\xfe\xff")):
+        encodings.append("utf-16")
+    encodings.extend(["utf-8", sys.getfilesystemencoding() or "utf-8"])
+
+    seen: set[str] = set()
+    for encoding in encodings:
+        if encoding in seen:
+            continue
+        seen.add(encoding)
+        try:
+            return data.decode(encoding)
+        except UnicodeDecodeError:
+            continue
+    return data.decode("utf-8", errors="replace")
+
+
+def hook_debug(message: str) -> None:
+    if os.environ.get("LLM_WIKI_HOOK_DEBUG"):
+        print(message, file=sys.stderr)
+
+
+def parse_hook_payload(args: argparse.Namespace) -> dict[str, Any]:
+    raw = read_stdin_text().lstrip("\ufeff")
+    if not raw.strip():
+        return {}
+
+    try:
+        parsed = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        if getattr(args, "strict_json", False):
+            raise SystemExit(f"invalid hook JSON input: {exc}") from exc
+        hook_debug(f"llm-wiki hook skipped invalid JSON input: {exc}")
+        raise HookSkip()
+    if not isinstance(parsed, dict):
+        if getattr(args, "strict_json", False):
+            raise SystemExit("hook JSON input must be an object")
+        hook_debug("llm-wiki hook skipped non-object JSON input")
+        raise HookSkip()
+    return parsed
+
+
 def write_json(path: Path, data: Any) -> None:
     atomic_write(path, json.dumps(data, indent=2, sort_keys=True) + "\n")
 
@@ -1045,18 +1094,7 @@ def run_hook(args: argparse.Namespace) -> int:
     if args.if_enabled and not config.get("enabled"):
         raise HookSkip()
     ensure_layout(root)
-    raw = sys.stdin.read()
-    payload: dict[str, Any]
-    if raw.strip():
-        try:
-            parsed = json.loads(raw)
-        except json.JSONDecodeError as exc:
-            raise SystemExit(f"invalid hook JSON input: {exc}") from exc
-        if not isinstance(parsed, dict):
-            raise SystemExit("hook JSON input must be an object")
-        payload = parsed
-    else:
-        payload = {}
+    payload = parse_hook_payload(args)
     event = normalize_event(args, payload, root)
     append_jsonl(event_queue_path(root, event), event)
     state, is_new = update_state(root, event, config)
@@ -1623,6 +1661,7 @@ def build_parser() -> argparse.ArgumentParser:
     hook.add_argument("--trigger", help="Override capture trigger name.")
     hook.add_argument("--if-enabled", action="store_true", help="Honor .sessions/config.json enabled=false; default is enabled when no config exists.")
     hook.add_argument("--max-event-bytes", type=int, default=MAX_EVENT_PREVIEW_CHARS)
+    hook.add_argument("--strict-json", action="store_true", help="Fail hook calls on invalid JSON instead of skipping them.")
     hook.set_defaults(func=run_hook)
 
     capture = sub.add_parser("capture", help="Force a manual session digest checkpoint.")
@@ -1707,7 +1746,12 @@ def main(argv: list[str] | None = None) -> int:
     except HookSkip:
         return 0
     except BrokenPipeError:
-        return 1
+        return 0
+    except Exception as exc:
+        if getattr(args, "command", None) == "hook":
+            hook_debug(f"llm-wiki hook skipped: {exc}")
+            return 0
+        raise
 
 
 if __name__ == "__main__":

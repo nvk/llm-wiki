@@ -10,6 +10,7 @@ TARGET_QUERY="$TARGET_PLUGIN/skills/wiki-query"
 CLAUDE_MANIFEST="$ROOT/claude-plugin/.claude-plugin/plugin.json"
 CODEX_MANIFEST="$TARGET_PLUGIN/.codex-plugin/plugin.json"
 SESSION_HELPER="$ROOT/scripts/llm-wiki-session"
+HOOK_WRAPPER="$ROOT/scripts/llm-wiki-hook.cmd"
 
 if [ ! -d "$SOURCE_SKILL" ]; then
   echo "Missing source skill: $SOURCE_SKILL" >&2
@@ -36,6 +37,11 @@ if [ ! -f "$SESSION_HELPER" ]; then
   exit 1
 fi
 
+if [ ! -f "$HOOK_WRAPPER" ]; then
+  echo "Missing Windows hook wrapper: $HOOK_WRAPPER" >&2
+  exit 1
+fi
+
 mkdir -p "$TARGET_PLUGIN/skills"
 # The Codex marketplace caches plugin contents eagerly, so references/ must be
 # copied into the generated tree rather than left as a symlink. agents/ is
@@ -51,6 +57,7 @@ mkdir -p "$TARGET_SKILL/agents"
 mkdir -p "$TARGET_PLUGIN/hooks"
 cp "$SESSION_HELPER" "$TARGET_PLUGIN/hooks/llm_wiki_session.py"
 chmod 0755 "$TARGET_PLUGIN/hooks/llm_wiki_session.py"
+cp "$HOOK_WRAPPER" "$TARGET_PLUGIN/hooks/llm-wiki-hook.cmd"
 
 cat > "$TARGET_PLUGIN/hooks/hooks.json" <<'EOF'
 {
@@ -60,7 +67,8 @@ cat > "$TARGET_PLUGIN/hooks/hooks.json" <<'EOF'
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --if-enabled",
+            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --event-name SessionStart --if-enabled",
+            "commandWindows": "cmd.exe /d /s /c \"\"%PLUGIN_ROOT%\\hooks\\llm-wiki-hook.cmd\" hook --harness codex --event-name SessionStart --if-enabled\"",
             "timeout": 5,
             "statusMessage": "Loading llm-wiki session context"
           }
@@ -72,7 +80,8 @@ cat > "$TARGET_PLUGIN/hooks/hooks.json" <<'EOF'
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --if-enabled",
+            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --event-name UserPromptSubmit --if-enabled",
+            "commandWindows": "cmd.exe /d /s /c \"\"%PLUGIN_ROOT%\\hooks\\llm-wiki-hook.cmd\" hook --harness codex --event-name UserPromptSubmit --if-enabled\"",
             "timeout": 5,
             "statusMessage": "Checking llm-wiki session context"
           }
@@ -85,7 +94,8 @@ cat > "$TARGET_PLUGIN/hooks/hooks.json" <<'EOF'
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --if-enabled",
+            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --event-name PostToolUse --if-enabled",
+            "commandWindows": "cmd.exe /d /s /c \"\"%PLUGIN_ROOT%\\hooks\\llm-wiki-hook.cmd\" hook --harness codex --event-name PostToolUse --if-enabled\"",
             "timeout": 5,
             "statusMessage": "Recording llm-wiki session event"
           }
@@ -98,7 +108,8 @@ cat > "$TARGET_PLUGIN/hooks/hooks.json" <<'EOF'
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --if-enabled",
+            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --event-name PreCompact --if-enabled",
+            "commandWindows": "cmd.exe /d /s /c \"\"%PLUGIN_ROOT%\\hooks\\llm-wiki-hook.cmd\" hook --harness codex --event-name PreCompact --if-enabled\"",
             "timeout": 5,
             "statusMessage": "Capturing llm-wiki pre-compact session context"
           }
@@ -111,7 +122,8 @@ cat > "$TARGET_PLUGIN/hooks/hooks.json" <<'EOF'
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --if-enabled",
+            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --event-name PostCompact --if-enabled",
+            "commandWindows": "cmd.exe /d /s /c \"\"%PLUGIN_ROOT%\\hooks\\llm-wiki-hook.cmd\" hook --harness codex --event-name PostCompact --if-enabled\"",
             "timeout": 5,
             "statusMessage": "Capturing llm-wiki post-compact session context"
           }
@@ -123,7 +135,8 @@ cat > "$TARGET_PLUGIN/hooks/hooks.json" <<'EOF'
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --if-enabled",
+            "command": "python3 \"${PLUGIN_ROOT}/hooks/llm_wiki_session.py\" hook --harness codex --event-name Stop --if-enabled",
+            "commandWindows": "cmd.exe /d /s /c \"\"%PLUGIN_ROOT%\\hooks\\llm-wiki-hook.cmd\" hook --harness codex --event-name Stop --if-enabled\"",
             "timeout": 5,
             "statusMessage": "Saving llm-wiki session checkpoint"
           }

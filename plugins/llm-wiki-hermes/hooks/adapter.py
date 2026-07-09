@@ -127,7 +127,7 @@ def _score_articles(hub, query, limit):
     if not q_set:
         return []
     hub_index = _read_text(hub / "_index.md")
-    slugs = re.findall(r"topics/([A-Za-z0-9._-]+)/", hub_index)
+    slugs = re.findall(r"topics/([^/\s)]+)", hub_index)
     slugs = [s for s in dict.fromkeys(slugs) if not s.startswith(".")]
     scored = []
     for slug in slugs:

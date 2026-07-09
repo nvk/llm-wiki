@@ -181,3 +181,77 @@ def test_pre_llm_call_combines_rehydrate_and_memory(fake_engine, tmp_path):
         )
     assert "REHYDRATE_CTX" in out
     assert "Gut-Brain Axis" in out
+
+
+def _make_topic_index(hub_root, slug, articles):
+    """Helper: populate a topic subdir with an _index.md."""
+    topic = hub_root / "topics" / slug
+    topic.mkdir(parents=True, exist_ok=True)
+    lines = []
+    for title, rel, summary in articles:
+        line = f"- [{title}]({rel})"
+        if summary:
+            line += f" — {summary}"
+        lines.append(line)
+    (topic / "_index.md").write_text("\n".join(lines))
+
+
+def test_score_articles_matches_title(tmp_path):
+    hub = tmp_path / "hub"
+    hub.mkdir(parents=True, exist_ok=True)
+    (hub / "_index.md").write_text("# Hub\n- [Nutrition](topics/nutrition/)")
+    _make_topic_index(
+        hub, "nutrition", [("Gut-Brain Axis", "c/gut.md", "links gut to cognition")]
+    )
+    result = adapter_mod._score_articles(hub, "gut brain axis", 3)
+    assert len(result) == 1
+    assert result[0] == ("Gut-Brain Axis", "c/gut.md", "links gut to cognition")
+
+
+def test_score_articles_no_trailing_slash(tmp_path):
+    """Regression: hub index link without trailing / must still match."""
+    hub = tmp_path / "hub"
+    hub.mkdir(parents=True, exist_ok=True)
+    (hub / "_index.md").write_text("# Hub\n- [Nutrition](topics/nutrition)")
+    _make_topic_index(hub, "nutrition", [("Gut-Brain Axis", "c/gut.md", "x")])
+    result = adapter_mod._score_articles(hub, "gut", 3)
+    assert len(result) == 1
+
+
+def test_score_articles_empty_hub_index(tmp_path):
+    hub = tmp_path / "hub"
+    hub.mkdir(parents=True, exist_ok=True)
+    (hub / "_index.md").write_text("# Hub\n")
+    assert adapter_mod._score_articles(hub, "anything", 3) == []
+
+
+def test_score_articles_archived_only(tmp_path):
+    """Archived topics (starting with .) must be excluded."""
+    hub = tmp_path / "hub"
+    hub.mkdir(parents=True, exist_ok=True)
+    (hub / "_index.md").write_text("# Hub\n- [Old](topics/.archive/nutrition/)")
+    assert adapter_mod._score_articles(hub, "nutrition", 3) == []
+
+
+def test_score_articles_stopword_only_query(tmp_path):
+    hub = tmp_path / "hub"
+    hub.mkdir(parents=True, exist_ok=True)
+    (hub / "_index.md").write_text("# Hub\n- [Nutrition](topics/nutrition/)")
+    _make_topic_index(hub, "nutrition", [("Gut-Brain Axis", "c/gut.md", "x")])
+    assert adapter_mod._score_articles(hub, "the and of", 3) == []
+
+
+def test_score_articles_deduplicates_by_rel(tmp_path):
+    hub = tmp_path / "hub"
+    hub.mkdir(parents=True, exist_ok=True)
+    (hub / "_index.md").write_text("# Hub\n- [Nutrition](topics/nutrition/)")
+    _make_topic_index(
+        hub,
+        "nutrition",
+        [
+            ("Gut Brain", "c/gut.md", "x"),
+            ("Brain Gut", "c/gut.md", "y"),  # same rel
+        ],
+    )
+    result = adapter_mod._score_articles(hub, "brain gut", 3)
+    assert len(result) == 1  # deduplicated

@@ -1,16 +1,32 @@
 from __future__ import annotations
 
 import argparse
+import importlib
 import importlib.util
 import os
 import re
 import sys
 from pathlib import Path
 
-ENGINE_PATH = Path(__file__).resolve().parents[2] / "scripts" / "llm-wiki-session"
-ENGINE_PATH_FALLBACK = (
-    Path(__file__).resolve().parents[2] / "llm-wiki" / "hooks" / "llm_wiki_session.py"
-)
+
+def _engine_candidates():
+    """Yield candidate paths for the shared session engine, in priority order.
+
+    Works whether the plugin is symlinked from the repo (README method),
+    copied into ~/.hermes/plugins/, or installed as a package. An explicit
+    ``LLM_WIKI_ENGINE`` env override wins.
+    """
+    env = os.environ.get("LLM_WIKI_ENGINE")
+    if env:
+        yield Path(env)
+    here = Path(__file__).resolve()
+    # Symlink-from-repo or copied-into-plugins layout: <repo>/plugins/llm-wiki-hermes/...
+    yield here.parents[2] / "llm-wiki" / "hooks" / "llm_wiki_session.py"
+    # Vendored deep inside ~/.hermes/plugins/llm-wiki-hermes/...
+    yield here.parents[1] / "llm-wiki" / "hooks" / "llm_wiki_session.py"
+    # Pip-installed package: llm_wiki_session importable directly.
+    yield None  # sentinel: try importlib top-level
+
 
 _engine = None
 
@@ -18,40 +34,46 @@ _engine = None
 def _get_engine():
     """Lazily import the shared upstream engine. Returns None on failure (R11).
 
-    Prefers the source engine at the repo root ``scripts/llm-wiki-session`` and
-    falls back to the generated Codex mirror under ``llm-wiki/hooks/``.
+    Tries, in order: env override, repo-relative path, vendored path, then a
+    top-level ``import llm_wiki_session``. If all fail, logs a visible WARNING
+    (not silent) so a misconfigured install is diagnosable.
     """
     global _engine
-    if _engine is None:
-        candidates = [ENGINE_PATH, ENGINE_PATH_FALLBACK]
-        loaded = None
-        last_exc = None
-        for path in candidates:
-            if not path.exists():
-                continue
-            try:
+    if _engine is not None:
+        return _engine
+    loaded = None
+    last_exc = None
+    for cand in _engine_candidates():
+        try:
+            if cand is None:
+                mod = importlib.import_module("llm_wiki_session")
+                loaded = f"import:llm_wiki_session"
+            else:
+                if not cand.exists():
+                    continue
                 spec = importlib.util.spec_from_file_location(
-                    "llm_wiki_session", str(path)
+                    "llm_wiki_session", str(cand)
                 )
                 mod = importlib.util.module_from_spec(spec)
                 spec.loader.exec_module(mod)
-                loaded = path
-                _engine = mod
-                break
-            except Exception as exc:  # pragma: no cover - defensive
-                last_exc = exc
-                continue
-        if loaded is None:
-            print(
-                f"[llm-wiki-hermes] engine import failed: {last_exc}",
-                file=sys.stderr,
-            )
-            _engine = None
-        else:
-            print(
-                f"[llm-wiki-hermes] engine loaded from {loaded}",
-                file=sys.stderr,
-            )
+                loaded = str(cand)
+            _engine = mod
+            break
+        except Exception as exc:  # pragma: no cover - defensive
+            last_exc = exc
+            continue
+    if loaded is None:
+        # Visible failure, not silent — operator can diagnose.
+        print(
+            f"[llm-wiki-hermes] engine import failed: {last_exc}",
+            file=sys.stderr,
+        )
+        _engine = None
+    else:
+        print(
+            f"[llm-wiki-hermes] engine loaded from {loaded}",
+            file=sys.stderr,
+        )
     return _engine
 
 

@@ -243,6 +243,56 @@ else
 fi
 
 echo ""
+echo "=== Hermes Plugin Validation ==="
+HERMES_PLUGIN="$PROJECT_ROOT/plugins/llm-wiki-hermes"
+
+if [ -f "$HERMES_PLUGIN/plugin.yaml" ]; then
+  log_pass "Hermes plugin.yaml exists"
+  if python3 -c "import yaml,sys; d=yaml.safe_load(open('$HERMES_PLUGIN/plugin.yaml')); assert d.get('name') and d.get('version') and isinstance(d.get('hooks'),list) and d['hooks'], 'missing name/version/hooks'" 2>/dev/null; then
+    log_pass "Hermes plugin.yaml has name + version + hooks"
+  else
+    # PyYAML may be absent; fall back to a minimal parse.
+    if python3 - <<'PY'
+import re,sys
+t=open('$HERMES_PLUGIN/plugin.yaml').read()
+ok = 'name:' in t and 'version:' in t and 'hooks:' in t
+sys.exit(0 if ok else 1)
+PY
+    then
+      log_pass "Hermes plugin.yaml has name + version + hooks (minimal parse)"
+    else
+      log_fail "Hermes plugin.yaml invalid" "missing name/version/hooks"
+    fi
+  fi
+else
+  log_fail "Hermes plugin.yaml not found" "missing file"
+fi
+
+if [ -f "$HERMES_PLUGIN/skills/wiki-manager/SKILL.md" ]; then
+  log_pass "Hermes SKILL.md exists"
+  if head -1 "$HERMES_PLUGIN/skills/wiki-manager/SKILL.md" | grep -q "^---$"; then
+    log_pass "Hermes SKILL.md has frontmatter"
+  else
+    log_fail "Hermes SKILL.md has no frontmatter" "missing ---"
+  fi
+else
+  log_fail "Hermes SKILL.md not found" "missing file"
+fi
+
+for f in hooks/__init__.py hooks/adapter.py tools.py __init__.py; do
+  fp="$HERMES_PLUGIN/$f"
+  if [ -f "$fp" ]; then
+    if python3 -m py_compile "$fp" 2>/dev/null; then
+      log_pass "Hermes $f compiles"
+    else
+      log_fail "Hermes $f does not compile" "syntax error"
+    fi
+  else
+    log_fail "Hermes $f missing" "missing file"
+  fi
+done
+
+echo ""
 echo "==========================================="
 printf "Results: \033[32m%d passed\033[0m, \033[31m%d failed\033[0m, %d total\n" "$PASS" "$FAIL" "$TOTAL"
 echo "==========================================="

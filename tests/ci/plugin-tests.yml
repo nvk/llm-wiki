@@ -7,11 +7,15 @@ on:
       - 'scripts/**'
       - 'tests/**'
       - 'AGENTS.md'
+      - 'plugins/llm-wiki-hermes/**'
+      - 'tests/test-hermes-runtime.sh'
   pull_request:
     paths:
       - 'claude-plugin/**'
       - 'scripts/**'
       - 'tests/**'
+      - 'plugins/llm-wiki-hermes/**'
+      - 'tests/test-hermes-runtime.sh'
 
 jobs:
   structural:
@@ -40,6 +44,9 @@ jobs:
 
       - name: Run session concurrency regression
         run: chmod +x tests/test-session-concurrency.sh && ./tests/test-session-concurrency.sh
+
+      - name: Run Hermes plugin runtime tests
+        run: chmod +x tests/test-hermes-runtime.sh && ./tests/test-hermes-runtime.sh
 
   behavioral:
     name: "Layer 2: Behavioral Evals"

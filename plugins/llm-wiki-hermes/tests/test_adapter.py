@@ -256,3 +256,35 @@ def test_score_articles_deduplicates_by_rel(tmp_path):
     )
     result = adapter_mod._score_articles(hub, "brain gut", 3)
     assert len(result) == 1  # deduplicated
+
+
+def test_steer_matches_wiki_keywords():
+    assert adapter_mod._steer_to_our_skill("show me the wiki") != ""
+    assert adapter_mod._steer_to_our_skill("ingest this URL") != ""
+    assert adapter_mod._steer_to_our_skill("compile the knowledge base") != ""
+    assert adapter_mod._steer_to_our_skill("llm wiki status") != ""
+    assert adapter_mod._steer_to_our_skill("LLM-Wiki status") != ""
+    assert adapter_mod._steer_to_our_skill("rehydrate my session") != ""
+    assert "wiki-manager" in adapter_mod._steer_to_our_skill("wiki")
+
+
+def test_steer_ignores_non_wiki_messages():
+    assert adapter_mod._steer_to_our_skill("hello world") == ""
+    assert adapter_mod._steer_to_our_skill("what is 2+2") == ""
+    assert adapter_mod._steer_to_our_skill("") == ""
+    assert adapter_mod._steer_to_our_skill(None) == ""
+
+
+def test_pre_llm_call_appends_steer_for_wiki_intent(fake_engine):
+    out = adapter_mod.pre_llm_call(
+        session_id="s10", user_message="show me the wiki", model="m", cwd="/x"
+    )
+    assert "wiki-manager" in out
+
+
+def test_pre_llm_call_no_steer_for_normal_message(fake_engine):
+    fake_engine._calls.clear()
+    out = adapter_mod.pre_llm_call(
+        session_id="s11", user_message="what is python", model="m", cwd="/x"
+    )
+    assert "wiki-manager" not in (out or "")

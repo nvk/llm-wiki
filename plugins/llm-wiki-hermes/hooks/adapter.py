@@ -100,6 +100,23 @@ MEMORY_LIMIT = 3
 MEMORY_CFG_KEY = "memory"
 MEMORY_ENV_DISABLE = "LLM_WIKI_HERMES_MEMORY"
 
+_WIKI_INTENT = re.compile(
+    r"\b(wiki|knowledge base|knowledge-base|llm[- ]?wiki|notes|ingest|compile|rehydrat)",
+    re.IGNORECASE,
+)
+
+
+def _steer_to_our_skill(user_message: str) -> str:
+    """If the turn looks like a wiki request, nudge toward our wiki-manager skill
+    (the built-in 'llm-wiki' skill is disabled, but be explicit for robustness)."""
+    if not user_message or not _WIKI_INTENT.search(user_message):
+        return ""
+    return (
+        "\n[llm-wiki-hermes] Use the 'wiki-manager' skill "
+        "(llm-wiki-hermes:wiki-manager) for wiki/knowledge-base operations."
+    )
+
+
 TOKEN_RE = re.compile(r"[a-z0-9]+")
 STOPWORDS = {
     "the",
@@ -270,7 +287,8 @@ def pre_llm_call(
     )
     rehydrate = _capture("UserPromptSubmit", payload, cwd, session_id=session_id)
     memory = retrieve_wiki_context(cwd=cwd, query=user_message or "")
-    combined = "\n\n".join(p for p in (rehydrate, memory) if p).strip()
+    steer = _steer_to_our_skill(user_message or "")
+    combined = "\n\n".join(p for p in (rehydrate, memory, steer) if p).strip()
     return combined or None
 
 

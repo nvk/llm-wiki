@@ -120,3 +120,54 @@ tests/                          — test suite (see above)
 ## Release Process
 
 See `.claude/release-checklist.md` for the full ship process. Run all structural tests before bumping version.
+
+## Lessons Learned (Hermes plugin work)
+
+Generalizable patterns from building `plugins/llm-wiki-hermes/`:
+
+1. **Verify plugin manifests against the ACTUAL runtime parser, not the plan.**
+   Hermes' `PluginManifest._parse_manifest` reads `provides_tools` / `provides_hooks`
+   (and a `kind` defaulting to `standalone`). The implementation plan specified a bare
+   `hooks:` key that Hermes would have ignored, silently loading the plugin with no
+   hooks. When the plan and the framework source disagree, trust the framework source
+   (`hermes_cli/plugins.py`) and fix the plan, not the code.
+
+2. **Trace the real hook-contract payloads before writing adapters.** Hermes invokes
+   hooks with `cb(**kwargs)`; `pre_llm_call` receives `user_message` +
+   `conversation_history` (see `hermes_cli/hooks.py` test payloads), NOT `history`.
+   Newer reference plugins still use `history` — that is stale; match what the
+   installed Hermes actually passes.
+
+3. **Bundled plugin skills are NOT auto-discovered.** A `skills/<name>/SKILL.md` tree
+   inside a plugin is invisible to Hermes unless the plugin calls
+   `ctx.register_skill("name", path)` in `register()`. The skill then resolves as
+   `<plugin_name>:<name>` (opt-in load only).
+
+4. **Enurate real CLI subcommands via `--help` before routing a tool.** The `wiki`
+   tool originally routed a `"session"` subcommand that does not exist in
+   `scripts/llm-wiki-session` (real set: `enable|disable|hook|capture|list|show|
+   rehydrate|promote|feedback|status`; the CLI `scripts/llm-wiki` has
+   `lint|archive|schema`). Phantom commands route to a real script and fail at the
+   argparser. Always ground routing tables in `python3 <script> --help`.
+
+5. **Make engine/library path resolution install-method-agnostic.** A hard-coded
+   `Path(__file__).resolve().parents[2]` only resolves under the documented
+   symlink-from-repo install. A copy or pip install yields `None` → every hook
+   silently no-ops. Resolve via ordered candidates: env override
+   (`LLM_WIKI_ENGINE`) → repo-relative → vendored → top-level import; emit a visible
+   stderr WARNING on total failure rather than failing silently.
+
+6. **`on_session_start` return values are discarded by Hermes** — only `pre_llm_call`
+   returns are injected into the prompt. A `rehydrate.session_start` config flag is
+   inert for Hermes; rehydration happens on the first `UserPromptSubmit` via
+   `pre_llm_call`. Document this rather than surprising future readers.
+
+7. **Empirically verify reviewer "Critical" claims before fixing.** A holistic review
+   flagged a "Critical" engine-path bug; running `adapter._get_engine()` showed the
+   engine loads correctly (the reviewer miscounted `parents[]`). Run the actual code
+   path to confirm a reported defect before writing a fix — reviewer arithmetic and
+   reasoning errors are real and waste cycles.
+
+8. **Subagent-driven development runs ONE subagent per task.** Parallel implementer
+   subagents conflict on shared files. Dispatch sequentially; review between tasks.
+

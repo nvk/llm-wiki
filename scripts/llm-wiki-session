@@ -142,7 +142,9 @@ class HookSkip(Exception):
 
 
 def utc_now() -> str:
-    return dt.datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    return (
+        dt.datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    )
 
 
 def today() -> str:
@@ -189,7 +191,9 @@ def state_path(root: Path, harness: str, native_session_id: str) -> Path:
     return root / "state" / safe_id(harness) / f"{safe_id(native_session_id)}.json"
 
 
-def digest_path(root: Path, harness: str, native_session_id: str, now: str | None = None) -> Path:
+def digest_path(
+    root: Path, harness: str, native_session_id: str, now: str | None = None
+) -> Path:
     when = parse_timestamp(now or utc_now())
     return (
         root
@@ -345,7 +349,14 @@ def flatten_text(value: Any) -> str:
     if isinstance(value, str):
         return value
     if isinstance(value, dict):
-        for key in ("text", "content", "message", "prompt", "user_prompt", "feedback_text"):
+        for key in (
+            "text",
+            "content",
+            "message",
+            "prompt",
+            "user_prompt",
+            "feedback_text",
+        ):
             if key in value:
                 text = flatten_text(value.get(key))
                 if text:
@@ -358,7 +369,14 @@ def flatten_text(value: Any) -> str:
 
 
 def extract_user_text(payload: dict[str, Any]) -> str:
-    for key in ("feedback_text", "prompt", "user_prompt", "message", "input", "content"):
+    for key in (
+        "feedback_text",
+        "prompt",
+        "user_prompt",
+        "message",
+        "input",
+        "content",
+    ):
         text = flatten_text(payload.get(key))
         if text:
             return normalize_whitespace(text)
@@ -381,9 +399,14 @@ def redacted_feedback_preview(text: str) -> str:
 
 def feedback_scope_hint(text: str, feedback_type: str) -> str:
     lower = text.lower()
-    if re.search(r"\b(always|never|for future|next time|from now on|rule|policy)\b", lower):
+    if re.search(
+        r"\b(always|never|for future|next time|from now on|rule|policy)\b", lower
+    ):
         return "global"
-    if re.search(r"\b(repo|project|pr|release|docs?|readme|website|tests?|config|hook|environment|env)\b", lower):
+    if re.search(
+        r"\b(repo|project|pr|release|docs?|readme|website|tests?|config|hook|environment|env)\b",
+        lower,
+    ):
         return "repo"
     if re.search(r"\b(topic|wiki|raw/notes|article|source|inventory|dataset)\b", lower):
         return "topic"
@@ -400,7 +423,9 @@ def feedback_lesson(feedback_type: str, preview: str) -> str:
     if feedback_type == "approval":
         return f"User validated the immediately preceding result or action: {preview}"
     if feedback_type == "decision":
-        return f"User approved proceeding with the prior plan or decision point: {preview}"
+        return (
+            f"User approved proceeding with the prior plan or decision point: {preview}"
+        )
     return f"User feedback candidate: {preview}"
 
 
@@ -409,7 +434,9 @@ def classify_feedback_text(text: str, force: bool = False) -> dict[str, str] | N
     if not normalized:
         return None
     lower = normalized.lower()
-    if not force and re.fullmatch(r"(ok|okay|cool|thanks|thank you|ty|k|👍|👌)[.!]*", lower):
+    if not force and re.fullmatch(
+        r"(ok|okay|cool|thanks|thank you|ty|k|👍|👌)[.!]*", lower
+    ):
         return None
 
     rules: list[tuple[str, str, str, list[str], str]] = [
@@ -465,7 +492,9 @@ def classify_feedback_text(text: str, force: bool = False) -> dict[str, str] | N
                 "text_sha256": hashlib.sha256(normalized.encode("utf-8")).hexdigest(),
                 "distilled_lesson": feedback_lesson(feedback_type, preview),
                 "rationale": rationale,
-                "promotion_recommendation": "promote" if feedback_type in {"correction", "preference"} else "review",
+                "promotion_recommendation": "promote"
+                if feedback_type in {"correction", "preference"}
+                else "review",
             }
     if force:
         preview = redacted_feedback_preview(normalized)
@@ -525,7 +554,9 @@ def git_value(cwd: str | None, args: list[str]) -> str | None:
     return value or None
 
 
-def normalize_event(args: argparse.Namespace, payload: dict[str, Any], root: Path) -> dict[str, Any]:
+def normalize_event(
+    args: argparse.Namespace, payload: dict[str, Any], root: Path
+) -> dict[str, Any]:
     now = utc_now()
     harness = safe_id(detect_harness(args, payload))
     native_session_id = str(
@@ -543,7 +574,9 @@ def normalize_event(args: argparse.Namespace, payload: dict[str, Any], root: Pat
     )
     cwd = str(getattr(args, "cwd", None) or payload.get("cwd") or os.getcwd())
     transcript_path = payload.get("transcript_path") or payload.get("transcriptPath")
-    tool_name = payload.get("tool_name") or payload.get("toolName") or payload.get("tool")
+    tool_name = (
+        payload.get("tool_name") or payload.get("toolName") or payload.get("tool")
+    )
     trigger = str(getattr(args, "trigger", None) or event_name)
     event = {
         "schema_version": SCHEMA_VERSION,
@@ -560,14 +593,22 @@ def normalize_event(args: argparse.Namespace, payload: dict[str, Any], root: Pat
         "tool_name": str(tool_name) if tool_name else None,
         "tool_use_id": payload.get("tool_use_id") or payload.get("toolUseId"),
         "trigger": trigger,
-        "payload_preview": compact_json(payload, max_chars=int(getattr(args, "max_event_bytes", MAX_EVENT_PREVIEW_CHARS))),
+        "payload_preview": compact_json(
+            payload,
+            max_chars=int(
+                getattr(args, "max_event_bytes", MAX_EVENT_PREVIEW_CHARS)
+                or MAX_EVENT_PREVIEW_CHARS
+            ),
+        ),
     }
     if getattr(args, "topic", None):
         event["topics"] = [args.topic]
     if getattr(args, "summary", None):
         event["manual_summary"] = str(args.summary)
     if transcript_path:
-        event["transcript_path_hash"] = hashlib.sha256(str(transcript_path).encode("utf-8")).hexdigest()
+        event["transcript_path_hash"] = hashlib.sha256(
+            str(transcript_path).encode("utf-8")
+        ).hexdigest()
     return event
 
 
@@ -585,7 +626,9 @@ def load_state(root: Path, event: dict[str, Any]) -> tuple[dict[str, Any], bool,
     return state, is_new, path
 
 
-def update_state(root: Path, event: dict[str, Any], config: dict[str, Any]) -> tuple[dict[str, Any], bool]:
+def update_state(
+    root: Path, event: dict[str, Any], config: dict[str, Any]
+) -> tuple[dict[str, Any], bool]:
     state, is_new, path = load_state(root, event)
     now = str(event["ts"])
     state.setdefault("schema_version", SCHEMA_VERSION)
@@ -599,7 +642,9 @@ def update_state(root: Path, event: dict[str, Any], config: dict[str, Any]) -> t
     state["model"] = event.get("model") or state.get("model")
     state["privacy"] = config.get("privacy", "redacted")
     state["raw_transcripts"] = bool(config.get("raw_transcripts", False))
-    state["git_remote"] = git_value(event.get("cwd"), ["config", "--get", "remote.origin.url"])
+    state["git_remote"] = git_value(
+        event.get("cwd"), ["config", "--get", "remote.origin.url"]
+    )
     state["git_branch"] = git_value(event.get("cwd"), ["branch", "--show-current"])
     state["event_count"] = int(state.get("event_count") or 0) + 1
     if is_tool_event(event):
@@ -662,7 +707,9 @@ def build_feedback_candidate(
     config: dict[str, Any],
     force: bool = False,
 ) -> dict[str, Any] | None:
-    feedback_cfg = config.get("feedback") if isinstance(config.get("feedback"), dict) else {}
+    feedback_cfg = (
+        config.get("feedback") if isinstance(config.get("feedback"), dict) else {}
+    )
     if not force and feedback_cfg.get("enabled", True) is False:
         return None
     event_name = str(event.get("hook_event_name") or "")
@@ -672,7 +719,11 @@ def build_feedback_candidate(
     classification = classify_feedback_text(text, force=force)
     if not classification:
         return None
-    if classification["feedback_type"] == "approval" and feedback_cfg.get("capture_approvals", True) is False and not force:
+    if (
+        classification["feedback_type"] == "approval"
+        and feedback_cfg.get("capture_approvals", True) is False
+        and not force
+    ):
         return None
     minimum = str(feedback_cfg.get("min_confidence") or "medium")
     if not force and not confidence_at_least(classification["confidence"], minimum):
@@ -696,7 +747,9 @@ def build_feedback_candidate(
         "harness": event.get("harness"),
         "native_session_id": event.get("native_session_id"),
         "cwd": event.get("cwd"),
-        "git_remote": git_value(event.get("cwd"), ["config", "--get", "remote.origin.url"]),
+        "git_remote": git_value(
+            event.get("cwd"), ["config", "--get", "remote.origin.url"]
+        ),
         "git_branch": git_value(event.get("cwd"), ["branch", "--show-current"]),
         "hook_event_name": event_name,
         "turn_id": event.get("turn_id"),
@@ -742,8 +795,12 @@ def maybe_record_feedback_candidate(
         }
     )
     state["last_feedback_candidates"] = last[-10:]
-    state["feedback_candidate_count"] = int(state.get("feedback_candidate_count") or 0) + 1
-    write_json(state_path(root, str(state["harness"]), str(state["native_session_id"])), state)
+    state["feedback_candidate_count"] = (
+        int(state.get("feedback_candidate_count") or 0) + 1
+    )
+    write_json(
+        state_path(root, str(state["harness"]), str(state["native_session_id"])), state
+    )
     rebuild_feedback_index(root)
     return candidate
 
@@ -758,13 +815,28 @@ def as_list(value: Any) -> list[Any]:
 
 def is_tool_event(event: dict[str, Any]) -> bool:
     name = str(event.get("hook_event_name") or "")
-    return bool(event.get("tool_name")) or name in {"PreToolUse", "PostToolUse", "PermissionRequest", "BeforeTool", "AfterTool"}
+    return bool(event.get("tool_name")) or name in {
+        "PreToolUse",
+        "PostToolUse",
+        "PermissionRequest",
+        "BeforeTool",
+        "AfterTool",
+    }
 
 
-def should_write_digest(state: dict[str, Any], event: dict[str, Any], config: dict[str, Any], force: bool = False) -> tuple[bool, str]:
+def should_write_digest(
+    state: dict[str, Any],
+    event: dict[str, Any],
+    config: dict[str, Any],
+    force: bool = False,
+) -> tuple[bool, str]:
     if force:
         return True, str(event.get("trigger") or "manual")
-    auto = config.get("auto_capture") if isinstance(config.get("auto_capture"), dict) else {}
+    auto = (
+        config.get("auto_capture")
+        if isinstance(config.get("auto_capture"), dict)
+        else {}
+    )
     event_name = str(event.get("hook_event_name") or "")
     lower = event_name.lower().replace("_", "")
     if lower in {"precompact", "precompress"} and auto.get("pre_compact", True):
@@ -777,7 +849,12 @@ def should_write_digest(state: dict[str, Any], event: dict[str, Any], config: di
         return True, "stop"
     threshold = int(auto.get("tool_events") or 0)
     tool_count = int(state.get("tool_event_count") or 0)
-    if threshold > 0 and is_tool_event(event) and tool_count > 0 and tool_count % threshold == 0:
+    if (
+        threshold > 0
+        and is_tool_event(event)
+        and tool_count > 0
+        and tool_count % threshold == 0
+    ):
         return True, f"tool-count-{threshold}"
     return False, ""
 
@@ -864,7 +941,7 @@ def render_digest(state: dict[str, Any], trigger: str, digest_file: Path) -> str
     ] or ["- None detected."]
 
     body = f"""
-# Session Digest: {state.get('llm_wiki_session_id')}
+# Session Digest: {state.get("llm_wiki_session_id")}
 
 ## Summary
 
@@ -872,20 +949,24 @@ def render_digest(state: dict[str, Any], trigger: str, digest_file: Path) -> str
 
 ## Session Identity
 
-{markdown_table([
-        ('Harness', state.get('harness')),
-        ('Native session ID', state.get('native_session_id')),
-        ('llm-wiki session ID', state.get('llm_wiki_session_id')),
-        ('CWD', state.get('cwd')),
-        ('Git remote', state.get('git_remote')),
-        ('Git branch', state.get('git_branch')),
-        ('Transcript pointer', state.get('transcript_path')),
-        ('Started at', state.get('started_at')),
-        ('Last seen at', state.get('last_seen_at')),
-        ('Capture trigger', trigger),
-        ('Observed tool events', state.get('tool_event_count')),
-        ('Observed total events', state.get('event_count')),
-    ])}
+{
+        markdown_table(
+            [
+                ("Harness", state.get("harness")),
+                ("Native session ID", state.get("native_session_id")),
+                ("llm-wiki session ID", state.get("llm_wiki_session_id")),
+                ("CWD", state.get("cwd")),
+                ("Git remote", state.get("git_remote")),
+                ("Git branch", state.get("git_branch")),
+                ("Transcript pointer", state.get("transcript_path")),
+                ("Started at", state.get("started_at")),
+                ("Last seen at", state.get("last_seen_at")),
+                ("Capture trigger", trigger),
+                ("Observed tool events", state.get("tool_event_count")),
+                ("Observed total events", state.get("event_count")),
+            ]
+        )
+    }
 
 ## Manual Summaries
 
@@ -908,19 +989,28 @@ def render_digest(state: dict[str, Any], trigger: str, digest_file: Path) -> str
 ## Open Loops
 
 - Review whether this session should be topic-tagged or promoted.
-- If the session ended mid-task, use `llm-wiki-session rehydrate --session-id {state.get('llm_wiki_session_id')}` before continuing.
+- If the session ended mid-task, use `llm-wiki-session rehydrate --session-id {
+        state.get("llm_wiki_session_id")
+    }` before continuing.
 """.strip()
     return frontmatter_block(state, trigger, digest_file) + "\n" + body + "\n"
 
 
 def write_digest(root: Path, state: dict[str, Any], trigger: str) -> Path:
-    path = digest_path(root, str(state["harness"]), str(state["native_session_id"]), str(state.get("last_seen_at") or utc_now()))
+    path = digest_path(
+        root,
+        str(state["harness"]),
+        str(state["native_session_id"]),
+        str(state.get("last_seen_at") or utc_now()),
+    )
     text = render_digest(state, trigger, path)
     atomic_write(path, text)
     state["last_digest_path"] = str(path)
     state["last_digest_at"] = utc_now()
     state["digest_count"] = int(state.get("digest_count") or 0) + 1
-    write_json(state_path(root, str(state["harness"]), str(state["native_session_id"])), state)
+    write_json(
+        state_path(root, str(state["harness"]), str(state["native_session_id"])), state
+    )
     append_jsonl(
         root / "registry.jsonl",
         {
@@ -942,8 +1032,14 @@ def write_digest(root: Path, state: dict[str, Any], trigger: str) -> Path:
 
 def iter_feedback_candidates(root: Path) -> list[dict[str, Any]]:
     path = feedback_candidates_path(root)
-    status = read_json(feedback_status_path(root), {"promoted": {}}) if feedback_status_path(root).exists() else {"promoted": {}}
-    promoted = status.get("promoted") if isinstance(status.get("promoted"), dict) else {}
+    status = (
+        read_json(feedback_status_path(root), {"promoted": {}})
+        if feedback_status_path(root).exists()
+        else {"promoted": {}}
+    )
+    promoted = (
+        status.get("promoted") if isinstance(status.get("promoted"), dict) else {}
+    )
     candidates: list[dict[str, Any]] = []
     if not path.exists():
         return candidates
@@ -1039,24 +1135,17 @@ def hook_output(event_name: str, context: str) -> None:
     )
 
 
-def run_hook(args: argparse.Namespace) -> int:
+def handle_event(args: argparse.Namespace, payload: dict[str, Any]) -> str:
+    """Record a harness hook event and return any injectable context string.
+
+    Returns the rehydrate context (may be "") instead of printing it, so
+    in-process callers (e.g. Hermes) can inject it without parsing stdout.
+    """
     root = sessions_dir(resolve_hub(args))
     config = load_config(root)
     if args.if_enabled and not config.get("enabled"):
         raise HookSkip()
     ensure_layout(root)
-    raw = sys.stdin.read()
-    payload: dict[str, Any]
-    if raw.strip():
-        try:
-            parsed = json.loads(raw)
-        except json.JSONDecodeError as exc:
-            raise SystemExit(f"invalid hook JSON input: {exc}") from exc
-        if not isinstance(parsed, dict):
-            raise SystemExit("hook JSON input must be an object")
-        payload = parsed
-    else:
-        payload = {}
     event = normalize_event(args, payload, root)
     append_jsonl(event_queue_path(root, event), event)
     state, is_new = update_state(root, event, config)
@@ -1082,11 +1171,40 @@ def run_hook(args: argparse.Namespace) -> int:
         rebuild_indexes(root)
 
     event_name = str(event.get("hook_event_name") or "")
-    rehydrate_cfg = config.get("rehydrate") if isinstance(config.get("rehydrate"), dict) else {}
+    rehydrate_cfg = (
+        config.get("rehydrate") if isinstance(config.get("rehydrate"), dict) else {}
+    )
+    context = ""
     if event_name == "SessionStart" and rehydrate_cfg.get("session_start"):
-        hook_output(event_name, build_rehydrate_context(root, cwd=event.get("cwd"), limit=3))
+        context = build_rehydrate_context(root, cwd=event.get("cwd"), limit=3)
     elif event_name == "UserPromptSubmit" and rehydrate_cfg.get("user_prompt"):
-        hook_output(event_name, build_rehydrate_context(root, cwd=event.get("cwd"), limit=3))
+        context = build_rehydrate_context(root, cwd=event.get("cwd"), limit=3)
+    return context
+
+
+def run_hook(args: argparse.Namespace) -> int:
+    raw = sys.stdin.read()
+    payload: dict[str, Any]
+    if raw.strip():
+        try:
+            parsed = json.loads(raw)
+        except json.JSONDecodeError as exc:
+            raise SystemExit(f"invalid hook JSON input: {exc}") from exc
+        if not isinstance(parsed, dict):
+            raise SystemExit("hook JSON input must be an object")
+        payload = parsed
+    else:
+        payload = {}
+    context = handle_event(args, payload)
+    if context:
+        event_name = str(
+            getattr(args, "event_name", None)
+            or payload.get("hook_event_name")
+            or payload.get("hookEventName")
+            or payload.get("event")
+            or "manual"
+        )
+        hook_output(event_name, context)
     return 0
 
 
@@ -1120,7 +1238,8 @@ def run_disable(args: argparse.Namespace) -> int:
 
 def manual_payload(args: argparse.Namespace) -> dict[str, Any]:
     return {
-        "session_id": args.session_id or f"manual-{dt.datetime.now().strftime('%Y%m%d-%H%M%S')}",
+        "session_id": args.session_id
+        or f"manual-{dt.datetime.now().strftime('%Y%m%d-%H%M%S')}",
         "hook_event_name": "ManualCapture",
         "cwd": args.cwd or os.getcwd(),
         "transcript_path": args.transcript_path,
@@ -1165,7 +1284,9 @@ def iter_states(root: Path) -> list[dict[str, Any]]:
             continue
         if isinstance(data, dict):
             states.append(data)
-    return sorted(states, key=lambda item: str(item.get("last_seen_at") or ""), reverse=True)
+    return sorted(
+        states, key=lambda item: str(item.get("last_seen_at") or ""), reverse=True
+    )
 
 
 def session_matches(state: dict[str, Any], args: argparse.Namespace) -> bool:
@@ -1182,7 +1303,13 @@ def run_list(args: argparse.Namespace) -> int:
     root = sessions_dir(resolve_hub(args))
     states = [state for state in iter_states(root) if session_matches(state, args)]
     if args.json:
-        print(json.dumps({"sessions_root": str(root), "sessions": states}, indent=2, sort_keys=True))
+        print(
+            json.dumps(
+                {"sessions_root": str(root), "sessions": states},
+                indent=2,
+                sort_keys=True,
+            )
+        )
         return 0
     print(f"llm-wiki sessions: {root}")
     print("| Session | Last seen | Tools | CWD | Digest |")
@@ -1202,7 +1329,10 @@ def run_list(args: argparse.Namespace) -> int:
 
 def find_session(root: Path, session_id: str) -> dict[str, Any] | None:
     for state in iter_states(root):
-        if session_id in {state.get("llm_wiki_session_id"), state.get("native_session_id")}:
+        if session_id in {
+            state.get("llm_wiki_session_id"),
+            state.get("native_session_id"),
+        }:
             return state
     return None
 
@@ -1247,11 +1377,20 @@ def run_show(args: argparse.Namespace) -> int:
     return 0
 
 
-def build_rehydrate_context(root: Path, cwd: str | None = None, session_id: str | None = None, topic: str | None = None, limit: int = 3) -> str:
+def build_rehydrate_context(
+    root: Path,
+    cwd: str | None = None,
+    session_id: str | None = None,
+    topic: str | None = None,
+    limit: int = 3,
+) -> str:
     candidates = iter_states(root)
     selected: list[dict[str, Any]] = []
     for state in candidates:
-        if session_id and session_id not in {state.get("llm_wiki_session_id"), state.get("native_session_id")}:
+        if session_id and session_id not in {
+            state.get("llm_wiki_session_id"),
+            state.get("native_session_id"),
+        }:
             continue
         if topic and topic not in as_list(state.get("topics")):
             continue
@@ -1271,13 +1410,21 @@ def build_rehydrate_context(root: Path, cwd: str | None = None, session_id: str 
             f"- {state.get('llm_wiki_session_id')} — {digest_summary(state, 'rehydrate')} "
             f"Digest: {state.get('last_digest_path')}"
         )
-    lines.append("Do not treat session digests as canonical topic knowledge until promoted into a topic wiki.")
+    lines.append(
+        "Do not treat session digests as canonical topic knowledge until promoted into a topic wiki."
+    )
     return "\n".join(lines)
 
 
 def run_rehydrate(args: argparse.Namespace) -> int:
     root = sessions_dir(resolve_hub(args))
-    context = build_rehydrate_context(root, cwd=args.cwd, session_id=args.session_id, topic=args.topic, limit=args.limit)
+    context = build_rehydrate_context(
+        root,
+        cwd=args.cwd,
+        session_id=args.session_id,
+        topic=args.topic,
+        limit=args.limit,
+    )
     if not context:
         print("No matching session digests found.")
         return 1
@@ -1307,7 +1454,11 @@ def resolve_registry_path(raw_path: str, hub: Path) -> Path:
 
 def topic_path(hub: Path, slug: str) -> Path:
     registry = read_registry(hub)
-    entry = registry.get("wikis", {}).get(slug) if isinstance(registry.get("wikis"), dict) else None
+    entry = (
+        registry.get("wikis", {}).get(slug)
+        if isinstance(registry.get("wikis"), dict)
+        else None
+    )
     if isinstance(entry, dict) and entry.get("path"):
         return resolve_registry_path(str(entry["path"]), hub)
     return hub / "topics" / slug
@@ -1319,7 +1470,9 @@ def slugify(value: str) -> str:
     return value.strip("-")[:80] or "session"
 
 
-def append_topic_log(topic_root: Path, message: str, operation: str = "session") -> None:
+def append_topic_log(
+    topic_root: Path, message: str, operation: str = "session"
+) -> None:
     log = topic_root / "log.md"
     if log.exists():
         with log.open("a", encoding="utf-8") as handle:
@@ -1347,10 +1500,11 @@ def run_promote(args: argparse.Namespace) -> int:
     if dest.exists() and not args.force:
         raise SystemExit(f"promotion note already exists: {dest}")
     summary = fm.get("summary") or digest_summary(state, "promote")
-    promoted = textwrap.dedent(
-        f"""
+    promoted = (
+        textwrap.dedent(
+            f"""
         ---
-        title: {yaml_string('Session Digest Promotion: ' + str(state.get('llm_wiki_session_id')))}
+        title: {yaml_string("Session Digest Promotion: " + str(state.get("llm_wiki_session_id")))}
         source: {yaml_string(str(digest_file))}
         type: notes
         ingested: {today()}
@@ -1358,7 +1512,7 @@ def run_promote(args: argparse.Namespace) -> int:
         summary: {yaml_string(summary)}
         ---
 
-        # Session Digest Promotion: {state.get('llm_wiki_session_id')}
+        # Session Digest Promotion: {state.get("llm_wiki_session_id")}
 
         Source digest: [{digest_file.name}]({digest_file})
 
@@ -1366,7 +1520,9 @@ def run_promote(args: argparse.Namespace) -> int:
 
         {body.strip()}
         """
-    ).strip() + "\n"
+        ).strip()
+        + "\n"
+    )
     atomic_write(dest, promoted)
     topics = set(as_list(state.get("topics")))
     topics.add(args.topic)
@@ -1374,9 +1530,14 @@ def run_promote(args: argparse.Namespace) -> int:
     promoted_to = as_list(state.get("promoted_to"))
     promoted_to.append(str(dest))
     state["promoted_to"] = sorted(set(str(item) for item in promoted_to))
-    write_json(state_path(root, str(state["harness"]), str(state["native_session_id"])), state)
+    write_json(
+        state_path(root, str(state["harness"]), str(state["native_session_id"])), state
+    )
     rebuild_indexes(root)
-    append_topic_log(topic_root, f"promoted session digest {state.get('llm_wiki_session_id')} → raw/notes/{filename}")
+    append_topic_log(
+        topic_root,
+        f"promoted session digest {state.get('llm_wiki_session_id')} → raw/notes/{filename}",
+    )
     print(str(dest))
     return 0
 
@@ -1388,7 +1549,9 @@ def find_feedback_candidate(root: Path, candidate_id: str) -> dict[str, Any] | N
     return None
 
 
-def feedback_candidate_matches(candidate: dict[str, Any], args: argparse.Namespace) -> bool:
+def feedback_candidate_matches(
+    candidate: dict[str, Any], args: argparse.Namespace
+) -> bool:
     if getattr(args, "session_id", None) and args.session_id not in {
         candidate.get("llm_wiki_session_id"),
         candidate.get("native_session_id"),
@@ -1409,16 +1572,28 @@ def feedback_candidate_matches(candidate: dict[str, Any], args: argparse.Namespa
 
 def run_feedback_list(args: argparse.Namespace) -> int:
     root = sessions_dir(resolve_hub(args))
-    candidates = [c for c in iter_feedback_candidates(root) if feedback_candidate_matches(c, args)]
+    candidates = [
+        c for c in iter_feedback_candidates(root) if feedback_candidate_matches(c, args)
+    ]
     if args.json:
-        print(json.dumps({"sessions_root": str(root), "feedback_candidates": candidates}, indent=2, sort_keys=True))
+        print(
+            json.dumps(
+                {"sessions_root": str(root), "feedback_candidates": candidates},
+                indent=2,
+                sort_keys=True,
+            )
+        )
         return 0
     print(f"llm-wiki feedback candidates: {root / 'feedback'}")
     print("| ID | Type | Confidence | Scope | Promoted | Preview |")
     print("|---|---|---|---|---|---|")
     for candidate in candidates[: args.limit]:
         promoted = "yes" if candidate.get("promoted") else "no"
-        preview = str(candidate.get("text_preview") or "").replace("|", "\\|").replace("\n", " ")
+        preview = (
+            str(candidate.get("text_preview") or "")
+            .replace("|", "\\|")
+            .replace("\n", " ")
+        )
         print(
             "| {id} | {type} | {confidence} | {scope} | {promoted} | {preview} |".format(
                 id=candidate.get("id"),
@@ -1442,14 +1617,23 @@ def run_feedback_show(args: argparse.Namespace) -> int:
         return 0
     print(f"# Feedback Candidate: {candidate.get('id')}")
     print("")
-    print(markdown_table([
-        ("Type", candidate.get("feedback_type")),
-        ("Confidence", candidate.get("confidence")),
-        ("Scope hint", candidate.get("scope_hint")),
-        ("Session", candidate.get("llm_wiki_session_id")),
-        ("CWD", candidate.get("cwd")),
-        ("Promoted", json.dumps(candidate.get("promoted")) if candidate.get("promoted") else "no"),
-    ]))
+    print(
+        markdown_table(
+            [
+                ("Type", candidate.get("feedback_type")),
+                ("Confidence", candidate.get("confidence")),
+                ("Scope hint", candidate.get("scope_hint")),
+                ("Session", candidate.get("llm_wiki_session_id")),
+                ("CWD", candidate.get("cwd")),
+                (
+                    "Promoted",
+                    json.dumps(candidate.get("promoted"))
+                    if candidate.get("promoted")
+                    else "no",
+                ),
+            ]
+        )
+    )
     print("")
     print("## Distilled Lesson")
     print("")
@@ -1463,7 +1647,8 @@ def run_feedback_show(args: argparse.Namespace) -> int:
 
 def feedback_payload(args: argparse.Namespace) -> dict[str, Any]:
     return {
-        "session_id": args.session_id or f"manual-feedback-{dt.datetime.now().strftime('%Y%m%d-%H%M%S')}",
+        "session_id": args.session_id
+        or f"manual-feedback-{dt.datetime.now().strftime('%Y%m%d-%H%M%S')}",
         "hook_event_name": "ManualFeedback",
         "cwd": args.cwd or os.getcwd(),
         "feedback_text": args.text,
@@ -1492,7 +1677,9 @@ def run_feedback_capture(args: argparse.Namespace) -> int:
                 "transcript_path": event.get("transcript_path"),
             },
         )
-    candidate = maybe_record_feedback_candidate(root, state, event, payload, config, force=True)
+    candidate = maybe_record_feedback_candidate(
+        root, state, event, payload, config, force=True
+    )
     rebuild_indexes(root)
     if not candidate:
         raise SystemExit("feedback candidate was not created")
@@ -1514,45 +1701,59 @@ def run_feedback_promote(args: argparse.Namespace) -> int:
     dest = notes / filename
     if dest.exists() and not args.force:
         raise SystemExit(f"feedback promotion note already exists: {dest}")
-    summary = candidate.get("distilled_lesson") or f"Feedback candidate {candidate.get('id')}"
-    promoted = textwrap.dedent(
-        f"""
+    summary = (
+        candidate.get("distilled_lesson") or f"Feedback candidate {candidate.get('id')}"
+    )
+    promoted = (
+        textwrap.dedent(
+            f"""
         ---
-        title: {yaml_string('Feedback Candidate Promotion: ' + str(candidate.get('id')))}
+        title: {
+                yaml_string("Feedback Candidate Promotion: " + str(candidate.get("id")))
+            }
         source: {yaml_string(str(feedback_candidates_path(root)))}
         type: notes
         ingested: {today()}
-        tags: [feedback, feedback-candidate, user-feedback, {yaml_string(str(candidate.get('feedback_type')))}, {yaml_string(args.topic)}]
+        tags: [feedback, feedback-candidate, user-feedback, {
+                yaml_string(str(candidate.get("feedback_type")))
+            }, {yaml_string(args.topic)}]
         summary: {yaml_string(summary)}
         ---
 
-        # Feedback Candidate Promotion: {candidate.get('id')}
+        # Feedback Candidate Promotion: {candidate.get("id")}
 
         This note promotes a curated user-feedback candidate from `.sessions/feedback/`. It is a distilled operational lesson, not a raw transcript.
 
         ## Distilled Lesson
 
-        {candidate.get('distilled_lesson')}
+        {candidate.get("distilled_lesson")}
 
         ## Redacted User Feedback Preview
 
-        > {candidate.get('text_preview')}
+        > {candidate.get("text_preview")}
 
         ## Metadata
 
-        {markdown_table([
-            ('Feedback type', candidate.get('feedback_type')),
-            ('Confidence', candidate.get('confidence')),
-            ('Strength', candidate.get('strength')),
-            ('Scope hint', candidate.get('scope_hint')),
-            ('Promotion recommendation', candidate.get('promotion_recommendation')),
-            ('Session', candidate.get('llm_wiki_session_id')),
-            ('Harness', candidate.get('harness')),
-            ('CWD', candidate.get('cwd')),
-            ('Git remote', candidate.get('git_remote')),
-            ('Git branch', candidate.get('git_branch')),
-            ('Captured at', candidate.get('ts')),
-        ])}
+        {
+                markdown_table(
+                    [
+                        ("Feedback type", candidate.get("feedback_type")),
+                        ("Confidence", candidate.get("confidence")),
+                        ("Strength", candidate.get("strength")),
+                        ("Scope hint", candidate.get("scope_hint")),
+                        (
+                            "Promotion recommendation",
+                            candidate.get("promotion_recommendation"),
+                        ),
+                        ("Session", candidate.get("llm_wiki_session_id")),
+                        ("Harness", candidate.get("harness")),
+                        ("CWD", candidate.get("cwd")),
+                        ("Git remote", candidate.get("git_remote")),
+                        ("Git branch", candidate.get("git_branch")),
+                        ("Captured at", candidate.get("ts")),
+                    ]
+                )
+            }
 
         ## Usage Guidance
 
@@ -1560,17 +1761,29 @@ def run_feedback_promote(args: argparse.Namespace) -> int:
         - Treat approval/decision candidates as validation of the immediate prior context unless corroborated by session digests.
         - Do not infer broader factual claims from this feedback alone.
         """
-    ).strip() + "\n"
+        ).strip()
+        + "\n"
+    )
     atomic_write(dest, promoted)
     status = read_json(feedback_status_path(root), {"promoted": {}})
     if not isinstance(status, dict):
         status = {"promoted": {}}
-    promoted_map = status.get("promoted") if isinstance(status.get("promoted"), dict) else {}
-    promoted_map[str(candidate["id"])] = {"ts": utc_now(), "topic": args.topic, "path": str(dest)}
+    promoted_map = (
+        status.get("promoted") if isinstance(status.get("promoted"), dict) else {}
+    )
+    promoted_map[str(candidate["id"])] = {
+        "ts": utc_now(),
+        "topic": args.topic,
+        "path": str(dest),
+    }
     status["promoted"] = promoted_map
     write_json(feedback_status_path(root), status)
     rebuild_feedback_index(root)
-    append_topic_log(topic_root, f"promoted feedback candidate {candidate.get('id')} → raw/notes/{filename}", operation="feedback")
+    append_topic_log(
+        topic_root,
+        f"promoted feedback candidate {candidate.get('id')} → raw/notes/{filename}",
+        operation="feedback",
+    )
     print(str(dest))
     return 0
 
@@ -1599,37 +1812,72 @@ def run_status(args: argparse.Namespace) -> int:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(prog="llm-wiki-session", description="Capture and rehydrate llm-wiki session context.")
+    parser = argparse.ArgumentParser(
+        prog="llm-wiki-session",
+        description="Capture and rehydrate llm-wiki session context.",
+    )
     parser.add_argument("--hub", help="Override wiki hub path.")
-    parser.add_argument("--local", action="store_true", help="Use .wiki/.sessions in the current directory.")
+    parser.add_argument(
+        "--local",
+        action="store_true",
+        help="Use .wiki/.sessions in the current directory.",
+    )
     sub = parser.add_subparsers(dest="command", required=True)
 
-    enable = sub.add_parser("enable", help="Enable or reconfigure automated session capture in HUB/.sessions/config.json.")
+    enable = sub.add_parser(
+        "enable",
+        help="Enable or reconfigure automated session capture in HUB/.sessions/config.json.",
+    )
     enable.add_argument("--mode", choices=sorted(MODE_CONFIGS), default="balanced")
-    enable.add_argument("--tool-events", type=int, help="Override automated tool-event checkpoint threshold.")
-    enable.add_argument("--force", action="store_true", help="Replace existing config instead of merging.")
+    enable.add_argument(
+        "--tool-events",
+        type=int,
+        help="Override automated tool-event checkpoint threshold.",
+    )
+    enable.add_argument(
+        "--force",
+        action="store_true",
+        help="Replace existing config instead of merging.",
+    )
     enable.set_defaults(func=run_enable)
 
     disable = sub.add_parser("disable", help="Disable automated session capture.")
     disable.set_defaults(func=run_disable)
 
-    hook = sub.add_parser("hook", help="Record a harness hook event from JSON on stdin.")
-    hook.add_argument("--harness", help="Harness name, e.g. codex, claude, opencode, gemini.")
+    hook = sub.add_parser(
+        "hook", help="Record a harness hook event from JSON on stdin."
+    )
+    hook.add_argument(
+        "--harness", help="Harness name, e.g. codex, claude, opencode, gemini."
+    )
     hook.add_argument("--event-name", help="Override hook event name.")
     hook.add_argument("--session-id", help="Override native session id.")
     hook.add_argument("--cwd", help="Override session cwd.")
     hook.add_argument("--topic", help="Attach a topic tag to this event/state.")
     hook.add_argument("--summary", help="Manual summary to append to state.")
     hook.add_argument("--trigger", help="Override capture trigger name.")
-    hook.add_argument("--if-enabled", action="store_true", help="Honor .sessions/config.json enabled=false; default is enabled when no config exists.")
+    hook.add_argument(
+        "--if-enabled",
+        action="store_true",
+        help="Honor .sessions/config.json enabled=false; default is enabled when no config exists.",
+    )
     hook.add_argument("--max-event-bytes", type=int, default=MAX_EVENT_PREVIEW_CHARS)
     hook.set_defaults(func=run_hook)
 
-    capture = sub.add_parser("capture", help="Force a manual session digest checkpoint.")
+    capture = sub.add_parser(
+        "capture", help="Force a manual session digest checkpoint."
+    )
     capture.add_argument("--harness", default="manual")
-    capture.add_argument("--session-id", help="Native session id; defaults to manual timestamp.")
-    capture.add_argument("--cwd", help="Session working directory; defaults to current directory.")
-    capture.add_argument("--transcript-path", help="Transcript pointer to record without copying contents.")
+    capture.add_argument(
+        "--session-id", help="Native session id; defaults to manual timestamp."
+    )
+    capture.add_argument(
+        "--cwd", help="Session working directory; defaults to current directory."
+    )
+    capture.add_argument(
+        "--transcript-path",
+        help="Transcript pointer to record without copying contents.",
+    )
     capture.add_argument("--model", help="Model/profile label to record.")
     capture.add_argument("--topic", help="Topic tag to attach to this digest.")
     capture.add_argument("--summary", help="Short manual summary for the digest.")
@@ -1648,28 +1896,53 @@ def build_parser() -> argparse.ArgumentParser:
     show.add_argument("--path-only", action="store_true")
     show.set_defaults(func=run_show)
 
-    rehydrate = sub.add_parser("rehydrate", help="Print a compact context block from matching session digests.")
-    rehydrate.add_argument("--session-id", help="llm-wiki session id or native session id.")
-    rehydrate.add_argument("--cwd", help="Match sessions by cwd; defaults to current cwd.")
+    rehydrate = sub.add_parser(
+        "rehydrate", help="Print a compact context block from matching session digests."
+    )
+    rehydrate.add_argument(
+        "--session-id", help="llm-wiki session id or native session id."
+    )
+    rehydrate.add_argument(
+        "--cwd", help="Match sessions by cwd; defaults to current cwd."
+    )
     rehydrate.add_argument("--topic", help="Match sessions by topic tag.")
     rehydrate.add_argument("--limit", type=int, default=3)
     rehydrate.set_defaults(func=run_rehydrate)
 
-    promote = sub.add_parser("promote", help="Promote a session digest into a topic raw note.")
+    promote = sub.add_parser(
+        "promote", help="Promote a session digest into a topic raw note."
+    )
     promote.add_argument("session_id", help="llm-wiki session id or native session id.")
     promote.add_argument("--topic", required=True, help="Target topic slug.")
     promote.add_argument("--force", action="store_true")
     promote.set_defaults(func=run_promote)
 
-    feedback = sub.add_parser("feedback", help="List, capture, show, and promote curated user-feedback candidates.")
+    feedback = sub.add_parser(
+        "feedback",
+        help="List, capture, show, and promote curated user-feedback candidates.",
+    )
     feedback_sub = feedback.add_subparsers(dest="feedback_command", required=True)
 
-    feedback_list = feedback_sub.add_parser("list", help="List feedback candidates captured from user turns.")
-    feedback_list.add_argument("--session-id", help="Filter by llm-wiki session id or native session id.")
+    feedback_list = feedback_sub.add_parser(
+        "list", help="List feedback candidates captured from user turns."
+    )
+    feedback_list.add_argument(
+        "--session-id", help="Filter by llm-wiki session id or native session id."
+    )
     feedback_list.add_argument("--cwd", help="Filter by cwd.")
-    feedback_list.add_argument("--type", choices=["approval", "correction", "decision", "manual", "preference"], help="Filter by feedback type.")
-    feedback_list.add_argument("--min-confidence", choices=["low", "medium", "high"], default="medium")
-    feedback_list.add_argument("--unpromoted", action="store_true", help="Only show candidates not yet promoted.")
+    feedback_list.add_argument(
+        "--type",
+        choices=["approval", "correction", "decision", "manual", "preference"],
+        help="Filter by feedback type.",
+    )
+    feedback_list.add_argument(
+        "--min-confidence", choices=["low", "medium", "high"], default="medium"
+    )
+    feedback_list.add_argument(
+        "--unpromoted",
+        action="store_true",
+        help="Only show candidates not yet promoted.",
+    )
     feedback_list.add_argument("--limit", type=int, default=20)
     feedback_list.add_argument("--json", action="store_true")
     feedback_list.set_defaults(func=run_feedback_list)
@@ -1679,14 +1952,26 @@ def build_parser() -> argparse.ArgumentParser:
     feedback_show.add_argument("--json", action="store_true")
     feedback_show.set_defaults(func=run_feedback_show)
 
-    feedback_capture = feedback_sub.add_parser("capture", help="Manually add a feedback candidate.")
-    feedback_capture.add_argument("--text", required=True, help="User feedback text to distill and store as a candidate.")
+    feedback_capture = feedback_sub.add_parser(
+        "capture", help="Manually add a feedback candidate."
+    )
+    feedback_capture.add_argument(
+        "--text",
+        required=True,
+        help="User feedback text to distill and store as a candidate.",
+    )
     feedback_capture.add_argument("--harness", default="manual")
-    feedback_capture.add_argument("--session-id", help="Native session id; defaults to manual-feedback timestamp.")
-    feedback_capture.add_argument("--cwd", help="Session working directory; defaults to current directory.")
+    feedback_capture.add_argument(
+        "--session-id", help="Native session id; defaults to manual-feedback timestamp."
+    )
+    feedback_capture.add_argument(
+        "--cwd", help="Session working directory; defaults to current directory."
+    )
     feedback_capture.set_defaults(func=run_feedback_capture)
 
-    feedback_promote = feedback_sub.add_parser("promote", help="Promote a feedback candidate into a topic raw note.")
+    feedback_promote = feedback_sub.add_parser(
+        "promote", help="Promote a feedback candidate into a topic raw note."
+    )
     feedback_promote.add_argument("candidate_id")
     feedback_promote.add_argument("--topic", required=True, help="Target topic slug.")
     feedback_promote.add_argument("--force", action="store_true")

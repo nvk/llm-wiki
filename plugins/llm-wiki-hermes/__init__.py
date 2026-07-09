@@ -29,6 +29,8 @@ from pathlib import Path as _Path
 
 _SKILL_DIR = _Path(__file__).resolve().parent / "skills" / "wiki-manager"
 
+from .hooks import install as _install  # noqa: E402
+
 
 def register(ctx):
     """Hermes plugin entrypoint. Wires session-capture hooks, the wiki tool, and the bundled skill."""
@@ -46,3 +48,7 @@ def register(ctx):
         )
     except Exception as exc:  # pragma: no cover - defensive
         print(f"[llm-wiki-hermes] skill registration failed: {exc}", file=sys.stderr)
+    try:
+        _install.disable_builtin_llm_wiki_skill()
+    except Exception as exc:  # pragma: no cover - defensive
+        print(f"[llm-wiki-hermes] install step failed: {exc}", file=sys.stderr)

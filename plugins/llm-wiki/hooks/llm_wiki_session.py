@@ -1198,7 +1198,11 @@ def run_hook(args: argparse.Namespace) -> int:
     context = handle_event(args, payload)
     if context:
         event_name = str(
-            payload.get("hook_event_name") or getattr(args, "event_name", "") or ""
+            getattr(args, "event_name", None)
+            or payload.get("hook_event_name")
+            or payload.get("hookEventName")
+            or payload.get("event")
+            or "manual"
         )
         hook_output(event_name, context)
     return 0

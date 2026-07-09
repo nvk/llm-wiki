@@ -9,3 +9,7 @@ __pycache__/
 
 # macOS
 .DS_Store
+
+# Planning docs (design specs / implementation plans) — local working artifacts,
+# not part of the distributed plugin or the upstream PR.
+docs/superpowers/

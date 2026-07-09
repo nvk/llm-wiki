@@ -253,7 +253,7 @@ if [ -f "$HERMES_PLUGIN/plugin.yaml" ]; then
   else
     # PyYAML may be absent; fall back to a minimal parse.
     if python3 - <<'PY'
-import re,sys
+import sys
 t=open('$HERMES_PLUGIN/plugin.yaml').read()
 ok = 'name:' in t and 'version:' in t and 'hooks:' in t
 sys.exit(0 if ok else 1)

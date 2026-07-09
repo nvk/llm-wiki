@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import importlib.util
-import re
 import sys
 import types
 from pathlib import Path
@@ -104,7 +103,7 @@ def test_on_session_end_maps_sessionend(fake_engine):
 
 
 def test_hook_exception_is_swallowed(fake_engine):
-    bad = _fake_engine(fake_engine.__dict__ and Path("/tmp"), rehydrate_return="")
+    bad = _fake_engine(Path("/tmp"), rehydrate_return="")
     bad.handle_event = mock.Mock(side_effect=RuntimeError("boom"))
     with mock.patch.object(adapter_mod, "_get_engine", return_value=bad):
         assert (

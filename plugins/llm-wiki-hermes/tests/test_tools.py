@@ -25,6 +25,16 @@ def test_handle_wiki_missing_command():
     assert out["success"] is False
 
 
+def test_handle_wiki_routes_lint_to_cli_script(tmp_path, monkeypatch):
+    cli = tmp_path / "cli.py"
+    cli.write_text("#!/usr/bin/env python3\nimport sys; print('CLI-OK')\n")
+    monkeypatch.setattr(tools_mod, "CLI_SCRIPT", cli)
+    monkeypatch.setattr(tools_mod, "SESSION_SCRIPT", tmp_path / "sess.py")
+    out = json.loads(tools_mod.handle_wiki({"command": "lint", "args": "--check"}))
+    assert out["success"] is True
+    assert "CLI-OK" in out["output"]
+
+
 def test_register_calls_ctx(tmp_path, monkeypatch):
     cli = tmp_path / "cli.py"
     cli.write_text("#!/usr/bin/env python3\nprint('ok')\n")

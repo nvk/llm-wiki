@@ -21,8 +21,6 @@ printf '# nutrition\n- [Gut-Brain Axis](concepts/gut.md) — links gut microbiom
 # Keep tests hermetic: a config that enables memory injection.
 printf '{"memory": {"inject": true, "limit": 3}}' > "$HUB/config.json"
 
-export LLM_WIKI_HUB="$HUB"
-
 DRIVER="$TMP/driver.py"
 cat > "$DRIVER" <<PY
 import importlib.util, os, json, sys

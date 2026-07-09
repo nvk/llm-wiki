@@ -25,7 +25,7 @@ def _run(script, command, rest):
         {
             "success": proc.returncode == 0,
             "output": proc.stdout,
-            "error": proc.stderr,
+            "error": proc.stderr if proc.returncode != 0 else "",
         }
     )
 

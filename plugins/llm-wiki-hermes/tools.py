@@ -29,6 +29,9 @@ SESSION_COMMANDS = {
 
 def _run(script, command, rest):
     try:
+        # `rest` is a space-separated arg string; split shell-safe (no shell=True).
+        # This is deterministic for our known subcommands (lint/archive/schema/session
+        # ops) which take simple flags like `--fix PATH` or `disable`.
         proc = subprocess.run(
             [sys.executable, str(script), command, *shlex.split(rest or "")],
             capture_output=True,

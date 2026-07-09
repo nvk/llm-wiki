@@ -7,7 +7,8 @@ import re
 import sys
 from pathlib import Path
 
-ENGINE_PATH = (
+ENGINE_PATH = Path(__file__).resolve().parents[2] / "scripts" / "llm-wiki-session"
+ENGINE_PATH_FALLBACK = (
     Path(__file__).resolve().parents[2] / "llm-wiki" / "hooks" / "llm_wiki_session.py"
 )
 
@@ -15,19 +16,42 @@ _engine = None
 
 
 def _get_engine():
-    """Lazily import the shared upstream engine. Returns None on failure (R11)."""
+    """Lazily import the shared upstream engine. Returns None on failure (R11).
+
+    Prefers the source engine at the repo root ``scripts/llm-wiki-session`` and
+    falls back to the generated Codex mirror under ``llm-wiki/hooks/``.
+    """
     global _engine
     if _engine is None:
-        try:
-            spec = importlib.util.spec_from_file_location(
-                "llm_wiki_session", str(ENGINE_PATH)
+        candidates = [ENGINE_PATH, ENGINE_PATH_FALLBACK]
+        loaded = None
+        last_exc = None
+        for path in candidates:
+            if not path.exists():
+                continue
+            try:
+                spec = importlib.util.spec_from_file_location(
+                    "llm_wiki_session", str(path)
+                )
+                mod = importlib.util.module_from_spec(spec)
+                spec.loader.exec_module(mod)
+                loaded = path
+                _engine = mod
+                break
+            except Exception as exc:  # pragma: no cover - defensive
+                last_exc = exc
+                continue
+        if loaded is None:
+            print(
+                f"[llm-wiki-hermes] engine import failed: {last_exc}",
+                file=sys.stderr,
             )
-            mod = importlib.util.module_from_spec(spec)
-            spec.loader.exec_module(mod)
-            _engine = mod
-        except Exception as exc:  # pragma: no cover - defensive
-            print(f"[llm-wiki-hermes] engine import failed: {exc}", file=sys.stderr)
             _engine = None
+        else:
+            print(
+                f"[llm-wiki-hermes] engine loaded from {loaded}",
+                file=sys.stderr,
+            )
     return _engine
 
 
@@ -189,6 +213,12 @@ def on_session_start(
     cwd=None,
     **kwargs,
 ):
+    carry_over_context = (
+        carry_over_context
+        or kwargs.get("message")
+        or kwargs.get("prompt")
+        or kwargs.get("content")
+    )
     cwd = cwd or os.getcwd()
     payload = _payload(
         session_id=session_id, model=model, user_prompt=carry_over_context
@@ -205,6 +235,13 @@ def pre_llm_call(
     cwd=None,
     **kwargs,
 ):
+    user_message = (
+        user_message
+        or kwargs.get("message")
+        or kwargs.get("prompt")
+        or kwargs.get("content")
+        or ""
+    )
     cwd = cwd or os.getcwd()
     payload = _payload(
         session_id=session_id, turn_id=turn_id, model=model, user_prompt=user_message

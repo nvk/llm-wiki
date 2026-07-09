@@ -149,6 +149,10 @@ Hermes also proactively injects relevant wiki notes as memory on each user
 prompt (toggle with `LLM_WIKI_HERMES_MEMORY=0` or `memory.inject: false` in
 `HUB/.sessions/config.json`).
 
+> **Note:** The full `llm-wiki` repository must be present — the engine is loaded
+> from the repo-root `scripts/llm-wiki-session`, not from `plugins/llm-wiki-hermes/`
+> alone. Symlinking only the plugin folder will make every hook silently no-op.
+
 ## Claude-First, Multi-Runtime
 
 Claude Code is the principal user. Keep one shared behavior layer and thin packaging layers per runtime:

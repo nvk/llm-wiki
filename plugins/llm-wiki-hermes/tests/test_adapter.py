@@ -78,7 +78,8 @@ def test_post_tool_call_truncates_tool_output(fake_engine):
     assert args.event_name == "PostToolUse"
     assert payload["tool_name"] == "terminal"
     assert payload["tool_use_id"] == "tc1"
-    assert len(payload["tool_output"]) == 1200
+    assert payload["tool_output"].endswith("truncated from 5000 chars]")
+    assert len(payload["tool_output"]) < 5000  # still truncated
 
 
 def test_on_session_finalize_maps_precompact(fake_engine):

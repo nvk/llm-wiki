@@ -274,7 +274,9 @@ def post_tool_call(
         else (str(result) if result is not None else "")
     )
     if len(tool_output) > 1200:
-        tool_output = tool_output[:1200]
+        tool_output = (
+            tool_output[:1200] + f"\n[... truncated from {len(tool_output)} chars]"
+        )
     payload = _payload(
         session_id=session_id,
         turn_id=turn_id,

@@ -34,6 +34,7 @@ No LLM calls. Validates wiki file structure, default `schema.md`, frontmatter sc
 # Validate plugin manifest and docs/version consistency
 ./tests/test-plugin-validate.sh
 ./tests/test-docs-consistency.sh
+./tests/test-hermes-runtime.sh
 ```
 
 ### What it checks
@@ -59,6 +60,8 @@ No LLM calls. Validates wiki file structure, default `schema.md`, frontmatter sc
   Pi/DS4 launcher remain read-only and synchronized from one canonical protocol
 - OpenCode: full and query packages remain generated and within static budgets;
   live provider/model behavior is best effort
+- Hermes: the optional session adapter registers hooks only, preserves skill and
+  config state, captures events, and returns rehydration context
 
 ### Defect fixtures
 
@@ -99,6 +102,7 @@ Copy `tests/ci/plugin-tests.yml` to `.github/workflows/` to enable:
 - Structural tests run when plugin, profile, benchmark, script, or docs inputs change
 - Static token budgets and benchmark protocol tests run on every push
 - Codex/OpenCode mirrors and the portable query profile are regenerated and checked
+- The thin Hermes session adapter is exercised without requiring a Hermes install
 - Behavioral evals run on PRs only (requires `ANTHROPIC_API_KEY` secret)
 
 ## Fixtures

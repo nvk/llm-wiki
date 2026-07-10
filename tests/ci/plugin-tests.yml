@@ -62,6 +62,9 @@ jobs:
       - name: Run session concurrency regression
         run: chmod +x tests/test-session-concurrency.sh && ./tests/test-session-concurrency.sh
 
+      - name: Run Hermes session adapter test
+        run: chmod +x tests/test-hermes-runtime.sh && ./tests/test-hermes-runtime.sh
+
   behavioral:
     name: "Layer 2: Behavioral Evals"
     runs-on: ubuntu-latest

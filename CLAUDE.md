@@ -40,6 +40,7 @@ git -C ~/.claude/plugins/marketplaces/llm-wiki remote set-url origin https://git
 ./tests/test-local-cli-lint.sh     # local scripts/llm-wiki lint helper
 ./tests/test-session-capture.sh    # deterministic session capture helper
 ./tests/test-session-concurrency.sh # concurrent session-state regression
+./tests/test-hermes-runtime.sh     # optional Hermes session adapter
 ./tests/test-codex-sync.sh         # Codex plugin mirror matches Claude source
 ./tests/test-opencode-sync.sh     # OpenCode plugin mirror matches Claude source
 ./tests/test-token-benchmarks.sh  # budgets + fake Codex/Claude protocol fixtures
@@ -92,6 +93,7 @@ Requires `ANTHROPIC_API_KEY`. Costs ~$2-5 per run.
 - **Edited `claude-plugin/skills/wiki-manager/`**: both `test-codex-sync.sh` and `test-opencode-sync.sh` will fail until you re-run both sync scripts and commit `plugins/`. Never edit `plugins/llm-wiki/` or `plugins/llm-wiki-opencode/` by hand — they are generated. Codex gets copied references for marketplace caching; OpenCode keeps a symlink into the Claude source.
 - **Added a runtime-specific text rewrite to a sync script**: update the corresponding sync script's SKILL.md replacement list. References are runtime-neutral and shared verbatim — do not add per-file replacements there.
 - **Changed Codex install docs or bootstrap flow**: run `./tests/test-codex-runtime.sh` to verify a user-scoped install materializes the plugin cache, resolves `@wiki`, and installs `$wiki-query` as explicit-only from a clean scratch Codex home without an interactive `/plugins` step. Codex 0.144 reads plugin enablement from user config, not project config; the test also guards the unsupported project-scope path.
+- **Changed the Hermes adapter or session engine API**: run `./tests/test-hermes-runtime.sh`. Keep Hermes support session-only: do not bundle another skill copy, register tools, inject ambient wiki memory, or mutate Hermes skill/config state.
 
 ### Test file locations
 
@@ -126,6 +128,7 @@ plugins/llm-wiki-opencode/      — generated OpenCode packaging mirror (do NOT 
     references → ../../../../claude-plugin/skills/wiki-manager/references  (symlink)
   README.md                     — OpenCode install instructions
   skills/wiki-query/SKILL.md    — best-effort compact read-only preset
+plugins/llm-wiki-hermes/        — thin optional Hermes session hooks; no skills/tools/config mutation
 profiles/query-lite/SKILL.md    — portable generated read-only query profile
 .agents/plugins/marketplace.json — repo-local Codex marketplace entry
 scripts/sync-codex-plugin.sh    — regenerates plugins/llm-wiki/ from claude-plugin/

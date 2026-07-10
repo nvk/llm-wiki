@@ -84,6 +84,12 @@ echo ""
 echo "--- Project files ---"
 if [ -f "$PROJECT_ROOT/AGENTS.md" ]; then
   log_pass "AGENTS.md exists"
+  if head -1 "$PROJECT_ROOT/AGENTS.md" | grep -q '^---$' \
+    && grep -q '^name: wiki-manager$' "$PROJECT_ROOT/AGENTS.md"; then
+    log_pass "AGENTS.md is directly installable as wiki-manager"
+  else
+    log_fail "AGENTS.md skill frontmatter invalid" "expected name: wiki-manager"
+  fi
 else
   log_fail "AGENTS.md missing" "missing file"
 fi
@@ -291,6 +297,50 @@ if [ -f "$OPENCODE_PLUGIN/README.md" ]; then
   log_pass "OpenCode README.md exists"
 else
   log_fail "OpenCode README.md not found" "missing file"
+fi
+
+# Hermes deliberately gets only a thin optional session adapter. Full and
+# query-only skills install from the existing canonical/generated profiles.
+echo ""
+echo "=== Hermes Session Adapter Validation ==="
+HERMES_PLUGIN="$PROJECT_ROOT/plugins/llm-wiki-hermes"
+HERMES_MANIFEST="$HERMES_PLUGIN/plugin.yaml"
+
+if [ -f "$HERMES_MANIFEST" ]; then
+  log_pass "Hermes plugin.yaml exists"
+  EXPECTED_VERSION=$(python3 -c "import json; print(json.load(open('$PLUGIN_JSON'))['version'])")
+  if grep -q '^name: llm-wiki-hermes$' "$HERMES_MANIFEST" \
+    && grep -q "^version: \"$EXPECTED_VERSION\"$" "$HERMES_MANIFEST" \
+    && grep -q '^provides_hooks:$' "$HERMES_MANIFEST"; then
+    log_pass "Hermes manifest name, version, and hook key are valid"
+  else
+    log_fail "Hermes manifest invalid" "expected current version and provides_hooks"
+  fi
+  for hook in on_session_start pre_llm_call post_tool_call on_session_finalize on_session_end; do
+    if grep -q "^  - $hook$" "$HERMES_MANIFEST"; then
+      log_pass "Hermes manifest declares $hook"
+    else
+      log_fail "Hermes manifest missing $hook" "required session hook"
+    fi
+  done
+else
+  log_fail "Hermes plugin.yaml missing" "missing file"
+fi
+
+for file in __init__.py adapter.py; do
+  if [ -f "$HERMES_PLUGIN/$file" ] && python3 -m py_compile "$HERMES_PLUGIN/$file" 2>/dev/null; then
+    log_pass "Hermes $file exists and compiles"
+  else
+    log_fail "Hermes $file invalid" "missing file or syntax error"
+  fi
+done
+
+if [ ! -e "$HERMES_PLUGIN/skills" ] \
+  && [ ! -e "$HERMES_PLUGIN/tools.py" ] \
+  && [ ! -e "$HERMES_PLUGIN/install.py" ]; then
+  log_pass "Hermes adapter does not duplicate skills, tools, or installers"
+else
+  log_fail "Hermes adapter exceeds session-only scope" "remove bundled skills, tools, and installers"
 fi
 
 echo ""

@@ -1039,24 +1039,13 @@ def hook_output(event_name: str, context: str) -> None:
     )
 
 
-def run_hook(args: argparse.Namespace) -> int:
+def handle_event(args: argparse.Namespace, payload: dict[str, Any]) -> str:
+    """Record one harness event and return context for in-process adapters."""
     root = sessions_dir(resolve_hub(args))
     config = load_config(root)
     if args.if_enabled and not config.get("enabled"):
         raise HookSkip()
     ensure_layout(root)
-    raw = sys.stdin.read()
-    payload: dict[str, Any]
-    if raw.strip():
-        try:
-            parsed = json.loads(raw)
-        except json.JSONDecodeError as exc:
-            raise SystemExit(f"invalid hook JSON input: {exc}") from exc
-        if not isinstance(parsed, dict):
-            raise SystemExit("hook JSON input must be an object")
-        payload = parsed
-    else:
-        payload = {}
     event = normalize_event(args, payload, root)
     append_jsonl(event_queue_path(root, event), event)
     state, is_new = update_state(root, event, config)
@@ -1084,9 +1073,35 @@ def run_hook(args: argparse.Namespace) -> int:
     event_name = str(event.get("hook_event_name") or "")
     rehydrate_cfg = config.get("rehydrate") if isinstance(config.get("rehydrate"), dict) else {}
     if event_name == "SessionStart" and rehydrate_cfg.get("session_start"):
-        hook_output(event_name, build_rehydrate_context(root, cwd=event.get("cwd"), limit=3))
-    elif event_name == "UserPromptSubmit" and rehydrate_cfg.get("user_prompt"):
-        hook_output(event_name, build_rehydrate_context(root, cwd=event.get("cwd"), limit=3))
+        return build_rehydrate_context(root, cwd=event.get("cwd"), limit=3)
+    if event_name == "UserPromptSubmit" and rehydrate_cfg.get("user_prompt"):
+        return build_rehydrate_context(root, cwd=event.get("cwd"), limit=3)
+    return ""
+
+
+def run_hook(args: argparse.Namespace) -> int:
+    raw = sys.stdin.read()
+    payload: dict[str, Any]
+    if raw.strip():
+        try:
+            parsed = json.loads(raw)
+        except json.JSONDecodeError as exc:
+            raise SystemExit(f"invalid hook JSON input: {exc}") from exc
+        if not isinstance(parsed, dict):
+            raise SystemExit("hook JSON input must be an object")
+        payload = parsed
+    else:
+        payload = {}
+    context = handle_event(args, payload)
+    if context:
+        event_name = str(
+            getattr(args, "event_name", None)
+            or payload.get("hook_event_name")
+            or payload.get("hookEventName")
+            or payload.get("event")
+            or "manual"
+        )
+        hook_output(event_name, context)
     return 0
 
 

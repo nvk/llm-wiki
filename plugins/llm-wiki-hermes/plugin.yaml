@@ -1,0 +1,10 @@
+name: llm-wiki-hermes
+version: "0.16.0"
+description: Optional Hermes session capture and rehydration for llm-wiki.
+author: nvk
+provides_hooks:
+  - on_session_start
+  - pre_llm_call
+  - post_tool_call
+  - on_session_finalize
+  - on_session_end

@@ -9,7 +9,7 @@
 
 [github.com/nvk/llm-wiki](https://github.com/nvk/llm-wiki)
 
-LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, collector catalogs, automated session capture, feedback curation, thesis-driven investigation, source ingestion, wiki compilation, truth-seeking audits, querying, and artifact generation. Ships as a Claude Code plugin, an OpenAI Codex plugin, an OpenCode instruction file, or a portable AGENTS.md for any other LLM agent. Obsidian-compatible.
+LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, collector catalogs, automated session capture, feedback curation, thesis-driven investigation, source ingestion, wiki compilation, truth-seeking audits, querying, and artifact generation. Ships as a Claude Code plugin, an OpenAI Codex plugin, OpenCode/Pi instructions, native Hermes skill profiles, or a portable AGENTS.md for any other LLM agent. Obsidian-compatible.
 
 ---
 
@@ -171,6 +171,44 @@ skill for ingest, research, compile, lint, or other mutating workflows. See
 [`profiles/ds4/README.md`](profiles/ds4/README.md) and the reproducible
 [`benchmarks/README.md`](benchmarks/README.md) DS4 lane.
 
+**Hermes** (skills, plus optional session capture):
+
+Install only the profile you need through Hermes' native Skills Hub. This does
+not replace Hermes' bundled `llm-wiki` skill or change Hermes configuration:
+
+```bash
+# Small, read-only, index-first queries
+hermes skills install \
+  https://raw.githubusercontent.com/nvk/llm-wiki/master/profiles/query-lite/SKILL.md
+
+# Complete research and maintenance protocol
+hermes skills install \
+  https://raw.githubusercontent.com/nvk/llm-wiki/master/AGENTS.md
+```
+
+Invoke `/wiki-query` for lookups and `/wiki-manager` for write-capable work.
+The complete protocol is intentionally larger; install it only when Hermes
+must ingest, research, compile, lint, or otherwise modify a wiki.
+
+Session capture and rehydration are optional. They use a thin plugin that
+registers lifecycle hooks only: no custom tools, proactive memory injection,
+skill replacement, or automatic config mutation.
+
+```bash
+REPO="$HOME/.local/share/llm-wiki"
+git clone https://github.com/nvk/llm-wiki.git "$REPO"
+mkdir -p "$HOME/.hermes/plugins"
+ln -sfn "$REPO/plugins/llm-wiki-hermes" \
+  "$HOME/.hermes/plugins/llm-wiki-hermes"
+hermes plugins enable llm-wiki-hermes
+"$REPO/scripts/llm-wiki-session" enable --mode balanced
+hermes gateway restart
+```
+
+The plugin must remain linked to the persistent full checkout because it calls
+the shared session engine there. Set `LLM_WIKI_SESSION_SCRIPT` only when that
+checkout uses a non-standard layout.
+
 **Any LLM Agent** (portable instruction file):
 ```bash
 # Read-only queries: small default
@@ -194,6 +232,8 @@ Claude Code is the principal user. Keep one shared behavior layer and thin packa
 - `claude-plugin/skills/wiki-manager/references/query-lite.md` is the canonical read-only query protocol.
 - `profiles/query-lite/SKILL.md` and generated `wiki-query` skills expose that protocol without the full research context.
 - `plugins/llm-wiki-opencode/` is the OpenCode and Pi packaging target.
+- `plugins/llm-wiki-hermes/` is an optional session-only Hermes adapter; Hermes
+  installs the existing portable profiles directly instead of bundling another copy.
 - `.agents/plugins/marketplace.json` makes the Codex plugin installable from this repo.
 - `AGENTS.md` is the portable single-file protocol for any other LLM agent.
 
@@ -205,6 +245,7 @@ Claude Code is the principal user. Keep one shared behavior layer and thin packa
 | Codex | Explicit-only `$wiki-query` (~2.8 KB) | `@wiki` (~11.7 KB before lazy references) | Deterministic fixtures plus app-server live runs |
 | Pi / DS4 | `scripts/pi-wiki-query`, or the isolated DS4 launcher, with read-only tools (~2.8 KB profile) | `pi --skill .../wiki-manager/SKILL.md` | Deterministic fixtures plus exact DS4 provider-payload measurement |
 | OpenCode | `wiki-query/SKILL.md` (~2.8 KB) | `wiki-manager/SKILL.md` (~25.2 KB) | Static budgets and generated-package sync; live model is best effort |
+| Hermes | Install `profiles/query-lite/SKILL.md` by URL | Install root `AGENTS.md` by URL as `wiki-manager` | Static profiles plus a hermetic session-adapter runtime test |
 | Any agent | Copy `profiles/query-lite/SKILL.md` (~2.8 KB) | Copy root `AGENTS.md` (~51.2 KB) | Static budgets |
 
 Sizes are checked-in UTF-8 bytes, not provider token estimates. Use query mode
@@ -356,6 +397,14 @@ codex plugin add wiki@llm-wiki
 **OpenCode** — if using the GitHub URL in `instructions`, updates are automatic (fetched every session). If using a local copy:
 ```bash
 curl -sL https://raw.githubusercontent.com/nvk/llm-wiki/master/plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md > ~/.config/opencode/AGENTS.md
+```
+
+**Hermes** — refresh installed profiles and, if used, the optional session adapter:
+```bash
+hermes skills update wiki-query
+hermes skills update wiki-manager
+git -C "$HOME/.local/share/llm-wiki" pull --ff-only
+hermes gateway restart
 ```
 
 **AGENTS.md** — just pull the latest and replace:

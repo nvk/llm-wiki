@@ -22,6 +22,7 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
    - `.claude-plugin/marketplace.json`
    - `claude-plugin/.claude-plugin/plugin.json`
    - `plugins/llm-wiki/.codex-plugin/plugin.json`
+   - `plugins/llm-wiki-hermes/plugin.yaml`
 
 ## Test
 
@@ -33,6 +34,9 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
    ./tests/test-docs-consistency.sh
    ./tests/test-structure.sh
    ./tests/test-local-cli-lint.sh
+   ./tests/test-session-capture.sh
+   ./tests/test-session-concurrency.sh
+   ./tests/test-hermes-runtime.sh
    ./tests/test-codex-sync.sh
    ./tests/test-opencode-sync.sh
    ./tests/test-codex-runtime.sh
@@ -51,31 +55,37 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
    - Load via: `"instructions": ["plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md"]` in `opencode.json`
    - Verify web search works with `OPENCODE_ENABLE_EXA=1`
 
-6. **Test the changed feature** — whatever was added/fixed in this release:
+6. **Verify Hermes profiles and optional session adapter**:
+   - Confirm root `AGENTS.md` and `profiles/query-lite/SKILL.md` retain valid skill frontmatter
+   - Run `./tests/test-hermes-runtime.sh`
+   - If Hermes is installed, invoke `/wiki-query` and confirm the optional plugin does not replace skills or register tools
+
+7. **Test the changed feature** — whatever was added/fixed in this release:
    - Invoke the relevant `/wiki:*` subcommand
    - Confirm expected behavior, no errors
 
-6. **Spot-check routing** (if routing changed):
+8. **Spot-check routing** (if routing changed):
    - `/wiki <url>` → should route to ingest
    - `/wiki what is X?` → should route to query
    - `/wiki research Y` → should route to research
 
 ## Ship
 
-7. **Commit version bumps** — both files in one commit:
+9. **Commit version bumps** — all manifests in one commit:
    ```bash
-   git add .claude-plugin/marketplace.json claude-plugin/.claude-plugin/plugin.json
+   git add .claude-plugin/marketplace.json claude-plugin/.claude-plugin/plugin.json \
+     plugins/llm-wiki/.codex-plugin/plugin.json plugins/llm-wiki-hermes/plugin.yaml
    git commit -m "Bump to v0.0.XX"
    ```
 
-8. **Push to master**:
+10. **Push to master**:
    ```bash
    git -c credential.helper='!gh auth git-credential' push https://github.com/nvk/llm-wiki.git <branch>:master
    ```
    - If in a worktree: replace `<branch>` with `worktree-<name>`
    - Do not use SSH remotes from agent sessions; use `gh auth` + HTTPS.
 
-9. **Create GitHub release**:
+11. **Create GitHub release**:
    ```bash
    GH_TOKEN="" gh release create v0.0.XX \
      --repo nvk/llm-wiki \
@@ -93,7 +103,7 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
    - `GH_TOKEN=""` is required to clear a bad env token and use `gh auth` credentials
    - Release title format: `v0.0.XX — <Feature Name>`
 
-10. **Update plugin cache** (so local Claude Code picks up new version):
+12. **Update plugin cache** (so local Claude Code picks up new version):
    ```bash
    git -C ~/.claude/plugins/marketplaces/llm-wiki remote set-url origin https://github.com/nvk/llm-wiki.git
    claude plugin update wiki@llm-wiki
@@ -106,10 +116,11 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
    # Copy commands/ skills/ .claude-plugin/ from the repo's claude-plugin/ dir
    ```
 
-11. **Verify install**:
+13. **Verify install**:
    - Claude Code: start a fresh session and run `/wiki status`
    - Codex: start a fresh session and run `@wiki test` or `./scripts/verify-codex-plugin.sh --scope user`
    - OpenCode: start a session with the SKILL.md loaded and ask "wiki status"
+   - Hermes: update `wiki-query` and `wiki-manager`, then test the session adapter if enabled
 
 ## Post-ship: README
 

@@ -1,3 +1,8 @@
+---
+name: wiki-manager
+description: Build and maintain source-backed llm-wiki knowledge bases.
+---
+
 # LLM Wiki — Agent Instructions
 
 > This is an "idea file" in the spirit of [Karpathy's LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f). Paste it into any LLM agent (OpenAI Codex, Claude Code, OpenCode, Gemini Code Assist, or similar) and it will build and manage a wiki for you. The agent customizes the specifics; this file communicates the system.

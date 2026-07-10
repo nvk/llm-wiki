@@ -1,6 +1,6 @@
 param(
   [ValidateSet("project", "user")]
-  [string]$Scope = "project",
+  [string]$Scope = "user",
   [Alias("project-root")]
   [string]$ProjectRoot = (Get-Location).Path,
   [Alias("user-home")]
@@ -16,11 +16,12 @@ function Show-Usage {
   @"
 Usage: .\scripts\verify-codex-plugin.ps1 [options]
 
-Verify that Codex resolves @wiki to this repo's generated Codex wiki skill.
+Verify that Codex resolves the @wiki plugin and installs the explicit-only
+`$wiki-query skill from this repo.
 
 Options:
-  -Scope project|user   Verify project or user install (default: project)
-  -ProjectRoot <dir>    Project root for project scope (default: current dir)
+  -Scope user           Verify the supported user install (default: user)
+  -ProjectRoot <dir>    Working directory for the prompt probe (default: current dir)
   -UserHome <dir>       HOME used for Codex config lookup (default: current HOME)
   -Help                 Show this help
 "@
@@ -31,13 +32,6 @@ function Resolve-ExistingDirectory([string]$PathValue) {
     throw "Directory not found: $PathValue"
   }
   return (Resolve-Path -LiteralPath $PathValue).Path
-}
-
-function Read-TextIfExists([string]$PathValue) {
-  if (-not (Test-Path -LiteralPath $PathValue -PathType Leaf)) {
-    return ""
-  }
-  return [System.IO.File]::ReadAllText($PathValue, [System.Text.Encoding]::UTF8)
 }
 
 function Invoke-WithCodexHome([string]$UserHomeValue, [scriptblock]$Body) {
@@ -56,9 +50,70 @@ function Invoke-WithCodexHome([string]$UserHomeValue, [scriptblock]$Body) {
   }
 }
 
-function Test-TextContainsPath([string]$Text, [string]$PathValue) {
-  $forward = $PathValue -replace "\\", "/"
-  return $Text.Contains($PathValue) -or $Text.Contains($forward)
+function Invoke-CodexJson([System.Management.Automation.CommandInfo]$CodexCommand, [string[]]$Arguments) {
+  $Output = & $CodexCommand.Source @Arguments
+  $ExitCode = $LASTEXITCODE
+  $Text = ($Output | Out-String).Trim()
+  if ($ExitCode -ne 0) {
+    throw "codex $($Arguments -join ' ') failed with exit code $ExitCode`n$Text"
+  }
+  try {
+    return $Text | ConvertFrom-Json
+  }
+  catch {
+    throw "codex $($Arguments -join ' ') returned invalid JSON`n$Text"
+  }
+}
+
+function Normalize-PathForComparison([string]$PathValue) {
+  if ([string]::IsNullOrWhiteSpace($PathValue)) {
+    return ""
+  }
+  if (Test-Path -LiteralPath $PathValue) {
+    $PathValue = (Resolve-Path -LiteralPath $PathValue).Path
+  }
+  else {
+    $PathValue = [System.IO.Path]::GetFullPath($PathValue)
+  }
+  return $PathValue.TrimEnd([char[]]@('\', '/'))
+}
+
+function Test-SamePath([string]$Left, [string]$Right) {
+  if ([string]::IsNullOrWhiteSpace($Left) -or [string]::IsNullOrWhiteSpace($Right)) {
+    return $false
+  }
+  return [string]::Equals(
+    (Normalize-PathForComparison $Left),
+    (Normalize-PathForComparison $Right),
+    [System.StringComparison]::OrdinalIgnoreCase
+  )
+}
+
+function Get-AllStrings($Value) {
+  if ($null -eq $Value) {
+    return
+  }
+  if ($Value -is [string]) {
+    Write-Output $Value
+    return
+  }
+  if ($Value -is [System.Collections.IDictionary]) {
+    foreach ($Item in $Value.Values) {
+      Get-AllStrings $Item
+    }
+    return
+  }
+  if ($Value -is [System.Collections.IEnumerable]) {
+    foreach ($Item in $Value) {
+      Get-AllStrings $Item
+    }
+    return
+  }
+  if ($Value -is [psobject]) {
+    foreach ($Property in $Value.PSObject.Properties) {
+      Get-AllStrings $Property.Value
+    }
+  }
 }
 
 if ($Help) {
@@ -66,53 +121,30 @@ if ($Help) {
   exit 0
 }
 
+if ($Scope -eq "project") {
+  throw "Project-scoped plugin enablement is not supported by Codex 0.144. Verify the user-scoped install with -Scope user."
+}
+
 $Root = Resolve-ExistingDirectory (Join-Path $PSScriptRoot "..")
 $ProjectRoot = Resolve-ExistingDirectory $ProjectRoot
 $UserHome = Resolve-ExistingDirectory $UserHome
 $MarketplaceName = "llm-wiki"
 $PluginKey = "wiki@$MarketplaceName"
-$ExpectedSkillPath = Join-Path $Root "plugins\llm-wiki\skills\wiki\SKILL.md"
-$ProbeDir = Join-Path $Root ".tmp\codex-runtime-probe"
+$SourcePluginRoot = Join-Path $Root "plugins\llm-wiki"
+$SourceSkillPath = Join-Path $SourcePluginRoot "skills\wiki\SKILL.md"
+$SourceQuerySkillPath = Join-Path $SourcePluginRoot "skills\wiki-query\SKILL.md"
+$ManifestPath = Join-Path $SourcePluginRoot ".codex-plugin\plugin.json"
+$Manifest = Get-Content -LiteralPath $ManifestPath -Raw | ConvertFrom-Json
+$ExpectedVersion = [string]$Manifest.version
 $UserConfig = Join-Path $UserHome ".codex\config.toml"
-
-if ($Scope -eq "project") {
-  $TargetConfig = Join-Path $ProjectRoot ".codex\config.toml"
-}
-else {
-  $TargetConfig = $UserConfig
-}
 
 if (-not (Test-Path -LiteralPath $UserConfig -PathType Leaf)) {
   throw "Missing user Codex config: $UserConfig`nRun .\scripts\bootstrap-codex-plugin.ps1 first."
 }
 
-$UserConfigText = Read-TextIfExists $UserConfig
-$MarketplacePattern = "(?ms)^\[marketplaces\.$([regex]::Escape($MarketplaceName))\]\r?\n.*?^source = ""(.*?)""$"
-$MarketplaceMatch = [regex]::Match($UserConfigText, $MarketplacePattern)
-$MarketplaceSource = if ($MarketplaceMatch.Success) { $MarketplaceMatch.Groups[1].Value } else { "" }
-$NormalizedMarketplaceSource = $MarketplaceSource
-if ($MarketplaceSource -and (Test-Path -LiteralPath $MarketplaceSource)) {
-  $NormalizedMarketplaceSource = (Resolve-Path -LiteralPath $MarketplaceSource).Path
-}
-if (-not [string]::Equals($NormalizedMarketplaceSource, $Root, [System.StringComparison]::OrdinalIgnoreCase)) {
-  Write-Error @"
-Codex marketplace '$MarketplaceName' does not point at this repo.
-Configured source:
-  $(if ($MarketplaceSource) { $MarketplaceSource } else { "<missing>" })
-Expected source:
-  $Root
-Run .\scripts\bootstrap-codex-plugin.ps1 with a clean Codex home or remove the conflicting marketplace first.
-"@
-  exit 1
-}
-
-if (-not (Test-Path -LiteralPath $TargetConfig -PathType Leaf)) {
-  throw "Missing Codex config for scope '$Scope': $TargetConfig`nRun .\scripts\bootstrap-codex-plugin.ps1 -Scope $Scope first."
-}
-
-$TargetText = Read-TextIfExists $TargetConfig
-if (-not $TargetText.Contains("[plugins.""$PluginKey""]")) {
-  throw "Missing plugin enable block in: $TargetConfig`nRun .\scripts\bootstrap-codex-plugin.ps1 -Scope $Scope first."
+$UserConfigText = [System.IO.File]::ReadAllText($UserConfig, [System.Text.Encoding]::UTF8)
+if (-not $UserConfigText.Contains("[plugins.`"$PluginKey`"]")) {
+  throw "Missing plugin enable block in: $UserConfig`nRun .\scripts\bootstrap-codex-plugin.ps1 -Scope user first."
 }
 
 $Codex = Get-Command codex -ErrorAction SilentlyContinue
@@ -120,48 +152,86 @@ if (-not $Codex) {
   throw "codex binary not found in PATH"
 }
 
-New-Item -ItemType Directory -Force -Path $ProbeDir | Out-Null
-$RunDir = if ($Scope -eq "project") { $ProjectRoot } else { $ProbeDir }
+$ListData = Invoke-WithCodexHome $UserHome {
+  Invoke-CodexJson $Codex @("-C", $ProjectRoot, "plugin", "list", "--marketplace", $MarketplaceName, "--json")
+}
+$Plugin = @($ListData.installed) |
+  Where-Object { $_.pluginId -eq $PluginKey } |
+  Select-Object -First 1
+if ($null -eq $Plugin) {
+  throw "FAIL: $PluginKey is not installed"
+}
 
-$OutputText = Invoke-WithCodexHome $UserHome {
-  $Output = & $Codex.Source -C $RunDir debug prompt-input '@wiki test' 2>&1
-  $Text = ($Output | Out-String)
-  if ($LASTEXITCODE -ne 0) {
-    throw "codex debug prompt-input failed with exit code $LASTEXITCODE`n$Text"
+$Errors = @()
+if (-not $Plugin.installed) {
+  $Errors += "plugin is not installed"
+}
+if (-not $Plugin.enabled) {
+  $Errors += "plugin is not enabled in the selected scope"
+}
+if ([string]$Plugin.version -ne $ExpectedVersion) {
+  $Errors += "installed version '$($Plugin.version)' != expected '$ExpectedVersion'"
+}
+if (-not (Test-SamePath ([string]$Plugin.source.path) $SourcePluginRoot)) {
+  $Errors += "plugin source does not point at $SourcePluginRoot"
+}
+if (-not (Test-SamePath ([string]$Plugin.marketplaceSource.source) $Root)) {
+  $Errors += "marketplace source does not point at $Root"
+}
+if ($Errors.Count -gt 0) {
+  throw "FAIL: $($Errors -join '; ')"
+}
+
+$ExpectedCacheRoot = Join-Path $UserHome ".codex\plugins\cache\$MarketplaceName\wiki\$ExpectedVersion"
+$ExpectedCacheSkill = Join-Path $ExpectedCacheRoot "skills\wiki\SKILL.md"
+$ExpectedCacheQuerySkill = Join-Path $ExpectedCacheRoot "skills\wiki-query\SKILL.md"
+if (-not (Test-Path -LiteralPath $ExpectedCacheSkill -PathType Leaf)) {
+  throw "FAIL: installed Codex cache is missing the wiki skill: $ExpectedCacheSkill"
+}
+if (-not (Test-Path -LiteralPath $ExpectedCacheQuerySkill -PathType Leaf)) {
+  throw "FAIL: installed Codex cache is missing the wiki-query skill: $ExpectedCacheQuerySkill"
+}
+
+$PromptData = Invoke-WithCodexHome $UserHome {
+  Invoke-CodexJson $Codex @("-C", $ProjectRoot, "debug", "prompt-input", "@wiki test")
+}
+$PromptStrings = @(Get-AllStrings $PromptData)
+$ActualSkillPath = ""
+foreach ($Text in $PromptStrings) {
+  foreach ($Line in ($Text -split "`r?`n")) {
+    if (-not $Line.Contains("- wiki:wiki:")) {
+      continue
+    }
+    $Match = [regex]::Match($Line, '\(file:\s+(.+?[\\/]skills[\\/]wiki[\\/]SKILL\.md)\)')
+    if ($Match.Success) {
+      $ActualSkillPath = $Match.Groups[1].Value
+      break
+    }
   }
-  $Text
+  if ($ActualSkillPath) {
+    break
+  }
 }
 
-if ($OutputText.Contains("wiki:wiki") -and (Test-TextContainsPath $OutputText $ExpectedSkillPath)) {
-  Write-Host "OK: Codex resolves @wiki from this repo."
-  Write-Host "Skill path:"
-  Write-Host "  $ExpectedSkillPath"
-  exit 0
+if (-not $ActualSkillPath) {
+  throw "FAIL: Codex did not expose wiki:wiki in the headless prompt. Run .\scripts\bootstrap-codex-plugin.ps1 -Scope user again."
+}
+if (-not ((Test-SamePath $ActualSkillPath $ExpectedCacheSkill) -or (Test-SamePath $ActualSkillPath $SourceSkillPath))) {
+  throw "FAIL: Codex resolved wiki:wiki from an unexpected plugin: $ActualSkillPath`nExpected: $ExpectedCacheSkill"
 }
 
-$ActualMatch = [regex]::Match($OutputText, '([A-Za-z]:\\[^\r\n"]*skills\\wiki\\SKILL\.md|/[^\r\n"]*skills/wiki/SKILL\.md)')
-if ($ActualMatch.Success) {
-  Write-Error @"
-FAIL: Codex resolved @wiki, but not from this repo.
-Resolved skill path:
-  $($ActualMatch.Groups[1].Value)
-Expected skill path:
-  $ExpectedSkillPath
-This usually means another Codex home already owns the 'llm-wiki' marketplace.
-"@
-  exit 1
+$CachedQuery = [System.IO.File]::ReadAllText($ExpectedCacheQuerySkill, [System.Text.Encoding]::UTF8)
+$SourceQuery = [System.IO.File]::ReadAllText($SourceQuerySkillPath, [System.Text.Encoding]::UTF8)
+if ($CachedQuery -ne $SourceQuery) {
+  throw "FAIL: cached wiki-query skill differs from the generated source: $ExpectedCacheQuerySkill"
 }
 
-Write-Error @"
-PENDING: Codex did not expose @wiki in this headless session.
-The marketplace and config are present, but Codex may still require the interactive /plugins UI to materialize or enable the local plugin on first install.
+$PromptText = $PromptStrings -join "`n"
+if ($PromptText -match '[\\/]skills[\\/]wiki-query[\\/]SKILL\.md') {
+  throw "FAIL: explicit-only wiki-query leaked into the implicit skill list."
+}
 
-Next step:
-  1. Start Codex with HOME set to this Codex home if non-default.
-  2. Open /plugins and enable 'LLM Wiki'.
-  3. Restart Codex if needed, then rerun this verify script.
-
-Expected skill path once active:
-  $ExpectedSkillPath
-"@
-exit 2
+Write-Host "OK: Codex resolves @wiki and installs explicit-only `$wiki-query from $PluginKey version $ExpectedVersion."
+Write-Host "Skill paths:"
+Write-Host "  $ActualSkillPath"
+Write-Host "  $ExpectedCacheQuerySkill"

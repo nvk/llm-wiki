@@ -1,6 +1,6 @@
 param(
   [ValidateSet("project", "user")]
-  [string]$Scope = "project",
+  [string]$Scope = "user",
   [Alias("project-root")]
   [string]$ProjectRoot = (Get-Location).Path,
   [Alias("user-home")]
@@ -18,16 +18,18 @@ function Show-Usage {
   @"
 Usage: .\scripts\bootstrap-codex-plugin.ps1 [options]
 
-Register this repo as a local Codex marketplace source and write a managed
-plugin-enable block for @wiki.
+Register this repo as a local Codex marketplace source, install @wiki and the
+bundled `$wiki-query preset into the Codex plugin cache, and enable the plugin
+in the user config.
 
 Options:
-  -Scope project|user   Where to write config (default: project)
-  -ProjectRoot <dir>    Project root for project scope (default: current dir)
+  -Scope user           Plugin enablement scope (default: user). Codex 0.144
+                        does not load plugin enablement from project config.
+  -ProjectRoot <dir>    Working directory for the optional verification probe
   -UserHome <dir>       HOME used for Codex marketplace registration and
                         user-scope config writes (default: current HOME)
   -Print                Print the managed TOML block without writing it
-  -Verify               Run scripts/verify-codex-plugin.ps1 after writing
+  -Verify               Run scripts/verify-codex-plugin.ps1 after installation
   -Help                 Show this help
 "@
 }
@@ -37,22 +39,6 @@ function Resolve-ExistingDirectory([string]$PathValue) {
     throw "Directory not found: $PathValue"
   }
   return (Resolve-Path -LiteralPath $PathValue).Path
-}
-
-function Read-TextIfExists([string]$PathValue) {
-  if (-not (Test-Path -LiteralPath $PathValue -PathType Leaf)) {
-    return ""
-  }
-  return [System.IO.File]::ReadAllText($PathValue, [System.Text.Encoding]::UTF8)
-}
-
-function Write-Utf8NoBom([string]$PathValue, [string]$Text) {
-  $parent = Split-Path -Parent $PathValue
-  if ($parent) {
-    New-Item -ItemType Directory -Force -Path $parent | Out-Null
-  }
-  $encoding = [System.Text.UTF8Encoding]::new($false)
-  [System.IO.File]::WriteAllText($PathValue, $Text, $encoding)
 }
 
 function Invoke-WithCodexHome([string]$UserHomeValue, [scriptblock]$Body) {
@@ -71,9 +57,52 @@ function Invoke-WithCodexHome([string]$UserHomeValue, [scriptblock]$Body) {
   }
 }
 
+function Invoke-CodexJson([System.Management.Automation.CommandInfo]$CodexCommand, [string[]]$Arguments) {
+  $Output = & $CodexCommand.Source @Arguments
+  $ExitCode = $LASTEXITCODE
+  $Text = ($Output | Out-String).Trim()
+  if ($ExitCode -ne 0) {
+    throw "codex $($Arguments -join ' ') failed with exit code $ExitCode`n$Text"
+  }
+  try {
+    return $Text | ConvertFrom-Json
+  }
+  catch {
+    throw "codex $($Arguments -join ' ') returned invalid JSON`n$Text"
+  }
+}
+
+function Normalize-PathForComparison([string]$PathValue) {
+  if ([string]::IsNullOrWhiteSpace($PathValue)) {
+    return ""
+  }
+  if (Test-Path -LiteralPath $PathValue) {
+    $PathValue = (Resolve-Path -LiteralPath $PathValue).Path
+  }
+  else {
+    $PathValue = [System.IO.Path]::GetFullPath($PathValue)
+  }
+  return $PathValue.TrimEnd([char[]]@('\', '/'))
+}
+
+function Test-SamePath([string]$Left, [string]$Right) {
+  if ([string]::IsNullOrWhiteSpace($Left) -or [string]::IsNullOrWhiteSpace($Right)) {
+    return $false
+  }
+  return [string]::Equals(
+    (Normalize-PathForComparison $Left),
+    (Normalize-PathForComparison $Right),
+    [System.StringComparison]::OrdinalIgnoreCase
+  )
+}
+
 if ($Help) {
   Show-Usage
   exit 0
+}
+
+if ($Scope -eq "project") {
+  throw "Project-scoped plugin enablement is not supported by Codex 0.144. Use -Scope user; plugin hooks can still be enabled or disabled separately."
 }
 
 if ($Print -and $Verify) {
@@ -85,7 +114,6 @@ $ProjectRoot = Resolve-ExistingDirectory $ProjectRoot
 $UserHome = Resolve-ExistingDirectory $UserHome
 $MarketplaceName = "llm-wiki"
 $PluginKey = "wiki@$MarketplaceName"
-$UserConfig = Join-Path $UserHome ".codex\config.toml"
 $ManagedBlock = @"
 [plugins."$PluginKey"]
 enabled = true
@@ -103,25 +131,32 @@ if (-not $Codex) {
 
 New-Item -ItemType Directory -Force -Path (Join-Path $UserHome ".codex") | Out-Null
 
-$UserConfigText = Read-TextIfExists $UserConfig
-$MarketplacePattern = "(?ms)^\[marketplaces\.$([regex]::Escape($MarketplaceName))\]\r?\n.*?^source = ""(.*?)""$"
-$MarketplaceMatch = [regex]::Match($UserConfigText, $MarketplacePattern)
-$MarketplaceSource = if ($MarketplaceMatch.Success) { $MarketplaceMatch.Groups[1].Value } else { "" }
+$MarketplaceData = Invoke-WithCodexHome $UserHome {
+  Invoke-CodexJson $Codex @("plugin", "marketplace", "list", "--json")
+}
+$Marketplace = @($MarketplaceData.marketplaces) |
+  Where-Object { $_.name -eq $MarketplaceName } |
+  Select-Object -First 1
 
-if ([string]::IsNullOrWhiteSpace($MarketplaceSource)) {
+if ($null -eq $Marketplace) {
   Invoke-WithCodexHome $UserHome {
-    & $Codex.Source plugin marketplace add $Root
-    if ($LASTEXITCODE -ne 0) {
-      throw "codex plugin marketplace add failed with exit code $LASTEXITCODE"
+    $Output = & $Codex.Source plugin marketplace add $Root 2>&1
+    $ExitCode = $LASTEXITCODE
+    if ($ExitCode -ne 0) {
+      throw "codex plugin marketplace add failed with exit code $ExitCode`n$($Output | Out-String)"
     }
+    $Output | ForEach-Object { Write-Host $_ }
   }
 }
 else {
-  $NormalizedMarketplaceSource = $MarketplaceSource
-  if (Test-Path -LiteralPath $MarketplaceSource) {
-    $NormalizedMarketplaceSource = (Resolve-Path -LiteralPath $MarketplaceSource).Path
+  $MarketplaceSource = ""
+  if ($Marketplace.marketplaceSource -and $Marketplace.marketplaceSource.source) {
+    $MarketplaceSource = [string]$Marketplace.marketplaceSource.source
   }
-  if (-not [string]::Equals($NormalizedMarketplaceSource, $Root, [System.StringComparison]::OrdinalIgnoreCase)) {
+  elseif ($Marketplace.root) {
+    $MarketplaceSource = [string]$Marketplace.root
+  }
+  if (-not (Test-SamePath $MarketplaceSource $Root)) {
     throw @"
 Codex marketplace '$MarketplaceName' already points at:
   $MarketplaceSource
@@ -131,34 +166,22 @@ Use that checkout, or remove/re-add the marketplace in this Codex home first.
   }
 }
 
-if ($Scope -eq "project") {
-  $Target = Join-Path $ProjectRoot ".codex\config.toml"
+$InstallData = Invoke-WithCodexHome $UserHome {
+  Invoke-CodexJson $Codex @("plugin", "add", $PluginKey, "--json")
 }
-else {
-  $Target = $UserConfig
+if (-not $InstallData.installedPath) {
+  throw "codex plugin add did not return installedPath"
 }
 
-$Begin = "# BEGIN llm-wiki Codex bootstrap"
-$End = "# END llm-wiki Codex bootstrap"
-$Managed = "$Begin`n$ManagedBlock`n$End`n"
-$Text = Read-TextIfExists $Target
-$BlockPattern = "(?ms)^$([regex]::Escape($Begin))\r?\n.*?^$([regex]::Escape($End))\r?\n?"
-if ([regex]::IsMatch($Text, $BlockPattern)) {
-  $Updated = [regex]::Replace($Text, $BlockPattern, $Managed, 1)
-}
-else {
-  if ($Text -and -not $Text.EndsWith("`n")) {
-    $Text += "`n"
-  }
-  if ($Text) {
-    $Text += "`n"
-  }
-  $Updated = $Text + $Managed
-}
-Write-Utf8NoBom $Target $Updated
-
-Write-Host "Wrote Codex plugin config:"
-Write-Host "  $Target"
+$UserConfig = Join-Path $UserHome ".codex\config.toml"
+Write-Host "Installed Codex plugin:"
+Write-Host "  $PluginKey"
+Write-Host "Installed cache:"
+Write-Host "  $($InstallData.installedPath)"
+Write-Host "Enabled scope:"
+Write-Host "  $Scope"
+Write-Host "Codex plugin config:"
+Write-Host "  $UserConfig"
 Write-Host "Source repo:"
 Write-Host "  $Root"
 Write-Host "Codex home:"
@@ -166,11 +189,6 @@ Write-Host "  $UserHome"
 
 if ($Verify) {
   $VerifyScript = Join-Path $PSScriptRoot "verify-codex-plugin.ps1"
-  if ($Scope -eq "project") {
-    & $VerifyScript -Scope project -ProjectRoot $ProjectRoot -UserHome $UserHome
-  }
-  else {
-    & $VerifyScript -Scope user -UserHome $UserHome
-  }
+  & $VerifyScript -Scope user -ProjectRoot $ProjectRoot -UserHome $UserHome
   exit $LASTEXITCODE
 }

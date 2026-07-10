@@ -1093,8 +1093,8 @@ def run_hook(args: argparse.Namespace) -> int:
     config = load_config(root)
     if args.if_enabled and not config.get("enabled"):
         raise HookSkip()
-    ensure_layout(root)
     payload = parse_hook_payload(args)
+    ensure_layout(root)
     event = normalize_event(args, payload, root)
     append_jsonl(event_queue_path(root, event), event)
     state, is_new = update_state(root, event, config)
@@ -1747,11 +1747,6 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     except BrokenPipeError:
         return 0
-    except Exception as exc:
-        if getattr(args, "command", None) == "hook":
-            hook_debug(f"llm-wiki hook skipped: {exc}")
-            return 0
-        raise
 
 
 if __name__ == "__main__":

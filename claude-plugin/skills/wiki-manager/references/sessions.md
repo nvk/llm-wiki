@@ -175,7 +175,7 @@ turn capture off with `session disable` without editing hook manifests.
 Use the JSON hook `command` for Unix-like shells and `commandWindows` for a
 Windows-only override that calls the bundled `.cmd` launcher. Include
 `--event-name <event>` in both commands so the helper can still classify the
-event if a runtime sends malformed or empty hook JSON.
+event if a runtime sends empty hook JSON or omits the event name.
 
 Useful Codex events:
 

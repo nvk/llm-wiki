@@ -59,7 +59,7 @@ Windows PowerShell:
 
 Windows `cmd.exe`:
 ```bat
-scripts\bootstrap-codex-plugin.cmd --scope user --verify
+scripts\bootstrap-codex-plugin.cmd -Scope user -Verify
 ```
 
 Or register the local checkout manually:

@@ -79,6 +79,30 @@ try {
     Restore-Env "HOME" $OldHome
     Restore-Env "USERPROFILE" $OldUserProfile
   }
+
+  $Codex = Get-Command codex -ErrorAction SilentlyContinue
+  if ($Codex) {
+    $PowerShellExe = (Get-Process -Id $PID).Path
+    $BootstrapScript = Join-Path $ProjectRoot "scripts\bootstrap-codex-plugin.ps1"
+    $CodexHome = Join-Path $TempRoot "codex home"
+    New-Item -ItemType Directory -Force -Path $CodexHome | Out-Null
+
+    & $PowerShellExe -NoProfile -ExecutionPolicy Bypass -File $BootstrapScript `
+      -Scope user -ProjectRoot $ProjectRoot -UserHome $CodexHome -Verify
+    Assert-True ($LASTEXITCODE -eq 0) "PowerShell bootstrap installs and verifies the Codex plugin in a clean home"
+
+    $Manifest = Get-Content -LiteralPath (Join-Path $ProjectRoot "plugins\llm-wiki\.codex-plugin\plugin.json") -Raw | ConvertFrom-Json
+    $CacheRoot = Join-Path $CodexHome ".codex\plugins\cache\llm-wiki\wiki\$($Manifest.version)"
+    Assert-True (Test-Path -LiteralPath (Join-Path $CacheRoot "skills\wiki\SKILL.md")) "bootstrap installs the wiki skill cache"
+    Assert-True (Test-Path -LiteralPath (Join-Path $CacheRoot "skills\wiki-query\SKILL.md")) "bootstrap installs the explicit wiki-query skill cache"
+
+    & $PowerShellExe -NoProfile -ExecutionPolicy Bypass -File $BootstrapScript `
+      -Scope project -ProjectRoot $ProjectRoot -UserHome $CodexHome -Print 2>$null
+    Assert-True ($LASTEXITCODE -ne 0) "PowerShell bootstrap rejects unsupported project scope"
+  }
+  else {
+    Write-Host "SKIP: codex binary not found; clean-home Windows bootstrap test not run."
+  }
 }
 finally {
   Remove-Item -Recurse -Force -LiteralPath $TempRoot -ErrorAction SilentlyContinue

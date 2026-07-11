@@ -86,7 +86,15 @@ def run(args: argparse.Namespace) -> int:
         emit(text, None, args)
         return 0
 
-    ok, result = morph.post_json("/compact", payload, api_key, base_url, timeout=args.timeout)
+    ok, result = morph.post_json(
+        "/compact",
+        payload,
+        api_key,
+        base_url,
+        timeout=args.timeout,
+        retries=args.retries,
+        retry_backoff=args.retry_backoff,
+    )
     if not ok:
         print(f"morph-compact: falling back to verbatim passthrough ({result})", file=sys.stderr)
         emit(text, None, args)
@@ -128,7 +136,23 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Include '(filtered N lines)' markers in the compacted output.",
     )
-    parser.add_argument("--timeout", type=float, default=10.0, help="Network timeout in seconds. Default %(default)s.")
+    parser.add_argument("--timeout", type=float, default=10.0, help="Per-attempt network timeout in seconds. Default %(default)s.")
+    parser.add_argument(
+        "--retries",
+        type=int,
+        default=1,
+        help=(
+            "Retries on transient Morph failures (socket timeout, connection "
+            "error, HTTP 408/429/5xx) before falling back to passthrough. 4xx "
+            "client errors are never retried. Default %(default)s."
+        ),
+    )
+    parser.add_argument(
+        "--retry-backoff",
+        type=float,
+        default=0.5,
+        help="Base seconds for exponential backoff between retries (backoff * 2**attempt). Default %(default)s.",
+    )
     parser.add_argument("--dry-run", action="store_true", help="Print the resolved request without calling the network.")
     parser.add_argument("--json", action="store_true", help="Emit the full JSON response instead of plain text.")
     return parser

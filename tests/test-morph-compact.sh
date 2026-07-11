@@ -103,4 +103,71 @@ if ! grep -q "falling back to verbatim passthrough" "$TMP_ROOT/stderr.txt"; then
 fi
 echo "  PASS: unreachable Morph endpoint falls back to verbatim passthrough"
 
+# (e) retry policy: transient statuses retried with backoff; 4xx fails fast;
+#     total attempts stay bounded. Uses a counting server + retry_backoff=0 so
+#     the test is deterministic and adds no real delay.
+python3 - "$ROOT/scripts" <<'PY'
+import sys, threading
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+
+sys.path.insert(0, sys.argv[1])
+import _morph_client as morph
+
+
+def make_server(statuses):
+    state = {"i": 0, "count": 0}
+
+    class Handler(BaseHTTPRequestHandler):
+        def log_message(self, *args):  # keep test output quiet
+            pass
+
+        def do_POST(self):
+            length = int(self.headers.get("Content-Length", 0))
+            if length:
+                self.rfile.read(length)
+            state["count"] += 1
+            idx = state["i"]
+            state["i"] += 1
+            code = statuses[idx] if idx < len(statuses) else statuses[-1]
+            body = b'{"output": "ok"}' if code == 200 else b'{"detail": "err"}'
+            self.send_response(code)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+
+    srv = ThreadingHTTPServer(("127.0.0.1", 0), Handler)
+    threading.Thread(target=srv.serve_forever, daemon=True).start()
+    return srv, state
+
+
+def call(srv, **kw):
+    base = f"http://127.0.0.1:{srv.server_address[1]}"
+    return morph.post_json("/compact", {"input": "x"}, "k", base, timeout=5, retry_backoff=0, **kw)
+
+
+# 503, 503, 200 with retries=2 -> succeeds on the 3rd attempt
+srv, st = make_server([503, 503, 200])
+ok, data = call(srv, retries=2)
+srv.shutdown()
+assert ok is True, f"transient-then-success expected ok, got {data!r}"
+assert st["count"] == 3, f"expected 3 attempts, got {st['count']}"
+
+# 400 with retries=2 -> fails fast, exactly 1 attempt (4xx is not retried)
+srv, st = make_server([400])
+ok, data = call(srv, retries=2)
+srv.shutdown()
+assert ok is False, "4xx expected failure"
+assert st["count"] == 1, f"4xx must not retry; expected 1 attempt, got {st['count']}"
+
+# persistent 503 with retries=1 -> 2 attempts then fail (bounded)
+srv, st = make_server([503])
+ok, data = call(srv, retries=1)
+srv.shutdown()
+assert ok is False, "persistent 503 expected failure"
+assert st["count"] == 2, f"retries=1 -> 2 attempts, got {st['count']}"
+
+print("  PASS: retry policy - transient retried, 4xx fails fast, attempts bounded")
+PY
+
 echo "All morph-compact tests passed."

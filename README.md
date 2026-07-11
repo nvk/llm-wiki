@@ -722,17 +722,16 @@ cache-metric caveats.
 
 ## Optional: Morph LLM Integration (Prototype)
 
-`scripts/morph-compact` and `scripts/warp-grep` are optional, best-effort
-wrappers around [Morph LLM's](https://morphllm.com) Compact and WarpGrep
-APIs, used by `/wiki:query --deep` (to trim long `raw/` reads before they
-enter context) and `/wiki:assess` (to search a target repo by natural
-language instead of ad hoc grep). Both are strictly opt-in: with no
-`MORPH_API_KEY` configured, behavior is unchanged from a checkout without
-these scripts -- `morph-compact` passes input through verbatim and
-`warp-grep` falls back to a local `rg`/Python search. A failing Morph call
-also degrades to the same fallback rather than blocking the caller.
+[Morph LLM's](https://morphllm.com) Compact and WarpGrep are integrated two
+different ways, matching how Morph actually exposes each one -- confirmed by
+live-testing both against the real API/server, not just their docs.
 
-Configure via environment variables, or the equivalent fields in
+**Compact** (`/wiki:query --deep`, to trim long `raw/` reads before they
+enter context) is a dedicated REST endpoint, so it gets a small stdlib-only
+wrapper: `scripts/morph-compact`. Strictly opt-in -- with no `MORPH_API_KEY`
+configured it passes input through verbatim, and a failing Morph call
+degrades the same way rather than blocking the caller. Configure via
+environment variables, or the equivalent fields in
 `~/.config/llm-wiki/config.json`:
 
 | Variable | Config field | Default |
@@ -740,12 +739,36 @@ Configure via environment variables, or the equivalent fields in
 | `MORPH_API_KEY` | `morph_api_key` | unset -- integration is a no-op |
 | `MORPH_API_BASE_URL` | `morph_api_base_url` | `https://api.morphllm.com/v1` |
 
-`warp-grep`'s `--endpoint-path` (default `/warp-grep`) is a placeholder --
-Morph's public docs as consulted for this prototype only documented the
-TypeScript SDK call, not the REST path or response schema. Verify against
-Morph's actual API reference before pointing this at the live API. See
+Live-calibration note: `--preserve-recent` defaults to `0`. Morph's
+`/compact` contract treats `preserve_recent` as a count of trailing *chat
+turns* to keep verbatim; a whole raw-source file sent as one `input` blob
+counts as exactly 1 turn, so a non-zero default silently produced zero
+compression in testing. `0` is correct for compacting a single document.
+
+**WarpGrep** (`/wiki:assess`'s repo-exploration phase) is *not* a plain REST
+endpoint -- probing it directly returned `HTTP 400: "model" field required`,
+and Morph's own docs never publish a REST schema for it. It's meant to be
+used through Morph's official MCP server instead, which exposes it correctly
+(confirmed by querying the server's real `tools/list` over stdio):
+
+```bash
+claude mcp add morph -s local -e MORPH_API_KEY=<your key> -- npx -y @morphllm/morphmcp@latest
+```
+
+That server exposes `codebase_search` (natural-language search over a local
+`repo_path`) and `github_codebase_search` (search a public GitHub repo
+without cloning it, via `github_url`/`owner_repo`) -- the real WarpGrep
+tools, referenced from `assess.md`'s Phase 1 as an optional preference over
+ad hoc grep+Read when connected. The same server also exposes `edit_file`
+(Fast Apply) and four `reflex_*` tools (Morph's behavioral-classifier
+system), which this prototype does not otherwise use. Note: the server
+sandboxes filesystem access to a "workspace" directory determined at
+startup, which matters for `/wiki:assess <path>` against a target repo
+outside the current project.
+
+See
 [`benchmarks/README.md`](benchmarks/README.md#optional-morph-compact-token-savings-lane)
-for the opt-in token-savings benchmark lane.
+for the opt-in Compact token-savings benchmark lane.
 
 ## Credits
 

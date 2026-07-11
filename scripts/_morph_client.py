@@ -1,9 +1,12 @@
-"""Shared helpers for optional Morph LLM API integrations (compact, warp-grep).
+"""Shared helpers for optional Morph LLM API integrations.
 
 Not part of the core llm-wiki CLI surface -- imported by scripts/morph-compact
-and scripts/warp-grep only. Every resolver here degrades to "nothing
-configured" instead of raising, so callers can implement their own local
-fallback behavior. Stdlib only, matching the rest of scripts/.
+only. (WarpGrep is not a plain REST endpoint -- Morph's own MCP server
+[`npx @morphllm/morphmcp@latest`] exposes it correctly as `codebase_search`/
+`github_codebase_search` tools; see README.md's Morph integration section.)
+Every resolver here degrades to "nothing configured" instead of raising, so
+callers can implement their own local fallback behavior. Stdlib only,
+matching the rest of scripts/.
 """
 
 from __future__ import annotations

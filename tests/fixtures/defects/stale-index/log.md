@@ -8,3 +8,5 @@
 ## [2026-01-03] compile | 4 sources → 2 articles (sample-concept, sample-reference)
 
 ## [2026-01-10] schema | created default advisory schema.md
+
+## [2026-07-11] lint | local command: 0 critical, 2 warnings, 0 suggestions, 2 auto-fixed

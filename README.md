@@ -720,6 +720,33 @@ optional real Codex and Claude Code AB/BA harnesses. See
 [`benchmarks/README.md`](benchmarks/README.md) for commands, quality gates, and
 cache-metric caveats.
 
+## Optional: Morph LLM Integration (Prototype)
+
+`scripts/morph-compact` and `scripts/warp-grep` are optional, best-effort
+wrappers around [Morph LLM's](https://morphllm.com) Compact and WarpGrep
+APIs, used by `/wiki:query --deep` (to trim long `raw/` reads before they
+enter context) and `/wiki:assess` (to search a target repo by natural
+language instead of ad hoc grep). Both are strictly opt-in: with no
+`MORPH_API_KEY` configured, behavior is unchanged from a checkout without
+these scripts -- `morph-compact` passes input through verbatim and
+`warp-grep` falls back to a local `rg`/Python search. A failing Morph call
+also degrades to the same fallback rather than blocking the caller.
+
+Configure via environment variables, or the equivalent fields in
+`~/.config/llm-wiki/config.json`:
+
+| Variable | Config field | Default |
+|----------|--------------|---------|
+| `MORPH_API_KEY` | `morph_api_key` | unset -- integration is a no-op |
+| `MORPH_API_BASE_URL` | `morph_api_base_url` | `https://api.morphllm.com/v1` |
+
+`warp-grep`'s `--endpoint-path` (default `/warp-grep`) is a placeholder --
+Morph's public docs as consulted for this prototype only documented the
+TypeScript SDK call, not the REST path or response schema. Verify against
+Morph's actual API reference before pointing this at the live API. See
+[`benchmarks/README.md`](benchmarks/README.md#optional-morph-compact-token-savings-lane)
+for the opt-in token-savings benchmark lane.
+
 ## Credits
 
 - [Andrej Karpathy](https://x.com/karpathy) — the [LLM wiki concept](https://x.com/karpathy/status/2039805659525644595) and [idea file](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)

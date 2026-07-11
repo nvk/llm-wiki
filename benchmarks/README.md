@@ -238,9 +238,38 @@ To compare existing reports without rerunning models:
 
 - Cases: `benchmarks/cases/wiki-query.jsonl`
 - DS4 cases: `benchmarks/cases/ds4-wiki-query.jsonl`
+- Optional Morph Compact case: `benchmarks/cases/wiki-query-deep-compact.jsonl`
 - Static budgets: `tests/budgets/token-budgets.json`
 - Deterministic protocol test: `tests/test-token-benchmarks.sh`
 - Local result directory: `benchmarks/results/` (gitignored)
+
+### Optional: Morph Compact token-savings lane
+
+`benchmarks/cases/wiki-query-deep-compact.jsonl` targets a `--deep` query
+against `tests/fixtures/golden-wiki/raw/articles/2026-01-04-reliability-patterns-long.md`,
+a deliberately long, multi-topic raw source with one required fact
+(`pass@k`/`pass^k`) buried among many unrelated reliability-pattern sections
+-- real filler for `scripts/morph-compact` to drop. Run it explicitly, since
+it is not part of the default `wiki-query.jsonl` case set:
+
+```bash
+./scripts/benchmark-token-efficiency claude-live \
+  --cases benchmarks/cases/wiki-query-deep-compact.jsonl \
+  --claude-command claude --repeats 2 --output compact-on.json
+```
+
+**Known limitation**: `tests/fixtures/fake-claude-cli.py` (used by
+`tests/test-morph-compact.sh` and the deterministic CI lane) is a scripted
+stand-in that picks a canned answer from a keyword in the prompt -- it never
+actually reads raw content or shells out to `scripts/morph-compact`, so it
+cannot demonstrate a real token reduction. Proving the token-savings claim
+requires a real `claude` CLI session (so the agent actually follows the
+optional instruction added to `query-lite.md`'s Evidence Rules) with
+`MORPH_API_KEY`/`MORPH_API_BASE_URL` pointed at either the real Morph API or
+`tests/fixtures/fake-morph-compact-server.py`, run twice (compaction off vs
+on) via `claude-pair`, comparing `uncached_input_tokens` between the two
+reports. This is the opt-in, real-key-optional lane -- never required for
+default CI.
 
 OpenCode intentionally has no model-specific live command in this suite. Its
 generated profiles are covered by sync tests and static budgets, while users

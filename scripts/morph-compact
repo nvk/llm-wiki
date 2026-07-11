@@ -113,8 +113,15 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--preserve-recent",
         type=int,
-        default=2,
-        help="Number of trailing messages/sections kept verbatim. Default %(default)s.",
+        default=0,
+        help=(
+            "Number of trailing chat turns kept verbatim, per Morph's /compact "
+            "contract. Calibrated live: sending a single raw-source document as "
+            "one `input` blob counts as 1 turn, so the >0 default silently kept "
+            "100%% of it (compression_ratio=1.0). 0 is correct for this "
+            "single-document use case; only raise it if you start batching "
+            "actual multi-turn history through this script. Default %(default)s."
+        ),
     )
     parser.add_argument(
         "--include-markers",

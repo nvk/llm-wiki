@@ -44,12 +44,13 @@ function Resolve-ExistingDirectory([string]$PathValue) {
 function Invoke-WithCodexHome([string]$UserHomeValue, [scriptblock]$Body) {
   $oldHome = $env:HOME
   $oldUserProfile = $env:USERPROFILE
+  $codexHome = Join-Path $UserHomeValue ".codex"
   try {
     $env:HOME = $UserHomeValue
     if ($IsWindowsHost) {
       $env:USERPROFILE = $UserHomeValue
     }
-    & $Body
+    & { $env:CODEX_HOME = $codexHome; & $Body }
   }
   finally {
     $env:HOME = $oldHome
@@ -150,10 +151,10 @@ if ($null -eq $Marketplace) {
 }
 else {
   $MarketplaceSource = ""
-  if ($Marketplace.marketplaceSource -and $Marketplace.marketplaceSource.source) {
+  if ($Marketplace.PSObject.Properties.Name -contains "marketplaceSource" -and $Marketplace.marketplaceSource.PSObject.Properties.Name -contains "source") {
     $MarketplaceSource = [string]$Marketplace.marketplaceSource.source
   }
-  elseif ($Marketplace.root) {
+  elseif ($Marketplace.PSObject.Properties.Name -contains "root") {
     $MarketplaceSource = [string]$Marketplace.root
   }
   if (-not (Test-SamePath $MarketplaceSource $Root)) {

@@ -10,3 +10,6 @@ benchmarks/results/
 
 # macOS
 .DS_Store
+
+# Temporary directory for tests on Windows
+tests/temp/

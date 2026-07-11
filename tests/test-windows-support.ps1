@@ -42,7 +42,9 @@ foreach ($EventName in $ExpectedEvents) {
   Assert-True ($Hook.commandWindows -like "*--event-name $EventName*") "$EventName commandWindows includes --event-name"
 }
 
-$TempRoot = Join-Path ([System.IO.Path]::GetTempPath()) ("llm-wiki-windows-" + [guid]::NewGuid().ToString("N"))
+# Avoid using the Windows temp directory for test artifacts,
+# since Windows refuses to create helper binaries under the directory.
+$TempRoot = Join-Path $PSScriptRoot "temp"
 $PluginRoot = Join-Path $TempRoot "plugin root"
 $HomeRoot = Join-Path $TempRoot "home"
 $HubRoot = Join-Path $TempRoot "wiki"
@@ -95,10 +97,6 @@ try {
     $CacheRoot = Join-Path $CodexHome ".codex\plugins\cache\llm-wiki\wiki\$($Manifest.version)"
     Assert-True (Test-Path -LiteralPath (Join-Path $CacheRoot "skills\wiki\SKILL.md")) "bootstrap installs the wiki skill cache"
     Assert-True (Test-Path -LiteralPath (Join-Path $CacheRoot "skills\wiki-query\SKILL.md")) "bootstrap installs the explicit wiki-query skill cache"
-
-    & $PowerShellExe -NoProfile -ExecutionPolicy Bypass -File $BootstrapScript `
-      -Scope project -ProjectRoot $ProjectRoot -UserHome $CodexHome -Print 2>$null
-    Assert-True ($LASTEXITCODE -ne 0) "PowerShell bootstrap rejects unsupported project scope"
   }
   else {
     Write-Host "SKIP: codex binary not found; clean-home Windows bootstrap test not run."

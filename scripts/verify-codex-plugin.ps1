@@ -37,12 +37,13 @@ function Resolve-ExistingDirectory([string]$PathValue) {
 function Invoke-WithCodexHome([string]$UserHomeValue, [scriptblock]$Body) {
   $oldHome = $env:HOME
   $oldUserProfile = $env:USERPROFILE
+  $codexHome = Join-Path $UserHomeValue ".codex"
   try {
     $env:HOME = $UserHomeValue
     if ($IsWindowsHost) {
       $env:USERPROFILE = $UserHomeValue
     }
-    & $Body
+    & { $env:CODEX_HOME = $codexHome; & $Body }
   }
   finally {
     $env:HOME = $oldHome
@@ -68,6 +69,10 @@ function Invoke-CodexJson([System.Management.Automation.CommandInfo]$CodexComman
 function Normalize-PathForComparison([string]$PathValue) {
   if ([string]::IsNullOrWhiteSpace($PathValue)) {
     return ""
+  }
+  # Remove Windows extended-length prefix \\?\ for comparison
+  if ($PathValue.StartsWith("\\?\")) {
+    $PathValue = [System.Uri]::UnescapeDataString($PathValue.Substring(4))
   }
   if (Test-Path -LiteralPath $PathValue) {
     $PathValue = (Resolve-Path -LiteralPath $PathValue).Path
@@ -175,7 +180,9 @@ if ([string]$Plugin.version -ne $ExpectedVersion) {
 if (-not (Test-SamePath ([string]$Plugin.source.path) $SourcePluginRoot)) {
   $Errors += "plugin source does not point at $SourcePluginRoot"
 }
-if (-not (Test-SamePath ([string]$Plugin.marketplaceSource.source) $Root)) {
+
+$MarketplaceSource = Normalize-PathForComparison ([string]$Plugin.marketplaceSource.source)
+if (-not (Test-SamePath $MarketplaceSource $Root)) {
   $Errors += "marketplace source does not point at $Root"
 }
 if ($Errors.Count -gt 0) {

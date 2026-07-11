@@ -44,7 +44,9 @@ confidence or evidence gaps that affect the answer.
 Read all relevant branch indexes and articles, follow relevant cross-links,
 search `wiki/` and `raw/` with bounded patterns, and inspect active sibling
 indexes for overlap. Archived sibling indexes may be reported separately, but
-archived article bodies require `--include-archived`.
+archived article bodies require `--include-archived`. See query-lite.md's
+Evidence Rules for the optional `scripts/morph-compact` step on long `raw/`
+reads -- best-effort only, never required.
 
 ## List Mode
 

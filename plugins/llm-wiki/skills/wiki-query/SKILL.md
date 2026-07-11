@@ -49,6 +49,11 @@ candidates and ask one short question instead of scanning multiple topics.
 - Compiled `wiki/` articles are the default factual layer.
 - Use `raw/` when the user requests primary evidence or compiled coverage is
   insufficient.
+- Optional: if `scripts/morph-compact` is present and configured, pipe long
+  `raw/` reads through it with `--query "<the question>"` before adding them
+  to context for deep answers. If it is unavailable, or it returns the input
+  unchanged, proceed exactly as today -- this step never blocks an answer or
+  changes these evidence rules.
 - `inventory/` is tracking state, not factual evidence, except for questions
   about candidates, status, priority, or next actions.
 - Archived topics are excluded unless the user explicitly includes them.

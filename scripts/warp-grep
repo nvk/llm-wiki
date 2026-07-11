@@ -1,0 +1,193 @@
+#!/usr/bin/env python3
+"""Optional Morph WarpGrep wrapper for llm-wiki's /wiki:assess repo exploration.
+
+Best-effort natural-language code search over an external target repo. With
+no MORPH_API_KEY configured, falls back to a literal/case-insensitive local
+search (ripgrep if available on PATH, else a plain Python walk) over
+--repo-root -- /wiki:assess stays fully functional offline, just without
+natural-language search quality. A failing Morph call also falls back to
+the local search rather than aborting the caller.
+
+KNOWN GAP: Morph's public docs (as fetched for this prototype) only show the
+TypeScript SDK call `morph.warpGrep.execute({ searchTerm, repoRoot })` -- no
+REST path/response schema was documented anywhere we could read. --endpoint-path
+defaults to "/warp-grep" as a placeholder; verify the real path and response
+shape against Morph's API reference before ever pointing this at the live
+API. Every automated test for this script validates its own request/fallback
+behavior against a local fake server, not Morph's actual contract.
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import re
+import shutil
+import subprocess
+import sys
+from pathlib import Path
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import _morph_client as morph  # noqa: E402
+
+SKIP_DIR_NAMES = {
+    ".git", "node_modules", "__pycache__", ".venv", "venv",
+    ".mypy_cache", ".pytest_cache", "dist", "build",
+}
+MAX_FILE_BYTES = 1_000_000
+DEFAULT_MAX_RESULTS = 20
+
+
+def local_search(term: str, repo_root: Path, max_results: int) -> list[dict]:
+    rg = shutil.which("rg")
+    if rg:
+        return _ripgrep_search(rg, term, repo_root, max_results)
+    return _python_walk_search(term, repo_root, max_results)
+
+
+def _ripgrep_search(rg: str, term: str, repo_root: Path, max_results: int) -> list[dict]:
+    try:
+        proc = subprocess.run(
+            [rg, "-n", "-i", "--no-heading", "-m", "3", term, str(repo_root)],
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return _python_walk_search(term, repo_root, max_results)
+
+    matches = []
+    for line in proc.stdout.splitlines():
+        parts = line.split(":", 2)
+        if len(parts) != 3:
+            continue
+        path, lineno, snippet = parts
+        try:
+            line_number = int(lineno)
+        except ValueError:
+            continue
+        matches.append({"file": path, "line": line_number, "snippet": snippet.strip()})
+        if len(matches) >= max_results:
+            break
+    return matches
+
+
+def _python_walk_search(term: str, repo_root: Path, max_results: int) -> list[dict]:
+    pattern = re.compile(re.escape(term), re.IGNORECASE)
+    matches: list[dict] = []
+    for dirpath, dirnames, filenames in os.walk(repo_root):
+        dirnames[:] = [d for d in dirnames if d not in SKIP_DIR_NAMES and not d.startswith(".")]
+        for filename in filenames:
+            path = Path(dirpath) / filename
+            try:
+                if path.stat().st_size > MAX_FILE_BYTES:
+                    continue
+                text = path.read_text(encoding="utf-8")
+            except (OSError, UnicodeDecodeError):
+                continue
+            for lineno, line in enumerate(text.splitlines(), start=1):
+                if pattern.search(line):
+                    matches.append({"file": str(path), "line": lineno, "snippet": line.strip()})
+                    if len(matches) >= max_results:
+                        return matches
+    return matches
+
+
+def emit(matches: list[dict], source: str, args: argparse.Namespace) -> None:
+    if args.json:
+        indent = None if args.compact_json else 2
+        print(json.dumps({"source": source, "matches": matches}, indent=indent))
+        return
+    print(f"# warp-grep results (source: {source})")
+    for match in matches:
+        print(f"{match['file']}:{match['line']}: {match['snippet']}")
+    if not matches:
+        print("(no matches)")
+
+
+def run(args: argparse.Namespace) -> int:
+    repo_root = Path(args.repo_root).resolve()
+    api_key = morph.resolve_api_key()
+    base_url = morph.resolve_base_url()
+    payload = {"searchTerm": args.search_term, "repoRoot": str(repo_root)}
+
+    if args.dry_run:
+        if not api_key:
+            preview = {
+                "would_call": False,
+                "reason": "no MORPH_API_KEY configured",
+                "fallback": "local search",
+            }
+        else:
+            preview = {
+                "would_call": True,
+                "method": "POST",
+                "url": f"{base_url}{args.endpoint_path}",
+                "headers": {
+                    "Authorization": f"Bearer {morph.redact(api_key)}",
+                    "Content-Type": "application/json",
+                },
+                "payload": payload,
+            }
+        print(json.dumps(preview, indent=2))
+        return 0
+
+    if not api_key:
+        matches = local_search(args.search_term, repo_root, args.max_results)
+        emit(matches, "local-fallback (no MORPH_API_KEY)", args)
+        return 0
+
+    ok, result = morph.post_json(args.endpoint_path, payload, api_key, base_url, timeout=args.timeout)
+    if not ok:
+        print(f"warp-grep: falling back to local search ({result})", file=sys.stderr)
+        matches = local_search(args.search_term, repo_root, args.max_results)
+        emit(matches, "local-fallback (morph call failed)", args)
+        return 0
+
+    matches = result.get("matches", []) if isinstance(result, dict) else []
+    emit(matches, "morph-warpgrep", args)
+    return 0
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        prog="warp-grep",
+        description="Optional Morph WarpGrep wrapper. Falls back to local search without MORPH_API_KEY.",
+    )
+    parser.add_argument("search_term", help="Natural-language or literal search query.")
+    parser.add_argument("--repo-root", required=True, help="Root directory of the target repo to search.")
+    parser.add_argument(
+        "--endpoint-path",
+        default="/warp-grep",
+        help="REST path appended to the base URL. Unverified against real Morph docs -- override once confirmed.",
+    )
+    parser.add_argument(
+        "--max-results",
+        type=int,
+        default=DEFAULT_MAX_RESULTS,
+        help="Cap on returned matches. Default %(default)s.",
+    )
+    parser.add_argument("--timeout", type=float, default=10.0, help="Network timeout in seconds. Default %(default)s.")
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print the resolved request without calling the network or searching locally.",
+    )
+    parser.add_argument("--json", action="store_true", help="Emit JSON instead of plain text.")
+    parser.add_argument(
+        "--compact-json",
+        action="store_true",
+        help="Emit compact (non-indented) JSON. Only applies with --json.",
+    )
+    return parser
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = build_parser()
+    args = parser.parse_args(argv)
+    return run(args)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

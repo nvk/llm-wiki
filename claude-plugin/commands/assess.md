@@ -53,6 +53,12 @@ Launch 3 agents IN PARALLEL to understand the repo:
 | **Features** | What the repo DOES — capabilities, commands, APIs, skills | Command files, skill files, source code entry points, route handlers, CLI help |
 | **Docs** | What the repo CLAIMS — documentation, examples, known limitations | README, docs/, examples/, CHANGELOG, issues if accessible |
 
+Optional: if a natural-language code-search tool is available (e.g.
+`scripts/warp-grep`), prefer it over ad hoc grep+Read for open-ended
+exploration of the target repo -- especially for the Structure agent's
+initial architecture-mapping pass. Fall back to grep+Read exactly as today
+when it is unavailable.
+
 Each agent returns a structured summary:
 - List of features/capabilities with brief descriptions
 - Technologies and dependencies used

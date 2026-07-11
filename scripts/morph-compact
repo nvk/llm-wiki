@@ -1,0 +1,137 @@
+#!/usr/bin/env python3
+"""Optional Morph Compact wrapper for llm-wiki's /wiki:query --deep raw reads.
+
+Best-effort context compression: sends text plus a relevance query to
+Morph's /compact endpoint, which deletes low-relevance lines verbatim
+(no rewriting/paraphrasing) and returns the trimmed result.
+
+With no MORPH_API_KEY configured (env var, or the morph_api_key field in
+~/.config/llm-wiki/config.json), this script is a verbatim passthrough --
+default llm-wiki behavior is unchanged. A failing Morph call also falls
+back to passthrough rather than aborting the caller: compaction must never
+block a /wiki:query answer.
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import sys
+from pathlib import Path
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import _morph_client as morph  # noqa: E402
+
+
+def read_input(args: argparse.Namespace) -> str:
+    if args.input:
+        return Path(args.input).read_text(encoding="utf-8")
+    return sys.stdin.read()
+
+
+def build_payload(text: str, args: argparse.Namespace) -> dict:
+    payload: dict = {
+        "input": text,
+        "compression_ratio": args.compression_ratio,
+        "preserve_recent": args.preserve_recent,
+        "include_markers": args.include_markers,
+    }
+    if args.query:
+        payload["query"] = args.query
+    return payload
+
+
+def emit(text: str, data: dict | None, args: argparse.Namespace) -> None:
+    if args.json:
+        result = data if data is not None else {
+            "output": text,
+            "compacted_line_ranges": [],
+            "kept_line_ranges": [],
+            "usage": None,
+        }
+        print(json.dumps(result))
+        return
+    print(text, end="" if text.endswith("\n") else "\n")
+
+
+def run(args: argparse.Namespace) -> int:
+    text = read_input(args)
+    api_key = morph.resolve_api_key()
+    base_url = morph.resolve_base_url()
+    payload = build_payload(text, args)
+
+    if args.dry_run:
+        if not api_key:
+            preview = {
+                "would_call": False,
+                "reason": "no MORPH_API_KEY configured",
+                "fallback": "verbatim passthrough",
+            }
+        else:
+            preview = {
+                "would_call": True,
+                "method": "POST",
+                "url": f"{base_url}/compact",
+                "headers": {
+                    "Authorization": f"Bearer {morph.redact(api_key)}",
+                    "Content-Type": "application/json",
+                },
+                "payload": {**payload, "input": f"<{len(text)} chars>"},
+            }
+        print(json.dumps(preview, indent=2))
+        return 0
+
+    if not api_key:
+        emit(text, None, args)
+        return 0
+
+    ok, result = morph.post_json("/compact", payload, api_key, base_url, timeout=args.timeout)
+    if not ok:
+        print(f"morph-compact: falling back to verbatim passthrough ({result})", file=sys.stderr)
+        emit(text, None, args)
+        return 0
+
+    output = result.get("output", text) if isinstance(result, dict) else text
+    emit(output, result if isinstance(result, dict) else None, args)
+    return 0
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        prog="morph-compact",
+        description="Optional Morph Compact context-compression wrapper. No-ops without MORPH_API_KEY.",
+    )
+    parser.add_argument("--input", help="Read input from this file instead of stdin.")
+    parser.add_argument("--query", help="Relevance query used to score which lines survive compaction.")
+    parser.add_argument(
+        "--compression-ratio",
+        type=float,
+        default=0.5,
+        help="Fraction of input to keep, 0.05-1.0. Default %(default)s.",
+    )
+    parser.add_argument(
+        "--preserve-recent",
+        type=int,
+        default=2,
+        help="Number of trailing messages/sections kept verbatim. Default %(default)s.",
+    )
+    parser.add_argument(
+        "--include-markers",
+        action="store_true",
+        help="Include '(filtered N lines)' markers in the compacted output.",
+    )
+    parser.add_argument("--timeout", type=float, default=10.0, help="Network timeout in seconds. Default %(default)s.")
+    parser.add_argument("--dry-run", action="store_true", help="Print the resolved request without calling the network.")
+    parser.add_argument("--json", action="store_true", help="Emit the full JSON response instead of plain text.")
+    return parser
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = build_parser()
+    args = parser.parse_args(argv)
+    return run(args)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

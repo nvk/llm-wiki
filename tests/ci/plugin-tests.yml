@@ -44,6 +44,12 @@ jobs:
       - name: Run local CLI lint tests
         run: chmod +x tests/test-local-cli-lint.sh && ./tests/test-local-cli-lint.sh
 
+      - name: Run Morph Compact wrapper tests
+        run: chmod +x scripts/morph-compact tests/fixtures/fake-morph-compact-server.py tests/test-morph-compact.sh && ./tests/test-morph-compact.sh
+
+      - name: Run Morph WarpGrep wrapper tests
+        run: chmod +x scripts/warp-grep tests/fixtures/fake-morph-warpgrep-server.py tests/test-warp-grep.sh && ./tests/test-warp-grep.sh
+
       - name: Run token budget and benchmark protocol tests
         run: chmod +x scripts/benchmark-token-efficiency tests/test-token-benchmarks.sh tests/fixtures/fake-codex-app-server.py tests/fixtures/fake-claude-cli.py && ./tests/test-token-benchmarks.sh
 

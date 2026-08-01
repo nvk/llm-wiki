@@ -115,10 +115,6 @@ replacements = [
         "When this skill activates outside of an explicit `/wiki:*` command or natural-language wiki request:"
     ),
     (
-        "This could be added to your wiki with `/wiki:ingest`",
-        "This could be added to your wiki with `/wiki:ingest`"
-    ),
-    (
         "Multiple Claude Code sessions can safely read and write to the same wiki simultaneously. No locks are needed.",
         "Multiple GitHub Copilot sessions can safely read and write to the same wiki simultaneously. No locks are needed."
     ),

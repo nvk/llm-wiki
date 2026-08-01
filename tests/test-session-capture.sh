@@ -84,7 +84,23 @@ printf '# Hub\n' > "$copilot_hub/_index.md"
 printf '# Hub Log\n' > "$copilot_hub/log.md"
 printf '{"wikis":{}}\n' > "$copilot_hub/wikis.json"
 "$SESSION" --hub "$copilot_hub" enable --mode balanced >/dev/null
-copilot_output="$(printf '{"session_id":"copilot-session","hook_event_name":"UserPromptSubmit","cwd":"%s","prompt":"default should be on"}' "$PWD" | "$SESSION" --hub "$copilot_hub" hook --harness copilot --if-enabled --suppress-output)"
+copilot_payload() {
+  python3 - "$1" "$2" "${3:-}" <<'PY'
+import json
+import sys
+
+payload = {
+    "session_id": "copilot-session",
+    "hook_event_name": sys.argv[1],
+    "cwd": sys.argv[2],
+}
+if sys.argv[3]:
+    payload["prompt"] = sys.argv[3]
+print(json.dumps(payload))
+PY
+}
+
+copilot_output="$(copilot_payload UserPromptSubmit "$PWD" "default should be on" | "$SESSION" --hub "$copilot_hub" hook --harness copilot --if-enabled --suppress-output)"
 if [ -z "$copilot_output" ] \
   && [ -f "$copilot_hub/.sessions/state/copilot/copilot-session.json" ] \
   && "$SESSION" --hub "$copilot_hub" feedback list --json | grep -q 'copilot:copilot-session'; then
@@ -92,17 +108,18 @@ if [ -z "$copilot_output" ] \
 else
   log_fail "Copilot UserPromptSubmit capture-only behavior" "$copilot_output"
 fi
-printf '{"session_id":"copilot-session","hook_event_name":"PreCompact","cwd":"%s"}' "$PWD" \
+copilot_payload PreCompact "$PWD" \
   | "$SESSION" --hub "$copilot_hub" hook --harness copilot --if-enabled --suppress-output
-copilot_start="$(printf '{"session_id":"copilot-session","hook_event_name":"SessionStart","cwd":"%s"}' "$PWD" | "$SESSION" --hub "$copilot_hub" hook --harness copilot --if-enabled)"
+copilot_start="$(copilot_payload SessionStart "$PWD" | "$SESSION" --hub "$copilot_hub" hook --harness copilot --if-enabled)"
 if python3 -c 'import json,sys; assert json.load(sys.stdin)["hookSpecificOutput"]["additionalContext"]' <<<"$copilot_start"; then
   log_pass "Copilot SessionStart emits rehydration context"
 else
   log_fail "Copilot SessionStart rehydration" "$copilot_start"
 fi
-printf '{"session_id":"copilot-session","hook_event_name":"SessionEnd","cwd":"%s"}' "$PWD" \
+copilot_payload SessionEnd "$PWD" \
   | "$SESSION" --hub "$copilot_hub" hook --harness copilot --if-enabled --suppress-output --trigger session-end
-copilot_digest="$copilot_hub/.sessions/digests/$(date +%Y)/$(date +%m)/copilot-copilot-session.md"
+copilot_digest_date="$(date +%Y/%m)"
+copilot_digest="$copilot_hub/.sessions/digests/$copilot_digest_date/copilot-copilot-session.md"
 if [ -f "$copilot_digest" ] && grep -q 'capture_trigger: "session-end"' "$copilot_digest"; then
   log_pass "Copilot SessionEnd mapping writes final checkpoint"
 else

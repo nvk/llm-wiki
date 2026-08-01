@@ -343,7 +343,7 @@ else
 fi
 
 if [ -f "$COPILOT_HOOKS" ] \
-  && python3 -c "import json; hooks=json.load(open('$COPILOT_HOOKS')); required={'SessionStart','UserPromptSubmit','PostToolUse','PreCompact','Stop','SessionEnd'}; assert hooks.get('version') == 1; assert required <= set(hooks['hooks']); assert all('powershellCommand' in entries[0] for entries in hooks['hooks'].values())" 2>/dev/null; then
+  && python3 -c "import json; hooks=json.load(open('$COPILOT_HOOKS')); required={'SessionStart','UserPromptSubmit','PostToolUse','PreCompact','Stop','SessionEnd'}; assert hooks.get('version') == 1; assert required <= set(hooks['hooks']); assert all(entries and all({'command', 'powershellCommand', 'timeout'} <= entry.keys() for entry in entries) for entries in hooks['hooks'].values())" 2>/dev/null; then
   log_pass "Copilot hooks include cross-platform lifecycle mapping"
 else
   log_fail "Copilot hooks invalid" "missing required events or PowerShell commands"

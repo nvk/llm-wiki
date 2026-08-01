@@ -1,0 +1,192 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+SOURCE_PLUGIN="$ROOT/claude-plugin"
+SOURCE_SKILL="$SOURCE_PLUGIN/skills/wiki-manager"
+SOURCE_COMMANDS="$SOURCE_PLUGIN/commands"
+SOURCE_MANIFEST="$SOURCE_PLUGIN/.claude-plugin/plugin.json"
+SESSION_HELPER="$ROOT/scripts/llm-wiki-session"
+TARGET="$ROOT/plugins/llm-wiki-copilot"
+MARKETPLACE="$ROOT/.github/plugin/marketplace.json"
+
+for required in "$SOURCE_SKILL" "$SOURCE_COMMANDS" "$SOURCE_MANIFEST" "$SESSION_HELPER"; do
+  if [ ! -e "$required" ]; then
+    echo "Missing Copilot sync input: $required" >&2
+    exit 1
+  fi
+done
+
+rm -rf "$TARGET"
+mkdir -p "$TARGET/commands" "$TARGET/skills" "$TARGET/hooks" "$(dirname "$MARKETPLACE")"
+
+# Copilot installs plugins from a cache, so generated files must be self-contained.
+python3 - "$SOURCE_COMMANDS" "$TARGET/commands" "$SOURCE_SKILL" "$TARGET/skills/wiki-manager" <<'PY'
+import shutil
+import sys
+from pathlib import Path
+
+for source_arg, destination_arg in zip(sys.argv[1::2], sys.argv[2::2]):
+  source = Path(source_arg)
+  destination = Path(destination_arg)
+  shutil.copytree(source, destination, dirs_exist_ok=True)
+PY
+cp "$SESSION_HELPER" "$TARGET/hooks/llm_wiki_session.py"
+chmod 0755 "$TARGET/hooks/llm_wiki_session.py"
+
+python3 - "$SOURCE_MANIFEST" "$TARGET" "$MARKETPLACE" <<'PY'
+import json
+import sys
+from pathlib import Path
+
+source_manifest = Path(sys.argv[1])
+target = Path(sys.argv[2])
+marketplace_path = Path(sys.argv[3])
+canonical = json.loads(source_manifest.read_text(encoding="utf-8"))
+
+description = canonical["description"]
+plugin = {
+    "name": canonical["name"],
+    "description": description,
+    "version": canonical["version"],
+    "author": canonical.get("author", {}),
+    "license": canonical.get("license", "MIT"),
+    "keywords": canonical.get("keywords", []),
+    "commands": ["./commands"],
+    "skills": ["./skills"],
+    "hooks": "./hooks/hooks.json",
+}
+(target / "plugin.json").write_text(json.dumps(plugin, indent=2) + "\n", encoding="utf-8")
+
+marketplace = {
+    "name": "llm-wiki",
+    "owner": {"name": canonical.get("author", {}).get("name", "nvk")},
+    "plugins": [
+        {
+            "name": canonical["name"],
+            "source": "./plugins/llm-wiki-copilot",
+            "description": description,
+            "version": canonical["version"],
+        }
+    ],
+}
+marketplace_path.write_text(json.dumps(marketplace, indent=2) + "\n", encoding="utf-8")
+
+skill_path = target / "skills/wiki-manager/SKILL.md"
+text = skill_path.read_text(encoding="utf-8")
+start = text.find("---\n")
+end = text.find("\n---\n", start + 4)
+if start != 0 or end == -1:
+    raise SystemExit(f"Unexpected frontmatter in {skill_path}")
+
+frontmatter = """---
+name: wiki-manager
+description: >
+  LLM-compiled knowledge base manager for GitHub Copilot. Use it to initialize,
+  ingest, import source collections, collect catalogs, track inventory, index
+  datasets, archive old topics, compile, query, lint, audit, research, plan,
+  capture or rehydrate agent session context, and generate outputs from
+  topic-scoped wikis.
+  Activates for wiki workflows, knowledge-base management, ingestion, source
+  collection import, cataloging, inventory, datasets, compilation, querying,
+  linting, auditing, research, librarian scans, archives, session capture,
+  rehydration, lessons learned, and implementation plans in a repo with .wiki/,
+  ~/wiki/, or a configured hub path.
+user-invocable: false
+---
+"""
+text = frontmatter + text[end + 5:]
+
+replacements = [
+    (
+        "Claude Code is both the compiler and the query engine — no Obsidian, no external tools.",
+        "GitHub Copilot is both the compiler and the query engine."
+    ),
+    (
+        "**Dual-linking for Obsidian + Claude.**",
+        "**Dual-linking for Obsidian + GitHub Copilot.**"
+    ),
+    (
+      "(for Claude navigation)",
+      "(for agent navigation)"
+    ),
+    (
+        "When this skill activates outside of an explicit `/wiki:*` command:",
+        "When this skill activates outside of an explicit `/wiki:*` command or natural-language wiki request:"
+    ),
+    (
+        "This could be added to your wiki with `/wiki:ingest`",
+        "This could be added to your wiki with `/wiki:ingest`"
+    ),
+    (
+        "Multiple Claude Code sessions can safely read and write to the same wiki simultaneously. No locks are needed.",
+        "Multiple GitHub Copilot sessions can safely read and write to the same wiki simultaneously. No locks are needed."
+    ),
+]
+for old, new in replacements:
+    if old not in text:
+        raise SystemExit(f"Expected Copilot replacement anchor not found: {old!r}")
+    text = text.replace(old, new)
+
+if "Claude Code" in text:
+    raise SystemExit("Unexpected Claude Code branding remains in Copilot skill")
+skill_path.write_text(text, encoding="utf-8")
+
+(target / "README.md").write_text(
+    "# llm-wiki GitHub Copilot Plugin\n\n"
+    "This directory is generated by `scripts/sync-copilot-plugin.sh`. "
+    "Do not edit it directly.\n\n"
+    "Canonical workflows and protocols live in `claude-plugin/`; this package "
+    "contains Copilot commands, the ambient wiki-manager skill, copied "
+    "references, and opt-in session hooks.\n",
+    encoding="utf-8",
+)
+PY
+
+cat > "$TARGET/hooks/hooks.json" <<'EOF'
+{
+  "version": 1,
+  "hooks": {
+    "SessionStart": [{
+      "type": "command",
+      "command": "python3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled",
+      "powershellCommand": "if (Get-Command py -ErrorAction SilentlyContinue) { py -3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled } else { python \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled }",
+      "timeout": 5
+    }],
+    "UserPromptSubmit": [{
+      "type": "command",
+      "command": "python3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output",
+      "powershellCommand": "if (Get-Command py -ErrorAction SilentlyContinue) { py -3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output } else { python \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output }",
+      "timeout": 5
+    }],
+    "PostToolUse": [{
+      "type": "command",
+      "command": "python3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output",
+      "powershellCommand": "if (Get-Command py -ErrorAction SilentlyContinue) { py -3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output } else { python \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output }",
+      "timeout": 5
+    }],
+    "PreCompact": [{
+      "type": "command",
+      "command": "python3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output",
+      "powershellCommand": "if (Get-Command py -ErrorAction SilentlyContinue) { py -3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output } else { python \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output }",
+      "timeout": 5
+    }],
+    "Stop": [{
+      "type": "command",
+      "command": "python3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output",
+      "powershellCommand": "if (Get-Command py -ErrorAction SilentlyContinue) { py -3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output } else { python \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output }",
+      "timeout": 5
+    }],
+    "SessionEnd": [{
+      "type": "command",
+      "command": "python3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output --trigger session-end",
+      "powershellCommand": "if (Get-Command py -ErrorAction SilentlyContinue) { py -3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output --trigger session-end } else { python \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output --trigger session-end }",
+      "timeout": 5
+    }]
+  }
+}
+EOF
+
+echo "Synced GitHub Copilot plugin from Claude source."
+echo "Target: $TARGET"
+echo "Marketplace: $MARKETPLACE"

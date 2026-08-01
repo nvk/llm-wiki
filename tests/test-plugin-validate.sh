@@ -293,6 +293,68 @@ else
   log_fail "OpenCode README.md not found" "missing file"
 fi
 
+# GitHub Copilot plugin validation. This is a generated, self-contained Agent
+# Plugin package because Copilot installs it into a cache outside the checkout.
+echo ""
+echo "=== GitHub Copilot Plugin Validation ==="
+COPILOT_PLUGIN="$PROJECT_ROOT/plugins/llm-wiki-copilot"
+COPILOT_MANIFEST="$COPILOT_PLUGIN/plugin.json"
+COPILOT_SKILL="$COPILOT_PLUGIN/skills/wiki-manager/SKILL.md"
+COPILOT_HOOKS="$COPILOT_PLUGIN/hooks/hooks.json"
+COPILOT_MARKETPLACE="$PROJECT_ROOT/.github/plugin/marketplace.json"
+
+if [ -f "$COPILOT_MANIFEST" ] \
+  && python3 -c "import json; manifest=json.load(open('$COPILOT_MANIFEST')); assert manifest['name'] == 'wiki'; assert manifest['commands'] == ['./commands']; assert manifest['skills'] == ['./skills']; assert manifest['hooks'] == './hooks/hooks.json'" 2>/dev/null; then
+  log_pass "Copilot plugin manifest declares commands, skills, and hooks"
+else
+  log_fail "Copilot plugin manifest invalid" "missing or malformed plugin.json"
+fi
+
+if [ -f "$COPILOT_MARKETPLACE" ] \
+  && python3 -c "import json; marketplace=json.load(open('$COPILOT_MARKETPLACE')); plugins=marketplace['plugins']; assert len(plugins) == 1 and plugins[0]['name'] == 'wiki' and plugins[0]['source'] == './plugins/llm-wiki-copilot'" 2>/dev/null; then
+  log_pass "Copilot marketplace points at generated plugin"
+else
+  log_fail "Copilot marketplace invalid" "expected wiki plugin source"
+fi
+
+if [ -f "$COPILOT_SKILL" ] \
+  && head -1 "$COPILOT_SKILL" | grep -q '^---$' \
+  && grep -q '^name: wiki-manager$' "$COPILOT_SKILL" \
+  && grep -q '^user-invocable: false$' "$COPILOT_SKILL" \
+  && ! grep -q 'Claude Code' "$COPILOT_SKILL"; then
+  log_pass "Copilot ambient skill has compatible frontmatter and branding"
+else
+  log_fail "Copilot ambient skill invalid" "expected Copilot frontmatter without Claude Code branding"
+fi
+
+if [ -d "$COPILOT_PLUGIN/skills/wiki-manager/references" ] \
+  && [ ! -L "$COPILOT_PLUGIN/skills/wiki-manager/references" ]; then
+  log_pass "Copilot references are copied into generated package"
+else
+  log_fail "Copilot references invalid" "expected copied references directory"
+fi
+
+canonical_commands="$(find "$PLUGIN_DIR/commands" -maxdepth 1 -name '*.md' -printf '%f\n' | sort)"
+copilot_commands="$(find "$COPILOT_PLUGIN/commands" -maxdepth 1 -name '*.md' -printf '%f\n' | sort 2>/dev/null || true)"
+if [ "$canonical_commands" = "$copilot_commands" ]; then
+  log_pass "Copilot commands match canonical command set"
+else
+  log_fail "Copilot command parity failed" "generated command names differ"
+fi
+
+if [ -f "$COPILOT_HOOKS" ] \
+  && python3 -c "import json; hooks=json.load(open('$COPILOT_HOOKS')); required={'SessionStart','UserPromptSubmit','PostToolUse','PreCompact','Stop','SessionEnd'}; assert hooks.get('version') == 1; assert required <= set(hooks['hooks']); assert all('powershellCommand' in entries[0] for entries in hooks['hooks'].values())" 2>/dev/null; then
+  log_pass "Copilot hooks include cross-platform lifecycle mapping"
+else
+  log_fail "Copilot hooks invalid" "missing required events or PowerShell commands"
+fi
+
+if [ -x "$COPILOT_PLUGIN/hooks/llm_wiki_session.py" ]; then
+  log_pass "Copilot session helper is executable"
+else
+  log_fail "Copilot session helper missing" "expected executable bundled helper"
+fi
+
 echo ""
 echo "==========================================="
 printf "Results: \033[32m%d passed\033[0m, \033[31m%d failed\033[0m, %d total\n" "$PASS" "$FAIL" "$TOTAL"

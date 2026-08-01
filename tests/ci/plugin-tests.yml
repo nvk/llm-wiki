@@ -9,6 +9,7 @@ on:
       - 'benchmarks/**'
       - 'profiles/**'
       - 'plugins/**'
+      - '.github/plugin/**'
       - 'AGENTS.md'
       - 'README.md'
   pull_request:
@@ -19,6 +20,7 @@ on:
       - 'benchmarks/**'
       - 'profiles/**'
       - 'plugins/**'
+      - '.github/plugin/**'
       - 'AGENTS.md'
       - 'README.md'
 
@@ -55,6 +57,12 @@ jobs:
 
       - name: Verify OpenCode plugin sync
         run: chmod +x tests/test-opencode-sync.sh && ./tests/test-opencode-sync.sh
+
+      - name: Verify GitHub Copilot plugin sync
+        run: chmod +x scripts/sync-copilot-plugin.sh tests/test-copilot-sync.sh && ./tests/test-copilot-sync.sh
+
+      - name: Run GitHub Copilot runtime smoke when available
+        run: chmod +x tests/test-copilot-runtime.sh && ./tests/test-copilot-runtime.sh
 
       - name: Run session capture tests
         run: chmod +x tests/test-session-capture.sh && ./tests/test-session-capture.sh

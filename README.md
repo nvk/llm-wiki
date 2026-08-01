@@ -9,7 +9,7 @@
 
 [github.com/nvk/llm-wiki](https://github.com/nvk/llm-wiki)
 
-LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, collector catalogs, automated session capture, feedback curation, thesis-driven investigation, source ingestion, wiki compilation, truth-seeking audits, querying, and artifact generation. Ships as a Claude Code plugin, an OpenAI Codex plugin, an OpenCode instruction file, or a portable AGENTS.md for any other LLM agent. Obsidian-compatible.
+LLM-compiled knowledge bases for any AI agent. Parallel multi-agent research, collector catalogs, automated session capture, feedback curation, thesis-driven investigation, source ingestion, wiki compilation, truth-seeking audits, querying, and artifact generation. Ships as a Claude Code, GitHub Copilot, or OpenAI Codex plugin, an OpenCode instruction file, or a portable AGENTS.md for any other LLM agent. Obsidian-compatible.
 
 ---
 
@@ -90,6 +90,26 @@ Troubleshooting:
 - `@wiki` is the full research and maintenance entry point. Natural-language wiki requests can still auto-activate it.
 - Restart Codex after changing config if an existing session does not pick up the new plugin state.
 - If you run Codex under a sandbox wrapper like `nono`, see [Nono Sandbox Permissions](#nono-sandbox-permissions) — Codex needs r+w to `$HOME/.codex` for plugin install.
+
+**GitHub Copilot** (Agent Plugin, VS Code and Copilot CLI Preview):
+
+```bash
+copilot plugin marketplace add nvk/llm-wiki
+copilot plugin install wiki@llm-wiki
+```
+
+The plugin exposes `/wiki` and `/wiki:<command>` workflows, including the
+read-only `/wiki:query` command, and its `wiki-manager` skill activates for
+natural-language wiki requests. VS Code discovers CLI-installed plugins when
+Agent Plugins are enabled; add the same marketplace from `@agentPlugins` if
+you prefer the VS Code UI. Enable `chat.plugins.enabled` in VS Code settings.
+
+Session hooks are opt-in at the client trust prompt and write only redacted,
+local checkpoints. Run `/wiki:session disable` to stop capture. Update or
+reinstall the plugin after a release to refresh the client cache. The default
+hub remains `~/wiki/` or the configured `hub_path`; when VS Code cannot access
+an external hub, grant workspace access, add that folder to the workspace, or
+use project-local `.wiki/` mode. Do not silently change the selected hub.
 
 **OpenCode** (instruction file):
 

@@ -1,0 +1,38 @@
+{
+  "name": "wiki",
+  "description": "LLM-compiled knowledge base with token-efficient read-only queries, natural-language routing, collector catalogs, topic archives, inventory, datasets, source ingestion, audits, human-owned topic guides, session memory, feedback curation, context rehydration, parallel research, thesis investigation, repo assessment, Obsidian dual-linking, and sustained research.",
+  "version": "0.16.0",
+  "author": {
+    "name": "nvk"
+  },
+  "license": "MIT",
+  "keywords": [
+    "wiki",
+    "knowledge-base",
+    "llm",
+    "markdown",
+    "research",
+    "thesis",
+    "obsidian",
+    "karpathy",
+    "audit",
+    "librarian",
+    "schema",
+    "topic-guide",
+    "collect",
+    "inventory",
+    "datasets",
+    "archive",
+    "sessions",
+    "feedback",
+    "hooks",
+    "context"
+  ],
+  "commands": [
+    "./commands"
+  ],
+  "skills": [
+    "./skills"
+  ],
+  "hooks": "./hooks/hooks.json"
+}

@@ -123,6 +123,11 @@ def collect_static_metrics(root: Path) -> dict[str, int]:
     )
     opencode_skill = root / "plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md"
     opencode_query_skill = root / "plugins/llm-wiki-opencode/skills/wiki-query/SKILL.md"
+    copilot_plugin = root / "plugins/llm-wiki-copilot"
+    copilot_skill = copilot_plugin / "skills/wiki-manager/SKILL.md"
+    copilot_commands = copilot_plugin / "commands"
+    copilot_manifest = copilot_plugin / "plugin.json"
+    copilot_hooks = copilot_plugin / "hooks/hooks.json"
     ds4_query_extension = root / "profiles/ds4/pi-query-tools.ts"
     pi_query_launcher = root / "scripts/pi-wiki-query"
     ds4_query_launcher = root / "scripts/pi-ds4-wiki-query"
@@ -157,6 +162,16 @@ def collect_static_metrics(root: Path) -> dict[str, int]:
             folded_frontmatter_value(opencode_skill, "description")
         ),
         "opencode_query_skill_bytes": file_bytes(opencode_query_skill),
+        "copilot_skill_bytes": file_bytes(copilot_skill),
+        "copilot_skill_description_chars": len(
+            folded_frontmatter_value(copilot_skill, "description")
+        ),
+        "copilot_lazy_commands_bytes": sum(
+            file_bytes(path) for path in sorted(copilot_commands.glob("*.md"))
+        ),
+        "copilot_query_command_bytes": file_bytes(copilot_commands / "query.md"),
+        "copilot_manifest_bytes": file_bytes(copilot_manifest),
+        "copilot_hook_metadata_bytes": file_bytes(copilot_hooks),
         "ds4_query_extension_bytes": file_bytes(ds4_query_extension),
         "pi_query_launcher_bytes": file_bytes(pi_query_launcher),
         "ds4_query_launcher_bytes": file_bytes(ds4_query_launcher),

@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "hooks": {
+    "SessionStart": [{
+      "type": "command",
+      "command": "python3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled",
+      "powershellCommand": "if (Get-Command py -ErrorAction SilentlyContinue) { py -3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled } else { python \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled }",
+      "timeout": 5
+    }],
+    "UserPromptSubmit": [{
+      "type": "command",
+      "command": "python3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output",
+      "powershellCommand": "if (Get-Command py -ErrorAction SilentlyContinue) { py -3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output } else { python \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output }",
+      "timeout": 5
+    }],
+    "PostToolUse": [{
+      "type": "command",
+      "command": "python3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output",
+      "powershellCommand": "if (Get-Command py -ErrorAction SilentlyContinue) { py -3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output } else { python \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output }",
+      "timeout": 5
+    }],
+    "PreCompact": [{
+      "type": "command",
+      "command": "python3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output",
+      "powershellCommand": "if (Get-Command py -ErrorAction SilentlyContinue) { py -3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output } else { python \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output }",
+      "timeout": 5
+    }],
+    "Stop": [{
+      "type": "command",
+      "command": "python3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output",
+      "powershellCommand": "if (Get-Command py -ErrorAction SilentlyContinue) { py -3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output } else { python \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output }",
+      "timeout": 5
+    }],
+    "SessionEnd": [{
+      "type": "command",
+      "command": "python3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output --trigger session-end",
+      "powershellCommand": "if (Get-Command py -ErrorAction SilentlyContinue) { py -3 \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output --trigger session-end } else { python \"${pluginRoot}/hooks/llm_wiki_session.py\" hook --harness copilot --if-enabled --suppress-output --trigger session-end }",
+      "timeout": 5
+    }]
+  }
+}

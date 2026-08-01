@@ -31,9 +31,16 @@ targets = [
     root / "profiles/query-lite/SKILL.md",
     root / "plugins/llm-wiki/skills/wiki-query/SKILL.md",
     root / "plugins/llm-wiki-opencode/skills/wiki-query/SKILL.md",
+    root / "plugins/llm-wiki-copilot/skills/wiki-manager/references/query-lite.md",
 ]
 for target_path in targets:
     target = target_path.read_text()
+    if target_path.name == "query-lite.md":
+        if target != source:
+            raise SystemExit(
+                f"FAIL: {target_path.relative_to(root)} differs from canonical query protocol"
+            )
+        continue
     if marker not in target:
         raise SystemExit(f"FAIL: {target_path.relative_to(root)} has invalid frontmatter")
     body = target.split(marker, 1)[1]

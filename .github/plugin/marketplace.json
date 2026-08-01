@@ -1,0 +1,14 @@
+{
+  "name": "llm-wiki",
+  "owner": {
+    "name": "nvk"
+  },
+  "plugins": [
+    {
+      "name": "wiki",
+      "source": "./plugins/llm-wiki-copilot",
+      "description": "LLM-compiled knowledge base with token-efficient read-only queries, natural-language routing, collector catalogs, topic archives, inventory, datasets, source ingestion, audits, human-owned topic guides, session memory, feedback curation, context rehydration, parallel research, thesis investigation, repo assessment, Obsidian dual-linking, and sustained research.",
+      "version": "0.16.0"
+    }
+  ]
+}

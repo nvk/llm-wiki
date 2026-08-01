@@ -77,6 +77,30 @@
       "baseline": 2777,
       "max": 3300
     },
+    "copilot_skill_bytes": {
+      "baseline": 23893,
+      "max": 25000
+    },
+    "copilot_skill_description_chars": {
+      "baseline": 654,
+      "max": 750
+    },
+    "copilot_lazy_commands_bytes": {
+      "baseline": 243672,
+      "max": 251000
+    },
+    "copilot_query_command_bytes": {
+      "baseline": 3418,
+      "max": 4500
+    },
+    "copilot_manifest_bytes": {
+      "baseline": 919,
+      "max": 1100
+    },
+    "copilot_hook_metadata_bytes": {
+      "baseline": 3057,
+      "max": 3500
+    },
     "ds4_query_extension_bytes": {
       "baseline": 1550,
       "max": 2000

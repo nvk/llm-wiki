@@ -22,6 +22,8 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
    - `.claude-plugin/marketplace.json`
    - `claude-plugin/.claude-plugin/plugin.json`
    - `plugins/llm-wiki/.codex-plugin/plugin.json`
+   - `plugins/llm-wiki-copilot/plugin.json`
+   - `.github/plugin/marketplace.json` plugin entry
 
 ## Test
 
@@ -29,13 +31,16 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
    ```bash
    ./scripts/sync-codex-plugin.sh
    ./scripts/sync-opencode-plugin.sh
+   ./scripts/sync-copilot-plugin.sh
    ./tests/test-plugin-validate.sh
    ./tests/test-docs-consistency.sh
    ./tests/test-structure.sh
    ./tests/test-local-cli-lint.sh
    ./tests/test-codex-sync.sh
    ./tests/test-opencode-sync.sh
+   ./tests/test-copilot-sync.sh
    ./tests/test-codex-runtime.sh
+   ./tests/test-copilot-runtime.sh
    ```
 
 3. **Invoke `/wiki status` in Claude Code** — verify the skill resolves and shows the hub status table
@@ -51,11 +56,13 @@ Standard process for testing and shipping a new version of the llm-wiki plugin.
    - Load via: `"instructions": ["plugins/llm-wiki-opencode/skills/wiki-manager/SKILL.md"]` in `opencode.json`
    - Verify web search works with `OPENCODE_ENABLE_EXA=1`
 
-6. **Test the changed feature** — whatever was added/fixed in this release:
+6. **Verify GitHub Copilot plugin** — install `wiki@llm-wiki` from the marketplace in Copilot CLI or VS Code, then invoke `/wiki:query` and one write workflow. Review and trust hooks separately before validating redacted session capture.
+
+7. **Test the changed feature** — whatever was added/fixed in this release:
    - Invoke the relevant `/wiki:*` subcommand
    - Confirm expected behavior, no errors
 
-6. **Spot-check routing** (if routing changed):
+8. **Spot-check routing** (if routing changed):
    - `/wiki <url>` → should route to ingest
    - `/wiki what is X?` → should route to query
    - `/wiki research Y` → should route to research

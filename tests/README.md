@@ -59,6 +59,9 @@ No LLM calls. Validates wiki file structure, default `schema.md`, frontmatter sc
   Pi/DS4 launcher remain read-only and synchronized from one canonical protocol
 - OpenCode: full and query packages remain generated and within static budgets;
   live provider/model behavior is best effort
+- GitHub Copilot: generated Agent Plugin preserves canonical command parity,
+  copied references, read-only query behavior, cross-platform hooks, and
+  static package budgets; CLI install remains a Preview manual smoke
 
 ### Defect fixtures
 
@@ -98,7 +101,7 @@ Copy `tests/ci/plugin-tests.yml` to `.github/workflows/` to enable:
 
 - Structural tests run when plugin, profile, benchmark, script, or docs inputs change
 - Static token budgets and benchmark protocol tests run on every push
-- Codex/OpenCode mirrors and the portable query profile are regenerated and checked
+- Codex/OpenCode/Copilot mirrors and the portable query profile are regenerated and checked
 - Behavioral evals run on PRs only (requires `ANTHROPIC_API_KEY` secret)
 
 ## Fixtures

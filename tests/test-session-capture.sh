@@ -78,6 +78,37 @@ else
   log_fail "session disable makes --if-enabled hook no-op" "created disabled session state"
 fi
 
+copilot_hub="$tmpdir/copilot-wiki"
+mkdir -p "$copilot_hub/topics"
+printf '# Hub\n' > "$copilot_hub/_index.md"
+printf '# Hub Log\n' > "$copilot_hub/log.md"
+printf '{"wikis":{}}\n' > "$copilot_hub/wikis.json"
+"$SESSION" --hub "$copilot_hub" enable --mode balanced >/dev/null
+copilot_output="$(printf '{"session_id":"copilot-session","hook_event_name":"UserPromptSubmit","cwd":"%s","prompt":"default should be on"}' "$PWD" | "$SESSION" --hub "$copilot_hub" hook --harness copilot --if-enabled --suppress-output)"
+if [ -z "$copilot_output" ] \
+  && [ -f "$copilot_hub/.sessions/state/copilot/copilot-session.json" ] \
+  && "$SESSION" --hub "$copilot_hub" feedback list --json | grep -q 'copilot:copilot-session'; then
+  log_pass "Copilot UserPromptSubmit captures feedback without context output"
+else
+  log_fail "Copilot UserPromptSubmit capture-only behavior" "$copilot_output"
+fi
+printf '{"session_id":"copilot-session","hook_event_name":"PreCompact","cwd":"%s"}' "$PWD" \
+  | "$SESSION" --hub "$copilot_hub" hook --harness copilot --if-enabled --suppress-output
+copilot_start="$(printf '{"session_id":"copilot-session","hook_event_name":"SessionStart","cwd":"%s"}' "$PWD" | "$SESSION" --hub "$copilot_hub" hook --harness copilot --if-enabled)"
+if python3 -c 'import json,sys; assert json.load(sys.stdin)["hookSpecificOutput"]["additionalContext"]' <<<"$copilot_start"; then
+  log_pass "Copilot SessionStart emits rehydration context"
+else
+  log_fail "Copilot SessionStart rehydration" "$copilot_start"
+fi
+printf '{"session_id":"copilot-session","hook_event_name":"SessionEnd","cwd":"%s"}' "$PWD" \
+  | "$SESSION" --hub "$copilot_hub" hook --harness copilot --if-enabled --suppress-output --trigger session-end
+copilot_digest="$copilot_hub/.sessions/digests/$(date +%Y)/$(date +%m)/copilot-copilot-session.md"
+if [ -f "$copilot_digest" ] && grep -q 'capture_trigger: "session-end"' "$copilot_digest"; then
+  log_pass "Copilot SessionEnd mapping writes final checkpoint"
+else
+  log_fail "Copilot SessionEnd mapping" "$copilot_digest"
+fi
+
 if "$SESSION" --hub "$hub" enable --mode balanced --tool-events 2 >/dev/null \
   && grep -q '"enabled": true' "$hub/.sessions/config.json" \
   && grep -q '"mode": "balanced"' "$hub/.sessions/config.json"; then

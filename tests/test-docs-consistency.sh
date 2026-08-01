@@ -71,6 +71,7 @@ manifest_paths = [
     root / ".claude-plugin/marketplace.json",
     root / "claude-plugin/.claude-plugin/plugin.json",
     root / "plugins/llm-wiki/.codex-plugin/plugin.json",
+    root / "plugins/llm-wiki-copilot/plugin.json",
 ]
 versions: dict[str, str] = {}
 for path in manifest_paths:
@@ -92,6 +93,17 @@ for path in manifest_paths:
             fail("marketplace.json top-level version and plugin entry version differ")
 if len(set(versions.values())) > 1:
     fail("manifest versions differ: " + ", ".join(f"{k}={v}" for k, v in versions.items()))
+
+copilot_marketplace = root / ".github/plugin/marketplace.json"
+if not copilot_marketplace.exists():
+    fail("missing Copilot marketplace: .github/plugin/marketplace.json")
+else:
+    data = json.loads(copilot_marketplace.read_text(encoding="utf-8"))
+    plugins = data.get("plugins", [])
+    if len(plugins) != 1 or plugins[0].get("source") != "./plugins/llm-wiki-copilot":
+        fail("Copilot marketplace must point at ./plugins/llm-wiki-copilot")
+    elif plugins[0].get("version") != next(iter(versions.values()), ""):
+        fail("Copilot marketplace plugin version differs from distribution manifests")
 
 
 # REFERENCE_NAMES is intentionally duplicated across validation loops. It should

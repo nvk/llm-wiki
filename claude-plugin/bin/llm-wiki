@@ -1423,7 +1423,7 @@ def check_links(ctx: LintContext) -> None:
             rel = doc.path.resolve().relative_to(ctx.root)
         except ValueError:
             continue
-        if rel.parts[0] not in {"wiki", "inventory"}:
+        if rel.parts[0] not in {"wiki", "inventory", "raw"}:
             continue
         full_text = doc.path.read_text(encoding="utf-8")
         for link in extract_markdown_links(full_text):
@@ -1471,6 +1471,18 @@ def check_source_provenance(ctx: LintContext) -> None:
                         ctx.issue(
                             "warning",
                             f"Inventory source reference does not resolve: {source}.",
+                            doc.path,
+                        )
+        elif rel.parts[0] == "raw":
+            source = doc.frontmatter.get("source")
+            if source:
+                source_str = str(source)
+                if source_str.upper() != "MANUAL" and not source_str.startswith(("http://", "https://")):
+                    resolved = resolve_source_ref(ctx, doc.path, source_str, wiki_source=False)
+                    if resolved is None:
+                        ctx.issue(
+                            "warning",
+                            f"Raw source reference does not resolve: {source}.",
                             doc.path,
                         )
 

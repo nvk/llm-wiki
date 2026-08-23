@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "llm-wiki",
-  "version": "0.24.2",
+  "version": "0.24.3",
   "description": "LLM-compiled knowledge base plugin with Project Knowledge Checkpoints Export, personal specialist skills, trusted adapters, Idea-to-Project workflows, compact queries, inventory, datasets, audits, sessions, research, and outputs.",
   "owner": {
     "name": "nvk"
@@ -10,7 +10,7 @@
     {
       "name": "wiki",
       "description": "LLM-compiled knowledge base with Project Knowledge Checkpoints Export, personal specialist skills, trusted adapters, Idea shaping and Project promotion, compact queries, ingestion, inventory, datasets, audits, sessions, and outputs.",
-      "version": "0.24.2",
+      "version": "0.24.3",
       "author": {
         "name": "nvk"
       },

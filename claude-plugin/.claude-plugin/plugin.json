@@ -1,7 +1,7 @@
 {
   "name": "wiki",
   "description": "LLM-compiled knowledge base with Project Knowledge Checkpoints Export, personal specialist skills, trusted adapters, Idea-to-Project workflows, compact queries, inventory, datasets, ingestion, audits, sessions, research, and outputs.",
-  "version": "0.24.2",
+  "version": "0.24.3",
   "author": {
     "name": "nvk"
   },

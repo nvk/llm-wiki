@@ -1,6 +1,6 @@
 ---
 description: "Remove user-selected data or a source from wiki-controlled local files, including archives and session context. Dry-run first, apply explicitly, then verify."
-argument-hint: "[<source-path>] [--everywhere] [--dry-run|--apply] [--recompile] [--wiki <name>] [--local]"
+argument-hint: "[<source-path>] [--everywhere] [--dry-run|--apply] [--remove-from-logs] [--recompile] [--wiki <name>] [--local]"
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(ls:*), Bash(wc:*), Bash(date:*), Bash(rm:*), Bash(grep:*), Bash(scripts/llm-wiki:*)
 ---
 
@@ -50,6 +50,18 @@ matching path names are renamed. Binary matches make the result incomplete
 unless the user explicitly adds `--delete-binary-matches`, which deletes each
 matched binary file as a whole.
 
+By default, a matching value inside `log.md` is rewritten with `[RETRACTED]`
+like other text, preserving the surrounding history. Add
+`--remove-from-logs` when that surrounding entry may itself reveal sensitive
+or private context. The dry-run reports matching log entries; `--apply`
+deletes each complete matching structured entry, or a matching standalone line
+in a legacy log, while retaining unrelated entries. This flag is an explicit
+privacy exception to the normal append-only log rule.
+
+```bash
+pbpaste | scripts/llm-wiki retract --stdin --everywhere --remove-from-logs --apply
+```
+
 `--everywhere` covers the configured hub, registered external wiki roots,
 active and archived topic wikis, hub sessions, and the current project's
 `.wiki/` when present. A positional root, `--wiki`, or `--local` intentionally
@@ -92,12 +104,15 @@ Run this phase only with `--apply`.
 1. Delete the selected raw source.
 2. Remove its frontmatter, link, citation, index, output, and session
    references.
-3. Delete claims supported only by that source. Rewrite a claim only when the
+3. With `--remove-from-logs`, remove complete topic or hub `log.md` entries
+   containing the source path, filename, or another selected sensitive
+   identifier. Preserve unrelated entries.
+4. Delete claims supported only by that source. Rewrite a claim only when the
    remaining sources independently support it.
-4. Update derived indexes and counts.
-5. If `--recompile` is present, resynthesize affected articles only from their
+5. Update derived indexes and counts.
+6. If `--recompile` is present, resynthesize affected articles only from their
    remaining sources.
-6. Append a generic operation entry to the topic and hub logs. Do not include
+7. Append a generic operation entry to the topic and hub logs. Do not include
    source content or a freeform user explanation in the log.
 
 Raw immutability and append-only conventions have an explicit exception for

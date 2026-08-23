@@ -243,7 +243,7 @@ Additionally includes:
 
 ## log.md Format
 
-Append-only chronological activity log. Every wiki operation appends an entry. Never edit or delete existing entries. **Always open for append, never read-modify-write** — this makes concurrent writes safe (lines from multiple sessions interleave without corruption). Format is grep-friendly:
+Append-only chronological activity log. Every wiki operation appends an entry. Never edit or delete existing entries during normal workflows. The sole exception is an explicit user-directed privacy retraction with `scripts/llm-wiki retract --remove-from-logs`, which atomically removes complete matching entries while preserving unrelated history. **Otherwise always open for append, never read-modify-write** — this makes concurrent writes safe (lines from multiple sessions interleave without corruption). Format is grep-friendly:
 
 ```markdown
 # Wiki Activity Log
@@ -261,7 +261,7 @@ Append-only chronological activity log. Every wiki operation appends an entry. N
 
 Each entry: `## [YYYY-MM-DD] operation | Description`
 
-Operations: `init`, `ingest`, `ingest-collection`, `compile`, `query`, `lint`, `research`, `output`, `refresh`, `librarian`, `audit`, `plan`, `idea`, `project`, `inventory`, `dataset`, `schema`, `archive`, `ll`, `assess`
+Operations: `init`, `ingest`, `ingest-collection`, `compile`, `query`, `lint`, `research`, `output`, `refresh`, `librarian`, `audit`, `plan`, `idea`, `project`, `inventory`, `dataset`, `schema`, `archive`, `retract`, `ll`, `assess`
 
 Useful for: `grep "^## \[" log.md | tail -10` to see recent activity.
 

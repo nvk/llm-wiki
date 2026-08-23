@@ -108,17 +108,56 @@ else
 fi
 
 log_secret='retract'
-printf '\nretract\n' >> "$hub/log.md"
+printf '\n## [2026-08-22] note | retract\ndefault-history-marker\n' >> "$hub/log.md"
 set +e
 log_output="$(printf '%s' "$log_secret" | "$CLI" retract "$hub" --stdin --apply --json 2>&1)"
 log_rc=$?
 set -e
 if [ "$log_rc" -eq 0 ] \
   && ! grep -Fq "$log_secret" "$hub/log.md" \
+  && grep -Fq 'default-history-marker' "$hub/log.md" \
+  && grep -Fq '[RETRACTED]' "$hub/log.md" \
   && python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["status"] == "verified"' <<<"$log_output"; then
-  log_pass "operation logging does not reintroduce the selected value"
+  log_pass "default log redaction preserves entry context and does not reintroduce the value"
 else
-  log_fail "operation logging does not reintroduce the selected value" "$log_output"
+  log_fail "default log redaction preserves entry context and does not reintroduce the value" "$log_output"
+fi
+
+privacy_secret='SensitivePrivacyReference77'
+cat >> "$hub/log.md" <<EOF
+
+## [2026-08-22] ingest | imported $privacy_secret
+private-context-marker
+
+## [2026-08-22] compile | unrelated source retained
+keep-context-marker
+EOF
+set +e
+privacy_dry_output="$(printf '%s' "$privacy_secret" | "$CLI" retract "$hub" --stdin --remove-from-logs --json 2>&1)"
+privacy_dry_rc=$?
+set -e
+if [ "$privacy_dry_rc" -eq 0 ] \
+  && grep -Fq "$privacy_secret" "$hub/log.md" \
+  && python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["status"] == "dry-run"; assert d["log_entries_matched"] == 1; assert d["log_entries_removed"] == 0; assert d["remove_from_logs"] is True' <<<"$privacy_dry_output" \
+  && ! grep -Fq "$privacy_secret" <<<"$privacy_dry_output"; then
+  log_pass "--remove-from-logs dry-run counts matching entries without disclosure"
+else
+  log_fail "--remove-from-logs dry-run counts matching entries without disclosure" "$privacy_dry_output"
+fi
+
+set +e
+privacy_apply_output="$(printf '%s' "$privacy_secret" | "$CLI" retract "$hub" --stdin --remove-from-logs --apply --json 2>&1)"
+privacy_apply_rc=$?
+set -e
+if [ "$privacy_apply_rc" -eq 0 ] \
+  && ! grep -Fq "$privacy_secret" "$hub/log.md" \
+  && ! grep -Fq 'private-context-marker' "$hub/log.md" \
+  && grep -Fq 'keep-context-marker' "$hub/log.md" \
+  && python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["status"] == "verified"; assert d["log_entries_matched"] == 1; assert d["log_entries_removed"] == 1; assert d["remaining_matches"] == 0' <<<"$privacy_apply_output" \
+  && ! grep -Fq "$privacy_secret" <<<"$privacy_apply_output"; then
+  log_pass "--remove-from-logs removes whole matching entries and keeps unrelated history"
+else
+  log_fail "--remove-from-logs removes whole matching entries and keeps unrelated history" "$privacy_apply_output"
 fi
 
 mkdir -p "$hub/.git/objects"

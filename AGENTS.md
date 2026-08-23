@@ -123,7 +123,7 @@ Same structure as a topic wiki but at `<project>/.wiki/`. Add `.wiki/` to `.giti
 `HUB/topics/.archive/<slug>/`, remain structurally maintainable, and stay out of
 normal query/compile/research/collect/output context unless explicitly included. Deep
 queries may surface archived index matches separately.
-11. **Activity log.** Append every operation to `log.md`. Format: `## [YYYY-MM-DD] operation | Description`. Never edit existing entries.
+11. **Activity log.** Append every operation to `log.md`. Format: `## [YYYY-MM-DD] operation | Description`. Never edit existing entries except during an explicit user-directed privacy retraction with `scripts/llm-wiki retract --remove-from-logs`.
 12. **Session capture is operational memory.** Automated harness-session capture lives under `HUB/.sessions/` or `.wiki/.sessions/`. It can preserve redacted checkpoints automatically, but topic wiki promotion is explicit and user-directed. Feedback candidates live under `.sessions/feedback/` and capture only high-signal corrections, preferences, approvals, or plan acceptance; generic acknowledgements are ignored.
 13. **Private adapters are content-free external tools.** Executable
 registrations live in the machine-local `~/.config/llm-wiki/adapters.json`,
@@ -370,7 +370,7 @@ asks for archived content or structural maintenance.
 ## [YYYY-MM-DD] operation | Description
 ```
 
-Operations: `init`, `ingest`, `ingest-collection`, `compile`, `query`, `lint`, `research`, `thesis`, `collect`, `output`, `assess`, `refresh`, `librarian`, `audit`, `plan`, `idea`, `project`, `inventory`, `dataset`, `schema`, `archive`, `specialist`, `ll`
+Operations: `init`, `ingest`, `ingest-collection`, `compile`, `query`, `lint`, `research`, `thesis`, `collect`, `output`, `assess`, `refresh`, `librarian`, `audit`, `plan`, `idea`, `project`, `inventory`, `dataset`, `schema`, `archive`, `retract`, `specialist`, `ll`
 
 ## Operations
 
@@ -722,6 +722,9 @@ context, which cannot veto it. Never put a sensitive literal in chat or command
 arguments; use hidden input or `--stdin` with `scripts/llm-wiki retract`. It
 dry-runs by default; `--everywhere --apply` covers registered wikis, archives,
 and sessions, then verifies. Report technical failures and scan boundaries.
+By default, matches in `log.md` are replaced in place; add
+`--remove-from-logs` to remove complete matching log entries when their
+surrounding context is sensitive. Preserve unrelated log history.
 
 For a source path, map references, delete the raw source and unsupported
 derived claims, update indexes, write only a generic log entry, optionally

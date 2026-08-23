@@ -310,7 +310,7 @@ See `references/research-infrastructure.md` § Agent Prompt Templates for exampl
 
 ## Activity Log
 
-Every wiki operation appends to `log.md` in the wiki root. Format: `## [YYYY-MM-DD] operation | Description`. See [references/wiki-structure.md](references/wiki-structure.md) for full format. Never edit or delete existing log entries — append only.
+Every wiki operation appends to `log.md` in the wiki root. Format: `## [YYYY-MM-DD] operation | Description`. See [references/wiki-structure.md](references/wiki-structure.md) for full format. Never edit or delete existing log entries except during an explicit user-directed retraction with `--remove-from-logs`.
 
 ## Confidence Scoring
 
@@ -367,7 +367,7 @@ Automatically run a quick structural check when any of these triggers occur:
 Multiple Claude Code sessions can safely read and write to the same wiki simultaneously. No locks are needed.
 
 - **Indexes** are derived from the actual files on disk. If two sessions write articles at the same time, the next read rebuilds the index from whatever files exist. Both rebuilds converge to the same correct result.
-- **log.md** is append-only with small atomic writes. Concurrent appends are safe.
+- **log.md** is append-only with small atomic writes. Concurrent appends are safe. The explicit privacy-retraction exception rewrites the file atomically and should not run concurrently with other wiki writes.
 - **Article/source files** are written independently. Two sessions creating different files never conflict. Two sessions editing the same file is unlikely and handled by last-write-wins (acceptable for a wiki — the content is always rebuildable from raw sources).
 
 See [references/indexing.md](references/indexing.md) for the Derived Index Protocol.

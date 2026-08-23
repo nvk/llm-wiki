@@ -2527,6 +2527,7 @@ def restore_topic(hub: Path, data: dict[str, Any], slug: str) -> int:
 
 RETRACTED_MARKER = "[RETRACTED]"
 RETRACT_SKIP_NAMES = {".git", ".hg", ".svn"}
+RETRACT_LOG_ENTRY_HEADER = re.compile(rb"^## \[\d{4}-\d{2}-\d{2}\] ")
 
 
 @dataclass
@@ -2534,6 +2535,7 @@ class RetractScan:
     files_scanned: int
     text_matches: list[tuple[Path, int]]
     binary_matches: list[tuple[Path, int]]
+    log_entries_matched: int
     name_matches: list[tuple[Path, str]]
     symlink_matches: list[Path]
     skipped_control_paths: list[Path]
@@ -2652,11 +2654,44 @@ def sanitized_error(exc: BaseException, patterns: list[str]) -> str:
     return sanitized_text(str(exc), patterns)
 
 
+def without_matching_log_entries(data: bytes, patterns: list[bytes]) -> tuple[bytes, int]:
+    """Remove structured log entries, or legacy standalone lines, containing a match."""
+    kept: list[bytes] = []
+    current_entry: list[bytes] = []
+    removed = 0
+
+    def flush_entry() -> None:
+        nonlocal removed
+        if not current_entry:
+            return
+        entry = b"".join(current_entry)
+        if any(pattern in entry for pattern in patterns):
+            removed += 1
+        else:
+            kept.extend(current_entry)
+        current_entry.clear()
+
+    for line in data.splitlines(keepends=True):
+        if RETRACT_LOG_ENTRY_HEADER.match(line):
+            flush_entry()
+            current_entry.append(line)
+        elif current_entry:
+            current_entry.append(line)
+        elif any(pattern in line for pattern in patterns):
+            # Old or hand-written logs may have content outside structured entries.
+            removed += 1
+        else:
+            kept.append(line)
+    flush_entry()
+    return b"".join(kept), removed
+
+
 def scan_retract_roots(
     roots: list[Path], byte_patterns: list[bytes], name_patterns: list[str]
 ) -> RetractScan:
     text_matches: list[tuple[Path, int]] = []
     binary_matches: list[tuple[Path, int]] = []
+    log_entries_matched = 0
     name_matches: list[tuple[Path, str]] = []
     symlink_matches: list[Path] = []
     skipped_control_paths: list[Path] = []
@@ -2745,11 +2780,15 @@ def scan_retract_roots(
                     is_text = False
                 target = text_matches if is_text else binary_matches
                 target.append((path, occurrences))
+                if is_text and path.name == "log.md":
+                    _, matched_entries = without_matching_log_entries(data, byte_patterns)
+                    log_entries_matched += matched_entries
 
     return RetractScan(
         files_scanned=files_scanned,
         text_matches=text_matches,
         binary_matches=binary_matches,
+        log_entries_matched=log_entries_matched,
         name_matches=name_matches,
         symlink_matches=symlink_matches,
         skipped_control_paths=skipped_control_paths,
@@ -2784,19 +2823,48 @@ def atomic_replace_patterns(path: Path, patterns: list[bytes]) -> int:
     return count
 
 
+def atomic_remove_matching_log_entries(path: Path, patterns: list[bytes]) -> int:
+    data = path.read_bytes()
+    rewritten, removed = without_matching_log_entries(data, patterns)
+    if not removed:
+        return 0
+    mode = path.stat().st_mode & 0o7777
+    fd, temporary_name = tempfile.mkstemp(prefix=".llm-wiki-retract-", dir=path.parent)
+    temporary = Path(temporary_name)
+    try:
+        with os.fdopen(fd, "wb") as handle:
+            handle.write(rewritten)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.chmod(temporary, mode)
+        os.replace(temporary, path)
+    finally:
+        if temporary.exists():
+            temporary.unlink()
+    return removed
+
+
 def apply_retract(
     scan: RetractScan,
     byte_patterns: list[bytes],
     delete_binary_matches: bool,
+    remove_from_logs: bool,
     name_patterns: list[str],
-) -> tuple[int, int, int, list[str]]:
+) -> tuple[int, int, int, int, list[str]]:
     rewritten = 0
     deleted = 0
     renamed = 0
+    log_entries_removed = 0
     errors: list[str] = []
     for path, _ in scan.text_matches:
         try:
-            if atomic_replace_patterns(path, byte_patterns):
+            if remove_from_logs and path.name == "log.md":
+                removed = atomic_remove_matching_log_entries(path, byte_patterns)
+                log_entries_removed += removed
+                changed = bool(removed)
+            else:
+                changed = bool(atomic_replace_patterns(path, byte_patterns))
+            if changed:
                 rewritten += 1
         except OSError as exc:
             errors.append(
@@ -2833,7 +2901,7 @@ def apply_retract(
                 f"could not rename {sanitized_text(str(path), name_patterns)}: "
                 f"{sanitized_error(exc, name_patterns)}"
             )
-    return rewritten, deleted, renamed, errors
+    return rewritten, deleted, renamed, log_entries_removed, errors
 
 
 def retract_report(
@@ -2844,6 +2912,7 @@ def retract_report(
     rewritten: int = 0,
     deleted: int = 0,
     renamed: int = 0,
+    log_entries_removed: int = 0,
     verification: RetractScan | None = None,
 ) -> dict[str, Any]:
     unresolved_binary = len(scan.binary_matches) if not args.delete_binary_matches else 0
@@ -2882,11 +2951,14 @@ def retract_report(
         "files_scanned": scan.files_scanned,
         "text_files_matched": len(scan.text_matches),
         "binary_files_matched": len(scan.binary_matches),
+        "log_entries_matched": scan.log_entries_matched,
         "path_names_matched": len(scan.name_matches),
         "symlink_targets_matched": len(scan.symlink_matches),
         "files_rewritten": rewritten,
         "binary_files_deleted": deleted,
+        "log_entries_removed": log_entries_removed,
         "paths_renamed": renamed,
+        "remove_from_logs": args.remove_from_logs,
         "remaining_matches": verification_matches if verification is not None else None,
         "skipped_version_control_paths": len(scan.skipped_control_paths),
         "matched_paths": sorted(matched_paths),
@@ -2902,6 +2974,7 @@ def print_retract_report(report: dict[str, Any]) -> None:
         "Matches: "
         f"{report['text_files_matched']} text files, "
         f"{report['binary_files_matched']} binary files, "
+        f"{report['log_entries_matched']} log entries, "
         f"{report['path_names_matched']} path names, "
         f"{report['symlink_targets_matched']} symlink targets"
     )
@@ -2910,6 +2983,7 @@ def print_retract_report(report: dict[str, Any]) -> None:
             "Applied: "
             f"{report['files_rewritten']} files rewritten, "
             f"{report['binary_files_deleted']} binary files deleted, "
+            f"{report['log_entries_removed']} log entries removed, "
             f"{report['paths_renamed']} paths renamed"
         )
         print(f"Remaining matches: {report['remaining_matches']}")
@@ -2938,11 +3012,15 @@ def run_retract(args: argparse.Namespace) -> int:
     except SystemExit as exc:
         raise SystemExit(sanitized_text(str(exc), name_patterns)) from exc
     scan = scan_retract_roots(roots, byte_patterns, name_patterns)
-    rewritten = deleted = renamed = 0
+    rewritten = deleted = renamed = log_entries_removed = 0
     verification: RetractScan | None = None
     if args.apply:
-        rewritten, deleted, renamed, apply_errors = apply_retract(
-            scan, byte_patterns, args.delete_binary_matches, name_patterns
+        rewritten, deleted, renamed, log_entries_removed, apply_errors = apply_retract(
+            scan,
+            byte_patterns,
+            args.delete_binary_matches,
+            args.remove_from_logs,
+            name_patterns,
         )
         scan.errors.extend(apply_errors)
         if rewritten or deleted or renamed:
@@ -2955,7 +3033,12 @@ def run_retract(args: argparse.Namespace) -> int:
                     )
                     log_path = root / "log.md"
                     if log_path.exists():
-                        atomic_replace_patterns(log_path, byte_patterns)
+                        if args.remove_from_logs:
+                            log_entries_removed += atomic_remove_matching_log_entries(
+                                log_path, byte_patterns
+                            )
+                        else:
+                            atomic_replace_patterns(log_path, byte_patterns)
                 except OSError as exc:
                     scan.errors.append(
                         "could not append operation log at "
@@ -2971,6 +3054,7 @@ def run_retract(args: argparse.Namespace) -> int:
         rewritten=rewritten,
         deleted=deleted,
         renamed=renamed,
+        log_entries_removed=log_entries_removed,
         verification=verification,
     )
     if args.json:
@@ -5616,6 +5700,14 @@ def build_parser() -> argparse.ArgumentParser:
         "--delete-binary-matches",
         action="store_true",
         help="Delete whole binary files containing a match; otherwise report them as unresolved.",
+    )
+    retract.add_argument(
+        "--remove-from-logs",
+        action="store_true",
+        help=(
+            "Remove complete matching entries from log.md files instead of replacing "
+            "the selected value inside those entries."
+        ),
     )
     retract.add_argument("--json", action="store_true", help="Print a machine-readable report.")
     retract.set_defaults(func=run_retract)

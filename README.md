@@ -639,7 +639,7 @@ for the storage layout, privacy defaults, capture modes, and adapter contract.
 | `/wiki:project new <slug> "goal"` | Group related outputs under `output/projects/<slug>/` with a plain `WHY.md` rationale |
 | `/wiki:project list\|show\|add\|archive` | Manage output project folders without duplicating project state into frontmatter |
 | `/wiki:retract [<source-path>]` | User-authoritative removal of a source and its downstream wiki references, including selected archives and sessions |
-| `scripts/llm-wiki retract --everywhere [--apply]` | Secret-safe local value scan: hidden/stdin input, common encoded forms, dry-run first, then apply and verify |
+| `scripts/llm-wiki retract --everywhere [--apply] [--remove-from-logs]` | Secret-safe local value scan: hidden/stdin input, common encoded forms, optional whole-entry log removal, then verification |
 | `/wiki:ll` | Extract lessons learned from the current session into the wiki |
 | `/wiki:ll --dry-run` | Preview extracted lessons without writing |
 | `/wiki:ll --rules` | Also suggest CLAUDE.md / AGENTS.md rule additions |
@@ -736,7 +736,7 @@ focused. The multi-wiki peek finds overlap across topics when relevant.
 - **Dual-linking** — both `[[wikilinks]]` (Obsidian) and standard markdown links on every cross-reference. Works everywhere.
 - **Confidence scoring** — articles rated high/medium/low based on source quality and corroboration.
 - **Structural guardian** — auto-checks wiki integrity after operations, fixes trivial issues silently.
-- **Activity log** — `log.md` tracks every operation, append-only, grep-friendly.
+- **Activity log** — `log.md` tracks every operation, append-only and grep-friendly, with an explicit whole-entry privacy-retraction option.
 - **Opinionated inventory** — durable tracking gets records; one-off sources stay
   ingest/query; large row-like data becomes datasets or collection ingests. Big
   pivots start with a sample table before records are written.

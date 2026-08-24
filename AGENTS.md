@@ -211,7 +211,7 @@ established wikis and copy only the useful proposal parts into `schema.md`.
 ```yaml
 ---
 title: "Title"
-source: "URL or filepath or MANUAL"
+source: "URL, filepath, MANUAL, or provenance label such as session"
 type: articles|papers|repos|notes|data
 ingested: YYYY-MM-DD
 tags: [tag1, tag2]
@@ -854,7 +854,7 @@ Health checks with auto-fix capability. Lint **is** the migration path — there
   path/status drift. Normal lint reports archived topics as skipped;
   `--include-archived` or `--archived-only` structurally maintains them.
 
-**Checks**: structure integrity, frontmatter validity (plus legacy key/value aliases C13), canonical placement of raw/wiki files (C11), unknown-file quarantine for raw/wiki/inventory/datasets/root (C12), index consistency, link integrity, source provenance (dangling refs, unresolved retraction markers), tag hygiene, coverage, project `WHY.md` presence (C8a), project staleness via source chain (C8b), legacy `_project.md` migration to `WHY.md` (C8c), project candidates (C9), inventory migration candidates (C16), dataset migration candidates (C17), archive registry drift and active/archive collisions (C19), deep fact-checking (optional).
+**Checks**: structure integrity, frontmatter validity (plus legacy key/value aliases C13), canonical placement of raw/wiki files (C11), unknown-file quarantine for raw/wiki/inventory/datasets/root (C12), index consistency, link integrity, source provenance (dangling refs, unresolved explicit local raw-source paths, unresolved retraction markers), tag hygiene, coverage, project `WHY.md` presence (C8a), project staleness via source chain (C8b), legacy `_project.md` migration to `WHY.md` (C8c), project candidates (C9), inventory migration candidates (C16), dataset migration candidates (C17), archive registry drift and active/archive collisions (C19), deep fact-checking (optional).
 
 **Auto-fix** (`--fix`): rewrite legacy frontmatter keys/values to canonical (C13), move misplaced raw/wiki files to their canonical directory (C11), quarantine unknown files to `inbox/.unknown` (C12), migrate legacy `_project.md` to `WHY.md` (C8c), add a default human-owned `schema.md` in advisory mode when missing, repair missing indexes inside existing inventory/dataset layers (C16/C17), repair unambiguous archive registry path/status drift (C19), missing indexes, orphan files, dead index entries, statistics mismatch, missing bidirectional links, empty frontmatter fields, dangling source references, regenerate projects-aware `output/_index.md`. Never auto-delete unknown directories. Never auto-create `WHY.md` with placeholder goals (C8a is warn-only — manufactured rationale is worse than missing). Never create completely absent optional inventory or dataset trees just to populate placeholders. Never auto-move files into projects (C9 is human-authored via `/wiki:project`). Never auto-migrate output artifacts into inventory or dataset records (C16/C17 are explicit via `/wiki:inventory migrate-output --apply` and `/wiki:dataset migrate-output --apply`). Never move topics into or out of archive during lint; archive/restore is explicit. On slug collisions during a placement move, skip and warn.
 

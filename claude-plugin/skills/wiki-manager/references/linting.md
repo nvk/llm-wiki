@@ -102,6 +102,8 @@ There is no `/wiki:migrate` command and there should never be one. Lint rules **
 
 - [ ] All markdown links `[text](path)` in wiki articles and inventory records
   resolve to existing local files when they are local paths
+- [ ] Do not apply this check to raw source bodies. Imported Markdown may retain
+  relative links whose targets live only in the upstream source collection.
 - [ ] All "See Also" links are bidirectional (if A→B, then B→A)
 - [ ] All "Sources" links in wiki articles point to existing raw files. Links to paths with spaces should use angle-bracket markdown destinations, e.g. `[Title](<../../raw/articles/File Name.md>)`.
 
@@ -112,6 +114,12 @@ There is no `/wiki:migrate` command and there should never be one. Lint rules **
   existing files under `raw/`, `wiki/`, `output/`, `datasets/`, or `inventory/`.
   External URLs are allowed. Inventory provenance is operational state and must
   not be treated as factual evidence for compile/query/audit verdicts.
+- [ ] Explicit local paths in a raw source's scalar `source:` field resolve to
+  an existing file or directory. Treat absolute paths, `file://` URIs,
+  `./`/`../`/`~/` paths, and whitespace-free relative paths containing a
+  directory separator as local. Other URI schemes, schemeless web URLs,
+  sentinels such as `MANUAL` or `session`, and free-form provenance labels are
+  not local-path checks.
 - [ ] No `<!--RETRACTED-SOURCE-->` markers remain in article body (these should be resolved via `--recompile` or manual review)
 - [ ] No raw source file is referenced by zero wiki articles (orphan source — suggest compilation or removal)
 - [ ] Exempt raw files tagged `collection-manifest` from orphan-source warnings. A collection manifest is operational provenance for a batch import; child sources should be compiled, but the manifest itself does not need to appear in article `sources:`.

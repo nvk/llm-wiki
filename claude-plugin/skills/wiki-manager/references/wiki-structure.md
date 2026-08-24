@@ -372,7 +372,7 @@ Topic-guide helpers:
 ```markdown
 ---
 title: "Title"
-source: "URL or filepath or MANUAL"
+source: "URL, filepath, MANUAL, or provenance label such as session"
 type: articles|papers|repos|notes|data
 ingested: YYYY-MM-DD
 tags: [tag1, tag2]

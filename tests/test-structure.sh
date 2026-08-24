@@ -452,6 +452,12 @@ if [ -d "$DEFECTS" ]; then
       || log_fail "dangling-source-ref: no dangling ref" "fixture broken"
   }
 
+  [ -d "$DEFECTS/raw-source-unresolved" ] && {
+    grep -q "source: ../../../research/nonexistent-original.pdf" "$DEFECTS/raw-source-unresolved/raw/papers/2026-01-01-sample-paper.md" 2>/dev/null \
+      && log_pass "raw-source-unresolved: C4b defect present" \
+      || log_fail "raw-source-unresolved: no unresolved raw source path" "fixture broken"
+  }
+
   [ -d "$DEFECTS/retracted-marker" ] && {
     grep -q "RETRACTED-SOURCE" "$DEFECTS/retracted-marker/wiki/concepts/sample-concept.md" 2>/dev/null \
       && log_pass "retracted-marker: C4b defect present" \

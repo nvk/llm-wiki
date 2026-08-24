@@ -284,6 +284,34 @@ expect_failure_contains \
   "Invalid type" \
   "$CLI" lint "$SCRIPT_DIR/fixtures/defects/bad-frontmatter"
 
+expect_failure_contains \
+  "explicit unresolved raw source path fails local lint" \
+  "Raw source reference does not resolve" \
+  "$CLI" lint "$SCRIPT_DIR/fixtures/defects/raw-source-unresolved"
+
+raw_source_compat="$tmpdir/raw-source-compat"
+mkdir "$raw_source_compat"
+cp -R "$GOLDEN/." "$raw_source_compat/"
+mkdir "$tmpdir/local-source-repository"
+mkdir "$tmpdir/local source files"
+printf '# Original source\n' > "$tmpdir/local source files/original.md"
+sed -i.bak 's|^source: https://example.com/testing-patterns$|source: session|' \
+  "$raw_source_compat/raw/articles/2026-01-01-sample-article.md"
+sed -i.bak 's|^source: https://example.com/eval-frameworks$|source: s3://example-bucket/source.md|' \
+  "$raw_source_compat/raw/articles/2026-01-02-second-article.md"
+sed -i.bak "s|^source: https://example.com/title-cased-source$|source: ../../../local source files/original.md|" \
+  "$raw_source_compat/raw/articles/2026-01-03-Title Cased Source.md"
+sed -i.bak "s|^source: https://example.com/eval-methodology$|source: file://$tmpdir/local-source-repository|" \
+  "$raw_source_compat/raw/papers/2026-01-01-sample-paper.md"
+rm -f "$raw_source_compat"/raw/articles/*.bak "$raw_source_compat"/raw/papers/*.bak
+cat >> "$raw_source_compat/raw/articles/2026-01-01-sample-article.md" <<'EOF'
+
+Upstream navigation remains source content: [contributor guide](docs/CONTRIBUTING.md)
+EOF
+expect_success \
+  "raw provenance sentinels, URIs, valid paths, directories, and upstream links stay compatible" \
+  "$CLI" lint "$raw_source_compat"
+
 ideas_wiki="$tmpdir/ideas-wiki"
 mkdir "$ideas_wiki"
 cp -R "$GOLDEN/." "$ideas_wiki/"

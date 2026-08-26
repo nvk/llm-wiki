@@ -55,10 +55,12 @@ def git_commit(root: Path) -> str:
 
 
 def display_path(path: Path, root: Path) -> str:
+    # Reports are compared across machines, so paths in them must not depend on
+    # the local separator.
     try:
-        return str(path.relative_to(root))
+        return path.relative_to(root).as_posix()
     except ValueError:
-        return str(path)
+        return path.as_posix()
 
 
 def utc_now() -> str:
@@ -232,7 +234,10 @@ def load_cases(path: Path, selected: set[str] | None = None) -> list[dict[str, A
 def tree_digest(root: Path) -> str:
     digest = hashlib.sha256()
     for path in sorted(p for p in root.rglob("*") if p.is_file()):
-        digest.update(str(path.relative_to(root)).encode())
+        # as_posix keeps the corpus digest identical on Windows and POSIX, so
+        # the same_case_corpus/same_fixture_corpus gates stay meaningful when
+        # two machines exchange reports.
+        digest.update(path.relative_to(root).as_posix().encode())
         digest.update(b"\0")
         digest.update(path.read_bytes())
         digest.update(b"\0")
@@ -241,6 +246,24 @@ def tree_digest(root: Path) -> str:
 
 def file_digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def resolve_command(command: str) -> list[str]:
+    """Split a runtime command and resolve its executable through PATHEXT.
+
+    Windows `CreateProcess` does not apply `PATHEXT`, so a bare `codex` or
+    `claude` raises `FileNotFoundError` even though the launcher is on `PATH`
+    as `codex.cmd` / `claude.cmd`. `shutil.which` applies it. Keep the original
+    word when it does not resolve, so the resulting error still names what was
+    asked for.
+    """
+    argv = shlex.split(command)
+    if not argv:
+        return argv
+    resolved = shutil.which(argv[0])
+    if resolved:
+        argv[0] = resolved
+    return argv
 
 
 class AppServerError(RuntimeError):
@@ -262,7 +285,7 @@ class AppServer:
         self._pending: list[Event] = []
         self._stderr: list[str] = []
         self.process = subprocess.Popen(
-            shlex.split(command),
+            resolve_command(command),
             stdin=subprocess.PIPE,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
@@ -888,7 +911,7 @@ def parse_claude_stream(
             continue
         path = Path(file_info["filePath"])
         if path_is_within(path, fixture_root):
-            fixture_reads.add(str(path.resolve().relative_to(fixture_root.resolve())))
+            fixture_reads.add(path.resolve().relative_to(fixture_root.resolve()).as_posix())
     output = result.get("result") or ""
     grade = grade_output(case, output)
     grade["fixture_reads"] = len(fixture_reads)
@@ -989,7 +1012,7 @@ def run_claude_benchmark(
                         f"case {case['id']} has no Claude command-route prompt"
                     )
                 command = [
-                    *shlex.split(claude_command),
+                    *resolve_command(claude_command),
                     "-p",
                     prompt,
                     "--plugin-dir",

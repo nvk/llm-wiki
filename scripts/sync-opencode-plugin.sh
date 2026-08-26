@@ -30,27 +30,42 @@ if [ ! -f "$LOCAL_HELPER" ]; then
   exit 1
 fi
 
-if ! command -v rsync >/dev/null 2>&1; then
-  echo "Missing required tool: rsync" >&2
-  exit 1
-fi
-
 mkdir -p "$ROOT/claude-plugin/bin" "$TARGET_PLUGIN/bin"
 cp "$LOCAL_HELPER" "$ROOT/claude-plugin/bin/llm-wiki"
 cp "$LOCAL_HELPER" "$TARGET_PLUGIN/bin/llm-wiki"
 chmod 0755 "$ROOT/claude-plugin/bin/llm-wiki" "$TARGET_PLUGIN/bin/llm-wiki"
 
-mkdir -p "$TARGET_PLUGIN/skills"
-# references/ is a symlink into the Claude source — exclude from rsync so it's
-# preserved, and recreate it idempotently below.
-rsync -a --delete \
-  --exclude='references/' \
-  --exclude='references' \
-  "$SOURCE_SKILL/" "$TARGET_SKILL/"
+mkdir -p "$TARGET_PLUGIN/skills" "$TARGET_SKILL"
+# references/ is a symlink into the canonical source. It must never be copied
+# over: copying the source references/ onto its own symlink would write into
+# the canonical tree. Mirror every other entry, then handle the link itself.
+find "$TARGET_SKILL" -mindepth 1 -maxdepth 1 ! -name references -exec rm -rf {} +
+for entry in "$SOURCE_SKILL"/* "$SOURCE_SKILL"/.[!.]*; do
+  [ -e "$entry" ] || continue
+  case "$(basename "$entry")" in
+    references) continue ;;
+  esac
+  cp -R "$entry" "$TARGET_SKILL/"
+done
 
-# Recreate the references symlink (idempotent — works on fresh checkout too).
-rm -rf "$TARGET_SKILL/references"
-ln -s "../../../../claude-plugin/skills/wiki-manager/references" "$TARGET_SKILL/references"
+# Recreate the references symlink only when it is missing or wrong. Rewriting a
+# correct link every run is what breaks checkouts on platforms where ln -s
+# silently produces something other than a symlink (Windows without the
+# privilege to create them), turning a good tree into a dirty one.
+REFERENCES_LINK="../../../../claude-plugin/skills/wiki-manager/references"
+if [ -L "$TARGET_SKILL/references" ] && [ "$(readlink "$TARGET_SKILL/references")" = "$REFERENCES_LINK" ]; then
+  :
+else
+  rm -rf "$TARGET_SKILL/references"
+  ln -s "$REFERENCES_LINK" "$TARGET_SKILL/references" 2>/dev/null || true
+  if [ ! -L "$TARGET_SKILL/references" ]; then
+    rm -rf "$TARGET_SKILL/references"
+    cp -R "$SOURCE_SKILL/references" "$TARGET_SKILL/references"
+    echo "warning: this platform cannot create symlinks; copied references/ instead." >&2
+    echo "         Do not commit that copy. Restore the link with:" >&2
+    echo "         git checkout -- $TARGET_SKILL/references" >&2
+  fi
+fi
 
 # Best-effort OpenCode query preset. It is instruction-only and shares the
 # runtime-neutral query contract, but no provider-specific live model gate is
@@ -75,7 +90,7 @@ from pathlib import Path
 target_skill = Path(sys.argv[1])
 
 skill_path = target_skill / "SKILL.md"
-text = skill_path.read_text()
+text = skill_path.read_text(encoding="utf-8")
 
 frontmatter = """---
 name: wiki-manager
@@ -149,7 +164,7 @@ for old, new in replacements:
         raise SystemExit(f"Expected text not found in {skill_path}: {old[:80]!r}")
     text = text.replace(old, new)
 
-skill_path.write_text(text)
+skill_path.write_text(text, encoding="utf-8", newline="\n")
 
 # references/ is a symlink to claude-plugin/skills/wiki-manager/references and
 # is shared verbatim — no per-file replacements needed. Source references use

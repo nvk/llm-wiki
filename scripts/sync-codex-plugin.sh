@@ -42,11 +42,6 @@ if [ ! -f "$LOCAL_HELPER" ]; then
   exit 1
 fi
 
-if ! command -v rsync >/dev/null 2>&1; then
-  echo "Missing required tool: rsync" >&2
-  exit 1
-fi
-
 # The deterministic helper is shared by every runtime package. The public
 # script remains the source of truth; packaged copies make adapter management
 # available even when the plugin is installed without the full repository.
@@ -61,10 +56,9 @@ mkdir -p "$TARGET_PLUGIN/skills"
 # Codex-only metadata and is recreated below.
 rm -rf "$TARGET_PLUGIN/skills/wiki-manager"
 rm -rf "$TARGET_QUERY"
-rsync -a --delete \
-  --exclude='agents/' \
-  --exclude='agents' \
-  "$SOURCE_SKILL/" "$TARGET_SKILL/"
+rm -rf "$TARGET_SKILL"
+cp -R "$SOURCE_SKILL" "$TARGET_SKILL"
+rm -rf "$TARGET_SKILL/agents"
 
 mkdir -p "$TARGET_SKILL/agents"
 mkdir -p "$TARGET_PLUGIN/hooks"
@@ -179,7 +173,7 @@ for entries in value["hooks"].values():
     for entry in entries:
         for hook in entry["hooks"]:
             hook["command"] = launcher
-path.write_text(json.dumps(value, indent=2) + "\n", encoding="utf-8")
+path.write_text(json.dumps(value, indent=2) + "\n", encoding="utf-8", newline="\n")
 PY
 
 cat > "$TARGET_SKILL/agents/openai.yaml" <<'EOF'
@@ -227,7 +221,7 @@ claude_manifest = Path(sys.argv[2])
 codex_manifest = Path(sys.argv[3])
 
 skill_path = target_skill / "SKILL.md"
-text = skill_path.read_text()
+text = skill_path.read_text(encoding="utf-8")
 
 frontmatter = """---
 name: wiki
@@ -399,14 +393,14 @@ text = replace_section(
 """,
 )
 
-skill_path.write_text(text)
+skill_path.write_text(text, encoding="utf-8", newline="\n")
 
 # references/ is a copied mirror of claude-plugin/skills/wiki-manager/references
 # and is shared verbatim — no per-file replacements needed. Source references
 # use runtime-neutral wording ("the agent") so they read correctly under both.
 
-claude = json.loads(claude_manifest.read_text())
-codex = json.loads(codex_manifest.read_text())
+claude = json.loads(claude_manifest.read_text(encoding="utf-8"))
+codex = json.loads(codex_manifest.read_text(encoding="utf-8"))
 codex["version"] = claude["version"]
 codex["name"] = "wiki"
 codex["license"] = claude.get("license", codex.get("license"))
@@ -451,7 +445,7 @@ idea_prompt = "Capture this rough Idea, research it, shape alternatives, and wai
 if idea_prompt not in prompts:
     prompts.insert(0, idea_prompt)
 interface["defaultPrompt"] = prompts
-codex_manifest.write_text(json.dumps(codex, indent=2) + "\n")
+codex_manifest.write_text(json.dumps(codex, indent=2) + "\n", encoding="utf-8", newline="\n")
 PY
 
 echo "Synced Codex plugin skill from Claude source."

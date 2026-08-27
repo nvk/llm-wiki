@@ -1,6 +1,6 @@
 {
   "name": "wiki",
-  "version": "0.24.3",
+  "version": "0.24.4",
   "description": "LLM-compiled knowledge bases for Codex with personal specialist skills, fuzzy Idea capture, research, shaping, and explicit Project promotion, plus inventory, datasets, source ingestion, compilation, audits, sessions, Project Knowledge Checkpoints Export, and artifact generation.",
   "author": {
     "name": "nvk",

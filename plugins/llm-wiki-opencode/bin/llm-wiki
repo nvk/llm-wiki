@@ -5851,6 +5851,9 @@ def build_parser() -> argparse.ArgumentParser:
 
     adapter_show_parser = adapter_sub.add_parser("show", help="Show one registration.")
     adapter_show_parser.add_argument("adapter_id", help="Registered adapter id.")
+    adapter_show_parser.add_argument(
+        "--json", action="store_true", help="Print JSON (the default output format)."
+    )
 
     adapter_route_parser = adapter_sub.add_parser(
         "route", help="Match an intent and resource against registered adapter routes."

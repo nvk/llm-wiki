@@ -167,8 +167,10 @@ fi
 
 list_output="$("$CLI" adapter list --json)"
 show_output="$("$CLI" adapter show fixture-private)"
+show_json_output="$("$CLI" adapter show fixture-private --json)"
 if python3 -c 'import json,sys; d=json.load(sys.stdin); assert len(d["adapters"]) == 1; assert d["adapters"][0]["id"] == "fixture-private"; assert d["adapters"][0]["route_count"] == 1; assert d["adapters"][0]["remote_resource_count"] == 1' <<<"$list_output" \
   && ! grep -q 'fixture-document' <<<"$list_output" \
+  && [ "$show_output" = "$show_json_output" ] \
   && python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["id"] == "fixture-private"; assert d["env_allow"] == []; assert d["command"][0].endswith("/bin/adapter"); assert d["remote_resources"] == ["fixture-document:synthetic"]; assert d["routes"][0]["id"] == "edit-fixture-document"' <<<"$show_output"; then
   log_pass "list redacts remote identifiers while show preserves machine-local policy"
 else

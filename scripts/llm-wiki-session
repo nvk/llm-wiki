@@ -19,6 +19,7 @@ import re
 import subprocess
 import sys
 import textwrap
+import time
 import uuid
 from pathlib import Path
 from typing import Any
@@ -219,7 +220,19 @@ def atomic_write(path: Path, text: str) -> None:
     tmp = path.with_name(f".{path.name}.{os.getpid()}.{uuid.uuid4().hex}.tmp")
     try:
         tmp.write_text(text, encoding="utf-8")
-        os.replace(tmp, path)
+        # POSIX rename always succeeds; Windows refuses to replace a file that
+        # another process currently has open, which concurrent hooks reading the
+        # same state file do constantly. The window is short, so retry briefly
+        # rather than losing the write - and still raise if it never clears.
+        deadline = time.monotonic() + 2.0
+        while True:
+            try:
+                os.replace(tmp, path)
+                break
+            except PermissionError:
+                if time.monotonic() >= deadline:
+                    raise
+                time.sleep(0.01)
     finally:
         if tmp.exists():
             try:
@@ -231,7 +244,20 @@ def atomic_write(path: Path, text: str) -> None:
 def read_json(path: Path, default: Any) -> Any:
     if not path.exists():
         return default
-    text = path.read_text(encoding="utf-8")
+    # Windows also refuses to open a file while it is being replaced, so a reader
+    # that meets a writer sees a sharing violation rather than either version of
+    # the file. The window is very short; retry briefly before giving up.
+    deadline = time.monotonic() + 1.0
+    while True:
+        try:
+            text = path.read_text(encoding="utf-8")
+            break
+        except FileNotFoundError:
+            return default
+        except PermissionError:
+            if time.monotonic() >= deadline:
+                return default
+            time.sleep(0.005)
     try:
         return json.loads(text)
     except json.JSONDecodeError:

@@ -106,6 +106,16 @@ def stress(impl, seconds=1.5, nproc=8):
         def payload(i):
             return json.dumps({"w": i, "pad": "x" * (2000 if i % 2 == 0 else 200000)}) + "\n"
 
+        def read_with_retry(target):
+            # Windows cannot open a file mid-replace; a real reader retries, so the
+            # measurement here must too, or it counts the platform, not a lost write.
+            for _ in range(200):
+                try:
+                    return json.loads(target.read_text(encoding="utf-8"))
+                except PermissionError:
+                    time.sleep(0.005)
+            return json.loads(target.read_text(encoding="utf-8"))
+        
         aw = old_atomic_write if impl == "old" else sut.atomic_write
         p = Path(path_s)
         text = payload(int(idx_s))
@@ -118,7 +128,7 @@ def stress(impl, seconds=1.5, nproc=8):
                 repl += 1
                 continue
             try:
-                json.loads(p.read_text(encoding="utf-8"))
+                read_with_retry(p)
             except json.JSONDecodeError:
                 torn += 1
             except FileNotFoundError:

@@ -89,6 +89,22 @@ PROJECT_ROOT="$(cd "$PROJECT_ROOT" && pwd)"
 USER_HOME="$(cd "$USER_HOME" && pwd)"
 USER_CONFIG="$USER_HOME/.codex/config.toml"
 
+# Codex resolves its own home from CODEX_HOME, falling back to the OS home - and
+# on Windows that fallback is USERPROFILE, not HOME. Setting HOME alone therefore
+# leaves every invocation below writing into the real user profile, so
+# --user-home does not isolate anything and the runtime test installs a
+# marketplace and a plugin into the developer's own Codex config. Export
+# CODEX_HOME too, in the form the native binary can read.
+codex_home_for() {
+  local home="$1/.codex"
+  if command -v cygpath >/dev/null 2>&1; then
+    cygpath -w "$home"
+  else
+    printf '%s' "$home"
+  fi
+}
+
+
 MANAGED_BLOCK="$(python3 - "$PLUGIN_KEY" <<'PY'
 import sys
 
@@ -109,7 +125,7 @@ if ! command -v codex >/dev/null 2>&1; then
   exit 1
 fi
 
-if ! HOME="$USER_HOME" codex plugin add --help >/dev/null 2>&1; then
+if ! HOME="$USER_HOME" CODEX_HOME="$(codex_home_for "$USER_HOME")" codex plugin add --help >/dev/null 2>&1; then
   echo "This Codex version does not support non-interactive plugin installation." >&2
   echo "Upgrade Codex, then rerun this helper." >&2
   exit 1
@@ -140,7 +156,7 @@ PY
 )"
 
 if [[ -z "$MARKETPLACE_SOURCE" ]]; then
-  HOME="$USER_HOME" codex plugin marketplace add "$ROOT"
+  HOME="$USER_HOME" CODEX_HOME="$(codex_home_for "$USER_HOME")" codex plugin marketplace add "$ROOT"
 else
   if [[ "$MARKETPLACE_SOURCE" != "$ROOT" ]]; then
     echo "Codex marketplace '${MARKETPLACE_NAME}' already points at:" >&2
@@ -154,7 +170,7 @@ fi
 # `codex plugin add` is the supported materialization path. It copies the
 # plugin into ~/.codex/plugins/cache and writes the supported user-scope enable
 # block. Marketplace registration alone does not install the plugin.
-INSTALL_OUTPUT="$(HOME="$USER_HOME" codex plugin add "$PLUGIN_KEY" --json)"
+INSTALL_OUTPUT="$(HOME="$USER_HOME" CODEX_HOME="$(codex_home_for "$USER_HOME")" codex plugin add "$PLUGIN_KEY" --json)"
 INSTALLED_PATH="$(python3 -c 'import json, sys; print(json.load(sys.stdin)["installedPath"])' <<<"$INSTALL_OUTPUT")"
 TARGET="$USER_CONFIG"
 

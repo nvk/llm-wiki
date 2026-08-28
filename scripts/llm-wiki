@@ -1771,14 +1771,26 @@ def append_lint_log(ctx: LintContext) -> None:
         handle.write(entry)
 
 
+def home_directory() -> Path:
+    """Return the home directory, honouring HOME on every platform.
+
+    ``Path.home()`` consults USERPROFILE on Windows and ignores HOME entirely, so
+    a hub configured as ``~/...`` resolved against a different profile than the
+    one the caller asked for, and every wiki in it was reported missing from the
+    registry. Git honours HOME on Windows; match that.
+    """
+    home = os.environ.get("HOME")
+    return Path(home) if home else Path.home()
+
+
 def expand_leading_tilde(value: str) -> Path:
     windows_path = windows_absolute_path(value)
     if windows_path is not None:
         return windows_path
     if value == "~":
-        return Path.home()
+        return home_directory()
     if value.startswith("~/"):
-        return Path.home() / value[2:]
+        return home_directory() / value[2:]
     return Path(value)
 
 
@@ -1812,7 +1824,7 @@ def initialized_wiki_root(path: Path) -> bool:
 def resolve_hub(args: argparse.Namespace) -> Path:
     if args.hub:
         return expand_leading_tilde(str(args.hub))
-    config = Path.home() / ".config" / "llm-wiki" / "config.json"
+    config = home_directory() / ".config" / "llm-wiki" / "config.json"
     if config.exists():
         try:
             data = json.loads(config.read_text(encoding="utf-8"))
@@ -1840,7 +1852,7 @@ def resolve_hub(args: argparse.Namespace) -> Path:
                 return hub_candidate
         if resolved_candidate:
             return resolved_candidate
-    fallback = Path.home() / "wiki"
+    fallback = home_directory() / "wiki"
     return fallback
 
 
@@ -3748,7 +3760,7 @@ def adapter_config_dir() -> Path:
     override = os.environ.get("LLM_WIKI_CONFIG_DIR")
     if override:
         return expand_leading_tilde(override)
-    return Path.home() / ".config" / "llm-wiki"
+    return home_directory() / ".config" / "llm-wiki"
 
 
 def adapter_registry_path() -> Path:

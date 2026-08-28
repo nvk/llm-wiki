@@ -2091,7 +2091,7 @@ def run_lint(args: argparse.Namespace) -> int:
         else:
             print_text_report(ctx)
         counts = ctx.counts()
-        return 1 if counts["critical"] or counts["warning"] or counts["suggestion"] else 0
+        return lint_exit_code(counts, getattr(args, "fail_on", "suggestion"))
 
     load_documents(ctx)
     fix_legacy_wiki_frontmatter(ctx)
@@ -2114,7 +2114,24 @@ def run_lint(args: argparse.Namespace) -> int:
         print_text_report(ctx)
 
     counts = ctx.counts()
-    return 1 if counts["critical"] or counts["warning"] or counts["suggestion"] else 0
+    return lint_exit_code(counts, getattr(args, "fail_on", "suggestion"))
+
+
+FAIL_ON_LEVELS = ("critical", "warning", "suggestion")
+
+
+def lint_exit_code(counts: dict[str, int], fail_on: str = "suggestion") -> int:
+    """Exit non-zero when a finding at or above ``fail_on`` severity exists.
+
+    The default reproduces the historical behaviour, in which any finding
+    fails. A stricter gate such as ``--fail-on critical`` lets CI block
+    protocol violations without being blocked by advisory findings.
+    """
+    if fail_on in FAIL_ON_LEVELS:
+        threshold = FAIL_ON_LEVELS.index(fail_on)
+    else:
+        threshold = len(FAIL_ON_LEVELS) - 1
+    return 1 if any(counts.get(level) for level in FAIL_ON_LEVELS[: threshold + 1]) else 0
 
 
 def print_json_report(ctx: LintContext) -> None:
@@ -5556,6 +5573,15 @@ def build_parser() -> argparse.ArgumentParser:
         help="Allow linting an explicitly targeted archived wiki.",
     )
     lint.add_argument("--json", action="store_true", help="Print a machine-readable JSON report.")
+    lint.add_argument(
+        "--fail-on",
+        choices=FAIL_ON_LEVELS,
+        default="suggestion",
+        help=(
+            "Lowest severity that makes the command exit non-zero "
+            "(default: suggestion, i.e. any finding)."
+        ),
+    )
     lint.set_defaults(func=run_lint)
 
     archive = subparsers.add_parser(

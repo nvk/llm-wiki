@@ -120,6 +120,29 @@ expect_success "golden wiki passes local lint" "$CLI" lint "$GOLDEN"
 tmpdir="$(mktemp -d)"
 trap 'rm -rf "$tmpdir"' EXIT
 
+warning_only="$tmpdir/warning-only"
+mkdir "$warning_only"
+cp -R "$GOLDEN/." "$warning_only/"
+sed -i 's/^confidence: high$/confidence: unsupported/' \
+  "$warning_only/wiki/concepts/sample-concept.md"
+
+expect_failure_contains \
+  "default lint exit still fails on a warning" \
+  "Invalid confidence" \
+  "$CLI" lint "$warning_only"
+
+set +e
+fail_on_output="$("$CLI" lint "$warning_only" --fail-on critical 2>&1)"
+fail_on_rc=$?
+set -e
+if [ "$fail_on_rc" -eq 0 ] \
+  && grep -q "Invalid confidence" <<<"$fail_on_output" \
+  && grep -q "Result: FAIL" <<<"$fail_on_output"; then
+  log_pass "--fail-on critical ignores advisory findings in exit status"
+else
+  log_fail "--fail-on critical ignores advisory findings in exit status" "$fail_on_output"
+fi
+
 hybrid_rollup="$tmpdir/hybrid-rollup"
 mkdir "$hybrid_rollup"
 cp -R "$SCRIPT_DIR/fixtures/defects/stale-inventory-rollup/." "$hybrid_rollup/"

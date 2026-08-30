@@ -8,6 +8,15 @@ FAKE_SERVER="$ROOT/tests/fixtures/fake-codex-app-server.py"
 FAKE_CLAUDE="$ROOT/tests/fixtures/fake-claude-cli.py"
 FAKE_PI="$ROOT/tests/fixtures/fake-pi-cli.py"
 
+# A native Windows python cannot open a POSIX-style path: `/c/...` resolves
+# against the current drive as `C:\c\...`. Translate when cygpath is present.
+win_path() {
+  if command -v cygpath >/dev/null 2>&1; then cygpath -w "$1"; else printf '%s' "$1"; fi
+}
+FAKE_SERVER="$(win_path "$FAKE_SERVER")"
+FAKE_CLAUDE="$(win_path "$FAKE_CLAUDE")"
+FAKE_PI="$(win_path "$FAKE_PI")"
+
 mkdir -p "$ROOT/.tmp"
 TMP_ROOT="$(mktemp -d "$ROOT/.tmp/token-benchmark.XXXXXX")"
 trap 'rm -rf "$TMP_ROOT"' EXIT

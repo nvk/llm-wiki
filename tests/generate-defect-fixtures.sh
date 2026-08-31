@@ -75,6 +75,13 @@ rm -f "$DEFECTS/dangling-source-ref/wiki/concepts/sample-concept.md.bak" \
   "$DEFECTS/dangling-source-ref/inventory/items/trx4m-ring-and-pinion.md.bak"
 echo "  Created: dangling-source-ref (C4b)"
 
+# C4b: raw-source-unresolved — explicit local source: path does not resolve
+copy_golden "raw-source-unresolved"
+sed -i.bak 's|^source: https://example.com/eval-methodology$|source: ../../../research/nonexistent-original.pdf|' \
+  "$DEFECTS/raw-source-unresolved/raw/papers/2026-01-01-sample-paper.md"
+rm -f "$DEFECTS/raw-source-unresolved/raw/papers/2026-01-01-sample-paper.md.bak"
+echo "  Created: raw-source-unresolved (C4b)"
+
 # C4b: retracted-marker — <!--RETRACTED-SOURCE--> left in body
 copy_golden "retracted-marker"
 echo '<!--RETRACTED-SOURCE: previously cited claim from deleted source-->' \

@@ -60,6 +60,9 @@ CONFIDENCE_VALUES = {"high", "medium", "low"}
 VOLATILITY_VALUES = {"hot", "warm", "cold"}
 PERMISSION_DENIED_ERRNOS = {1, 13}
 WINDOWS_ABSOLUTE_PATH_RE = re.compile(r"^/?[A-Za-z]:[\\/]")
+SCHEMELESS_WEB_SOURCE_RE = re.compile(
+    r"^(?:[A-Za-z0-9-]+\.)+[A-Za-z]{2,}(?::\d+)?(?:[/#?]|$)"
+)
 ADAPTER_PROTOCOL = "llm-wiki-adapter/v1"
 ADAPTER_REGISTRY_SCHEMA = 1
 ADAPTER_MANIFEST_NAME = ".llm-wiki-adapter.json"
@@ -1473,6 +1476,16 @@ def check_source_provenance(ctx: LintContext) -> None:
                             f"Inventory source reference does not resolve: {source}.",
                             doc.path,
                         )
+        elif rel.parts[0] == "raw":
+            source = doc.frontmatter.get("source")
+            if source:
+                candidate = raw_source_path_candidate(ctx, doc.path, str(source))
+                if candidate is not None and not source_path_exists(candidate):
+                    ctx.issue(
+                        "warning",
+                        f"Raw source reference does not resolve: {source}.",
+                        doc.path,
+                    )
 
         if "RETRACTED-SOURCE" in doc.body:
             ctx.issue("warning", "Retracted-source marker remains in the file body.", doc.path)
@@ -1560,6 +1573,70 @@ def resolve_source_ref(ctx: LintContext, owner: Path, ref: str, wiki_source: boo
             ctx.issue("warning", f"Source reference is ambiguous after fuzzy slug fallback: {ref}.", owner)
             return None
     return None
+
+
+def raw_source_path_candidate(ctx: LintContext, owner: Path, ref: str) -> Path | None:
+    """Return a candidate only when a raw source value is clearly a local path.
+
+    Raw provenance also uses sentinels such as ``session`` and descriptive
+    labels. Treating every non-HTTP value as a path would make those established
+    values fail lint. URI schemes remain external except for ``file://``; bare
+    relative paths must contain a separator and no whitespace to be considered
+    unambiguous.
+    """
+    ref = strip_matching_quotes(ref.strip())
+    if not ref:
+        return None
+
+    windows_ref = windows_absolute_path(ref)
+    if windows_ref is not None:
+        return windows_ref
+
+    try:
+        parsed = urllib.parse.urlsplit(ref)
+    except ValueError:
+        parsed = None
+    if parsed is not None and parsed.scheme:
+        # Do not mistake a Windows drive letter for a URI scheme on a platform
+        # where Windows paths are not native.
+        if WINDOWS_ABSOLUTE_PATH_RE.match(ref):
+            return Path(ref)
+        if parsed.scheme.lower() != "file":
+            return None
+        path_text = urllib.parse.unquote(parsed.path)
+        if parsed.netloc and parsed.netloc.lower() != "localhost":
+            path_text = f"//{parsed.netloc}{path_text}"
+        if os.name == "nt" and re.match(r"^/[A-Za-z]:/", path_text):
+            path_text = path_text[1:]
+        file_path = Path(path_text)
+        return file_path if file_path.is_absolute() else ctx.root / file_path
+
+    if SCHEMELESS_WEB_SOURCE_RE.match(ref):
+        return None
+
+    explicit_relative = ref.startswith(("../", "./", "..\\", ".\\"))
+    home_relative = ref == "~" or ref.startswith(("~/", "~\\"))
+    absolute = Path(ref).is_absolute()
+    unambiguous_bare_relative = (
+        not any(char.isspace() for char in ref) and ("/" in ref or "\\" in ref)
+    )
+    if not (explicit_relative or home_relative or absolute or unambiguous_bare_relative):
+        return None
+
+    ref_path = expand_leading_tilde(ref)
+    if ref_path.is_absolute():
+        return ref_path
+    if explicit_relative:
+        return owner.parent / ref_path
+    return ctx.root / ref_path
+
+
+def source_path_exists(path: Path) -> bool:
+    """Check a source file or directory without crashing on sandbox denials."""
+    try:
+        return path.exists()
+    except OSError:
+        return False
 
 
 def strip_matching_quotes(value: str) -> str:

@@ -20,8 +20,7 @@ mkdir -p \
   "$scratch/claude-plugin/skills/wiki-manager/references" \
   "$scratch/claude-plugin/.claude-plugin" \
   "$scratch/plugins/llm-wiki/.codex-plugin" \
-  "$scratch/plugins/llm-wiki/skills/wiki-query" \
-  "$scratch/fake-bin"
+  "$scratch/plugins/llm-wiki/skills/wiki-query"
 cp scripts/sync-codex-plugin.sh "$scratch/scripts/"
 touch \
   "$scratch/claude-plugin/skills/wiki-manager/references/query-lite.md" \
@@ -30,18 +29,19 @@ touch \
   "$scratch/scripts/llm-wiki-session" \
   "$scratch/scripts/llm-wiki" \
   "$scratch/plugins/llm-wiki/skills/wiki-query/must-survive"
-ln -s "$(command -v dirname)" "$scratch/fake-bin/dirname"
+# Prerequisite checks must fail before anything in the target tree is
+# touched. Removing the source skill is the cheapest way to prove it.
+mv "$scratch/claude-plugin/skills/wiki-manager" "$scratch/claude-plugin/skills/absent"
 set +e
-missing_rsync_output="$(
-  PATH="$scratch/fake-bin" /bin/bash "$scratch/scripts/sync-codex-plugin.sh" 2>&1
-)"
-missing_rsync_rc=$?
+missing_source_output="$(/bin/bash "$scratch/scripts/sync-codex-plugin.sh" 2>&1)"
+missing_source_rc=$?
 set -e
-if [ "$missing_rsync_rc" -eq 0 ] \
-  || ! grep -q "Missing required tool: rsync" <<<"$missing_rsync_output" \
+mv "$scratch/claude-plugin/skills/absent" "$scratch/claude-plugin/skills/wiki-manager"
+if [ "$missing_source_rc" -eq 0 ] \
+  || ! grep -q "Missing source skill" <<<"$missing_source_output" \
   || [ ! -f "$scratch/plugins/llm-wiki/skills/wiki-query/must-survive" ]; then
-  echo "FAIL: Codex sync must reject a missing rsync before changing the target." >&2
-  echo "$missing_rsync_output" >&2
+  echo "FAIL: Codex sync must reject a missing source before changing the target." >&2
+  echo "$missing_source_output" >&2
   exit 1
 fi
 

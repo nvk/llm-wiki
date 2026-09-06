@@ -42,17 +42,26 @@ fi
 
 ./scripts/sync-opencode-plugin.sh >/dev/null
 
-# The references symlink must survive a sync. Rewriting it on every run breaks
+# The references link must survive a sync. Rewriting it on every run breaks
 # checkouts on platforms where `ln -s` cannot actually create one.
-if [ ! -L "plugins/llm-wiki-opencode/skills/wiki-manager/references" ]; then
+#
+# Two representations are correct, and which one is on disk is git's choice, not
+# the sync script's: a real symlink where the platform supports them, and the
+# regular file holding the link target that git checks out when core.symlinks is
+# false. Both must be left alone; what must never appear is a directory copy.
+REFERENCES="plugins/llm-wiki-opencode/skills/wiki-manager/references"
+if [ -d "$REFERENCES" ] && [ ! -L "$REFERENCES" ]; then
   cat >&2 <<'MSG'
-FAIL: the OpenCode references symlink did not survive the sync.
+FAIL: the OpenCode references link was replaced by a directory copy.
 
-sync-opencode-plugin.sh must leave a correct references symlink alone. If this
-platform cannot create symlinks, the script says so and copies the directory
-instead -- that copy must not be committed:
-  git checkout -- plugins/llm-wiki-opencode/skills/wiki-manager/references
+sync-opencode-plugin.sh must leave the tracked link - symlink or placeholder
+file - exactly as git checked it out.
 MSG
+  exit 1
+fi
+
+if [ "$(git ls-files -s -- "$REFERENCES" | cut -d' ' -f1)" != "120000" ]; then
+  echo "FAIL: $REFERENCES is no longer tracked as a link." >&2
   exit 1
 fi
 

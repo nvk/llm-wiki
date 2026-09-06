@@ -52,18 +52,42 @@ done
 # correct link every run is what breaks checkouts on platforms where ln -s
 # silently produces something other than a symlink (Windows without the
 # privilege to create them), turning a good tree into a dirty one.
+#
+# There are two correct representations. On a platform that has symlinks, the
+# entry is one. Where core.symlinks is false - git's own default on Windows -
+# git materialises a tracked symlink as a *regular file* holding the link
+# target, and that file is exactly what the repository wants committed. Treating
+# it as "not a link" is what still destroys a healthy checkout: the script
+# removes the placeholder, fails to create a real link, and leaves a directory
+# copy in its place.
 REFERENCES_LINK="../../../../claude-plugin/skills/wiki-manager/references"
-if [ -L "$TARGET_SKILL/references" ] && [ "$(readlink "$TARGET_SKILL/references")" = "$REFERENCES_LINK" ]; then
+
+references_is_intact() {
+  local path="$TARGET_SKILL/references"
+  if [ -L "$path" ]; then
+    [ "$(readlink "$path")" = "$REFERENCES_LINK" ]
+    return
+  fi
+  # Placeholder form: a regular file that git tracks with symlink mode 120000
+  # and whose whole content is the link target.
+  [ -f "$path" ] || return 1
+  [ "$(git -C "$ROOT" ls-files -s -- "$path" 2>/dev/null | cut -d' ' -f1)" = "120000" ] || return 1
+  [ "$(cat "$path")" = "$REFERENCES_LINK" ]
+}
+
+if references_is_intact; then
   :
 else
   rm -rf "$TARGET_SKILL/references"
   ln -s "$REFERENCES_LINK" "$TARGET_SKILL/references" 2>/dev/null || true
   if [ ! -L "$TARGET_SKILL/references" ]; then
+    # No symlink support: write the same placeholder git itself checks out, so
+    # the result is byte-identical to what the repository tracks and the tree
+    # stays clean. A directory copy would both dirty the tree and duplicate the
+    # canonical references.
     rm -rf "$TARGET_SKILL/references"
-    cp -R "$SOURCE_SKILL/references" "$TARGET_SKILL/references"
-    echo "warning: this platform cannot create symlinks; copied references/ instead." >&2
-    echo "         Do not commit that copy. Restore the link with:" >&2
-    echo "         git checkout -- $TARGET_SKILL/references" >&2
+    printf '%s' "$REFERENCES_LINK" > "$TARGET_SKILL/references"
+    echo "note: this platform cannot create symlinks; wrote the tracked link placeholder instead." >&2
   fi
 fi
 

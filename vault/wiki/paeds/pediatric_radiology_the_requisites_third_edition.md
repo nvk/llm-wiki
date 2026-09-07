@@ -1,0 +1,202 @@
+---
+title: "Pediatric Radiology: The Requisites, Third Edition"
+domain: "paeds"
+source_book: "Pediatric Radiology: The Requisites"
+start_page: 2
+end_page: 12
+status: "verified_source"
+---
+
+# Pediatric Radiology: The Requisites, Third Edition
+
+**Domain:** [[paeds/_index|PAEDS]]  
+**Source:** Pediatric Radiology: The Requisites (Pages 2–12)  
+
+## Summary & Core Concepts
+High-yield clinical and radiological pearls compiled losslessly from primary textbook source.
+
+## Textbook Reference Text
+SERIES EDITOR
+James H. Thrall, MD
+Radiologist-in-Chief
+Massachusetts General Hospital
+Juan M. Taveras Professor of Radiology
+Harvard Medical School
+Boston, Massachusetts
+OTHER VOLUMES IN
+THE REQUISITES IN RADIOLOGY SERIES
+Breast Imaging
+Cardiac Imaging
+Genitourinary Radiology
+Musculoskeletal Imaging
+Neuroradiology
+Nuclear Medicine
+Ultrasound
+Thoracic Radiology
+Vascular & Interventional Radiology
+
+1600 John F. Kennedy Blvd.
+Ste 1800
+Philadelphia, PA 19103-2899
+Pediatric Radiology: The Requisites                                                    ISBN: 978-0-323-03125-7
+Copyright © 2009, 1998 by Mosby, Inc., an affiliate of Elsevier Inc.
+Notice
+Knowledge and best practice in this field are constantly changing. As new research and experience 
+broaden our knowledge, changes in practice, treatment, and drug therapy may become necessary or 
+appropriate. Readers are advised to check the most current information provided (i) on procedures 
+featured or (ii) by the manufacturer of each product to be administered, to verify the recommended 
+dose or formula, the method and duration of administration, and contraindications. It is the responsi­
+bility of the practitioner, relying on his or her own experience and knowledge of the patient, to make 
+diagnoses, to determine dosages and the best treatment for each individual patient, and to take all 
+appropriate safety precautions. To the fullest extent of the law, neither the publisher nor the editors 
+assume any liability for any injury and/or damage to persons or property arising out of or related to any 
+use of the material contained in this book.
+The Publisher
+Library of Congress Cataloging-in-Publication Data
+Blickman, Johan G.
+Pediatric radiology : the requisites / Johan G. Blickman, Bruce R. Parker, Patrick D. Barnes. -- 3rd ed.
+p. ; cm. -- (Requisites series)
+Includes bibliographical references and index.
+ISBN 978-0-323-03125-7
+1. Pediatric radiology. I. Parker, Bruce R. II. Barnes, Patrick D. III. Title. IV. Series: 
+Requisites series. 
+[DNLM: 1. Diagnostic Imaging. 2. Child. 3. Infant. WN 240 B648p 2009]
+RJ51.R3B55 2009
+618.92’00757--dc22
+2009007873
+Acquisitions Editor: Rebecca Gaertner
+Developmental Editor: Martha Limbach
+Publishing Services Manager: Tina Rebane
+Project Manager: Norm Stellander
+Design Direction: Lou Forgione
+Printed in The United States of America
+Last digit is the print number:  9  8  7  6  5  4  3  2  1
+All rights reserved. No part of this publication may be reproduced or transmitted in any form or by 
+any means, electronic or mechanical, including photocopying, recording, or any information storage and 
+retrieval system, without permission in writing from the publisher. Permissions may be sought directly 
+from Elsevier’s Rights Department: phone: (+1) 215 239 3804 (US) or (+44) 1865 843830 (UK); fax: (+44) 
+1865 853333; e-mail: healthpermissions@elsevier.com. You may also complete your request on-line via the 
+Elsevier website at http://www.elsevier.com/permissions.
+
+To All My Children
+Johan. G. (Hans) Blickman
+
+
+
+
+Patrick D. Barnes, MD
+Professor
+Department of Radiology
+Stanford University School of Medicine
+Stanford, California
+Chief, Section of Pediatric Neuroradiology
+Director, Pediatric MRI and CT Center
+Department of Radiology
+Lucile Packard Children’s Hospital
+Palo Alto, California
+Johan G. (Hans) Blickman, MD, PhD
+Professor and Chairman
+Department of Radiology
+Radboud University Medical Center 
+Nijmegen, The Netherlands
+Carla Boetes, MD, PhD
+Professor of Radiology
+Director of Mammography
+Department of Radiology
+Maastricht University Medical Center 
+Maastricht, The Netherlands
+Lya Van Die, MD
+Assistant Professor of Radiology
+Radboud University Medical Center
+Nijmegen, The Netherlands
+Rajesh Krishnamurthy, MD
+Clinical Professor of Radiology
+Baylor College of Medicine
+Staff Radiologist
+Texas Children’s Hospital
+Houston, Texas
+Bruce R. Parker, MD
+Professor
+Departments of Radiology and Pediatrics
+Baylor College of Medicine
+Chairman Emeritus
+Department of Diagnostic Imaging
+Texas Children’s Hospital
+Houston, Texas
+Professor (Emeritus) of Radiology and Pediatrics
+Department of Radiology
+Stanford University School of Medicine
+Stanford, California
+Geert Vanderschueren, MD, PhD
+Staff Radiologist
+Department of Musculoskeletal Radiology
+Leuven University Hospital
+Leuven, Belgium
+Contributors
+vii
+
+viii
+Foreword
+THE REQUISITES is a series of textbooks encompassing the 
+fundamental building blocks of radiology practice. This series 
+is approaching its third decade and continues to flourish due to 
+the diligence and success of the authors in producing such high 
+quality work. Pediatric Imaging: THE REQUISITES, authored by 
+Dr. Hans Blickman and colleagues, again exemplifies this high 
+­standard. 
+Pediatric imaging has evolved in many extremely impor­
+tant ways since the publication of the first and second editions 
+of ­ Pediatric Imaging: The requisites. Among other trends, 
+CT and MRI have taken on progressively important roles in the 
+­imaging of children, 3D imaging is playing a role, and ultrasound 
+has continued to progress technologically. The increase in utiliza­
+tion of CT in children is the subject of public concern, and the 
+need to keep radiation exposure as low as reasonably achievable 
+(ALARA) is highlighted by Dr. Blickman in his opening remarks. 
+Dr. Blickman has assembled a terrific team for the current edi­
+tion, including Drs. Lya Van Die, Rajesh Krishnamurthy, Bruce 
+Parker, Carla Boetas, Geert Vandershueren, and Patrick Barnes. 
+The addition of new authors reflects the expansion of knowledge 
+and the rising importance of subspecialization in pediatric imag­
+ing. In keeping with the philosophy of the Requisites series, 
+Dr. Blickman and his team are to be congratulated for capturing 
+the most important aspects of pediatric imaging and putting the 
+knowledge and information into an accessible and useful form. 
+Some aspects of pediatric imaging are enduring. Certainly 
+knowledge of imaging anatomy and disease pathophysiology will 
+never go out of style. However, the particular imaging methods of 
+choice and the development of new protocols are very dynamic, 
+making it challenging to stay current. Dr. Blickman and his team 
+have done a great job capturing these changes. 
+Dr. Blickman has maintained the design of his book based 
+on an organ system approach, with each chapter introduced 
+by a discussion of methods of importance to the respective or­
+gan system. This approach brings the discussion of technology 
+and applications together in a very efficient way for the reader. 
+The illustrations have been widely updated, especially for 
+cross-sectional imaging.
+One of the features of THE REQUISITES series most noted 
+and appreciated in reader feedback is the use of tables and boxes 
+to restate and summarize essential information in concise form. 
+This reinforces the narrative discussion, and the liberal use of this 
+approach again highlights Pediatric Imaging: THE REQUISITES. 
+THE REQUISITES have now become old friends to two or 
+three generations of medical imagers. We have tried to remain 
+true to the original intent of the series, which was to provide the 
+resident, fellow, or practicing physician with a text that might rea­
+sonably be read within several days. In practice, we see residents 
+and fellows doing exactly that at the beginning of each subspe­
+cialty rotation. The concise presentation and reasonable length 
+of THE REQUISITES books allows them to be read and reread 
+several times during subsequent rotations and during preparation 
+for board examinations. 
+THE REQUISITES are not intended to be exhaustive but 
+rather to provide basic conceptional, factual, and interpretative 
+material required for clinical practice. Each book is written by 
+nationally recognized authorities in the respective subspecialty 
+areas. Each author is challenged to present material in the context 
+of today’s practice of radiology rather than grafting information 
+about new imaging methods onto 
+
+---
+*Indexed in canonical radiology-wiki vault.*

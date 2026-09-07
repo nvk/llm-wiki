@@ -1,0 +1,187 @@
+---
+title: "Cardiac Imaging: The Requisites, Third Edition"
+domain: "cardio"
+source_book: "Cardiac Imaging: The Requisites"
+start_page: 2
+end_page: 12
+status: "verified_source"
+---
+
+# Cardiac Imaging: The Requisites, Third Edition
+
+**Domain:** [[cardio/_index|CARDIO]]  
+**Source:** Cardiac Imaging: The Requisites (Pages 2–12)  
+
+## Summary & Core Concepts
+High-yield clinical and radiological pearls compiled losslessly from primary textbook source.
+
+## Textbook Reference Text
+SERIES EDITOR
+James H. Thrall, MD
+Radiologist-in-Chief
+Massachusetts General Hospital
+Juan M. Taveras Professor of Radiology
+Harvard Medical School
+Boston, Massachusetts
+OTHER VOLUMES IN
+THE REQUISITES IN RADIOLOGY SERIES
+Breast Imaging 
+Gastrointestinal Imaging
+Genitourinary Radiology
+Musculoskeletal Imaging
+Neuroradiology
+Nuclear Medicine
+Pediatric Radiology 
+Ultrasound
+Thoracic Radiology
+Vascular & Interventional Radiology
+
+1600 John F. Kennedy Blvd.
+Ste 1800
+Philadelphia, PA 19103-2899
+CARDIAC IMAGING: THE REQUISITES 
+ISBN: 978-0-323-05527-7
+Copyright © 2009, 2005, 1998 by Mosby, Inc., an afﬁ liate of Elsevier Inc.
+All rights reserved. No part of this publication may be reproduced or transmitted in any form or by any 
+means, electronic or mechanical, including photocopying, recording, or any information storage and retrieval 
+system, without permission in writing from the publisher. Permissions may be sought directly from Elsevier’s 
+Rights Department: phone: (1) 215 239 3804 (US) or (44) 1865 843830 (UK); fax: (44) 1865 853333; 
+e-mail: healthpermissions@elsevier.com. You may also complete your request on-line via the Elsevier website 
+at http://www.elsevier.com/permissions.
+Notice
+Neither the Publisher nor the Authors assume any responsibility for any loss or injury and/or damage 
+to persons or property arising out of or related to any use of the material contained in this book. It is 
+the responsibility of the treating practitioner, relying on independent expertise and knowledge of the 
+patient, to determine the best treatment and method of application for the patient.
+The Publisher 
+Library of Congress Cataloging-in-Publication Data
+Miller, Stephen W. (Stephen Wilmot), 1941-
+Cardiac imaging : the requisites / Stephen Wilmot Miller, Lawrence M. Boxt, Suhny Abbara. — 3rd ed.
+p. ; cm.
+Includes bibliographical references and index.
+ISBN 978-0-323-05527-7 (alk. paper)
+1. Heart—Imaging. I. Boxt, Lawrence M. II. Abbara, Suhny. III. Title.
+[DNLM: 1. Heart Diseases—diagnosis. 2. Diagnostic Imaging—methods. 3. Heart Diseases—
+physiopathology. WG 141 M647c 2009]
+RC683.5.I42M55 2009
+616.1’20757—dc22
+2008046736
+Acquisitions Editor: Rebecca S. Gaertner
+Developmental Editor: Colleen McGonigal
+Senior Project Manager: David Saltzberg
+Design Direction: Steve Stave
+Printed in China
+Last digit is the print number: 9 8 7 6 5 4 3 2 1
+
+To Christina
+STEPHEN WILMOT MILLER
+To Ruthellen
+LAWRENCE M. BOXT
+To Amanda and Tyler
+SUHNY ABBARA
+
+
+
+
+Foreword
+THE REQUISITES is a series of textbooks encompassing the 
+fundamental building blocks of radiology practice. This series is 
+approaching its third decade and continues to ﬂ ourish due to the 
+diligence and success of the authors in producing such high qual-
+ity work. Cardiac Imaging: THE REQUISITES again exempliﬁ es 
+this high standard.
+Cardiac imaging as much as any part of medical imaging has 
+evolved with astonishing rapidity over the past decade. Dr. Miller 
+and his coauthors Drs. King, Lam, Boxt, Makaryus, Soni, Abbara, 
+Achenbach, Sena, and Santilli are to be congratulated for captur-
+ing the most important aspects of cardiac imaging and putting the 
+knowledge and information into an accessible and useful form.
+Some aspects of cardiac imaging are enduring. Certainly 
+knowledge of anatomy will never go out of style. However, every 
+speciﬁ c method from both the standpoint of technology and the 
+application of the respective technologies to cardiac disease has 
+changed dramatically. These changes are nicely captured in this 
+volume.
+Dr. Miller has designed his book in a very logical manner. In 
+the ﬁ rst ﬁ ve chapters, the important imaging methods are dis-
+cussed. After a presentation of the basic elements of cardiac 
+imaging, the major technologies of echocardiography, cardiac 
+magnetic resonance, cardiac angiography, and cardiac computed 
+tomography are presented.
+Building on the discussion of the different technologies, the 
+subsequent six chapters of Cardiac Imaging: THE REQUISITES 
+address major categories of disease, including valvular heart 
+disease, ischemic heart disease, coronary CTA, pericardial and 
+myocardial disease, congenital heart disease, and thoracic aortic 
+disease. Each of these subject areas is addressed by an expert 
+with up-to-date illustrations and indications of when, where, and 
+how imaging ﬁ ts into the overall management of patients with 
+known or suspected heart disease.
+One of the features of THE REQUISITES series most noted 
+and appreciated in reader feedback is the use of tables and boxes 
+to restate and summarize essential information in concise form. 
+This reinforces the narrative discussion and the liberal use of this 
+approach again highlights Cardiac Imaging: THE REQUISITES.
+THE REQUISITES have now become old friends to two or 
+three generations of medical imagers. We have tried to remain 
+true to the original intent of the series, which was to provide the 
+resident, fellow, or practicing physician with a text that might be 
+reasonably read within several days. In practice, we see residents 
+and fellows doing exactly that at the beginning of each subspe-
+cialty rotation. The concise presentation and reasonable length 
+of THE REQUISITES books allows them to be read and reread 
+several times during subsequent rotations and during preparation 
+for board examinations.
+THE REQUISITES are not intended to be exhaustive but to 
+provide basic conceptional, factual, and interpretative material 
+required for clinical practice. Each book is written by nationally 
+recognized authorities in the respective subspecialty areas. Each 
+author is challenged to present material in the context of today’s 
+practice of radiology rather than grafting information about new 
+imaging methods onto old out-of-date material.
+Dr. Miller and his coauthors have done an outstanding job 
+in sustaining the philosophy of THE REQUISITES in radio-
+logy series. They have produced another truly contemporary 
+text for cardiac imaging. I believe that Cardiac Imaging: THE 
+REQUISITES will serve both radiologists and cardiologists as a 
+concise and useful introduction to the subject and will also 
+serve as a very manageable text for review by fellows and prac-
+ticing radiologists and cardiologists.
+James H. Thrall, MD
+Radiologist-in-Chief
+Massachusetts General Hospital
+Juan M. Taveras Professor of Radiology
+Harvard Medical School
+Boston, Massachusetts
+vii
+
+
+Preface
+This third edition of Cardiac Imaging: THE REQUISITES has 
+been modiﬁ ed and expanded. Signiﬁ cant enlargement of the sec-
+tions on echocardiography, cardiac magnetic resonance imaging 
+(MRI), as well as the addition of new chapters on the use of mul-
+tidetector computed tomography (CT) for the evaluation of the 
+heart and coronary arteries reﬂ ect the increasing clinical utilization 
+of these rapid noninvasive cardiac imaging modalities. Further-
+more, much material relating to the “older” cardiac modalities, 
+namely plain ﬁ lm examination and angiocardiography, has been 
+combined with discussion of the “newer” modalities. In this way, 
+we feel we have produced an integrated textbook of practical 
+cross-modality cardiac imaging. As with the previous two editions, 
+our emphasis is on the visualization and characterization of the 
+pathologic changes that form the basis for cardiac diagnosis, and 
+the morphologic and logical basis for differential diagnosis.
+Progress in the diagnosis and management of patients with 
+congenital and acquired heart disease has been intimately tied to 
+technological developments in cardiac imaging. Chest roentgen-
+ography, an application of the newly discovered x-rays, expanded 
+and increased the accuracy of premorbid diagnosis of aortic dis-
+ease and valvular and pericardial heart disease at the turn of the 
+20th century. Demonstration of the sequelae of myocardial, peri-
+cardial, and valvular dysfunction, as well as direct visualization 
+of the heart and great arteries themselves was a revolutionary 
+development in clinical medicine
+
+---
+*Indexed in canonical radiology-wiki vault.*

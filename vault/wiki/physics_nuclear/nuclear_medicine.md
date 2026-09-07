@@ -1,11 +1,12 @@
 ---
 title: "Nuclear Medicine"
+concept_id: "physics_nuclear_nuclear_medicine"
 domain: "physics_nuclear"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 3558
 end_page: 3638
 status: "verified_source"
----
+aliases: ["nuclear_medicine"]---
 
 # Nuclear Medicine
 

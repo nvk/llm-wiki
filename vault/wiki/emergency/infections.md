@@ -1,11 +1,11 @@
 ---
 title: "INFECTIONS"
+concept_id: "infections"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 42
 end_page: 45
-status: "verified_source"
----
+status: "verified_source"---
 
 # INFECTIONS
 

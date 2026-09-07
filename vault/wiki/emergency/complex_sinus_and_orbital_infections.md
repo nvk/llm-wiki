@@ -1,5 +1,6 @@
 ---
 title: "Complex Sinus and Orbital Infections"
+concept_id: "complex_sinus_and_orbital_infections"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "infection"]
 confidence: high
 status: "verified_source"
-summary: "B, Slightly inferiorly, afistulous tract between the collection and the inflammatory tissue is identified (arrow). CT imaging can be useful for further evaluation. T1 images of the brain."
----
+summary: "B, Slightly inferiorly, afistulous tract between the collection and the inflammatory tissue is identified (arrow). CT imaging can be useful for further evaluation. T1 images of the brain."---
 
 # Complex Sinus and Orbital Infections
 

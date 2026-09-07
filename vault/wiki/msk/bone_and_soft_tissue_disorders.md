@@ -1,11 +1,11 @@
 ---
 title: "Bone and Soft-Tissue Disorders"
+concept_id: "bone_and_soft_tissue_disorders"
 domain: "msk"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 195
 end_page: 588
-status: "verified_source"
----
+status: "verified_source"---
 
 # Bone and Soft-Tissue Disorders
 

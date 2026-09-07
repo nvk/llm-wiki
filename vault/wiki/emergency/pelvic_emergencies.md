@@ -1,11 +1,11 @@
 ---
 title: "Pelvic Emergencies"
+concept_id: "pelvic_emergencies"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 326
 end_page: 336
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pelvic Emergencies
 

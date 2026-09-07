@@ -1,5 +1,6 @@
 ---
 title: "Progressive Multifocal Leukoencephalopathy"
+concept_id: "progressive_multifocal_leukoencephalopathy"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "MS and ADEM is Susac syndrome. Metastatic lung carcinoma. Noncontrast axial CT, FLAIR, T2, T1, and sagittal and coronal postgadolinium T1-weighted images."
----
+summary: "MS and ADEM is Susac syndrome. Metastatic lung carcinoma. Noncontrast axial CT, FLAIR, T2, T1, and sagittal and coronal postgadolinium T1-weighted images."---
 
 # Progressive Multifocal Leukoencephalopathy
 

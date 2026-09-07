@@ -1,5 +1,6 @@
 ---
 title: "Secondary Lobule"
+concept_id: "secondary_lobule"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "AD, alveolar duct; AS, alveolar sac; RB, respiratory bronchiole; TB, terminal bronchiole. In Sommers SC [ed]: Pathology Annual. New York, Appleton Communications, 1968."
----
+summary: "AD, alveolar duct; AS, alveolar sac; RB, respiratory bronchiole; TB, terminal bronchiole. In Sommers SC [ed]: Pathology Annual. New York, Appleton Communications, 1968."---
 
 # Secondary Lobule
 

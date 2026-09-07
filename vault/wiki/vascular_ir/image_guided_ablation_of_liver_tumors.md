@@ -1,11 +1,11 @@
 ---
 title: "Image-Guided Ablation of Liver Tumors"
+concept_id: "image_guided_ablation_of_liver_tumors"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 595
 end_page: 605
-status: "verified_source"
----
+status: "verified_source"---
 
 # Image-Guided Ablation of Liver Tumors
 

@@ -1,5 +1,6 @@
 ---
 title: "General Imaging Characteristics of Hemorrhage"
+concept_id: "general_imaging_characteristics_of_hemorrhage"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "CSF) by approximately 2 months. FLAIR) images, and gradient-echo sequences. B, CT volume-rendered image shows nondisplaced fracture at vertex involving coronal suture."
----
+summary: "CSF) by approximately 2 months. FLAIR) images, and gradient-echo sequences. B, CT volume-rendered image shows nondisplaced fracture at vertex involving coronal suture."---
 
 # General Imaging Characteristics of Hemorrhage
 

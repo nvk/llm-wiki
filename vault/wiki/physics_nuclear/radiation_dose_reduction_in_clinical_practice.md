@@ -1,11 +1,12 @@
 ---
 title: "Radiation Dose Reduction in Clinical Practice"
+concept_id: "physics_nuclear_radiation_dose_reduction_in_clinical_practice"
 domain: "physics_nuclear"
 source_book: "Grainger & Allison's Diagnostic Radiology (7th Edition)"
 start_page: 476
 end_page: 476
 status: "verified_source"
----
+aliases: ["radiation_dose_reduction_in_clinical_practice"]---
 
 # Radiation Dose Reduction in Clinical Practice
 

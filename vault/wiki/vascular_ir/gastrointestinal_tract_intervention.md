@@ -1,11 +1,11 @@
 ---
 title: "Gastrointestinal Tract Intervention"
+concept_id: "gastrointestinal_tract_intervention"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 448
 end_page: 458
-status: "verified_source"
----
+status: "verified_source"---
 
 # Gastrointestinal Tract Intervention
 

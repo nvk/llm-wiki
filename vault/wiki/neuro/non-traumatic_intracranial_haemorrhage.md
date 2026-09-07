@@ -1,9 +1,9 @@
 ---
 title: "Non-Traumatic Intracranial Haemorrhage"
+concept_id: "non-traumatic_intracranial_haemorrhage"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Non-Traumatic Intracranial Haemorrhage
 

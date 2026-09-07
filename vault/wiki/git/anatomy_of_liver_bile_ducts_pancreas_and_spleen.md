@@ -1,11 +1,11 @@
 ---
 title: "Anatomy of Liver, Bile ducts, Pancreas and Spleen"
+concept_id: "anatomy_of_liver_bile_ducts_pancreas_and_spleen"
 domain: "git"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 2272
 end_page: 2300
-status: "verified_source"
----
+status: "verified_source"---
 
 # Anatomy of Liver, Bile ducts, Pancreas and Spleen
 

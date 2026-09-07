@@ -1,9 +1,10 @@
 ---
 title: "Further Reading"
+concept_id: "neuro_further_reading"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["further_reading"]---
 
 # Further Reading
 

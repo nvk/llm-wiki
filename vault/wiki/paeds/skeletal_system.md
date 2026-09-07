@@ -1,11 +1,11 @@
 ---
 title: "Skeletal System"
+concept_id: "skeletal_system"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 166
 end_page: 176
-status: "verified_source"
----
+status: "verified_source"---
 
 # Skeletal System
 

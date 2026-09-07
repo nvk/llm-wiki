@@ -1,11 +1,11 @@
 ---
 title: "Thoracic Trauma"
+concept_id: "thoracic_trauma"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 172
 end_page: 182
-status: "verified_source"
----
+status: "verified_source"---
 
 # Thoracic Trauma
 

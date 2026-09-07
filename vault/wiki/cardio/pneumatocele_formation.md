@@ -1,5 +1,6 @@
 ---
 title: "Pneumatocele Formation"
+concept_id: "pneumatocele_formation"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Septic infarcts in an intravenous drug abuser. A, The posteroanterior chest radiograph shows multiple, bilateral cavitary nodules. C, CT examination demonstrates that most of the infarcts are peripheral in location; some abut the pleura and occasionally are wedge shaped."
----
+summary: "Septic infarcts in an intravenous drug abuser. A, The posteroanterior chest radiograph shows multiple, bilateral cavitary nodules. C, CT examination demonstrates that most of the infarcts are peripheral in location; some abut the pleura and occasionally are wedge shaped."---
 
 # Pneumatocele Formation
 

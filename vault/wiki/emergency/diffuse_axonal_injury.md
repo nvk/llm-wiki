@@ -1,5 +1,6 @@
 ---
 title: "Diffuse Axonal Injury"
+concept_id: "diffuse_axonal_injury"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "CT for detection of DAI. DAI are nonhemorrhagic. Intraventricular hemorrhage."
----
+summary: "CT for detection of DAI. DAI are nonhemorrhagic. Intraventricular hemorrhage."---
 
 # Diffuse Axonal Injury
 

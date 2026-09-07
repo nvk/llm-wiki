@@ -1,11 +1,11 @@
 ---
 title: "ARTERIOVENOUS MALFORMATIONS"
+concept_id: "arteriovenous_malformations"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 386
 end_page: 396
-status: "verified_source"
----
+status: "verified_source"---
 
 # ARTERIOVENOUS MALFORMATIONS
 

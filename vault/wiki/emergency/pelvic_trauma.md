@@ -1,11 +1,11 @@
 ---
 title: "PELVIC TRAUMA"
+concept_id: "pelvic_trauma"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 113
 end_page: 117
-status: "verified_source"
----
+status: "verified_source"---
 
 # PELVIC TRAUMA
 

@@ -1,9 +1,9 @@
 ---
 title: "Parkinson Disease And Related Disorders"
+concept_id: "parkinson_disease_and_related_disorders"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Parkinson Disease and Related Disorders
 

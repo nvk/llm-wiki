@@ -1,9 +1,9 @@
 ---
 title: "Physiological And Functional Assessment"
+concept_id: "physiological_and_functional_assessment"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Physiological and Functional Assessment
 

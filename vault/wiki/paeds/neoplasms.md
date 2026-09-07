@@ -1,11 +1,12 @@
 ---
 title: "NEOPLASMS"
+concept_id: "paeds_neoplasms"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 149
 end_page: 154
 status: "verified_source"
----
+aliases: ["neoplasms"]---
 
 # NEOPLASMS
 

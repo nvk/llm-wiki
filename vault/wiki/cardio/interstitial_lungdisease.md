@@ -1,11 +1,11 @@
 ---
 title: "Interstitial LungDisease"
+concept_id: "interstitial_lungdisease"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 193
 end_page: 203
-status: "verified_source"
----
+status: "verified_source"---
 
 # Interstitial LungDisease
 

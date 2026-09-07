@@ -1,11 +1,11 @@
 ---
 title: "NEUROCUTANEOUS SYNDROMES"
+concept_id: "neurocutaneous_syndromes"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 266
 end_page: 271
-status: "verified_source"
----
+status: "verified_source"---
 
 # NEUROCUTANEOUS SYNDROMES
 

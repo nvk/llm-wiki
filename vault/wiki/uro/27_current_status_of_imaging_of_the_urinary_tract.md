@@ -1,9 +1,9 @@
 ---
 title: "27 Current Status Of Imaging Of The Urinary Tract"
+concept_id: "27_current_status_of_imaging_of_the_urinary_tract"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 27 Current Status of Imaging of the Urinary Tract
 

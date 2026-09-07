@@ -1,11 +1,11 @@
 ---
 title: "THE VENOUS PUNCTURE"
+concept_id: "the_venous_puncture"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 69
 end_page: 71
-status: "verified_source"
----
+status: "verified_source"---
 
 # THE VENOUS PUNCTURE
 

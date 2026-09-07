@@ -1,11 +1,11 @@
 ---
 title: "INTRAHEPATIC DUCTAL ANATOMY"
+concept_id: "intrahepatic_ductal_anatomy"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 474
 end_page: 474
-status: "verified_source"
----
+status: "verified_source"---
 
 # INTRAHEPATIC DUCTAL ANATOMY
 

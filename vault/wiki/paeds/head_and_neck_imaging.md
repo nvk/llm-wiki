@@ -1,11 +1,11 @@
 ---
 title: "Head and Neck Imaging"
+concept_id: "head_and_neck_imaging"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 306
 end_page: 316
-status: "verified_source"
----
+status: "verified_source"---
 
 # Head and Neck Imaging
 

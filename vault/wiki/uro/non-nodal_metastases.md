@@ -1,9 +1,9 @@
 ---
 title: "Non-Nodal Metastases"
+concept_id: "non-nodal_metastases"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Non-Nodal Metastases
 

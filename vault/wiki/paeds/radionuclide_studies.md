@@ -1,5 +1,6 @@
 ---
 title: "Radionuclide Studies"
+concept_id: "radionuclide_studies"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "MR cholangiopancreatography. GER, and tube migration."
----
+summary: "MR cholangiopancreatography. GER, and tube migration."---
 
 # Radionuclide Studies
 

@@ -1,9 +1,9 @@
 ---
 title: "31 Urothelial Cell Cancer Upper Tract And Lower Tract"
+concept_id: "31_urothelial_cell_cancer_upper_tract_and_lower_tract"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 31 Urothelial Cell Cancer, Upper Tract and Lower Tract
 

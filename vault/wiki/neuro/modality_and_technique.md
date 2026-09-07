@@ -1,9 +1,9 @@
 ---
 title: "Modality And Technique"
+concept_id: "modality_and_technique"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Modality and Technique
 

@@ -1,11 +1,11 @@
 ---
 title: "Other Interventional Procedures in the Thorax"
+concept_id: "other_interventional_procedures_in_the_thorax"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 420
 end_page: 421
-status: "verified_source"
----
+status: "verified_source"---
 
 # Other Interventional Procedures in the Thorax
 

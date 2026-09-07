@@ -1,9 +1,9 @@
 ---
 title: "Langerhans Cell Histiocytosis"
+concept_id: "langerhans_cell_histiocytosis"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Langerhans Cell Histiocytosis
 

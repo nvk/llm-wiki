@@ -1,11 +1,11 @@
 ---
 title: "The Pleura"
+concept_id: "the_pleura"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 391
 end_page: 401
-status: "verified_source"
----
+status: "verified_source"---
 
 # The Pleura
 

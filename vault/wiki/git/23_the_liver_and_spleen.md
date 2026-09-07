@@ -1,9 +1,9 @@
 ---
 title: "23 The Liver And Spleen"
+concept_id: "23_the_liver_and_spleen"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 23 The Liver and Spleen
 

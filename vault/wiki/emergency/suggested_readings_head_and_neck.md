@@ -1,11 +1,11 @@
 ---
 title: "Suggested Readings: Head and Neck"
+concept_id: "suggested_readings_head_and_neck"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 75
 end_page: 75
-status: "verified_source"
----
+status: "verified_source"---
 
 # Suggested Readings: Head and Neck
 

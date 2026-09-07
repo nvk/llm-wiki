@@ -1,11 +1,11 @@
 ---
 title: "Anatomy and Function of Abdomen and Gastrointestinal Tract"
+concept_id: "anatomy_and_function_of_abdomen_and_gastrointestinal_tract"
 domain: "git"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 2636
 end_page: 2669
-status: "verified_source"
----
+status: "verified_source"---
 
 # Anatomy and Function of Abdomen and Gastrointestinal Tract
 

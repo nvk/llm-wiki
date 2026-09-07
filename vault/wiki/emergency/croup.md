@@ -1,5 +1,6 @@
 ---
 title: "Croup"
+concept_id: "croup"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "B, Slightly inferiorly, afistulous tract between the collection and the inflammatory tissue is identified (arrow). CT imaging can be useful for further evaluation. T1 images of the brain."
----
+summary: "B, Slightly inferiorly, afistulous tract between the collection and the inflammatory tissue is identified (arrow). CT imaging can be useful for further evaluation. T1 images of the brain."---
 
 # Croup
 

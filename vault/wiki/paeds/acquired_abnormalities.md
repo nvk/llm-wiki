@@ -1,11 +1,11 @@
 ---
 title: "ACQUIRED ABNORMALITIES"
+concept_id: "acquired_abnormalities"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 295
 end_page: 304
-status: "verified_source"
----
+status: "verified_source"---
 
 # ACQUIRED ABNORMALITIES
 

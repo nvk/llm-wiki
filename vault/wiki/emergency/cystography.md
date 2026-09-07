@@ -1,5 +1,6 @@
 ---
 title: "Cystography"
+concept_id: "cystography"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "Mesenteric hematoma after motor vehicle blunt trauma. Mesenteric injury with active bleeding. B, Catheter angiography was requested."
----
+summary: "Mesenteric hematoma after motor vehicle blunt trauma. Mesenteric injury with active bleeding. B, Catheter angiography was requested."---
 
 # Cystography
 

@@ -1,11 +1,11 @@
 ---
 title: "PREPROCEDURE PATIENT EVALUATION AND MANAGEMENT"
+concept_id: "preprocedure_patient_evaluation_and_management"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 48
 end_page: 48
-status: "verified_source"
----
+status: "verified_source"---
 
 # PREPROCEDURE PATIENT EVALUATION AND MANAGEMENT
 

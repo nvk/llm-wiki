@@ -1,9 +1,9 @@
 ---
 title: "Prostate Imaging Reporting And Data System"
+concept_id: "prostate_imaging_reporting_and_data_system"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Prostate Imaging—Reporting and Data System
 

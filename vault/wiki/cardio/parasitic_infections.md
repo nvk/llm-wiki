@@ -1,9 +1,10 @@
 ---
 title: "Parasitic Infections"
+concept_id: "cardio_parasitic_infections"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["parasitic_infections"]---
 
 # Parasitic Infections
 

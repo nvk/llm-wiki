@@ -1,5 +1,6 @@
 ---
 title: "Posterior Reversible Encephalopathy Syndrome"
+concept_id: "posterior_reversible_encephalopathy_syndrome"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "Multiple sclerosis—optic neuritis. A, FLAIR image shows a few white matter hyperintensities. C, Coronal STIR image shows asymmetric hyperintensity of the right optic nerve (arrow)."
----
+summary: "Multiple sclerosis—optic neuritis. A, FLAIR image shows a few white matter hyperintensities. C, Coronal STIR image shows asymmetric hyperintensity of the right optic nerve (arrow)."---
 
 # Posterior Reversible Encephalopathy Syndrome
 

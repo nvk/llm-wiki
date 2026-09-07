@@ -1,11 +1,11 @@
 ---
 title: "FOLLOW-UP"
+concept_id: "follow_up"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 601
 end_page: 601
-status: "verified_source"
----
+status: "verified_source"---
 
 # FOLLOW-UP
 

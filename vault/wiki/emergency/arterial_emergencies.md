@@ -1,11 +1,11 @@
 ---
 title: "ARTERIAL EMERGENCIES"
+concept_id: "arterial_emergencies"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 337
 end_page: 369
-status: "verified_source"
----
+status: "verified_source"---
 
 # ARTERIAL EMERGENCIES
 

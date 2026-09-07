@@ -1,5 +1,6 @@
 ---
 title: "Diffuse Lung Disease"
+concept_id: "diffuse_lung_disease"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Pneumocystis jiroveci (formerly called P. CMV), and  respiratory syncytial virus (RSV). Pneumocystis jiroveci pneumonia in a renal transplant recipient."
----
+summary: "Pneumocystis jiroveci (formerly called P. CMV), and  respiratory syncytial virus (RSV). Pneumocystis jiroveci pneumonia in a renal transplant recipient."---
 
 # Diffuse Lung Disease
 

@@ -1,11 +1,11 @@
 ---
 title: "RENAL ARTERY ANEURYSMS"
+concept_id: "renal_artery_aneurysms"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 300
 end_page: 300
-status: "verified_source"
----
+status: "verified_source"---
 
 # RENAL ARTERY ANEURYSMS
 

@@ -1,5 +1,6 @@
 ---
 title: "Focused Abdominal Sonography for Trauma"
+concept_id: "focused_abdominal_sonography_for_trauma"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Splenorenal and hepatorenal (i. Right paracolic gutter (Fig. Left paracolic gutter (see Fig."
----
+summary: "Splenorenal and hepatorenal (i. Right paracolic gutter (Fig. Left paracolic gutter (see Fig."---
 
 # Focused Abdominal Sonography for Trauma
 

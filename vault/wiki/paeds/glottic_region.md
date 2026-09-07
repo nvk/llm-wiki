@@ -1,5 +1,6 @@
 ---
 title: "Glottic Region"
+concept_id: "glottic_region"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "CT is often sufficient (Fig. The child usually presents with inspiratory stridor. A viral etiology has been suggested for RRP."
----
+summary: "CT is often sufficient (Fig. The child usually presents with inspiratory stridor. A viral etiology has been suggested for RRP."---
 
 # Glottic Region
 

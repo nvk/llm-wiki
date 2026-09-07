@@ -1,9 +1,9 @@
 ---
 title: "Role Of Radiology In Investigation Of Jaundice"
+concept_id: "role_of_radiology_in_investigation_of_jaundice"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Role of Radiology in Investigation of Jaundice
 

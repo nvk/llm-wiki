@@ -1,5 +1,6 @@
 ---
 title: "Spontaneous Intracranial Dissection"
+concept_id: "spontaneous_intracranial_dissection"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "V4) are the most common sites of intracranial dissection. Internal carotid artery dissection—CT and MR angiograms. C, Time-of-flight MR angiogram shows narrowed segment of right internal carotid artery (arrow)."
----
+summary: "V4) are the most common sites of intracranial dissection. Internal carotid artery dissection—CT and MR angiograms. C, Time-of-flight MR angiogram shows narrowed segment of right internal carotid artery (arrow)."---
 
 # Spontaneous Intracranial Dissection
 

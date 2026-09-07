@@ -1,11 +1,11 @@
 ---
 title: "Biliary Intervention"
+concept_id: "biliary_intervention"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 474
 end_page: 484
-status: "verified_source"
----
+status: "verified_source"---
 
 # Biliary Intervention
 

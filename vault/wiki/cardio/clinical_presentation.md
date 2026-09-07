@@ -1,11 +1,11 @@
 ---
 title: "Clinical Presentation"
+concept_id: "clinical_presentation"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 193
 end_page: 193
-status: "verified_source"
----
+status: "verified_source"---
 
 # Clinical Presentation
 

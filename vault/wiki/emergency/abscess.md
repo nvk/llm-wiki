@@ -1,5 +1,6 @@
 ---
 title: "Abscess"
+concept_id: "abscess"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "infection"]
 confidence: high
 status: "verified_source"
-summary: "B, Corresponding hyperintensity on diffusion-weighted image. A, FLAIR image shows isointense lesions in right basal ganglia and left parietal lobe with surrounding edema. T1-weighted image shows faint rim enhancement of right basal ganglia lesion."
----
+summary: "B, Corresponding hyperintensity on diffusion-weighted image. A, FLAIR image shows isointense lesions in right basal ganglia and left parietal lobe with surrounding edema. T1-weighted image shows faint rim enhancement of right basal ganglia lesion."---
 
 # Abscess
 

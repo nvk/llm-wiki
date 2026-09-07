@@ -1,9 +1,9 @@
 ---
 title: "53 Current Status Of Imaging Of The Brain And Anatomical Features"
+concept_id: "53_current_status_of_imaging_of_the_brain_and_anatomical_features"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 53 Current Status of Imaging of the Brain and Anatomical Features
 

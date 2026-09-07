@@ -1,5 +1,6 @@
 ---
 title: "Acquired Conditions"
+concept_id: "acquired_conditions"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "B, MRI confirms the aberrant left pulmonary artery (lpa) between the esophagus and the trachea. The most common cause of esophagitis is GER. The bullae can ulcerate and then progress to strictures."
----
+summary: "B, MRI confirms the aberrant left pulmonary artery (lpa) between the esophagus and the trachea. The most common cause of esophagitis is GER. The bullae can ulcerate and then progress to strictures."---
 
 # Acquired Conditions
 

@@ -1,11 +1,11 @@
 ---
 title: "INTRACRANIAL HEMORRHAGE AND TRAUMATIC BRAIN INJURY"
+concept_id: "intracranial_hemorrhage_and_traumatic_brain_injury"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 17
 end_page: 17
-status: "verified_source"
----
+status: "verified_source"---
 
 # INTRACRANIAL HEMORRHAGE AND TRAUMATIC BRAIN INJURY
 

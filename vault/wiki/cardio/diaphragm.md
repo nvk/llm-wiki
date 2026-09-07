@@ -1,9 +1,9 @@
 ---
 title: "Diaphragm"
+concept_id: "diaphragm"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Diaphragm
 

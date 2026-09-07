@@ -1,11 +1,11 @@
 ---
 title: "Radiography for the Critical Care Patient"
+concept_id: "radiography_for_the_critical_care_patient"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 148
 end_page: 158
-status: "verified_source"
----
+status: "verified_source"---
 
 # Radiography for the Critical Care Patient
 

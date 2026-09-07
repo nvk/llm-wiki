@@ -1,11 +1,11 @@
 ---
 title: "Differential Diagnosis of Musculoskeletal Disorders"
+concept_id: "differential_diagnosis_of_musculoskeletal_disorders"
 domain: "msk"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 42
 end_page: 130
-status: "verified_source"
----
+status: "verified_source"---
 
 # Differential Diagnosis of Musculoskeletal Disorders
 

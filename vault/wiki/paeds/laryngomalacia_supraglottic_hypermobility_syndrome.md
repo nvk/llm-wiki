@@ -1,5 +1,6 @@
 ---
 title: "Laryngomalacia (Supraglottic Hypermobility Syndrome)"
+concept_id: "laryngomalacia_supraglottic_hypermobility_syndrome"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "They are often infected at presentation. Laryngomalacia is a common cause of inspiratory stridor in thefirst year of life. A, Lateral radiograph of the neck demonstrates a soft tissue mass encroaching on the airway and esophagus."
----
+summary: "They are often infected at presentation. Laryngomalacia is a common cause of inspiratory stridor in thefirst year of life. A, Lateral radiograph of the neck demonstrates a soft tissue mass encroaching on the airway and esophagus."---
 
 # Laryngomalacia (Supraglottic Hypermobility Syndrome)
 

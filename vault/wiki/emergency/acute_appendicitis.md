@@ -1,5 +1,6 @@
 ---
 title: "Acute Appendicitis"
+concept_id: "acute_appendicitis"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "infection"]
 confidence: high
 status: "verified_source"
-summary: "Meckel’s is more common in males. Meckel’s diverticulum are symptomatic. Omental infarction most often occurs in obese children."
----
+summary: "Meckel’s is more common in males. Meckel’s diverticulum are symptomatic. Omental infarction most often occurs in obese children."---
 
 # Acute Appendicitis
 

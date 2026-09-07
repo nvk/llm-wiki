@@ -1,11 +1,11 @@
 ---
 title: "9. General Abdomen"
+concept_id: "9_general_abdomen"
 domain: "cardio"
 source_book: "Ultrasound: The Requisites"
 start_page: 327
 end_page: 361
-status: "verified_source"
----
+status: "verified_source"---
 
 # 9. General Abdomen
 

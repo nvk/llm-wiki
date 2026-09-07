@@ -1,11 +1,11 @@
 ---
 title: "ESOPHAGUS"
+concept_id: "esophagus"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 85
 end_page: 91
-status: "verified_source"
----
+status: "verified_source"---
 
 # ESOPHAGUS
 

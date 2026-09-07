@@ -1,9 +1,9 @@
 ---
 title: "20 The Stomach"
+concept_id: "20_the_stomach"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 20 The Stomach
 

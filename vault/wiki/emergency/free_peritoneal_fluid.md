@@ -1,11 +1,11 @@
 ---
 title: "FREE PERITONEAL FLUID"
+concept_id: "free_peritoneal_fluid"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 109
 end_page: 109
-status: "verified_source"
----
+status: "verified_source"---
 
 # FREE PERITONEAL FLUID
 

@@ -1,11 +1,12 @@
 ---
 title: "TRAUMA"
+concept_id: "paeds_trauma"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 125
 end_page: 127
 status: "verified_source"
----
+aliases: ["trauma"]---
 
 # TRAUMA
 

@@ -1,11 +1,11 @@
 ---
 title: "STROKE THERAPY"
+concept_id: "stroke_therapy"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 136
 end_page: 140
-status: "verified_source"
----
+status: "verified_source"---
 
 # STROKE THERAPY
 

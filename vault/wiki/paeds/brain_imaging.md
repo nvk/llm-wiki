@@ -1,11 +1,11 @@
 ---
 title: "Brain Imaging"
+concept_id: "brain_imaging"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 214
 end_page: 224
-status: "verified_source"
----
+status: "verified_source"---
 
 # Brain Imaging
 

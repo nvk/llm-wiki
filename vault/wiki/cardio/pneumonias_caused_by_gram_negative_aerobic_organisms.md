@@ -1,11 +1,11 @@
 ---
 title: "Pneumonias Caused By Gram-Negative Aerobic Organisms"
+concept_id: "pneumonias_caused_by_gram_negative_aerobic_organisms"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 101
 end_page: 102
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pneumonias Caused By Gram-Negative Aerobic Organisms
 

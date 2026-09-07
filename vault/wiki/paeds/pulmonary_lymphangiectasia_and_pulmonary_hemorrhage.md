@@ -1,5 +1,6 @@
 ---
 title: "Pulmonary Lymphangiectasia and ￼Pulmonary ­Hemorrhage"
+concept_id: "pulmonary_lymphangiectasia_and_pulmonary_hemorrhage"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "TTN, or there may be a more nodular pattern. Croup was discussed earlier. RSV) the causative agent in a third of these cases."
----
+summary: "TTN, or there may be a more nodular pattern. Croup was discussed earlier. RSV) the causative agent in a third of these cases."---
 
 # Pulmonary Lymphangiectasia and ￼Pulmonary ­Hemorrhage
 

@@ -1,9 +1,10 @@
 ---
 title: "Miscellaneous Conditions"
+concept_id: "git_miscellaneous_conditions"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["miscellaneous_conditions"]---
 
 # Miscellaneous Conditions
 

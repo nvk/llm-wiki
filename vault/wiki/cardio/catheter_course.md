@@ -1,5 +1,6 @@
 ---
 title: "Catheter Course"
+concept_id: "catheter_course"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Data from Taybi H, Lachman RS: Radiology of syndromes, metabolic disorders, and skeletal dysplasias, ed 4, St Louis, 1996, Mosby-Year Book. Coronary sinus and right ventricular wires. A, The dual pacing wires have a similar course on the frontalfilm."
----
+summary: "Data from Taybi H, Lachman RS: Radiology of syndromes, metabolic disorders, and skeletal dysplasias, ed 4, St Louis, 1996, Mosby-Year Book. Coronary sinus and right ventricular wires. A, The dual pacing wires have a similar course on the frontalfilm."---
 
 # Catheter Course
 

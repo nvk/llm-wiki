@@ -1,9 +1,9 @@
 ---
 title: "Radiation Issues"
+concept_id: "radiation_issues"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Radiation Issues
 

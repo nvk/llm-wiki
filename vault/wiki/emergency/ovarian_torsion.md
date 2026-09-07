@@ -1,5 +1,6 @@
 ---
 title: "Ovarian Torsion"
+concept_id: "ovarian_torsion"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "A small hydrocele may be present on the affected side. There is no color Dopplerflow to the left testis. This patient had testicular torsion confirmed at surgery."
----
+summary: "A small hydrocele may be present on the affected side. There is no color Dopplerflow to the left testis. This patient had testicular torsion confirmed at surgery."---
 
 # Ovarian Torsion
 

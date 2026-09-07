@@ -1,9 +1,9 @@
 ---
 title: "Benign Renal Masses"
+concept_id: "benign_renal_masses"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Benign Renal Masses
 

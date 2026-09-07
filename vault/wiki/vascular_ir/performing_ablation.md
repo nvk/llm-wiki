@@ -1,11 +1,11 @@
 ---
 title: "PERFORMING ABLATION"
+concept_id: "performing_ablation"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 573
 end_page: 583
-status: "verified_source"
----
+status: "verified_source"---
 
 # PERFORMING ABLATION
 

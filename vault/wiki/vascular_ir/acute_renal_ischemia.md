@@ -1,11 +1,11 @@
 ---
 title: "ACUTE RENAL ISCHEMIA"
+concept_id: "acute_renal_ischemia"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 299
 end_page: 299
-status: "verified_source"
----
+status: "verified_source"---
 
 # ACUTE RENAL ISCHEMIA
 

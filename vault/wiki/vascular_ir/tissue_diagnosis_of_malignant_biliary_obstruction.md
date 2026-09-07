@@ -1,11 +1,11 @@
 ---
 title: "TISSUE DIAGNOSIS OF MALIGNANT BILIARY OBSTRUCTION"
+concept_id: "tissue_diagnosis_of_malignant_biliary_obstruction"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 489
 end_page: 489
-status: "verified_source"
----
+status: "verified_source"---
 
 # TISSUE DIAGNOSIS OF MALIGNANT BILIARY OBSTRUCTION
 

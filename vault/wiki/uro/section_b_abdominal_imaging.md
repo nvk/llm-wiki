@@ -1,9 +1,10 @@
 ---
 title: "Section B Abdominal Imaging"
+concept_id: "uro_section_b_abdominal_imaging"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["section_b_abdominal_imaging"]---
 
 # SECTION B Abdominal Imaging
 

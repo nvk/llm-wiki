@@ -1,5 +1,6 @@
 ---
 title: "Cystic Lung Disease"
+concept_id: "cystic_lung_disease"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Mounier-Kuhn syndrome)."
----
+summary: "Mounier-Kuhn syndrome)."---
 
 # Cystic Lung Disease
 

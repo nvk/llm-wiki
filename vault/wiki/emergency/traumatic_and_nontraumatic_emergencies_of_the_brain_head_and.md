@@ -1,11 +1,11 @@
 ---
 title: "Traumatic and Nontraumatic Emergencies of the Brain, Head, and Neck"
+concept_id: "traumatic_and_nontraumatic_emergencies_of_the_brain_head_and"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 17
 end_page: 27
-status: "verified_source"
----
+status: "verified_source"---
 
 # Traumatic and Nontraumatic Emergencies of the Brain, Head, and Neck
 

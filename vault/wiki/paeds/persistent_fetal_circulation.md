@@ -1,5 +1,6 @@
 ---
 title: "Persistent Fetal Circulation"
+concept_id: "persistent_fetal_circulation"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Staphylococcus or Klebsiella. There are no specific imagingfindings. Lymphangiectasia is defined as dilated lymph channels."
----
+summary: "Staphylococcus or Klebsiella. There are no specific imagingfindings. Lymphangiectasia is defined as dilated lymph channels."---
 
 # Persistent Fetal Circulation
 

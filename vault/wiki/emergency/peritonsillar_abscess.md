@@ -1,5 +1,6 @@
 ---
 title: "Peritonsillar Abscess"
+concept_id: "peritonsillar_abscess"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "infection"]
 confidence: high
 status: "verified_source"
-summary: "Skull base fractures—vascular injury. A, This patient sustained bilateral temporal bone fractures after a motor vehicle collision. Incidental note made of foramen of Vesalius (white arrow), normal anatomy seen in up to 80% of patients."
----
+summary: "Skull base fractures—vascular injury. A, This patient sustained bilateral temporal bone fractures after a motor vehicle collision. Incidental note made of foramen of Vesalius (white arrow), normal anatomy seen in up to 80% of patients."---
 
 # Peritonsillar Abscess
 

@@ -1,5 +1,6 @@
 ---
 title: "Fractures and Dislocations Around the Knee"
+concept_id: "fractures_and_dislocations_around_the_knee"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Transcervical and basicervical fractures are rare. Isolated fractures of the greater trochanter (Fig. Intertrochanteric fractures (Fig."
----
+summary: "Transcervical and basicervical fractures are rare. Isolated fractures of the greater trochanter (Fig. Intertrochanteric fractures (Fig."---
 
 # Fractures and Dislocations Around the Knee
 

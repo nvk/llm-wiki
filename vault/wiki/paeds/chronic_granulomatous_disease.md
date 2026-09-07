@@ -1,5 +1,6 @@
 ---
 title: "Chronic Granulomatous Disease"
+concept_id: "chronic_granulomatous_disease"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "It manifests as respiratory distress in 25% of cases. Lung biopsy is the diagnostic test of choice. BPD in infants and children."
----
+summary: "It manifests as respiratory distress in 25% of cases. Lung biopsy is the diagnostic test of choice. BPD in infants and children."---
 
 # Chronic Granulomatous Disease
 

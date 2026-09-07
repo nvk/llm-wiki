@@ -1,9 +1,10 @@
 ---
 title: "Parasitic Infections"
+concept_id: "neuro_parasitic_infections"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["parasitic_infections"]---
 
 # Parasitic Infections
 

@@ -1,11 +1,11 @@
 ---
 title: "15. Fetal Central Nervous System, Face, and Neck"
+concept_id: "15_fetal_central_nervous_system_face_and_neck"
 domain: "head_neck"
 source_book: "Ultrasound: The Requisites"
 start_page: 519
 end_page: 556
-status: "verified_source"
----
+status: "verified_source"---
 
 # 15. Fetal Central Nervous System, Face, and Neck
 

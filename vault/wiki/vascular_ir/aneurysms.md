@@ -1,11 +1,11 @@
 ---
 title: "ANEURYSMS"
+concept_id: "aneurysms"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 27
 end_page: 27
-status: "verified_source"
----
+status: "verified_source"---
 
 # ANEURYSMS
 

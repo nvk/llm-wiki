@@ -1,11 +1,11 @@
 ---
 title: "NONSURGICAL GALLSTONE THERAPIES"
+concept_id: "nonsurgical_gallstone_therapies"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 503
 end_page: 505
-status: "verified_source"
----
+status: "verified_source"---
 
 # NONSURGICAL GALLSTONE THERAPIES
 

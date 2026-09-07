@@ -1,5 +1,6 @@
 ---
 title: "Tetralogy of Fallot"
+concept_id: "tetralogy_of_fallot"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "The pulmonary artery (PA) is seen to arise from the right ventricle (RV). Angulation will show the aorta arising from predominantly the right ventricle."
----
+summary: "The pulmonary artery (PA) is seen to arise from the right ventricle (RV). Angulation will show the aorta arising from predominantly the right ventricle."---
 
 # Tetralogy of Fallot
 

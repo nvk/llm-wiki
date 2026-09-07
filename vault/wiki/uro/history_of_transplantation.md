@@ -1,9 +1,9 @@
 ---
 title: "History Of Transplantation"
+concept_id: "history_of_transplantation"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # History of Transplantation
 

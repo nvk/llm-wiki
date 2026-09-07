@@ -1,11 +1,11 @@
 ---
 title: "About the Author"
+concept_id: "about_the_author"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 8
 end_page: 9
-status: "verified_source"
----
+status: "verified_source"---
 
 # About the Author
 

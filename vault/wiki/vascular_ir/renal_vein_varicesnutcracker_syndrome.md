@@ -1,11 +1,11 @@
 ---
 title: "RENAL VEIN VARICES/NUTCRACKER SYNDROME"
+concept_id: "renal_vein_varicesnutcracker_syndrome"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 327
 end_page: 337
-status: "verified_source"
----
+status: "verified_source"---
 
 # RENAL VEIN VARICES/NUTCRACKER SYNDROME
 

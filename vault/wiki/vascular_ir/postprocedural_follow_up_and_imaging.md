@@ -1,11 +1,11 @@
 ---
 title: "POSTPROCEDURAL FOLLOW-UP AND IMAGING"
+concept_id: "postprocedural_follow_up_and_imaging"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 575
 end_page: 575
-status: "verified_source"
----
+status: "verified_source"---
 
 # POSTPROCEDURAL FOLLOW-UP AND IMAGING
 

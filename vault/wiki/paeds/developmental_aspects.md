@@ -1,5 +1,6 @@
 ---
 title: "Developmental Aspects"
+concept_id: "developmental_aspects"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Down syndrome 85% of the time. B, Normal “Bordeaux bottle” appearance of the subglottic region. C, Actual Bordeaux bottle."
----
+summary: "Down syndrome 85% of the time. B, Normal “Bordeaux bottle” appearance of the subglottic region. C, Actual Bordeaux bottle."---
 
 # Developmental Aspects
 

@@ -1,9 +1,9 @@
 ---
 title: "The Normal Pancreas"
+concept_id: "the_normal_pancreas"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # The Normal Pancreas
 

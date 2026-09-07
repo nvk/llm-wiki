@@ -1,9 +1,9 @@
 ---
 title: "Suggested Approach To The Radiological Diagnosis Of Airspace Diseases"
+concept_id: "suggested_approach_to_the_radiological_diagnosis_of_airspace_diseases"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Suggested Approach to the Radiological Diagnosis of Airspace Diseases
 

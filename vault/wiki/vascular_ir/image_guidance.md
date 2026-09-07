@@ -1,11 +1,11 @@
 ---
 title: "IMAGE GUIDANCE"
+concept_id: "image_guidance"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 550
 end_page: 550
-status: "verified_source"
----
+status: "verified_source"---
 
 # IMAGE GUIDANCE
 

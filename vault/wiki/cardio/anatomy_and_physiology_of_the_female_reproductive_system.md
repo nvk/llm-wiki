@@ -1,11 +1,11 @@
 ---
 title: "Anatomy and Physiology of the Female Reproductive System"
+concept_id: "anatomy_and_physiology_of_the_female_reproductive_system"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 3375
 end_page: 3412
-status: "verified_source"
----
+status: "verified_source"---
 
 # Anatomy and Physiology of the Female Reproductive System
 

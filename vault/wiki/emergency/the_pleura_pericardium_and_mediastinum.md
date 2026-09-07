@@ -1,11 +1,11 @@
 ---
 title: "THE PLEURA, PERICARDIUM, AND MEDIASTINUM"
+concept_id: "the_pleura_pericardium_and_mediastinum"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 258
 end_page: 261
-status: "verified_source"
----
+status: "verified_source"---
 
 # THE PLEURA, PERICARDIUM, AND MEDIASTINUM
 

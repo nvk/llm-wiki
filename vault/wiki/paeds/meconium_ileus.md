@@ -1,5 +1,6 @@
 ---
 title: "Meconium Ileus"
+concept_id: "meconium_ileus"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Ascites may also be present. Conventional radiographs are most often diagnostic. Meconium ileus equivalent” is a misnomer."
----
+summary: "Ascites may also be present. Conventional radiographs are most often diagnostic. Meconium ileus equivalent” is a misnomer."---
 
 # Meconium Ileus
 

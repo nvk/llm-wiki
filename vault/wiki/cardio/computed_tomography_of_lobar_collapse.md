@@ -1,9 +1,9 @@
 ---
 title: "Computed Tomography Of Lobar Collapse"
+concept_id: "computed_tomography_of_lobar_collapse"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Computed Tomography of Lobar Collapse
 

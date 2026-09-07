@@ -1,11 +1,11 @@
 ---
 title: "Chronic Beryllium Disease"
+concept_id: "chronic_beryllium_disease"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 225
 end_page: 225
-status: "verified_source"
----
+status: "verified_source"---
 
 # Chronic Beryllium Disease
 

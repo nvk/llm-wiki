@@ -1,9 +1,9 @@
 ---
 title: "8 Pulmonary Neoplasms"
+concept_id: "8_pulmonary_neoplasms"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 8 Pulmonary Neoplasms
 

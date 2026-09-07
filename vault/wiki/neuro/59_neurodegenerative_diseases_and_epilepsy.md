@@ -1,9 +1,9 @@
 ---
 title: "59 Neurodegenerative Diseases And Epilepsy"
+concept_id: "59_neurodegenerative_diseases_and_epilepsy"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 59 Neurodegenerative Diseases and Epilepsy
 

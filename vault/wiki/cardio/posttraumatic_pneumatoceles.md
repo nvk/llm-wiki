@@ -1,5 +1,6 @@
 ---
 title: "Posttraumatic Pneumatoceles"
+concept_id: "posttraumatic_pneumatoceles"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Pulmonary infarcts rarely undergo cavitation. The posteroanterior view shows a lung abscess with a thick wall and an air-fluid level (arrowhead). CT shows septic infarcts."
----
+summary: "Pulmonary infarcts rarely undergo cavitation. The posteroanterior view shows a lung abscess with a thick wall and an air-fluid level (arrowhead). CT shows septic infarcts."---
 
 # Posttraumatic Pneumatoceles
 

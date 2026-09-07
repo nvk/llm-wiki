@@ -1,11 +1,11 @@
 ---
 title: "9. Cardiovascular Imaging"
+concept_id: "9_cardiovascular_imaging"
 domain: "cardio"
 source_book: "Core Radiology (Jacob)"
 start_page: 669
 end_page: 704
-status: "verified_source"
----
+status: "verified_source"---
 
 # 9. Cardiovascular Imaging
 

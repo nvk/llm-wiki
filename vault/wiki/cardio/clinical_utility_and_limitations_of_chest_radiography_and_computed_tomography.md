@@ -1,9 +1,9 @@
 ---
 title: "Clinical Utility And Limitations Of Chest Radiography And Computed Tomography"
+concept_id: "clinical_utility_and_limitations_of_chest_radiography_and_computed_tomography"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Clinical Utility and Limitations of Chest Radiography and Computed Tomography
 

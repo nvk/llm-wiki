@@ -1,11 +1,11 @@
 ---
 title: "Radiology Considerations for Mother & Fetus & Neonate"
+concept_id: "radiology_considerations_for_mother_fetus_neonate"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 3413
 end_page: 3420
-status: "verified_source"
----
+status: "verified_source"---
 
 # Radiology Considerations for Mother & Fetus & Neonate
 

@@ -1,11 +1,11 @@
 ---
 title: "ADRENAL VENOUS SAMPLING"
+concept_id: "adrenal_venous_sampling"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 329
 end_page: 330
-status: "verified_source"
----
+status: "verified_source"---
 
 # ADRENAL VENOUS SAMPLING
 

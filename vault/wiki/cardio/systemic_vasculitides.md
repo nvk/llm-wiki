@@ -1,9 +1,9 @@
 ---
 title: "Systemic Vasculitides"
+concept_id: "systemic_vasculitides"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Systemic Vasculitides
 

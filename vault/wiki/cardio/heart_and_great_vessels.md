@@ -1,11 +1,11 @@
 ---
 title: "HEART AND GREAT VESSELS"
+concept_id: "heart_and_great_vessels"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 1887
 end_page: 1897
-status: "verified_source"
----
+status: "verified_source"---
 
 # HEART AND GREAT VESSELS
 

@@ -1,11 +1,11 @@
 ---
 title: "Trauma To The Aorta"
+concept_id: "trauma_to_the_aorta"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 182
 end_page: 186
-status: "verified_source"
----
+status: "verified_source"---
 
 # Trauma To The Aorta
 

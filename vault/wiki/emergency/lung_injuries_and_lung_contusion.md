@@ -1,11 +1,11 @@
 ---
 title: "LUNG INJURIES AND LUNG CONTUSION"
+concept_id: "lung_injuries_and_lung_contusion"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 81
 end_page: 91
-status: "verified_source"
----
+status: "verified_source"---
 
 # LUNG INJURIES AND LUNG CONTUSION
 

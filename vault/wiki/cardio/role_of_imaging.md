@@ -1,9 +1,9 @@
 ---
 title: "Role Of Imaging"
+concept_id: "role_of_imaging"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Role of Imaging
 

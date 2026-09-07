@@ -1,5 +1,6 @@
 ---
 title: "Glottic/Subglottic Masses"
+concept_id: "glotticsubglottic_masses"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "oncology"]
 confidence: high
 status: "verified_source"
-summary: "FB) are between the ages of 1 and 3 years. FB has been aspirated. This child had epiglottitis."
----
+summary: "FB) are between the ages of 1 and 3 years. FB has been aspirated. This child had epiglottitis."---
 
 # Glottic/Subglottic Masses
 

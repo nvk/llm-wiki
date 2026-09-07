@@ -1,11 +1,11 @@
 ---
 title: "GENITOURINARY TRAUMA"
+concept_id: "genitourinary_trauma"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 158
 end_page: 158
-status: "verified_source"
----
+status: "verified_source"---
 
 # GENITOURINARY TRAUMA
 

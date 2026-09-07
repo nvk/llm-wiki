@@ -1,5 +1,6 @@
 ---
 title: "Congenital Aneurysms of the Pulmonary Arteries"
+concept_id: "congenital_aneurysms_of_the_pulmonary_arteries"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "congenital", "vascular"]
 confidence: high
 status: "verified_source"
-summary: "They may be short or long and unilateral or bilateral. A, The posteroanterior chest radiograph shows a tubular and nodular opacity in the right lower lung zone (arrows). CT with or without contrast injection (see Fig."
----
+summary: "They may be short or long and unilateral or bilateral. A, The posteroanterior chest radiograph shows a tubular and nodular opacity in the right lower lung zone (arrows). CT with or without contrast injection (see Fig."---
 
 # Congenital Aneurysms of the Pulmonary Arteries
 

@@ -1,11 +1,11 @@
 ---
 title: "6. Ultrasound"
+concept_id: "6_ultrasound"
 domain: "cardio"
 source_book: "Core Radiology (Jacob)"
 start_page: 475
 end_page: 563
-status: "verified_source"
----
+status: "verified_source"---
 
 # 6. Ultrasound
 

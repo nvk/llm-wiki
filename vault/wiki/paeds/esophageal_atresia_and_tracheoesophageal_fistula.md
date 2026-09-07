@@ -1,5 +1,6 @@
 ---
 title: "Esophageal Atresia and Tracheoesophageal Fistula"
+concept_id: "esophageal_atresia_and_tracheoesophageal_fistula"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds", "congenital"]
 confidence: high
 status: "verified_source"
-summary: "GI bleeding is not as common in children as in adults. IBD may also manifest as chronic bleeding. Jews), and other rare conditions affecting the esophagus (e."
----
+summary: "GI bleeding is not as common in children as in adults. IBD may also manifest as chronic bleeding. Jews), and other rare conditions affecting the esophagus (e."---
 
 # Esophageal Atresia and Tracheoesophageal Fistula
 

@@ -1,5 +1,6 @@
 ---
 title: "Mitral Valve Disease"
+concept_id: "mitral_valve_disease"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "The right ventricle (RV) is enlarged. LV, left ventricle; MV, mitral valve. MVO, mitral valve orifi ce; RV, right ventricle."
----
+summary: "The right ventricle (RV) is enlarged. LV, left ventricle; MV, mitral valve. MVO, mitral valve orifi ce; RV, right ventricle."---
 
 # Mitral Valve Disease
 

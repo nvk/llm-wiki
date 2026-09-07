@@ -1,5 +1,6 @@
 ---
 title: "Congenital Diaphragmatic Hernia"
+concept_id: "congenital_diaphragmatic_hernia"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds", "congenital"]
 confidence: high
 status: "verified_source"
-summary: "An atrial septal defect occurs in 25% of affected children. Prenatal US usually detects the hernia. The herniation occurs on the left side 90% of the time."
----
+summary: "An atrial septal defect occurs in 25% of affected children. Prenatal US usually detects the hernia. The herniation occurs on the left side 90% of the time."---
 
 # Congenital Diaphragmatic Hernia
 

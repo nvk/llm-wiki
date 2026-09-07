@@ -1,5 +1,6 @@
 ---
 title: "Computed Tomography: Perfusion Imaging"
+concept_id: "computed_tomography_perfusion_imaging"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "Acute Ischemic Stroke (DEDAS). CT and a strict time limit alone. Merci Retriever device (Fig."
----
+summary: "Acute Ischemic Stroke (DEDAS). CT and a strict time limit alone. Merci Retriever device (Fig."---
 
 # Computed Tomography: Perfusion Imaging
 

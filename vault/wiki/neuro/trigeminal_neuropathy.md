@@ -1,11 +1,11 @@
 ---
 title: "TRIGEMINAL NEUROPATHY"
+concept_id: "trigeminal_neuropathy"
 domain: "neuro"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 775
 end_page: 785
-status: "verified_source"
----
+status: "verified_source"---
 
 # TRIGEMINAL NEUROPATHY
 

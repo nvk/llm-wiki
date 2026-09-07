@@ -1,11 +1,11 @@
 ---
 title: "Thoracic Radiology: The Requisites, Second Edition"
+concept_id: "thoracic_radiology_the_requisites_second_edition"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 2
 end_page: 12
-status: "verified_source"
----
+status: "verified_source"---
 
 # Thoracic Radiology: The Requisites, Second Edition
 

@@ -1,5 +1,6 @@
 ---
 title: "Gastroesophageal Reflux"
+concept_id: "gastroesophageal_reflux"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Both diverticula and webs are uncommon in children. Diverticula usually occur in adults. An antral web may also be familial."
----
+summary: "Both diverticula and webs are uncommon in children. Diverticula usually occur in adults. An antral web may also be familial."---
 
 # Gastroesophageal Reflux
 

@@ -1,9 +1,9 @@
 ---
 title: "Myocardial Viability Imaging"
+concept_id: "myocardial_viability_imaging"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Myocardial Viability Imaging
 

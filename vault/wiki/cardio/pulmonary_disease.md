@@ -1,11 +1,11 @@
 ---
 title: "Pulmonary Disease"
+concept_id: "pulmonary_disease"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 161
 end_page: 166
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pulmonary Disease
 

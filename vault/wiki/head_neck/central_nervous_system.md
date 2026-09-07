@@ -1,11 +1,12 @@
 ---
 title: "CENTRAL NERVOUS SYSTEM"
+concept_id: "head_neck_central_nervous_system"
 domain: "head_neck"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 589
 end_page: 769
 status: "verified_source"
----
+aliases: ["central_nervous_system"]---
 
 # CENTRAL NERVOUS SYSTEM
 

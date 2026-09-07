@@ -1,5 +1,6 @@
 ---
 title: "Esophageal Atresia"
+concept_id: "esophageal_atresia"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "congenital"]
 confidence: high
 status: "verified_source"
-summary: "Hirschsprung’s disease this relationship is reversed. This child had Hirschsprung’s disease. NEC range from 15% to 40%."
----
+summary: "Hirschsprung’s disease this relationship is reversed. This child had Hirschsprung’s disease. NEC range from 15% to 40%."---
 
 # Esophageal Atresia
 

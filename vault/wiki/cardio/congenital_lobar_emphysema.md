@@ -1,5 +1,6 @@
 ---
 title: "Congenital Lobar Emphysema"
+concept_id: "congenital_lobar_emphysema"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "congenital"]
 confidence: high
 status: "verified_source"
-summary: "CT is likely to be diagnostic in these cases. Severe pulmonary hypoplasia. A, The posteroanterior chest radiograph suggests right lung agenesis."
----
+summary: "CT is likely to be diagnostic in these cases. Severe pulmonary hypoplasia. A, The posteroanterior chest radiograph suggests right lung agenesis."---
 
 # Congenital Lobar Emphysema
 

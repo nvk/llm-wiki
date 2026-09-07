@@ -1,5 +1,6 @@
 ---
 title: "Volumetric (3D) reconstruction and image post-processing"
+concept_id: "volumetric_3d_reconstruction_and_image_post_processing"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "Brandser E: The pelvis. In Rogers LF (ed): Radiology of Skeletal Trauma, 3rd ed. Philadelphia, Churchill Livingstone, 2002, pp 930–1029."
----
+summary: "Brandser E: The pelvis. In Rogers LF (ed): Radiology of Skeletal Trauma, 3rd ed. Philadelphia, Churchill Livingstone, 2002, pp 930–1029."---
 
 # Volumetric (3D) reconstruction and image post-processing
 

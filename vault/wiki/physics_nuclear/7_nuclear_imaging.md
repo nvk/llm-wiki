@@ -1,11 +1,11 @@
 ---
 title: "7. Nuclear Imaging"
+concept_id: "7_nuclear_imaging"
 domain: "physics_nuclear"
 source_book: "Core Radiology (Jacob)"
 start_page: 564
 end_page: 602
-status: "verified_source"
----
+status: "verified_source"---
 
 # 7. Nuclear Imaging
 

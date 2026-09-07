@@ -1,11 +1,11 @@
 ---
 title: "Computed Tomography Angiography or Magnetic Resonance Angiography: Safety, Preference and Ease of Use"
+concept_id: "computed_tomography_angiography_or_magnetic_resonance_angiog"
 domain: "physics_nuclear"
 source_book: "Grainger & Allison's Diagnostic Radiology (7th Edition)"
 start_page: 2031
 end_page: 2031
-status: "verified_source"
----
+status: "verified_source"---
 
 # Computed Tomography Angiography or Magnetic Resonance Angiography: Safety, Preference and Ease of Use
 

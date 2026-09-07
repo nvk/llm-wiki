@@ -1,9 +1,9 @@
 ---
 title: "25 The Pancreas"
+concept_id: "25_the_pancreas"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 25 The Pancreas
 

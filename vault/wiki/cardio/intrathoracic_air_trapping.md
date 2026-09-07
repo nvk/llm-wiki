@@ -1,5 +1,6 @@
 ---
 title: "Intrathoracic Air Trapping"
+concept_id: "intrathoracic_air_trapping"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Langerhans cell histiocytosis. Invasive aspergillosis. Kohn) and intra-acinar connections (i."
----
+summary: "Langerhans cell histiocytosis. Invasive aspergillosis. Kohn) and intra-acinar connections (i."---
 
 # Intrathoracic Air Trapping
 

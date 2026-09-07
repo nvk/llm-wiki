@@ -1,9 +1,9 @@
 ---
 title: "17 The Thoracic Aorta"
+concept_id: "17_the_thoracic_aorta"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 17 The Thoracic Aorta
 

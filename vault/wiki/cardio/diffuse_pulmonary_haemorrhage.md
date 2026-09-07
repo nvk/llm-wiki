@@ -1,9 +1,9 @@
 ---
 title: "Diffuse Pulmonary Haemorrhage"
+concept_id: "diffuse_pulmonary_haemorrhage"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Diffuse Pulmonary Haemorrhage
 

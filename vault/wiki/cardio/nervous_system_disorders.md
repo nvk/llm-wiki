@@ -1,11 +1,11 @@
 ---
 title: "Nervous System Disorders"
+concept_id: "nervous_system_disorders"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 877
 end_page: 1084
-status: "verified_source"
----
+status: "verified_source"---
 
 # Nervous System Disorders
 

@@ -1,11 +1,11 @@
 ---
 title: "CRYOABLATION"
+concept_id: "cryoablation"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 593
 end_page: 603
-status: "verified_source"
----
+status: "verified_source"---
 
 # CRYOABLATION
 

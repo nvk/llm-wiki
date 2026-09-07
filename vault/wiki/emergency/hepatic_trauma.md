@@ -1,11 +1,11 @@
 ---
 title: "HEPATIC TRAUMA"
+concept_id: "hepatic_trauma"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 99
 end_page: 99
-status: "verified_source"
----
+status: "verified_source"---
 
 # HEPATIC TRAUMA
 

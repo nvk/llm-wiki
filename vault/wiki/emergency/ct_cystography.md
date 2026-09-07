@@ -1,5 +1,6 @@
 ---
 title: "CT Cystography"
+concept_id: "ct_cystography"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "Free intraperitonealfluid. Hypovolemic shock, CT appearance. CT and, less often, US are used to identify renal injuries."
----
+summary: "Free intraperitonealfluid. Hypovolemic shock, CT appearance. CT and, less often, US are used to identify renal injuries."---
 
 # CT Cystography
 

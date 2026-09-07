@@ -1,5 +1,6 @@
 ---
 title: "Cavitation"
+concept_id: "cavitation"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "True cavitation is common. Necrosis of lung parenchyma with cavitation (Fig."
----
+summary: "True cavitation is common. Necrosis of lung parenchyma with cavitation (Fig."---
 
 # Cavitation
 

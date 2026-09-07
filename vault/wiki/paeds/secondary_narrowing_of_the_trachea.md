@@ -1,5 +1,6 @@
 ---
 title: "Secondary Narrowing of the Trachea"
+concept_id: "secondary_narrowing_of_the_trachea"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "A soft trachea may have intrinsic or extrinsic causes. Current thinking leans toward the latter (Fig. There is a 50% association with cutaneous hemangiomas."
----
+summary: "A soft trachea may have intrinsic or extrinsic causes. Current thinking leans toward the latter (Fig. There is a 50% association with cutaneous hemangiomas."---
 
 # Secondary Narrowing of the Trachea
 

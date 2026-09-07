@@ -1,5 +1,6 @@
 ---
 title: "Left-Sided Obstructive Lesions"
+concept_id: "left_sided_obstructive_lesions"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Shone syndrome, congenital aortic stenosis, and coarc­tation. CHF in the neonate, manifests at birth. Damus-Kaye-Stansel procedure)."
----
+summary: "Shone syndrome, congenital aortic stenosis, and coarc­tation. CHF in the neonate, manifests at birth. Damus-Kaye-Stansel procedure)."---
 
 # Left-Sided Obstructive Lesions
 

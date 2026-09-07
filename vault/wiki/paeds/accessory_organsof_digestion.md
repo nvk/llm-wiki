@@ -1,11 +1,11 @@
 ---
 title: "Accessory Organsof Digestion"
+concept_id: "accessory_organsof_digestion"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 112
 end_page: 122
-status: "verified_source"
----
+status: "verified_source"---
 
 # Accessory Organsof Digestion
 

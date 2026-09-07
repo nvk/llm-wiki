@@ -1,11 +1,11 @@
 ---
 title: "Diseases Characterized By An Irregular Linear Pattern"
+concept_id: "diseases_characterized_by_an_irregular_linear_pattern"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 204
 end_page: 206
-status: "verified_source"
----
+status: "verified_source"---
 
 # Diseases Characterized By An Irregular Linear Pattern
 

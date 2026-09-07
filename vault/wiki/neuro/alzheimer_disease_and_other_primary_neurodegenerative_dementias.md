@@ -1,9 +1,9 @@
 ---
 title: "Alzheimer Disease And Other Primary Neurodegenerative Dementias"
+concept_id: "alzheimer_disease_and_other_primary_neurodegenerative_dementias"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Alzheimer Disease and Other Primary Neurodegenerative Dementias
 

@@ -1,9 +1,9 @@
 ---
 title: "Brain Anatomy"
+concept_id: "brain_anatomy"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Brain Anatomy
 

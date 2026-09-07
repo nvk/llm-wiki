@@ -1,11 +1,11 @@
 ---
 title: "CORONARY CT ANGIOGRAPHY IN THE ED"
+concept_id: "coronary_ct_angiography_in_the_ed"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 277
 end_page: 286
-status: "verified_source"
----
+status: "verified_source"---
 
 # CORONARY CT ANGIOGRAPHY IN THE ED
 

@@ -1,11 +1,11 @@
 ---
 title: "Other Primary Malignant Neoplasms"
+concept_id: "other_primary_malignant_neoplasms"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 281
 end_page: 289
-status: "verified_source"
----
+status: "verified_source"---
 
 # Other Primary Malignant Neoplasms
 

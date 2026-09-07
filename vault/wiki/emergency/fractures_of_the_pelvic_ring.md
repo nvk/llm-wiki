@@ -1,5 +1,6 @@
 ---
 title: "Fractures of the pelvic ring"
+concept_id: "fractures_of_the_pelvic_ring"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Avulsion injuries (Fig. VS), and combined mechanism (CM). In the APC category (Fig."
----
+summary: "Avulsion injuries (Fig. VS), and combined mechanism (CM). In the APC category (Fig."---
 
 # Fractures of the pelvic ring
 

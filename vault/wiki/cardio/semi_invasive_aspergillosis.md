@@ -1,5 +1,6 @@
 ---
 title: "Semi-invasive Aspergillosis"
+concept_id: "semi_invasive_aspergillosis"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "It may form a crescent of air (i. The appearance may be identical to that of a mycetoma. Extensive pleural thickening can be identified."
----
+summary: "It may form a crescent of air (i. The appearance may be identical to that of a mycetoma. Extensive pleural thickening can be identified."---
 
 # Semi-invasive Aspergillosis
 

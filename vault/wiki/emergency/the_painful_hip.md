@@ -1,11 +1,11 @@
 ---
 title: "THE PAINFUL HIP"
+concept_id: "the_painful_hip"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 184
 end_page: 189
-status: "verified_source"
----
+status: "verified_source"---
 
 # THE PAINFUL HIP
 

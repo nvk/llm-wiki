@@ -1,11 +1,12 @@
 ---
 title: "TUMORS"
+concept_id: "emergency_tumors"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 46
 end_page: 47
 status: "verified_source"
----
+aliases: ["tumors"]---
 
 # TUMORS
 

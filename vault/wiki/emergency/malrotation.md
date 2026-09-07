@@ -1,5 +1,6 @@
 ---
 title: "Malrotation"
+concept_id: "emergency_malrotation"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -11,7 +12,7 @@ tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
 summary: "Ladd’s procedure is rare, but can occur."
----
+aliases: ["malrotation"]---
 
 # Malrotation
 

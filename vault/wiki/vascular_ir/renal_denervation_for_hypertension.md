@@ -1,11 +1,11 @@
 ---
 title: "RENAL DENERVATION FOR HYPERTENSION"
+concept_id: "renal_denervation_for_hypertension"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 299
 end_page: 309
-status: "verified_source"
----
+status: "verified_source"---
 
 # RENAL DENERVATION FOR HYPERTENSION
 

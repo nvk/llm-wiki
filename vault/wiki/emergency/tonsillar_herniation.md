@@ -1,5 +1,6 @@
 ---
 title: "Tonsillar Herniation"
+concept_id: "tonsillar_herniation"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "CN III) with an ­associated palsy. Chiari I malformation. This was a dramatic change from a previous exam."
----
+summary: "CN III) with an ­associated palsy. Chiari I malformation. This was a dramatic change from a previous exam."---
 
 # Tonsillar Herniation
 

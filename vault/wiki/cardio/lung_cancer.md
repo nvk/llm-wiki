@@ -1,11 +1,11 @@
 ---
 title: "Lung Cancer"
+concept_id: "lung_cancer"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 268
 end_page: 280
-status: "verified_source"
----
+status: "verified_source"---
 
 # Lung Cancer
 

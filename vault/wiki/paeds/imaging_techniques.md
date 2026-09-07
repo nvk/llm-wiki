@@ -1,11 +1,12 @@
 ---
 title: "IMAGING TECHNIQUES"
+concept_id: "paeds_imaging_techniques"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 14
 end_page: 14
 status: "verified_source"
----
+aliases: ["imaging_techniques"]---
 
 # IMAGING TECHNIQUES
 

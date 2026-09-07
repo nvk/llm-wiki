@@ -1,9 +1,9 @@
 ---
 title: "28 Benign Upper Urinary Tract Conditions"
+concept_id: "28_benign_upper_urinary_tract_conditions"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 28 Benign Upper Urinary Tract Conditions
 

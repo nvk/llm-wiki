@@ -1,5 +1,6 @@
 ---
 title: "Lobar Bronchi and Bronchopulmonary Segments"
+concept_id: "lobar_bronchi_and_bronchopulmonary_segments"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "The bronchus to the right upper lobe (Fig. The left upper lobe bronchus (Fig. CT scans: main pulmonary artery, 28."
----
+summary: "The bronchus to the right upper lobe (Fig. The left upper lobe bronchus (Fig. CT scans: main pulmonary artery, 28."---
 
 # Lobar Bronchi and Bronchopulmonary Segments
 

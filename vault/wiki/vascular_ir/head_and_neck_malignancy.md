@@ -1,11 +1,11 @@
 ---
 title: "HEAD AND NECK MALIGNANCY"
+concept_id: "head_and_neck_malignancy"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 136
 end_page: 146
-status: "verified_source"
----
+status: "verified_source"---
 
 # HEAD AND NECK MALIGNANCY
 

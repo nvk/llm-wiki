@@ -1,9 +1,9 @@
 ---
 title: "Congenital Aortic Abnormalities"
+concept_id: "congenital_aortic_abnormalities"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Congenital Aortic Abnormalities
 

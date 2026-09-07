@@ -1,9 +1,9 @@
 ---
 title: "Neoplastic Renal Masses"
+concept_id: "neoplastic_renal_masses"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Neoplastic Renal Masses
 

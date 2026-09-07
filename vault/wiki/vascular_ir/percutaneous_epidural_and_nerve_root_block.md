@@ -1,11 +1,11 @@
 ---
 title: "PERCUTANEOUS EPIDURAL AND NERVE ROOT BLOCK"
+concept_id: "percutaneous_epidural_and_nerve_root_block"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 555
 end_page: 555
-status: "verified_source"
----
+status: "verified_source"---
 
 # PERCUTANEOUS EPIDURAL AND NERVE ROOT BLOCK
 

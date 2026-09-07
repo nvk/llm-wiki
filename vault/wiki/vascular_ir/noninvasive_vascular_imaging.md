@@ -1,11 +1,11 @@
 ---
 title: "Noninvasive Vascular Imaging"
+concept_id: "noninvasive_vascular_imaging"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 79
 end_page: 89
-status: "verified_source"
----
+status: "verified_source"---
 
 # Noninvasive Vascular Imaging
 

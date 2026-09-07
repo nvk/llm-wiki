@@ -1,5 +1,6 @@
 ---
 title: "Neonatal Pneumonia"
+concept_id: "paeds_neonatal_pneumonia"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -11,7 +12,7 @@ tags: ["radiology", "paeds", "infection"]
 confidence: high
 status: "verified_source"
 summary: "Treatment is supportive and consists of antibiotics and oxygen. Neonatal pneumonia may be acquired in utero or perinatally. Transient tachypnea of a newborn."
----
+aliases: ["neonatal_pneumonia"]---
 
 # Neonatal Pneumonia
 

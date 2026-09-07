@@ -1,11 +1,11 @@
 ---
 title: "Aspiration Pneumonitis And Anaerobic Pneumonia"
+concept_id: "aspiration_pneumonitis_and_anaerobic_pneumonia"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 103
 end_page: 103
-status: "verified_source"
----
+status: "verified_source"---
 
 # Aspiration Pneumonitis And Anaerobic Pneumonia
 

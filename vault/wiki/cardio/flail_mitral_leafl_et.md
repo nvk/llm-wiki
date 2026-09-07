@@ -1,5 +1,6 @@
 ---
 title: "Flail Mitral Leafl et"
+concept_id: "flail_mitral_leafl_et"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Calcifi cation of the mitral annulus is common in the elderly. The anterior cusp (AMVL) bows into the left atrium behind the coaptation point of the mitral leafl ets. LV, left ventricle; RV, right ventricle."
----
+summary: "Calcifi cation of the mitral annulus is common in the elderly. The anterior cusp (AMVL) bows into the left atrium behind the coaptation point of the mitral leafl ets. LV, left ventricle; RV, right ventricle."---
 
 # Flail Mitral Leafl et
 

@@ -1,5 +1,6 @@
 ---
 title: "Middle Mediastinum"
+concept_id: "middle_mediastinum"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "CT and MRI are the modalities of choice. Approximately 15% of thymomas are malignant. A teratoma is the most common germ cell tumor."
----
+summary: "CT and MRI are the modalities of choice. Approximately 15% of thymomas are malignant. A teratoma is the most common germ cell tumor."---
 
 # Middle Mediastinum
 

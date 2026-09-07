@@ -1,11 +1,11 @@
 ---
 title: "Pulmonary Artery Hypertension"
+concept_id: "pulmonary_artery_hypertension"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 339
 end_page: 341
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pulmonary Artery Hypertension
 

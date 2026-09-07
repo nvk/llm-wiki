@@ -1,5 +1,6 @@
 ---
 title: "COMMON CYANOTIC GONGENITAL HEART DEFECTS"
+concept_id: "common_cyanotic_gongenital_heart_defects"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Decreased pulmonary vasculature. Shunt vascularity in ventricular septal defect. The large central pulmonary arteries are indistinct because of surrounding pulmonary edema."
----
+summary: "Decreased pulmonary vasculature. Shunt vascularity in ventricular septal defect. The large central pulmonary arteries are indistinct because of surrounding pulmonary edema."---
 
 # COMMON CYANOTIC GONGENITAL HEART DEFECTS
 

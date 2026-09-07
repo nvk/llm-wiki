@@ -1,11 +1,11 @@
 ---
 title: "Breast Anatomy and Mammographic Technique"
+concept_id: "breast_anatomy_and_mammographic_technique"
 domain: "breast"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 1798
 end_page: 1812
-status: "verified_source"
----
+status: "verified_source"---
 
 # Breast Anatomy and Mammographic Technique
 

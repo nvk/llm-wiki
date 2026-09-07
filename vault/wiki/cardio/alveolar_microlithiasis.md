@@ -1,9 +1,9 @@
 ---
 title: "Alveolar Microlithiasis"
+concept_id: "alveolar_microlithiasis"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Alveolar Microlithiasis
 

@@ -1,9 +1,9 @@
 ---
 title: "Imaging The Abdomen With Computed Tomography Radiation Issues"
+concept_id: "imaging_the_abdomen_with_computed_tomography_radiation_issues"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Imaging the Abdomen With Computed Tomography: Radiation Issues
 

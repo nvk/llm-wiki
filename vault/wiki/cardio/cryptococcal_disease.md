@@ -1,5 +1,6 @@
 ---
 title: "Cryptococcal Disease"
+concept_id: "cryptococcal_disease"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Cryptococcus infection in a patient with lymphoma. The radiographicfindings are usually nonspecific. CT shows actinomycosis in a patient who developed a right upper lobe, posterior segment necrotic consolidation after dental extraction."
----
+summary: "Cryptococcus infection in a patient with lymphoma. The radiographicfindings are usually nonspecific. CT shows actinomycosis in a patient who developed a right upper lobe, posterior segment necrotic consolidation after dental extraction."---
 
 # Cryptococcal Disease
 

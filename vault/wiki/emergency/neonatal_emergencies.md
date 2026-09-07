@@ -1,11 +1,11 @@
 ---
 title: "NEONATAL EMERGENCIES"
+concept_id: "neonatal_emergencies"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 199
 end_page: 204
-status: "verified_source"
----
+status: "verified_source"---
 
 # NEONATAL EMERGENCIES
 

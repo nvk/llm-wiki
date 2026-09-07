@@ -1,5 +1,6 @@
 ---
 title: "Arthropathies"
+concept_id: "arthropathies"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "The joint space is preserved. A joint effusion is frequently present. MRfindings have also been developed."
----
+summary: "The joint space is preserved. A joint effusion is frequently present. MRfindings have also been developed."---
 
 # Arthropathies
 

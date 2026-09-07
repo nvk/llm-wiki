@@ -1,5 +1,6 @@
 ---
 title: "Thoracic Cage and Heart Disease"
+concept_id: "thoracic_cage_and_heart_disease"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "A, The heart is shifted into the left hemithorax because of the severe scoliosis. The lungs have large volume. The aorta and the main pulmonary artery are dilated."
----
+summary: "A, The heart is shifted into the left hemithorax because of the severe scoliosis. The lungs have large volume. The aorta and the main pulmonary artery are dilated."---
 
 # Thoracic Cage and Heart Disease
 

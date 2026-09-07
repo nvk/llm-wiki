@@ -1,9 +1,9 @@
 ---
 title: "Changing Spectrum Of Human Immunodeficiency Virus Infections 40 Years Later"
+concept_id: "changing_spectrum_of_human_immunodeficiency_virus_infections_40_years_later"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Changing Spectrum of Human Immunodeficiency Virus Infections: 40 Years Later
 

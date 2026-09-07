@@ -1,11 +1,11 @@
 ---
 title: "SMALL AND LARGE BOWEL"
+concept_id: "small_and_large_bowel"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 96
 end_page: 109
-status: "verified_source"
----
+status: "verified_source"---
 
 # SMALL AND LARGE BOWEL
 

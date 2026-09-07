@@ -1,11 +1,11 @@
 ---
 title: "18. Fetal Genitourinary Tract"
+concept_id: "18_fetal_genitourinary_tract"
 domain: "uro"
 source_book: "Ultrasound: The Requisites"
 start_page: 603
 end_page: 624
-status: "verified_source"
----
+status: "verified_source"---
 
 # 18. Fetal Genitourinary Tract
 

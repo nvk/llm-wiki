@@ -1,11 +1,12 @@
 ---
 title: "Anatomy"
+concept_id: "cardio_anatomy"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 18
 end_page: 38
 status: "verified_source"
----
+aliases: ["anatomy"]---
 
 # Anatomy
 

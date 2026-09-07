@@ -1,5 +1,6 @@
 ---
 title: "Other Complications"
+concept_id: "other_complications"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Streptococcus pyogenes. Cavitary pneumonia due to gram-negative organisms. Primary lung abscess due to aspiration."
----
+summary: "Streptococcus pyogenes. Cavitary pneumonia due to gram-negative organisms. Primary lung abscess due to aspiration."---
 
 # Other Complications
 

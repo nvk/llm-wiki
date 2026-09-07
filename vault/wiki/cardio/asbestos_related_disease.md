@@ -1,11 +1,11 @@
 ---
 title: "Asbestos-Related Disease"
+concept_id: "asbestos_related_disease"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 218
 end_page: 224
-status: "verified_source"
----
+status: "verified_source"---
 
 # Asbestos-Related Disease
 

@@ -1,5 +1,6 @@
 ---
 title: "Nontuberculous Mycobacterial Infections"
+concept_id: "nontuberculous_mycobacterial_infections"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "infection"]
 confidence: high
 status: "verified_source"
-summary: "MAC complex, and Mycobacterium kansasii. MAC disease in AIDS patients). Fibrocalcific tuberculosis."
----
+summary: "MAC complex, and Mycobacterium kansasii. MAC disease in AIDS patients). Fibrocalcific tuberculosis."---
 
 # Nontuberculous Mycobacterial Infections
 

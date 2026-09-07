@@ -1,9 +1,10 @@
 ---
 title: "Conclusion"
+concept_id: "uro_conclusion"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["conclusion"]---
 
 # Conclusion
 

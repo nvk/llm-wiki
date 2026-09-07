@@ -1,11 +1,12 @@
 ---
 title: "Acknowledgments"
+concept_id: "cardio_acknowledgments"
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
 start_page: 12
 end_page: 13
 status: "verified_source"
----
+aliases: ["acknowledgments"]---
 
 # Acknowledgments
 

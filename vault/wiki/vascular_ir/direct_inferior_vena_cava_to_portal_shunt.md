@@ -1,11 +1,11 @@
 ---
 title: "DIRECT INFERIOR VENA CAVA TO PORTAL SHUNT"
+concept_id: "direct_inferior_vena_cava_to_portal_shunt"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 348
 end_page: 358
-status: "verified_source"
----
+status: "verified_source"---
 
 # DIRECT INFERIOR VENA CAVA TO PORTAL SHUNT
 

@@ -1,9 +1,9 @@
 ---
 title: "The Acromioclavicular Joint"
+concept_id: "the_acromioclavicular_joint"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # The Acromioclavicular Joint
 

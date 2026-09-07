@@ -1,9 +1,10 @@
 ---
 title: "Magnetic Resonance Imaging"
+concept_id: "msk_magnetic_resonance_imaging"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["magnetic_resonance_imaging"]---
 
 # Magnetic Resonance Imaging
 

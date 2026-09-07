@@ -1,11 +1,11 @@
 ---
 title: "Divisions of the Mediastinum"
+concept_id: "divisions_of_the_mediastinum"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 352
 end_page: 353
-status: "verified_source"
----
+status: "verified_source"---
 
 # Divisions of the Mediastinum
 

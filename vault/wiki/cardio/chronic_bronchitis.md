@@ -1,11 +1,11 @@
 ---
 title: "Chronic Bronchitis"
+concept_id: "chronic_bronchitis"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 261
 end_page: 271
-status: "verified_source"
----
+status: "verified_source"---
 
 # Chronic Bronchitis
 

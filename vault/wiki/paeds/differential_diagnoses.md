@@ -1,5 +1,6 @@
 ---
 title: "Differential Diagnoses"
+concept_id: "differential_diagnoses"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "In Higgins CB, de Roos A (editors): Cardiovascular MRI and MRA. Philadelphia, Lippincott Williams & Wilkins, 2002, pp 307-338. Infants, Children, and Adolescents: Including the Fetus and Young Adults, ed 7."
----
+summary: "In Higgins CB, de Roos A (editors): Cardiovascular MRI and MRA. Philadelphia, Lippincott Williams & Wilkins, 2002, pp 307-338. Infants, Children, and Adolescents: Including the Fetus and Young Adults, ed 7."---
 
 # Differential Diagnoses
 

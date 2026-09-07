@@ -1,11 +1,11 @@
 ---
 title: "Diseases of Altered Immunologic Activity"
+concept_id: "diseases_of_altered_immunologic_activity"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 228
 end_page: 238
-status: "verified_source"
----
+status: "verified_source"---
 
 # Diseases of Altered Immunologic Activity
 

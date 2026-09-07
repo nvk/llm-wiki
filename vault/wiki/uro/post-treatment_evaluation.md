@@ -1,9 +1,9 @@
 ---
 title: "Post-Treatment Evaluation"
+concept_id: "post-treatment_evaluation"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Post-Treatment Evaluation
 

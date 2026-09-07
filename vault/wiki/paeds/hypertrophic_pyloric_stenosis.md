@@ -1,5 +1,6 @@
 ---
 title: "Hypertrophic Pyloric Stenosis"
+concept_id: "paeds_hypertrophic_pyloric_stenosis"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -11,7 +12,7 @@ tags: ["radiology", "paeds", "vascular"]
 confidence: high
 status: "verified_source"
 summary: "HPS is rare after 12 weeks of age. The incidence of HPS is variable. Americans and 1 in 25 in Sweden."
----
+aliases: ["hypertrophic_pyloric_stenosis"]---
 
 # Hypertrophic Pyloric Stenosis
 

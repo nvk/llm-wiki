@@ -1,11 +1,12 @@
 ---
 title: "TRAUMA"
+concept_id: "vascular_ir_trauma"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 37
 end_page: 37
 status: "verified_source"
----
+aliases: ["trauma"]---
 
 # TRAUMA
 

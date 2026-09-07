@@ -1,9 +1,9 @@
 ---
 title: "Arthrography"
+concept_id: "arthrography"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Arthrography
 

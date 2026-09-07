@@ -1,5 +1,6 @@
 ---
 title: "Echinococcal Disease"
+concept_id: "echinococcal_disease"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Daughter cysts may be formed within the endocyst. They are usually located in the lower lobes. Entamoeba histolytica."
----
+summary: "Daughter cysts may be formed within the endocyst. They are usually located in the lower lobes. Entamoeba histolytica."---
 
 # Echinococcal Disease
 

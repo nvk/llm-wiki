@@ -1,11 +1,11 @@
 ---
 title: "Upper Extremity, Neck, and Central Thoracic Veins"
+concept_id: "upper_extremity_neck_and_central_thoracic_veins"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 159
 end_page: 169
-status: "verified_source"
----
+status: "verified_source"---
 
 # Upper Extremity, Neck, and Central Thoracic Veins
 

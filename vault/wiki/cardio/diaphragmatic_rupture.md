@@ -1,11 +1,11 @@
 ---
 title: "Diaphragmatic Rupture"
+concept_id: "diaphragmatic_rupture"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 181
 end_page: 181
-status: "verified_source"
----
+status: "verified_source"---
 
 # Diaphragmatic Rupture
 

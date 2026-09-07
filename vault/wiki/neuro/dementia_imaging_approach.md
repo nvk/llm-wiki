@@ -1,9 +1,9 @@
 ---
 title: "Dementia Imaging Approach"
+concept_id: "dementia_imaging_approach"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Dementia—Imaging Approach
 

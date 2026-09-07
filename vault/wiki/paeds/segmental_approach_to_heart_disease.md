@@ -1,5 +1,6 @@
 ---
 title: "Segmental Approach to Heart Disease"
+concept_id: "segmental_approach_to_heart_disease"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "The presence of an infundibulum (conus) in the RV. How each segment is connected to the adjacent segment. AV valve, and overriding AV valve."
----
+summary: "The presence of an infundibulum (conus) in the RV. How each segment is connected to the adjacent segment. AV valve, and overriding AV valve."---
 
 # Segmental Approach to Heart Disease
 

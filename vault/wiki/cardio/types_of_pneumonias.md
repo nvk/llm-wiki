@@ -1,9 +1,9 @@
 ---
 title: "Types Of Pneumonias"
+concept_id: "types_of_pneumonias"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Types of Pneumonias
 

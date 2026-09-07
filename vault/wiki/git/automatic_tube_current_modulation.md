@@ -1,9 +1,9 @@
 ---
 title: "Automatic Tube Current Modulation"
+concept_id: "automatic_tube_current_modulation"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Automatic Tube Current Modulation
 

@@ -1,11 +1,11 @@
 ---
 title: "20. Placenta, Umbilical Cord, and Cervix"
+concept_id: "20_placenta_umbilical_cord_and_cervix"
 domain: "head_neck"
 source_book: "Ultrasound: The Requisites"
 start_page: 646
 end_page: 674
-status: "verified_source"
----
+status: "verified_source"---
 
 # 20. Placenta, Umbilical Cord, and Cervix
 

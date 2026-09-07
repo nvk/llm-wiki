@@ -1,11 +1,12 @@
 ---
 title: "Acknowledgements"
+concept_id: "head_neck_acknowledgements"
 domain: "head_neck"
 source_book: "Core Radiology (Jacob)"
 start_page: 9
 end_page: 9
 status: "verified_source"
----
+aliases: ["acknowledgements"]---
 
 # Acknowledgements
 

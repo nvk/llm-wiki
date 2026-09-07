@@ -1,9 +1,9 @@
 ---
 title: "Differential Diagnosis In Ischaemic Heart Disease"
+concept_id: "differential_diagnosis_in_ischaemic_heart_disease"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Differential Diagnosis in Ischaemic Heart Disease
 

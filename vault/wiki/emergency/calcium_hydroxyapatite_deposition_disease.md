@@ -1,5 +1,6 @@
 ---
 title: "Calcium Hydroxyapatite Deposition Disease"
+concept_id: "calcium_hydroxyapatite_deposition_disease"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "Medical Care Survey—Emergency Department 2004. National Center for Health Statistics). SS) tendon near its humeral (H) insertion."
----
+summary: "Medical Care Survey—Emergency Department 2004. National Center for Health Statistics). SS) tendon near its humeral (H) insertion."---
 
 # Calcium Hydroxyapatite Deposition Disease
 

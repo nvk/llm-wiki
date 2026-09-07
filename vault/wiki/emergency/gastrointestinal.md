@@ -1,11 +1,11 @@
 ---
 title: "GASTROINTESTINAL"
+concept_id: "gastrointestinal"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 205
 end_page: 210
-status: "verified_source"
----
+status: "verified_source"---
 
 # GASTROINTESTINAL
 

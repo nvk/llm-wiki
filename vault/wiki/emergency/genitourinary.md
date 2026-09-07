@@ -1,11 +1,11 @@
 ---
 title: "GENITOURINARY"
+concept_id: "genitourinary"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 211
 end_page: 215
-status: "verified_source"
----
+status: "verified_source"---
 
 # GENITOURINARY
 

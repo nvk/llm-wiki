@@ -1,11 +1,11 @@
 ---
 title: "CONTRAST AGENTS"
+concept_id: "contrast_agents"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 57
 end_page: 57
-status: "verified_source"
----
+status: "verified_source"---
 
 # CONTRAST AGENTS
 

@@ -1,5 +1,6 @@
 ---
 title: "Transient Bone Marrow Edema and Transient Osteoporosis of the Hip"
+concept_id: "transient_bone_marrow_edema_and_transient_osteoporosis_of_th"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "MR ­examination should be obtained if available. Radiographically occult insufficiency subcapital femoral neck fracture. Anteroposterior view (A) of the left hip demonstrates mild demineralization of the bones but no evidence of fracture."
----
+summary: "MR ­examination should be obtained if available. Radiographically occult insufficiency subcapital femoral neck fracture. Anteroposterior view (A) of the left hip demonstrates mild demineralization of the bones but no evidence of fracture."---
 
 # Transient Bone Marrow Edema and Transient Osteoporosis of the Hip
 

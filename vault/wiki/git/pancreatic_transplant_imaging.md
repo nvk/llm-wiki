@@ -1,9 +1,9 @@
 ---
 title: "Pancreatic Transplant Imaging"
+concept_id: "pancreatic_transplant_imaging"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pancreatic Transplant Imaging
 

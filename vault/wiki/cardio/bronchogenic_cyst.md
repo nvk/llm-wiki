@@ -1,5 +1,6 @@
 ---
 title: "Bronchogenic Cyst"
+concept_id: "bronchogenic_cyst"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "On CT images of the chest (Fig. Air-filled intralobar sequestration. This suggests they may be draped around a space-occupying but air-filled lesion."
----
+summary: "On CT images of the chest (Fig. Air-filled intralobar sequestration. This suggests they may be draped around a space-occupying but air-filled lesion."---
 
 # Bronchogenic Cyst
 

@@ -1,11 +1,11 @@
 ---
 title: "Gastrointestinal Tract"
+concept_id: "gastrointestinal_tract"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 72
 end_page: 82
-status: "verified_source"
----
+status: "verified_source"---
 
 # Gastrointestinal Tract
 

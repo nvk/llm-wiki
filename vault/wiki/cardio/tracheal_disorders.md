@@ -1,9 +1,9 @@
 ---
 title: "Tracheal Disorders"
+concept_id: "tracheal_disorders"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Tracheal Disorders
 

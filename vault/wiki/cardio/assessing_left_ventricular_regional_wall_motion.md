@@ -1,5 +1,6 @@
 ---
 title: "Assessing Left Ventricular Regional Wall Motion"
+concept_id: "assessing_left_ventricular_regional_wall_motion"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "There are a number of reasons for this. Diagrammatic representation of myocardial segments of the left ventricle as viewed from the standard echocardiographic views. There is a large gap in the basal aspect of the interventricular septum (IVS)."
----
+summary: "There are a number of reasons for this. Diagrammatic representation of myocardial segments of the left ventricle as viewed from the standard echocardiographic views. There is a large gap in the basal aspect of the interventricular septum (IVS)."---
 
 # Assessing Left Ventricular Regional Wall Motion
 

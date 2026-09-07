@@ -1,11 +1,12 @@
 ---
 title: "ANATOMY"
+concept_id: "vascular_ir_anatomy"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 122
 end_page: 132
 status: "verified_source"
----
+aliases: ["anatomy"]---
 
 # ANATOMY
 

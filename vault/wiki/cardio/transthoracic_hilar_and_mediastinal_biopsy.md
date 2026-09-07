@@ -1,11 +1,11 @@
 ---
 title: "Transthoracic Hilar and Mediastinal Biopsy"
+concept_id: "transthoracic_hilar_and_mediastinal_biopsy"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 418
 end_page: 418
-status: "verified_source"
----
+status: "verified_source"---
 
 # Transthoracic Hilar and Mediastinal Biopsy
 

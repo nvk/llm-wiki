@@ -1,11 +1,12 @@
 ---
 title: "Interventional Techniques"
+concept_id: "cardio_interventional_techniques"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 412
 end_page: 422
 status: "verified_source"
----
+aliases: ["interventional_techniques"]---
 
 # Interventional Techniques
 

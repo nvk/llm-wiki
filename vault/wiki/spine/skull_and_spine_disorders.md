@@ -1,11 +1,11 @@
 ---
 title: "Skull and Spine Disorders"
+concept_id: "skull_and_spine_disorders"
 domain: "spine"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 667
 end_page: 769
-status: "verified_source"
----
+status: "verified_source"---
 
 # Skull and Spine Disorders
 

@@ -1,11 +1,11 @@
 ---
 title: "Echocardiography"
+concept_id: "echocardiography"
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
 start_page: 44
 end_page: 82
-status: "verified_source"
----
+status: "verified_source"---
 
 # Echocardiography
 

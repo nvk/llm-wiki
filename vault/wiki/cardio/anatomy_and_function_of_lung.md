@@ -1,11 +1,11 @@
 ---
 title: "Anatomy and Function of Lung"
+concept_id: "anatomy_and_function_of_lung"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 1470
 end_page: 1493
-status: "verified_source"
----
+status: "verified_source"---
 
 # Anatomy and Function of Lung
 

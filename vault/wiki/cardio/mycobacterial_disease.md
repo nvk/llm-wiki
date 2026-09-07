@@ -1,5 +1,6 @@
 ---
 title: "Mycobacterial Disease"
+concept_id: "mycobacterial_disease"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Multiple lobes are usually involved. Varicella-herpes zoster (i."
----
+summary: "Multiple lobes are usually involved. Varicella-herpes zoster (i."---
 
 # Mycobacterial Disease
 

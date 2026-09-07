@@ -1,9 +1,9 @@
 ---
 title: "Cardiomyopathies"
+concept_id: "cardiomyopathies"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Cardiomyopathies
 

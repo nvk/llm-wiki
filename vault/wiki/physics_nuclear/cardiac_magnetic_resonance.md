@@ -1,11 +1,12 @@
 ---
 title: "Cardiac Magnetic Resonance"
+concept_id: "physics_nuclear_cardiac_magnetic_resonance"
 domain: "physics_nuclear"
 source_book: "Grainger & Allison's Diagnostic Radiology (7th Edition)"
 start_page: 263
 end_page: 263
 status: "verified_source"
----
+aliases: ["cardiac_magnetic_resonance"]---
 
 # Cardiac Magnetic Resonance
 

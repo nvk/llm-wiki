@@ -1,11 +1,11 @@
 ---
 title: "INTRACRANIAL INFECTIONS AND INFLAMMATORY DISEASE"
+concept_id: "intracranial_infections_and_inflammatory_disease"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 236
 end_page: 241
-status: "verified_source"
----
+status: "verified_source"---
 
 # INTRACRANIAL INFECTIONS AND INFLAMMATORY DISEASE
 

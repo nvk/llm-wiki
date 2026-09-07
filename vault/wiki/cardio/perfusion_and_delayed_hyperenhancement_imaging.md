@@ -1,5 +1,6 @@
 ---
 title: "Perfusion and Delayed Hyperenhancement Imaging"
+concept_id: "perfusion_and_delayed_hyperenhancement_imaging"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Gradient echo acquisitions from two patients with valvular heart disease. The left atrium (LA) and left ventricle (LV) are separated by the anterior mitral leafl et (arrow). RV) are separated by the interventricular septum."
----
+summary: "Gradient echo acquisitions from two patients with valvular heart disease. The left atrium (LA) and left ventricle (LV) are separated by the anterior mitral leafl et (arrow). RV) are separated by the interventricular septum."---
 
 # Perfusion and Delayed Hyperenhancement Imaging
 

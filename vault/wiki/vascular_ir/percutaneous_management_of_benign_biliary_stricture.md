@@ -1,11 +1,11 @@
 ---
 title: "PERCUTANEOUS MANAGEMENT OF BENIGN BILIARY STRICTURE"
+concept_id: "percutaneous_management_of_benign_biliary_stricture"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 492
 end_page: 493
-status: "verified_source"
----
+status: "verified_source"---
 
 # PERCUTANEOUS MANAGEMENT OF BENIGN BILIARY STRICTURE
 

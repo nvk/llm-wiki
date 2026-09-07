@@ -1,5 +1,6 @@
 ---
 title: "Ulceration"
+concept_id: "ulceration"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Malrotation of the GI tract is invariably present. Gastritis can be of a primary or secondary nature. Neoplasms in the pediatric stomach are rare."
----
+summary: "Malrotation of the GI tract is invariably present. Gastritis can be of a primary or secondary nature. Neoplasms in the pediatric stomach are rare."---
 
 # Ulceration
 

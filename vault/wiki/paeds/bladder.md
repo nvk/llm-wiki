@@ -1,11 +1,11 @@
 ---
 title: "BLADDER"
+concept_id: "bladder"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 159
 end_page: 163
-status: "verified_source"
----
+status: "verified_source"---
 
 # BLADDER
 

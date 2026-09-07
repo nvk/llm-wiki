@@ -1,11 +1,11 @@
 ---
 title: "19. Fetal Musculoskeletal System"
+concept_id: "19_fetal_musculoskeletal_system"
 domain: "msk"
 source_book: "Ultrasound: The Requisites"
 start_page: 625
 end_page: 645
-status: "verified_source"
----
+status: "verified_source"---
 
 # 19. Fetal Musculoskeletal System
 

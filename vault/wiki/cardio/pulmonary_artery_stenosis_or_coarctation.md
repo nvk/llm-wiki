@@ -1,5 +1,6 @@
 ---
 title: "Pulmonary Artery Stenosis or Coarctation"
+concept_id: "pulmonary_artery_stenosis_or_coarctation"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "vascular"]
 confidence: high
 status: "verified_source"
-summary: "O-shaped cartilaginous rings, as described earlier. Pulmonary artery sling. Lee, MD, Children’s Hospital, Boston, MA."
----
+summary: "O-shaped cartilaginous rings, as described earlier. Pulmonary artery sling. Lee, MD, Children’s Hospital, Boston, MA."---
 
 # Pulmonary Artery Stenosis or Coarctation
 

@@ -1,9 +1,9 @@
 ---
 title: "The Elbow"
+concept_id: "the_elbow"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # The Elbow
 

@@ -1,9 +1,9 @@
 ---
 title: "Epiploic Appendagitis"
+concept_id: "epiploic_appendagitis"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Epiploic Appendagitis
 

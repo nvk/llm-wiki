@@ -1,11 +1,11 @@
 ---
 title: "CHRONIC MESENTERIC ISCHEMIA"
+concept_id: "chronic_mesenteric_ischemia"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 261
 end_page: 261
-status: "verified_source"
----
+status: "verified_source"---
 
 # CHRONIC MESENTERIC ISCHEMIA
 

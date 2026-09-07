@@ -1,5 +1,6 @@
 ---
 title: "Contusion"
+concept_id: "contusion"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Calcified subdural hematomas. A, Colpocephaly configuration of lateral ventricles. Subarachnoid hemorrhage from ruptured aneurysm."
----
+summary: "Calcified subdural hematomas. A, Colpocephaly configuration of lateral ventricles. Subarachnoid hemorrhage from ruptured aneurysm."---
 
 # Contusion
 

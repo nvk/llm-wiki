@@ -1,5 +1,6 @@
 ---
 title: "Intussusception"
+concept_id: "emergency_intussusception"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -11,7 +12,7 @@ tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
 summary: "Ladd’s procedure is rare, but can occur. Perforation occurs in approximately 1. The “intussuscipiens” is delineated by arrowheads."
----
+aliases: ["intussusception"]---
 
 # Intussusception
 

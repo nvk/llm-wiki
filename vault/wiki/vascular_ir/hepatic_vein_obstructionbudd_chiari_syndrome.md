@@ -1,11 +1,11 @@
 ---
 title: "HEPATIC VEIN OBSTRUCTION/BUDD-CHIARI SYNDROME"
+concept_id: "hepatic_vein_obstructionbudd_chiari_syndrome"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 349
 end_page: 349
-status: "verified_source"
----
+status: "verified_source"---
 
 # HEPATIC VEIN OBSTRUCTION/BUDD-CHIARI SYNDROME
 

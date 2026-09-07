@@ -1,11 +1,11 @@
 ---
 title: "URINARY TRACT INFECTION"
+concept_id: "urinary_tract_infection"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 155
 end_page: 157
-status: "verified_source"
----
+status: "verified_source"---
 
 # URINARY TRACT INFECTION
 

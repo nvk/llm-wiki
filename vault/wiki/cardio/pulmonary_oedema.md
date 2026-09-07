@@ -1,9 +1,9 @@
 ---
 title: "Pulmonary Oedema"
+concept_id: "pulmonary_oedema"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pulmonary Oedema
 

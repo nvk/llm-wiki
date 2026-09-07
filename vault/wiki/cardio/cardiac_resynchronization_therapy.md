@@ -1,5 +1,6 @@
 ---
 title: "Cardiac Resynchronization Therapy"
+concept_id: "cardiac_resynchronization_therapy"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Philadelphia, 1994, Lea & Febiger. Echocardiographic images of a patient with truncus arteriosus type I. Philadelphia, 1994, Lea & Febiger."
----
+summary: "Philadelphia, 1994, Lea & Febiger. Echocardiographic images of a patient with truncus arteriosus type I. Philadelphia, 1994, Lea & Febiger."---
 
 # Cardiac Resynchronization Therapy
 

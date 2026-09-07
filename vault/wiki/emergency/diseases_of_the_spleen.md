@@ -1,11 +1,11 @@
 ---
 title: "DISEASES OF THE SPLEEN"
+concept_id: "diseases_of_the_spleen"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 319
 end_page: 319
-status: "verified_source"
----
+status: "verified_source"---
 
 # DISEASES OF THE SPLEEN
 

@@ -1,11 +1,11 @@
 ---
 title: "Series page"
+concept_id: "series_page"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 2
 end_page: 2
-status: "verified_source"
----
+status: "verified_source"---
 
 # Series page
 

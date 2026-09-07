@@ -1,11 +1,11 @@
 ---
 title: "Obstetric and Gynecologic Disorders"
+concept_id: "obstetric_and_gynecologic_disorders"
 domain: "gynae"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 3421
 end_page: 3557
-status: "verified_source"
----
+status: "verified_source"---
 
 # Obstetric and Gynecologic Disorders
 

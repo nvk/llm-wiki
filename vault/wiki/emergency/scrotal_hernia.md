@@ -1,5 +1,6 @@
 ---
 title: "Scrotal Hernia"
+concept_id: "scrotal_hernia"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "This infant has a scrotal hernia. A reactive hydrocele may be an associatedfinding. A, Sagittal US image through the left testis in this 17-year-old male with left scrotal pain."
----
+summary: "This infant has a scrotal hernia. A reactive hydrocele may be an associatedfinding. A, Sagittal US image through the left testis in this 17-year-old male with left scrotal pain."---
 
 # Scrotal Hernia
 

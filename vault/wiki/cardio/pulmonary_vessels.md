@@ -1,11 +1,11 @@
 ---
 title: "Pulmonary Vessels"
+concept_id: "pulmonary_vessels"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 85
 end_page: 89
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pulmonary Vessels
 

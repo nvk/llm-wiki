@@ -1,11 +1,11 @@
 ---
 title: "Pneumonias Caused By Gram-Positive Bacteria"
+concept_id: "pneumonias_caused_by_gram_positive_bacteria"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 98
 end_page: 100
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pneumonias Caused By Gram-Positive Bacteria
 

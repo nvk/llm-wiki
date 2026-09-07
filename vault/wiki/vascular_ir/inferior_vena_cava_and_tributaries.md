@@ -1,11 +1,11 @@
 ---
 title: "Inferior Vena Cava and  Tributaries"
+concept_id: "inferior_vena_cava_and_tributaries"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 310
 end_page: 320
-status: "verified_source"
----
+status: "verified_source"---
 
 # Inferior Vena Cava and  Tributaries
 

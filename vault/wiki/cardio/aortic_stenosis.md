@@ -1,5 +1,6 @@
 ---
 title: "Aortic Stenosis"
+concept_id: "aortic_stenosis"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "vascular"]
 confidence: high
 status: "verified_source"
-summary: "RA, right atrium; RV, right ventricle. PISA) formed asflow accelerates to pass through a discrete orifi ce. Doppler spectral trace of tricuspid regurgitation."
----
+summary: "RA, right atrium; RV, right ventricle. PISA) formed asflow accelerates to pass through a discrete orifi ce. Doppler spectral trace of tricuspid regurgitation."---
 
 # Aortic Stenosis
 

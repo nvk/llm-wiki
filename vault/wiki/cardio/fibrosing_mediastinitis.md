@@ -1,11 +1,11 @@
 ---
 title: "Fibrosing Mediastinitis"
+concept_id: "fibrosing_mediastinitis"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 324
 end_page: 334
-status: "verified_source"
----
+status: "verified_source"---
 
 # Fibrosing Mediastinitis
 

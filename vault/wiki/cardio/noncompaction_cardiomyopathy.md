@@ -1,5 +1,6 @@
 ---
 title: "Noncompaction Cardiomyopathy"
+concept_id: "noncompaction_cardiomyopathy"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "A) Two-dimensional echocardiographic view of a patient with hypertrophic cardiomyopathy. AMVL) into the left ventricular outfl ow tract in systole creating dynamic subaortic stenosis. C) M-mode tracing through the mitral valve leafl ets showing systolic anterior motion (SAM) of the mitral valve."
----
+summary: "A) Two-dimensional echocardiographic view of a patient with hypertrophic cardiomyopathy. AMVL) into the left ventricular outfl ow tract in systole creating dynamic subaortic stenosis. C) M-mode tracing through the mitral valve leafl ets showing systolic anterior motion (SAM) of the mitral valve."---
 
 # Noncompaction Cardiomyopathy
 

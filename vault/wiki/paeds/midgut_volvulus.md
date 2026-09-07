@@ -1,5 +1,6 @@
 ---
 title: "Midgut Volvulus"
+concept_id: "midgut_volvulus"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Multiple strictures are not uncommon. GI tract or break through into the portal venous system. NEC, necessitates performance of a contrast enema study (Fig."
----
+summary: "Multiple strictures are not uncommon. GI tract or break through into the portal venous system. NEC, necessitates performance of a contrast enema study (Fig."---
 
 # Midgut Volvulus
 

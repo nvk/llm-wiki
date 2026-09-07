@@ -1,9 +1,9 @@
 ---
 title: "The Ankle And Foot"
+concept_id: "the_ankle_and_foot"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # The Ankle and Foot
 

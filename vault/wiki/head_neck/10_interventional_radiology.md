@@ -1,11 +1,11 @@
 ---
 title: "10. Interventional Radiology"
+concept_id: "10_interventional_radiology"
 domain: "head_neck"
 source_book: "Core Radiology (Jacob)"
 start_page: 705
 end_page: 751
-status: "verified_source"
----
+status: "verified_source"---
 
 # 10. Interventional Radiology
 

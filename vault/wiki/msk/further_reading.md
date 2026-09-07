@@ -1,9 +1,10 @@
 ---
 title: "Further Reading"
+concept_id: "msk_further_reading"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["further_reading"]---
 
 # Further Reading
 

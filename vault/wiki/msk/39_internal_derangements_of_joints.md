@@ -1,9 +1,9 @@
 ---
 title: "39 Internal Derangements Of Joints"
+concept_id: "39_internal_derangements_of_joints"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 39 Internal Derangements of Joints
 

@@ -1,11 +1,11 @@
 ---
 title: "Differential Diagnosis of Nervous System Disorders"
+concept_id: "differential_diagnosis_of_nervous_system_disorders"
 domain: "head_neck"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 770
 end_page: 839
-status: "verified_source"
----
+status: "verified_source"---
 
 # Differential Diagnosis of Nervous System Disorders
 

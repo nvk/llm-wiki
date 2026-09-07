@@ -1,11 +1,11 @@
 ---
 title: "Pediatric Radiology: The Requisites, Third Edition"
+concept_id: "pediatric_radiology_the_requisites_third_edition"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 2
 end_page: 12
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pediatric Radiology: The Requisites, Third Edition
 

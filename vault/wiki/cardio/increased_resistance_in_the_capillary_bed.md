@@ -1,5 +1,6 @@
 ---
 title: "INCREASED RESISTANCE IN THE CAPILLARY BED"
+concept_id: "increased_resistance_in_the_capillary_bed"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Computed tomography scan of pulmonary artery hypertension. B, The hilar pulmonary arteries are two to three times larger than their adjacent bronchus. Pulmonary artery hypertension from mitral stenosis."
----
+summary: "Computed tomography scan of pulmonary artery hypertension. B, The hilar pulmonary arteries are two to three times larger than their adjacent bronchus. Pulmonary artery hypertension from mitral stenosis."---
 
 # INCREASED RESISTANCE IN THE CAPILLARY BED
 

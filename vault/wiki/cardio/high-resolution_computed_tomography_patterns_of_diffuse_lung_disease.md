@@ -1,9 +1,9 @@
 ---
 title: "High-Resolution Computed Tomography Patterns Of Diffuse Lung Disease"
+concept_id: "high-resolution_computed_tomography_patterns_of_diffuse_lung_disease"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # High-Resolution Computed Tomography Patterns of Diffuse Lung Disease
 

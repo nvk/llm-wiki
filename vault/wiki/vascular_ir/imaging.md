@@ -1,11 +1,11 @@
 ---
 title: "IMAGING"
+concept_id: "imaging"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 74
 end_page: 75
-status: "verified_source"
----
+status: "verified_source"---
 
 # IMAGING
 

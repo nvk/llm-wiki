@@ -1,5 +1,6 @@
 ---
 title: "Congenital Hypogenetic Lung Syndrome"
+concept_id: "congenital_hypogenetic_lung_syndrome"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "congenital"]
 confidence: high
 status: "verified_source"
-summary: "CT with or without contrast injection (see Fig. Dynamic contrast-enhanced CT is recommended. Hypogenetic lung syndrome (i."
----
+summary: "CT with or without contrast injection (see Fig. Dynamic contrast-enhanced CT is recommended. Hypogenetic lung syndrome (i."---
 
 # Congenital Hypogenetic Lung Syndrome
 

@@ -1,9 +1,9 @@
 ---
 title: "Section A The Chest And Cardiovascular System"
+concept_id: "section_a_the_chest_and_cardiovascular_system"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # SECTION A The Chest and Cardiovascular
 System

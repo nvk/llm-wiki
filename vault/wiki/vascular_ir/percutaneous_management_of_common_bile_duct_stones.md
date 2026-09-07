@@ -1,11 +1,11 @@
 ---
 title: "PERCUTANEOUS MANAGEMENT OF COMMON BILE DUCT STONES"
+concept_id: "percutaneous_management_of_common_bile_duct_stones"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 494
 end_page: 495
-status: "verified_source"
----
+status: "verified_source"---
 
 # PERCUTANEOUS MANAGEMENT OF COMMON BILE DUCT STONES
 

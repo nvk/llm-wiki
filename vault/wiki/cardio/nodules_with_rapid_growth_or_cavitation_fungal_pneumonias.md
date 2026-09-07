@@ -1,5 +1,6 @@
 ---
 title: "Nodules with Rapid Growth or Cavitation: Fungal Pneumonias"
+concept_id: "nodules_with_rapid_growth_or_cavitation_fungal_pneumonias"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "infection"]
 confidence: high
 status: "verified_source"
-summary: "BAL, bronchoalveolar lavage; TBB, transbronchial biopsy; TNB, transthoracic needle biopsy. Legionella micdadei pneumonia. A posteroanterior chest radiograph shows multiple nodules in both lungs (arrows)."
----
+summary: "BAL, bronchoalveolar lavage; TBB, transbronchial biopsy; TNB, transthoracic needle biopsy. Legionella micdadei pneumonia. A posteroanterior chest radiograph shows multiple nodules in both lungs (arrows)."---
 
 # Nodules with Rapid Growth or Cavitation: Fungal Pneumonias
 

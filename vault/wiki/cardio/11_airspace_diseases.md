@@ -1,9 +1,9 @@
 ---
 title: "11 Airspace Diseases"
+concept_id: "11_airspace_diseases"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 11 Airspace Diseases
 

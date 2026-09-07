@@ -1,11 +1,11 @@
 ---
 title: "RADIOFREQUENCY ABLATION"
+concept_id: "radiofrequency_ablation"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 585
 end_page: 586
-status: "verified_source"
----
+status: "verified_source"---
 
 # RADIOFREQUENCY ABLATION
 

@@ -1,5 +1,6 @@
 ---
 title: "Bronchiolitis"
+concept_id: "bronchiolitis"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "infection"]
 confidence: high
 status: "verified_source"
-summary: "Normal coronal suture (arrow)."
----
+summary: "Normal coronal suture (arrow)."---
 
 # Bronchiolitis
 

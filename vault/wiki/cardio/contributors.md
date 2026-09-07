@@ -1,11 +1,12 @@
 ---
 title: "Contributors"
+concept_id: "cardio_contributors"
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
 start_page: 14
 end_page: 14
 status: "verified_source"
----
+aliases: ["contributors"]---
 
 # Contributors
 

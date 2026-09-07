@@ -1,9 +1,9 @@
 ---
 title: "Hand And Wrist"
+concept_id: "hand_and_wrist"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Hand and Wrist
 

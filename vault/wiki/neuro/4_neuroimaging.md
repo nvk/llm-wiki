@@ -1,11 +1,11 @@
 ---
 title: "4. Neuroimaging"
+concept_id: "4_neuroimaging"
 domain: "neuro"
 source_book: "Core Radiology (Jacob)"
 start_page: 212
 end_page: 356
-status: "verified_source"
----
+status: "verified_source"---
 
 # 4. Neuroimaging
 

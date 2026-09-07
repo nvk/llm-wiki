@@ -1,11 +1,11 @@
 ---
 title: "17. Fetal Gastrointestinal Tract"
+concept_id: "17_fetal_gastrointestinal_tract"
 domain: "git"
 source_book: "Ultrasound: The Requisites"
 start_page: 579
 end_page: 602
-status: "verified_source"
----
+status: "verified_source"---
 
 # 17. Fetal Gastrointestinal Tract
 

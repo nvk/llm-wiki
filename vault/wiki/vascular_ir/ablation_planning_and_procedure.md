@@ -1,11 +1,11 @@
 ---
 title: "ABLATION PLANNING AND PROCEDURE"
+concept_id: "ablation_planning_and_procedure"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 578
 end_page: 580
-status: "verified_source"
----
+status: "verified_source"---
 
 # ABLATION PLANNING AND PROCEDURE
 

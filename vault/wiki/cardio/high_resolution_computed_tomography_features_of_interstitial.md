@@ -1,11 +1,11 @@
 ---
 title: "High-Resolution Computed Tomography Features of Interstitial Lung Disease"
+concept_id: "high_resolution_computed_tomography_features_of_interstitial"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 196
 end_page: 199
-status: "verified_source"
----
+status: "verified_source"---
 
 # High-Resolution Computed Tomography Features of Interstitial Lung Disease
 

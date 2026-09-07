@@ -1,5 +1,6 @@
 ---
 title: "Branchial Cleft Cysts"
+concept_id: "branchial_cleft_cysts"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "Mycoplasma have also been implicated. Second branchial cleft cyst. B, Slightly inferiorly, afistulous tract between the collection and the inflammatory tissue is identified (arrow)."
----
+summary: "Mycoplasma have also been implicated. Second branchial cleft cyst. B, Slightly inferiorly, afistulous tract between the collection and the inflammatory tissue is identified (arrow)."---
 
 # Branchial Cleft Cysts
 

@@ -1,5 +1,6 @@
 ---
 title: "Thymus"
+concept_id: "thymus"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "T2-weighted images (see Fig. NHL is often of T-cell origin."
----
+summary: "T2-weighted images (see Fig. NHL is often of T-cell origin."---
 
 # Thymus
 

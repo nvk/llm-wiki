@@ -1,9 +1,10 @@
 ---
 title: "Interventional Techniques"
+concept_id: "git_interventional_techniques"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["interventional_techniques"]---
 
 # Interventional Techniques
 

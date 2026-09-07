@@ -1,9 +1,9 @@
 ---
 title: "Pathophysiology Of Ischaemic Heart Disease"
+concept_id: "pathophysiology_of_ischaemic_heart_disease"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pathophysiology of Ischaemic Heart Disease
 

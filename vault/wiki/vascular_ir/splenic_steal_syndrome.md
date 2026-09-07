@@ -1,11 +1,11 @@
 ---
 title: "SPLENIC STEAL SYNDROME"
+concept_id: "splenic_steal_syndrome"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 285
 end_page: 286
-status: "verified_source"
----
+status: "verified_source"---
 
 # SPLENIC STEAL SYNDROME
 

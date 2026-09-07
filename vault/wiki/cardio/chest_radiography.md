@@ -1,9 +1,10 @@
 ---
 title: "Chest Radiography"
+concept_id: "cardio_chest_radiography"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["chest_radiography"]---
 
 # Chest Radiography
 

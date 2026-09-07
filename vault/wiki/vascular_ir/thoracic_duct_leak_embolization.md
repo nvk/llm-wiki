@@ -1,11 +1,11 @@
 ---
 title: "THORACIC DUCT LEAK EMBOLIZATION"
+concept_id: "thoracic_duct_leak_embolization"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 219
 end_page: 220
-status: "verified_source"
----
+status: "verified_source"---
 
 # THORACIC DUCT LEAK EMBOLIZATION
 

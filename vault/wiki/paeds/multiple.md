@@ -1,5 +1,6 @@
 ---
 title: "Multiple"
+concept_id: "multiple"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Primary malignant lung tumors are extremely rare. A, AP chest radiograph shows necrotic metastatic rhabdomyosarcoma in a 2-year-old child. It manifests as respiratory distress in 25% of cases."
----
+summary: "Primary malignant lung tumors are extremely rare. A, AP chest radiograph shows necrotic metastatic rhabdomyosarcoma in a 2-year-old child. It manifests as respiratory distress in 25% of cases."---
 
 # Multiple
 

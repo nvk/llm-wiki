@@ -1,5 +1,6 @@
 ---
 title: "Accessory Fissures"
+concept_id: "accessory_fissures"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Accessory pleuralfissures may occur between segments. The azygosfissure (Fig. CT line drawings of four levels (A-D) from cephalad to caudad illustrate the course of the majorfissures (MF)."
----
+summary: "Accessory pleuralfissures may occur between segments. The azygosfissure (Fig. CT line drawings of four levels (A-D) from cephalad to caudad illustrate the course of the majorfissures (MF)."---
 
 # Accessory Fissures
 

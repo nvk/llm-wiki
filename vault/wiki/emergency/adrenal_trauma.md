@@ -1,11 +1,11 @@
 ---
 title: "ADRENAL TRAUMA"
+concept_id: "adrenal_trauma"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 112
 end_page: 112
-status: "verified_source"
----
+status: "verified_source"---
 
 # ADRENAL TRAUMA
 

@@ -1,9 +1,9 @@
 ---
 title: "44 Arthritis"
+concept_id: "44_arthritis"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 44 Arthritis
 

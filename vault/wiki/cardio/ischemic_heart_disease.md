@@ -1,11 +1,11 @@
 ---
 title: "Ischemic Heart Disease"
+concept_id: "ischemic_heart_disease"
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
 start_page: 223
 end_page: 256
-status: "verified_source"
----
+status: "verified_source"---
 
 # Ischemic Heart Disease
 

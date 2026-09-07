@@ -1,9 +1,9 @@
 ---
 title: "Benign Lymphoproliferative Disorders"
+concept_id: "benign_lymphoproliferative_disorders"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Benign Lymphoproliferative Disorders
 

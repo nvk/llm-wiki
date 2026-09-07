@@ -1,11 +1,11 @@
 ---
 title: "8. Spleen"
+concept_id: "8_spleen"
 domain: "cardio"
 source_book: "Ultrasound: The Requisites"
 start_page: 307
 end_page: 326
-status: "verified_source"
----
+status: "verified_source"---
 
 # 8. Spleen
 

@@ -1,5 +1,6 @@
 ---
 title: "Radiologic Patterns"
+concept_id: "radiologic_patterns"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Proteus, and Serratia. BAL, bronchoalveolar lavage; TBB, transbronchial biopsy; TNB, transthoracic needle biopsy."
----
+summary: "Proteus, and Serratia. BAL, bronchoalveolar lavage; TBB, transbronchial biopsy; TNB, transthoracic needle biopsy."---
 
 # Radiologic Patterns
 

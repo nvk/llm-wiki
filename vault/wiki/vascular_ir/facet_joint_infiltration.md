@@ -1,11 +1,11 @@
 ---
 title: "FACET JOINT INFILTRATION"
+concept_id: "facet_joint_infiltration"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 553
 end_page: 553
-status: "verified_source"
----
+status: "verified_source"---
 
 # FACET JOINT INFILTRATION
 

@@ -1,11 +1,11 @@
 ---
 title: "Differential Diagnosis of Ear, Nose, and Throat Disorders"
+concept_id: "differential_diagnosis_of_ear_nose_and_throat_disorders"
 domain: "head_neck"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 1150
 end_page: 1195
-status: "verified_source"
----
+status: "verified_source"---
 
 # Differential Diagnosis of Ear, Nose, and Throat Disorders
 

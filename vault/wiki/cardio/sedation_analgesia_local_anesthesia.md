@@ -1,11 +1,11 @@
 ---
 title: "Sedation, Analgesia, Local Anesthesia"
+concept_id: "sedation_analgesia_local_anesthesia"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 3664
 end_page: 3670
-status: "verified_source"
----
+status: "verified_source"---
 
 # Sedation, Analgesia, Local Anesthesia
 

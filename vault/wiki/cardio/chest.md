@@ -1,11 +1,12 @@
 ---
 title: "CHEST"
+concept_id: "cardio_chest"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 1337
 end_page: 1347
 status: "verified_source"
----
+aliases: ["chest"]---
 
 # CHEST
 

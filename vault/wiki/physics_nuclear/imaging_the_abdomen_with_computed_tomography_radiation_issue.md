@@ -1,11 +1,11 @@
 ---
 title: "Imaging the Abdomen With Computed Tomography: Radiation Issues"
+concept_id: "imaging_the_abdomen_with_computed_tomography_radiation_issue"
 domain: "physics_nuclear"
 source_book: "Grainger & Allison's Diagnostic Radiology (7th Edition)"
 start_page: 473
 end_page: 473
-status: "verified_source"
----
+status: "verified_source"---
 
 # Imaging the Abdomen With Computed Tomography: Radiation Issues
 

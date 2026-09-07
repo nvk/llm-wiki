@@ -1,11 +1,11 @@
 ---
 title: "PHEOCHROMOCYTOMA"
+concept_id: "pheochromocytoma"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 307
 end_page: 308
-status: "verified_source"
----
+status: "verified_source"---
 
 # PHEOCHROMOCYTOMA
 

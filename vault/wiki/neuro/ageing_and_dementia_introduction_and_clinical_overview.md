@@ -1,9 +1,9 @@
 ---
 title: "Ageing And Dementia Introduction And Clinical Overview"
+concept_id: "ageing_and_dementia_introduction_and_clinical_overview"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Ageing and Dementia—Introduction and Clinical Overview
 

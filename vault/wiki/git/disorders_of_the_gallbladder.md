@@ -1,9 +1,9 @@
 ---
 title: "Disorders Of The Gallbladder"
+concept_id: "disorders_of_the_gallbladder"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Disorders of the Gallbladder
 

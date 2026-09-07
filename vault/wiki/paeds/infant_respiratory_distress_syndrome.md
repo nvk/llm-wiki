@@ -1,5 +1,6 @@
 ---
 title: "Infant Respiratory Distress Syndrome"
+concept_id: "infant_respiratory_distress_syndrome"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "The air may also dissect into the neck. A, Typical “ground-glass” appearance in the lungs of a 27-week-gestation infant: hyaline membrane disease (HMD). Proper endotracheal tube tip position is about 1."
----
+summary: "The air may also dissect into the neck. A, Typical “ground-glass” appearance in the lungs of a 27-week-gestation infant: hyaline membrane disease (HMD). Proper endotracheal tube tip position is about 1."---
 
 # Infant Respiratory Distress Syndrome
 

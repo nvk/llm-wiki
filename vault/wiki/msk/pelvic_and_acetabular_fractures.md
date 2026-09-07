@@ -1,9 +1,9 @@
 ---
 title: "Pelvic And Acetabular Fractures"
+concept_id: "pelvic_and_acetabular_fractures"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pelvic and Acetabular Fractures
 

@@ -1,5 +1,6 @@
 ---
 title: "Rheumatoid Arthritis"
+concept_id: "rheumatoid_arthritis"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "infection"]
 confidence: high
 status: "verified_source"
-summary: "There may be an associated joint effusion, although thisfinding is ­ variable. Spectrum of rotator cuff pathology on US. SS) and its relation to the humeral head (H) and deltoid muscle (D)."
----
+summary: "There may be an associated joint effusion, although thisfinding is ­ variable. Spectrum of rotator cuff pathology on US. SS) and its relation to the humeral head (H) and deltoid muscle (D)."---
 
 # Rheumatoid Arthritis
 

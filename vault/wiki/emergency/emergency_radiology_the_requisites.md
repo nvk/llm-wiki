@@ -1,11 +1,11 @@
 ---
 title: "Emergency Radiology: The Requisites"
+concept_id: "emergency_radiology_the_requisites"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 2
 end_page: 12
-status: "verified_source"
----
+status: "verified_source"---
 
 # Emergency Radiology: The Requisites
 

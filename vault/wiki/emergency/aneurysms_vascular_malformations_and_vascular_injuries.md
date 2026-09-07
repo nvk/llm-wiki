@@ -1,11 +1,11 @@
 ---
 title: "ANEURYSMS, VASCULAR MALFORMATIONS, AND VASCULAR INJURIES"
+concept_id: "aneurysms_vascular_malformations_and_vascular_injuries"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 36
 end_page: 36
-status: "verified_source"
----
+status: "verified_source"---
 
 # ANEURYSMS, VASCULAR MALFORMATIONS, AND VASCULAR INJURIES
 

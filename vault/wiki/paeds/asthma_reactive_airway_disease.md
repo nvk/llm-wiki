@@ -1,5 +1,6 @@
 ---
 title: "Asthma (Reactive Airway Disease)"
+concept_id: "asthma_reactive_airway_disease"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Aspiration is gravity dependent. A, Chest radiograph in a teenager with acute lymphocytic leukemia reveals left upper lobe streaky densities."
----
+summary: "Aspiration is gravity dependent. A, Chest radiograph in a teenager with acute lymphocytic leukemia reveals left upper lobe streaky densities."---
 
 # Asthma (Reactive Airway Disease)
 

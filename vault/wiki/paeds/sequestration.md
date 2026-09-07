@@ -1,5 +1,6 @@
 ---
 title: "Sequestration"
+concept_id: "sequestration"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "The extralobar variety often manifests in thefirst month of life. Gastroenteric communication is not common. CCAM, usually diagnosed in later childhood."
----
+summary: "The extralobar variety often manifests in thefirst month of life. Gastroenteric communication is not common. CCAM, usually diagnosed in later childhood."---
 
 # Sequestration
 

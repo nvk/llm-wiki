@@ -1,11 +1,11 @@
 ---
 title: "DISORDERS OF WHITE MATTER"
+concept_id: "disorders_of_white_matter"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 48
 end_page: 51
-status: "verified_source"
----
+status: "verified_source"---
 
 # DISORDERS OF WHITE MATTER
 

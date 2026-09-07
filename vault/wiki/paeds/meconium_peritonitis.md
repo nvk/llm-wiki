@@ -1,5 +1,6 @@
 ---
 title: "Meconium Peritonitis"
+concept_id: "meconium_peritonitis"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds", "infection"]
 confidence: high
 status: "verified_source"
-summary: "Angiography is rarely, if ever, indicated. Fate of the omphalomesenteric (vitelline) duct. Ascites may also be present."
----
+summary: "Angiography is rarely, if ever, indicated. Fate of the omphalomesenteric (vitelline) duct. Ascites may also be present."---
 
 # Meconium Peritonitis
 

@@ -1,11 +1,11 @@
 ---
 title: "THORACIC OUTLET SYNDROME"
+concept_id: "thoracic_outlet_syndrome"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 151
 end_page: 151
-status: "verified_source"
----
+status: "verified_source"---
 
 # THORACIC OUTLET SYNDROME
 

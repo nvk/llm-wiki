@@ -1,5 +1,6 @@
 ---
 title: "Infiltrative (Interstitial) Lung Disease"
+concept_id: "infiltrative_interstitial_lung_disease"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "There are many causes of parenchymal consolidation. The process may be localized or diffuse. R and 10L, tracheobronchial; 11R and 11L, bronchopulmonary (hilar) nodes."
----
+summary: "There are many causes of parenchymal consolidation. The process may be localized or diffuse. R and 10L, tracheobronchial; 11R and 11L, bronchopulmonary (hilar) nodes."---
 
 # Infiltrative (Interstitial) Lung Disease
 

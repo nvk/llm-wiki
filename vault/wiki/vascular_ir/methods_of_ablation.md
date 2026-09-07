@@ -1,11 +1,11 @@
 ---
 title: "METHODS OF ABLATION"
+concept_id: "methods_of_ablation"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 570
 end_page: 572
-status: "verified_source"
----
+status: "verified_source"---
 
 # METHODS OF ABLATION
 

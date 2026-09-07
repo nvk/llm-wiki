@@ -1,9 +1,9 @@
 ---
 title: "Primary Injury"
+concept_id: "primary_injury"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Primary Injury
 

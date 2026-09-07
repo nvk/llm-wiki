@@ -1,11 +1,11 @@
 ---
 title: "The Requisites"
+concept_id: "the_requisites"
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
 start_page: 2
 end_page: 2
-status: "verified_source"
----
+status: "verified_source"---
 
 # The Requisites
 

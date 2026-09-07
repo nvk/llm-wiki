@@ -1,5 +1,6 @@
 ---
 title: "Renal Injury"
+concept_id: "renal_injury"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Treitz and the ileocecal valve). MR appearance of pancreatic injury. Thefluid-sensitive T2 sequence also shows the presence of peripancreaticfluid (asterisk)."
----
+summary: "Treitz and the ileocecal valve). MR appearance of pancreatic injury. Thefluid-sensitive T2 sequence also shows the presence of peripancreaticfluid (asterisk)."---
 
 # Renal Injury
 

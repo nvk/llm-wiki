@@ -1,5 +1,6 @@
 ---
 title: "Aspiration Pneumonia"
+concept_id: "aspiration_pneumonia"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds", "infection"]
 confidence: high
 status: "verified_source"
-summary: "Aspiration is gravity dependent. A, Chest radiograph in a teenager with acute lymphocytic leukemia reveals left upper lobe streaky densities."
----
+summary: "Aspiration is gravity dependent. A, Chest radiograph in a teenager with acute lymphocytic leukemia reveals left upper lobe streaky densities."---
 
 # Aspiration Pneumonia
 

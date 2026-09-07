@@ -1,11 +1,11 @@
 ---
 title: "BLADDER INTERVENTION"
+concept_id: "bladder_intervention"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 529
 end_page: 532
-status: "verified_source"
----
+status: "verified_source"---
 
 # BLADDER INTERVENTION
 

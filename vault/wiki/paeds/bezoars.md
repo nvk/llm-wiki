@@ -1,5 +1,6 @@
 ---
 title: "Bezoars"
+concept_id: "bezoars"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Neoplasms in the pediatric stomach are rare. Peutz-Jeghers syndrome, and familial polyposis. Endoscopy is often the definitive diagnostic tool."
----
+summary: "Neoplasms in the pediatric stomach are rare. Peutz-Jeghers syndrome, and familial polyposis. Endoscopy is often the definitive diagnostic tool."---
 
 # Bezoars
 

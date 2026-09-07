@@ -1,5 +1,6 @@
 ---
 title: "Segmental and Subsegmental Atelectasis"
+concept_id: "segmental_and_subsegmental_atelectasis"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Left upper lobe collapse. The apex is aerated and occupied by the left lower lobe. The retrosternal lucency in front of the collapsed lobe is caused by herniation of the overinflated right lung (RL)."
----
+summary: "Left upper lobe collapse. The apex is aerated and occupied by the left lower lobe. The retrosternal lucency in front of the collapsed lobe is caused by herniation of the overinflated right lung (RL)."---
 
 # Segmental and Subsegmental Atelectasis
 

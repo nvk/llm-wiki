@@ -1,11 +1,11 @@
 ---
 title: "BREAST LESION EXCISION SYSTEMS"
+concept_id: "breast_lesion_excision_systems"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 544
 end_page: 545
-status: "verified_source"
----
+status: "verified_source"---
 
 # BREAST LESION EXCISION SYSTEMS
 

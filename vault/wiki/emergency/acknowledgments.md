@@ -1,11 +1,12 @@
 ---
 title: "Acknowledgments"
+concept_id: "emergency_acknowledgments"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 16
 end_page: 16
 status: "verified_source"
----
+aliases: ["acknowledgments"]---
 
 # Acknowledgments
 

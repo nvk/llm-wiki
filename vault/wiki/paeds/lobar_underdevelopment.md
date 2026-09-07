@@ -1,5 +1,6 @@
 ---
 title: "Lobar Underdevelopment"
+concept_id: "lobar_underdevelopment"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Ewing sarcoma, and leukemia/lymphoma. A, AP radiograph reveals a mediastinal shift to the right and an overexpanded left lung. A from Merten DF: Pediatric Learning File."
----
+summary: "Ewing sarcoma, and leukemia/lymphoma. A, AP radiograph reveals a mediastinal shift to the right and an overexpanded left lung. A from Merten DF: Pediatric Learning File."---
 
 # Lobar Underdevelopment
 

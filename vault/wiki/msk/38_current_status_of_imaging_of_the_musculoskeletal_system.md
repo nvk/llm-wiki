@@ -1,9 +1,9 @@
 ---
 title: "38 Current Status Of Imaging Of The Musculoskeletal System"
+concept_id: "38_current_status_of_imaging_of_the_musculoskeletal_system"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 38 Current Status of Imaging of The Musculoskeletal System
 

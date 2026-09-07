@@ -1,5 +1,6 @@
 ---
 title: "Intussusception"
+concept_id: "paeds_intussusception"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -11,7 +12,7 @@ tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
 summary: "Boys outnumber girls 3:2. Intussusception is most often idiopathic. Hypertrophic pyloric stenosis (HPS)."
----
+aliases: ["intussusception"]---
 
 # Intussusception
 

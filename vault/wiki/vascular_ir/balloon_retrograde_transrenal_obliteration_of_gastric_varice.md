@@ -1,11 +1,11 @@
 ---
 title: "BALLOON RETROGRADE TRANSRENAL OBLITERATION OF GASTRIC VARICES"
+concept_id: "balloon_retrograde_transrenal_obliteration_of_gastric_varice"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 348
 end_page: 348
-status: "verified_source"
----
+status: "verified_source"---
 
 # BALLOON RETROGRADE TRANSRENAL OBLITERATION OF GASTRIC VARICES
 

@@ -1,5 +1,6 @@
 ---
 title: "Right Ventricle"
+concept_id: "right_ventricle"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Right heart enlargement suggesting left heart enlargement. The left ventricle is normal in this patient with Ebstein anomaly. Right atrial enlargement in rheumatic heart disease."
----
+summary: "Right heart enlargement suggesting left heart enlargement. The left ventricle is normal in this patient with Ebstein anomaly. Right atrial enlargement in rheumatic heart disease."---
 
 # Right Ventricle
 

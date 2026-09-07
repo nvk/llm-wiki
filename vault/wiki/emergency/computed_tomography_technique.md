@@ -1,5 +1,6 @@
 ---
 title: "Computed Tomography Technique"
+concept_id: "computed_tomography_technique"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "CT imaging of the trauma patient. For example, images acquired with 0. Multitrauma CT in a patient with injury following blunt trauma."
----
+summary: "CT imaging of the trauma patient. For example, images acquired with 0. Multitrauma CT in a patient with injury following blunt trauma."---
 
 # Computed Tomography Technique
 

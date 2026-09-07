@@ -1,9 +1,10 @@
 ---
 title: "Miscellaneous"
+concept_id: "msk_miscellaneous"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["miscellaneous"]---
 
 # Miscellaneous
 

@@ -1,9 +1,9 @@
 ---
 title: "Rickets And Osteomalacia"
+concept_id: "rickets_and_osteomalacia"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Rickets and Osteomalacia
 

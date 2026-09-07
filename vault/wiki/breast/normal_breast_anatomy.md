@@ -1,11 +1,11 @@
 ---
 title: "Normal Breast Anatomy"
+concept_id: "normal_breast_anatomy"
 domain: "breast"
 source_book: "Grainger & Allison's Diagnostic Radiology (7th Edition)"
 start_page: 1647
 end_page: 1647
-status: "verified_source"
----
+status: "verified_source"---
 
 # Normal Breast Anatomy
 

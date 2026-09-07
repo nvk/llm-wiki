@@ -1,11 +1,11 @@
 ---
 title: "Chronic Obstructive Pulmonary Disease"
+concept_id: "chronic_obstructive_pulmonary_disease"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 254
 end_page: 264
-status: "verified_source"
----
+status: "verified_source"---
 
 # Chronic Obstructive Pulmonary Disease
 

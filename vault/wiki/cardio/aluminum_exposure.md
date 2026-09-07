@@ -1,11 +1,11 @@
 ---
 title: "Aluminum Exposure"
+concept_id: "aluminum_exposure"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 226
 end_page: 226
-status: "verified_source"
----
+status: "verified_source"---
 
 # Aluminum Exposure
 

@@ -1,5 +1,6 @@
 ---
 title: "Nasal Fractures"
+concept_id: "nasal_fractures"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Zygomaticomaxillary complex fracture. Arrow, fracture of mandibular symphysis. Eustachian tube laceration."
----
+summary: "Zygomaticomaxillary complex fracture. Arrow, fracture of mandibular symphysis. Eustachian tube laceration."---
 
 # Nasal Fractures
 

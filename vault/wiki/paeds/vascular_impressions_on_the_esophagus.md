@@ -1,5 +1,6 @@
 ---
 title: "Vascular Impressions on the Esophagus"
+concept_id: "vascular_impressions_on_the_esophagus"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds", "vascular"]
 confidence: high
 status: "verified_source"
-summary: "GI tract unless repeated inflammation has occurred. CT may display the anatomic relationships to a better extent."
----
+summary: "GI tract unless repeated inflammation has occurred. CT may display the anatomic relationships to a better extent."---
 
 # Vascular Impressions on the Esophagus
 

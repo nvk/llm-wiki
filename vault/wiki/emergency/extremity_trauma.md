@@ -1,11 +1,11 @@
 ---
 title: "Extremity Trauma"
+concept_id: "extremity_trauma"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 128
 end_page: 128
-status: "verified_source"
----
+status: "verified_source"---
 
 # Extremity Trauma
 

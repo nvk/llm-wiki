@@ -1,5 +1,6 @@
 ---
 title: "Posterior Urethral Valves"
+concept_id: "posterior_urethral_valves"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "VCUG)  is the standard of care for the diagnosis of PUVs. The treatment for PUVs is ablation. PUVs from these other entities."
----
+summary: "VCUG)  is the standard of care for the diagnosis of PUVs. The treatment for PUVs is ablation. PUVs from these other entities."---
 
 # Posterior Urethral Valves
 

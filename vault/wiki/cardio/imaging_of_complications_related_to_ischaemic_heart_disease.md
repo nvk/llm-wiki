@@ -1,9 +1,9 @@
 ---
 title: "Imaging Of Complications Related To Ischaemic Heart Disease"
+concept_id: "imaging_of_complications_related_to_ischaemic_heart_disease"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Imaging of Complications Related to Ischaemic Heart Disease
 

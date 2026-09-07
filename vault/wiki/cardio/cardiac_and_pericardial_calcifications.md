@@ -1,5 +1,6 @@
 ---
 title: "CARDIAC AND PERICARDIAL CALCIFICATIONS"
+concept_id: "cardiac_and_pericardial_calcifications"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Left atrial enlargement in mitral stenosis. The large pulmonary artery indicates pulmonary hypertension. Rheumatic mitral valve disease has caused the left atrium to enlarge so that it almost touches the right thorax wall."
----
+summary: "Left atrial enlargement in mitral stenosis. The large pulmonary artery indicates pulmonary hypertension. Rheumatic mitral valve disease has caused the left atrium to enlarge so that it almost touches the right thorax wall."---
 
 # CARDIAC AND PERICARDIAL CALCIFICATIONS
 

@@ -1,9 +1,9 @@
 ---
 title: "The Hila"
+concept_id: "the_hila"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # The Hila
 

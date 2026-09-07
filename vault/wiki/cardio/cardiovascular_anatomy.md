@@ -1,11 +1,11 @@
 ---
 title: "Cardiovascular Anatomy"
+concept_id: "cardiovascular_anatomy"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 1955
 end_page: 2007
-status: "verified_source"
----
+status: "verified_source"---
 
 # Cardiovascular Anatomy
 

@@ -1,11 +1,11 @@
 ---
 title: "MUSCULOSKELETAL"
+concept_id: "musculoskeletal"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 224
 end_page: 227
-status: "verified_source"
----
+status: "verified_source"---
 
 # MUSCULOSKELETAL
 

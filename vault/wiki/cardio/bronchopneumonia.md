@@ -1,5 +1,6 @@
 ---
 title: "Bronchopneumonia"
+concept_id: "bronchopneumonia"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "infection"]
 confidence: high
 status: "verified_source"
-summary: "Early necrosis and cavitation can occur. CT of a pneumococcal left upper lobar consolidation shows clearly defined air bronchograms and evidence of cavitation. Mycobacterium tuberculosis, S."
----
+summary: "Early necrosis and cavitation can occur. CT of a pneumococcal left upper lobar consolidation shows clearly defined air bronchograms and evidence of cavitation. Mycobacterium tuberculosis, S."---
 
 # Bronchopneumonia
 

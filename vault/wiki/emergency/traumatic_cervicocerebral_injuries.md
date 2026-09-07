@@ -1,5 +1,6 @@
 ---
 title: "Traumatic Cervicocerebral Injuries"
+concept_id: "traumatic_cervicocerebral_injuries"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Arterial dissection secondary to blunt trauma. Internal jugular vein obscures internal carotid artery. V4) are the most common sites of intracranial dissection."
----
+summary: "Arterial dissection secondary to blunt trauma. Internal jugular vein obscures internal carotid artery. V4) are the most common sites of intracranial dissection."---
 
 # Traumatic Cervicocerebral Injuries
 

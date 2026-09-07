@@ -1,5 +1,6 @@
 ---
 title: "Mycoplasma pneumoniae"
+concept_id: "cardio_mycoplasma_pneumoniae"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -11,7 +12,7 @@ tags: ["radiology", "cardio", "infection"]
 confidence: high
 status: "verified_source"
 summary: "Legionella and Mycoplasma infection. Aspiration pneumonia in a patient with a history of seizures."
----
+aliases: ["mycoplasma_pneumoniae"]---
 
 # Mycoplasma pneumoniae
 

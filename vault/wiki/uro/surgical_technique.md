@@ -1,9 +1,9 @@
 ---
 title: "Surgical Technique"
+concept_id: "surgical_technique"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Surgical Technique
 

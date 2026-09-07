@@ -1,9 +1,9 @@
 ---
 title: "5 Pulmonary Infection In Adults"
+concept_id: "5_pulmonary_infection_in_adults"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 5 Pulmonary Infection in Adults
 

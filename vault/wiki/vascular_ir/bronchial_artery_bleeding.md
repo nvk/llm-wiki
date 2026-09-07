@@ -1,11 +1,11 @@
 ---
 title: "BRONCHIAL ARTERY BLEEDING"
+concept_id: "bronchial_artery_bleeding"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 197
 end_page: 198
-status: "verified_source"
----
+status: "verified_source"---
 
 # BRONCHIAL ARTERY BLEEDING
 

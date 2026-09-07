@@ -1,11 +1,11 @@
 ---
 title: "INTRAVASCULAR ULTRASOUND"
+concept_id: "intravascular_ultrasound"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 76
 end_page: 86
-status: "verified_source"
----
+status: "verified_source"---
 
 # INTRAVASCULAR ULTRASOUND
 

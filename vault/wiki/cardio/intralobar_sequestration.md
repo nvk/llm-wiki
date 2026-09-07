@@ -1,5 +1,6 @@
 ---
 title: "Intralobar Sequestration"
+concept_id: "intralobar_sequestration"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "The definitive treatment is surgical excision. They affect the left side twice as frequently as the right. MRI may be useful in evaluation."
----
+summary: "The definitive treatment is surgical excision. They affect the left side twice as frequently as the right. MRI may be useful in evaluation."---
 
 # Intralobar Sequestration
 

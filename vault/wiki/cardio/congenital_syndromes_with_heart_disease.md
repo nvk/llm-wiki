@@ -1,5 +1,6 @@
 ---
 title: "Congenital Syndromes with Heart Disease"
+concept_id: "congenital_syndromes_with_heart_disease"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "congenital"]
 confidence: high
 status: "verified_source"
-summary: "Eleven pairs of ribs in Down syndrome. Barium in the esophagus is deviated by a right aortic arch. Spine abnormalities also may indicate surgery or disease."
----
+summary: "Eleven pairs of ribs in Down syndrome. Barium in the esophagus is deviated by a right aortic arch. Spine abnormalities also may indicate surgery or disease."---
 
 # Congenital Syndromes with Heart Disease
 

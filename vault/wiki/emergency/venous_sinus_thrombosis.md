@@ -1,5 +1,6 @@
 ---
 title: "Venous Sinus Thrombosis"
+concept_id: "venous_sinus_thrombosis"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "Chiari or Dandy-Walker). MRI is usually the diagnostic study. CT for cervical spine evaluation is recommended."
----
+summary: "Chiari or Dandy-Walker). MRI is usually the diagnostic study. CT for cervical spine evaluation is recommended."---
 
 # Venous Sinus Thrombosis
 

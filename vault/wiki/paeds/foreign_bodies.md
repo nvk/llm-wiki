@@ -1,5 +1,6 @@
 ---
 title: "Foreign Bodies"
+concept_id: "paeds_foreign_bodies"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -11,7 +12,7 @@ tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
 summary: "The most common cause of esophagitis is GER. The bullae can ulcerate and then progress to strictures."
----
+aliases: ["foreign_bodies"]---
 
 # Foreign Bodies
 

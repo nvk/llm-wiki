@@ -1,11 +1,12 @@
 ---
 title: "ULTRASOUND"
+concept_id: "vascular_ir_ultrasound"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 79
 end_page: 81
 status: "verified_source"
----
+aliases: ["ultrasound"]---
 
 # ULTRASOUND
 

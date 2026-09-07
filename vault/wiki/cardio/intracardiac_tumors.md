@@ -1,5 +1,6 @@
 ---
 title: "Intracardiac Tumors"
+concept_id: "intracardiac_tumors"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "oncology"]
 confidence: high
 status: "verified_source"
-summary: "A) Right atrial (RA) free wall inversion (arrowheads) occurs when intrapericardial pressure exceeds right atrial systolic pressure. RA inversion relative to the cycle length, the greater the likelihood of cardiac tamponade. LV) fi lling decreases."
----
+summary: "A) Right atrial (RA) free wall inversion (arrowheads) occurs when intrapericardial pressure exceeds right atrial systolic pressure. RA inversion relative to the cycle length, the greater the likelihood of cardiac tamponade. LV) fi lling decreases."---
 
 # Intracardiac Tumors
 

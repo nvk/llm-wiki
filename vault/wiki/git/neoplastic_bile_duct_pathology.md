@@ -1,9 +1,9 @@
 ---
 title: "Neoplastic Bile Duct Pathology"
+concept_id: "neoplastic_bile_duct_pathology"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Neoplastic Bile Duct Pathology
 

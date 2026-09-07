@@ -1,11 +1,11 @@
 ---
 title: "Protozoan And Other Parasitic Infections"
+concept_id: "protozoan_and_other_parasitic_infections"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 126
 end_page: 127
-status: "verified_source"
----
+status: "verified_source"---
 
 # Protozoan And Other Parasitic Infections
 

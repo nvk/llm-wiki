@@ -1,11 +1,11 @@
 ---
 title: "EXTRA-AXIAL HEMORRHAGE"
+concept_id: "extra_axial_hemorrhage"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 18
 end_page: 21
-status: "verified_source"
----
+status: "verified_source"---
 
 # EXTRA-AXIAL HEMORRHAGE
 

@@ -1,5 +1,6 @@
 ---
 title: "Necrotizing Enterocolitis"
+concept_id: "paeds_necrotizing_enterocolitis"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -11,7 +12,7 @@ tags: ["radiology", "paeds", "infection"]
 confidence: high
 status: "verified_source"
 summary: "Multiple strictures are not uncommon. GI tract or break through into the portal venous system. NEC, necessitates performance of a contrast enema study (Fig."
----
+aliases: ["necrotizing_enterocolitis"]---
 
 # Necrotizing Enterocolitis
 

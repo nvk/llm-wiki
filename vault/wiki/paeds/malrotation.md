@@ -1,5 +1,6 @@
 ---
 title: "Malrotation"
+concept_id: "paeds_malrotation"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -11,7 +12,7 @@ tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
 summary: "Endoscopy is often the definitive diagnostic tool. CT using both peroral and IV contrast agent. Endoscopy is necessary to obtain a histologic diagnosis."
----
+aliases: ["malrotation"]---
 
 # Malrotation
 

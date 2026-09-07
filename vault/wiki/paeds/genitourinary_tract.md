@@ -1,11 +1,11 @@
 ---
 title: "Genitourinary Tract"
+concept_id: "genitourinary_tract"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 130
 end_page: 140
-status: "verified_source"
----
+status: "verified_source"---
 
 # Genitourinary Tract
 

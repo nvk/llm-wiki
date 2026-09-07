@@ -1,9 +1,9 @@
 ---
 title: "Examination"
+concept_id: "examination"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Examination
 

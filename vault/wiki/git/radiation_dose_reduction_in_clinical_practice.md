@@ -1,9 +1,10 @@
 ---
 title: "Radiation Dose Reduction In Clinical Practice"
+concept_id: "git_radiation_dose_reduction_in_clinical_practice"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["radiation_dose_reduction_in_clinical_practice"]---
 
 # Radiation Dose Reduction in Clinical Practice
 

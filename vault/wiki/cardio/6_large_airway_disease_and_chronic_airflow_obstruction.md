@@ -1,9 +1,9 @@
 ---
 title: "6 Large Airway Disease And Chronic Airflow Obstruction"
+concept_id: "6_large_airway_disease_and_chronic_airflow_obstruction"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 6 Large Airway Disease and Chronic Airflow Obstruction
 

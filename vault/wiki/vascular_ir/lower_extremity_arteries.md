@@ -1,11 +1,11 @@
 ---
 title: "Lower-Extremity Arteries"
+concept_id: "lower_extremity_arteries"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 357
 end_page: 367
-status: "verified_source"
----
+status: "verified_source"---
 
 # Lower-Extremity Arteries
 

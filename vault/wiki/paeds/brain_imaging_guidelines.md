@@ -1,11 +1,11 @@
 ---
 title: "BRAIN IMAGING GUIDELINES"
+concept_id: "brain_imaging_guidelines"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 214
 end_page: 215
-status: "verified_source"
----
+status: "verified_source"---
 
 # BRAIN IMAGING GUIDELINES
 

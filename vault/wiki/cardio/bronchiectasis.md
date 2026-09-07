@@ -1,11 +1,11 @@
 ---
 title: "Bronchiectasis"
+concept_id: "bronchiectasis"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 326
 end_page: 332
-status: "verified_source"
----
+status: "verified_source"---
 
 # Bronchiectasis
 

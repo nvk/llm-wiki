@@ -1,11 +1,11 @@
 ---
 title: "CHRONIC OCCLUSIVE DISEASE"
+concept_id: "chronic_occlusive_disease"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 366
 end_page: 373
-status: "verified_source"
----
+status: "verified_source"---
 
 # CHRONIC OCCLUSIVE DISEASE
 

@@ -1,5 +1,6 @@
 ---
 title: "Bronchogenic Cysts"
+concept_id: "bronchogenic_cysts"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "There is an equal gender incidence. A, Conventional radiograph. Congenital lobar emphysema (CLE) or overinfation (CLO)."
----
+summary: "There is an equal gender incidence. A, Conventional radiograph. Congenital lobar emphysema (CLE) or overinfation (CLO)."---
 
 # Bronchogenic Cysts
 

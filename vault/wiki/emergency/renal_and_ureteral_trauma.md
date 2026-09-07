@@ -1,11 +1,11 @@
 ---
 title: "RENAL AND URETERAL TRAUMA"
+concept_id: "renal_and_ureteral_trauma"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 110
 end_page: 111
-status: "verified_source"
----
+status: "verified_source"---
 
 # RENAL AND URETERAL TRAUMA
 

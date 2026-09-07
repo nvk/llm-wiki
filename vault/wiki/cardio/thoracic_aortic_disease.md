@@ -1,11 +1,11 @@
 ---
 title: "Thoracic Aortic Disease"
+concept_id: "thoracic_aortic_disease"
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
 start_page: 391
 end_page: 444
-status: "verified_source"
----
+status: "verified_source"---
 
 # Thoracic Aortic Disease
 

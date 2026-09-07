@@ -1,11 +1,12 @@
 ---
 title: "Suggested Readings"
+concept_id: "cardio_suggested_readings"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 69
 end_page: 70
 status: "verified_source"
----
+aliases: ["suggested_readings"]---
 
 # Suggested Readings
 

@@ -1,11 +1,11 @@
 ---
 title: "VASOSPASTIC DISORDERS"
+concept_id: "vasospastic_disorders"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 38
 end_page: 48
-status: "verified_source"
----
+status: "verified_source"---
 
 # VASOSPASTIC DISORDERS
 

@@ -1,11 +1,11 @@
 ---
 title: "Anatomy and Metabolism of Bone"
+concept_id: "anatomy_and_metabolism_of_bone"
 domain: "msk"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 131
 end_page: 194
-status: "verified_source"
----
+status: "verified_source"---
 
 # Anatomy and Metabolism of Bone
 

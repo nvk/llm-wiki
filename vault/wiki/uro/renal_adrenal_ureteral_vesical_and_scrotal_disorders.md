@@ -1,11 +1,11 @@
 ---
 title: "Renal, Adrenal, Ureteral, Vesical, and Scrotal Disorders"
+concept_id: "renal_adrenal_ureteral_vesical_and_scrotal_disorders"
 domain: "uro"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 3051
 end_page: 3302
-status: "verified_source"
----
+status: "verified_source"---
 
 # Renal, Adrenal, Ureteral, Vesical, and Scrotal Disorders
 

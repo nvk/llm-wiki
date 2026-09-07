@@ -1,11 +1,11 @@
 ---
 title: "Congenital Abnormalities of the Thorax"
+concept_id: "congenital_abnormalities_of_the_thorax"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 71
 end_page: 81
-status: "verified_source"
----
+status: "verified_source"---
 
 # Congenital Abnormalities of the Thorax
 

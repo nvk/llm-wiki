@@ -1,11 +1,11 @@
 ---
 title: "Trachea"
+concept_id: "trachea"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 71
 end_page: 71
-status: "verified_source"
----
+status: "verified_source"---
 
 # Trachea
 

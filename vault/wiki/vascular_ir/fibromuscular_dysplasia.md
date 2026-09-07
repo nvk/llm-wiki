@@ -1,11 +1,11 @@
 ---
 title: "FIBROMUSCULAR DYSPLASIA"
+concept_id: "fibromuscular_dysplasia"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 28
 end_page: 28
-status: "verified_source"
----
+status: "verified_source"---
 
 # FIBROMUSCULAR DYSPLASIA
 

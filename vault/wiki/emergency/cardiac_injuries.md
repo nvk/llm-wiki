@@ -1,11 +1,11 @@
 ---
 title: "CARDIAC INJURIES"
+concept_id: "cardiac_injuries"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 78
 end_page: 88
-status: "verified_source"
----
+status: "verified_source"---
 
 # CARDIAC INJURIES
 

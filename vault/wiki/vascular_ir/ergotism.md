@@ -1,11 +1,11 @@
 ---
 title: "ERGOTISM"
+concept_id: "ergotism"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 384
 end_page: 384
-status: "verified_source"
----
+status: "verified_source"---
 
 # ERGOTISM
 

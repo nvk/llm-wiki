@@ -1,11 +1,11 @@
 ---
 title: "Abdominal Disease"
+concept_id: "abdominal_disease"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 170
 end_page: 170
-status: "verified_source"
----
+status: "verified_source"---
 
 # Abdominal Disease
 

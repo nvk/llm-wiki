@@ -1,11 +1,11 @@
 ---
 title: "Zonal Distribution"
+concept_id: "zonal_distribution"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 195
 end_page: 195
-status: "verified_source"
----
+status: "verified_source"---
 
 # Zonal Distribution
 

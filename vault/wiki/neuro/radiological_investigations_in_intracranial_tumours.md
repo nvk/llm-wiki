@@ -1,9 +1,9 @@
 ---
 title: "Radiological Investigations In Intracranial Tumours"
+concept_id: "radiological_investigations_in_intracranial_tumours"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Radiological Investigations in Intracranial Tumours
 

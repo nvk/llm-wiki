@@ -1,5 +1,6 @@
 ---
 title: "Congenital Cysts"
+concept_id: "congenital_cysts"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "congenital"]
 confidence: high
 status: "verified_source"
-summary: "Most congenital spaces in the lung are cysts. CT shows a calcified nodule that is a hamartoma. The posteroanterior view shows a large, well-defined mass that has obtuse angles with the chest wall."
----
+summary: "Most congenital spaces in the lung are cysts. CT shows a calcified nodule that is a hamartoma. The posteroanterior view shows a large, well-defined mass that has obtuse angles with the chest wall."---
 
 # Congenital Cysts
 

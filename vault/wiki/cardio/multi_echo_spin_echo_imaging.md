@@ -1,5 +1,6 @@
 ---
 title: "Multi-Echo Spin Echo Imaging"
+concept_id: "multi_echo_spin_echo_imaging"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Makaryus and Lawrence M. SE in dramatically less imaging time. Double inversion recovery acquisition images."
----
+summary: "Makaryus and Lawrence M. SE in dramatically less imaging time. Double inversion recovery acquisition images."---
 
 # Multi-Echo Spin Echo Imaging
 

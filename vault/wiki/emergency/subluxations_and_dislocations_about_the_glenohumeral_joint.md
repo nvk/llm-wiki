@@ -1,5 +1,6 @@
 ---
 title: "Subluxations and Dislocations about the Glenohumeral Joint"
+concept_id: "subluxations_and_dislocations_about_the_glenohumeral_joint"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Anterior shoulder dislocation. Hill-Sachs fracture (arrow). Bankart fracture (arrowhead)."
----
+summary: "Anterior shoulder dislocation. Hill-Sachs fracture (arrow). Bankart fracture (arrowhead)."---
 
 # Subluxations and Dislocations about the Glenohumeral Joint
 

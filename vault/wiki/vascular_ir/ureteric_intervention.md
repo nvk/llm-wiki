@@ -1,11 +1,11 @@
 ---
 title: "URETERIC INTERVENTION"
+concept_id: "ureteric_intervention"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 522
 end_page: 528
-status: "verified_source"
----
+status: "verified_source"---
 
 # URETERIC INTERVENTION
 

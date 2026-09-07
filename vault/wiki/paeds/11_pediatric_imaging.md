@@ -1,11 +1,11 @@
 ---
 title: "11. Pediatric Imaging"
+concept_id: "11_pediatric_imaging"
 domain: "paeds"
 source_book: "Core Radiology (Jacob)"
 start_page: 752
 end_page: 848
-status: "verified_source"
----
+status: "verified_source"---
 
 # 11. Pediatric Imaging
 

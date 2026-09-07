@@ -1,5 +1,6 @@
 ---
 title: "Orbital Blowout Fractures"
+concept_id: "orbital_blowout_fractures"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Blow-out fracture of the orbital roof is rarely seen. This allows separation of the face from the rest of the skull. Zygomaticomaxillary complex fracture."
----
+summary: "Blow-out fracture of the orbital roof is rarely seen. This allows separation of the face from the rest of the skull. Zygomaticomaxillary complex fracture."---
 
 # Orbital Blowout Fractures
 

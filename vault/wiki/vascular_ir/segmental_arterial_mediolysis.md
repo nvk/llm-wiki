@@ -1,11 +1,11 @@
 ---
 title: "SEGMENTAL ARTERIAL MEDIOLYSIS"
+concept_id: "segmental_arterial_mediolysis"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 281
 end_page: 291
-status: "verified_source"
----
+status: "verified_source"---
 
 # SEGMENTAL ARTERIAL MEDIOLYSIS
 

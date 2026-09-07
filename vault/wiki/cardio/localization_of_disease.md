@@ -1,5 +1,6 @@
 ---
 title: "Localization of Disease"
+concept_id: "localization_of_disease"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "A, The posteroanterior view shows multiple, central cystic structures with bronchial wall thickening (arrowheads). Air trapping in the right lower lobe. A, The posteroanterior view at inspiration shows a slightly smaller right lower lobe."
----
+summary: "A, The posteroanterior view shows multiple, central cystic structures with bronchial wall thickening (arrowheads). Air trapping in the right lower lobe. A, The posteroanterior view at inspiration shows a slightly smaller right lower lobe."---
 
 # Localization of Disease
 

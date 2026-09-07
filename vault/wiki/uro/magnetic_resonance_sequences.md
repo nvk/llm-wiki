@@ -1,9 +1,9 @@
 ---
 title: "Magnetic Resonance Sequences"
+concept_id: "magnetic_resonance_sequences"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Magnetic Resonance Sequences
 

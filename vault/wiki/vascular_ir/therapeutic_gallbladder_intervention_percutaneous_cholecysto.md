@@ -1,11 +1,11 @@
 ---
 title: "THERAPEUTIC GALLBLADDER INTERVENTION: PERCUTANEOUS CHOLECYSTOSTOMY"
+concept_id: "therapeutic_gallbladder_intervention_percutaneous_cholecysto"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 497
 end_page: 502
-status: "verified_source"
----
+status: "verified_source"---
 
 # THERAPEUTIC GALLBLADDER INTERVENTION: PERCUTANEOUS CHOLECYSTOSTOMY
 

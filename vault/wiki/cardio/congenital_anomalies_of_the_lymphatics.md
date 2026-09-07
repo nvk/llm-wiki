@@ -1,5 +1,6 @@
 ---
 title: "Congenital Anomalies of the Lymphatics"
+concept_id: "congenital_anomalies_of_the_lymphatics"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "congenital"]
 confidence: high
 status: "verified_source"
-summary: "Mosby, 2009, Philadelphia. Radiology of congenital abnormalities of the chest. WB Saunders, Philadelphia, pp."
----
+summary: "Mosby, 2009, Philadelphia. Radiology of congenital abnormalities of the chest. WB Saunders, Philadelphia, pp."---
 
 # Congenital Anomalies of the Lymphatics
 

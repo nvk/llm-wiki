@@ -1,11 +1,11 @@
 ---
 title: "GALLBLADDER AND BILE DUCT TRAUMA"
+concept_id: "gallbladder_and_bile_duct_trauma"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 100
 end_page: 101
-status: "verified_source"
----
+status: "verified_source"---
 
 # GALLBLADDER AND BILE DUCT TRAUMA
 

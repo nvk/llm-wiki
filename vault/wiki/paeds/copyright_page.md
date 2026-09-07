@@ -1,11 +1,12 @@
 ---
 title: "Copyright Page"
+concept_id: "paeds_copyright_page"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 3
 end_page: 3
 status: "verified_source"
----
+aliases: ["copyright_page"]---
 
 # Copyright Page
 

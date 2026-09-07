@@ -1,11 +1,11 @@
 ---
 title: "CHRONIC PULMONARY EMBOLISM"
+concept_id: "chronic_pulmonary_embolism"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 191
 end_page: 191
-status: "verified_source"
----
+status: "verified_source"---
 
 # CHRONIC PULMONARY EMBOLISM
 

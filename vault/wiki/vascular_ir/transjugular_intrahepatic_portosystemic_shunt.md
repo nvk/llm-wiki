@@ -1,11 +1,11 @@
 ---
 title: "TRANSJUGULAR INTRAHEPATIC PORTOSYSTEMIC SHUNT"
+concept_id: "transjugular_intrahepatic_portosystemic_shunt"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 341
 end_page: 347
-status: "verified_source"
----
+status: "verified_source"---
 
 # TRANSJUGULAR INTRAHEPATIC PORTOSYSTEMIC SHUNT
 

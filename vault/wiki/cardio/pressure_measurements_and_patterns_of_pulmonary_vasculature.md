@@ -1,5 +1,6 @@
 ---
 title: "Pressure Measurements and Patterns of Pulmonary Vasculature"
+concept_id: "pressure_measurements_and_patterns_of_pulmonary_vasculature"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Decreased pulmonary vasculature. Shunt vascularity in ventricular septal defect. The large central pulmonary arteries are indistinct because of surrounding pulmonary edema."
----
+summary: "Decreased pulmonary vasculature. Shunt vascularity in ventricular septal defect. The large central pulmonary arteries are indistinct because of surrounding pulmonary edema."---
 
 # Pressure Measurements and Patterns of Pulmonary Vasculature
 

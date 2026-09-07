@@ -1,5 +1,6 @@
 ---
 title: "Staphylococcus aureus"
+concept_id: "staphylococcus_aureus"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Parapneumonic effusion (pneumococcal pneumonia). A, The posteroanterior view shows a right upper lobe consolidation."
----
+summary: "Parapneumonic effusion (pneumococcal pneumonia). A, The posteroanterior view shows a right upper lobe consolidation."---
 
 # Staphylococcus aureus
 

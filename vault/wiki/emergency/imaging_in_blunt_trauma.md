@@ -1,11 +1,11 @@
 ---
 title: "IMAGING IN BLUNT TRAUMA"
+concept_id: "imaging_in_blunt_trauma"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 95
 end_page: 98
-status: "verified_source"
----
+status: "verified_source"---
 
 # IMAGING IN BLUNT TRAUMA
 

@@ -1,9 +1,9 @@
 ---
 title: "Mechanisms And Causes Of Lobar Collapse"
+concept_id: "mechanisms_and_causes_of_lobar_collapse"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Mechanisms and Causes of Lobar Collapse
 

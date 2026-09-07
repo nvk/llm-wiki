@@ -1,11 +1,11 @@
 ---
 title: "Pediatric Imaging"
+concept_id: "pediatric_imaging"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 10
 end_page: 13
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pediatric Imaging
 

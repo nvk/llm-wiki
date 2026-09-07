@@ -1,9 +1,9 @@
 ---
 title: "The Postoperative Stomach"
+concept_id: "the_postoperative_stomach"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # The Postoperative Stomach
 

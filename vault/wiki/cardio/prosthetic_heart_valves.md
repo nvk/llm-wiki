@@ -1,5 +1,6 @@
 ---
 title: "Prosthetic Heart Valves"
+concept_id: "prosthetic_heart_valves"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Each type of prosthesis has differentflow profi les. AR, aortic regurgitation; AS, aortic stenosis. More severe regurgitation tends tofill a greater portion of the outfl ow tract in early diastole."
----
+summary: "Each type of prosthesis has differentflow profi les. AR, aortic regurgitation; AS, aortic stenosis. More severe regurgitation tends tofill a greater portion of the outfl ow tract in early diastole."---
 
 # Prosthetic Heart Valves
 

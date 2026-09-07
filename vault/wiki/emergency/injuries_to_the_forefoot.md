@@ -1,5 +1,6 @@
 ---
 title: "injuries to the Forefoot"
+concept_id: "injuries_to_the_forefoot"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "They account for 25% of all calcaneal fractures. This can occur with minimal trauma (e. The homolateral type (Fig."
----
+summary: "They account for 25% of all calcaneal fractures. This can occur with minimal trauma (e. The homolateral type (Fig."---
 
 # injuries to the Forefoot
 

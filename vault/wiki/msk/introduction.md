@@ -1,9 +1,10 @@
 ---
 title: "Introduction"
+concept_id: "msk_introduction"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["introduction"]---
 
 # Introduction
 

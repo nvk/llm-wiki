@@ -1,11 +1,11 @@
 ---
 title: "Anterior Mediastinal Masses"
+concept_id: "anterior_mediastinal_masses"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 358
 end_page: 363
-status: "verified_source"
----
+status: "verified_source"---
 
 # Anterior Mediastinal Masses
 

@@ -1,11 +1,11 @@
 ---
 title: "16. Fetal Thorax"
+concept_id: "16_fetal_thorax"
 domain: "cardio"
 source_book: "Ultrasound: The Requisites"
 start_page: 557
 end_page: 578
-status: "verified_source"
----
+status: "verified_source"---
 
 # 16. Fetal Thorax
 

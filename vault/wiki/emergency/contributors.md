@@ -1,11 +1,12 @@
 ---
 title: "Contributors"
+concept_id: "emergency_contributors"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 8
 end_page: 11
 status: "verified_source"
----
+aliases: ["contributors"]---
 
 # Contributors
 

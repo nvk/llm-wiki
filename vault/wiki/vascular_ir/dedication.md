@@ -1,11 +1,12 @@
 ---
 title: "Dedication"
+concept_id: "vascular_ir_dedication"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 6
 end_page: 7
 status: "verified_source"
----
+aliases: ["dedication"]---
 
 # Dedication
 

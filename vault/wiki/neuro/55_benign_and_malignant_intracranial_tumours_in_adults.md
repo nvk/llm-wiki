@@ -1,9 +1,9 @@
 ---
 title: "55 Benign And Malignant Intracranial Tumours In Adults"
+concept_id: "55_benign_and_malignant_intracranial_tumours_in_adults"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 55 Benign and Malignant Intracranial Tumours in Adults
 

@@ -1,11 +1,11 @@
 ---
 title: "Pleural Effusions"
+concept_id: "pleural_effusions"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 391
 end_page: 396
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pleural Effusions
 

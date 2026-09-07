@@ -1,11 +1,11 @@
 ---
 title: "OTHER NONTRAUMATIC INTRACRANIAL EMERGENCIES"
+concept_id: "other_nontraumatic_intracranial_emergencies"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 40
 end_page: 40
-status: "verified_source"
----
+status: "verified_source"---
 
 # OTHER NONTRAUMATIC INTRACRANIAL EMERGENCIES
 

@@ -1,9 +1,9 @@
 ---
 title: "Cross-Sectional Imaging"
+concept_id: "cross-sectional_imaging"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Cross-Sectional Imaging
 

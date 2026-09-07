@@ -1,5 +1,6 @@
 ---
 title: "Pericarditis and Pericardial Effusions"
+concept_id: "pericarditis_and_pericardial_effusions"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "infection"]
 confidence: high
 status: "verified_source"
-summary: "LP) and right (RP) pulmonary arteries. AoA) and descending (AoD) thoracic aorta are labeled."
----
+summary: "LP) and right (RP) pulmonary arteries. AoA) and descending (AoD) thoracic aorta are labeled."---
 
 # Pericarditis and Pericardial Effusions
 

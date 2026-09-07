@@ -1,5 +1,6 @@
 ---
 title: "Chest Wall"
+concept_id: "chest_wall"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Diagn 26:641–647, 1985. There are many causes of parenchymal consolidation. The process may be localized or diffuse."
----
+summary: "Diagn 26:641–647, 1985. There are many causes of parenchymal consolidation. The process may be localized or diffuse."---
 
 # Chest Wall
 

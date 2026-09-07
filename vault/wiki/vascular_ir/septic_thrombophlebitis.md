@@ -1,11 +1,11 @@
 ---
 title: "SEPTIC THROMBOPHLEBITIS"
+concept_id: "septic_thrombophlebitis"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 404
 end_page: 414
-status: "verified_source"
----
+status: "verified_source"---
 
 # SEPTIC THROMBOPHLEBITIS
 

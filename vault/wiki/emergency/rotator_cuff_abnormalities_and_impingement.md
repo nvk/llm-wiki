@@ -1,5 +1,6 @@
 ---
 title: "Rotator Cuff Abnormalities and Impingement"
+concept_id: "rotator_cuff_abnormalities_and_impingement"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "SS) tendon near its humeral (H) insertion. TE sequences (T1 and proton density). Chronic rotator cuff tear indirect signs."
----
+summary: "SS) tendon near its humeral (H) insertion. TE sequences (T1 and proton density). Chronic rotator cuff tear indirect signs."---
 
 # Rotator Cuff Abnormalities and Impingement
 

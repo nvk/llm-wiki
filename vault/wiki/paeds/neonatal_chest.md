@@ -1,5 +1,6 @@
 ---
 title: "Neonatal Chest"
+concept_id: "neonatal_chest"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "B, MRA shows the vascular supply of the sequestration (arrow) on lateral coronal projection. C, US scan shows the feeding vessel. Transverse and sagittal color-flow Doppler images."
----
+summary: "B, MRA shows the vascular supply of the sequestration (arrow) on lateral coronal projection. C, US scan shows the feeding vessel. Transverse and sagittal color-flow Doppler images."---
 
 # Neonatal Chest
 

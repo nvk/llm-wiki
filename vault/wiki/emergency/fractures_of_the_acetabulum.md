@@ -1,5 +1,6 @@
 ---
 title: "Fractures of the Acetabulum"
+concept_id: "fractures_of_the_acetabulum"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "The fracture is located lateral to the sacral neural foramina. Posterior wall fractures (Fig. The transverse fracture line (Fig."
----
+summary: "The fracture is located lateral to the sacral neural foramina. Posterior wall fractures (Fig. The transverse fracture line (Fig."---
 
 # Fractures of the Acetabulum
 

@@ -1,11 +1,11 @@
 ---
 title: "VENOUS EMERGENCIES"
+concept_id: "venous_emergencies"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 370
 end_page: 373
-status: "verified_source"
----
+status: "verified_source"---
 
 # VENOUS EMERGENCIES
 

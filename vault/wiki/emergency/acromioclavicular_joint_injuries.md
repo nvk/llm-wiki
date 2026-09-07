@@ -1,5 +1,6 @@
 ---
 title: "Acromioclavicular Joint injuries"
+concept_id: "acromioclavicular_joint_injuries"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "There are six types of AC joint injuries. In type II injury (Fig. On the stress view (Fig."
----
+summary: "There are six types of AC joint injuries. In type II injury (Fig. On the stress view (Fig."---
 
 # Acromioclavicular Joint injuries
 

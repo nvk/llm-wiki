@@ -1,11 +1,11 @@
 ---
 title: "TRANSIENT ISCHEMIC ATTACK"
+concept_id: "transient_ischemic_attack"
 domain: "head_neck"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 773
 end_page: 773
-status: "verified_source"
----
+status: "verified_source"---
 
 # TRANSIENT ISCHEMIC ATTACK
 

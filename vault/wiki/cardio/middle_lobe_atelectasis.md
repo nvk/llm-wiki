@@ -1,5 +1,6 @@
 ---
 title: "Middle Lobe Atelectasis"
+concept_id: "middle_lobe_atelectasis"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Additional CT features should be sought. The minorfissure is displaced upward, and the majorfissure is displaced anteriorly. Right upper lobe atelectasis."
----
+summary: "Additional CT features should be sought. The minorfissure is displaced upward, and the majorfissure is displaced anteriorly. Right upper lobe atelectasis."---
 
 # Middle Lobe Atelectasis
 

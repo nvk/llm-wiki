@@ -1,9 +1,10 @@
 ---
 title: "Nuclear Medicine"
+concept_id: "msk_nuclear_medicine"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["nuclear_medicine"]---
 
 # Nuclear Medicine
 

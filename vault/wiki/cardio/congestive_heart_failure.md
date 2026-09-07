@@ -1,11 +1,11 @@
 ---
 title: "Congestive Heart Failure"
+concept_id: "congestive_heart_failure"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 342
 end_page: 343
-status: "verified_source"
----
+status: "verified_source"---
 
 # Congestive Heart Failure
 

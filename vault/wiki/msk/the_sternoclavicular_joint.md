@@ -1,9 +1,9 @@
 ---
 title: "The Sternoclavicular Joint"
+concept_id: "the_sternoclavicular_joint"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # The Sternoclavicular Joint
 

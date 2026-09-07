@@ -1,9 +1,9 @@
 ---
 title: "General Characteristics Of Bone Tumours"
+concept_id: "general_characteristics_of_bone_tumours"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # General Characteristics of Bone Tumours
 

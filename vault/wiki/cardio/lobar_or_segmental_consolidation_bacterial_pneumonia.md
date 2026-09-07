@@ -1,5 +1,6 @@
 ---
 title: "Lobar or Segmental Consolidation: Bacterial Pneumonia"
+concept_id: "lobar_or_segmental_consolidation_bacterial_pneumonia"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "infection"]
 confidence: high
 status: "verified_source"
-summary: "Proteus, and Serratia. BAL, bronchoalveolar lavage; TBB, transbronchial biopsy; TNB, transthoracic needle biopsy."
----
+summary: "Proteus, and Serratia. BAL, bronchoalveolar lavage; TBB, transbronchial biopsy; TNB, transthoracic needle biopsy."---
 
 # Lobar or Segmental Consolidation: Bacterial Pneumonia
 

@@ -1,9 +1,9 @@
 ---
 title: "Organising Pneumonia"
+concept_id: "organising_pneumonia"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Organising Pneumonia
 

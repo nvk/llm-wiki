@@ -1,11 +1,11 @@
 ---
 title: "4. Bile Ducts"
+concept_id: "4_bile_ducts"
 domain: "cardio"
 source_book: "Ultrasound: The Requisites"
 start_page: 149
 end_page: 174
-status: "verified_source"
----
+status: "verified_source"---
 
 # 4. Bile Ducts
 

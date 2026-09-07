@@ -1,11 +1,11 @@
 ---
 title: "Tracheobronchomalacia"
+concept_id: "tracheobronchomalacia"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 314
 end_page: 315
-status: "verified_source"
----
+status: "verified_source"---
 
 # Tracheobronchomalacia
 

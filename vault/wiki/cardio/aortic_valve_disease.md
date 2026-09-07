@@ -1,5 +1,6 @@
 ---
 title: "Aortic Valve Disease"
+concept_id: "aortic_valve_disease"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "RA, right atrium; RV, right ventricle. PISA) formed asflow accelerates to pass through a discrete orifi ce. Doppler spectral trace of tricuspid regurgitation."
----
+summary: "RA, right atrium; RV, right ventricle. PISA) formed asflow accelerates to pass through a discrete orifi ce. Doppler spectral trace of tricuspid regurgitation."---
 
 # Aortic Valve Disease
 

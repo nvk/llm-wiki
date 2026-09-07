@@ -1,11 +1,11 @@
 ---
 title: "ACUTE PULMONARY EMBOLISM"
+concept_id: "acute_pulmonary_embolism"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 187
 end_page: 190
-status: "verified_source"
----
+status: "verified_source"---
 
 # ACUTE PULMONARY EMBOLISM
 

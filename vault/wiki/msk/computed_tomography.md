@@ -1,9 +1,10 @@
 ---
 title: "Computed Tomography"
+concept_id: "msk_computed_tomography"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["computed_tomography"]---
 
 # Computed Tomography
 

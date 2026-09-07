@@ -1,11 +1,11 @@
 ---
 title: "Pulmonary Disease In Persons With Acquired Immunodeficiency Syndrome"
+concept_id: "pulmonary_disease_in_persons_with_acquired_immunodeficiency"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 139
 end_page: 146
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pulmonary Disease In Persons With Acquired Immunodeficiency Syndrome
 

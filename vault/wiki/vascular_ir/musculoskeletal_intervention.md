@@ -1,11 +1,11 @@
 ---
 title: "Musculoskeletal Intervention"
+concept_id: "musculoskeletal_intervention"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 550
 end_page: 560
-status: "verified_source"
----
+status: "verified_source"---
 
 # Musculoskeletal Intervention
 

@@ -1,9 +1,9 @@
 ---
 title: "Prognosis Assessment In Ischaemic Heart Disease"
+concept_id: "prognosis_assessment_in_ischaemic_heart_disease"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Prognosis Assessment in Ischaemic Heart Disease
 

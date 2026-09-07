@@ -1,11 +1,11 @@
 ---
 title: "Image-Guided Ablation of Renal Tumors"
+concept_id: "image_guided_ablation_of_renal_tumors"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 577
 end_page: 587
-status: "verified_source"
----
+status: "verified_source"---
 
 # Image-Guided Ablation of Renal Tumors
 

@@ -1,9 +1,9 @@
 ---
 title: "12 Cardiac Anatomy And Imaging Techniques"
+concept_id: "12_cardiac_anatomy_and_imaging_techniques"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 12 Cardiac Anatomy and Imaging Techniques
 

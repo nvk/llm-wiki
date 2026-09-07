@@ -1,11 +1,12 @@
 ---
 title: "Dedication"
+concept_id: "emergency_dedication"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 3
 end_page: 7
 status: "verified_source"
----
+aliases: ["dedication"]---
 
 # Dedication
 

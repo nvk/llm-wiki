@@ -1,5 +1,6 @@
 ---
 title: "Suprasternal Imaging Planes"
+concept_id: "suprasternal_imaging_planes"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "PM, papillary muscles; RV, right ventricle. RA, right atrium; RV, right ventricle. Two-dimensional apical long-axis view of the heart."
----
+summary: "PM, papillary muscles; RV, right ventricle. RA, right atrium; RV, right ventricle. Two-dimensional apical long-axis view of the heart."---
 
 # Suprasternal Imaging Planes
 

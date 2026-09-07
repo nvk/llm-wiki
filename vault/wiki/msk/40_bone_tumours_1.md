@@ -1,9 +1,9 @@
 ---
 title: "40 Bone Tumours 1"
+concept_id: "40_bone_tumours_1"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 40 Bone Tumours (1)
 

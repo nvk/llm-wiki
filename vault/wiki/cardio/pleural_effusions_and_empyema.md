@@ -1,5 +1,6 @@
 ---
 title: "Pleural Effusions and Empyema"
+concept_id: "pleural_effusions_and_empyema"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "infection"]
 confidence: high
 status: "verified_source"
-summary: "Streptococcus pyogenes. Cavitary pneumonia due to gram-negative organisms. Primary lung abscess due to aspiration."
----
+summary: "Streptococcus pyogenes. Cavitary pneumonia due to gram-negative organisms. Primary lung abscess due to aspiration."---
 
 # Pleural Effusions and Empyema
 

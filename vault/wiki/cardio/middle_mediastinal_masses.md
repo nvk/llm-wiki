@@ -1,11 +1,11 @@
 ---
 title: "Middle Mediastinal Masses"
+concept_id: "middle_mediastinal_masses"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 364
 end_page: 373
-status: "verified_source"
----
+status: "verified_source"---
 
 # Middle Mediastinal Masses
 

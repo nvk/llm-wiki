@@ -1,11 +1,11 @@
 ---
 title: "ADVENTITIAL CYSTIC DISEASE"
+concept_id: "adventitial_cystic_disease"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 44
 end_page: 54
-status: "verified_source"
----
+status: "verified_source"---
 
 # ADVENTITIAL CYSTIC DISEASE
 

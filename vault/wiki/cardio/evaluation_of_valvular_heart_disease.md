@@ -1,5 +1,6 @@
 ---
 title: "EVALUATION OF VALVULAR HEART DISEASE"
+concept_id: "evaluation_of_valvular_heart_disease"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "The right ventricle (RV) is enlarged. LV, left ventricle; MV, mitral valve. MVO, mitral valve orifi ce; RV, right ventricle."
----
+summary: "The right ventricle (RV) is enlarged. LV, left ventricle; MV, mitral valve. MVO, mitral valve orifi ce; RV, right ventricle."---
 
 # EVALUATION OF VALVULAR HEART DISEASE
 

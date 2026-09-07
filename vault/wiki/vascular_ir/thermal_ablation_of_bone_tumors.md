@@ -1,11 +1,11 @@
 ---
 title: "THERMAL ABLATION OF BONE TUMORS"
+concept_id: "thermal_ablation_of_bone_tumors"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 560
 end_page: 561
-status: "verified_source"
----
+status: "verified_source"---
 
 # THERMAL ABLATION OF BONE TUMORS
 

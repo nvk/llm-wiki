@@ -1,9 +1,10 @@
 ---
 title: "Congenital Anomalies"
+concept_id: "uro_congenital_anomalies"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["congenital_anomalies"]---
 
 # Congenital Anomalies
 

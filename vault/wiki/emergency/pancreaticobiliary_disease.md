@@ -1,11 +1,11 @@
 ---
 title: "PANCREATICOBILIARY DISEASE"
+concept_id: "pancreaticobiliary_disease"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 307
 end_page: 312
-status: "verified_source"
----
+status: "verified_source"---
 
 # PANCREATICOBILIARY DISEASE
 

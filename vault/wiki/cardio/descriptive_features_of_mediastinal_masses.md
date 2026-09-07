@@ -1,11 +1,11 @@
 ---
 title: "Descriptive Features of Mediastinal Masses"
+concept_id: "descriptive_features_of_mediastinal_masses"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 352
 end_page: 362
-status: "verified_source"
----
+status: "verified_source"---
 
 # Descriptive Features of Mediastinal Masses
 

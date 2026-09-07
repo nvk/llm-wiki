@@ -1,11 +1,11 @@
 ---
 title: "PULMONARY VASCULAR MALFORMATIONS"
+concept_id: "pulmonary_vascular_malformations"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 192
 end_page: 193
-status: "verified_source"
----
+status: "verified_source"---
 
 # PULMONARY VASCULAR MALFORMATIONS
 

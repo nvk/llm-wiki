@@ -1,5 +1,6 @@
 ---
 title: "Inferior Pulmonary Ligament"
+concept_id: "inferior_pulmonary_ligament"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Comparable CT sections show the majorfissures bilaterally. They appear as lines because of the thinness (1."
----
+summary: "Comparable CT sections show the majorfissures bilaterally. They appear as lines because of the thinness (1."---
 
 # Inferior Pulmonary Ligament
 

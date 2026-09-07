@@ -1,11 +1,11 @@
 ---
 title: "Anatomy and Function of Urogenital Tract"
+concept_id: "anatomy_and_function_of_urogenital_tract"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 3026
 end_page: 3050
-status: "verified_source"
----
+status: "verified_source"---
 
 # Anatomy and Function of Urogenital Tract
 

@@ -1,11 +1,11 @@
 ---
 title: "TRACHEOBRONCHTAL INJURIES"
+concept_id: "tracheobronchtal_injuries"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 82
 end_page: 85
-status: "verified_source"
----
+status: "verified_source"---
 
 # TRACHEOBRONCHTAL INJURIES
 

@@ -1,5 +1,6 @@
 ---
 title: "Hilar Structures"
+concept_id: "hilar_structures"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Tricuspid annulus calcifi cation. Fallot with unusually large mediastinal collaterals to the pulmonary hila. Calcifi ed mitral valve."
----
+summary: "Tricuspid annulus calcifi cation. Fallot with unusually large mediastinal collaterals to the pulmonary hila. Calcifi ed mitral valve."---
 
 # Hilar Structures
 

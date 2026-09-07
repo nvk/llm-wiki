@@ -1,5 +1,6 @@
 ---
 title: "Pleura"
+concept_id: "pleura"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "The shape is usually polyhedral, and it ­usually is 1 to 2. The pleurae consist of the parietal and visceral layers. Accessory pleuralfissures may occur between segments."
----
+summary: "The shape is usually polyhedral, and it ­usually is 1 to 2. The pleurae consist of the parietal and visceral layers. Accessory pleuralfissures may occur between segments."---
 
 # Pleura
 

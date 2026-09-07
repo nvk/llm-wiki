@@ -1,11 +1,11 @@
 ---
 title: "SHOULDER PAIN"
+concept_id: "shoulder_pain"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 178
 end_page: 183
-status: "verified_source"
----
+status: "verified_source"---
 
 # SHOULDER PAIN
 

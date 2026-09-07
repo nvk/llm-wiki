@@ -1,11 +1,11 @@
 ---
 title: "5. Musculoskeletal Imaging"
+concept_id: "5_musculoskeletal_imaging"
 domain: "msk"
 source_book: "Core Radiology (Jacob)"
 start_page: 357
 end_page: 474
-status: "verified_source"
----
+status: "verified_source"---
 
 # 5. Musculoskeletal Imaging
 

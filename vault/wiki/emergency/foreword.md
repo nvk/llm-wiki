@@ -1,11 +1,12 @@
 ---
 title: "Foreword"
+concept_id: "emergency_foreword"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 12
 end_page: 13
 status: "verified_source"
----
+aliases: ["foreword"]---
 
 # Foreword
 

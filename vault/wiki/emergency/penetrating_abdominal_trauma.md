@@ -1,11 +1,11 @@
 ---
 title: "PENETRATING ABDOMINAL TRAUMA"
+concept_id: "penetrating_abdominal_trauma"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 118
 end_page: 120
-status: "verified_source"
----
+status: "verified_source"---
 
 # PENETRATING ABDOMINAL TRAUMA
 

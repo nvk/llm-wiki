@@ -1,5 +1,6 @@
 ---
 title: "Patient Characteristics Normal Ratio"
+concept_id: "patient_characteristics_normal_ratio"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Confl uence of the pulmonary veins. This normal variant may look similar to an enlarged left atrium (arrow) on the frontalfilm (A) and a pulmonary nodule (arrow) on the lateralfilm (B). Radiol 17:139-144, 1982."
----
+summary: "Confl uence of the pulmonary veins. This normal variant may look similar to an enlarged left atrium (arrow) on the frontalfilm (A) and a pulmonary nodule (arrow) on the lateralfilm (B). Radiol 17:139-144, 1982."---
 
 # Patient Characteristics Normal Ratio
 

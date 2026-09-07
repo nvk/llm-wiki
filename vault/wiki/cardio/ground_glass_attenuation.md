@@ -1,11 +1,11 @@
 ---
 title: "Ground-Glass Attenuation"
+concept_id: "ground_glass_attenuation"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 210
 end_page: 210
-status: "verified_source"
----
+status: "verified_source"---
 
 # Ground-Glass Attenuation
 

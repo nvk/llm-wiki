@@ -1,11 +1,12 @@
 ---
 title: "NEOPLASMS"
+concept_id: "vascular_ir_neoplasms"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 35
 end_page: 35
 status: "verified_source"
----
+aliases: ["neoplasms"]---
 
 # NEOPLASMS
 

@@ -1,5 +1,6 @@
 ---
 title: "Hantavirus"
+concept_id: "hantavirus"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Hantaviruses are carried by rodent vectors. HPS is caused by endothelial damage to the lung. Ebola and Marburgfiloviruses)."
----
+summary: "Hantaviruses are carried by rodent vectors. HPS is caused by endothelial damage to the lung. Ebola and Marburgfiloviruses)."---
 
 # Hantavirus
 

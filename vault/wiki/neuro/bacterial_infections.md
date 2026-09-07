@@ -1,9 +1,9 @@
 ---
 title: "Bacterial Infections"
+concept_id: "bacterial_infections"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Bacterial Infections
 

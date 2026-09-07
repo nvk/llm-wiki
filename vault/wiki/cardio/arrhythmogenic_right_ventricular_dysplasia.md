@@ -1,5 +1,6 @@
 ---
 title: "Arrhythmogenic Right Ventricular Dysplasia"
+concept_id: "arrhythmogenic_right_ventricular_dysplasia"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "The RV chamber size appears dilated. A) Right atrial (RA) free wall inversion (arrowheads) occurs when intrapericardial pressure exceeds right atrial systolic pressure. RA inversion relative to the cycle length, the greater the likelihood of cardiac tamponade."
----
+summary: "The RV chamber size appears dilated. A) Right atrial (RA) free wall inversion (arrowheads) occurs when intrapericardial pressure exceeds right atrial systolic pressure. RA inversion relative to the cycle length, the greater the likelihood of cardiac tamponade."---
 
 # Arrhythmogenic Right Ventricular Dysplasia
 

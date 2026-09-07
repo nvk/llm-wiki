@@ -1,9 +1,9 @@
 ---
 title: "Parathyroid Disorders"
+concept_id: "parathyroid_disorders"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Parathyroid Disorders
 

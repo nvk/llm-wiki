@@ -1,9 +1,9 @@
 ---
 title: "Anatomy Of The Urinary Tract"
+concept_id: "anatomy_of_the_urinary_tract"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Anatomy of the Urinary Tract
 

@@ -1,11 +1,12 @@
 ---
 title: "Chest"
+concept_id: "paeds_chest"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 14
 end_page: 24
 status: "verified_source"
----
+aliases: ["chest"]---
 
 # Chest
 

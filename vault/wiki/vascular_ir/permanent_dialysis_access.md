@@ -1,11 +1,11 @@
 ---
 title: "PERMANENT DIALYSIS ACCESS"
+concept_id: "permanent_dialysis_access"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 174
 end_page: 179
-status: "verified_source"
----
+status: "verified_source"---
 
 # PERMANENT DIALYSIS ACCESS
 

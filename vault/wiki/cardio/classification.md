@@ -1,11 +1,11 @@
 ---
 title: "Classification"
+concept_id: "classification"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 92
 end_page: 95
-status: "verified_source"
----
+status: "verified_source"---
 
 # Classification
 

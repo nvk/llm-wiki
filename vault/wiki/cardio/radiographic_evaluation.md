@@ -1,11 +1,11 @@
 ---
 title: "Radiographic Evaluation"
+concept_id: "radiographic_evaluation"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 300
 end_page: 300
-status: "verified_source"
----
+status: "verified_source"---
 
 # Radiographic Evaluation
 

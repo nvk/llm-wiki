@@ -1,5 +1,6 @@
 ---
 title: "Ureteral Injury"
+concept_id: "ureteral_injury"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Free intraperitoneal air due to bowel injury. A focal 1-cm ileal perforation was confirmed at surgery. B, Axial CT performed during the portal venous phase shows a large collection of free air in the upper abdomen (arrows)."
----
+summary: "Free intraperitoneal air due to bowel injury. A focal 1-cm ileal perforation was confirmed at surgery. B, Axial CT performed during the portal venous phase shows a large collection of free air in the upper abdomen (arrows)."---
 
 # Ureteral Injury
 

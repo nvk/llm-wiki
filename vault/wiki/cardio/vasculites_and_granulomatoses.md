@@ -1,5 +1,6 @@
 ---
 title: "Vasculites and Granulomatoses"
+concept_id: "vasculites_and_granulomatoses"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Pneumocystis carinii) pneumonia (Fig. Pneumothorax is an associated complication. The thick-walled, multiloculated cavity in the right upper lobe resulted from tuberculosis."
----
+summary: "Pneumocystis carinii) pneumonia (Fig. Pneumothorax is an associated complication. The thick-walled, multiloculated cavity in the right upper lobe resulted from tuberculosis."---
 
 # Vasculites and Granulomatoses
 

@@ -1,5 +1,6 @@
 ---
 title: "Acute Epiglottitis"
+concept_id: "acute_epiglottitis"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds", "infection"]
 confidence: high
 status: "verified_source"
-summary: "Peak incidence is at 3 to 6 years of age. A, Lateral radiograph of the normal neck. Horns of the hyoid “point” to the epiglottis (arrowhead)."
----
+summary: "Peak incidence is at 3 to 6 years of age. A, Lateral radiograph of the normal neck. Horns of the hyoid “point” to the epiglottis (arrowhead)."---
 
 # Acute Epiglottitis
 

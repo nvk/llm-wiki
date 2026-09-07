@@ -1,11 +1,11 @@
 ---
 title: "Hard Metal Disease"
+concept_id: "hard_metal_disease"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 226
 end_page: 236
-status: "verified_source"
----
+status: "verified_source"---
 
 # Hard Metal Disease
 

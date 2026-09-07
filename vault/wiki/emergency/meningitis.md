@@ -1,5 +1,6 @@
 ---
 title: "Meningitis"
+concept_id: "meningitis"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "infection"]
 confidence: high
 status: "verified_source"
-summary: "CT due to its relatively higher soft tissue contrast. CN III (black arrows). B, Corresponding hyperintensity on diffusion-weighted image."
----
+summary: "CT due to its relatively higher soft tissue contrast. CN III (black arrows). B, Corresponding hyperintensity on diffusion-weighted image."---
 
 # Meningitis
 

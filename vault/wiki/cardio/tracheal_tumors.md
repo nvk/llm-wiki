@@ -1,11 +1,11 @@
 ---
 title: "Tracheal Tumors"
+concept_id: "tracheal_tumors"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 313
 end_page: 313
-status: "verified_source"
----
+status: "verified_source"---
 
 # Tracheal Tumors
 

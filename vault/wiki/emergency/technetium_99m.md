@@ -1,11 +1,11 @@
 ---
 title: "Technetium-99m"
+concept_id: "technetium_99m"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 377
 end_page: 378
-status: "verified_source"
----
+status: "verified_source"---
 
 # Technetium-99m
 

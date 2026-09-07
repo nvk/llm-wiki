@@ -1,11 +1,11 @@
 ---
 title: "NORMAL DEVELOPMENT OF THE SPINAL NEURAXIS AND SPINAL COLUMN"
+concept_id: "normal_development_of_the_spinal_neuraxis_and_spinal_column"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 281
 end_page: 291
-status: "verified_source"
----
+status: "verified_source"---
 
 # NORMAL DEVELOPMENT OF THE SPINAL NEURAXIS AND SPINAL COLUMN
 

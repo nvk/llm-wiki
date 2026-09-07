@@ -1,11 +1,11 @@
 ---
 title: "OCCLUSIVE DISEASE"
+concept_id: "occlusive_disease"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 232
 end_page: 236
-status: "verified_source"
----
+status: "verified_source"---
 
 # OCCLUSIVE DISEASE
 

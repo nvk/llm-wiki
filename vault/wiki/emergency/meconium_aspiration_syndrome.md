@@ -1,5 +1,6 @@
 ---
 title: "Meconium Aspiration Syndrome"
+concept_id: "emergency_meconium_aspiration_syndrome"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -11,7 +12,7 @@ tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
 summary: "VCUG)  is the standard of care for the diagnosis of PUVs. The treatment for PUVs is ablation. PUVs from these other entities."
----
+aliases: ["meconium_aspiration_syndrome"]---
 
 # Meconium Aspiration Syndrome
 

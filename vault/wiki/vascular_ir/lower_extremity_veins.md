@@ -1,11 +1,11 @@
 ---
 title: "Lower-Extremity Veins"
+concept_id: "lower_extremity_veins"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 388
 end_page: 398
-status: "verified_source"
----
+status: "verified_source"---
 
 # Lower-Extremity Veins
 

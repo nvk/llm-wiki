@@ -1,11 +1,11 @@
 ---
 title: "THROMBOSIS"
+concept_id: "thrombosis"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 44
 end_page: 46
-status: "verified_source"
----
+status: "verified_source"---
 
 # THROMBOSIS
 

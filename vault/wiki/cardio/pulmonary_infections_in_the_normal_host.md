@@ -1,11 +1,11 @@
 ---
 title: "Pulmonary Infections in the Normal Host"
+concept_id: "pulmonary_infections_in_the_normal_host"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 92
 end_page: 102
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pulmonary Infections in the Normal Host
 

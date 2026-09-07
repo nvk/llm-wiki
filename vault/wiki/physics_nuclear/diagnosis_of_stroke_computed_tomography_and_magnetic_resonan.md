@@ -1,11 +1,11 @@
 ---
 title: "Diagnosis of Stroke: Computed Tomography and Magnetic Resonance"
+concept_id: "diagnosis_of_stroke_computed_tomography_and_magnetic_resonan"
 domain: "physics_nuclear"
 source_book: "Grainger & Allison's Diagnostic Radiology (7th Edition)"
 start_page: 2038
 end_page: 2038
-status: "verified_source"
----
+status: "verified_source"---
 
 # Diagnosis of Stroke: Computed Tomography and Magnetic Resonance
 

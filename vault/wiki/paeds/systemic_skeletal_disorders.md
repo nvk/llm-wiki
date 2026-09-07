@@ -1,11 +1,11 @@
 ---
 title: "SYSTEMIC SKELETAL DISORDERS"
+concept_id: "systemic_skeletal_disorders"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 182
 end_page: 189
-status: "verified_source"
----
+status: "verified_source"---
 
 # SYSTEMIC SKELETAL DISORDERS
 

@@ -1,11 +1,11 @@
 ---
 title: "Benign Neoplasms and Other Nonneoplastic Tumors"
+concept_id: "benign_neoplasms_and_other_nonneoplastic_tumors"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 265
 end_page: 267
-status: "verified_source"
----
+status: "verified_source"---
 
 # Benign Neoplasms and Other Nonneoplastic Tumors
 

@@ -1,11 +1,11 @@
 ---
 title: "Injuries To The Chest Wall"
+concept_id: "injuries_to_the_chest_wall"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 172
 end_page: 173
-status: "verified_source"
----
+status: "verified_source"---
 
 # Injuries To The Chest Wall
 

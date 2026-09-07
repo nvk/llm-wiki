@@ -1,9 +1,9 @@
 ---
 title: "3 The Chest Wall Pleura Diaphragm And Intervention"
+concept_id: "3_the_chest_wall_pleura_diaphragm_and_intervention"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 3 The Chest Wall, Pleura, Diaphragm and Intervention
 

@@ -1,5 +1,6 @@
 ---
 title: "Myxomatous Mitral Valve Prolapse"
+concept_id: "myxomatous_mitral_valve_prolapse"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "In patients with atrialfibrillation, the A wave, which refl ects atrial contraction, is absent. In normal subjects, the pressure half-time is less than 60 ms. Mitral Valve Area  220/Pt1/2."
----
+summary: "In patients with atrialfibrillation, the A wave, which refl ects atrial contraction, is absent. In normal subjects, the pressure half-time is less than 60 ms. Mitral Valve Area = 220/Pt1/2."---
 
 # Myxomatous Mitral Valve Prolapse
 
@@ -19,7 +19,7 @@ summary: "In patients with atrialfibrillation, the A wave, which refl ects atria
 **Source:** Cardiac Imaging: The Requisites (Pages 57–62)  
 
 ## Summary & Core Concepts
-In patients with atrialfibrillation, the A wave, which refl ects atrial contraction, is absent. In normal subjects, the pressure half-time is less than 60 ms. Mitral Valve Area  220/Pt1/2.
+In patients with atrialfibrillation, the A wave, which refl ects atrial contraction, is absent. In normal subjects, the pressure half-time is less than 60 ms. Mitral Valve Area = 220/Pt1/2.
 
 ## Key Radiological & Clinical Findings
 - **Radiography (Plain Film):** Essential baseline imaging for Myxomatous Mitral Valve Prolapse; evaluates anatomical contours, alignment, lucencies, and gross calcifications.
@@ -57,7 +57,7 @@ offlow across a stenosis relates to the pressure difference (P)
 across the stenosis. Specifi cally, the simplifi ed Bernoulli equa-
 tion predicts that the pressure gradient across a valve approxi-
 mates a value four times the square of the velocity offlow
-across the valve (P  4V2). Knowing the peak velocity offlow
+across the valve (P = 4V2). Knowing the peak velocity offlow
 across the mitral valve, therefore, enables calculation of the
 peak pressure gradient across the valve. Similarly, the average
 of the velocities throughout all of diastole yields the mean
@@ -81,7 +81,7 @@ In normal subjects, the pressure half-time is less than 60 ms.
 In contrast, in patients with mitral stenosis the half-time is usu-
 ally in excess of 200 ms, with higher values in patients with more
 severe disease. An empirical formula that relates pressure half-
-time to the mitral valve area is as follows: Area  220/Pressure
+time to the mitral valve area is as follows: Area = 220/Pressure
 Half-Time. This is fairly accurate compared with estimates of
 valve area determined by catheterization. From this empirical
 formula, patients with a pressure half-time of greater than 220 ms
@@ -162,9 +162,9 @@ display will calculate the mean pressure gradient (dotted curve). For the
 pressure half-time method, the time required for the pressure to decay
 from its peak value to one half of that value is determined. The velocity at
 which the pressure gradient has declined to one half of its peak can be
-calculated as 0.7  Vmax. The time taken for this velocity to be reached
+calculated as 0.7 * Vmax. The time taken for this velocity to be reached
 is the pressure half-time (Pt1/2), which can be entered into the equation
-Mitral Valve Area  220/Pt1/2.
+Mitral Valve Area = 220/Pt1/2.
 diagnosed clinically by the presence of a murmur or click,
 echocardiography is frequently used to confi rm the diagnosis.
 Echocardiographically, mitral valve prolapse is suggested by

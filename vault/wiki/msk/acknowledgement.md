@@ -1,9 +1,10 @@
 ---
 title: "Acknowledgement"
+concept_id: "msk_acknowledgement"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["acknowledgement"]---
 
 # Acknowledgement
 

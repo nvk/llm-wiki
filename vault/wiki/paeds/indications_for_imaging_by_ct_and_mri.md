@@ -1,5 +1,6 @@
 ---
 title: "Indications for Imaging by CT and MRI"
+concept_id: "indications_for_imaging_by_ct_and_mri"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "AV valves, and Ebstein anomaly. VSD, ASD, atrioventricular canal (AVC) defect, and PDA."
----
+summary: "AV valves, and Ebstein anomaly. VSD, ASD, atrioventricular canal (AVC) defect, and PDA."---
 
 # Indications for Imaging by CT and MRI
 

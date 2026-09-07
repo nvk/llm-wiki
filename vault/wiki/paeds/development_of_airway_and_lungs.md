@@ -1,11 +1,11 @@
 ---
 title: "DEVELOPMENT OF AIRWAY AND LUNGS"
+concept_id: "development_of_airway_and_lungs"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 15
 end_page: 25
-status: "verified_source"
----
+status: "verified_source"---
 
 # DEVELOPMENT OF AIRWAY AND LUNGS
 

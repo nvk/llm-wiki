@@ -1,11 +1,11 @@
 ---
 title: "PALLIATION OF MALIGNANT BILIARY OBSTRUCTION WITH METAL STENTS"
+concept_id: "palliation_of_malignant_biliary_obstruction_with_metal_stent"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 480
 end_page: 488
-status: "verified_source"
----
+status: "verified_source"---
 
 # PALLIATION OF MALIGNANT BILIARY OBSTRUCTION WITH METAL STENTS
 

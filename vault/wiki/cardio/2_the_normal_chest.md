@@ -1,9 +1,9 @@
 ---
 title: "2 The Normal Chest"
+concept_id: "2_the_normal_chest"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 2 The Normal Chest
 

@@ -1,5 +1,6 @@
 ---
 title: "CARDIAC SHAPE AND SIZE Age and Its Visible Effects"
+concept_id: "cardiac_shape_and_size_age_and_its_visible_effects"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Convex main pulmonary artery. Confl uence of the pulmonary veins. This normal variant may look similar to an enlarged left atrium (arrow) on the frontalfilm (A) and a pulmonary nodule (arrow) on the lateralfilm (B)."
----
+summary: "Convex main pulmonary artery. Confl uence of the pulmonary veins. This normal variant may look similar to an enlarged left atrium (arrow) on the frontalfilm (A) and a pulmonary nodule (arrow) on the lateralfilm (B)."---
 
 # CARDIAC SHAPE AND SIZE Age and Its Visible Effects
 

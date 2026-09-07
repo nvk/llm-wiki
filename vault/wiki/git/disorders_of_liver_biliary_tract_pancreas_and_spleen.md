@@ -1,11 +1,11 @@
 ---
 title: "Disorders of Liver, Biliary Tract, Pancreas and Spleen"
+concept_id: "disorders_of_liver_biliary_tract_pancreas_and_spleen"
 domain: "git"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 2301
 end_page: 2524
-status: "verified_source"
----
+status: "verified_source"---
 
 # Disorders of Liver, Biliary Tract, Pancreas and Spleen
 

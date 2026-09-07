@@ -1,11 +1,12 @@
 ---
 title: "Acknowledgments"
+concept_id: "head_neck_acknowledgments"
 domain: "head_neck"
 source_book: "Ultrasound: The Requisites"
 start_page: 8
 end_page: 8
 status: "verified_source"
----
+aliases: ["acknowledgments"]---
 
 # Acknowledgments
 

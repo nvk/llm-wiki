@@ -1,11 +1,11 @@
 ---
 title: "BOWEL AND MESENTERIC INJURY"
+concept_id: "bowel_and_mesenteric_injury"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 106
 end_page: 108
-status: "verified_source"
----
+status: "verified_source"---
 
 # BOWEL AND MESENTERIC INJURY
 

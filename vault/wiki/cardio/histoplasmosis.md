@@ -1,5 +1,6 @@
 ---
 title: "Histoplasmosis"
+concept_id: "histoplasmosis"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Aspergillus, Candida, Cryptococcus, and Mucor. Ohio, Mississippi, and St. Atypical mycobacterial infection."
----
+summary: "Aspergillus, Candida, Cryptococcus, and Mucor. Ohio, Mississippi, and St. Atypical mycobacterial infection."---
 
 # Histoplasmosis
 

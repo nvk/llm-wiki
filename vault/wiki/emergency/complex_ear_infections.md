@@ -1,5 +1,6 @@
 ---
 title: "Complex Ear Infections"
+concept_id: "complex_ear_infections"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "infection"]
 confidence: high
 status: "verified_source"
-summary: "V2, infraorbital nerve). III, IV, V1, V2, and VI. Sinusitis—complications."
----
+summary: "V2, infraorbital nerve). III, IV, V1, V2, and VI. Sinusitis—complications."---
 
 # Complex Ear Infections
 

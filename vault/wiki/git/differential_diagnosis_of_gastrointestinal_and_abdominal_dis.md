@@ -1,11 +1,11 @@
 ---
 title: "Differential Diagnosis of Gastrointestinal and abdominal Disorders"
+concept_id: "differential_diagnosis_of_gastrointestinal_and_abdominal_dis"
 domain: "git"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 2525
 end_page: 2635
-status: "verified_source"
----
+status: "verified_source"---
 
 # Differential Diagnosis of Gastrointestinal and abdominal Disorders
 

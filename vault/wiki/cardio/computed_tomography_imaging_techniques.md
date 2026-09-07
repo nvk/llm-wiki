@@ -1,9 +1,9 @@
 ---
 title: "Computed Tomography Imaging Techniques"
+concept_id: "computed_tomography_imaging_techniques"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Computed Tomography Imaging Techniques
 

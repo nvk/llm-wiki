@@ -1,11 +1,11 @@
 ---
 title: "Diseases Characterized By A Nodular Or Reticulonodular Pattern"
+concept_id: "diseases_characterized_by_a_nodular_or_reticulonodular_patte"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 200
 end_page: 203
-status: "verified_source"
----
+status: "verified_source"---
 
 # Diseases Characterized By A Nodular Or Reticulonodular Pattern
 

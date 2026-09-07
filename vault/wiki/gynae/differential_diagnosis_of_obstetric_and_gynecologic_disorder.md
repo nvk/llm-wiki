@@ -1,11 +1,11 @@
 ---
 title: "Differential Diagnosis of Obstetric and Gynecologic Disorders"
+concept_id: "differential_diagnosis_of_obstetric_and_gynecologic_disorder"
 domain: "gynae"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 3303
 end_page: 3374
-status: "verified_source"
----
+status: "verified_source"---
 
 # Differential Diagnosis of Obstetric and Gynecologic Disorders
 

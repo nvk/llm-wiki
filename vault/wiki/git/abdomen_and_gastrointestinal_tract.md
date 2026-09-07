@@ -1,11 +1,11 @@
 ---
 title: "ABDOMEN AND GASTROINTESTINAL TRACT"
+concept_id: "abdomen_and_gastrointestinal_tract"
 domain: "git"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 2525
 end_page: 2535
-status: "verified_source"
----
+status: "verified_source"---
 
 # ABDOMEN AND GASTROINTESTINAL TRACT
 

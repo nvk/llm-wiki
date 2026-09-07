@@ -1,9 +1,9 @@
 ---
 title: "Non-Invasive Imaging Techniques"
+concept_id: "non-invasive_imaging_techniques"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Non-Invasive Imaging Techniques
 

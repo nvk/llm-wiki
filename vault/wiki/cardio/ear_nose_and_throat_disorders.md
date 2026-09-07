@@ -1,11 +1,11 @@
 ---
 title: "Ear, Nose, and Throat Disorders"
+concept_id: "ear_nose_and_throat_disorders"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 1242
 end_page: 1336
-status: "verified_source"
----
+status: "verified_source"---
 
 # Ear, Nose, and Throat Disorders
 

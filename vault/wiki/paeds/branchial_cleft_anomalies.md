@@ -1,5 +1,6 @@
 ---
 title: "Branchial Cleft Anomalies"
+concept_id: "branchial_cleft_anomalies"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "GI bleeding is not as common in children as in adults. IBD may also manifest as chronic bleeding. Jews), and other rare conditions affecting the esophagus (e."
----
+summary: "GI bleeding is not as common in children as in adults. IBD may also manifest as chronic bleeding. Jews), and other rare conditions affecting the esophagus (e."---
 
 # Branchial Cleft Anomalies
 

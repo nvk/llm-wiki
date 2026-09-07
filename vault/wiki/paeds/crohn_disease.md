@@ -1,5 +1,6 @@
 ---
 title: "Crohn Disease"
+concept_id: "crohn_disease"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "The incidence is 6 per 100,000 children. A mass and ascites may be present."
----
+summary: "The incidence is 6 per 100,000 children. A mass and ascites may be present."---
 
 # Crohn Disease
 

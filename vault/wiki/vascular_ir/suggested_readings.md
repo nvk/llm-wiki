@@ -1,11 +1,12 @@
 ---
 title: "Suggested Readings"
+concept_id: "vascular_ir_suggested_readings"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 47
 end_page: 47
 status: "verified_source"
----
+aliases: ["suggested_readings"]---
 
 # Suggested Readings
 

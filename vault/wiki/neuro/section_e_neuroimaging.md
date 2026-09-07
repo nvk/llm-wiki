@@ -1,9 +1,9 @@
 ---
 title: "Section E Neuroimaging"
+concept_id: "section_e_neuroimaging"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # SECTION E Neuroimaging
 

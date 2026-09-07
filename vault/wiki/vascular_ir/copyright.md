@@ -1,11 +1,12 @@
 ---
 title: "Copyright"
+concept_id: "vascular_ir_copyright"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 5
 end_page: 5
 status: "verified_source"
----
+aliases: ["copyright"]---
 
 # Copyright
 

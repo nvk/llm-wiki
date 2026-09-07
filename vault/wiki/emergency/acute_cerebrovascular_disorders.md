@@ -1,11 +1,11 @@
 ---
 title: "ACUTE CEREBROVASCULAR DISORDERS"
+concept_id: "acute_cerebrovascular_disorders"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 28
 end_page: 35
-status: "verified_source"
----
+status: "verified_source"---
 
 # ACUTE CEREBROVASCULAR DISORDERS
 

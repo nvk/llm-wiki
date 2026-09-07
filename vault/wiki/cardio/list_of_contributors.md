@@ -1,11 +1,11 @@
 ---
 title: "List of Contributors"
+concept_id: "list_of_contributors"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 8
 end_page: 8
-status: "verified_source"
----
+status: "verified_source"---
 
 # List of Contributors
 

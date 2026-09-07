@@ -1,11 +1,11 @@
 ---
 title: "PERCUTANEOUS DISC DECOMPRESSION (BOX 24-5)"
+concept_id: "percutaneous_disc_decompression_box_24_5"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 556
 end_page: 557
-status: "verified_source"
----
+status: "verified_source"---
 
 # PERCUTANEOUS DISC DECOMPRESSION (BOX 24-5)
 

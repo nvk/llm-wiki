@@ -1,9 +1,9 @@
 ---
 title: "Mechanism Of Injury"
+concept_id: "mechanism_of_injury"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Mechanism of Injury
 

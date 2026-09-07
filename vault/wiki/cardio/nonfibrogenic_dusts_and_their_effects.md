@@ -1,11 +1,11 @@
 ---
 title: "Nonfibrogenic Dusts And Their Effects"
+concept_id: "nonfibrogenic_dusts_and_their_effects"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 227
 end_page: 237
-status: "verified_source"
----
+status: "verified_source"---
 
 # Nonfibrogenic Dusts And Their Effects
 

@@ -1,5 +1,6 @@
 ---
 title: "Postobstructive Pneumonitis and Drowned Lung"
+concept_id: "postobstructive_pneumonitis_and_drowned_lung"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "infection"]
 confidence: high
 status: "verified_source"
-summary: "CT shows right lower lobe collapse. The lobe is collapsed posteriorly and medially along the posterior mediastinum and spine. It is usually dystrophic (i."
----
+summary: "CT shows right lower lobe collapse. The lobe is collapsed posteriorly and medially along the posterior mediastinum and spine. It is usually dystrophic (i."---
 
 # Postobstructive Pneumonitis and Drowned Lung
 

@@ -1,11 +1,11 @@
 ---
 title: "TRANSJUGULAR LIVER BIOPSY"
+concept_id: "transjugular_liver_biopsy"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 355
 end_page: 355
-status: "verified_source"
----
+status: "verified_source"---
 
 # TRANSJUGULAR LIVER BIOPSY
 

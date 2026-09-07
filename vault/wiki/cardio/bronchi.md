@@ -1,11 +1,11 @@
 ---
 title: "Bronchi"
+concept_id: "bronchi"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 72
 end_page: 74
-status: "verified_source"
----
+status: "verified_source"---
 
 # Bronchi
 

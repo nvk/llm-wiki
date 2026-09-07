@@ -1,11 +1,11 @@
 ---
 title: "11. Extremities"
+concept_id: "11_extremities"
 domain: "cardio"
 source_book: "Ultrasound: The Requisites"
 start_page: 418
 end_page: 452
-status: "verified_source"
----
+status: "verified_source"---
 
 # 11. Extremities
 

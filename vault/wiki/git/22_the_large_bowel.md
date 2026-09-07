@@ -1,9 +1,9 @@
 ---
 title: "22 The Large Bowel"
+concept_id: "22_the_large_bowel"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 22 The Large Bowel
 

@@ -1,9 +1,9 @@
 ---
 title: "4 The Mediastinum Including The Pericardium"
+concept_id: "4_the_mediastinum_including_the_pericardium"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 4 The Mediastinum, Including the Pericardium
 

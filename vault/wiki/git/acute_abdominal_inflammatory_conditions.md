@@ -1,9 +1,9 @@
 ---
 title: "Acute Abdominal Inflammatory Conditions"
+concept_id: "acute_abdominal_inflammatory_conditions"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Acute Abdominal Inflammatory Conditions
 

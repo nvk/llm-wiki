@@ -1,9 +1,9 @@
 ---
 title: "Primary Malignant Neoplasms Of Bone"
+concept_id: "primary_malignant_neoplasms_of_bone"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Primary Malignant Neoplasms of Bone
 

@@ -1,5 +1,6 @@
 ---
 title: "Anorectal Malformations"
+concept_id: "anorectal_malformations"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds", "congenital"]
 confidence: high
 status: "verified_source"
-summary: "Two other techniques have been performed in the past. US screening of the spine. B, Lateral radiograph demonstrating a rectosigmoid transition zone (arrows)."
----
+summary: "Two other techniques have been performed in the past. US screening of the spine. B, Lateral radiograph demonstrating a rectosigmoid transition zone (arrows)."---
 
 # Anorectal Malformations
 

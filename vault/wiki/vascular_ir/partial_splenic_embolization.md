@@ -1,11 +1,11 @@
 ---
 title: "PARTIAL SPLENIC EMBOLIZATION"
+concept_id: "partial_splenic_embolization"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 349
 end_page: 359
-status: "verified_source"
----
+status: "verified_source"---
 
 # PARTIAL SPLENIC EMBOLIZATION
 

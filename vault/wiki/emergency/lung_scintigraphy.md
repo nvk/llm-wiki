@@ -1,11 +1,11 @@
 ---
 title: "LUNG SCINTIGRAPHY"
+concept_id: "lung_scintigraphy"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 380
 end_page: 385
-status: "verified_source"
----
+status: "verified_source"---
 
 # LUNG SCINTIGRAPHY
 

@@ -1,9 +1,10 @@
 ---
 title: "Introduction"
+concept_id: "cardio_introduction"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["introduction"]---
 
 # Introduction
 

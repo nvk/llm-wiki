@@ -1,9 +1,9 @@
 ---
 title: "Benign Bone Tumours"
+concept_id: "benign_bone_tumours"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Benign Bone Tumours
 

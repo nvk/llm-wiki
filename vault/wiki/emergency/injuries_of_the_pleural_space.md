@@ -1,11 +1,11 @@
 ---
 title: "INJURIES OF THE PLEURAL SPACE"
+concept_id: "injuries_of_the_pleural_space"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 76
 end_page: 86
-status: "verified_source"
----
+status: "verified_source"---
 
 # INJURIES OF THE PLEURAL SPACE
 

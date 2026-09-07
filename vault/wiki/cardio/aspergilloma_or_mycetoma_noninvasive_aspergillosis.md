@@ -1,5 +1,6 @@
 ---
 title: "Aspergilloma or Mycetoma: Noninvasive Aspergillosis"
+concept_id: "aspergilloma_or_mycetoma_noninvasive_aspergillosis"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Chest wall involvement may occur but is rare. Aspergillus fumigatus."
----
+summary: "Chest wall involvement may occur but is rare. Aspergillus fumigatus."---
 
 # Aspergilloma or Mycetoma: Noninvasive Aspergillosis
 

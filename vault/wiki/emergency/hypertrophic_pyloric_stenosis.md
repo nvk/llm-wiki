@@ -1,5 +1,6 @@
 ---
 title: "Hypertrophic Pyloric Stenosis"
+concept_id: "emergency_hypertrophic_pyloric_stenosis"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -11,7 +12,7 @@ tags: ["radiology", "emergency", "vascular"]
 confidence: high
 status: "verified_source"
 summary: "The precise etiology for HPS is unclear. This patient had hypertrophic pyloric stenosis at surgery."
----
+aliases: ["hypertrophic_pyloric_stenosis"]---
 
 # Hypertrophic Pyloric Stenosis
 

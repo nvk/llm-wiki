@@ -1,11 +1,11 @@
 ---
 title: "Percutaneous Abscess and Fluid Drainage"
+concept_id: "percutaneous_abscess_and_fluid_drainage"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 424
 end_page: 434
-status: "verified_source"
----
+status: "verified_source"---
 
 # Percutaneous Abscess and Fluid Drainage
 

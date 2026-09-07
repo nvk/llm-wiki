@@ -1,11 +1,11 @@
 ---
 title: "POSTPROCEDURE CARE"
+concept_id: "postprocedure_care"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 76
 end_page: 76
-status: "verified_source"
----
+status: "verified_source"---
 
 # POSTPROCEDURE CARE
 

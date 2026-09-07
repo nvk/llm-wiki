@@ -1,11 +1,12 @@
 ---
 title: "Foreword"
+concept_id: "paeds_foreword"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 9
 end_page: 9
 status: "verified_source"
----
+aliases: ["foreword"]---
 
 # Foreword
 

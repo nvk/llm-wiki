@@ -1,5 +1,6 @@
 ---
 title: "Infective Endocarditis"
+concept_id: "infective_endocarditis"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "infection"]
 confidence: high
 status: "verified_source"
-summary: "The top picture shows a photograph of the St. Doppler of a normal functioning St. Reproduced with permission from S."
----
+summary: "The top picture shows a photograph of the St. Doppler of a normal functioning St. Reproduced with permission from S."---
 
 # Infective Endocarditis
 

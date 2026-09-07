@@ -1,9 +1,10 @@
 ---
 title: "Radiological Techniques"
+concept_id: "uro_radiological_techniques"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["radiological_techniques"]---
 
 # Radiological Techniques
 

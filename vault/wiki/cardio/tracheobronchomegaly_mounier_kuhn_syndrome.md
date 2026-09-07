@@ -1,11 +1,11 @@
 ---
 title: "Tracheobronchomegaly: Mounier-Kuhn Syndrome"
+concept_id: "tracheobronchomegaly_mounier_kuhn_syndrome"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 311
 end_page: 312
-status: "verified_source"
----
+status: "verified_source"---
 
 # Tracheobronchomegaly: Mounier-Kuhn Syndrome
 

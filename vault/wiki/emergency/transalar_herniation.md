@@ -1,5 +1,6 @@
 ---
 title: "Transalar Herniation"
+concept_id: "transalar_herniation"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "Estimates of annual cost exceed $50 billion. TIA in the United States vary from 200,000 to 500,000. Stroke (NINDS) rt-PA trial."
----
+summary: "Estimates of annual cost exceed $50 billion. TIA in the United States vary from 200,000 to 500,000. Stroke (NINDS) rt-PA trial."---
 
 # Transalar Herniation
 

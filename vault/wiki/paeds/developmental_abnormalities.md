@@ -1,11 +1,11 @@
 ---
 title: "DEVELOPMENTAL ABNORMALITIES"
+concept_id: "developmental_abnormalities"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 281
 end_page: 294
-status: "verified_source"
----
+status: "verified_source"---
 
 # DEVELOPMENTAL ABNORMALITIES
 

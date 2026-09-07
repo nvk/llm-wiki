@@ -1,11 +1,11 @@
 ---
 title: "Differential Diagnosis of Hepatic, Biliary, Pancreatic and Splenic Disorders"
+concept_id: "differential_diagnosis_of_hepatic_biliary_pancreatic_and_spl"
 domain: "git"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 2213
 end_page: 2271
-status: "verified_source"
----
+status: "verified_source"---
 
 # Differential Diagnosis of Hepatic, Biliary, Pancreatic and Splenic Disorders
 

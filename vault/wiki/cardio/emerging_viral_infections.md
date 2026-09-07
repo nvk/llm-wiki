@@ -1,11 +1,11 @@
 ---
 title: "Emerging Viral Infections"
+concept_id: "emerging_viral_infections"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 128
 end_page: 129
-status: "verified_source"
----
+status: "verified_source"---
 
 # Emerging Viral Infections
 

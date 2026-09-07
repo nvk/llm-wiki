@@ -1,11 +1,11 @@
 ---
 title: "Diagnostic Imaging Workup of Mediastinal Masses"
+concept_id: "diagnostic_imaging_workup_of_mediastinal_masses"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 358
 end_page: 368
-status: "verified_source"
----
+status: "verified_source"---
 
 # Diagnostic Imaging Workup of Mediastinal Masses
 

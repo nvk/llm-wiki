@@ -1,5 +1,6 @@
 ---
 title: "Gastroschisis"
+concept_id: "gastroschisis"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Beckwith-Wiedemann syndrome. A patch may be necessary to close the anterior abdominal wall. The kidneys may be positioned more cephalad than normal."
----
+summary: "Beckwith-Wiedemann syndrome. A patch may be necessary to close the anterior abdominal wall. The kidneys may be positioned more cephalad than normal."---
 
 # Gastroschisis
 

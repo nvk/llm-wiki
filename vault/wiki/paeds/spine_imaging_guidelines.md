@@ -1,11 +1,11 @@
 ---
 title: "SPINE IMAGING GUIDELINES"
+concept_id: "spine_imaging_guidelines"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 280
 end_page: 280
-status: "verified_source"
----
+status: "verified_source"---
 
 # SPINE IMAGING GUIDELINES
 

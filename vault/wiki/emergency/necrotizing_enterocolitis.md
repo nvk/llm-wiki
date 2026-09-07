@@ -1,5 +1,6 @@
 ---
 title: "Necrotizing Enterocolitis"
+concept_id: "emergency_necrotizing_enterocolitis"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -11,7 +12,7 @@ tags: ["radiology", "emergency", "infection"]
 confidence: high
 status: "verified_source"
 summary: "Hirschsprung’s disease this relationship is reversed. This child had Hirschsprung’s disease. NEC range from 15% to 40%."
----
+aliases: ["necrotizing_enterocolitis"]---
 
 # Necrotizing Enterocolitis
 

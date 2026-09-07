@@ -1,9 +1,9 @@
 ---
 title: "Pulmonary Sarcoma And Other Primary Malignant Neoplasms"
+concept_id: "pulmonary_sarcoma_and_other_primary_malignant_neoplasms"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pulmonary Sarcoma and Other Primary Malignant Neoplasms
 

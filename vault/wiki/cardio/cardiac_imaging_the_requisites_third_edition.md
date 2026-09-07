@@ -1,11 +1,11 @@
 ---
 title: "Cardiac Imaging: The Requisites, Third Edition"
+concept_id: "cardiac_imaging_the_requisites_third_edition"
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
 start_page: 2
 end_page: 12
-status: "verified_source"
----
+status: "verified_source"---
 
 # Cardiac Imaging: The Requisites, Third Edition
 

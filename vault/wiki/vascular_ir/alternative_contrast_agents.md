@@ -1,11 +1,11 @@
 ---
 title: "ALTERNATIVE CONTRAST AGENTS"
+concept_id: "alternative_contrast_agents"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 58
 end_page: 60
-status: "verified_source"
----
+status: "verified_source"---
 
 # ALTERNATIVE CONTRAST AGENTS
 

@@ -1,11 +1,11 @@
 ---
 title: "Connective Tissue Diseases"
+concept_id: "connective_tissue_diseases"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 229
 end_page: 235
-status: "verified_source"
----
+status: "verified_source"---
 
 # Connective Tissue Diseases
 

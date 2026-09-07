@@ -1,11 +1,11 @@
 ---
 title: "The Elements of Cardiac Imaging"
+concept_id: "the_elements_of_cardiac_imaging"
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
 start_page: 15
 end_page: 43
-status: "verified_source"
----
+status: "verified_source"---
 
 # The Elements of Cardiac Imaging
 

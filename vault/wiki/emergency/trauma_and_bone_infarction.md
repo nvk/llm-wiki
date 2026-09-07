@@ -1,11 +1,11 @@
 ---
 title: "TRAUMA AND BONE INFARCTION"
+concept_id: "trauma_and_bone_infarction"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 393
 end_page: 393
-status: "verified_source"
----
+status: "verified_source"---
 
 # TRAUMA AND BONE INFARCTION
 

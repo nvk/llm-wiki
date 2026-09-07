@@ -1,9 +1,9 @@
 ---
 title: "Vascular Complications Intermediate To Late"
+concept_id: "vascular_complications_intermediate_to_late"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Vascular Complications: Intermediate to Late
 

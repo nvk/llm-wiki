@@ -1,9 +1,9 @@
 ---
 title: "Foot Injuries"
+concept_id: "foot_injuries"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Foot Injuries
 

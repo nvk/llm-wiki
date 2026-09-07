@@ -1,5 +1,6 @@
 ---
 title: "Atrial Septal Defects"
+concept_id: "atrial_septal_defects"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "ASD and distinguishes it from false-positive dropout. Thus, it may be more diffi cult to distinguish atrial shuntflow from the other low-velocityflows within the atrium. AsAo, ascending aorta; PA, pulmonary artery."
----
+summary: "ASD and distinguishes it from false-positive dropout. Thus, it may be more diffi cult to distinguish atrial shuntflow from the other low-velocityflows within the atrium. AsAo, ascending aorta; PA, pulmonary artery."---
 
 # Atrial Septal Defects
 

@@ -1,9 +1,9 @@
 ---
 title: "World Health Organisation Classification Of Soft-Tissue Tumours"
+concept_id: "world_health_organisation_classification_of_soft-tissue_tumours"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # World Health Organisation Classification of Soft-Tissue Tumours
 

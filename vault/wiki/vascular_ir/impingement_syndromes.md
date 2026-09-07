@@ -1,11 +1,11 @@
 ---
 title: "IMPINGEMENT SYNDROMES"
+concept_id: "impingement_syndromes"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 43
 end_page: 43
-status: "verified_source"
----
+status: "verified_source"---
 
 # IMPINGEMENT SYNDROMES
 

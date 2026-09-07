@@ -1,11 +1,11 @@
 ---
 title: "MAGNETIC RESONANCE IMAGING AND MAGNETIC RESONANCE ANGIOGRAPHY"
+concept_id: "magnetic_resonance_imaging_and_magnetic_resonance_angiograph"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 82
 end_page: 83
-status: "verified_source"
----
+status: "verified_source"---
 
 # MAGNETIC RESONANCE IMAGING AND MAGNETIC RESONANCE ANGIOGRAPHY
 

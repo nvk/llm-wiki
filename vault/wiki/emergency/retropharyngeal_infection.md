@@ -1,5 +1,6 @@
 ---
 title: "Retropharyngeal Infection"
+concept_id: "retropharyngeal_infection"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "infection"]
 confidence: high
 status: "verified_source"
-summary: "Normal occipitomastoid suture. Normal tympanosquamous suture. Retropharyngeal abscess."
----
+summary: "Normal occipitomastoid suture. Normal tympanosquamous suture. Retropharyngeal abscess."---
 
 # Retropharyngeal Infection
 

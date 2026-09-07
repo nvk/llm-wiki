@@ -1,11 +1,11 @@
 ---
 title: "CENTRAL VENOUS ACCESS"
+concept_id: "central_venous_access"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 168
 end_page: 173
-status: "verified_source"
----
+status: "verified_source"---
 
 # CENTRAL VENOUS ACCESS
 

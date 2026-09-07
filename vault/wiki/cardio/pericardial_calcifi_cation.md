@@ -1,5 +1,6 @@
 ---
 title: "Pericardial Calcifi cation"
+concept_id: "pericardial_calcifi_cation"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Left ventricular aneurysm. Location of the aortic valve on the lateral chestfilm. Bicuspid aortic valve calcifi cation."
----
+summary: "Left ventricular aneurysm. Location of the aortic valve on the lateral chestfilm. Bicuspid aortic valve calcifi cation."---
 
 # Pericardial Calcifi cation
 

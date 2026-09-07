@@ -1,11 +1,11 @@
 ---
 title: "POPLITEAL ARTERY ENTRAPMENT"
+concept_id: "popliteal_artery_entrapment"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 383
 end_page: 383
-status: "verified_source"
----
+status: "verified_source"---
 
 # POPLITEAL ARTERY ENTRAPMENT
 

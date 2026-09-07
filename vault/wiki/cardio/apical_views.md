@@ -1,5 +1,6 @@
 ---
 title: "Apical Views"
+concept_id: "apical_views"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "The normal velocity across the pulmonary outfl ow tract is 0. The normal E wave velocity is less than 1. There is biphasicflow in systole and diastole."
----
+summary: "The normal velocity across the pulmonary outfl ow tract is 0. The normal E wave velocity is less than 1. There is biphasicflow in systole and diastole."---
 
 # Apical Views
 

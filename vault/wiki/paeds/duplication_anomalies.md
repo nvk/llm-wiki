@@ -1,5 +1,6 @@
 ---
 title: "Duplication Anomalies"
+concept_id: "duplication_anomalies"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Atresia is much more common than stenosis. About 10% of cases are associated with cysticfibrosis. Four types can be recognized."
----
+summary: "Atresia is much more common than stenosis. About 10% of cases are associated with cysticfibrosis. Four types can be recognized."---
 
 # Duplication Anomalies
 

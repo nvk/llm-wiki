@@ -1,11 +1,12 @@
 ---
 title: "Contributors"
+concept_id: "paeds_contributors"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 8
 end_page: 8
 status: "verified_source"
----
+aliases: ["contributors"]---
 
 # Contributors
 

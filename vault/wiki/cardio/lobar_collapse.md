@@ -1,5 +1,6 @@
 ---
 title: "Lobar Collapse"
+concept_id: "lobar_collapse"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Collapse of a lobe may be complete or incomplete. Nodular pattern of silicosis. Multiple, small, rounded opacities or nodules range in size from 2 to 4 mm in diameter."
----
+summary: "Collapse of a lobe may be complete or incomplete. Nodular pattern of silicosis. Multiple, small, rounded opacities or nodules range in size from 2 to 4 mm in diameter."---
 
 # Lobar Collapse
 

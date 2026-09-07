@@ -1,11 +1,11 @@
 ---
 title: "Anatomy of Skull and Spine"
+concept_id: "anatomy_of_skull_and_spine"
 domain: "spine"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 645
 end_page: 666
-status: "verified_source"
----
+status: "verified_source"---
 
 # Anatomy of Skull and Spine
 

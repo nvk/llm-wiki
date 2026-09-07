@@ -1,11 +1,11 @@
 ---
 title: "COMPUTED TOMOGRAPHY AND COMPUTED TOMOGRAPHY ANGIOGRAPHY"
+concept_id: "computed_tomography_and_computed_tomography_angiography"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 84
 end_page: 86
-status: "verified_source"
----
+status: "verified_source"---
 
 # COMPUTED TOMOGRAPHY AND COMPUTED TOMOGRAPHY ANGIOGRAPHY
 

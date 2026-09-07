@@ -1,5 +1,6 @@
 ---
 title: "Lymph Nodes"
+concept_id: "lymph_nodes"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Internal Mammary Nodes."
----
+summary: "Internal Mammary Nodes."---
 
 # Lymph Nodes
 

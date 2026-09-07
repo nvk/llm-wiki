@@ -1,5 +1,6 @@
 ---
 title: "Anterior Dislocation"
+concept_id: "anterior_dislocation"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Anterior shoulder dislocation. Hill-Sachs fracture (arrow). Bankart fracture (arrowhead)."
----
+summary: "Anterior shoulder dislocation. Hill-Sachs fracture (arrow). Bankart fracture (arrowhead)."---
 
 # Anterior Dislocation
 

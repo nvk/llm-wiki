@@ -1,11 +1,11 @@
 ---
 title: "Abnormal Air Collections"
+concept_id: "abnormal_air_collections"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 167
 end_page: 169
-status: "verified_source"
----
+status: "verified_source"---
 
 # Abnormal Air Collections
 

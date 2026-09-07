@@ -1,5 +1,6 @@
 ---
 title: "Maxillofacial Fractures"
+concept_id: "maxillofacial_fractures"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "CT console or other workstation. Orbital blow-out fractures. A, Axial CT shows displaced fracture of medial wall of the left orbit (lamina papyracea)."
----
+summary: "CT console or other workstation. Orbital blow-out fractures. A, Axial CT shows displaced fracture of medial wall of the left orbit (lamina papyracea)."---
 
 # Maxillofacial Fractures
 

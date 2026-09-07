@@ -1,9 +1,9 @@
 ---
 title: "Imaging Characterisation Of Soft-Tissue Masses"
+concept_id: "imaging_characterisation_of_soft-tissue_masses"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Imaging Characterisation of Soft-Tissue Masses
 

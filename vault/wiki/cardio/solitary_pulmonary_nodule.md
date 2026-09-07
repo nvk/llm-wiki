@@ -1,11 +1,11 @@
 ---
 title: "Solitary Pulmonary Nodule"
+concept_id: "solitary_pulmonary_nodule"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 296
 end_page: 298
-status: "verified_source"
----
+status: "verified_source"---
 
 # Solitary Pulmonary Nodule
 

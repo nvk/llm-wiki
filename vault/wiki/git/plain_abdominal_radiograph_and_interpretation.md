@@ -1,9 +1,9 @@
 ---
 title: "Plain Abdominal Radiograph And Interpretation"
+concept_id: "plain_abdominal_radiograph_and_interpretation"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Plain Abdominal Radiograph and Interpretation
 

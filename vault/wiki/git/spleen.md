@@ -1,9 +1,10 @@
 ---
 title: "Spleen"
+concept_id: "git_spleen"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["spleen"]---
 
 # Spleen
 

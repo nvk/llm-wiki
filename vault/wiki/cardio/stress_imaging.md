@@ -1,9 +1,9 @@
 ---
 title: "Stress Imaging"
+concept_id: "stress_imaging"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Stress Imaging
 

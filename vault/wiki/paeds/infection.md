@@ -1,11 +1,12 @@
 ---
 title: "INFECTION"
+concept_id: "paeds_infection"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 190
 end_page: 194
 status: "verified_source"
----
+aliases: ["infection"]---
 
 # INFECTION
 

@@ -1,11 +1,11 @@
 ---
 title: "LUNG AND MEDIASTINAL BIOPSY"
+concept_id: "lung_and_mediastinal_biopsy"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 418
 end_page: 421
-status: "verified_source"
----
+status: "verified_source"---
 
 # LUNG AND MEDIASTINAL BIOPSY
 

@@ -1,5 +1,6 @@
 ---
 title: "Streptococcus pyogenes"
+concept_id: "streptococcus_pyogenes"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "The lower lobes are more frequently involved. Staphylococcus aureus abscess. Courtesy of Dorothy L."
----
+summary: "The lower lobes are more frequently involved. Staphylococcus aureus abscess. Courtesy of Dorothy L."---
 
 # Streptococcus pyogenes
 

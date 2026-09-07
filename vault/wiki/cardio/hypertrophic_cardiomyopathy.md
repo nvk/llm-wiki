@@ -1,5 +1,6 @@
 ---
 title: "Hypertrophic Cardiomyopathy"
+concept_id: "hypertrophic_cardiomyopathy"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "RA, right atrium; RV, right ventricle. The pericardium also appears normal. Doppler profi le of mitral infl ow."
----
+summary: "RA, right atrium; RV, right ventricle. The pericardium also appears normal. Doppler profi le of mitral infl ow."---
 
 # Hypertrophic Cardiomyopathy
 

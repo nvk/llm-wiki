@@ -1,11 +1,11 @@
 ---
 title: "ACUTE DEEP VEIN THROMBOSIS"
+concept_id: "acute_deep_vein_thrombosis"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 393
 end_page: 396
-status: "verified_source"
----
+status: "verified_source"---
 
 # ACUTE DEEP VEIN THROMBOSIS
 

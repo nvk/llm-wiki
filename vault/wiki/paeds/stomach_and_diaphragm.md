@@ -1,11 +1,11 @@
 ---
 title: "STOMACH AND DIAPHRAGM"
+concept_id: "stomach_and_diaphragm"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 92
 end_page: 95
-status: "verified_source"
----
+status: "verified_source"---
 
 # STOMACH AND DIAPHRAGM
 

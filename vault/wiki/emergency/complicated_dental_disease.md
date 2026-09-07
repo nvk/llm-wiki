@@ -1,5 +1,6 @@
 ---
 title: "Complicated Dental Disease"
+concept_id: "complicated_dental_disease"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "This patient complained of new facial pain in the setting of chronic mastoid disease. Mastoiditis—septic thrombophlebitis. A, Initial noncontrast CT in patient with headache demonstrates chronic right otomastoiditis."
----
+summary: "This patient complained of new facial pain in the setting of chronic mastoid disease. Mastoiditis—septic thrombophlebitis. A, Initial noncontrast CT in patient with headache demonstrates chronic right otomastoiditis."---
 
 # Complicated Dental Disease
 

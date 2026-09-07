@@ -1,5 +1,6 @@
 ---
 title: "Fractures of the Clavicle"
+concept_id: "fractures_of_the_clavicle"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "The middle third of the clavicle (group 1) (Fig. Fracture of the scapula."
----
+summary: "The middle third of the clavicle (group 1) (Fig. Fracture of the scapula."---
 
 # Fractures of the Clavicle
 

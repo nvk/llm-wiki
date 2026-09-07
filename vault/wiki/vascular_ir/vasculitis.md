@@ -1,11 +1,11 @@
 ---
 title: "VASCULITIS"
+concept_id: "vasculitis"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 29
 end_page: 31
-status: "verified_source"
----
+status: "verified_source"---
 
 # VASCULITIS
 

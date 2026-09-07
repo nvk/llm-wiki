@@ -1,11 +1,11 @@
 ---
 title: "DISEASES OF THE GENTITOURINARY TRACT"
+concept_id: "diseases_of_the_gentitourinary_tract"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 315
 end_page: 318
-status: "verified_source"
----
+status: "verified_source"---
 
 # DISEASES OF THE GENTITOURINARY TRACT
 

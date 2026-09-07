@@ -1,11 +1,11 @@
 ---
 title: "ANGIOGRAPHIC “DO’S AND DON’TS”"
+concept_id: "angiographic_dos_and_donts"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 72
 end_page: 73
-status: "verified_source"
----
+status: "verified_source"---
 
 # ANGIOGRAPHIC “DO’S AND DON’TS”
 

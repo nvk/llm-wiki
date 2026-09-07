@@ -1,11 +1,11 @@
 ---
 title: "INTRAMURAL HEMATOMA"
+concept_id: "intramural_hematoma"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 215
 end_page: 225
-status: "verified_source"
----
+status: "verified_source"---
 
 # INTRAMURAL HEMATOMA
 

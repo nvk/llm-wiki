@@ -1,5 +1,6 @@
 ---
 title: "Meningitis/Encephalitis"
+concept_id: "meningitisencephalitis"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "infection"]
 confidence: high
 status: "verified_source"
-summary: "Chiari or Dandy-Walker). MRI is usually the diagnostic study. CT for cervical spine evaluation is recommended."
----
+summary: "Chiari or Dandy-Walker). MRI is usually the diagnostic study. CT for cervical spine evaluation is recommended."---
 
 # Meningitis/Encephalitis
 

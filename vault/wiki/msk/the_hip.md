@@ -1,9 +1,9 @@
 ---
 title: "The Hip"
+concept_id: "the_hip"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # The Hip
 

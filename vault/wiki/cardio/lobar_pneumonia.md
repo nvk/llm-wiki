@@ -1,5 +1,6 @@
 ---
 title: "Lobar Pneumonia"
+concept_id: "lobar_pneumonia"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "infection"]
 confidence: high
 status: "verified_source"
-summary: "Legionella pneumophila. Staphylococcus aureus. Haemophilus influenzae infection is common."
----
+summary: "Legionella pneumophila. Staphylococcus aureus. Haemophilus influenzae infection is common."---
 
 # Lobar Pneumonia
 

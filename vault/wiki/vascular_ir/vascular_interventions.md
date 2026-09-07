@@ -1,11 +1,11 @@
 ---
 title: "Vascular Interventions"
+concept_id: "vascular_interventions"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 91
 end_page: 101
-status: "verified_source"
----
+status: "verified_source"---
 
 # Vascular Interventions
 

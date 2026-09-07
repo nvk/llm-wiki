@@ -1,11 +1,11 @@
 ---
 title: "VENOUS ANEURYSMS"
+concept_id: "venous_aneurysms"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 405
 end_page: 407
-status: "verified_source"
----
+status: "verified_source"---
 
 # VENOUS ANEURYSMS
 

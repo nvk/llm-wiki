@@ -1,5 +1,6 @@
 ---
 title: "Pulmonary Venous Hypertension"
+concept_id: "pulmonary_venous_hypertension"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "The right-sided thymus obscures the upper lobe. Primary pulmonary artery hypertension. Noncardiogenic or permeability edema is the accumulation offluid in the lungs in the presence of normal left atrial pressures."
----
+summary: "The right-sided thymus obscures the upper lobe. Primary pulmonary artery hypertension. Noncardiogenic or permeability edema is the accumulation offluid in the lungs in the presence of normal left atrial pressures."---
 
 # Pulmonary Venous Hypertension
 

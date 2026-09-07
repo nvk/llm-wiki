@@ -1,9 +1,9 @@
 ---
 title: "Mediastinal Diseases"
+concept_id: "mediastinal_diseases"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Mediastinal Diseases
 

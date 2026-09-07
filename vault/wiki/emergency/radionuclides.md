@@ -1,11 +1,11 @@
 ---
 title: "RADIONUCLIDES"
+concept_id: "radionuclides"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 377
 end_page: 387
-status: "verified_source"
----
+status: "verified_source"---
 
 # RADIONUCLIDES
 

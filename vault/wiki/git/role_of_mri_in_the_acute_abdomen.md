@@ -1,9 +1,9 @@
 ---
 title: "Role Of Mri In The Acute Abdomen"
+concept_id: "role_of_mri_in_the_acute_abdomen"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Role of MRI in the Acute Abdomen
 

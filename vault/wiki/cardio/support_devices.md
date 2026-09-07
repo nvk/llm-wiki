@@ -1,11 +1,11 @@
 ---
 title: "Support Devices"
+concept_id: "support_devices"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 148
 end_page: 160
-status: "verified_source"
----
+status: "verified_source"---
 
 # Support Devices
 

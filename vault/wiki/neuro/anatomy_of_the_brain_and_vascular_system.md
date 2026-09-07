@@ -1,9 +1,9 @@
 ---
 title: "Anatomy Of The Brain And Vascular System"
+concept_id: "anatomy_of_the_brain_and_vascular_system"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Anatomy of the Brain and Vascular System
 

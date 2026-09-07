@@ -1,5 +1,6 @@
 ---
 title: "Fractures and Dislocations of the Carpus"
+concept_id: "fractures_and_dislocations_of_the_carpus"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Chauffeur’s fracture (Hutchinson fracture) (Fig. Torus fracture (buckle fracture) (Fig. Scaphoid fractures (Fig."
----
+summary: "Chauffeur’s fracture (Hutchinson fracture) (Fig. Torus fracture (buckle fracture) (Fig. Scaphoid fractures (Fig."---
 
 # Fractures and Dislocations of the Carpus
 

@@ -1,11 +1,12 @@
 ---
 title: "GASTROINTESTINAL BLEEDING"
+concept_id: "vascular_ir_gastrointestinal_bleeding"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 262
 end_page: 266
 status: "verified_source"
----
+aliases: ["gastrointestinal_bleeding"]---
 
 # GASTROINTESTINAL BLEEDING
 

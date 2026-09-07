@@ -1,9 +1,9 @@
 ---
 title: "9 High-Resolution Computed Tomography Of Interstitial And Occupational Lung Disease"
+concept_id: "9_high-resolution_computed_tomography_of_interstitial_and_occupational_lung_disease"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 9 High-Resolution Computed Tomography of Interstitial and Occupational Lung Disease
 

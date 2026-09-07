@@ -1,11 +1,11 @@
 ---
 title: "Magnetic Resonance Angiography"
+concept_id: "magnetic_resonance_angiography"
 domain: "physics_nuclear"
 source_book: "Grainger & Allison's Diagnostic Radiology (7th Edition)"
 start_page: 2043
 end_page: 2043
-status: "verified_source"
----
+status: "verified_source"---
 
 # Magnetic Resonance Angiography
 

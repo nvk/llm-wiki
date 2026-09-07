@@ -1,11 +1,11 @@
 ---
 title: "3. Liver"
+concept_id: "3_liver"
 domain: "git"
 source_book: "Ultrasound: The Requisites"
 start_page: 84
 end_page: 148
-status: "verified_source"
----
+status: "verified_source"---
 
 # 3. Liver
 

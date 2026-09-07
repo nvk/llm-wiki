@@ -1,11 +1,11 @@
 ---
 title: "1. Thoracic Imaging"
+concept_id: "1_thoracic_imaging"
 domain: "cardio"
 source_book: "Core Radiology (Jacob)"
 start_page: 12
 end_page: 97
-status: "verified_source"
----
+status: "verified_source"---
 
 # 1. Thoracic Imaging
 

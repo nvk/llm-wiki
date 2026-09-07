@@ -1,11 +1,11 @@
 ---
 title: "Goodpasture’S Syndrome"
+concept_id: "goodpastures_syndrome"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 228
 end_page: 228
-status: "verified_source"
----
+status: "verified_source"---
 
 # Goodpasture’S Syndrome
 

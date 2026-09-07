@@ -1,11 +1,11 @@
 ---
 title: "Pulmonary Neoplasms"
+concept_id: "pulmonary_neoplasms"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 265
 end_page: 275
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pulmonary Neoplasms
 

@@ -1,5 +1,6 @@
 ---
 title: "Fractures of the proximal Segment and Shaft of the Humerus"
+concept_id: "fractures_of_the_proximal_segment_and_shaft_of_the_humerus"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "One-part fractures (Fig. A) are nondisplaced or minimally displaced fractures."
----
+summary: "One-part fractures (Fig. A) are nondisplaced or minimally displaced fractures."---
 
 # Fractures of the proximal Segment and Shaft of the Humerus
 

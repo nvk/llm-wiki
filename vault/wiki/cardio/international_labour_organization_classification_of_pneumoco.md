@@ -1,11 +1,11 @@
 ---
 title: "International Labour Organization Classification Of Pneumoconioses"
+concept_id: "international_labour_organization_classification_of_pneumoco"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 213
 end_page: 223
-status: "verified_source"
----
+status: "verified_source"---
 
 # International Labour Organization Classification Of Pneumoconioses
 

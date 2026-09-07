@@ -1,11 +1,11 @@
 ---
 title: "Pulmonary Diseases in the Immuno­compromised Host with or without Acquired Immuno­deficiency Syndrome"
+concept_id: "pulmonary_diseases_in_the_immunocompromised_host_with_or_wit"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 133
 end_page: 143
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pulmonary Diseases in the Immuno­compromised Host with or without Acquired Immuno­deficiency Syndrome
 

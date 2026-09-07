@@ -1,5 +1,6 @@
 ---
 title: "Left Atrial Calcifi cation"
+concept_id: "left_atrial_calcifi_cation"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "A, The left ventricle is enlarged to the left and inferiorly where it is seen through the stomach bubble. B, The posterior border of the left ventricle is signifi cantly behind the inferior vena cava. Left atrial calcifi cation is the sequela of rheumatic endocarditis."
----
+summary: "A, The left ventricle is enlarged to the left and inferiorly where it is seen through the stomach bubble. B, The posterior border of the left ventricle is signifi cantly behind the inferior vena cava. Left atrial calcifi cation is the sequela of rheumatic endocarditis."---
 
 # Left Atrial Calcifi cation
 

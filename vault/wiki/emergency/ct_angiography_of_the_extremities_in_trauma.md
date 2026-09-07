@@ -1,5 +1,6 @@
 ---
 title: "Ct Angiography of the extremities in trauma"
+concept_id: "ct_angiography_of_the_extremities_in_trauma"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Fractures of the proximalfifth metatarsal bone. A, Zone 1 injury is an avulsion fracture at the base of thefifth metatarsal (arrow). B, Zone 2 injury, or “true Jones fracture,” involves the metadiaphyseal junction (arrow)."
----
+summary: "Fractures of the proximalfifth metatarsal bone. A, Zone 1 injury is an avulsion fracture at the base of thefifth metatarsal (arrow). B, Zone 2 injury, or “true Jones fracture,” involves the metadiaphyseal junction (arrow)."---
 
 # Ct Angiography of the extremities in trauma
 

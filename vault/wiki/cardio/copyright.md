@@ -1,11 +1,12 @@
 ---
 title: "Copyright"
+concept_id: "cardio_copyright"
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
 start_page: 3
 end_page: 3
 status: "verified_source"
----
+aliases: ["copyright"]---
 
 # Copyright
 

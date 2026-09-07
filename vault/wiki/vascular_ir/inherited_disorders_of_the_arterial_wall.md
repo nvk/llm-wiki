@@ -1,11 +1,11 @@
 ---
 title: "INHERITED DISORDERS OF THE ARTERIAL WALL"
+concept_id: "inherited_disorders_of_the_arterial_wall"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 40
 end_page: 42
-status: "verified_source"
----
+status: "verified_source"---
 
 # INHERITED DISORDERS OF THE ARTERIAL WALL
 

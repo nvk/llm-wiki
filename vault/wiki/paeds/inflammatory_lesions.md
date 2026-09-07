@@ -1,5 +1,6 @@
 ---
 title: "Inflammatory Lesions"
+concept_id: "inflammatory_lesions"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "B streptococci or staphylococci from the oropharynx. C4 on C5 less common). Note narrowing (arrow) in a prematurely born infant requiring 3 months of endotracheal intubation."
----
+summary: "B streptococci or staphylococci from the oropharynx. C4 on C5 less common). Note narrowing (arrow) in a prematurely born infant requiring 3 months of endotracheal intubation."---
 
 # Inflammatory Lesions
 

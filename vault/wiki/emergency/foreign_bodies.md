@@ -1,5 +1,6 @@
 ---
 title: "Foreign Bodies"
+concept_id: "emergency_foreign_bodies"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -11,7 +12,7 @@ tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
 summary: "Intra-articular gas is a rarefinding. CT image of a posterior thigh abscess. CT, easier and earlier (see Fig."
----
+aliases: ["foreign_bodies"]---
 
 # Foreign Bodies
 

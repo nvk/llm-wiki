@@ -1,11 +1,11 @@
 ---
 title: "FUTURE DIRECTIONS"
+concept_id: "future_directions"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 576
 end_page: 586
-status: "verified_source"
----
+status: "verified_source"---
 
 # FUTURE DIRECTIONS
 

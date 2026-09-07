@@ -1,5 +1,6 @@
 ---
 title: "Bladder Trauma"
+concept_id: "bladder_trauma"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Bowel wall laceration involving the jejunum. Duodenal laceration after a motor vehicle accident. A duodenal injury was suspected based on the CTfindings and a focal laceration was confirmed at the time of surgery."
----
+summary: "Bowel wall laceration involving the jejunum. Duodenal laceration after a motor vehicle accident. A duodenal injury was suspected based on the CTfindings and a focal laceration was confirmed at the time of surgery."---
 
 # Bladder Trauma
 

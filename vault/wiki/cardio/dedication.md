@@ -1,11 +1,12 @@
 ---
 title: "Dedication"
+concept_id: "cardio_dedication"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 6
 end_page: 7
 status: "verified_source"
----
+aliases: ["dedication"]---
 
 # Dedication
 

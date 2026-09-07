@@ -1,11 +1,11 @@
 ---
 title: "12. Physics of Imaging"
+concept_id: "12_physics_of_imaging"
 domain: "physics_nuclear"
 source_book: "Core Radiology (Jacob)"
 start_page: 849
 end_page: 875
-status: "verified_source"
----
+status: "verified_source"---
 
 # 12. Physics of Imaging
 

@@ -1,9 +1,9 @@
 ---
 title: "Sarcoidosis"
+concept_id: "sarcoidosis"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Sarcoidosis
 

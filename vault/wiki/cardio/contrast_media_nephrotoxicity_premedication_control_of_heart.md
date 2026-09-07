@@ -1,11 +1,11 @@
 ---
 title: "Contrast Media, Nephrotoxicity, Premedication, Control of Heart Rate"
+concept_id: "contrast_media_nephrotoxicity_premedication_control_of_heart"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 3648
 end_page: 3663
-status: "verified_source"
----
+status: "verified_source"---
 
 # Contrast Media, Nephrotoxicity, Premedication, Control of Heart Rate
 

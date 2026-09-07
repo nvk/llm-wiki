@@ -1,11 +1,11 @@
 ---
 title: "PANCREAS"
+concept_id: "pancreas"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 121
 end_page: 123
-status: "verified_source"
----
+status: "verified_source"---
 
 # PANCREAS
 

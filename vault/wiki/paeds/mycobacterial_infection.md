@@ -1,5 +1,6 @@
 ---
 title: "Mycobacterial Infection"
+concept_id: "mycobacterial_infection"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds", "infection"]
 confidence: high
 status: "verified_source"
-summary: "Effusions occur in about 20% of patients (Fig. Treatment is supportive and recovery slow (1 week or more). A) and by hyperinflation (B)."
----
+summary: "Effusions occur in about 20% of patients (Fig. Treatment is supportive and recovery slow (1 week or more). A) and by hyperinflation (B)."---
 
 # Mycobacterial Infection
 

@@ -1,11 +1,11 @@
 ---
 title: "PENETRATING AORTIC ULCERS"
+concept_id: "penetrating_aortic_ulcers"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 215
 end_page: 215
-status: "verified_source"
----
+status: "verified_source"---
 
 # PENETRATING AORTIC ULCERS
 

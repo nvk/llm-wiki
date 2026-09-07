@@ -1,11 +1,11 @@
 ---
 title: "Anatomy and Physiology of the Pleural Space"
+concept_id: "anatomy_and_physiology_of_the_pleural_space"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 391
 end_page: 401
-status: "verified_source"
----
+status: "verified_source"---
 
 # Anatomy and Physiology of the Pleural Space
 

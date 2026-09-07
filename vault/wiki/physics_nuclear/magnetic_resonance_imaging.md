@@ -1,11 +1,12 @@
 ---
 title: "Magnetic Resonance Imaging"
+concept_id: "physics_nuclear_magnetic_resonance_imaging"
 domain: "physics_nuclear"
 source_book: "Grainger & Allison's Diagnostic Radiology (7th Edition)"
 start_page: 966
 end_page: 966
 status: "verified_source"
----
+aliases: ["magnetic_resonance_imaging"]---
 
 # Magnetic Resonance Imaging
 

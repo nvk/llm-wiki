@@ -1,9 +1,9 @@
 ---
 title: "Benign Pulmonary Tumours"
+concept_id: "benign_pulmonary_tumours"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Benign Pulmonary Tumours
 

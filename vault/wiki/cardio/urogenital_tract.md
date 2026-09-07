@@ -1,11 +1,11 @@
 ---
 title: "UROGENITAL TRACT"
+concept_id: "urogenital_tract"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 2937
 end_page: 2947
-status: "verified_source"
----
+status: "verified_source"---
 
 # UROGENITAL TRACT
 

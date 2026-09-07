@@ -1,11 +1,11 @@
 ---
 title: "Detection: Mediastinal Landmarks"
+concept_id: "detection_mediastinal_landmarks"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 351
 end_page: 351
-status: "verified_source"
----
+status: "verified_source"---
 
 # Detection: Mediastinal Landmarks
 

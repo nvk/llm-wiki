@@ -1,5 +1,6 @@
 ---
 title: "Bronchial Atresia"
+concept_id: "bronchial_atresia"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "congenital"]
 confidence: high
 status: "verified_source"
-summary: "Congenital tracheal stenosis. Tracheomalacia is shown on paired inspiratory and dynamic expiratory axial CT images. A, On inspiration, the trachea is of normal caliber."
----
+summary: "Congenital tracheal stenosis. Tracheomalacia is shown on paired inspiratory and dynamic expiratory axial CT images. A, On inspiration, the trachea is of normal caliber."---
 
 # Bronchial Atresia
 

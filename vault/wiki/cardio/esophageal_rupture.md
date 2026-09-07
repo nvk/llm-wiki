@@ -1,11 +1,11 @@
 ---
 title: "Esophageal Rupture"
+concept_id: "esophageal_rupture"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 176
 end_page: 176
-status: "verified_source"
----
+status: "verified_source"---
 
 # Esophageal Rupture
 

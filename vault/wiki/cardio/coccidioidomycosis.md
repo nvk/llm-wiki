@@ -1,5 +1,6 @@
 ---
 title: "Coccidioidomycosis"
+concept_id: "coccidioidomycosis"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Clinical manifestations vary. Cryptococcus infection in a patient with lymphoma."
----
+summary: "Clinical manifestations vary. Cryptococcus infection in a patient with lymphoma."---
 
 # Coccidioidomycosis
 

@@ -1,9 +1,9 @@
 ---
 title: "Extra-Axial Tumours"
+concept_id: "extra-axial_tumours"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Extra-Axial Tumours
 

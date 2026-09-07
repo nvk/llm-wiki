@@ -1,5 +1,6 @@
 ---
 title: "Subfalcine Herniation"
+concept_id: "subfalcine_herniation"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "Shear hemorrhages of diffuse axonal injury. Diffuse axonal injury. A, FLAIR hyperintensities in posterior limb of internal capsule (arrow) and subcortical white matter (arrowhead)."
----
+summary: "Shear hemorrhages of diffuse axonal injury. Diffuse axonal injury. A, FLAIR hyperintensities in posterior limb of internal capsule (arrow) and subcortical white matter (arrowhead)."---
 
 # Subfalcine Herniation
 

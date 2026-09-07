@@ -1,9 +1,9 @@
 ---
 title: "Role Of Conventional Chest Radiography In Ischaemic Heart Disease"
+concept_id: "role_of_conventional_chest_radiography_in_ischaemic_heart_disease"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Role of Conventional Chest Radiography in Ischaemic Heart Disease
 

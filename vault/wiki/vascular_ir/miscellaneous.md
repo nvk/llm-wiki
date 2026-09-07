@@ -1,11 +1,12 @@
 ---
 title: "MISCELLANEOUS"
+concept_id: "vascular_ir_miscellaneous"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 242
 end_page: 242
 status: "verified_source"
----
+aliases: ["miscellaneous"]---
 
 # MISCELLANEOUS
 

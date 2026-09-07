@@ -1,11 +1,11 @@
 ---
 title: "VENA CAVA FILTERS"
+concept_id: "vena_cava_filters"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 319
 end_page: 323
-status: "verified_source"
----
+status: "verified_source"---
 
 # VENA CAVA FILTERS
 

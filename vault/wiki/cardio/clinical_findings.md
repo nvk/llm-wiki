@@ -1,5 +1,6 @@
 ---
 title: "Clinical Findings"
+concept_id: "clinical_findings"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Posteroanterior (A) and lateral (B) views show primary tuberculous pneumonia. Mediastinal adenopathy in primary tuberculosis. A young, black woman presented with cervical adenopathy."
----
+summary: "Posteroanterior (A) and lateral (B) views show primary tuberculous pneumonia. Mediastinal adenopathy in primary tuberculosis. A young, black woman presented with cervical adenopathy."---
 
 # Clinical Findings
 

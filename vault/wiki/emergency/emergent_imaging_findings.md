@@ -1,11 +1,11 @@
 ---
 title: "EMERGENT IMAGING FINDINGS"
+concept_id: "emergent_imaging_findings"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 320
 end_page: 324
-status: "verified_source"
----
+status: "verified_source"---
 
 # EMERGENT IMAGING FINDINGS
 

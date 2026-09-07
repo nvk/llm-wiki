@@ -1,9 +1,9 @@
 ---
 title: "Multisystem Diseases With Involvement Of The Pancreas"
+concept_id: "multisystem_diseases_with_involvement_of_the_pancreas"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Multisystem Diseases With Involvement of the Pancreas
 

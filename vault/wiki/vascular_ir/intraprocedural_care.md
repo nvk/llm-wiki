@@ -1,11 +1,11 @@
 ---
 title: "INTRAPROCEDURAL CARE"
+concept_id: "intraprocedural_care"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 61
 end_page: 62
-status: "verified_source"
----
+status: "verified_source"---
 
 # INTRAPROCEDURAL CARE
 

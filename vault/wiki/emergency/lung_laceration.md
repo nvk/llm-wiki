@@ -1,11 +1,11 @@
 ---
 title: "LUNG LACERATION"
+concept_id: "lung_laceration"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 81
 end_page: 81
-status: "verified_source"
----
+status: "verified_source"---
 
 # LUNG LACERATION
 

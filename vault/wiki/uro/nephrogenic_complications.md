@@ -1,9 +1,9 @@
 ---
 title: "Nephrogenic Complications"
+concept_id: "nephrogenic_complications"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Nephrogenic Complications
 

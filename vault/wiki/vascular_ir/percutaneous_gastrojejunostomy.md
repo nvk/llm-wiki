@@ -1,11 +1,11 @@
 ---
 title: "PERCUTANEOUS GASTROJEJUNOSTOMY"
+concept_id: "percutaneous_gastrojejunostomy"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 455
 end_page: 458
-status: "verified_source"
----
+status: "verified_source"---
 
 # PERCUTANEOUS GASTROJEJUNOSTOMY
 

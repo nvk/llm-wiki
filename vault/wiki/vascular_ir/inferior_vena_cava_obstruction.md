@@ -1,11 +1,11 @@
 ---
 title: "INFERIOR VENA CAVA OBSTRUCTION"
+concept_id: "inferior_vena_cava_obstruction"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 316
 end_page: 318
-status: "verified_source"
----
+status: "verified_source"---
 
 # INFERIOR VENA CAVA OBSTRUCTION
 

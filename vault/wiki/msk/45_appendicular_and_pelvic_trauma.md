@@ -1,9 +1,9 @@
 ---
 title: "45 Appendicular And Pelvic Trauma"
+concept_id: "45_appendicular_and_pelvic_trauma"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 45 Appendicular and Pelvic Trauma
 

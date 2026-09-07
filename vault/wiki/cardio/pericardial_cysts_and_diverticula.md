@@ -1,5 +1,6 @@
 ---
 title: "Pericardial Cysts and Diverticula"
+concept_id: "pericardial_cysts_and_diverticula"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Axial acquisition from a 45-year-old woman with shortness of breath. A, Double inversion recovery acquisition. RA) is separated by the low intensity (arrow 3) of intervening pericardialfluid."
----
+summary: "Axial acquisition from a 45-year-old woman with shortness of breath. A, Double inversion recovery acquisition. RA) is separated by the low intensity (arrow 3) of intervening pericardialfluid."---
 
 # Pericardial Cysts and Diverticula
 

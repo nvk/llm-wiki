@@ -1,9 +1,9 @@
 ---
 title: "Diagnostic Aspects"
+concept_id: "diagnostic_aspects"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Diagnostic Aspects
 

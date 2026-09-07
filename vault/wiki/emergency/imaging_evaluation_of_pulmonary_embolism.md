@@ -1,11 +1,11 @@
 ---
 title: "IMAGING EVALUATION OF PULMONARY EMBOLISM"
+concept_id: "imaging_evaluation_of_pulmonary_embolism"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 269
 end_page: 270
-status: "verified_source"
----
+status: "verified_source"---
 
 # IMAGING EVALUATION OF PULMONARY EMBOLISM
 

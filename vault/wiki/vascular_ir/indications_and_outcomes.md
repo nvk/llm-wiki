@@ -1,11 +1,11 @@
 ---
 title: "INDICATIONS AND OUTCOMES"
+concept_id: "indications_and_outcomes"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 595
 end_page: 596
-status: "verified_source"
----
+status: "verified_source"---
 
 # INDICATIONS AND OUTCOMES
 

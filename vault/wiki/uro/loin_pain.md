@@ -1,9 +1,9 @@
 ---
 title: "Loin Pain"
+concept_id: "loin_pain"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Loin Pain
 

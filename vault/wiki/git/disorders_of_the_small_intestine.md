@@ -1,9 +1,9 @@
 ---
 title: "Disorders Of The Small Intestine"
+concept_id: "disorders_of_the_small_intestine"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Disorders of the Small Intestine
 

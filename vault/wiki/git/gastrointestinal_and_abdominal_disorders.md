@@ -1,11 +1,11 @@
 ---
 title: "Gastrointestinal and Abdominal Disorders"
+concept_id: "gastrointestinal_and_abdominal_disorders"
 domain: "git"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 2670
 end_page: 2936
-status: "verified_source"
----
+status: "verified_source"---
 
 # Gastrointestinal and Abdominal Disorders
 

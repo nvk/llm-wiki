@@ -1,11 +1,11 @@
 ---
 title: "Esophagotracheobronchial Fistulas"
+concept_id: "esophagotracheobronchial_fistulas"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 324
 end_page: 325
-status: "verified_source"
----
+status: "verified_source"---
 
 # Esophagotracheobronchial Fistulas
 

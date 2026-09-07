@@ -1,11 +1,12 @@
 ---
 title: "COMPUTED TOMOGRAPHY"
+concept_id: "emergency_computed_tomography"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 252
 end_page: 257
 status: "verified_source"
----
+aliases: ["computed_tomography"]---
 
 # COMPUTED TOMOGRAPHY
 

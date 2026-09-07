@@ -1,5 +1,6 @@
 ---
 title: "Congenital Tracheal Stenosis"
+concept_id: "congenital_tracheal_stenosis"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "congenital", "vascular"]
 confidence: high
 status: "verified_source"
-summary: "CT), and magnetic resonance imaging (MRI). Tracheobronchomegaly (i. Congenital tracheal stenosis."
----
+summary: "CT), and magnetic resonance imaging (MRI). Tracheobronchomegaly (i. Congenital tracheal stenosis."---
 
 # Congenital Tracheal Stenosis
 

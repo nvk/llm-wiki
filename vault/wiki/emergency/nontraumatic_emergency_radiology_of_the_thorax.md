@@ -1,11 +1,11 @@
 ---
 title: "Nontraumatic Emergency Radiology of the Thorax"
+concept_id: "nontraumatic_emergency_radiology_of_the_thorax"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 250
 end_page: 260
-status: "verified_source"
----
+status: "verified_source"---
 
 # Nontraumatic Emergency Radiology of the Thorax
 

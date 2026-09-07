@@ -1,5 +1,6 @@
 ---
 title: "Hereditary Angioneurotic Edema"
+concept_id: "hereditary_angioneurotic_edema"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Peak incidence is at 3 to 6 years of age. A, Lateral radiograph of the normal neck. Horns of the hyoid “point” to the epiglottis (arrowhead)."
----
+summary: "Peak incidence is at 3 to 6 years of age. A, Lateral radiograph of the normal neck. Horns of the hyoid “point” to the epiglottis (arrowhead)."---
 
 # Hereditary Angioneurotic Edema
 

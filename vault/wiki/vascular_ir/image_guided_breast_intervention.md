@@ -1,11 +1,11 @@
 ---
 title: "Image-Guided Breast Intervention"
+concept_id: "image_guided_breast_intervention"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 534
 end_page: 544
-status: "verified_source"
----
+status: "verified_source"---
 
 # Image-Guided Breast Intervention
 

@@ -1,5 +1,6 @@
 ---
 title: "Gradient Echo Magnetic Resonance Imaging"
+concept_id: "gradient_echo_magnetic_resonance_imaging"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Doppler echocardiography. A, TR  1060; TE  20 msec. B, TR (repetition time)  1060; TE (echo time)  60 msec."
----
+summary: "Doppler echocardiography. A, TR = 1060; TE = 20 msec. B, TR (repetition time) = 1060; TE (echo time) = 60 msec."---
 
 # Gradient Echo Magnetic Resonance Imaging
 
@@ -19,7 +19,7 @@ summary: "Doppler echocardiography. A, TR  1060; TE  20 msec. B, TR (repetitio
 **Source:** Cardiac Imaging: The Requisites (Pages 86–91)  
 
 ## Summary & Core Concepts
-Doppler echocardiography. A, TR  1060; TE  20 msec. B, TR (repetition time)  1060; TE (echo time)  60 msec.
+Doppler echocardiography. A, TR = 1060; TE = 20 msec. B, TR (repetition time) = 1060; TE (echo time) = 60 msec.
 
 ## Key Radiological & Clinical Findings
 - **Radiography (Plain Film):** Essential baseline imaging for Gradient Echo Magnetic Resonance Imaging; evaluates anatomical contours, alignment, lucencies, and gross calcifications.
@@ -114,8 +114,8 @@ M
 F
 Li
 FIGURE 3-2. Intrapericardial mass (M) on the roof of the left atrium (LA), causing extrinsic compression of the LA from above and elevation of the
-right pulmonary artery (RP) from below. A, TR  1060; TE  20 msec. The bright signal of the mass appears slightly greater than the liver (Li), but
-less than pericardial fat (F). B, TR (repetition time)  1060; TE (echo time)  60 msec. The more rapid loss of signal of both Li and F than the M
+right pulmonary artery (RP) from below. A, TR = 1060; TE = 20 msec. The bright signal of the mass appears slightly greater than the liver (Li), but
+less than pericardial fat (F). B, TR (repetition time) = 1060; TE (echo time) = 60 msec. The more rapid loss of signal of both Li and F than the M
 since thefirst echo indicates the prolonged T2 of the mass (i.e., it isfluidfilled). This is an intrapericardial pericardial cyst.
 CARDIAC MAGNETIC RESONANCE IMAGING
 A

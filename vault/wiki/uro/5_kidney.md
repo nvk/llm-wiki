@@ -1,11 +1,11 @@
 ---
 title: "5. Kidney"
+concept_id: "5_kidney"
 domain: "uro"
 source_book: "Ultrasound: The Requisites"
 start_page: 175
 end_page: 238
-status: "verified_source"
----
+status: "verified_source"---
 
 # 5. Kidney
 

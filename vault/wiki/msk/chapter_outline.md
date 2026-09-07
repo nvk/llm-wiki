@@ -1,9 +1,10 @@
 ---
 title: "Chapter Outline"
+concept_id: "msk_chapter_outline"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["chapter_outline"]---
 
 # Chapter Outline
 

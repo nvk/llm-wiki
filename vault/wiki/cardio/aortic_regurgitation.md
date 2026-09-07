@@ -1,5 +1,6 @@
 ---
 title: "Aortic Regurgitation"
+concept_id: "aortic_regurgitation"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Echocardiographic views of the aortic valve in a patient with a bicuspid aortic valve. Ao, aorta; LV, left ventricle. Ao, aorta; AR, aortic regurgitation; LV, left ventricle."
----
+summary: "Echocardiographic views of the aortic valve in a patient with a bicuspid aortic valve. Ao, aorta; LV, left ventricle. Ao, aorta; AR, aortic regurgitation; LV, left ventricle."---
 
 # Aortic Regurgitation
 

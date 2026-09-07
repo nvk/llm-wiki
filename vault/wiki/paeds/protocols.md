@@ -1,5 +1,6 @@
 ---
 title: "Protocols"
+concept_id: "protocols"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "In general, a directed approach (e. US evaluation of all major vessels should be routine. Disadvantages are relative."
----
+summary: "In general, a directed approach (e. US evaluation of all major vessels should be routine. Disadvantages are relative."---
 
 # Protocols
 

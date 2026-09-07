@@ -1,5 +1,6 @@
 ---
 title: "Flow Ratios"
+concept_id: "flow_ratios"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Pericardial calcifi cation. A, Eggshell calcifi cation (arrows) outlines the right and left borders of the heart. Computed tomography scan of pericardial calcifi cation."
----
+summary: "Pericardial calcifi cation. A, Eggshell calcifi cation (arrows) outlines the right and left borders of the heart. Computed tomography scan of pericardial calcifi cation."---
 
 # Flow Ratios
 

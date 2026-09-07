@@ -1,5 +1,6 @@
 ---
 title: "Severe Acute Respiratory Syndrome–Associated Coronavirus"
+concept_id: "severe_acute_respiratory_syndromeassociated_coronavirus"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Asia have been infected, with a nearly 50% mortality rate. SARS-associated coronavirus. Canada, Singapore, and Vietnam."
----
+summary: "Asia have been infected, with a nearly 50% mortality rate. SARS-associated coronavirus. Canada, Singapore, and Vietnam."---
 
 # Severe Acute Respiratory Syndrome–Associated Coronavirus
 

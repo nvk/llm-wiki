@@ -1,11 +1,11 @@
 ---
 title: "WIRE-GUIDED LOCALIZATION"
+concept_id: "wire_guided_localization"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 546
 end_page: 548
-status: "verified_source"
----
+status: "verified_source"---
 
 # WIRE-GUIDED LOCALIZATION
 

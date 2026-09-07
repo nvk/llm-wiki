@@ -1,11 +1,11 @@
 ---
 title: "CONGENITAL AND DEVELOPMENTAL ABNORMALITIES"
+concept_id: "congenital_and_developmental_abnormalities"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 217
 end_page: 229
-status: "verified_source"
----
+status: "verified_source"---
 
 # CONGENITAL AND DEVELOPMENTAL ABNORMALITIES
 

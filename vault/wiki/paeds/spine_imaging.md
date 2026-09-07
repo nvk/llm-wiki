@@ -1,11 +1,11 @@
 ---
 title: "SPINE IMAGING"
+concept_id: "spine_imaging"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 280
 end_page: 290
-status: "verified_source"
----
+status: "verified_source"---
 
 # SPINE IMAGING
 

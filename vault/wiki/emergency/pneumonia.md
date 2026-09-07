@@ -1,5 +1,6 @@
 ---
 title: "Pneumonia"
+concept_id: "pneumonia"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "infection"]
 confidence: high
 status: "verified_source"
-summary: "FB must be suspected (Figs. B, Right lateral decubitusfilm in the same patient demonstrates normal collapse of the right lung."
----
+summary: "FB must be suspected (Figs. B, Right lateral decubitusfilm in the same patient demonstrates normal collapse of the right lung."---
 
 # Pneumonia
 

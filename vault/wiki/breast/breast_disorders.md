@@ -1,11 +1,11 @@
 ---
 title: "Breast Disorders"
+concept_id: "breast_disorders"
 domain: "breast"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 1813
 end_page: 1886
-status: "verified_source"
----
+status: "verified_source"---
 
 # Breast Disorders
 

@@ -1,9 +1,9 @@
 ---
 title: "Viral Infections"
+concept_id: "viral_infections"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Viral Infections
 

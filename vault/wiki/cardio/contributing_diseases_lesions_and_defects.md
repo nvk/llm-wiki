@@ -1,5 +1,6 @@
 ---
 title: "Contributing Diseases, Lesions, and Defects"
+concept_id: "contributing_diseases_lesions_and_defects"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Coronary artery calcifi cation. The open arrow points to the calcifi ed mitral annulus. Coronary artery calcifi cation."
----
+summary: "Coronary artery calcifi cation. The open arrow points to the calcifi ed mitral annulus. Coronary artery calcifi cation."---
 
 # Contributing Diseases, Lesions, and Defects
 

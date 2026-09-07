@@ -1,11 +1,11 @@
 ---
 title: "Nontrauma Abdomen"
+concept_id: "nontrauma_abdomen"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 291
 end_page: 301
-status: "verified_source"
----
+status: "verified_source"---
 
 # Nontrauma Abdomen
 

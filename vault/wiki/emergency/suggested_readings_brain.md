@@ -1,11 +1,11 @@
 ---
 title: "Suggested Readings: Brain"
+concept_id: "suggested_readings_brain"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 74
 end_page: 74
-status: "verified_source"
----
+status: "verified_source"---
 
 # Suggested Readings: Brain
 

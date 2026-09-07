@@ -1,11 +1,11 @@
 ---
 title: "BIPOLAR RADIOFREQUENCY NUCLEOPLASTY"
+concept_id: "bipolar_radiofrequency_nucleoplasty"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 558
 end_page: 558
-status: "verified_source"
----
+status: "verified_source"---
 
 # BIPOLAR RADIOFREQUENCY NUCLEOPLASTY
 

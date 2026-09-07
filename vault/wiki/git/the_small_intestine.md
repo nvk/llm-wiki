@@ -1,9 +1,9 @@
 ---
 title: "The Small Intestine"
+concept_id: "the_small_intestine"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # The Small Intestine
 

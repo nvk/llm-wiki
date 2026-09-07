@@ -1,11 +1,11 @@
 ---
 title: "Indirect Pulmonary Complications Of Trauma"
+concept_id: "indirect_pulmonary_complications_of_trauma"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 189
 end_page: 191
-status: "verified_source"
----
+status: "verified_source"---
 
 # Indirect Pulmonary Complications Of Trauma
 

@@ -1,9 +1,9 @@
 ---
 title: "The Ankle"
+concept_id: "the_ankle"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # The Ankle
 

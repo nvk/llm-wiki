@@ -1,5 +1,6 @@
 ---
 title: "Right-Sided Obstructive Lesions"
+concept_id: "right_sided_obstructive_lesions"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "A superiorly located proximal left PA may be present. Supracardiac TAPVC (Fig. TAPVC and has a 50% chance of becoming obstructed."
----
+summary: "A superiorly located proximal left PA may be present. Supracardiac TAPVC (Fig. TAPVC and has a 50% chance of becoming obstructed."---
 
 # Right-Sided Obstructive Lesions
 

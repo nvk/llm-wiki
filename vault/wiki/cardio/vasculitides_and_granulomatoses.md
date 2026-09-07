@@ -1,11 +1,11 @@
 ---
 title: "Vasculitides And Granulomatoses"
+concept_id: "vasculitides_and_granulomatoses"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 236
 end_page: 238
-status: "verified_source"
----
+status: "verified_source"---
 
 # Vasculitides And Granulomatoses
 

@@ -1,11 +1,11 @@
 ---
 title: "HEAD AND NECK IMAGING GUIDELINES"
+concept_id: "head_and_neck_imaging_guidelines"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 306
 end_page: 306
-status: "verified_source"
----
+status: "verified_source"---
 
 # HEAD AND NECK IMAGING GUIDELINES
 

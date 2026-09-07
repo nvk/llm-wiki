@@ -1,11 +1,11 @@
 ---
 title: "SPLENIC TRAUMA"
+concept_id: "splenic_trauma"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 102
 end_page: 102
-status: "verified_source"
----
+status: "verified_source"---
 
 # SPLENIC TRAUMA
 

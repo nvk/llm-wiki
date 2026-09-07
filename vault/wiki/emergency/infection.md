@@ -1,11 +1,12 @@
 ---
 title: "INFECTION"
+concept_id: "emergency_infection"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 388
 end_page: 392
 status: "verified_source"
----
+aliases: ["infection"]---
 
 # INFECTION
 

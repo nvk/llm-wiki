@@ -1,11 +1,11 @@
 ---
 title: "Color Plates"
+concept_id: "color_plates"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 348
 end_page: 351
-status: "verified_source"
----
+status: "verified_source"---
 
 # Color Plates
 

@@ -1,5 +1,6 @@
 ---
 title: "SKELETAL ABNORMALITIES IN HEART DISEASE"
+concept_id: "skeletal_abnormalities_in_heart_disease"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Umbrella closure devices. A, For an atrial septal defect. B, For a patent ductus arteriosus."
----
+summary: "Umbrella closure devices. A, For an atrial septal defect. B, For a patent ductus arteriosus."---
 
 # SKELETAL ABNORMALITIES IN HEART DISEASE
 

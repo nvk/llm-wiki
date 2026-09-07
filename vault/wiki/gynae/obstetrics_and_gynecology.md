@@ -1,11 +1,11 @@
 ---
 title: "OBSTETRICS AND GYNECOLOGY"
+concept_id: "obstetrics_and_gynecology"
 domain: "gynae"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 3303
 end_page: 3313
-status: "verified_source"
----
+status: "verified_source"---
 
 # OBSTETRICS AND GYNECOLOGY
 

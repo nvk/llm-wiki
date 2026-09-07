@@ -1,5 +1,6 @@
 ---
 title: "Determining the Vascular Pattern"
+concept_id: "determining_the_vascular_pattern"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "vascular"]
 confidence: high
 status: "verified_source"
-summary: "Bicuspid aortic valve calcifi cation. Mitral annulus calcifi cation. Tricuspid annulus calcifi cation."
----
+summary: "Bicuspid aortic valve calcifi cation. Mitral annulus calcifi cation. Tricuspid annulus calcifi cation."---
 
 # Determining the Vascular Pattern
 

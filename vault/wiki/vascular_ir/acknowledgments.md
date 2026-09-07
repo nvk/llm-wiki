@@ -1,11 +1,12 @@
 ---
 title: "Acknowledgments"
+concept_id: "vascular_ir_acknowledgments"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 14
 end_page: 15
 status: "verified_source"
----
+aliases: ["acknowledgments"]---
 
 # Acknowledgments
 

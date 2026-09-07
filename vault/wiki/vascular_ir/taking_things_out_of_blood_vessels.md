@@ -1,11 +1,11 @@
 ---
 title: "TAKING THINGS OUT OF BLOOD VESSELS"
+concept_id: "taking_things_out_of_blood_vessels"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 118
 end_page: 120
-status: "verified_source"
----
+status: "verified_source"---
 
 # TAKING THINGS OUT OF BLOOD VESSELS
 

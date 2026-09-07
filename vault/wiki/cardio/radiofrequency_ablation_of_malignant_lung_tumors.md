@@ -1,11 +1,11 @@
 ---
 title: "Radiofrequency Ablation of Malignant Lung Tumors"
+concept_id: "radiofrequency_ablation_of_malignant_lung_tumors"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 419
 end_page: 419
-status: "verified_source"
----
+status: "verified_source"---
 
 # Radiofrequency Ablation of Malignant Lung Tumors
 

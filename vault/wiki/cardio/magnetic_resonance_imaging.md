@@ -1,9 +1,10 @@
 ---
 title: "Magnetic Resonance Imaging"
+concept_id: "cardio_magnetic_resonance_imaging"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["magnetic_resonance_imaging"]---
 
 # Magnetic Resonance Imaging
 

@@ -1,11 +1,11 @@
 ---
 title: "Emphysema"
+concept_id: "emphysema"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 254
 end_page: 260
-status: "verified_source"
----
+status: "verified_source"---
 
 # Emphysema
 

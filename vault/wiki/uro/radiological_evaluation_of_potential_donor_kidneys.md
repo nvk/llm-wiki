@@ -1,9 +1,9 @@
 ---
 title: "Radiological Evaluation Of Potential Donor Kidneys"
+concept_id: "radiological_evaluation_of_potential_donor_kidneys"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Radiological Evaluation of Potential Donor Kidneys
 

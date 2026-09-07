@@ -1,9 +1,9 @@
 ---
 title: "Cysts"
+concept_id: "cysts"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Cysts
 

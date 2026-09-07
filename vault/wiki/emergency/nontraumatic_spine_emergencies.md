@@ -1,11 +1,11 @@
 ---
 title: "NONTRAUMATIC SPINE EMERGENCIES"
+concept_id: "nontraumatic_spine_emergencies"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 242
 end_page: 247
-status: "verified_source"
----
+status: "verified_source"---
 
 # NONTRAUMATIC SPINE EMERGENCIES
 

@@ -1,11 +1,11 @@
 ---
 title: "RENAL ARTERY OCCLUSIVE DISEASE"
+concept_id: "renal_artery_occlusive_disease"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 291
 end_page: 298
-status: "verified_source"
----
+status: "verified_source"---
 
 # RENAL ARTERY OCCLUSIVE DISEASE
 

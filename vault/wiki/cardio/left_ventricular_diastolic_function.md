@@ -1,5 +1,6 @@
 ---
 title: "Left Ventricular Diastolic Function"
+concept_id: "left_ventricular_diastolic_function"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Thus CSA1  V1  CSA2  V2. V2, velocity offlow through the stenotic region. TDE, tissue Doppler echocardiography."
----
+summary: "Thus CSA1 * V1 = CSA2 * V2. V2, velocity offlow through the stenotic region. TDE, tissue Doppler echocardiography."---
 
 # Left Ventricular Diastolic Function
 
@@ -19,7 +19,7 @@ summary: "Thus CSA1  V1  CSA2  V2. V2, velocity offlow through the stenotic r
 **Source:** Cardiac Imaging: The Requisites (Pages 54–59)  
 
 ## Summary & Core Concepts
-Thus CSA1  V1  CSA2  V2. V2, velocity offlow through the stenotic region. TDE, tissue Doppler echocardiography.
+Thus CSA1 * V1 = CSA2 * V2. V2, velocity offlow through the stenotic region. TDE, tissue Doppler echocardiography.
 
 ## Key Radiological & Clinical Findings
 - **Radiography (Plain Film):** Essential baseline imaging for Left Ventricular Diastolic Function; evaluates anatomical contours, alignment, lucencies, and gross calcifications.
@@ -86,15 +86,15 @@ Velocity (cm/s)
 CSA1
 CSA2
 Q1
-Q1  Q2
-CSA1  V1  CSA2  V2
+Q1 = Q2
+CSA1 * V1 = CSA2 * V2
 Q2
 V1
 V2
 FIGURE 2-29. The Continuity equation for a region of narrowing is based
-on the volumetricflow on each side of the narrowing being equal (Q1 
+on the volumetricflow on each side of the narrowing being equal (Q1 =
 Q2). Theflow rate is equal to the product of the mean velocity and the cross
-sectional area. Thus CSA1  V1  CSA2  V2. The mean velocity increases
+sectional area. Thus CSA1 * V1 = CSA2 * V2. The mean velocity increases
 to maintain a constantflow rate through a region of narrowing. CSA1, the
 area of the lumen of the cylinder; CSA2, area of the stenosis; V1, velocity;
 V2, velocity offlow through the stenotic region.

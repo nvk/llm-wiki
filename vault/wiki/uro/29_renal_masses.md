@@ -1,9 +1,9 @@
 ---
 title: "29 Renal Masses"
+concept_id: "29_renal_masses"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 29 Renal Masses
 

@@ -1,9 +1,9 @@
 ---
 title: "The Wrist"
+concept_id: "the_wrist"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # The Wrist
 

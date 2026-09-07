@@ -1,5 +1,6 @@
 ---
 title: "Pulmonary Diseases"
+concept_id: "pulmonary_diseases"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "AIDS pulmonary disease. Pleural effusions are common, and adenopathy may occur."
----
+summary: "AIDS pulmonary disease. Pleural effusions are common, and adenopathy may occur."---
 
 # Pulmonary Diseases
 

@@ -1,5 +1,6 @@
 ---
 title: "Cortical Laminar Necrosis"
+concept_id: "cortical_laminar_necrosis"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "Acute Ischemic Stroke (DEDAS). CT and a strict time limit alone. Merci Retriever device (Fig."
----
+summary: "Acute Ischemic Stroke (DEDAS). CT and a strict time limit alone. Merci Retriever device (Fig."---
 
 # Cortical Laminar Necrosis
 

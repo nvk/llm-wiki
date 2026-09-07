@@ -1,9 +1,9 @@
 ---
 title: "Sclerosing Bone Diseases And Other Bone Disorders"
+concept_id: "sclerosing_bone_diseases_and_other_bone_disorders"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Sclerosing Bone Diseases and Other Bone Disorders
 

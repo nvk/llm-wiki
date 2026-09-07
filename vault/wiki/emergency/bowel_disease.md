@@ -1,11 +1,11 @@
 ---
 title: "BOWEL DISEASE"
+concept_id: "bowel_disease"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 291
 end_page: 306
-status: "verified_source"
----
+status: "verified_source"---
 
 # BOWEL DISEASE
 

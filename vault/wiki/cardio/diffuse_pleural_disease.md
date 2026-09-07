@@ -1,11 +1,11 @@
 ---
 title: "Diffuse Pleural Disease"
+concept_id: "diffuse_pleural_disease"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 403
 end_page: 409
-status: "verified_source"
----
+status: "verified_source"---
 
 # Diffuse Pleural Disease
 

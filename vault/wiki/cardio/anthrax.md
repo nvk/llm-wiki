@@ -1,5 +1,6 @@
 ---
 title: "Anthrax"
+concept_id: "anthrax"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "United States postal system. Almost one half of those with the inhalational form died. Once inhaled, the spores are ingested by macrophages."
----
+summary: "United States postal system. Almost one half of those with the inhalational form died. Once inhaled, the spores are ingested by macrophages."---
 
 # Anthrax
 

@@ -1,9 +1,9 @@
 ---
 title: "Pathological Features"
+concept_id: "pathological_features"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pathological Features
 

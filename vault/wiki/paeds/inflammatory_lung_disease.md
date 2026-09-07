@@ -1,5 +1,6 @@
 ---
 title: "Inflammatory Lung Disease"
+concept_id: "inflammatory_lung_disease"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "TTN, or there may be a more nodular pattern. Croup was discussed earlier. RSV) the causative agent in a third of these cases."
----
+summary: "TTN, or there may be a more nodular pattern. Croup was discussed earlier. RSV) the causative agent in a third of these cases."---
 
 # Inflammatory Lung Disease
 

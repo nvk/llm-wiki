@@ -1,9 +1,9 @@
 ---
 title: "Anal Fistula"
+concept_id: "anal_fistula"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Anal Fistula
 

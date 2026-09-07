@@ -1,5 +1,6 @@
 ---
 title: "Absence of the Main Pulmonary Artery and Proximal Interruption"
+concept_id: "absence_of_the_main_pulmonary_artery_and_proximal_interrupti"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "vascular"]
 confidence: high
 status: "verified_source"
-summary: "Infected bronchogenic cyst. CT demonstrates an air-fluid level in an infected bronchogenic cyst. Congenital absence of the left pulmonary artery."
----
+summary: "Infected bronchogenic cyst. CT demonstrates an air-fluid level in an infected bronchogenic cyst. Congenital absence of the left pulmonary artery."---
 
 # Absence of the Main Pulmonary Artery and Proximal Interruption
 

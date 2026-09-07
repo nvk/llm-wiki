@@ -1,5 +1,6 @@
 ---
 title: "Standard Posteroanterior and Lateral Chest Radiography"
+concept_id: "standard_posteroanterior_and_lateral_chest_radiography"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Hounsfield units [HU]). MRI has several advantages in imaging the hila. CT in the axial plane."
----
+summary: "Hounsfield units [HU]). MRI has several advantages in imaging the hila. CT in the axial plane."---
 
 # Standard Posteroanterior and Lateral Chest Radiography
 

@@ -1,11 +1,11 @@
 ---
 title: "8. Breast Imaging"
+concept_id: "8_breast_imaging"
 domain: "breast"
 source_book: "Core Radiology (Jacob)"
 start_page: 603
 end_page: 668
-status: "verified_source"
----
+status: "verified_source"---
 
 # 8. Breast Imaging
 

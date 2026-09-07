@@ -1,11 +1,11 @@
 ---
 title: "Image-Guided Ablation as a Treatment Option for Thoracic Malignancies"
+concept_id: "image_guided_ablation_as_a_treatment_option_for_thoracic_mal"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 585
 end_page: 595
-status: "verified_source"
----
+status: "verified_source"---
 
 # Image-Guided Ablation as a Treatment Option for Thoracic Malignancies
 

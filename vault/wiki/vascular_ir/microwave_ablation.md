@@ -1,11 +1,11 @@
 ---
 title: "MICROWAVE ABLATION"
+concept_id: "microwave_ablation"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 591
 end_page: 592
-status: "verified_source"
----
+status: "verified_source"---
 
 # MICROWAVE ABLATION
 

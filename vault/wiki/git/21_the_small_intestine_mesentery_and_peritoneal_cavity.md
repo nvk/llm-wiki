@@ -1,9 +1,9 @@
 ---
 title: "21 The Small Intestine Mesentery And Peritoneal Cavity"
+concept_id: "21_the_small_intestine_mesentery_and_peritoneal_cavity"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 21 The Small Intestine, Mesentery and Peritoneal Cavity
 

@@ -1,9 +1,9 @@
 ---
 title: "Bone Physiology And Pathophysiology"
+concept_id: "bone_physiology_and_pathophysiology"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Bone Physiology and Pathophysiology
 

@@ -1,5 +1,6 @@
 ---
 title: "Posterior Mediastinum"
+concept_id: "posterior_mediastinum"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "It is rare in children. Amsterdam, The Netherlands). A 13-year-old patient with primary pulmonary hypertension."
----
+summary: "It is rare in children. Amsterdam, The Netherlands). A 13-year-old patient with primary pulmonary hypertension."---
 
 # Posterior Mediastinum
 

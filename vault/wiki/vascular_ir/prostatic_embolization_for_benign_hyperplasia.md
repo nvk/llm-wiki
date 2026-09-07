@@ -1,11 +1,11 @@
 ---
 title: "PROSTATIC EMBOLIZATION FOR BENIGN HYPERPLASIA"
+concept_id: "prostatic_embolization_for_benign_hyperplasia"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 250
 end_page: 250
-status: "verified_source"
----
+status: "verified_source"---
 
 # PROSTATIC EMBOLIZATION FOR BENIGN HYPERPLASIA
 

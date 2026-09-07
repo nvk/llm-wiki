@@ -1,11 +1,11 @@
 ---
 title: "Focal Pleural Disease"
+concept_id: "focal_pleural_disease"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 401
 end_page: 402
-status: "verified_source"
----
+status: "verified_source"---
 
 # Focal Pleural Disease
 

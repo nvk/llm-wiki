@@ -1,11 +1,12 @@
 ---
 title: "CENTRAL NERVOUS SYSTEM"
+concept_id: "emergency_central_nervous_system"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 220
 end_page: 223
 status: "verified_source"
----
+aliases: ["central_nervous_system"]---
 
 # CENTRAL NERVOUS SYSTEM
 

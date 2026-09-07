@@ -1,5 +1,6 @@
 ---
 title: "Other Metazoan Infections"
+concept_id: "other_metazoan_infections"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "infection"]
 confidence: high
 status: "verified_source"
-summary: "Asia have been infected, with a nearly 50% mortality rate. SARS-associated coronavirus. Canada, Singapore, and Vietnam."
----
+summary: "Asia have been infected, with a nearly 50% mortality rate. SARS-associated coronavirus. Canada, Singapore, and Vietnam."---
 
 # Other Metazoan Infections
 

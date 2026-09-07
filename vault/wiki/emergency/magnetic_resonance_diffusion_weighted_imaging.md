@@ -1,5 +1,6 @@
 ---
 title: "Magnetic Resonance: Diffusion-weighted Imaging"
+concept_id: "magnetic_resonance_diffusion_weighted_imaging"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "Stroke (NINDS) rt-PA trial. A, Noncontrast CT with window/level of 80/40 shows subtle decrease in density of the right insular cortex. C, Infarct is much more conspicuous on diffusion-weighted image."
----
+summary: "Stroke (NINDS) rt-PA trial. A, Noncontrast CT with window/level of 80/40 shows subtle decrease in density of the right insular cortex. C, Infarct is much more conspicuous on diffusion-weighted image."---
 
 # Magnetic Resonance: Diffusion-weighted Imaging
 

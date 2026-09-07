@@ -1,9 +1,10 @@
 ---
 title: "Further Reading"
+concept_id: "cardio_further_reading"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["further_reading"]---
 
 # Further Reading
 

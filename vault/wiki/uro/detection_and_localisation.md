@@ -1,9 +1,9 @@
 ---
 title: "Detection And Localisation"
+concept_id: "detection_and_localisation"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Detection and Localisation
 

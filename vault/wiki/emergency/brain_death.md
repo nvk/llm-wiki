@@ -1,11 +1,11 @@
 ---
 title: "BRAIN DEATH"
+concept_id: "brain_death"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 386
 end_page: 387
-status: "verified_source"
----
+status: "verified_source"---
 
 # BRAIN DEATH
 

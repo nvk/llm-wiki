@@ -1,11 +1,11 @@
 ---
 title: "Dedications"
+concept_id: "dedications"
 domain: "cardio"
 source_book: "Ultrasound: The Requisites"
 start_page: 5
 end_page: 5
-status: "verified_source"
----
+status: "verified_source"---
 
 # Dedications
 

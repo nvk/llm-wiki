@@ -1,9 +1,9 @@
 ---
 title: "Myocardial Infarct Imaging"
+concept_id: "myocardial_infarct_imaging"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Myocardial Infarct Imaging
 

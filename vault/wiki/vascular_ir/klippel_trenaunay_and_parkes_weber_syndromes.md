@@ -1,11 +1,11 @@
 ---
 title: "KLIPPEL-TRENAUNAY AND PARKES-WEBER SYNDROMES"
+concept_id: "klippel_trenaunay_and_parkes_weber_syndromes"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 404
 end_page: 404
-status: "verified_source"
----
+status: "verified_source"---
 
 # KLIPPEL-TRENAUNAY AND PARKES-WEBER SYNDROMES
 

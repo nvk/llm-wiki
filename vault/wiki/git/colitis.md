@@ -1,9 +1,9 @@
 ---
 title: "Colitis"
+concept_id: "colitis"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Colitis
 

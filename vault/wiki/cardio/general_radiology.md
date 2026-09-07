@@ -1,11 +1,11 @@
 ---
 title: "GENERAL RADIOLOGY"
+concept_id: "general_radiology"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 3558
 end_page: 3568
-status: "verified_source"
----
+status: "verified_source"---
 
 # GENERAL RADIOLOGY
 

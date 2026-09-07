@@ -1,5 +1,6 @@
 ---
 title: "Meckel Diverticulum"
+concept_id: "paeds_meckel_diverticulum"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -11,7 +12,7 @@ tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
 summary: "Atresia is much more common than stenosis. About 10% of cases are associated with cysticfibrosis. Four types can be recognized."
----
+aliases: ["meckel_diverticulum"]---
 
 # Meckel Diverticulum
 

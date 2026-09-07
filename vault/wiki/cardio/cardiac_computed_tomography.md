@@ -1,11 +1,11 @@
 ---
 title: "Cardiac Computed Tomography"
+concept_id: "cardiac_computed_tomography"
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
 start_page: 140
 end_page: 185
-status: "verified_source"
----
+status: "verified_source"---
 
 # Cardiac Computed Tomography
 

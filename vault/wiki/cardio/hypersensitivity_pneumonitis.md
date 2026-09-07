@@ -1,11 +1,11 @@
 ---
 title: "Hypersensitivity Pneumonitis"
+concept_id: "hypersensitivity_pneumonitis"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 242
 end_page: 244
-status: "verified_source"
----
+status: "verified_source"---
 
 # Hypersensitivity Pneumonitis
 

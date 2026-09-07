@@ -1,11 +1,11 @@
 ---
 title: "PULMONARY ARTERY ANEURYSMS AND PSEUDOANEURYSMS"
+concept_id: "pulmonary_artery_aneurysms_and_pseudoaneurysms"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 195
 end_page: 196
-status: "verified_source"
----
+status: "verified_source"---
 
 # PULMONARY ARTERY ANEURYSMS AND PSEUDOANEURYSMS
 

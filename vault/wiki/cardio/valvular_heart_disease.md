@@ -1,11 +1,11 @@
 ---
 title: "Valvular Heart Disease"
+concept_id: "valvular_heart_disease"
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
 start_page: 186
 end_page: 222
-status: "verified_source"
----
+status: "verified_source"---
 
 # Valvular Heart Disease
 

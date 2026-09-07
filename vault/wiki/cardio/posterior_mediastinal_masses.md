@@ -1,11 +1,11 @@
 ---
 title: "Posterior Mediastinal Masses"
+concept_id: "posterior_mediastinal_masses"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 374
 end_page: 379
-status: "verified_source"
----
+status: "verified_source"---
 
 # Posterior Mediastinal Masses
 

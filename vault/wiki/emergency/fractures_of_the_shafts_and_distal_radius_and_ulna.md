@@ -1,5 +1,6 @@
 ---
 title: "Fractures of the Shafts and Distal radius and ulna"
+concept_id: "fractures_of_the_shafts_and_distal_radius_and_ulna"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Essex-Lopresti fracture. Fractures of the olecranon (Fig. Fractures of the coronoid process (Fig."
----
+summary: "Essex-Lopresti fracture. Fractures of the olecranon (Fig. Fractures of the coronoid process (Fig."---
 
 # Fractures of the Shafts and Distal radius and ulna
 

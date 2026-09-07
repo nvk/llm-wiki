@@ -1,5 +1,6 @@
 ---
 title: "Diffuse Infiltrative (Interstitial) Lung Disease"
+concept_id: "diffuse_infiltrative_interstitial_lung_disease"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Langerhans cell histiocytosis. Invasive aspergillosis. Kohn) and intra-acinar connections (i."
----
+summary: "Langerhans cell histiocytosis. Invasive aspergillosis. Kohn) and intra-acinar connections (i."---
 
 # Diffuse Infiltrative (Interstitial) Lung Disease
 

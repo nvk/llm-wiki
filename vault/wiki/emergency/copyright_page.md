@@ -1,11 +1,12 @@
 ---
 title: "Copyright Page"
+concept_id: "emergency_copyright_page"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 2
 end_page: 2
 status: "verified_source"
----
+aliases: ["copyright_page"]---
 
 # Copyright Page
 

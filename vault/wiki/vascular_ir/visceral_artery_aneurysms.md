@@ -1,11 +1,11 @@
 ---
 title: "VISCERAL ARTERY ANEURYSMS"
+concept_id: "visceral_artery_aneurysms"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 279
 end_page: 280
-status: "verified_source"
----
+status: "verified_source"---
 
 # VISCERAL ARTERY ANEURYSMS
 

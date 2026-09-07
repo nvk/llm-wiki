@@ -1,9 +1,9 @@
 ---
 title: "Upper Tract Urothelial Carcinoma"
+concept_id: "upper_tract_urothelial_carcinoma"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Upper Tract Urothelial Carcinoma
 

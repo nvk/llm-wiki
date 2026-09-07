@@ -1,5 +1,6 @@
 ---
 title: "Temporal Bone Fractures"
+concept_id: "temporal_bone_fractures"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Complex temporal bone fracture. Longitudinal temporal bone fracture. Skull base fractures—vascular injury."
----
+summary: "Complex temporal bone fracture. Longitudinal temporal bone fracture. Skull base fractures—vascular injury."---
 
 # Temporal Bone Fractures
 

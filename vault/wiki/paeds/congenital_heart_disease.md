@@ -1,11 +1,12 @@
 ---
 title: "CONGENITAL HEART DISEASE"
+concept_id: "paeds_congenital_heart_disease"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 56
 end_page: 57
 status: "verified_source"
----
+aliases: ["congenital_heart_disease"]---
 
 # CONGENITAL HEART DISEASE
 

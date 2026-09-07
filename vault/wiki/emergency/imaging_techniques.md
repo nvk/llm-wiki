@@ -1,11 +1,12 @@
 ---
 title: "IMAGING TECHNIQUES"
+concept_id: "emergency_imaging_techniques"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 271
 end_page: 276
 status: "verified_source"
----
+aliases: ["imaging_techniques"]---
 
 # IMAGING TECHNIQUES
 

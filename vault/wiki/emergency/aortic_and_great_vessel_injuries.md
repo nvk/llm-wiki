@@ -1,11 +1,11 @@
 ---
 title: "AORTIC AND GREAT VESSEL INJURIES"
+concept_id: "aortic_and_great_vessel_injuries"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 78
 end_page: 80
-status: "verified_source"
----
+status: "verified_source"---
 
 # AORTIC AND GREAT VESSEL INJURIES
 

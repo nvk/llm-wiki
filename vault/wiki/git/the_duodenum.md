@@ -1,9 +1,9 @@
 ---
 title: "The Duodenum"
+concept_id: "the_duodenum"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # The Duodenum
 

@@ -1,11 +1,11 @@
 ---
 title: "NORMAL AND VARIANT ANATOMY"
+concept_id: "normal_and_variant_anatomy"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 142
 end_page: 143
-status: "verified_source"
----
+status: "verified_source"---
 
 # NORMAL AND VARIANT ANATOMY
 

@@ -1,5 +1,6 @@
 ---
 title: "Middle Mediastinal Lymph Nodes"
+concept_id: "middle_mediastinal_lymph_nodes"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Internal Mammary Nodes. They usually occur on the left side. Anterior Diaphragmatic Lymph Nodes."
----
+summary: "Internal Mammary Nodes. They usually occur on the left side. Anterior Diaphragmatic Lymph Nodes."---
 
 # Middle Mediastinal Lymph Nodes
 

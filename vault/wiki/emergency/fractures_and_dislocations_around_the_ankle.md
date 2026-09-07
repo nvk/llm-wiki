@@ -1,5 +1,6 @@
 ---
 title: "Fractures and Dislocations Around the Ankle"
+concept_id: "fractures_and_dislocations_around_the_ankle"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "ACL has been detached. It is caused by forceful internal rotation of aflexed knee. A) is a supination-adduction injury with thefibular fracture located below the syndesmosis."
----
+summary: "ACL has been detached. It is caused by forceful internal rotation of aflexed knee. A) is a supination-adduction injury with thefibular fracture located below the syndesmosis."---
 
 # Fractures and Dislocations Around the Ankle
 

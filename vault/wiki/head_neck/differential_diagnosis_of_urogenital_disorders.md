@@ -1,11 +1,11 @@
 ---
 title: "Differential Diagnosis of Urogenital Disorders"
+concept_id: "differential_diagnosis_of_urogenital_disorders"
 domain: "head_neck"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 2937
 end_page: 3025
-status: "verified_source"
----
+status: "verified_source"---
 
 # Differential Diagnosis of Urogenital Disorders
 

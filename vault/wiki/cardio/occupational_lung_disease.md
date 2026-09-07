@@ -1,9 +1,9 @@
 ---
 title: "Occupational Lung Disease"
+concept_id: "occupational_lung_disease"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Occupational Lung Disease
 

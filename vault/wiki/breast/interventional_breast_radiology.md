@@ -1,11 +1,11 @@
 ---
 title: "Interventional Breast Radiology"
+concept_id: "interventional_breast_radiology"
 domain: "breast"
 source_book: "Grainger & Allison's Diagnostic Radiology (7th Edition)"
 start_page: 1659
 end_page: 1659
-status: "verified_source"
----
+status: "verified_source"---
 
 # Interventional Breast Radiology
 

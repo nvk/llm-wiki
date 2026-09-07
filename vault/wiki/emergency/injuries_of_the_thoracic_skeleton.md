@@ -1,11 +1,11 @@
 ---
 title: "INJURIES OF THE THORACIC SKELETON"
+concept_id: "injuries_of_the_thoracic_skeleton"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 90
 end_page: 92
-status: "verified_source"
----
+status: "verified_source"---
 
 # INJURIES OF THE THORACIC SKELETON
 

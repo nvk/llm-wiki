@@ -1,5 +1,6 @@
 ---
 title: "Solitary"
+concept_id: "solitary"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Mounier-Kuhn syndrome). Primary malignant lung tumors are extremely rare. A, AP chest radiograph shows necrotic metastatic rhabdomyosarcoma in a 2-year-old child."
----
+summary: "Mounier-Kuhn syndrome). Primary malignant lung tumors are extremely rare. A, AP chest radiograph shows necrotic metastatic rhabdomyosarcoma in a 2-year-old child."---
 
 # Solitary
 

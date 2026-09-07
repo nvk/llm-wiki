@@ -1,5 +1,6 @@
 ---
 title: "Distribution of Disease within the Lung"
+concept_id: "distribution_of_disease_within_the_lung"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Gravity is often an important factor. A pattern of mosaic perfusion is seen in the right lower lobe. Segmental Anatomy of the Lungs."
----
+summary: "Gravity is often an important factor. A pattern of mosaic perfusion is seen in the right lower lobe. Segmental Anatomy of the Lungs."---
 
 # Distribution of Disease within the Lung
 

@@ -1,11 +1,11 @@
 ---
 title: "FEMALE DISORDERS"
+concept_id: "female_disorders"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 329
 end_page: 335
-status: "verified_source"
----
+status: "verified_source"---
 
 # FEMALE DISORDERS
 

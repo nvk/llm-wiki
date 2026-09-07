@@ -1,5 +1,6 @@
 ---
 title: "Other Infections"
+concept_id: "other_infections"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds", "infection"]
 confidence: high
 status: "verified_source"
-summary: "Nodular interstitial changes. B, Metastatic papillary carcinoma of the thyroid in an 11-year-old girl. C, Lymphoid interstitial pneumonitis (biopsy-proven)."
----
+summary: "Nodular interstitial changes. B, Metastatic papillary carcinoma of the thyroid in an 11-year-old girl. C, Lymphoid interstitial pneumonitis (biopsy-proven)."---
 
 # Other Infections
 

@@ -1,5 +1,6 @@
 ---
 title: "Anomalies of the Pulmonary Arteries"
+concept_id: "anomalies_of_the_pulmonary_arteries"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Infected bronchogenic cyst. CT demonstrates an air-fluid level in an infected bronchogenic cyst. Congenital absence of the left pulmonary artery."
----
+summary: "Infected bronchogenic cyst. CT demonstrates an air-fluid level in an infected bronchogenic cyst. Congenital absence of the left pulmonary artery."---
 
 # Anomalies of the Pulmonary Arteries
 

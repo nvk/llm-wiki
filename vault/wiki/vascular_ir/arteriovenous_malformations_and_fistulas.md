@@ -1,11 +1,11 @@
 ---
 title: "ARTERIOVENOUS MALFORMATIONS AND FISTULAS"
+concept_id: "arteriovenous_malformations_and_fistulas"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 307
 end_page: 317
-status: "verified_source"
----
+status: "verified_source"---
 
 # ARTERIOVENOUS MALFORMATIONS AND FISTULAS
 

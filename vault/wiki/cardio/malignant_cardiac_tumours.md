@@ -1,9 +1,9 @@
 ---
 title: "Malignant Cardiac Tumours"
+concept_id: "malignant_cardiac_tumours"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Malignant Cardiac Tumours
 

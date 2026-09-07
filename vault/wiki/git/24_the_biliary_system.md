@@ -1,9 +1,9 @@
 ---
 title: "24 The Biliary System"
+concept_id: "24_the_biliary_system"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 24 The Biliary System
 

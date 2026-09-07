@@ -1,9 +1,9 @@
 ---
 title: "Drug-Induced Lung Disease"
+concept_id: "drug-induced_lung_disease"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Drug-Induced Lung Disease
 

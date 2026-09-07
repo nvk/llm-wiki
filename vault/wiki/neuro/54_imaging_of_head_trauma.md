@@ -1,9 +1,9 @@
 ---
 title: "54 Imaging Of Head Trauma"
+concept_id: "54_imaging_of_head_trauma"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 54 Imaging of Head Trauma
 

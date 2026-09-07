@@ -1,11 +1,11 @@
 ---
 title: "Infections Related To Bioterrorism"
+concept_id: "infections_related_to_bioterrorism"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 130
 end_page: 130
-status: "verified_source"
----
+status: "verified_source"---
 
 # Infections Related To Bioterrorism
 

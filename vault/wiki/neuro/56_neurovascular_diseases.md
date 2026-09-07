@@ -1,9 +1,9 @@
 ---
 title: "56 Neurovascular Diseases"
+concept_id: "56_neurovascular_diseases"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 56 Neurovascular Diseases
 

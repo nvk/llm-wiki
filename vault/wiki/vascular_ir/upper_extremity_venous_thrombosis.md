@@ -1,11 +1,11 @@
 ---
 title: "UPPER EXTREMITY VENOUS THROMBOSIS"
+concept_id: "upper_extremity_venous_thrombosis"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 163
 end_page: 164
-status: "verified_source"
----
+status: "verified_source"---
 
 # UPPER EXTREMITY VENOUS THROMBOSIS
 

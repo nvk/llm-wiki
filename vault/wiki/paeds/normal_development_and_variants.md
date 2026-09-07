@@ -1,11 +1,11 @@
 ---
 title: "NORMAL DEVELOPMENT AND VARIANTS"
+concept_id: "normal_development_and_variants"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 166
 end_page: 171
-status: "verified_source"
----
+status: "verified_source"---
 
 # NORMAL DEVELOPMENT AND VARIANTS
 

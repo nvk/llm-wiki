@@ -1,9 +1,9 @@
 ---
 title: "Idiopathic Interstitial Pneumonias"
+concept_id: "idiopathic_interstitial_pneumonias"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Idiopathic Interstitial Pneumonias
 

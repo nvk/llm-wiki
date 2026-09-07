@@ -1,11 +1,11 @@
 ---
 title: "Pneumothorax"
+concept_id: "pneumothorax"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 398
 end_page: 400
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pneumothorax
 

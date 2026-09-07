@@ -1,11 +1,11 @@
 ---
 title: "3. Genitourinary Imaging"
+concept_id: "3_genitourinary_imaging"
 domain: "uro"
 source_book: "Core Radiology (Jacob)"
 start_page: 168
 end_page: 211
-status: "verified_source"
----
+status: "verified_source"---
 
 # 3. Genitourinary Imaging
 

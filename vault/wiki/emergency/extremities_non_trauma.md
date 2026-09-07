@@ -1,11 +1,11 @@
 ---
 title: "Extremities: Non-Trauma"
+concept_id: "extremities_non_trauma"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 178
 end_page: 188
-status: "verified_source"
----
+status: "verified_source"---
 
 # Extremities: Non-Trauma
 

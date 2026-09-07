@@ -1,11 +1,11 @@
 ---
 title: "UPPER AIRWAY"
+concept_id: "upper_airway"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 15
 end_page: 23
-status: "verified_source"
----
+status: "verified_source"---
 
 # UPPER AIRWAY
 

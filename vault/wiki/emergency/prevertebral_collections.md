@@ -1,5 +1,6 @@
 ---
 title: "Prevertebral Collections"
+concept_id: "prevertebral_collections"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "Retropharyngeal abscess. B, Sagittal reformat demonstrates associated retropharyngealfluid extending to the C5 level. Discitis/osteomyelitis secondary to intravenous drug use."
----
+summary: "Retropharyngeal abscess. B, Sagittal reformat demonstrates associated retropharyngealfluid extending to the C5 level. Discitis/osteomyelitis secondary to intravenous drug use."---
 
 # Prevertebral Collections
 

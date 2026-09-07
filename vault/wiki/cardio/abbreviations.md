@@ -1,11 +1,11 @@
 ---
 title: "Abbreviations"
+concept_id: "abbreviations"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 15
 end_page: 35
-status: "verified_source"
----
+status: "verified_source"---
 
 # Abbreviations
 

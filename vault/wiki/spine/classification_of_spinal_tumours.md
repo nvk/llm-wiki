@@ -1,11 +1,11 @@
 ---
 title: "Classification of Spinal Tumours"
+concept_id: "classification_of_spinal_tumours"
 domain: "spine"
 source_book: "Grainger & Allison's Diagnostic Radiology (7th Edition)"
 start_page: 1262
 end_page: 1262
-status: "verified_source"
----
+status: "verified_source"---
 
 # Classification of Spinal Tumours
 

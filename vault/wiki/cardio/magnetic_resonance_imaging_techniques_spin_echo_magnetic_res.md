@@ -1,5 +1,6 @@
 ---
 title: "MAGNETIC RESONANCE IMAGING TECHNIQUES Spin Echo Magnetic Resonance Imaging"
+concept_id: "magnetic_resonance_imaging_techniques_spin_echo_magnetic_res"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Makaryus and Lawrence M. SE in dramatically less imaging time. Double inversion recovery acquisition images."
----
+summary: "Makaryus and Lawrence M. SE in dramatically less imaging time. Double inversion recovery acquisition images."---
 
 # MAGNETIC RESONANCE IMAGING TECHNIQUES Spin Echo Magnetic Resonance Imaging
 

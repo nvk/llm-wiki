@@ -1,11 +1,11 @@
 ---
 title: "24. Adnexa"
+concept_id: "24_adnexa"
 domain: "cardio"
 source_book: "Ultrasound: The Requisites"
 start_page: 752
 end_page: 782
-status: "verified_source"
----
+status: "verified_source"---
 
 # 24. Adnexa
 

@@ -1,9 +1,9 @@
 ---
 title: "32 Prostate"
+concept_id: "32_prostate"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 32 Prostate
 

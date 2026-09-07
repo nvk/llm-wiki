@@ -1,11 +1,11 @@
 ---
 title: "SUPERIOR VENA CAVA SYNDROME"
+concept_id: "superior_vena_cava_syndrome"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 167
 end_page: 167
-status: "verified_source"
----
+status: "verified_source"---
 
 # SUPERIOR VENA CAVA SYNDROME
 

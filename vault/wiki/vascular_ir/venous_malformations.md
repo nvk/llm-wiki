@@ -1,11 +1,11 @@
 ---
 title: "VENOUS MALFORMATIONS"
+concept_id: "venous_malformations"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 405
 end_page: 415
-status: "verified_source"
----
+status: "verified_source"---
 
 # VENOUS MALFORMATIONS
 

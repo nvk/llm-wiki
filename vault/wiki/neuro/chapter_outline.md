@@ -1,9 +1,10 @@
 ---
 title: "Chapter Outline"
+concept_id: "neuro_chapter_outline"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["chapter_outline"]---
 
 # Chapter Outline
 

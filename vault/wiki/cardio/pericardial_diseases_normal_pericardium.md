@@ -1,5 +1,6 @@
 ---
 title: "PERICARDIAL DISEASES Normal Pericardium"
+concept_id: "pericardial_diseases_normal_pericardium"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Short-axis perfusion images of the heart obtained after intravenous administration of Gd-DTPA. A, Contrast has not yet reached the heart. Differentiation between left ventricular myocardium (arrow) and cavity is diffi cult."
----
+summary: "Short-axis perfusion images of the heart obtained after intravenous administration of Gd-DTPA. A, Contrast has not yet reached the heart. Differentiation between left ventricular myocardium (arrow) and cavity is diffi cult."---
 
 # PERICARDIAL DISEASES Normal Pericardium
 

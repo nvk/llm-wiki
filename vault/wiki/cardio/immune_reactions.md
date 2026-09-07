@@ -1,11 +1,11 @@
 ---
 title: "Immune Reactions"
+concept_id: "immune_reactions"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 228
 end_page: 238
-status: "verified_source"
----
+status: "verified_source"---
 
 # Immune Reactions
 

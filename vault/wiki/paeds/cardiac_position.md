@@ -1,5 +1,6 @@
 ---
 title: "Cardiac Position"
+concept_id: "cardiac_position"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Kerley B lines and interstitial edema. Mesocardia: Heart in the midline, apex pointing inferiorly. Dextrocardia: Heart in the right chest, apex pointing rightward."
----
+summary: "Kerley B lines and interstitial edema. Mesocardia: Heart in the midline, apex pointing inferiorly. Dextrocardia: Heart in the right chest, apex pointing rightward."---
 
 # Cardiac Position
 

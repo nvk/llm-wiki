@@ -1,11 +1,11 @@
 ---
 title: "HEPATOBILIARY SCINTIGRAPHY"
+concept_id: "hepatobiliary_scintigraphy"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 395
 end_page: 396
-status: "verified_source"
----
+status: "verified_source"---
 
 # HEPATOBILIARY SCINTIGRAPHY
 

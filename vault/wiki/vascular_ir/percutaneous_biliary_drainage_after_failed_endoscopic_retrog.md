@@ -1,11 +1,11 @@
 ---
 title: "PERCUTANEOUS BILIARY DRAINAGE AFTER FAILED ENDOSCOPIC RETROGRADE CHOLANGIOPANCREATOGRAPHY"
+concept_id: "percutaneous_biliary_drainage_after_failed_endoscopic_retrog"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 490
 end_page: 500
-status: "verified_source"
----
+status: "verified_source"---
 
 # PERCUTANEOUS BILIARY DRAINAGE AFTER FAILED ENDOSCOPIC RETROGRADE CHOLANGIOPANCREATOGRAPHY
 

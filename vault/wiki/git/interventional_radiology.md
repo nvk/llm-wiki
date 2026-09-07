@@ -1,9 +1,9 @@
 ---
 title: "Interventional Radiology"
+concept_id: "interventional_radiology"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Interventional Radiology
 

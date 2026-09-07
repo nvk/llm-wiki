@@ -1,11 +1,11 @@
 ---
 title: "Pulmonary Thromboembolism"
+concept_id: "pulmonary_thromboembolism"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 344
 end_page: 348
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pulmonary Thromboembolism
 

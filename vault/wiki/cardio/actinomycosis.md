@@ -1,5 +1,6 @@
 ---
 title: "Actinomycosis"
+concept_id: "actinomycosis"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "The radiographicfindings are usually nonspecific. CT shows actinomycosis in a patient who developed a right upper lobe, posterior segment necrotic consolidation after dental extraction. Notice the erosion of the cortex of the overlying rib (arrows)."
----
+summary: "The radiographicfindings are usually nonspecific. CT shows actinomycosis in a patient who developed a right upper lobe, posterior segment necrotic consolidation after dental extraction. Notice the erosion of the cortex of the overlying rib (arrows)."---
 
 # Actinomycosis
 

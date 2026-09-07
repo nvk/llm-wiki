@@ -1,9 +1,9 @@
 ---
 title: "Radiological Investigation"
+concept_id: "radiological_investigation"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Radiological Investigation
 

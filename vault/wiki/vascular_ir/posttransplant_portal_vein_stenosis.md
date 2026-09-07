@@ -1,11 +1,11 @@
 ---
 title: "POSTTRANSPLANT PORTAL VEIN STENOSIS"
+concept_id: "posttransplant_portal_vein_stenosis"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 353
 end_page: 363
-status: "verified_source"
----
+status: "verified_source"---
 
 # POSTTRANSPLANT PORTAL VEIN STENOSIS
 

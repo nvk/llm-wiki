@@ -1,9 +1,9 @@
 ---
 title: "Pericardial Diseases"
+concept_id: "pericardial_diseases"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pericardial Diseases
 

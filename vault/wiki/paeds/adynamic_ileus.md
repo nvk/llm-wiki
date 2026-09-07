@@ -1,5 +1,6 @@
 ---
 title: "Adynamic Ileus"
+concept_id: "adynamic_ileus"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "In the newborn there should be air in the stomach at birth. GI) tract is usually more rapid in normal newborns. Dynamic (mechanical) ileus usually has an anatomic cause."
----
+summary: "In the newborn there should be air in the stomach at birth. GI) tract is usually more rapid in normal newborns. Dynamic (mechanical) ileus usually has an anatomic cause."---
 
 # Adynamic Ileus
 

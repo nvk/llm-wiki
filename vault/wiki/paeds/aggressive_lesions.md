@@ -1,11 +1,11 @@
 ---
 title: "AGGRESSIVE LESIONS"
+concept_id: "aggressive_lesions"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 195
 end_page: 197
-status: "verified_source"
----
+status: "verified_source"---
 
 # AGGRESSIVE LESIONS
 

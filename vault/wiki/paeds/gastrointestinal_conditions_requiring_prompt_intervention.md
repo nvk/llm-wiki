@@ -1,11 +1,11 @@
 ---
 title: "GASTROINTESTINAL CONDITIONS REQUIRING PROMPT INTERVENTION"
+concept_id: "gastrointestinal_conditions_requiring_prompt_intervention"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 79
 end_page: 84
-status: "verified_source"
----
+status: "verified_source"---
 
 # GASTROINTESTINAL CONDITIONS REQUIRING PROMPT INTERVENTION
 

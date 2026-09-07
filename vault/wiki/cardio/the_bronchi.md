@@ -1,11 +1,11 @@
 ---
 title: "The Bronchi"
+concept_id: "the_bronchi"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 318
 end_page: 328
-status: "verified_source"
----
+status: "verified_source"---
 
 # The Bronchi
 

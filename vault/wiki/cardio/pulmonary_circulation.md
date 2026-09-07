@@ -1,9 +1,10 @@
 ---
 title: "Pulmonary Circulation"
+concept_id: "cardio_pulmonary_circulation"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["pulmonary_circulation"]---
 
 # Pulmonary Circulation
 

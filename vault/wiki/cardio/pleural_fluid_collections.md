@@ -1,11 +1,12 @@
 ---
 title: "Pleural Fluid Collections"
+concept_id: "cardio_pleural_fluid_collections"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 170
 end_page: 180
 status: "verified_source"
----
+aliases: ["pleural_fluid_collections"]---
 
 # Pleural Fluid Collections
 

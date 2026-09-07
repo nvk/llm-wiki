@@ -1,11 +1,11 @@
 ---
 title: "BRAIN HERNIATIONS"
+concept_id: "brain_herniations"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 26
 end_page: 27
-status: "verified_source"
----
+status: "verified_source"---
 
 # BRAIN HERNIATIONS
 

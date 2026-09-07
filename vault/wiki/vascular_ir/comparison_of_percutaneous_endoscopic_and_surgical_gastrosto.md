@@ -1,11 +1,11 @@
 ---
 title: "COMPARISON OF PERCUTANEOUS, ENDOSCOPIC, AND SURGICAL GASTROSTOMY"
+concept_id: "comparison_of_percutaneous_endoscopic_and_surgical_gastrosto"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 459
 end_page: 469
-status: "verified_source"
----
+status: "verified_source"---
 
 # COMPARISON OF PERCUTANEOUS, ENDOSCOPIC, AND SURGICAL GASTROSTOMY
 

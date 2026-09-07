@@ -1,9 +1,9 @@
 ---
 title: "Conventional Radiography"
+concept_id: "conventional_radiography"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Conventional Radiography
 

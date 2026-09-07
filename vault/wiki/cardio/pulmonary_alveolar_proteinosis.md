@@ -1,9 +1,9 @@
 ---
 title: "Pulmonary Alveolar Proteinosis"
+concept_id: "pulmonary_alveolar_proteinosis"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pulmonary Alveolar Proteinosis
 

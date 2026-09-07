@@ -1,5 +1,6 @@
 ---
 title: "Apical Imaging Planes"
+concept_id: "apical_imaging_planes"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "LV, left ventricle; RV, right ventricular outfl ow tract. PV, pulmonic valve; pv, pulmonary vein; RA, right atrium. MV, mitral valve; RV, right ventricle."
----
+summary: "LV, left ventricle; RV, right ventricular outfl ow tract. PV, pulmonic valve; pv, pulmonary vein; RA, right atrium. MV, mitral valve; RV, right ventricle."---
 
 # Apical Imaging Planes
 

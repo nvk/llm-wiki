@@ -1,5 +1,6 @@
 ---
 title: "Esophagitis"
+concept_id: "esophagitis"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds", "infection"]
 confidence: high
 status: "verified_source"
-summary: "The most common cause of esophagitis is GER. The bullae can ulcerate and then progress to strictures."
----
+summary: "The most common cause of esophagitis is GER. The bullae can ulcerate and then progress to strictures."---
 
 # Esophagitis
 

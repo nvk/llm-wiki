@@ -1,11 +1,11 @@
 ---
 title: "BENIGN AND CYSTIC LESIONS"
+concept_id: "benign_and_cystic_lesions"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 198
 end_page: 201
-status: "verified_source"
----
+status: "verified_source"---
 
 # BENIGN AND CYSTIC LESIONS
 

@@ -1,9 +1,9 @@
 ---
 title: "1 Current Status Of Thoracic Imaging"
+concept_id: "1_current_status_of_thoracic_imaging"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 1 Current Status of Thoracic Imaging
 

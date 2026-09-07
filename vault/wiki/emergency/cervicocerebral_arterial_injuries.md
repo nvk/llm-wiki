@@ -1,11 +1,11 @@
 ---
 title: "CERVICOCEREBRAL ARTERIAL INJURIES"
+concept_id: "cervicocerebral_arterial_injuries"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 37
 end_page: 39
-status: "verified_source"
----
+status: "verified_source"---
 
 # CERVICOCEREBRAL ARTERIAL INJURIES
 

@@ -1,11 +1,11 @@
 ---
 title: "Chest Trauma"
+concept_id: "chest_trauma"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 76
 end_page: 86
-status: "verified_source"
----
+status: "verified_source"---
 
 # Chest Trauma
 

@@ -1,11 +1,11 @@
 ---
 title: "APPENDICULAR MUSCULOSKELETAL INFECTION"
+concept_id: "appendicular_musculoskeletal_infection"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 190
 end_page: 197
-status: "verified_source"
----
+status: "verified_source"---
 
 # APPENDICULAR MUSCULOSKELETAL INFECTION
 

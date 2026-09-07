@@ -1,11 +1,11 @@
 ---
 title: "BREAST"
+concept_id: "breast"
 domain: "breast"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 1761
 end_page: 1771
-status: "verified_source"
----
+status: "verified_source"---
 
 # BREAST
 

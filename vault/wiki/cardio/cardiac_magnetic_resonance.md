@@ -1,9 +1,10 @@
 ---
 title: "Cardiac Magnetic Resonance"
+concept_id: "cardio_cardiac_magnetic_resonance"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["cardiac_magnetic_resonance"]---
 
 # Cardiac Magnetic Resonance
 

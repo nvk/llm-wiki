@@ -1,11 +1,11 @@
 ---
 title: "Tracheal Stenosis"
+concept_id: "tracheal_stenosis"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 302
 end_page: 310
-status: "verified_source"
----
+status: "verified_source"---
 
 # Tracheal Stenosis
 

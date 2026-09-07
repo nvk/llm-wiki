@@ -1,9 +1,9 @@
 ---
 title: "Abnormal Gas Distribution"
+concept_id: "abnormal_gas_distribution"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Abnormal Gas Distribution
 

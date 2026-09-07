@@ -1,9 +1,9 @@
 ---
 title: "Normal Chest Radiography"
+concept_id: "normal_chest_radiography"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Normal Chest Radiography
 

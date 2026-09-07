@@ -1,11 +1,11 @@
 ---
 title: "Chest Disorders"
+concept_id: "chest_disorders"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 1494
 end_page: 1760
-status: "verified_source"
----
+status: "verified_source"---
 
 # Chest Disorders
 

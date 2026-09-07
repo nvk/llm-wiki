@@ -1,11 +1,12 @@
 ---
 title: "PLEURAL FLUID COLLECTIONS"
+concept_id: "vascular_ir_pleural_fluid_collections"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 441
 end_page: 446
 status: "verified_source"
----
+aliases: ["pleural_fluid_collections"]---
 
 # PLEURAL FLUID COLLECTIONS
 

@@ -1,11 +1,11 @@
 ---
 title: "CHRONIC VENOUS OBSTRUCTION AND POST-PHLEBITIC SYNDROME"
+concept_id: "chronic_venous_obstruction_and_post_phlebitic_syndrome"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 397
 end_page: 397
-status: "verified_source"
----
+status: "verified_source"---
 
 # CHRONIC VENOUS OBSTRUCTION AND POST-PHLEBITIC SYNDROME
 

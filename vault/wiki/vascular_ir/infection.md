@@ -1,11 +1,12 @@
 ---
 title: "INFECTION"
+concept_id: "vascular_ir_infection"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 39
 end_page: 39
 status: "verified_source"
----
+aliases: ["infection"]---
 
 # INFECTION
 

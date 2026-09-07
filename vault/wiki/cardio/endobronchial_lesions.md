@@ -1,11 +1,11 @@
 ---
 title: "Endobronchial Lesions"
+concept_id: "endobronchial_lesions"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 319
 end_page: 323
-status: "verified_source"
----
+status: "verified_source"---
 
 # Endobronchial Lesions
 

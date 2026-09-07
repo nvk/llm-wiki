@@ -1,11 +1,11 @@
 ---
 title: "Abdominal Aorta and Pelvic Arteries"
+concept_id: "abdominal_aorta_and_pelvic_arteries"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 222
 end_page: 232
-status: "verified_source"
----
+status: "verified_source"---
 
 # Abdominal Aorta and Pelvic Arteries
 

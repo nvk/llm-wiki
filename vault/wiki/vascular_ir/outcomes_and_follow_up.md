@@ -1,11 +1,11 @@
 ---
 title: "OUTCOMES AND FOLLOW-UP"
+concept_id: "outcomes_and_follow_up"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 582
 end_page: 582
-status: "verified_source"
----
+status: "verified_source"---
 
 # OUTCOMES AND FOLLOW-UP
 

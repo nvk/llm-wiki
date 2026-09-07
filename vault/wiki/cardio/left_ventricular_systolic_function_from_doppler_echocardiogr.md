@@ -1,5 +1,6 @@
 ---
 title: "Left Ventricular Systolic Function from Doppler Echocardiography"
+concept_id: "left_ventricular_systolic_function_from_doppler_echocardiogr"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "LVID, left ventricular internal dimension. Thus CSA1  V1  CSA2  V2. V2, velocity offlow through the stenotic region."
----
+summary: "LVID, left ventricular internal dimension. Thus CSA1 * V1 = CSA2 * V2. V2, velocity offlow through the stenotic region."---
 
 # Left Ventricular Systolic Function from Doppler Echocardiography
 
@@ -19,7 +19,7 @@ summary: "LVID, left ventricular internal dimension. Thus CSA1  V1  CSA2  V2.
 **Source:** Cardiac Imaging: The Requisites (Pages 53–58)  
 
 ## Summary & Core Concepts
-LVID, left ventricular internal dimension. Thus CSA1  V1  CSA2  V2. V2, velocity offlow through the stenotic region.
+LVID, left ventricular internal dimension. Thus CSA1 * V1 = CSA2 * V2. V2, velocity offlow through the stenotic region.
 
 ## Key Radiological & Clinical Findings
 - **Radiography (Plain Film):** Essential baseline imaging for Left Ventricular Systolic Function from Doppler Echocardiography; evaluates anatomical contours, alignment, lucencies, and gross calcifications.
@@ -42,13 +42,13 @@ sume that the change in area at the base of the ventricle is repre-
 sentative of global ventricular function. In this way:
 EF (%)
 LVIDD2
-
+=
 
-
+*
 LVIDD
 LVISD
-where LVIDD  the internal diameter of the base of the ven-
-tricle in diastole, and LVISD  the internal diameter of the
+where LVIDD = the internal diameter of the base of the ven-
+tricle in diastole, and LVISD = the internal diameter of the
 ventricle in systole. Because this formula fails to account for api-
 cal function, 10% is empirically added if function at the apex is
 normal, 5% is added if the apex is hypokinetic, and 5% to 10% is
@@ -61,9 +61,9 @@ change in ventricular volume during the cardiac cycle using a
 simple formula, which assumes that the left ventricle is spherical:
 EF (%)
 LVIDD3
-
+=
 
-
+*
 LVIDD
 LVISD
 Methods that estimate ejection fraction based on a single di-

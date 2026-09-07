@@ -1,11 +1,11 @@
 ---
 title: "Diseases of the Bronchioles"
+concept_id: "diseases_of_the_bronchioles"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 333
 end_page: 336
-status: "verified_source"
----
+status: "verified_source"---
 
 # Diseases of the Bronchioles
 

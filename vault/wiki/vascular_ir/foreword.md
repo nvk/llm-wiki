@@ -1,11 +1,12 @@
 ---
 title: "Foreword"
+concept_id: "vascular_ir_foreword"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 10
 end_page: 11
 status: "verified_source"
----
+aliases: ["foreword"]---
 
 # Foreword
 

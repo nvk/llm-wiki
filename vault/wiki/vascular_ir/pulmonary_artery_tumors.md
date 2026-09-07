@@ -1,11 +1,11 @@
 ---
 title: "PULMONARY ARTERY TUMORS"
+concept_id: "pulmonary_artery_tumors"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 195
 end_page: 205
-status: "verified_source"
----
+status: "verified_source"---
 
 # PULMONARY ARTERY TUMORS
 

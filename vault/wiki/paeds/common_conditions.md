@@ -1,11 +1,11 @@
 ---
 title: "COMMON CONDITIONS"
+concept_id: "common_conditions"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 58
 end_page: 67
-status: "verified_source"
----
+status: "verified_source"---
 
 # COMMON CONDITIONS
 

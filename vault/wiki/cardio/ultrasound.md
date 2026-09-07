@@ -1,9 +1,10 @@
 ---
 title: "Ultrasound"
+concept_id: "cardio_ultrasound"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["ultrasound"]---
 
 # Ultrasound
 

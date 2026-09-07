@@ -1,5 +1,6 @@
 ---
 title: "Magnetic Resonance: Perfusion Imaging"
+concept_id: "magnetic_resonance_perfusion_imaging"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "CBF) can be estimated by dividing CBV by MTT. DWI—a perfusion mismatch. Acute lacunar infarct."
----
+summary: "CBF) can be estimated by dividing CBV by MTT. DWI—a perfusion mismatch. Acute lacunar infarct."---
 
 # Magnetic Resonance: Perfusion Imaging
 

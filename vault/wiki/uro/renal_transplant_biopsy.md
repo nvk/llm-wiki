@@ -1,9 +1,9 @@
 ---
 title: "Renal Transplant Biopsy"
+concept_id: "renal_transplant_biopsy"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Renal Transplant Biopsy
 

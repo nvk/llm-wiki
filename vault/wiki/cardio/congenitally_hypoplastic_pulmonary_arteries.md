@@ -1,5 +1,6 @@
 ---
 title: "CONGENITALLY HYPOPLASTIC PULMONARY ARTERIES"
+concept_id: "congenitally_hypoplastic_pulmonary_arteries"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "congenital"]
 confidence: high
 status: "verified_source"
-summary: "Coronary artery calcifi cation. The open arrow points to the calcifi ed mitral annulus. Coronary artery calcifi cation."
----
+summary: "Coronary artery calcifi cation. The open arrow points to the calcifi ed mitral annulus. Coronary artery calcifi cation."---
 
 # CONGENITALLY HYPOPLASTIC PULMONARY ARTERIES
 

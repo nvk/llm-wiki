@@ -1,11 +1,11 @@
 ---
 title: "Treatment of Adverse Contrast Reactions"
+concept_id: "treatment_of_adverse_contrast_reactions"
 domain: "head_neck"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 36
 end_page: 38
-status: "verified_source"
----
+status: "verified_source"---
 
 # Treatment of Adverse Contrast Reactions
 

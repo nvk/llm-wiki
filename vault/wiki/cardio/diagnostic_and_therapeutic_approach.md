@@ -1,5 +1,6 @@
 ---
 title: "Diagnostic and Therapeutic Approach"
+concept_id: "diagnostic_and_therapeutic_approach"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "CT may provide additional useful ­information. Nosocomial bacterial infections (e. Opportunistic fungi (e."
----
+summary: "CT may provide additional useful ­information. Nosocomial bacterial infections (e. Opportunistic fungi (e."---
 
 # Diagnostic and Therapeutic Approach
 

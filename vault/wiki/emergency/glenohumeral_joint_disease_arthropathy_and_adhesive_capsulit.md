@@ -1,5 +1,6 @@
 ---
 title: "Glenohumeral Joint Disease (Arthropathy and Adhesive Capsulitis)"
+concept_id: "glenohumeral_joint_disease_arthropathy_and_adhesive_capsulit"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "infection"]
 confidence: high
 status: "verified_source"
-summary: "Spectrum of rotator cuff pathology seen on MR. There may be an associated joint effusion, although thisfinding is ­ variable. Spectrum of rotator cuff pathology on US."
----
+summary: "Spectrum of rotator cuff pathology seen on MR. There may be an associated joint effusion, although thisfinding is ­ variable. Spectrum of rotator cuff pathology on US."---
 
 # Glenohumeral Joint Disease (Arthropathy and Adhesive Capsulitis)
 

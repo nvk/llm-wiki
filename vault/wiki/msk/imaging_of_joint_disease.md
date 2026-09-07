@@ -1,9 +1,9 @@
 ---
 title: "Imaging Of Joint Disease"
+concept_id: "imaging_of_joint_disease"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Imaging of Joint Disease
 

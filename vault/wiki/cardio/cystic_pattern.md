@@ -1,11 +1,11 @@
 ---
 title: "Cystic Pattern"
+concept_id: "cystic_pattern"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 207
 end_page: 209
-status: "verified_source"
----
+status: "verified_source"---
 
 # Cystic Pattern
 

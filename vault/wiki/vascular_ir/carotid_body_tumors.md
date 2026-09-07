@@ -1,11 +1,11 @@
 ---
 title: "CAROTID BODY TUMORS"
+concept_id: "carotid_body_tumors"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 136
 end_page: 146
-status: "verified_source"
----
+status: "verified_source"---
 
 # CAROTID BODY TUMORS
 

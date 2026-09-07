@@ -1,5 +1,6 @@
 ---
 title: "Neonatal Pneumonia"
+concept_id: "emergency_neonatal_pneumonia"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -11,7 +12,7 @@ tags: ["radiology", "emergency", "infection"]
 confidence: high
 status: "verified_source"
 summary: "Group B streptococcus."
----
+aliases: ["neonatal_pneumonia"]---
 
 # Neonatal Pneumonia
 

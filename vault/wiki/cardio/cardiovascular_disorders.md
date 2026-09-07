@@ -1,11 +1,11 @@
 ---
 title: "Cardiovascular Disorders"
+concept_id: "cardiovascular_disorders"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 2008
 end_page: 2212
-status: "verified_source"
----
+status: "verified_source"---
 
 # Cardiovascular Disorders
 

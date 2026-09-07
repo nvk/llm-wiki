@@ -1,11 +1,11 @@
 ---
 title: "Image-Guided Percutaneous Biopsy"
+concept_id: "image_guided_percutaneous_biopsy"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 409
 end_page: 419
-status: "verified_source"
----
+status: "verified_source"---
 
 # Image-Guided Percutaneous Biopsy
 

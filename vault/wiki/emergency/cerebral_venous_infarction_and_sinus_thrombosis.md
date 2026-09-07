@@ -1,5 +1,6 @@
 ---
 title: "Cerebral Venous Infarction and Sinus Thrombosis"
+concept_id: "cerebral_venous_infarction_and_sinus_thrombosis"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "Perfusion CT—large mismatch. A, Noncontrast CT shows decreased density of left caudate head and putamen. Color functional maps are more easily interpreted on a color monitor."
----
+summary: "Perfusion CT—large mismatch. A, Noncontrast CT shows decreased density of left caudate head and putamen. Color functional maps are more easily interpreted on a color monitor."---
 
 # Cerebral Venous Infarction and Sinus Thrombosis
 

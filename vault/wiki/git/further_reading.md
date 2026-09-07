@@ -1,9 +1,10 @@
 ---
 title: "Further Reading"
+concept_id: "git_further_reading"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["further_reading"]---
 
 # Further Reading
 

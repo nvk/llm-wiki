@@ -1,9 +1,9 @@
 ---
 title: "7 Pulmonary Lobar Collapse"
+concept_id: "7_pulmonary_lobar_collapse"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 7 Pulmonary Lobar Collapse
 

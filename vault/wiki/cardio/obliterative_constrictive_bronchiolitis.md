@@ -1,9 +1,9 @@
 ---
 title: "Obliterative Constrictive Bronchiolitis"
+concept_id: "obliterative_constrictive_bronchiolitis"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Obliterative (Constrictive) Bronchiolitis
 

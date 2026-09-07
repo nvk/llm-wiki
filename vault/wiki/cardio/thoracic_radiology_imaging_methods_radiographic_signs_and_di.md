@@ -1,11 +1,11 @@
 ---
 title: "Thoracic Radiology: Imaging Methods, Radiographic Signs, and Diagnosis of Chest Disease"
+concept_id: "thoracic_radiology_imaging_methods_radiographic_signs_and_di"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 13
 end_page: 23
-status: "verified_source"
----
+status: "verified_source"---
 
 # Thoracic Radiology: Imaging Methods, Radiographic Signs, and Diagnosis of Chest Disease
 

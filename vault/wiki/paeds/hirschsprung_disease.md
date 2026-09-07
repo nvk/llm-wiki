@@ -1,5 +1,6 @@
 ---
 title: "Hirschsprung Disease"
+concept_id: "hirschsprung_disease"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "A, Conventional radiograph shows a “low” bowel obstruction. C, US scan shows multiple echogenic foci within the dilated bowel lumen. Distal intestinal obstruction syndrome (“meconium ileus equivalent”)."
----
+summary: "A, Conventional radiograph shows a “low” bowel obstruction. C, US scan shows multiple echogenic foci within the dilated bowel lumen. Distal intestinal obstruction syndrome (“meconium ileus equivalent”)."---
 
 # Hirschsprung Disease
 

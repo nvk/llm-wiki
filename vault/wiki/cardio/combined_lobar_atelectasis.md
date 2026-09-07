@@ -1,5 +1,6 @@
 ---
 title: "Combined Lobar Atelectasis"
+concept_id: "combined_lobar_atelectasis"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "CT of right upper lobe atelectasis. Left upper lobe collapse. The apex is aerated and occupied by the left lower lobe."
----
+summary: "CT of right upper lobe atelectasis. Left upper lobe collapse. The apex is aerated and occupied by the left lower lobe."---
 
 # Combined Lobar Atelectasis
 

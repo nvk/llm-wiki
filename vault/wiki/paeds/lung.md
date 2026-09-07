@@ -1,11 +1,11 @@
 ---
 title: "LUNG"
+concept_id: "lung"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 28
 end_page: 47
-status: "verified_source"
----
+status: "verified_source"---
 
 # LUNG
 

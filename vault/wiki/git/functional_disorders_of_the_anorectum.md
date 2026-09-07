@@ -1,9 +1,9 @@
 ---
 title: "Functional Disorders Of The Anorectum"
+concept_id: "functional_disorders_of_the_anorectum"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Functional Disorders of the Anorectum
 

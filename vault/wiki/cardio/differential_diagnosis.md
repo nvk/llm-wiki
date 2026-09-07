@@ -1,11 +1,11 @@
 ---
 title: "Differential Diagnosis"
+concept_id: "differential_diagnosis"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 354
 end_page: 356
-status: "verified_source"
----
+status: "verified_source"---
 
 # Differential Diagnosis
 

@@ -1,9 +1,9 @@
 ---
 title: "Patterns Of Lobar Collapse"
+concept_id: "patterns_of_lobar_collapse"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Patterns of Lobar Collapse
 

@@ -1,11 +1,11 @@
 ---
 title: "RENAL INTERVENTION"
+concept_id: "renal_intervention"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 510
 end_page: 521
-status: "verified_source"
----
+status: "verified_source"---
 
 # RENAL INTERVENTION
 

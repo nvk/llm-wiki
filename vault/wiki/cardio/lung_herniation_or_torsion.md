@@ -1,11 +1,11 @@
 ---
 title: "Lung Herniation Or Torsion"
+concept_id: "lung_herniation_or_torsion"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 182
 end_page: 192
-status: "verified_source"
----
+status: "verified_source"---
 
 # Lung Herniation Or Torsion
 

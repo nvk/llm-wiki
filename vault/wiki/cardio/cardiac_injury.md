@@ -1,11 +1,11 @@
 ---
 title: "Cardiac Injury"
+concept_id: "cardiac_injury"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 187
 end_page: 188
-status: "verified_source"
----
+status: "verified_source"---
 
 # Cardiac Injury
 

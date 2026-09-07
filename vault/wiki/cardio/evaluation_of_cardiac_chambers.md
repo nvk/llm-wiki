@@ -1,5 +1,6 @@
 ---
 title: "Evaluation of Cardiac Chambers"
+concept_id: "evaluation_of_cardiac_chambers"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "CATH) as it is being positioned along the interatrial septum. Obtained from parasternal long-axis view. LVID, left ventricular internal dimension."
----
+summary: "CATH) as it is being positioned along the interatrial septum. Obtained from parasternal long-axis view. LVID, left ventricular internal dimension."---
 
 # Evaluation of Cardiac Chambers
 

@@ -1,5 +1,6 @@
 ---
 title: "Nocardiosis"
+concept_id: "nocardiosis"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Chest wall involvement may occur but is rare. Aspergillus fumigatus."
----
+summary: "Chest wall involvement may occur but is rare. Aspergillus fumigatus."---
 
 # Nocardiosis
 

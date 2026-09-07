@@ -1,5 +1,6 @@
 ---
 title: "Airways"
+concept_id: "airways"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "MRI in the sagittal and coronal planes. MRI of a bronchogenic cyst. A, T1-weighted image shows low signal intensity of the right paratracheal mass."
----
+summary: "MRI in the sagittal and coronal planes. MRI of a bronchogenic cyst. A, T1-weighted image shows low signal intensity of the right paratracheal mass."---
 
 # Airways
 

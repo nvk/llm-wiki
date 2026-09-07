@@ -1,11 +1,11 @@
 ---
 title: "IMPROVING THE LUMEN"
+concept_id: "improving_the_lumen"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 91
 end_page: 117
-status: "verified_source"
----
+status: "verified_source"---
 
 # IMPROVING THE LUMEN
 

@@ -1,11 +1,11 @@
 ---
 title: "Examination Techniques And Indications"
+concept_id: "examination_techniques_and_indications"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 13
 end_page: 17
-status: "verified_source"
----
+status: "verified_source"---
 
 # Examination Techniques And Indications
 

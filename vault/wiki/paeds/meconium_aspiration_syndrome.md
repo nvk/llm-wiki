@@ -1,5 +1,6 @@
 ---
 title: "Meconium Aspiration Syndrome"
+concept_id: "paeds_meconium_aspiration_syndrome"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -11,7 +12,7 @@ tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
 summary: "Treatment is supportive and consists of antibiotics and oxygen. Neonatal pneumonia may be acquired in utero or perinatally. Transient tachypnea of a newborn."
----
+aliases: ["meconium_aspiration_syndrome"]---
 
 # Meconium Aspiration Syndrome
 

@@ -1,11 +1,12 @@
 ---
 title: "CHEST RADIOGRAPHY"
+concept_id: "emergency_chest_radiography"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 250
 end_page: 251
 status: "verified_source"
----
+aliases: ["chest_radiography"]---
 
 # CHEST RADIOGRAPHY
 

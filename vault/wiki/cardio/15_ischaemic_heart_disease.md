@@ -1,9 +1,9 @@
 ---
 title: "15 Ischaemic Heart Disease"
+concept_id: "15_ischaemic_heart_disease"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 15 Ischaemic Heart Disease
 

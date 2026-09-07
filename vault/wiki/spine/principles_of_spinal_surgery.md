@@ -1,11 +1,11 @@
 ---
 title: "Principles of Spinal Surgery"
+concept_id: "principles_of_spinal_surgery"
 domain: "spine"
 source_book: "Grainger & Allison's Diagnostic Radiology (7th Edition)"
 start_page: 1311
 end_page: 1312
-status: "verified_source"
----
+status: "verified_source"---
 
 # Principles of Spinal Surgery
 

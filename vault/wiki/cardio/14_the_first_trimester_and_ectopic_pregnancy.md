@@ -1,11 +1,11 @@
 ---
 title: "14. The First Trimester and Ectopic Pregnancy"
+concept_id: "14_the_first_trimester_and_ectopic_pregnancy"
 domain: "cardio"
 source_book: "Ultrasound: The Requisites"
 start_page: 484
 end_page: 518
-status: "verified_source"
----
+status: "verified_source"---
 
 # 14. The First Trimester and Ectopic Pregnancy
 

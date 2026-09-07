@@ -1,9 +1,9 @@
 ---
 title: "Prostate Biopsy"
+concept_id: "prostate_biopsy"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Prostate Biopsy
 

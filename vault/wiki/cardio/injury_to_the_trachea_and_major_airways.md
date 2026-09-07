@@ -1,11 +1,11 @@
 ---
 title: "Injury To The Trachea And Major Airways"
+concept_id: "injury_to_the_trachea_and_major_airways"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 174
 end_page: 175
-status: "verified_source"
----
+status: "verified_source"---
 
 # Injury To The Trachea And Major Airways
 

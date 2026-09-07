@@ -1,11 +1,11 @@
 ---
 title: "HEAD AND NECK TRAUMA"
+concept_id: "head_and_neck_trauma"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 52
 end_page: 59
-status: "verified_source"
----
+status: "verified_source"---
 
 # HEAD AND NECK TRAUMA
 

@@ -1,5 +1,6 @@
 ---
 title: "Nodules and Masses"
+concept_id: "nodules_and_masses"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "oncology"]
 confidence: high
 status: "verified_source"
-summary: "CT shows right lower lobe collapse. The lobe is collapsed posteriorly and medially along the posterior mediastinum and spine. It is usually dystrophic (i."
----
+summary: "CT shows right lower lobe collapse. The lobe is collapsed posteriorly and medially along the posterior mediastinum and spine. It is usually dystrophic (i."---
 
 # Nodules and Masses
 

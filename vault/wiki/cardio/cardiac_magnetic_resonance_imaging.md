@@ -1,11 +1,11 @@
 ---
 title: "Cardiac Magnetic Resonance Imaging"
+concept_id: "cardiac_magnetic_resonance_imaging"
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
 start_page: 83
 end_page: 119
-status: "verified_source"
----
+status: "verified_source"---
 
 # Cardiac Magnetic Resonance Imaging
 

@@ -1,11 +1,11 @@
 ---
 title: "Thoracic Aorta"
+concept_id: "thoracic_aorta"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 200
 end_page: 210
-status: "verified_source"
----
+status: "verified_source"---
 
 # Thoracic Aorta
 

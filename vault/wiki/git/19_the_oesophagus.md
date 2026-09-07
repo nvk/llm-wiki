@@ -1,9 +1,9 @@
 ---
 title: "19 The Oesophagus"
+concept_id: "19_the_oesophagus"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 19 The Oesophagus
 

@@ -1,9 +1,9 @@
 ---
 title: "Diverticulitis"
+concept_id: "diverticulitis"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Diverticulitis
 

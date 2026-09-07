@@ -1,9 +1,9 @@
 ---
 title: "16 Pulmonary Circulation And Pulmonary Thromboembolism"
+concept_id: "16_pulmonary_circulation_and_pulmonary_thromboembolism"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 16 Pulmonary Circulation and Pulmonary Thromboembolism
 

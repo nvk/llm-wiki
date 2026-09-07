@@ -1,9 +1,9 @@
 ---
 title: "Nodal Staging"
+concept_id: "nodal_staging"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Nodal Staging
 

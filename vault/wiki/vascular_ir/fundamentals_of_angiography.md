@@ -1,11 +1,11 @@
 ---
 title: "Fundamentals of Angiography"
+concept_id: "fundamentals_of_angiography"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 48
 end_page: 58
-status: "verified_source"
----
+status: "verified_source"---
 
 # Fundamentals of Angiography
 

@@ -1,9 +1,9 @@
 ---
 title: "Techniques For Imaging The Brain And Cerebral Vasculature"
+concept_id: "techniques_for_imaging_the_brain_and_cerebral_vasculature"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Techniques for Imaging the Brain and Cerebral Vasculature
 

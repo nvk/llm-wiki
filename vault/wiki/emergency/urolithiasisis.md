@@ -1,5 +1,6 @@
 ---
 title: "Urolithiasisis"
+concept_id: "urolithiasisis"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "A dilated urinary collecting system is not always obstructed. UVJ obstruction can occur). This infant has a scrotal hernia."
----
+summary: "A dilated urinary collecting system is not always obstructed. UVJ obstruction can occur). This infant has a scrotal hernia."---
 
 # Urolithiasisis
 

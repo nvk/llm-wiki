@@ -1,11 +1,11 @@
 ---
 title: "Carotid and Vertebral Arteries"
+concept_id: "carotid_and_vertebral_arteries"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 122
 end_page: 132
-status: "verified_source"
----
+status: "verified_source"---
 
 # Carotid and Vertebral Arteries
 

@@ -1,11 +1,11 @@
 ---
 title: "SPECIAL CONSIDERATIONS"
+concept_id: "special_considerations"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 175
 end_page: 175
-status: "verified_source"
----
+status: "verified_source"---
 
 # SPECIAL CONSIDERATIONS
 

@@ -1,11 +1,11 @@
 ---
 title: "PERCUTANEOUS CECOSTOMY"
+concept_id: "percutaneous_cecostomy"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 460
 end_page: 471
-status: "verified_source"
----
+status: "verified_source"---
 
 # PERCUTANEOUS CECOSTOMY
 

@@ -1,9 +1,10 @@
 ---
 title: "Anatomy"
+concept_id: "git_anatomy"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["anatomy"]---
 
 # Anatomy
 

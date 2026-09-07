@@ -1,5 +1,6 @@
 ---
 title: "The Normal Doppler Examination"
+concept_id: "the_normal_doppler_examination"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "RSPV, right superior pulmonary vein. TG, transgastric; UE, upper esophageal. J Am Soc Echocardiogr 12:887, 1999."
----
+summary: "RSPV, right superior pulmonary vein. TG, transgastric; UE, upper esophageal. J Am Soc Echocardiogr 12:887, 1999."---
 
 # The Normal Doppler Examination
 

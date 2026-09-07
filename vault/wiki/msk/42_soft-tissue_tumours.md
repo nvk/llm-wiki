@@ -1,9 +1,9 @@
 ---
 title: "42 Soft-Tissue Tumours"
+concept_id: "42_soft-tissue_tumours"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 42 Soft-Tissue Tumours
 

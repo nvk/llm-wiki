@@ -1,5 +1,6 @@
 ---
 title: "Acute Osteomyelitis"
+concept_id: "acute_osteomyelitis"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "infection"]
 confidence: high
 status: "verified_source"
-summary: "Musculoskeletal infection is a common clinical problem. Rheumatoid arthritis, hip involvement. Ankylosing spondylitis."
----
+summary: "Musculoskeletal infection is a common clinical problem. Rheumatoid arthritis, hip involvement. Ankylosing spondylitis."---
 
 # Acute Osteomyelitis
 

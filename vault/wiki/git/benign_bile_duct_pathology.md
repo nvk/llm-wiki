@@ -1,9 +1,9 @@
 ---
 title: "Benign Bile Duct Pathology"
+concept_id: "benign_bile_duct_pathology"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Benign Bile Duct Pathology
 

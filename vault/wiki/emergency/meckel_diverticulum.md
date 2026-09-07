@@ -1,5 +1,6 @@
 ---
 title: "Meckel Diverticulum"
+concept_id: "emergency_meckel_diverticulum"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -11,7 +12,7 @@ tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
 summary: "Meckel’s is more common in males. Meckel’s diverticulum are symptomatic. Omental infarction most often occurs in obese children."
----
+aliases: ["meckel_diverticulum"]---
 
 # Meckel Diverticulum
 

@@ -1,5 +1,6 @@
 ---
 title: "Viral Infection"
+concept_id: "viral_infection"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "infection"]
 confidence: high
 status: "verified_source"
-summary: "HIV-positive patients. Kaposi’s sarcoma herpesvirus. CD4 count = 100 cells/mm3)."
----
+summary: "HIV-positive patients. Kaposi’s sarcoma herpesvirus. CD4 count = 100 cells/mm3)."---
 
 # Viral Infection
 

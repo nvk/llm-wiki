@@ -1,11 +1,11 @@
 ---
 title: "10. Neck and Chest"
+concept_id: "10_neck_and_chest"
 domain: "cardio"
 source_book: "Ultrasound: The Requisites"
 start_page: 362
 end_page: 417
-status: "verified_source"
----
+status: "verified_source"---
 
 # 10. Neck and Chest
 

@@ -1,5 +1,6 @@
 ---
 title: "Posterior Dislocation"
+concept_id: "posterior_dislocation"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "The Hill-Sachs fracture (Fig. Posterior dislocations of the glenohumeral joint (Fig. Posterior shoulder dislocation."
----
+summary: "The Hill-Sachs fracture (Fig. Posterior dislocations of the glenohumeral joint (Fig. Posterior shoulder dislocation."---
 
 # Posterior Dislocation
 

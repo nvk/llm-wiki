@@ -1,11 +1,11 @@
 ---
 title: "LOWER EXTREMIT"
+concept_id: "lower_extremit"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 153
 end_page: 174
-status: "verified_source"
----
+status: "verified_source"---
 
 # LOWER EXTREMIT
 

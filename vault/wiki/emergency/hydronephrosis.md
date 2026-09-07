@@ -1,5 +1,6 @@
 ---
 title: "Hydronephrosis"
+concept_id: "hydronephrosis"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "Omental infarction most often occurs in obese children. VCUG or radionuclide cystogram (RNC). Urothelial thickening is often present."
----
+summary: "Omental infarction most often occurs in obese children. VCUG or radionuclide cystogram (RNC). Urothelial thickening is often present."---
 
 # Hydronephrosis
 

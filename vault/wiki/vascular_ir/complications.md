@@ -1,11 +1,11 @@
 ---
 title: "COMPLICATIONS"
+concept_id: "complications"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 581
 end_page: 581
-status: "verified_source"
----
+status: "verified_source"---
 
 # COMPLICATIONS
 

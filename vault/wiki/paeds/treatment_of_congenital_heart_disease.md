@@ -1,5 +1,6 @@
 ---
 title: "Treatment of Congenital Heart Disease"
+concept_id: "treatment_of_congenital_heart_disease"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds", "congenital"]
 confidence: high
 status: "verified_source"
-summary: "Pulmonary atresia with VSD. TGA with pulmonary stenosis. Truncus arteriosus with pulmonary stenosis."
----
+summary: "Pulmonary atresia with VSD. TGA with pulmonary stenosis. Truncus arteriosus with pulmonary stenosis."---
 
 # Treatment of Congenital Heart Disease
 

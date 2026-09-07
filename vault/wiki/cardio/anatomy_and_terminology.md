@@ -1,11 +1,11 @@
 ---
 title: "Anatomy and Terminology"
+concept_id: "anatomy_and_terminology"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 318
 end_page: 328
-status: "verified_source"
----
+status: "verified_source"---
 
 # Anatomy and Terminology
 

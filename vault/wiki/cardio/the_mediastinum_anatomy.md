@@ -1,11 +1,11 @@
 ---
 title: "The Mediastinum: Anatomy"
+concept_id: "the_mediastinum_anatomy"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 351
 end_page: 361
-status: "verified_source"
----
+status: "verified_source"---
 
 # The Mediastinum: Anatomy
 

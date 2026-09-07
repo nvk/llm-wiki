@@ -1,11 +1,11 @@
 ---
 title: "PERCUTANEOUS VERTEBROPLASTY"
+concept_id: "percutaneous_vertebroplasty"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 562
 end_page: 564
-status: "verified_source"
----
+status: "verified_source"---
 
 # PERCUTANEOUS VERTEBROPLASTY
 

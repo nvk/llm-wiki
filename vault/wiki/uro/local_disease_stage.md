@@ -1,9 +1,9 @@
 ---
 title: "Local Disease Stage"
+concept_id: "local_disease_stage"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Local Disease Stage
 

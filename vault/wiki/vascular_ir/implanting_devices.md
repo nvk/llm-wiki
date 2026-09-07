@@ -1,11 +1,11 @@
 ---
 title: "IMPLANTING DEVICES"
+concept_id: "implanting_devices"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 118
 end_page: 128
-status: "verified_source"
----
+status: "verified_source"---
 
 # IMPLANTING DEVICES
 

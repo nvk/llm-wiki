@@ -1,9 +1,9 @@
 ---
 title: "Section C The Musculoskeletal System"
+concept_id: "section_c_the_musculoskeletal_system"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # SECTION C The Musculoskeletal System
 

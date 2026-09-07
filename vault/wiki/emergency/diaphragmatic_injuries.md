@@ -1,11 +1,11 @@
 ---
 title: "DIAPHRAGMATIC INJURIES"
+concept_id: "diaphragmatic_injuries"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 86
 end_page: 89
-status: "verified_source"
----
+status: "verified_source"---
 
 # DIAPHRAGMATIC INJURIES
 

@@ -1,11 +1,11 @@
 ---
 title: "Pericardial and Myocardial Disease"
+concept_id: "pericardial_and_myocardial_disease"
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
 start_page: 279
 end_page: 310
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pericardial and Myocardial Disease
 

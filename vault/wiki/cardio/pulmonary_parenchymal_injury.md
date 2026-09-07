@@ -1,11 +1,11 @@
 ---
 title: "Pulmonary Parenchymal Injury"
+concept_id: "pulmonary_parenchymal_injury"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 180
 end_page: 180
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pulmonary Parenchymal Injury
 

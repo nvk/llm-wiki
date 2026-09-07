@@ -1,11 +1,11 @@
 ---
 title: "IMAGE-GUIDED BREAST BIOPSY"
+concept_id: "image_guided_breast_biopsy"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 534
 end_page: 543
-status: "verified_source"
----
+status: "verified_source"---
 
 # IMAGE-GUIDED BREAST BIOPSY
 

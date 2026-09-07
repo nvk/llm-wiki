@@ -1,11 +1,11 @@
 ---
 title: "MALE DISORDERS"
+concept_id: "male_disorders"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 326
 end_page: 328
-status: "verified_source"
----
+status: "verified_source"---
 
 # MALE DISORDERS
 

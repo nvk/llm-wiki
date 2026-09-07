@@ -1,5 +1,6 @@
 ---
 title: "Placement of Tubes"
+concept_id: "placement_of_tubes"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "MR cholangiopancreatography. GER, and tube migration."
----
+summary: "MR cholangiopancreatography. GER, and tube migration."---
 
 # Placement of Tubes
 

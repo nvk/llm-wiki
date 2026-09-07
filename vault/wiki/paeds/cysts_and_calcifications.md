@@ -1,11 +1,11 @@
 ---
 title: "CYSTS AND CALCIFICATIONS"
+concept_id: "cysts_and_calcifications"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 145
 end_page: 148
-status: "verified_source"
----
+status: "verified_source"---
 
 # CYSTS AND CALCIFICATIONS
 

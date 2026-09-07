@@ -1,5 +1,6 @@
 ---
 title: "Acromioclavicular Joint Disease (Osteolysis and Osteoarthritis)"
+concept_id: "acromioclavicular_joint_disease_osteolysis_and_osteoarthriti"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "infection"]
 confidence: high
 status: "verified_source"
-summary: "TE sequences (T1 and proton density). Chronic rotator cuff tear indirect signs. Potential anatomic sources of impingement."
----
+summary: "TE sequences (T1 and proton density). Chronic rotator cuff tear indirect signs. Potential anatomic sources of impingement."---
 
 # Acromioclavicular Joint Disease (Osteolysis and Osteoarthritis)
 

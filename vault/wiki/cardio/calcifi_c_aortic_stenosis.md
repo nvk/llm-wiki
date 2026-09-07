@@ -1,5 +1,6 @@
 ---
 title: "Calcifi c Aortic Stenosis"
+concept_id: "calcifi_c_aortic_stenosis"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "vascular"]
 confidence: high
 status: "verified_source"
-summary: "Posterior displacement of the left main stem bronchus. Aortic calcifi cation may have a specifi c appearance. The mitral valve ring may calcify in individuals over age 60."
----
+summary: "Posterior displacement of the left main stem bronchus. Aortic calcifi cation may have a specifi c appearance. The mitral valve ring may calcify in individuals over age 60."---
 
 # Calcifi c Aortic Stenosis
 

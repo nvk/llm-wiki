@@ -1,11 +1,11 @@
 ---
 title: "LIVER TRANSPLANTATION"
+concept_id: "liver_transplantation"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 277
 end_page: 277
-status: "verified_source"
----
+status: "verified_source"---
 
 # LIVER TRANSPLANTATION
 

@@ -1,11 +1,11 @@
 ---
 title: "Diffuse Mediastinal Abnormalities"
+concept_id: "diffuse_mediastinal_abnormalities"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 381
 end_page: 391
-status: "verified_source"
----
+status: "verified_source"---
 
 # Diffuse Mediastinal Abnormalities
 

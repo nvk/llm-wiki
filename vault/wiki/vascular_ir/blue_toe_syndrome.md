@@ -1,11 +1,11 @@
 ---
 title: "BLUE TOE SYNDROME"
+concept_id: "blue_toe_syndrome"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 376
 end_page: 376
-status: "verified_source"
----
+status: "verified_source"---
 
 # BLUE TOE SYNDROME
 

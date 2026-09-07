@@ -1,5 +1,6 @@
 ---
 title: "Pericardial Absence and Pericardial Cysts"
+concept_id: "pericardial_absence_and_pericardial_cysts"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "LA appendage and main PA. Pericardial cysts can be true or false. Its peak incidence is between 1 and 3 years of age."
----
+summary: "LA appendage and main PA. Pericardial cysts can be true or false. Its peak incidence is between 1 and 3 years of age."---
 
 # Pericardial Absence and Pericardial Cysts
 

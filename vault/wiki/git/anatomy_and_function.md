@@ -1,9 +1,9 @@
 ---
 title: "Anatomy And Function"
+concept_id: "anatomy_and_function"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Anatomy and Function
 

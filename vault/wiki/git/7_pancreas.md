@@ -1,11 +1,11 @@
 ---
 title: "7. Pancreas"
+concept_id: "7_pancreas"
 domain: "git"
 source_book: "Ultrasound: The Requisites"
 start_page: 286
 end_page: 306
-status: "verified_source"
----
+status: "verified_source"---
 
 # 7. Pancreas
 

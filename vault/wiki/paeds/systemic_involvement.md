@@ -1,5 +1,6 @@
 ---
 title: "Systemic Involvement"
+concept_id: "systemic_involvement"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Klippel-Feil syndrome (Fig. The shape of the rib cage can be helpful. LCH) and multiple hereditary osteochondromatosis."
----
+summary: "Klippel-Feil syndrome (Fig. The shape of the rib cage can be helpful. LCH) and multiple hereditary osteochondromatosis."---
 
 # Systemic Involvement
 

@@ -1,11 +1,11 @@
 ---
 title: "RHYZOLYSIS: RADIOFREQUENCY NEUROTOMY OF THE ZYGAPOPHYSIAL JOINTS"
+concept_id: "rhyzolysis_radiofrequency_neurotomy_of_the_zygapophysial_joi"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 554
 end_page: 554
-status: "verified_source"
----
+status: "verified_source"---
 
 # RHYZOLYSIS: RADIOFREQUENCY NEUROTOMY OF THE ZYGAPOPHYSIAL JOINTS
 

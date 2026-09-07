@@ -1,5 +1,6 @@
 ---
 title: "Diagnosis Retrograde Urethrogram"
+concept_id: "diagnosis_retrograde_urethrogram"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "CT images are mandatory. Injury of the adrenal gland is uncommon. Complex renal injury with active contrast extravasation."
----
+summary: "CT images are mandatory. Injury of the adrenal gland is uncommon. Complex renal injury with active contrast extravasation."---
 
 # Diagnosis Retrograde Urethrogram
 

@@ -1,11 +1,11 @@
 ---
 title: "Atypical Pneumonia Syndrome"
+concept_id: "atypical_pneumonia_syndrome"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 104
 end_page: 105
-status: "verified_source"
----
+status: "verified_source"---
 
 # Atypical Pneumonia Syndrome
 

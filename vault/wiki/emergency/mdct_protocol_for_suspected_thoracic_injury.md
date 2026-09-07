@@ -1,11 +1,11 @@
 ---
 title: "MDCT PROTOCOL FOR SUSPECTED THORACIC INJURY"
+concept_id: "mdct_protocol_for_suspected_thoracic_injury"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 76
 end_page: 86
-status: "verified_source"
----
+status: "verified_source"---
 
 # MDCT PROTOCOL FOR SUSPECTED THORACIC INJURY
 

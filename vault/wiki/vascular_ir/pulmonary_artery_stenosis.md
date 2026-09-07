@@ -1,11 +1,11 @@
 ---
 title: "PULMONARY ARTERY STENOSIS"
+concept_id: "pulmonary_artery_stenosis"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 192
 end_page: 202
-status: "verified_source"
----
+status: "verified_source"---
 
 # PULMONARY ARTERY STENOSIS
 

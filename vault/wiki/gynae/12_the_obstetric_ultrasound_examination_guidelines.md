@@ -1,11 +1,11 @@
 ---
 title: "12. The Obstetric Ultrasound Examination : Guidelines *"
+concept_id: "12_the_obstetric_ultrasound_examination_guidelines"
 domain: "gynae"
 source_book: "Ultrasound: The Requisites"
 start_page: 453
 end_page: 473
-status: "verified_source"
----
+status: "verified_source"---
 
 # 12. The Obstetric Ultrasound Examination : Guidelines *
 

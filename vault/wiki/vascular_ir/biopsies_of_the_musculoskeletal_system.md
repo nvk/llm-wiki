@@ -1,11 +1,11 @@
 ---
 title: "BIOPSIES OF THE MUSCULOSKELETAL SYSTEM"
+concept_id: "biopsies_of_the_musculoskeletal_system"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 551
 end_page: 552
-status: "verified_source"
----
+status: "verified_source"---
 
 # BIOPSIES OF THE MUSCULOSKELETAL SYSTEM
 

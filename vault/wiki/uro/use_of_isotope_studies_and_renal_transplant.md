@@ -1,9 +1,9 @@
 ---
 title: "Use Of Isotope Studies And Renal Transplant"
+concept_id: "use_of_isotope_studies_and_renal_transplant"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Use of Isotope Studies and Renal Transplant
 

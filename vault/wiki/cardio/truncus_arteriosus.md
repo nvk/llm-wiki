@@ -1,5 +1,6 @@
 ---
 title: "Truncus Arteriosus"
+concept_id: "truncus_arteriosus"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "A) Parasternal echocardiographic images in a patient with tetralogy of Fallot. The main pulmonary artery (MPA) is small. The pulmonary valve (PV) is dysplastic and thickened."
----
+summary: "A) Parasternal echocardiographic images in a patient with tetralogy of Fallot. The main pulmonary artery (MPA) is small. The pulmonary valve (PV) is dysplastic and thickened."---
 
 # Truncus Arteriosus
 

@@ -1,9 +1,9 @@
 ---
 title: "18 Current Status Of Imaging Of The Gastrointestinal Tract"
+concept_id: "18_current_status_of_imaging_of_the_gastrointestinal_tract"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 18 Current Status of Imaging of the Gastrointestinal Tract
 

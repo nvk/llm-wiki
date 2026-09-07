@@ -1,11 +1,11 @@
 ---
 title: "MUSCULOSKELETAL SYSTEM"
+concept_id: "musculoskeletal_system"
 domain: "msk"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 42
 end_page: 52
-status: "verified_source"
----
+status: "verified_source"---
 
 # MUSCULOSKELETAL SYSTEM
 

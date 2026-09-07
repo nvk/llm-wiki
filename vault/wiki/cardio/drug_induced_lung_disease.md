@@ -1,11 +1,11 @@
 ---
 title: "Drug-Induced Lung Disease"
+concept_id: "drug_induced_lung_disease"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 245
 end_page: 248
-status: "verified_source"
----
+status: "verified_source"---
 
 # Drug-Induced Lung Disease
 

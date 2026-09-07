@@ -1,11 +1,11 @@
 ---
 title: "Viral Pneumonias"
+concept_id: "viral_pneumonias"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 106
 end_page: 107
-status: "verified_source"
----
+status: "verified_source"---
 
 # Viral Pneumonias
 

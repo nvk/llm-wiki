@@ -1,11 +1,11 @@
 ---
 title: "Traumatic and Nontraumatic Spine Emergencies"
+concept_id: "traumatic_and_nontraumatic_spine_emergencies"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 231
 end_page: 241
-status: "verified_source"
----
+status: "verified_source"---
 
 # Traumatic and Nontraumatic Spine Emergencies
 

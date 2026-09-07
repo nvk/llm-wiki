@@ -1,11 +1,11 @@
 ---
 title: "ANATOMY RELEVANT TO PERCUTANEOUS GENITOURINARY INTERVENTION"
+concept_id: "anatomy_relevant_to_percutaneous_genitourinary_intervention"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 508
 end_page: 509
-status: "verified_source"
----
+status: "verified_source"---
 
 # ANATOMY RELEVANT TO PERCUTANEOUS GENITOURINARY INTERVENTION
 

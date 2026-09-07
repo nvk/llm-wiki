@@ -1,11 +1,11 @@
 ---
 title: "Vascular Pathology"
+concept_id: "vascular_pathology"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 24
 end_page: 34
-status: "verified_source"
----
+status: "verified_source"---
 
 # Vascular Pathology
 

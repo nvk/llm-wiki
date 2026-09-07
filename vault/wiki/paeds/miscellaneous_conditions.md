@@ -1,11 +1,12 @@
 ---
 title: "MISCELLANEOUS CONDITIONS"
+concept_id: "paeds_miscellaneous_conditions"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 68
 end_page: 68
 status: "verified_source"
----
+aliases: ["miscellaneous_conditions"]---
 
 # MISCELLANEOUS CONDITIONS
 

@@ -1,11 +1,11 @@
 ---
 title: "TRAUMATIC SPINE INJURY"
+concept_id: "traumatic_spine_injury"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 231
 end_page: 241
-status: "verified_source"
----
+status: "verified_source"---
 
 # TRAUMATIC SPINE INJURY
 

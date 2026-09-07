@@ -1,11 +1,11 @@
 ---
 title: "1. Practical Physics"
+concept_id: "1_practical_physics"
 domain: "physics_nuclear"
 source_book: "Ultrasound: The Requisites"
 start_page: 15
 end_page: 52
-status: "verified_source"
----
+status: "verified_source"---
 
 # 1. Practical Physics
 

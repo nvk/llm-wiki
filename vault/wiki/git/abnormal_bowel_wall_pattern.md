@@ -1,9 +1,9 @@
 ---
 title: "Abnormal Bowel Wall Pattern"
+concept_id: "abnormal_bowel_wall_pattern"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Abnormal Bowel Wall Pattern
 

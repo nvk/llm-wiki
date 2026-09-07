@@ -1,9 +1,10 @@
 ---
 title: "Stroke"
+concept_id: "neuro_stroke"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["stroke"]---
 
 # Stroke
 

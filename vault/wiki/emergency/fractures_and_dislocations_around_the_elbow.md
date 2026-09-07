@@ -1,5 +1,6 @@
 ---
 title: "Fractures and Dislocations Around the elbow"
+concept_id: "fractures_and_dislocations_around_the_elbow"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "One-part fractures (Fig. A) are nondisplaced or minimally displaced fractures."
----
+summary: "One-part fractures (Fig. A) are nondisplaced or minimally displaced fractures."---
 
 # Fractures and Dislocations Around the elbow
 

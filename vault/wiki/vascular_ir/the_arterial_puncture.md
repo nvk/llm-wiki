@@ -1,11 +1,11 @@
 ---
 title: "THE ARTERIAL PUNCTURE"
+concept_id: "the_arterial_puncture"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 63
 end_page: 68
-status: "verified_source"
----
+status: "verified_source"---
 
 # THE ARTERIAL PUNCTURE
 

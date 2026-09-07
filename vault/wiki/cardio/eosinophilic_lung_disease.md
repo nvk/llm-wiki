@@ -1,11 +1,11 @@
 ---
 title: "Eosinophilic Lung Disease"
+concept_id: "eosinophilic_lung_disease"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 239
 end_page: 241
-status: "verified_source"
----
+status: "verified_source"---
 
 # Eosinophilic Lung Disease
 

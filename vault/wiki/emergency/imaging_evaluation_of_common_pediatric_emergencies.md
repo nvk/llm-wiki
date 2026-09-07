@@ -1,11 +1,11 @@
 ---
 title: "Imaging Evaluation of Common Pediatric Emergencies"
+concept_id: "imaging_evaluation_of_common_pediatric_emergencies"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 199
 end_page: 209
-status: "verified_source"
----
+status: "verified_source"---
 
 # Imaging Evaluation of Common Pediatric Emergencies
 

@@ -1,9 +1,9 @@
 ---
 title: "Coronary Artery Imaging"
+concept_id: "coronary_artery_imaging"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Coronary Artery Imaging
 

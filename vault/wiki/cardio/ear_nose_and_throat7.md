@@ -1,11 +1,11 @@
 ---
 title: "EAR, NOSE AND THROAT7"
+concept_id: "ear_nose_and_throat7"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 1150
 end_page: 1160
-status: "verified_source"
----
+status: "verified_source"---
 
 # EAR, NOSE AND THROAT7
 

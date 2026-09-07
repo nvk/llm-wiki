@@ -1,11 +1,12 @@
 ---
 title: "Congenital Heart Disease"
+concept_id: "cardio_congenital_heart_disease"
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
 start_page: 311
 end_page: 390
 status: "verified_source"
----
+aliases: ["congenital_heart_disease"]---
 
 # Congenital Heart Disease
 

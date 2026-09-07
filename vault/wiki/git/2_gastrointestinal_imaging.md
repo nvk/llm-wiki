@@ -1,11 +1,11 @@
 ---
 title: "2. Gastrointestinal Imaging"
+concept_id: "2_gastrointestinal_imaging"
 domain: "git"
 source_book: "Core Radiology (Jacob)"
 start_page: 98
 end_page: 167
-status: "verified_source"
----
+status: "verified_source"---
 
 # 2. Gastrointestinal Imaging
 

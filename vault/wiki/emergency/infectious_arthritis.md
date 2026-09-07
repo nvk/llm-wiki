@@ -1,5 +1,6 @@
 ---
 title: "Infectious Arthritis"
+concept_id: "infectious_arthritis"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "infection"]
 confidence: high
 status: "verified_source"
-summary: "PVNS typically do not. Note the destructive changes on both sides of the joint (arrows). Musculoskeletal infection is a common clinical problem."
----
+summary: "PVNS typically do not. Note the destructive changes on both sides of the joint (arrows). Musculoskeletal infection is a common clinical problem."---
 
 # Infectious Arthritis
 

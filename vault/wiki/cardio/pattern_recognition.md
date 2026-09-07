@@ -1,11 +1,11 @@
 ---
 title: "Pattern Recognition"
+concept_id: "pattern_recognition"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 194
 end_page: 194
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pattern Recognition
 

@@ -1,11 +1,11 @@
 ---
 title: "22. Chromosome Abnormalities : Assessment for Aneuploidy"
+concept_id: "22_chromosome_abnormalities_assessment_for_aneuploidy"
 domain: "head_neck"
 source_book: "Ultrasound: The Requisites"
 start_page: 694
 end_page: 708
-status: "verified_source"
----
+status: "verified_source"---
 
 # 22. Chromosome Abnormalities : Assessment for Aneuploidy
 

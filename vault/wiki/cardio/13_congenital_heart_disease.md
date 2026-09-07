@@ -1,9 +1,9 @@
 ---
 title: "13 Congenital Heart Disease"
+concept_id: "13_congenital_heart_disease"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 13 Congenital Heart Disease
 

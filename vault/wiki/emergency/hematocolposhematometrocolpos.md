@@ -1,5 +1,6 @@
 ---
 title: "Hematocolpos/Hematometrocolpos"
+concept_id: "hematocolposhematometrocolpos"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "Physiologic ovarian follicles measure less than 3. Most hemorrhagic cysts measure 3. In some cases, the hemoperitoneum may be massive."
----
+summary: "Physiologic ovarian follicles measure less than 3. Most hemorrhagic cysts measure 3. In some cases, the hemoperitoneum may be massive."---
 
 # Hematocolpos/Hematometrocolpos
 

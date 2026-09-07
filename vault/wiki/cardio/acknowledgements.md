@@ -1,11 +1,12 @@
 ---
 title: "Acknowledgements"
+concept_id: "cardio_acknowledgements"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 9
 end_page: 9
 status: "verified_source"
----
+aliases: ["acknowledgements"]---
 
 # Acknowledgements
 

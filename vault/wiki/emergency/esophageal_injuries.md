@@ -1,11 +1,11 @@
 ---
 title: "ESOPHAGEAL INJURIES"
+concept_id: "esophageal_injuries"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 76
 end_page: 77
-status: "verified_source"
----
+status: "verified_source"---
 
 # ESOPHAGEAL INJURIES
 

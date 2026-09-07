@@ -1,11 +1,11 @@
 ---
 title: "MEDIASTINUM"
+concept_id: "mediastinum"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 48
 end_page: 54
-status: "verified_source"
----
+status: "verified_source"---
 
 # MEDIASTINUM
 

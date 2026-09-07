@@ -1,11 +1,11 @@
 ---
 title: "Vascular and Interventional Radiology"
+concept_id: "vascular_and_interventional_radiology"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 4
 end_page: 4
-status: "verified_source"
----
+status: "verified_source"---
 
 # Vascular and Interventional Radiology
 

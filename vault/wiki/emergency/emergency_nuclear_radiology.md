@@ -1,11 +1,11 @@
 ---
 title: "Emergency Nuclear Radiology"
+concept_id: "emergency_nuclear_radiology"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 377
 end_page: 387
-status: "verified_source"
----
+status: "verified_source"---
 
 # Emergency Nuclear Radiology
 

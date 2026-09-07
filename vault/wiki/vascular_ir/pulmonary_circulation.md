@@ -1,11 +1,12 @@
 ---
 title: "Pulmonary Circulation"
+concept_id: "vascular_ir_pulmonary_circulation"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 182
 end_page: 192
 status: "verified_source"
----
+aliases: ["pulmonary_circulation"]---
 
 # Pulmonary Circulation
 

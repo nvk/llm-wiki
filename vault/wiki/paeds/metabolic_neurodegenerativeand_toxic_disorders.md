@@ -1,11 +1,11 @@
 ---
 title: "METABOLIC, NEURODEGENERATIVE,AND TOXIC DISORDERS"
+concept_id: "metabolic_neurodegenerativeand_toxic_disorders"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 272
 end_page: 278
-status: "verified_source"
----
+status: "verified_source"---
 
 # METABOLIC, NEURODEGENERATIVE,AND TOXIC DISORDERS
 

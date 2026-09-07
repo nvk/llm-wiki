@@ -1,11 +1,11 @@
 ---
 title: "THE THORACIC AORTA"
+concept_id: "the_thoracic_aorta"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 262
 end_page: 268
-status: "verified_source"
----
+status: "verified_source"---
 
 # THE THORACIC AORTA
 

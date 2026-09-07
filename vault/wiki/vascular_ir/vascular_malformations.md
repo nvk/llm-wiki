@@ -1,11 +1,11 @@
 ---
 title: "VASCULAR MALFORMATIONS"
+concept_id: "vascular_malformations"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 282
 end_page: 282
-status: "verified_source"
----
+status: "verified_source"---
 
 # VASCULAR MALFORMATIONS
 

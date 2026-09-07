@@ -1,5 +1,6 @@
 ---
 title: "Retained Fetal Lung Liquid (Transient Tachypnea of the Newborn)"
+concept_id: "retained_fetal_lung_liquid_transient_tachypnea_of_the_newbor"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Treatment is supportive and consists of antibiotics and oxygen. Neonatal pneumonia may be acquired in utero or perinatally. Transient tachypnea of a newborn."
----
+summary: "Treatment is supportive and consists of antibiotics and oxygen. Neonatal pneumonia may be acquired in utero or perinatally. Transient tachypnea of a newborn."---
 
 # Retained Fetal Lung Liquid (Transient Tachypnea of the Newborn)
 

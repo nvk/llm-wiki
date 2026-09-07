@@ -1,5 +1,6 @@
 ---
 title: "Positron Emission Tomography"
+concept_id: "positron_emission_tomography"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Early metastases in small nodes are not detected by CT. PET because of camera resolution. Helical CT scan principle."
----
+summary: "Early metastases in small nodes are not detected by CT. PET because of camera resolution. Helical CT scan principle."---
 
 # Positron Emission Tomography
 

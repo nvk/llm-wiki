@@ -1,11 +1,11 @@
 ---
 title: "Coal Worker’S Pneumoconiosis"
+concept_id: "coal_workers_pneumoconiosis"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 217
 end_page: 217
-status: "verified_source"
----
+status: "verified_source"---
 
 # Coal Worker’S Pneumoconiosis
 

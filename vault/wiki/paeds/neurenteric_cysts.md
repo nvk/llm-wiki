@@ -1,5 +1,6 @@
 ---
 title: "Neurenteric Cysts"
+concept_id: "neurenteric_cysts"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "Congenital lobar emphysema (CLE) or overinfation (CLO). C, Relative lobar incidence of CLE/CLO. After Hendren WH, McKee DN: Lobar emphysema of infancy."
----
+summary: "Congenital lobar emphysema (CLE) or overinfation (CLO). C, Relative lobar incidence of CLE/CLO. After Hendren WH, McKee DN: Lobar emphysema of infancy."---
 
 # Neurenteric Cysts
 

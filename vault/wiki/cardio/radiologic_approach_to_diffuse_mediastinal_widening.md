@@ -1,11 +1,11 @@
 ---
 title: "Radiologic Approach to Diffuse Mediastinal Widening"
+concept_id: "radiologic_approach_to_diffuse_mediastinal_widening"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 381
 end_page: 391
-status: "verified_source"
----
+status: "verified_source"---
 
 # Radiologic Approach to Diffuse Mediastinal Widening
 

@@ -1,9 +1,9 @@
 ---
 title: "43 Metabolic And Endocrine Skeletal Disease"
+concept_id: "43_metabolic_and_endocrine_skeletal_disease"
 domain: "msk"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 43 Metabolic and Endocrine Skeletal Disease
 

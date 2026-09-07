@@ -1,11 +1,11 @@
 ---
 title: "Vascular Emergencies"
+concept_id: "vascular_emergencies"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 337
 end_page: 347
-status: "verified_source"
----
+status: "verified_source"---
 
 # Vascular Emergencies
 

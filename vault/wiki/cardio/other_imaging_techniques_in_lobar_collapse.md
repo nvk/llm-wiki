@@ -1,9 +1,9 @@
 ---
 title: "Other Imaging Techniques In Lobar Collapse"
+concept_id: "other_imaging_techniques_in_lobar_collapse"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Other Imaging Techniques in Lobar Collapse
 

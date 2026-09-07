@@ -1,9 +1,9 @@
 ---
 title: "14 Nonischaemic Acquired Heart Disease"
+concept_id: "14_nonischaemic_acquired_heart_disease"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 14 Nonischaemic Acquired Heart Disease
 

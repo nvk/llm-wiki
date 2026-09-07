@@ -1,11 +1,11 @@
 ---
 title: "Signs Of Disease And Pattern Recognition"
+concept_id: "signs_of_disease_and_pattern_recognition"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 39
 end_page: 68
-status: "verified_source"
----
+status: "verified_source"---
 
 # Signs Of Disease And Pattern Recognition
 

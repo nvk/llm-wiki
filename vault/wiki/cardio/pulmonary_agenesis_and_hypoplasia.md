@@ -1,5 +1,6 @@
 ---
 title: "Pulmonary Agenesis and Hypoplasia"
+concept_id: "pulmonary_agenesis_and_hypoplasia"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Congenital bronchiectasis (i. The anteroposterior radiograph shows an overinflated left upper lobe with a slight mediastinal shift. Williams-Campbell syndrome."
----
+summary: "Congenital bronchiectasis (i. The anteroposterior radiograph shows an overinflated left upper lobe with a slight mediastinal shift. Williams-Campbell syndrome."---
 
 # Pulmonary Agenesis and Hypoplasia
 

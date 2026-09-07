@@ -1,9 +1,9 @@
 ---
 title: "Embryology"
+concept_id: "embryology"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Embryology
 

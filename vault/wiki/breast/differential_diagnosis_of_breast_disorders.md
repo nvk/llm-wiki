@@ -1,11 +1,11 @@
 ---
 title: "Differential Diagnosis of Breast Disorders"
+concept_id: "differential_diagnosis_of_breast_disorders"
 domain: "breast"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 1761
 end_page: 1797
-status: "verified_source"
----
+status: "verified_source"---
 
 # Differential Diagnosis of Breast Disorders
 

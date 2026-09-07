@@ -1,5 +1,6 @@
 ---
 title: "Mandibular Trauma"
+concept_id: "mandibular_trauma"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Eustachian tube laceration. B, FLAIR image months later shows residual signal abnormality involving gyrus rectus of both frontal lobes due to prior contusions. Complex temporal bone fracture."
----
+summary: "Eustachian tube laceration. B, FLAIR image months later shows residual signal abnormality involving gyrus rectus of both frontal lobes due to prior contusions. Complex temporal bone fracture."---
 
 # Mandibular Trauma
 

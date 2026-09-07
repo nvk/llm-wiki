@@ -1,6 +1,6 @@
 ---
-title: "Chronic Obstructive Pulmonary Disease
-and Asthma"
+title: "Chronic Obstructive Pulmonary Disease and Asthma"
+concept_id: "chronic_obstructive_pulmonary_disease_and_asthma"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 254

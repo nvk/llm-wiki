@@ -1,5 +1,6 @@
 ---
 title: "Anomalous Origin of the Left Pulmonary Artery from the Right"
+concept_id: "anomalous_origin_of_the_left_pulmonary_artery_from_the_right"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "vascular"]
 confidence: high
 status: "verified_source"
-summary: "Infected bronchogenic cyst. CT demonstrates an air-fluid level in an infected bronchogenic cyst. Congenital absence of the left pulmonary artery."
----
+summary: "Infected bronchogenic cyst. CT demonstrates an air-fluid level in an infected bronchogenic cyst. Congenital absence of the left pulmonary artery."---
 
 # Anomalous Origin of the Left Pulmonary Artery from the Right
 

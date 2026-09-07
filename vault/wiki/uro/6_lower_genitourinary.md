@@ -1,11 +1,11 @@
 ---
 title: "6. Lower Genitourinary"
+concept_id: "6_lower_genitourinary"
 domain: "uro"
 source_book: "Ultrasound: The Requisites"
 start_page: 239
 end_page: 285
-status: "verified_source"
----
+status: "verified_source"---
 
 # 6. Lower Genitourinary
 

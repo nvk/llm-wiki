@@ -1,11 +1,11 @@
 ---
 title: "EMBOLIZATION OF THE BLADDER"
+concept_id: "embolization_of_the_bladder"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 249
 end_page: 259
-status: "verified_source"
----
+status: "verified_source"---
 
 # EMBOLIZATION OF THE BLADDER
 

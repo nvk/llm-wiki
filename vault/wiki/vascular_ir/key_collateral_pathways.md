@@ -1,11 +1,11 @@
 ---
 title: "KEY COLLATERAL PATHWAYS"
+concept_id: "key_collateral_pathways"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 122
 end_page: 122
-status: "verified_source"
----
+status: "verified_source"---
 
 # KEY COLLATERAL PATHWAYS
 

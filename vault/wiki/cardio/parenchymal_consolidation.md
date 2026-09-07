@@ -1,11 +1,11 @@
 ---
 title: "Parenchymal Consolidation"
+concept_id: "parenchymal_consolidation"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 211
 end_page: 211
-status: "verified_source"
----
+status: "verified_source"---
 
 # Parenchymal Consolidation
 

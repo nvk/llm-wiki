@@ -1,5 +1,6 @@
 ---
 title: "Infected Orthopedic Hardware"
+concept_id: "infected_orthopedic_hardware"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "CT, easier and earlier (see Fig. Subcutaneous abscess at the posterolateral ankle. T1 and high T2 signal (A and B, arrows)."
----
+summary: "CT, easier and earlier (see Fig. Subcutaneous abscess at the posterolateral ankle. T1 and high T2 signal (A and B, arrows)."---
 
 # Infected Orthopedic Hardware
 

@@ -1,5 +1,6 @@
 ---
 title: "Toxic Encephalopathy"
+concept_id: "toxic_encephalopathy"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "Wernicke encephalopathy. Acute disseminated encephalomyelitis. This acute demyelinating process mimics acute stroke."
----
+summary: "Wernicke encephalopathy. Acute disseminated encephalomyelitis. This acute demyelinating process mimics acute stroke."---
 
 # Toxic Encephalopathy
 

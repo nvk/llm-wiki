@@ -1,5 +1,6 @@
 ---
 title: "Respiratory Distress"
+concept_id: "respiratory_distress"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "Group B streptococcus."
----
+summary: "Group B streptococcus."---
 
 # Respiratory Distress
 

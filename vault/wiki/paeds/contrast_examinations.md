@@ -1,5 +1,6 @@
 ---
 title: "Contrast Examinations"
+concept_id: "contrast_examinations"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "NG tubes in older children. GER during the upper GI study. GER should be guided by the clinicalfindings (e."
----
+summary: "NG tubes in older children. GER during the upper GI study. GER should be guided by the clinicalfindings (e."---
 
 # Contrast Examinations
 

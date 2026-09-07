@@ -1,5 +1,6 @@
 ---
 title: "Fluoroscopy"
+concept_id: "fluoroscopy"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "The targetfilm distance is 6 feet. Apical lordotic views (Fig. PPCR) systems and selenium-based digital chest systems."
----
+summary: "The targetfilm distance is 6 feet. Apical lordotic views (Fig. PPCR) systems and selenium-based digital chest systems."---
 
 # Fluoroscopy
 

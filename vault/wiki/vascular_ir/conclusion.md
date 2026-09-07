@@ -1,11 +1,12 @@
 ---
 title: "CONCLUSION"
+concept_id: "vascular_ir_conclusion"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 593
 end_page: 603
 status: "verified_source"
----
+aliases: ["conclusion"]---
 
 # CONCLUSION
 

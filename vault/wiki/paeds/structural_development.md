@@ -1,5 +1,6 @@
 ---
 title: "Structural Development"
+concept_id: "structural_development"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds"]
 confidence: high
 status: "verified_source"
-summary: "C2) vertebral body width. This respiratory distress is severe if bilateral atresia is present. Peribronchial thickening caused by edema narrows the effective diameter of the airway, necessitating increased effort at breathing."
----
+summary: "C2) vertebral body width. This respiratory distress is severe if bilateral atresia is present. Peribronchial thickening caused by edema narrows the effective diameter of the airway, necessitating increased effort at breathing."---
 
 # Structural Development
 

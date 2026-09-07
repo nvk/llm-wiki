@@ -1,11 +1,11 @@
 ---
 title: "2. Gallbladder"
+concept_id: "2_gallbladder"
 domain: "cardio"
 source_book: "Ultrasound: The Requisites"
 start_page: 53
 end_page: 83
-status: "verified_source"
----
+status: "verified_source"---
 
 # 2. Gallbladder
 

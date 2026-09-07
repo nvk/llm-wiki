@@ -1,11 +1,11 @@
 ---
 title: "THORACIC SKELETON"
+concept_id: "thoracic_skeleton"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 24
 end_page: 27
-status: "verified_source"
----
+status: "verified_source"---
 
 # THORACIC SKELETON
 

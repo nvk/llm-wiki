@@ -1,11 +1,11 @@
 ---
 title: "SUGGESTED READING"
+concept_id: "suggested_reading"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 325
 end_page: 325
-status: "verified_source"
----
+status: "verified_source"---
 
 # SUGGESTED READING
 

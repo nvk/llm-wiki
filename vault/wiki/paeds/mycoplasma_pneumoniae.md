@@ -1,5 +1,6 @@
 ---
 title: "Mycoplasma pneumoniae"
+concept_id: "paeds_mycoplasma_pneumoniae"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -11,7 +12,7 @@ tags: ["radiology", "paeds", "infection"]
 confidence: high
 status: "verified_source"
 summary: "TTN, or there may be a more nodular pattern. Croup was discussed earlier. RSV) the causative agent in a third of these cases."
----
+aliases: ["mycoplasma_pneumoniae"]---
 
 # Mycoplasma pneumoniae
 

@@ -1,11 +1,11 @@
 ---
 title: "PORTAL HYPERTENSION"
+concept_id: "portal_hypertension"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 338
 end_page: 340
-status: "verified_source"
----
+status: "verified_source"---
 
 # PORTAL HYPERTENSION
 

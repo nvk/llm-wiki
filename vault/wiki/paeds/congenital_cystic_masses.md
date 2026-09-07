@@ -1,5 +1,6 @@
 ---
 title: "Congenital (Cystic) Masses"
+concept_id: "congenital_cystic_masses"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds", "oncology", "congenital"]
 confidence: high
 status: "verified_source"
-summary: "Swyer-James or Macleod syndrome). Right-sided diaphragmatic hernia. There is an equal gender incidence."
----
+summary: "Swyer-James or Macleod syndrome). Right-sided diaphragmatic hernia. There is an equal gender incidence."---
 
 # Congenital (Cystic) Masses
 

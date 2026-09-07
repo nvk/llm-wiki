@@ -1,9 +1,9 @@
 ---
 title: "Other Common Causes Of Colitis"
+concept_id: "other_common_causes_of_colitis"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Other Common Causes of Colitis
 

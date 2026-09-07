@@ -1,11 +1,11 @@
 ---
 title: "Gallbladder Intervention"
+concept_id: "gallbladder_intervention"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 497
 end_page: 507
-status: "verified_source"
----
+status: "verified_source"---
 
 # Gallbladder Intervention
 

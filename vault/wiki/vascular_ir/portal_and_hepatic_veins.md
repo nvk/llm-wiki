@@ -1,11 +1,11 @@
 ---
 title: "Portal and Hepatic Veins"
+concept_id: "portal_and_hepatic_veins"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 332
 end_page: 342
-status: "verified_source"
----
+status: "verified_source"---
 
 # Portal and Hepatic Veins
 

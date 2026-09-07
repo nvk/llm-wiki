@@ -1,5 +1,6 @@
 ---
 title: "Fractures and Dislocations of the Hand"
+concept_id: "fractures_and_dislocations_of_the_hand"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Rolando, and comminuted fractures. Gamekeeper’s or skier’s thumb (Fig. Fractures of the base of thefirst metacarpal."
----
+summary: "Rolando, and comminuted fractures. Gamekeeper’s or skier’s thumb (Fig. Fractures of the base of thefirst metacarpal."---
 
 # Fractures and Dislocations of the Hand
 

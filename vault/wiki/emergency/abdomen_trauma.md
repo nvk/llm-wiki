@@ -1,11 +1,11 @@
 ---
 title: "Abdomen Trauma"
+concept_id: "abdomen_trauma"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 95
 end_page: 105
-status: "verified_source"
----
+status: "verified_source"---
 
 # Abdomen Trauma
 

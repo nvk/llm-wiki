@@ -1,9 +1,9 @@
 ---
 title: "Integrating Clinical And Imaging Findings"
+concept_id: "integrating_clinical_and_imaging_findings"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Integrating Clinical and Imaging Findings
 

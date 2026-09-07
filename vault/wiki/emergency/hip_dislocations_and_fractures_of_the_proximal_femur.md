@@ -1,5 +1,6 @@
 ---
 title: "Hip Dislocations and Fractures of the proximal Femur"
+concept_id: "hip_dislocations_and_fractures_of_the_proximal_femur"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Posterior dislocation of the hip (Fig. Dislocations of the hip. Subcapital fracture (Fig."
----
+summary: "Posterior dislocation of the hip (Fig. Dislocations of the hip. Subcapital fracture (Fig."---
 
 # Hip Dislocations and Fractures of the proximal Femur
 

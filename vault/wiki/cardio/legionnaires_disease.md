@@ -1,5 +1,6 @@
 ---
 title: "Legionnaires’ Disease"
+concept_id: "legionnaires_disease"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Legionella and Mycoplasma infection. Aspiration pneumonia in a patient with a history of seizures."
----
+summary: "Legionella and Mycoplasma infection. Aspiration pneumonia in a patient with a history of seizures."---
 
 # Legionnaires’ Disease
 

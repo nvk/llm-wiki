@@ -1,5 +1,6 @@
 ---
 title: "Pulmonary Hila"
+concept_id: "pulmonary_hila"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Roentgenol 141:1241–1257, 1983. Central pulmonary vasculature. A, Left pulmonary artery (lp), left interlobar artery (li), right interlobar artery (ri), and sternum (s)."
----
+summary: "Roentgenol 141:1241–1257, 1983. Central pulmonary vasculature. A, Left pulmonary artery (lp), left interlobar artery (li), right interlobar artery (ri), and sternum (s)."---
 
 # Pulmonary Hila
 

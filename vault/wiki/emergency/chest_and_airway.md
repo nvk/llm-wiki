@@ -1,11 +1,11 @@
 ---
 title: "CHEST AND AIRWAY"
+concept_id: "chest_and_airway"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 216
 end_page: 219
-status: "verified_source"
----
+status: "verified_source"---
 
 # CHEST AND AIRWAY
 

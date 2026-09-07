@@ -1,5 +1,6 @@
 ---
 title: "Aberrant Tracheal Bronchus"
+concept_id: "aberrant_tracheal_bronchus"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "CT), and magnetic resonance imaging (MRI). Tracheobronchomegaly (i. Congenital tracheal stenosis."
----
+summary: "CT), and magnetic resonance imaging (MRI). Tracheobronchomegaly (i. Congenital tracheal stenosis."---
 
 # Aberrant Tracheal Bronchus
 

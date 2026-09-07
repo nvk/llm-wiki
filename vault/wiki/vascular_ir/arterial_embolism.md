@@ -1,11 +1,11 @@
 ---
 title: "ARTERIAL EMBOLISM"
+concept_id: "arterial_embolism"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 38
 end_page: 38
-status: "verified_source"
----
+status: "verified_source"---
 
 # ARTERIAL EMBOLISM
 

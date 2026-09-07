@@ -1,5 +1,6 @@
 ---
 title: "Radiographic Features"
+concept_id: "radiographic_features"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Legionella pneumophila. Staphylococcus aureus. Haemophilus influenzae infection is common."
----
+summary: "Legionella pneumophila. Staphylococcus aureus. Haemophilus influenzae infection is common."---
 
 # Radiographic Features
 

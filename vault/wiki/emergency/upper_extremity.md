@@ -1,11 +1,11 @@
 ---
 title: "UPPER EXTREMITY"
+concept_id: "upper_extremity"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 129
 end_page: 152
-status: "verified_source"
----
+status: "verified_source"---
 
 # UPPER EXTREMITY
 

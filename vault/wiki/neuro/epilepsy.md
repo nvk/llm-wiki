@@ -1,9 +1,9 @@
 ---
 title: "Epilepsy"
+concept_id: "epilepsy"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Epilepsy
 

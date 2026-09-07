@@ -1,11 +1,11 @@
 ---
 title: "IMAGING FOLLOW-UP"
+concept_id: "imaging_follow_up"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 587
 end_page: 590
-status: "verified_source"
----
+status: "verified_source"---
 
 # IMAGING FOLLOW-UP
 

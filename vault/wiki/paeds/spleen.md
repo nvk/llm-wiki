@@ -1,11 +1,12 @@
 ---
 title: "SPLEEN"
+concept_id: "paeds_spleen"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 124
 end_page: 124
 status: "verified_source"
----
+aliases: ["spleen"]---
 
 # SPLEEN
 

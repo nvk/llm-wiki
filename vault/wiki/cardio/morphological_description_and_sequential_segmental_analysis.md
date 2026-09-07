@@ -1,9 +1,9 @@
 ---
 title: "Morphological Description And Sequential Segmental Analysis"
+concept_id: "morphological_description_and_sequential_segmental_analysis"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Morphological Description and Sequential Segmental Analysis
 

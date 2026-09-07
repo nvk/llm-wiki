@@ -1,11 +1,11 @@
 ---
 title: "PENILE ANGIOGRAPHY"
+concept_id: "penile_angiography"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 249
 end_page: 249
-status: "verified_source"
----
+status: "verified_source"---
 
 # PENILE ANGIOGRAPHY
 

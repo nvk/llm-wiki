@@ -1,11 +1,11 @@
 ---
 title: "DISEASES OF THE LIVER"
+concept_id: "diseases_of_the_liver"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 313
 end_page: 314
-status: "verified_source"
----
+status: "verified_source"---
 
 # DISEASES OF THE LIVER
 

@@ -1,9 +1,9 @@
 ---
 title: "26 Common Uroradiological Referrals"
+concept_id: "26_common_uroradiological_referrals"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 26 Common Uroradiological Referrals
 

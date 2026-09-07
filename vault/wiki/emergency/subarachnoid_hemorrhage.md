@@ -1,5 +1,6 @@
 ---
 title: "Subarachnoid Hemorrhage"
+concept_id: "subarachnoid_hemorrhage"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "CSF accumulation due to tear of the arachnoid membrane. CSF within the subdural space. CSF space associated with cerebral atrophy."
----
+summary: "CSF accumulation due to tear of the arachnoid membrane. CSF within the subdural space. CSF space associated with cerebral atrophy."---
 
 # Subarachnoid Hemorrhage
 

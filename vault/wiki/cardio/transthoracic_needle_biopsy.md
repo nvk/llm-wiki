@@ -1,11 +1,11 @@
 ---
 title: "Transthoracic Needle Biopsy"
+concept_id: "transthoracic_needle_biopsy"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 412
 end_page: 417
-status: "verified_source"
----
+status: "verified_source"---
 
 # Transthoracic Needle Biopsy
 

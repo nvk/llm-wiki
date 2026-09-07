@@ -1,5 +1,6 @@
 ---
 title: "Assessment of Mitral Regurgitation"
+concept_id: "assessment_of_mitral_regurgitation"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Color Doppler readily demonstrates mitral regurgitation. Bernoulli equation described earlier. There is tethering of the subvalvular mitral apparatus."
----
+summary: "Color Doppler readily demonstrates mitral regurgitation. Bernoulli equation described earlier. There is tethering of the subvalvular mitral apparatus."---
 
 # Assessment of Mitral Regurgitation
 

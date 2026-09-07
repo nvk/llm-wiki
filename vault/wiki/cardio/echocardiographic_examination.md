@@ -1,5 +1,6 @@
 ---
 title: "ECHOCARDIOGRAPHIC EXAMINATION"
+concept_id: "echocardiographic_examination"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Kaitlyn My-Tu Lam and Mary Etta E. LV, left ventricle; RV, right ventricular outfl ow tract. PV, pulmonic valve; pv, pulmonary vein; RA, right atrium."
----
+summary: "Kaitlyn My-Tu Lam and Mary Etta E. LV, left ventricle; RV, right ventricular outfl ow tract. PV, pulmonic valve; pv, pulmonary vein; RA, right atrium."---
 
 # ECHOCARDIOGRAPHIC EXAMINATION
 

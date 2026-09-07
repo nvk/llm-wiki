@@ -1,11 +1,11 @@
 ---
 title: "INTRA-AXIAL HEMORRHAGE"
+concept_id: "intra_axial_hemorrhage"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 22
 end_page: 25
-status: "verified_source"
----
+status: "verified_source"---
 
 # INTRA-AXIAL HEMORRHAGE
 

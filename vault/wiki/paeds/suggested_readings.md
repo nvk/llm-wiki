@@ -1,11 +1,12 @@
 ---
 title: "Suggested Readings"
+concept_id: "paeds_suggested_readings"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 55
 end_page: 55
 status: "verified_source"
----
+aliases: ["suggested_readings"]---
 
 # Suggested Readings
 

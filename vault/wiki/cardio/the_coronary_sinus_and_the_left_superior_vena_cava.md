@@ -1,5 +1,6 @@
 ---
 title: "THE CORONARY SINUS AND THE LEFT SUPERIOR VENA CAVA"
+concept_id: "the_coronary_sinus_and_the_left_superior_vena_cava"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Rib notching in neurofi bromatosis. Intercostal neurofi broma have notched the ribs bilaterally. B, The thumb has three phalanges."
----
+summary: "Rib notching in neurofi bromatosis. Intercostal neurofi broma have notched the ribs bilaterally. B, The thumb has three phalanges."---
 
 # THE CORONARY SINUS AND THE LEFT SUPERIOR VENA CAVA
 

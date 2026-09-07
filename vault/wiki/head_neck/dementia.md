@@ -1,11 +1,11 @@
 ---
 title: "DEMENTIA"
+concept_id: "dementia"
 domain: "head_neck"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 774
 end_page: 774
-status: "verified_source"
----
+status: "verified_source"---
 
 # DEMENTIA
 

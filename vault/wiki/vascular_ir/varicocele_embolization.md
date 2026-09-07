@@ -1,11 +1,11 @@
 ---
 title: "VARICOCELE EMBOLIZATION"
+concept_id: "varicocele_embolization"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 329
 end_page: 339
-status: "verified_source"
----
+status: "verified_source"---
 
 # VARICOCELE EMBOLIZATION
 

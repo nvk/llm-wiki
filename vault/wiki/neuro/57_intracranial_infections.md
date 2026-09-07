@@ -1,9 +1,9 @@
 ---
 title: "57 Intracranial Infections"
+concept_id: "57_intracranial_infections"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # 57 Intracranial Infections
 

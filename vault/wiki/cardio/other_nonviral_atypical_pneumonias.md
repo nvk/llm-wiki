@@ -1,5 +1,6 @@
 ---
 title: "Other Nonviral Atypical Pneumonias"
+concept_id: "other_nonviral_atypical_pneumonias"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "infection"]
 confidence: high
 status: "verified_source"
-summary: "It is caused by the TWAR agent (Chlamydia pneumoniae). Atypical nonviral pneumonias are rare. Q fever, a rickettsial disease; and tularemia."
----
+summary: "It is caused by the TWAR agent (Chlamydia pneumoniae). Atypical nonviral pneumonias are rare. Q fever, a rickettsial disease; and tularemia."---
 
 # Other Nonviral Atypical Pneumonias
 

@@ -1,11 +1,11 @@
 ---
 title: "BILIARY DRAINAGE"
+concept_id: "biliary_drainage"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 476
 end_page: 479
-status: "verified_source"
----
+status: "verified_source"---
 
 # BILIARY DRAINAGE
 

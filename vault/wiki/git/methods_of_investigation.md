@@ -1,9 +1,9 @@
 ---
 title: "Methods Of Investigation"
+concept_id: "methods_of_investigation"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Methods of Investigation
 

@@ -1,9 +1,9 @@
 ---
 title: "Rapidly Progressive And Other Atypical Dementias"
+concept_id: "rapidly_progressive_and_other_atypical_dementias"
 domain: "neuro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Rapidly Progressive and Other Atypical Dementias
 

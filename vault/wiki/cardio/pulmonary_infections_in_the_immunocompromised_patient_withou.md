@@ -1,11 +1,11 @@
 ---
 title: "Pulmonary Infections In The Immunocompromised Patient Without Human ­Immuno­Deficiency Virus Infection"
+concept_id: "pulmonary_infections_in_the_immunocompromised_patient_withou"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 133
 end_page: 138
-status: "verified_source"
----
+status: "verified_source"---
 
 # Pulmonary Infections In The Immunocompromised Patient Without Human ­Immuno­Deficiency Virus Infection
 

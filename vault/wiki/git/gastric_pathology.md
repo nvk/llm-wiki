@@ -1,9 +1,9 @@
 ---
 title: "Gastric Pathology"
+concept_id: "gastric_pathology"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Gastric Pathology
 

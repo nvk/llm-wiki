@@ -1,9 +1,9 @@
 ---
 title: "Advances In Gastric Imaging"
+concept_id: "advances_in_gastric_imaging"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Advances in Gastric Imaging
 

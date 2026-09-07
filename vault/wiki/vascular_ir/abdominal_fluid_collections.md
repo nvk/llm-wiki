@@ -1,11 +1,11 @@
 ---
 title: "ABDOMINAL FLUID COLLECTIONS"
+concept_id: "abdominal_fluid_collections"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 424
 end_page: 440
-status: "verified_source"
----
+status: "verified_source"---
 
 # ABDOMINAL FLUID COLLECTIONS
 

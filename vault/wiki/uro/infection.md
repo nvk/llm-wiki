@@ -1,9 +1,10 @@
 ---
 title: "Infection"
+concept_id: "uro_infection"
 domain: "uro"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["infection"]---
 
 # Infection
 

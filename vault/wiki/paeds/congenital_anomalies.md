@@ -1,11 +1,12 @@
 ---
 title: "CONGENITAL ANOMALIES"
+concept_id: "paeds_congenital_anomalies"
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
 start_page: 135
 end_page: 144
 status: "verified_source"
----
+aliases: ["congenital_anomalies"]---
 
 # CONGENITAL ANOMALIES
 

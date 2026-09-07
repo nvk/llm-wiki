@@ -1,11 +1,12 @@
 ---
 title: "STROKE"
+concept_id: "cardio_stroke"
 domain: "cardio"
 source_book: "Dahnert Radiology Review Manual (8th Ed)"
 start_page: 770
 end_page: 772
 status: "verified_source"
----
+aliases: ["stroke"]---
 
 # STROKE
 

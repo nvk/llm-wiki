@@ -1,9 +1,10 @@
 ---
 title: "Trauma"
+concept_id: "git_trauma"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
 status: "verified_source"
----
+aliases: ["trauma"]---
 
 # Trauma
 

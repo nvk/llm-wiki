@@ -1,5 +1,6 @@
 ---
 title: "Soft Tissue Infection"
+concept_id: "soft_tissue_infection"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "infection"]
 confidence: high
 status: "verified_source"
-summary: "Imagingfindings may be very subtle. Osteonecrosis of the femoral head, MRI spectrum. B, Double line sign (arrows) on an axial T2-weighted image of the left hip."
----
+summary: "Imagingfindings may be very subtle. Osteonecrosis of the femoral head, MRI spectrum. B, Double line sign (arrows) on an axial T2-weighted image of the left hip."---
 
 # Soft Tissue Infection
 

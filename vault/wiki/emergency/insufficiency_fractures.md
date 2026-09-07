@@ -1,5 +1,6 @@
 ---
 title: "Insufficiency Fractures"
+concept_id: "insufficiency_fractures"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency", "trauma"]
 confidence: high
 status: "verified_source"
-summary: "Hill-Sachs deformity (Fig. Imagingfindings parallel histologicalfindings. MR examinations may show no abnormalities."
----
+summary: "Hill-Sachs deformity (Fig. Imagingfindings parallel histologicalfindings. MR examinations may show no abnormalities."---
 
 # Insufficiency Fractures
 

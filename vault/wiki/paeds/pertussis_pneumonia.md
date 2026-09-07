@@ -1,5 +1,6 @@
 ---
 title: "Pertussis Pneumonia"
+concept_id: "pertussis_pneumonia"
 category: concept
 domain: "paeds"
 source_book: "Pediatric Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "paeds", "infection"]
 confidence: high
 status: "verified_source"
-summary: "TTN, or there may be a more nodular pattern. Croup was discussed earlier. RSV) the causative agent in a third of these cases."
----
+summary: "TTN, or there may be a more nodular pattern. Croup was discussed earlier. RSV) the causative agent in a third of these cases."---
 
 # Pertussis Pneumonia
 

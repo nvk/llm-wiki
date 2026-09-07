@@ -1,9 +1,9 @@
 ---
 title: "Iterative Reconstruction Algorithms"
+concept_id: "iterative_reconstruction_algorithms"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Iterative Reconstruction Algorithms
 

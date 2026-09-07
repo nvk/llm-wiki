@@ -1,11 +1,11 @@
 ---
 title: "IMAGING EQUIPMENT"
+concept_id: "imaging_equipment"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 379
 end_page: 379
-status: "verified_source"
----
+status: "verified_source"---
 
 # IMAGING EQUIPMENT
 

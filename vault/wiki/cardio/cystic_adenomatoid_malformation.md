@@ -1,5 +1,6 @@
 ---
 title: "Cystic Adenomatoid Malformation"
+concept_id: "cystic_adenomatoid_malformation"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio", "oncology", "congenital"]
 confidence: high
 status: "verified_source"
-summary: "There are three types. Cystic adenomatoid malformation type I. The definitive treatment is surgical excision."
----
+summary: "There are three types. Cystic adenomatoid malformation type I. The definitive treatment is surgical excision."---
 
 # Cystic Adenomatoid Malformation
 

@@ -1,5 +1,6 @@
 ---
 title: "Pathology and Pathogenesis"
+concept_id: "pathology_and_pathogenesis"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Asians and 10 times higher for blacks and Hispanics. T-cell immune reaction. Tree-in-bud appearance."
----
+summary: "Asians and 10 times higher for blacks and Hispanics. T-cell immune reaction. Tree-in-bud appearance."---
 
 # Pathology and Pathogenesis
 

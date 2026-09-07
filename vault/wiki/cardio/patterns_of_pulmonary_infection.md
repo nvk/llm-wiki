@@ -1,9 +1,9 @@
 ---
 title: "Patterns Of Pulmonary Infection"
+concept_id: "patterns_of_pulmonary_infection"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Patterns of Pulmonary Infection
 

@@ -1,9 +1,9 @@
 ---
 title: "Diffuse Disease"
+concept_id: "diffuse_disease"
 domain: "git"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # Diffuse Disease
 

@@ -1,11 +1,11 @@
 ---
 title: "HEMANGIOMAS, VASCULAR MALFORMATIONS, AND ARTERIOVENOUS FISTULAS"
+concept_id: "hemangiomas_vascular_malformations_and_arteriovenous_fistula"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 32
 end_page: 34
-status: "verified_source"
----
+status: "verified_source"---
 
 # HEMANGIOMAS, VASCULAR MALFORMATIONS, AND ARTERIOVENOUS FISTULAS
 

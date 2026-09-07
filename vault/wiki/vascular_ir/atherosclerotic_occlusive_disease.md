@@ -1,11 +1,11 @@
 ---
 title: "ATHEROSCLEROTIC OCCLUSIVE DISEASE"
+concept_id: "atherosclerotic_occlusive_disease"
 domain: "vascular_ir"
 source_book: "Vascular and Interventional Radiology: The Requisites"
 start_page: 126
 end_page: 131
-status: "verified_source"
----
+status: "verified_source"---
 
 # ATHEROSCLEROTIC OCCLUSIVE DISEASE
 

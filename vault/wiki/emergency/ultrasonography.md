@@ -1,5 +1,6 @@
 ---
 title: "Ultrasonography"
+concept_id: "ultrasonography"
 category: concept
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "emergency"]
 confidence: high
 status: "verified_source"
-summary: "United States and most other Western countries. Extension to the hepatic surface is very common."
----
+summary: "United States and most other Western countries. Extension to the hepatic surface is very common."---
 
 # Ultrasonography
 

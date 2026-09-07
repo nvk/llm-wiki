@@ -1,5 +1,6 @@
 ---
 title: "Three-Dimensional Echocardiography"
+concept_id: "three_dimensional_echocardiography"
 category: concept
 domain: "cardio"
 source_book: "Cardiac Imaging: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "E wave) and smaller late diastolicfilling wave (A wave). LA) and left ventricle (LV). Valsalva maneuver that transiently increases the right atrial pressure."
----
+summary: "E wave) and smaller late diastolicfilling wave (A wave). LA) and left ventricle (LV). Valsalva maneuver that transiently increases the right atrial pressure."---
 
 # Three-Dimensional Echocardiography
 

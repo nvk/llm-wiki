@@ -1,11 +1,11 @@
 ---
 title: "Metastatic Disease"
+concept_id: "metastatic_disease"
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
 start_page: 290
 end_page: 295
-status: "verified_source"
----
+status: "verified_source"---
 
 # Metastatic Disease
 

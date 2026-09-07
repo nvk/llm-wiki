@@ -1,9 +1,9 @@
 ---
 title: "The Normal Aorta"
+concept_id: "the_normal_aorta"
 domain: "cardio"
 source: "Grainger & Allison / Core / Crack the Core (Lossless Concept Index)"
-status: "verified_source"
----
+status: "verified_source"---
 
 # The Normal Aorta
 

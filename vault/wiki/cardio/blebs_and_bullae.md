@@ -1,5 +1,6 @@
 ---
 title: "Blebs and Bullae"
+concept_id: "blebs_and_bullae"
 category: concept
 domain: "cardio"
 source_book: "Thoracic Radiology: The Requisites"
@@ -10,8 +11,7 @@ updated: 2026-03-07
 tags: ["radiology", "cardio"]
 confidence: high
 status: "verified_source"
-summary: "Langerhans cell histiocytosis. Invasive aspergillosis. Kohn) and intra-acinar connections (i."
----
+summary: "Langerhans cell histiocytosis. Invasive aspergillosis. Kohn) and intra-acinar connections (i."---
 
 # Blebs and Bullae
 

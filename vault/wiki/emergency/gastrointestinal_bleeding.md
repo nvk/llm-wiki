@@ -1,11 +1,12 @@
 ---
 title: "GASTROINTESTINAL BLEEDING"
+concept_id: "emergency_gastrointestinal_bleeding"
 domain: "emergency"
 source_book: "Emergency Radiology: The Requisites"
 start_page: 394
 end_page: 394
 status: "verified_source"
----
+aliases: ["gastrointestinal_bleeding"]---
 
 # GASTROINTESTINAL BLEEDING
 

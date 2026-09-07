@@ -1,0 +1,156 @@
+---
+title: "Pneumatocele Formation"
+category: concept
+domain: "cardio"
+source_book: "Thoracic Radiology: The Requisites"
+sources:
+  - "Thoracic Radiology: The Requisites (Pages 97–98)"
+created: 2026-03-07
+updated: 2026-03-07
+tags: ["radiology", "cardio"]
+confidence: high
+status: "verified_source"
+summary: "Septic infarcts in an intravenous drug abuser. A, The posteroanterior chest radiograph shows multiple, bilateral cavitary nodules. C, CT examination demonstrates that most of the infarcts are peripheral in location; some abut the pleura and occasionally are wedge shaped."
+---
+
+# Pneumatocele Formation
+
+**Domain:** [[cardio/_index|Cardiothoracic Radiology]] ([Cardiothoracic Radiology](_index.md))  
+**Source:** Thoracic Radiology: The Requisites (Pages 97–98)  
+
+## Summary & Core Concepts
+Septic infarcts in an intravenous drug abuser. A, The posteroanterior chest radiograph shows multiple, bilateral cavitary nodules. C, CT examination demonstrates that most of the infarcts are peripheral in location; some abut the pleura and occasionally are wedge shaped.
+
+## Key Radiological & Clinical Findings
+- **Radiography (Plain Film):** change in size and location on serial radiographs. A, The posteroanterior chest radiograph shows multiple, bilateral cavitary nodules.
+- **Computed Tomography (CT):** C, CT examination demonstrates that most of the infarcts are peripheral in location; some abut the pleura and occasionally are wedge shaped.
+- **Magnetic Resonance Imaging (MRI):** High soft-tissue resolution with exquisite contrast resolution for soft tissues, marrow space, and fluid kinetics.
+- **Ultrasound / Doppler:** Real-time, non-ionizing dynamic assessment with color and spectral Doppler evaluation of vascular flow.
+
+## Differential Diagnosis & High-Yield Pitfalls
+- Diagnostic mimics sharing radiographic or cross-sectional morphology with Pneumatocele Formation.
+- Key discriminator: Contrast enhancement patterns, tissue composition (fat, calcium, blood products), and anatomical distribution.
+- Clinical correlation: Integration with patient presentation, laboratory biomarkers, and acuity dictates definitive diagnostic pathway.
+
+## Textbook Reference Text
+Pneumatocele Formation
+Pneumatoceles are usually associated with pneumo­
+nia caused by virulent organisms; the classic offender
+is S. aureus (Fig. 3-10). They usually form ­subpleural
+collections of air, which result from alveolar rupture.
+Radiographically, they appear as single or multiple, cystic
+lesions with thin and smooth walls. They may show rapid
+change in size and location on serial radiographs.
+Hilar and Mediastinal Adenopathy
+Intrathoracic lymphadenopathy that can be recognized
+on standard radiographs is uncommon in most bacte­
+rial and viral infections; some notable exceptions include
+Mycobacterium tuberculosis, Pasteurella tularensis, and Yersinia
+pestis. Adenopathy may be associated with fungal infec­
+tions or bacterial infections that are long-standing or viru­
+lent, as in lung abscesses. CT may show slightly enlarged
+Figure 3-6.  Septic infarcts in an intravenous drug abuser. A, The posteroanterior chest radiograph shows multiple, bilateral cavitary nodules. B and
+C, CT examination demonstrates that most of the infarcts are peripheral in location; some abut the pleura and occasionally are wedge shaped. True and
+pseudocavities (curved arrow) are present.
+86  Pulmonary Infections in the Normal Host
+nodes (>1 cm) in patients with common bacterial infections
+that are not visible on standard radiography.
+Pleural Effusions and Empyema
+Pleural effusion is a common complication of pneumonia,
+occurring in about 40% of cases (Fig. 3-11). Most effusions
+are parapneumonic, but infection of the pleural space with
+empyema requiring drainage is an important but uncom­
+mon complication of some pneumonias. Empyemas can be
+recognized by the presence of gross pus within the pleural
+space, by a white blood cell count in the pleuralfluid of
+greater than 15,000 cells/mm3, by the presence of bacteria
+within the pleuralfluid, or by a pH less than 7.2. Chapter
+18 provides more detail on the pleural complications of
+pneumonia.
+Parenchymal necrosis in an underlying pneumonia may
+produce afistula between the bronchus and the pleu­
+ral space (i.e., bronchopleuralfistula), and this results in
+an empyema with an air-fluid level. Further discussion of
+these entities can be found in Chapter 18.
+Other Complications
+Rapidly progressive and fulminant bacterial or viral pneu­
+monia may result in the acute respiratory distress syndrome
+(ARDS). In the preantibiotic era, bronchiectasis was an
+extremely common complication of bacterial pneumonia,
+but the incidence of bronchiectasis has declined with the
+advent of antibiotics. Most ­pneumonias clear within 2 or
+3 weeks, but in elderly patients, resolution may take 3 to
+4 months. Necrotizing pneumonias also tend to resolve
+slowly. Recurrent pneumonias are frequently found in
+patients with predisposing factors such as chronic obstruc­
+tive lung disease, bronchiectasis, alcoholism, and diabetes.
+Although recurrent or persistent pneumonia in the same
+location raises the possibility of an obstructing endobron­
+chial lesion due to lung carcinoma, cancer accounts for less
+than 5% of such cases.
+PNEUMONIAS CAUSED BY GRAM-
+POSITIVE BACTERIA
+The most common gram-positive bacteria causing pneu­
+monia include S. pneumoniae (pneumococcus), S. aureus,
+and Streptococcus pyogenes.
+Streptococcus pneumoniae
+S. pneumoniae (Box 3-2) is responsible for one third to one
+half of community-acquired pneumonias in adults. These
+infections occur more frequently in the winter and early
+spring. Pneumococcal pneumonia occurs in healthy peo­
+ple, but it is much more common in alcoholic, debilitated,
+and other immunocompromised individuals.
+The radiographic features include consolidation that is
+usually unilateral, although it may be bilateral, and it typi­
+cally affects the lower lobes (see Fig. 3-1). Although it is a
+lobar pneumonia, it is uncommon for the lobe to be com­
+pletely consolidated. Cavitation is rare, and large pleural
+effusions are uncommon. When present, they suggest the
+development of empyema. Sometimes, especially in chil­
+dren, the pneumonia may have a rounded, masslike appear­
+ance (Fig. 3-12). This is called a round pneumonia; it results
+from centrifugal spread of the rapidly replicating bacteria
+by way of the pores of Kohn and canals of Lambert from a
+single primary focus in the lung.
+Box 3-1.  Complications of Pneumonia
+CAVITATION
+Organisms
+Staphylococcus aureus
+Streptococci
+Gram-negative bacilli
+Anaerobes
+Types
+Lung abscess (single, well-defined mass often with
+air-fluid level)
+Necrotizing pneumonia (small lucencies or cavities)
+Pulmonary gangrene (sloughed lung)
+PNEUMATOCELES
+S. aureus
+Occur in children
+Thin walls, multiple
+ADENOPATHY
+Common with granulomatous infections
+(tuberculosis, fungi)
+Uncommon with most bacterial and viral infections
+PLEURAL EFFUSIONS AND EMPYEMA
+Common (40%)
+Parapneumonic
+Empyema (bronchopleuralfistula)
+OTHER COMPLICATIONS
+Acute respiratory distress syndrome (ARDS)
+Bronchiectasis
+Slow resolution in the elderly
+Recurrent pneumonias
+Figure 3-7.  Cavitary pneumonia due to gram-negative organisms. CT
+shows two areas of cavitation with an air-fluid level in the more posterior
+area, indicating bronchial communication.
+
+## See Also
+- [[cardio/_index|Cardiothoracic Radiology Index]] ([Cardiothoracic Radiology Index](_index.md))
+- [[hilar_and_mediastinal_adenopathy|Hilar and Mediastinal Adenopathy]] ([Hilar and Mediastinal Adenopathy](hilar_and_mediastinal_adenopathy.md))
+- [[pleural_effusions_and_empyema|Pleural Effusions and Empyema]] ([Pleural Effusions and Empyema](pleural_effusions_and_empyema.md))
+- [[other_complications|Other Complications]] ([Other Complications](other_complications.md))
+- [[streptococcus_pneumoniae|Streptococcus pneumoniae]] ([Streptococcus pneumoniae](streptococcus_pneumoniae.md))
+
+---
+*Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*

@@ -1,72 +1,125 @@
 # Musculoskeletal Radiology Index
 
-> Authoritative lossless knowledge base for Musculoskeletal Radiology, compiled from core reference textbooks and subspecialty requisites.
+> Authoritative knowledge graph index for Musculoskeletal Radiology, compiled from core reference textbooks and subspecialty requisites.
 
-Last updated: 2026-03-07
+Last updated: 2026-09-07
 
 ## Domain Overview
-- **Total Concepts:** 54
-- **Domain:** [[_index|Musculoskeletal Radiology]]
-- **Master Index:** [[../_index|Master Radiology Vault]] ([Master Radiology Vault](../_index.md))
+- **Total Concepts:** 106
+- **Curriculum Domain:** [[_index|Musculoskeletal Radiology]]
+- **Master Graph Navigation:** [[../_index|Master Radiology Vault]] ([Master Radiology Vault](../_index.md))
+- **Clinical Verification:** 100% textbook primary source verified
 
 ## Contents
 
 | Concept | Summary | Tags | Updated |
 |---|---|---|---|
-| [[19_fetal_musculoskeletal_system|19. Fetal Musculoskeletal System]] ([19. Fetal Musculoskeletal System](19_fetal_musculoskeletal_system.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[38_current_status_of_imaging_of_the_musculoskeletal_system|38 Current Status Of Imaging Of The Musculoskeletal System]] ([38 Current Status Of Imaging Of The Musculoskeletal System](38_current_status_of_imaging_of_the_musculoskeletal_system.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[39_internal_derangements_of_joints|39 Internal Derangements Of Joints]] ([39 Internal Derangements Of Joints](39_internal_derangements_of_joints.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[40_bone_tumours_1|40 Bone Tumours 1]] ([40 Bone Tumours 1](40_bone_tumours_1.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[41_bone_tumours_2|41 Bone Tumours 2]] ([41 Bone Tumours 2](41_bone_tumours_2.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[42_soft-tissue_tumours|42 Soft-Tissue Tumours]] ([42 Soft-Tissue Tumours](42_soft-tissue_tumours.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[43_metabolic_and_endocrine_skeletal_disease|43 Metabolic And Endocrine Skeletal Disease]] ([43 Metabolic And Endocrine Skeletal Disease](43_metabolic_and_endocrine_skeletal_disease.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[44_arthritis|44 Arthritis]] ([44 Arthritis](44_arthritis.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[45_appendicular_and_pelvic_trauma|45 Appendicular And Pelvic Trauma]] ([45 Appendicular And Pelvic Trauma](45_appendicular_and_pelvic_trauma.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[5_musculoskeletal_imaging|5. Musculoskeletal Imaging]] ([5. Musculoskeletal Imaging](5_musculoskeletal_imaging.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[acknowledgement|Acknowledgement]] ([Acknowledgement](acknowledgement.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[acromio-clavicular_joint|Acromio-Clavicular Joint]] ([Acromio-Clavicular Joint](acromio-clavicular_joint.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[anatomy_and_metabolism_of_bone|Anatomy and Metabolism of Bone]] ([Anatomy and Metabolism of Bone](anatomy_and_metabolism_of_bone.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[arthrography|Arthrography]] ([Arthrography](arthrography.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[benign_bone_tumours|Benign Bone Tumours]] ([Benign Bone Tumours](benign_bone_tumours.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[bone_and_soft_tissue_disorders|Bone and Soft-Tissue Disorders]] ([Bone and Soft-Tissue Disorders](bone_and_soft_tissue_disorders.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[bone_metastases|Bone Metastases]] ([Bone Metastases](bone_metastases.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[bone_physiology_and_pathophysiology|Bone Physiology And Pathophysiology]] ([Bone Physiology And Pathophysiology](bone_physiology_and_pathophysiology.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[chapter_outline|Chapter Outline]] ([Chapter Outline](chapter_outline.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[computed_tomography|Computed Tomography]] ([Computed Tomography](computed_tomography.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[conventional_radiography|Conventional Radiography]] ([Conventional Radiography](conventional_radiography.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[differential_diagnosis_of_musculoskeletal_disorders|Differential Diagnosis of Musculoskeletal Disorders]] ([Differential Diagnosis of Musculoskeletal Disorders](differential_diagnosis_of_musculoskeletal_disorders.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[foot_injuries|Foot Injuries]] ([Foot Injuries](foot_injuries.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[fracture_types|Fracture Types]] ([Fracture Types](fracture_types.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[further_reading|Further Reading]] ([Further Reading](further_reading.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[general_characteristics_of_bone_tumours|General Characteristics Of Bone Tumours]] ([General Characteristics Of Bone Tumours](general_characteristics_of_bone_tumours.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[hand_and_wrist|Hand And Wrist]] ([Hand And Wrist](hand_and_wrist.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[imaging_characterisation_of_soft-tissue_masses|Imaging Characterisation Of Soft-Tissue Masses]] ([Imaging Characterisation Of Soft-Tissue Masses](imaging_characterisation_of_soft-tissue_masses.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[imaging_of_joint_disease|Imaging Of Joint Disease]] ([Imaging Of Joint Disease](imaging_of_joint_disease.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[introduction|Introduction]] ([Introduction](introduction.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[magnetic_resonance_imaging|Magnetic Resonance Imaging]] ([Magnetic Resonance Imaging](magnetic_resonance_imaging.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[miscellaneous|Miscellaneous]] ([Miscellaneous](miscellaneous.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[musculoskeletal_system|MUSCULOSKELETAL SYSTEM]] ([MUSCULOSKELETAL SYSTEM](musculoskeletal_system.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[nuclear_medicine|Nuclear Medicine]] ([Nuclear Medicine](nuclear_medicine.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[osteoarthritis|Osteoarthritis]] ([Osteoarthritis](osteoarthritis.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[osteoporosis|Osteoporosis]] ([Osteoporosis](osteoporosis.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[parathyroid_disorders|Parathyroid Disorders]] ([Parathyroid Disorders](parathyroid_disorders.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[pelvic_and_acetabular_fractures|Pelvic And Acetabular Fractures]] ([Pelvic And Acetabular Fractures](pelvic_and_acetabular_fractures.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[primary_malignant_neoplasms_of_bone|Primary Malignant Neoplasms Of Bone]] ([Primary Malignant Neoplasms Of Bone](primary_malignant_neoplasms_of_bone.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[rickets_and_osteomalacia|Rickets And Osteomalacia]] ([Rickets And Osteomalacia](rickets_and_osteomalacia.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[sclerosing_bone_diseases_and_other_bone_disorders|Sclerosing Bone Diseases And Other Bone Disorders]] ([Sclerosing Bone Diseases And Other Bone Disorders](sclerosing_bone_diseases_and_other_bone_disorders.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[section_c_the_musculoskeletal_system|Section C The Musculoskeletal System]] ([Section C The Musculoskeletal System](section_c_the_musculoskeletal_system.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[the_acromioclavicular_joint|The Acromioclavicular Joint]] ([The Acromioclavicular Joint](the_acromioclavicular_joint.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[the_ankle|The Ankle]] ([The Ankle](the_ankle.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[the_ankle_and_foot|The Ankle And Foot]] ([The Ankle And Foot](the_ankle_and_foot.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[the_elbow|The Elbow]] ([The Elbow](the_elbow.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[the_hip|The Hip]] ([The Hip](the_hip.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[the_inflammatory_arthritides|The Inflammatory Arthritides]] ([The Inflammatory Arthritides](the_inflammatory_arthritides.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[the_knee|The Knee]] ([The Knee](the_knee.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[the_shoulder|The Shoulder]] ([The Shoulder](the_shoulder.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[the_sternoclavicular_joint|The Sternoclavicular Joint]] ([The Sternoclavicular Joint](the_sternoclavicular_joint.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[the_wrist|The Wrist]] ([The Wrist](the_wrist.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[ultrasound|Ultrasound]] ([Ultrasound](ultrasound.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
-| [[world_health_organisation_classification_of_soft-tissue_tumours|World Health Organisation Classification Of Soft-Tissue Tumours]] ([World Health Organisation Classification Of Soft-Tissue Tumours](world_health_organisation_classification_of_soft-tissue_tumours.md)) | Verified radiological concept node. | `radiology` | 2026-03-07 |
+| [[11_extremities|11. Extremities]] ([11. Extremities](11_extremities.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[38_current_status_of_imaging_of_the_musculoskeletal_system|38 Current Status Of Imaging Of The Musculoskeletal System]] ([38 Current Status Of Imaging Of The Musculoskeletal System](38_current_status_of_imaging_of_the_musculoskeletal_system.md)) | Current Status of Imaging of The | `msk` | 2026-09-07 |
+| [[39_internal_derangements_of_joints|39 Internal Derangements Of Joints]] ([39 Internal Derangements Of Joints](39_internal_derangements_of_joints.md)) | Internal Derangements of Joints: Upper and | `msk` | 2026-09-07 |
+| [[40_bone_tumours_1|40 Bone Tumours 1]] ([40 Bone Tumours 1](40_bone_tumours_1.md)) | Bone Tumours (1): Radiological Approach, | `msk` | 2026-09-07 |
+| [[41_bone_tumours_2|41 Bone Tumours 2]] ([41 Bone Tumours 2](41_bone_tumours_2.md)) | Bone Tumours (2): Radiological Approach, | `msk` | 2026-09-07 |
+| [[42_soft-tissue_tumours|42 Soft-Tissue Tumours]] ([42 Soft-Tissue Tumours](42_soft-tissue_tumours.md)) | Soft Tissue Tumours | `msk` | 2026-09-07 |
+| [[43_metabolic_and_endocrine_skeletal_disease|43 Metabolic And Endocrine Skeletal Disease]] ([43 Metabolic And Endocrine Skeletal Disease](43_metabolic_and_endocrine_skeletal_disease.md)) | Metabolic and Endocrine Skeletal Disease | `msk` | 2026-09-07 |
+| [[44_arthritis|44 Arthritis]] ([44 Arthritis](44_arthritis.md)) | Emma L. Rowbotham, Andrew J. Grainger, Philip O’Connor | `msk` | 2026-09-07 |
+| [[45_appendicular_and_pelvic_trauma|45 Appendicular And Pelvic Trauma]] ([45 Appendicular And Pelvic Trauma](45_appendicular_and_pelvic_trauma.md)) | Appendicular and Pelvic Trauma | `msk` | 2026-09-07 |
+| [[5_musculoskeletal_imaging|5. Musculoskeletal Imaging]] ([5. Musculoskeletal Imaging](5_musculoskeletal_imaging.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[acknowledgement|Acknowledgement]] ([Acknowledgement](acknowledgement.md)) | CHAPTER 42 Soft Tissue Tumours | `msk` | 2026-09-07 |
+| [[acromio-clavicular_joint|Acromio-Clavicular Joint]] ([Acromio-Clavicular Joint](acromio-clavicular_joint.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[acromioclavicular_joint_disease_osteolysis_and_osteoarthriti|Acromioclavicular Joint Disease (Osteolysis and Osteoarthritis)]] ([Acromioclavicular Joint Disease (Osteolysis and Osteoarthritis)](acromioclavicular_joint_disease_osteolysis_and_osteoarthriti.md)) | TE sequences (T1 and proton density). Chronic rotator cuff tear indirect signs. Potenti... | `radiology, emergency, infection` | 2026-09-07 |
+| [[acromioclavicular_joint_injuries|Acromioclavicular Joint injuries]] ([Acromioclavicular Joint injuries](acromioclavicular_joint_injuries.md)) | There are six types of AC joint injuries. In type II injury (Fig. On the stress view (Fig. | `radiology, emergency` | 2026-09-07 |
+| [[acute_osteomyelitis|Acute Osteomyelitis]] ([Acute Osteomyelitis](acute_osteomyelitis.md)) | Musculoskeletal infection is a common clinical problem. Rheumatoid arthritis, hip invol... | `radiology, emergency, infection` | 2026-09-07 |
+| [[anatomy_and_metabolism_of_bone|Anatomy and Metabolism of Bone]] ([Anatomy and Metabolism of Bone](anatomy_and_metabolism_of_bone.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[anterior_dislocation|Anterior Dislocation]] ([Anterior Dislocation](anterior_dislocation.md)) | Anterior shoulder dislocation. Hill Sachs fracture (arrow). Bankart fracture (arrowhead). | `radiology, emergency, trauma` | 2026-09-07 |
+| [[appendicular_musculoskeletal_infection|APPENDICULAR MUSCULOSKELETAL INFECTION]] ([APPENDICULAR MUSCULOSKELETAL INFECTION](appendicular_musculoskeletal_infection.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[arthrography|Arthrography]] ([Arthrography](arthrography.md)) | CHAPTER 38 Current Status of Imaging of The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[arthropathies|Arthropathies]] ([Arthropathies](arthropathies.md)) | The joint space is preserved. A joint effusion is frequently present. MRfindings have a... | `radiology, emergency` | 2026-09-07 |
+| [[benign_bone_tumours|Benign Bone Tumours]] ([Benign Bone Tumours](benign_bone_tumours.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[biopsies_of_the_musculoskeletal_system|BIOPSIES OF THE MUSCULOSKELETAL SYSTEM]] ([BIOPSIES OF THE MUSCULOSKELETAL SYSTEM](biopsies_of_the_musculoskeletal_system.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[bone_and_soft_tissue_disorders|Bone and Soft-Tissue Disorders]] ([Bone and Soft-Tissue Disorders](bone_and_soft_tissue_disorders.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[bone_metastases|Bone Metastases]] ([Bone Metastases](bone_metastases.md)) | Bone Tumours (2): Radiological Approach, | `msk` | 2026-09-07 |
+| [[bone_physiology_and_pathophysiology|Bone Physiology And Pathophysiology]] ([Bone Physiology And Pathophysiology](bone_physiology_and_pathophysiology.md)) | Metabolic and Endocrine Skeletal Disease | `msk` | 2026-09-07 |
+| [[chapter_outline|Chapter Outline]] ([Chapter Outline](chapter_outline.md)) | Appendicular and Pelvic Trauma | `msk` | 2026-09-07 |
+| [[conventional_radiography|Conventional Radiography]] ([Conventional Radiography](conventional_radiography.md)) | Current Status of Imaging of The | `msk` | 2026-09-07 |
+| [[ct_angiography_of_the_extremities_in_trauma|Ct Angiography of the extremities in trauma]] ([Ct Angiography of the extremities in trauma](ct_angiography_of_the_extremities_in_trauma.md)) | Fractures of the proximalfifth metatarsal bone. A, Zone 1 injury is an avulsion fractur... | `radiology, emergency, trauma` | 2026-09-07 |
+| [[differential_diagnosis_of_musculoskeletal_disorders|Differential Diagnosis of Musculoskeletal Disorders]] ([Differential Diagnosis of Musculoskeletal Disorders](differential_diagnosis_of_musculoskeletal_disorders.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[extremities_non_trauma|Extremities: Non-Trauma]] ([Extremities: Non-Trauma](extremities_non_trauma.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[extremity_trauma|Extremity Trauma]] ([Extremity Trauma](extremity_trauma.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[facet_joint_infiltration|FACET JOINT INFILTRATION]] ([FACET JOINT INFILTRATION](facet_joint_infiltration.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[foot_injuries|Foot Injuries]] ([Foot Injuries](foot_injuries.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[fracture_types|Fracture Types]] ([Fracture Types](fracture_types.md)) | Appendicular and Pelvic Trauma | `msk` | 2026-09-07 |
+| [[fractures_and_dislocations_around_the_ankle|Fractures and Dislocations Around the Ankle]] ([Fractures and Dislocations Around the Ankle](fractures_and_dislocations_around_the_ankle.md)) | ACL has been detached. It is caused by forceful internal rotation of aflexed knee. A) i... | `radiology, emergency, trauma` | 2026-09-07 |
+| [[fractures_and_dislocations_around_the_elbow|Fractures and Dislocations Around the elbow]] ([Fractures and Dislocations Around the elbow](fractures_and_dislocations_around_the_elbow.md)) | One part fractures (Fig. A) are nondisplaced or minimally displaced fractures. | `radiology, emergency, trauma` | 2026-09-07 |
+| [[fractures_and_dislocations_around_the_knee|Fractures and Dislocations Around the Knee]] ([Fractures and Dislocations Around the Knee](fractures_and_dislocations_around_the_knee.md)) | Transcervical and basicervical fractures are rare. Isolated fractures of the greater tr... | `radiology, emergency, trauma` | 2026-09-07 |
+| [[fractures_and_dislocations_of_the_carpus|Fractures and Dislocations of the Carpus]] ([Fractures and Dislocations of the Carpus](fractures_and_dislocations_of_the_carpus.md)) | Chauffeur’s fracture (Hutchinson fracture) (Fig. Torus fracture (buckle fracture) (Fig.... | `radiology, emergency, trauma` | 2026-09-07 |
+| [[fractures_and_dislocations_of_the_foot|Fractures and Dislocations of the Foot]] ([Fractures and Dislocations of the Foot](fractures_and_dislocations_of_the_foot.md)) | The talar neck is the most vulnerable site. Fractures of the talar neck (Fig. Type I is... | `radiology, emergency, trauma` | 2026-09-07 |
+| [[fractures_and_dislocations_of_the_hand|Fractures and Dislocations of the Hand]] ([Fractures and Dislocations of the Hand](fractures_and_dislocations_of_the_hand.md)) | Rolando, and comminuted fractures. Gamekeeper’s or skier’s thumb (Fig. Fractures of the... | `radiology, emergency, trauma` | 2026-09-07 |
+| [[fractures_of_the_acetabulum|Fractures of the Acetabulum]] ([Fractures of the Acetabulum](fractures_of_the_acetabulum.md)) | The fracture is located lateral to the sacral neural foramina. Posterior wall fractures... | `radiology, emergency, trauma` | 2026-09-07 |
+| [[fractures_of_the_clavicle|Fractures of the Clavicle]] ([Fractures of the Clavicle](fractures_of_the_clavicle.md)) | The middle third of the clavicle (group 1) (Fig. Fracture of the scapula. | `radiology, emergency, trauma` | 2026-09-07 |
+| [[fractures_of_the_pelvic_ring|Fractures of the pelvic ring]] ([Fractures of the pelvic ring](fractures_of_the_pelvic_ring.md)) | Avulsion injuries (Fig. VS), and combined mechanism (CM). In the APC category (Fig. | `radiology, emergency, trauma` | 2026-09-07 |
+| [[fractures_of_the_proximal_segment_and_shaft_of_the_humerus|Fractures of the proximal Segment and Shaft of the Humerus]] ([Fractures of the proximal Segment and Shaft of the Humerus](fractures_of_the_proximal_segment_and_shaft_of_the_humerus.md)) | One part fractures (Fig. A) are nondisplaced or minimally displaced fractures. | `radiology, emergency, trauma` | 2026-09-07 |
+| [[fractures_of_the_scapula|Fractures of the Scapula]] ([Fractures of the Scapula](fractures_of_the_scapula.md)) | Common fractures of the upper extremity. The middle third of the clavicle (group 1) (Fig. | `radiology, emergency, trauma` | 2026-09-07 |
+| [[fractures_of_the_shafts_and_distal_radius_and_ulna|Fractures of the Shafts and Distal radius and ulna]] ([Fractures of the Shafts and Distal radius and ulna](fractures_of_the_shafts_and_distal_radius_and_ulna.md)) | Essex Lopresti fracture. Fractures of the olecranon (Fig. Fractures of the coronoid pro... | `radiology, emergency, trauma` | 2026-09-07 |
+| [[further_reading|Further Reading]] ([Further Reading](further_reading.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[general_characteristics_of_bone_tumours|General Characteristics Of Bone Tumours]] ([General Characteristics Of Bone Tumours](general_characteristics_of_bone_tumours.md)) | Bone Tumours (1): Radiological Approach, | `msk` | 2026-09-07 |
+| [[glenohumeral_joint_disease_arthropathy_and_adhesive_capsulit|Glenohumeral Joint Disease (Arthropathy and Adhesive Capsulitis)]] ([Glenohumeral Joint Disease (Arthropathy and Adhesive Capsulitis)](glenohumeral_joint_disease_arthropathy_and_adhesive_capsulit.md)) | Spectrum of rotator cuff pathology seen on MR. There may be an associated joint effusio... | `radiology, emergency, infection` | 2026-09-07 |
+| [[hand_and_wrist|Hand And Wrist]] ([Hand And Wrist](hand_and_wrist.md)) | CHAPTER 39 Internal Derangements of Joints: Upper and Lower Limbs | `msk` | 2026-09-07 |
+| [[hip_dislocations_and_fractures_of_the_proximal_femur|Hip Dislocations and Fractures of the proximal Femur]] ([Hip Dislocations and Fractures of the proximal Femur](hip_dislocations_and_fractures_of_the_proximal_femur.md)) | Posterior dislocation of the hip (Fig. Dislocations of the hip. Subcapital fracture (Fig. | `radiology, emergency, trauma` | 2026-09-07 |
+| [[imaging_characterisation_of_soft-tissue_masses|Imaging Characterisation Of Soft-Tissue Masses]] ([Imaging Characterisation Of Soft-Tissue Masses](imaging_characterisation_of_soft-tissue_masses.md)) | Soft Tissue Tumours | `msk` | 2026-09-07 |
+| [[imaging_of_joint_disease|Imaging Of Joint Disease]] ([Imaging Of Joint Disease](imaging_of_joint_disease.md)) | Emma L. Rowbotham, Andrew J. Grainger, Philip O’Connor | `msk` | 2026-09-07 |
+| [[infected_orthopedic_hardware|Infected Orthopedic Hardware]] ([Infected Orthopedic Hardware](infected_orthopedic_hardware.md)) | CT, easier and earlier (see Fig. Subcutaneous abscess at the posterolateral ankle. T1 a... | `radiology, emergency` | 2026-09-07 |
+| [[infectious_arthritis|Infectious Arthritis]] ([Infectious Arthritis](infectious_arthritis.md)) | PVNS typically do not. Note the destructive changes on both sides of the joint (arrows)... | `radiology, emergency, infection` | 2026-09-07 |
+| [[inferior_pulmonary_ligament|Inferior Pulmonary Ligament]] ([Inferior Pulmonary Ligament](inferior_pulmonary_ligament.md)) | Comparable CT sections show the majorfissures bilaterally. They appear as lines because... | `radiology, cardio` | 2026-09-07 |
+| [[inferior_subluxation_luxatio_erecta|Inferior Subluxation (Luxatio Erecta)]] ([Inferior Subluxation (Luxatio Erecta)](inferior_subluxation_luxatio_erecta.md)) | The Hill Sachs fracture (Fig. Posterior dislocations of the glenohumeral joint (Fig. Po... | `radiology, emergency` | 2026-09-07 |
+| [[injuries_to_the_forefoot|injuries to the Forefoot]] ([injuries to the Forefoot](injuries_to_the_forefoot.md)) | They account for 25% of all calcaneal fractures. This can occur with minimal trauma (e.... | `radiology, emergency` | 2026-09-07 |
+| [[insufficiency_fractures|Insufficiency Fractures]] ([Insufficiency Fractures](insufficiency_fractures.md)) | Hill Sachs deformity (Fig. Imagingfindings parallel histologicalfindings. MR examinatio... | `radiology, emergency, trauma` | 2026-09-07 |
+| [[introduction|Introduction]] ([Introduction](introduction.md)) | Appendicular and Pelvic Trauma | `msk` | 2026-09-07 |
+| [[lower_extremit|LOWER EXTREMIT]] ([LOWER EXTREMIT](lower_extremit.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[lower_extremity_arteries|Lower-Extremity Arteries]] ([Lower-Extremity Arteries](lower_extremity_arteries.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[lower_extremity_veins|Lower-Extremity Veins]] ([Lower-Extremity Veins](lower_extremity_veins.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[miscellaneous|Miscellaneous]] ([Miscellaneous](miscellaneous.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[musculoskeletal|MUSCULOSKELETAL]] ([MUSCULOSKELETAL](musculoskeletal.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[musculoskeletal_intervention|Musculoskeletal Intervention]] ([Musculoskeletal Intervention](musculoskeletal_intervention.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[musculoskeletal_system|MUSCULOSKELETAL SYSTEM]] ([MUSCULOSKELETAL SYSTEM](musculoskeletal_system.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[nasal_fractures|Nasal Fractures]] ([Nasal Fractures](nasal_fractures.md)) | Zygomaticomaxillary complex fracture. Arrow, fracture of mandibular symphysis. Eustachi... | `radiology, emergency, trauma` | 2026-09-07 |
+| [[osteoarthritis|Osteoarthritis]] ([Osteoarthritis](osteoarthritis.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[osteolysis|Osteolysis]] ([Osteolysis](osteolysis.md)) | Spectrum of rotator cuff pathology seen on MR. There may be an associated joint effusio... | `radiology, emergency` | 2026-09-07 |
+| [[osteonecrosis_of_the_femoral_head|Osteonecrosis of the Femoral Head]] ([Osteonecrosis of the Femoral Head](osteonecrosis_of_the_femoral_head.md)) | The joint space is preserved. A joint effusion is frequently present. MRfindings have a... | `radiology, emergency` | 2026-09-07 |
+| [[osteoporosis|Osteoporosis]] ([Osteoporosis](osteoporosis.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[pelvic_and_acetabular_fractures|Pelvic And Acetabular Fractures]] ([Pelvic And Acetabular Fractures](pelvic_and_acetabular_fractures.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[posterior_dislocation|Posterior Dislocation]] ([Posterior Dislocation](posterior_dislocation.md)) | The Hill Sachs fracture (Fig. Posterior dislocations of the glenohumeral joint (Fig. Po... | `radiology, emergency, trauma` | 2026-09-07 |
+| [[primary_malignant_neoplasms_of_bone|Primary Malignant Neoplasms Of Bone]] ([Primary Malignant Neoplasms Of Bone](primary_malignant_neoplasms_of_bone.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[rheumatoid_arthritis|Rheumatoid Arthritis]] ([Rheumatoid Arthritis](rheumatoid_arthritis.md)) | There may be an associated joint effusion, although thisfinding is ­ variable. Spectrum... | `radiology, emergency, infection` | 2026-09-07 |
+| [[rhyzolysis_radiofrequency_neurotomy_of_the_zygapophysial_joi|RHYZOLYSIS: RADIOFREQUENCY NEUROTOMY OF THE ZYGAPOPHYSIAL JOINTS]] ([RHYZOLYSIS: RADIOFREQUENCY NEUROTOMY OF THE ZYGAPOPHYSIAL JOINTS](rhyzolysis_radiofrequency_neurotomy_of_the_zygapophysial_joi.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[rickets_and_osteomalacia|Rickets And Osteomalacia]] ([Rickets And Osteomalacia](rickets_and_osteomalacia.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[rotator_cuff_abnormalities_and_impingement|Rotator Cuff Abnormalities and Impingement]] ([Rotator Cuff Abnormalities and Impingement](rotator_cuff_abnormalities_and_impingement.md)) | SS) tendon near its humeral (H) insertion. TE sequences (T1 and proton density). Chroni... | `radiology, emergency` | 2026-09-07 |
+| [[sclerosing_bone_diseases_and_other_bone_disorders|Sclerosing Bone Diseases And Other Bone Disorders]] ([Sclerosing Bone Diseases And Other Bone Disorders](sclerosing_bone_diseases_and_other_bone_disorders.md)) | CHAPTER 43 Metabolic and Endocrine Skeletal Disease | `msk` | 2026-09-07 |
+| [[section_c_the_musculoskeletal_system|Section C The Musculoskeletal System]] ([Section C The Musculoskeletal System](section_c_the_musculoskeletal_system.md)) | Current Status of Imaging of The | `msk` | 2026-09-07 |
+| [[skeletal_abnormalities_in_heart_disease|SKELETAL ABNORMALITIES IN HEART DISEASE]] ([SKELETAL ABNORMALITIES IN HEART DISEASE](skeletal_abnormalities_in_heart_disease.md)) | Umbrella closure devices. A, For an atrial septal defect. B, For a patent ductus arteri... | `radiology, cardio` | 2026-09-07 |
+| [[skeletal_system|Skeletal System]] ([Skeletal System](skeletal_system.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[skull_fractures|Skull Fractures]] ([Skull Fractures](skull_fractures.md)) | CT console or other workstation. Orbital blow out fractures. A, Axial CT shows displace... | `radiology, emergency, trauma` | 2026-09-07 |
+| [[smash_fractures|Smash Fractures]] ([Smash Fractures](smash_fractures.md)) | Zygomaticomaxillary complex fracture. Arrow, fracture of mandibular symphysis. Eustachi... | `radiology, emergency, trauma` | 2026-09-07 |
+| [[subluxations_and_dislocations_about_the_glenohumeral_joint|Subluxations and Dislocations about the Glenohumeral Joint]] ([Subluxations and Dislocations about the Glenohumeral Joint](subluxations_and_dislocations_about_the_glenohumeral_joint.md)) | Anterior shoulder dislocation. Hill Sachs fracture (arrow). Bankart fracture (arrowhead). | `radiology, emergency, trauma` | 2026-09-07 |
+| [[systemic_skeletal_disorders|SYSTEMIC SKELETAL DISORDERS]] ([SYSTEMIC SKELETAL DISORDERS](systemic_skeletal_disorders.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[the_acromioclavicular_joint|The Acromioclavicular Joint]] ([The Acromioclavicular Joint](the_acromioclavicular_joint.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[the_ankle|The Ankle]] ([The Ankle](the_ankle.md)) | CHAPTER 45 Appendicular and Pelvic Trauma | `msk` | 2026-09-07 |
+| [[the_ankle_and_foot|The Ankle And Foot]] ([The Ankle And Foot](the_ankle_and_foot.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[the_elbow|The Elbow]] ([The Elbow](the_elbow.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[the_hip|The Hip]] ([The Hip](the_hip.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[the_inflammatory_arthritides|The Inflammatory Arthritides]] ([The Inflammatory Arthritides](the_inflammatory_arthritides.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[the_knee|The Knee]] ([The Knee](the_knee.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[the_painful_hip|THE PAINFUL HIP]] ([THE PAINFUL HIP](the_painful_hip.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[the_shoulder|The Shoulder]] ([The Shoulder](the_shoulder.md)) | CHAPTER 45 Appendicular and Pelvic Trauma | `msk` | 2026-09-07 |
+| [[the_sternoclavicular_joint|The Sternoclavicular Joint]] ([The Sternoclavicular Joint](the_sternoclavicular_joint.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[the_wrist|The Wrist]] ([The Wrist](the_wrist.md)) | CHAPTER 45 Appendicular and Pelvic Trauma | `msk` | 2026-09-07 |
+| [[thermal_ablation_of_bone_tumors|THERMAL ABLATION OF BONE TUMORS]] ([THERMAL ABLATION OF BONE TUMORS](thermal_ablation_of_bone_tumors.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[transient_bone_marrow_edema_and_transient_osteoporosis_of_th|Transient Bone Marrow Edema and Transient Osteoporosis of the Hip]] ([Transient Bone Marrow Edema and Transient Osteoporosis of the Hip](transient_bone_marrow_edema_and_transient_osteoporosis_of_th.md)) | MR ­examination should be obtained if available. Radiographically occult insufficiency... | `radiology, emergency` | 2026-09-07 |
+| [[trauma_and_bone_infarction|TRAUMA AND BONE INFARCTION]] ([TRAUMA AND BONE INFARCTION](trauma_and_bone_infarction.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[ultrasound|Ultrasound]] ([Ultrasound](ultrasound.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
+| [[upper_extremity|UPPER EXTREMITY]] ([UPPER EXTREMITY](upper_extremity.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[upper_extremity_arteries|Upper Extremity Arteries]] ([Upper Extremity Arteries](upper_extremity_arteries.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[upper_extremity_venous_thrombosis|UPPER EXTREMITY VENOUS THROMBOSIS]] ([UPPER EXTREMITY VENOUS THROMBOSIS](upper_extremity_venous_thrombosis.md)) | High yield clinical and radiological pearls compiled losslessly from primary textbook s... | `msk` | 2026-09-07 |
+| [[world_health_organisation_classification_of_soft-tissue_tumours|World Health Organisation Classification Of Soft-Tissue Tumours]] ([World Health Organisation Classification Of Soft-Tissue Tumours](world_health_organisation_classification_of_soft-tissue_tumours.md)) | SECTION C The Musculoskeletal System | `msk` | 2026-09-07 |
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*

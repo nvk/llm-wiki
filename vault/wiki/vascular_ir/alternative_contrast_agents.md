@@ -214,3 +214,6 @@ Pediatric dosing: prednisone 0.5 mg/kg/dose, maximum
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[parasternal_short_axis|Parasternal Short Axis]] ([Parasternal Short Axis](../cardio/parasternal_short_axis.md))

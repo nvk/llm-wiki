@@ -182,3 +182,7 @@ branch left upper lobe (LUL). 2, Anterior branch LUL. 3, Lingular branches. 4, A
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[percutaneous_biliary_drainage_after_failed_endoscopic_retrog|PERCUTANEOUS BILIARY DRAINAGE AFTER FAILED ENDOSCOPIC RETROGRADE CHOLANGIOPANCREATOGRAPHY]] ([PERCUTANEOUS BILIARY DRAINAGE AFTER FAILED ENDOSCOPIC RETROGRADE CHOLANGIOPANCREATOGRAPHY](../git/percutaneous_biliary_drainage_after_failed_endoscopic_retrog.md))
+- [[bladder_intervention|BLADDER INTERVENTION]] ([BLADDER INTERVENTION](../uro/bladder_intervention.md))

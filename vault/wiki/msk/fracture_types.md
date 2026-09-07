@@ -100,45 +100,45 @@ in the context of normal plain radiography or persistent symptoms
 ## 2. Core Radiology High-Yield Notes (Pages 113-120)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p113_p113_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p114_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p114_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p114_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p114_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p114_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p115_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p115_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p115_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p116_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p116_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p116_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p116_img6.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p116_img8.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p116_img10.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p116_img11.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p117_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p117_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p117_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p113_p120_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 457
 Wrist and hand
@@ -933,3 +933,5 @@ Associations; Hydrocephalus (90%), Additional CNS malformations (~ 40%)
 (agenesis of the corpus callosum, encephaloceles, heterotopia, polymicrogyria, etc...).
 155
 
+## See Also
+- [[mechanism_of_injury|Mechanism Of Injury]] ([Mechanism Of Injury](../neuro/mechanism_of_injury.md))

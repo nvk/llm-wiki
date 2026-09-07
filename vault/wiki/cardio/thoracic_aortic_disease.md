@@ -164,3 +164,6 @@ widely variable. The purpose
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[anatomy_of_the_urinary_tract|Anatomy Of The Urinary Tract]] ([Anatomy Of The Urinary Tract](../uro/anatomy_of_the_urinary_tract.md))

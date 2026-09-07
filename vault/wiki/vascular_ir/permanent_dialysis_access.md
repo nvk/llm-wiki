@@ -159,3 +159,6 @@ outflow with a clamp s
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[mediastinal_diseases|Mediastinal Diseases]] ([Mediastinal Diseases](../cardio/mediastinal_diseases.md))

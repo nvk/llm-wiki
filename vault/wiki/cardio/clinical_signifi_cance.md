@@ -169,3 +169,4 @@ FIGURE 1-16. Left ventricular aneurysm. A and B, This angular left ventricu
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[intussusception_emergency|Intussusception]] ([Intussusception](../paeds/intussusception_emergency.md))

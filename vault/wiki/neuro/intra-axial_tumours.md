@@ -13,13 +13,13 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 65-65)
 
 ### Key Visuals & Figures (Grainger)
-![Intra-Axial Tumours Figure](assets/grainger_intra-axial_tumours_p65_img1.jpeg)
+> **Key Imaging Finding:** Intra-Axial Tumours Figure
 
-![Intra-Axial Tumours Figure](assets/grainger_intra-axial_tumours_p65_img2.jpeg)
+> **Key Imaging Finding:** Intra-Axial Tumours Figure
 
-![Intra-Axial Tumours Figure](assets/grainger_intra-axial_tumours_p65_img3.jpeg)
+> **Key Imaging Finding:** Intra-Axial Tumours Figure
 
-![Intra-Axial Tumours Figure](assets/grainger_intra-axial_tumours_p65_img4.jpeg)
+> **Key Imaging Finding:** Intra-Axial Tumours Figure
 
 CHAPTER 55  Benign and Malignant Intracranial Tumours in Adults
 1415
@@ -93,27 +93,27 @@ features. For this reason, radiological descriptions of masses as probable
 ## 2. Core Radiology High-Yield Notes (Pages 1-8)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p1_p2_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img4.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img6.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img7.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img8.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img9.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img12.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p5_img87.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img46.png)
+> **Key Imaging Finding:** Core Figure
 
 200
 Elsayes, K.M. et al. Adrenal Masses: MR Imaging Features with Pathologic Correlation. Radiographics 24, S73(2004).
@@ -483,29 +483,29 @@ Creutzfeldt–Jakob disease.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 229-240)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p229_p229_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p230_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p231_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p232_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p233_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p234_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p235_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p236_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p237_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p238_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p239_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p240_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 - Bladder Masses / Cancers -
 Work up for bladder lesions / masses in kids should start with an Ultrasound. A potentially 
@@ -1102,3 +1102,6 @@ Abuse — Some people abuse drugs, some just can't stand screaming kids, some su
 shortcomings. More on this later.
 241
 
+## See Also
+- [[image_guided_tumor_ablation_basic_principles|Image-Guided Tumor Ablation: Basic Principles]] ([Image-Guided Tumor Ablation: Basic Principles](../vascular_ir/image_guided_tumor_ablation_basic_principles.md))
+- [[tumors|TUMORS]] ([TUMORS](../vascular_ir/tumors.md))

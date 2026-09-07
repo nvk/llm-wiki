@@ -159,3 +159,6 @@ b
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[eosinophilic_lung_disease|Eosinophilic Lung Disease]] ([Eosinophilic Lung Disease](../cardio/eosinophilic_lung_disease.md))

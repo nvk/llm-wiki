@@ -161,3 +161,6 @@ the most stubborn objects (Fig. 4-53).
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[mitral_annular_calcifi_cation|Mitral Annular Calcifi cation]] ([Mitral Annular Calcifi cation](../cardio/mitral_annular_calcifi_cation.md))

@@ -166,3 +166,6 @@ Nontunneled
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[imaging_evaluation_of_pulmonary_embolism|IMAGING EVALUATION OF PULMONARY EMBOLISM]] ([IMAGING EVALUATION OF PULMONARY EMBOLISM](../cardio/imaging_evaluation_of_pulmonary_embolism.md))

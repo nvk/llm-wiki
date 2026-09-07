@@ -169,3 +169,6 @@ H
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[bronchiectasis|Bronchiectasis]] ([Bronchiectasis](../cardio/bronchiectasis.md))

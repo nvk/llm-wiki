@@ -134,25 +134,25 @@ can be used as well. The slice thickness should be 3 mm with no gap.
 ## 2. Core Radiology High-Yield Notes (Pages 1-8)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p1_p2_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p4_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p4_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p4_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p4_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 156
 Soyer, P. et al. Celiac disease in adults: evaluation with MDCT enteroclysis. AJR. American journal of roentgenology 191, 
@@ -1168,3 +1168,5 @@ This pattern is possible as the
 variant anatomy with the PCA 
 feeds primarily from the ICA.
 
+## See Also
+- [[interstitial_lungdisease|Interstitial LungDisease]] ([Interstitial LungDisease](../cardio/interstitial_lungdisease.md))

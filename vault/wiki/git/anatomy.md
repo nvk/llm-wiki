@@ -14,11 +14,11 @@ aliases: ["anatomy"]---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 106-107)
 
 ### Key Visuals & Figures (Grainger)
-![Anatomy Figure](assets/grainger_anatomy_p107_img1.jpeg)
+> **Key Imaging Finding:** Anatomy Figure
 
-![Anatomy Figure](assets/grainger_anatomy_p107_img2.jpeg)
+> **Key Imaging Finding:** Anatomy Figure
 
-![Anatomy Figure](assets/grainger_anatomy_p107_img3.jpeg)
+> **Key Imaging Finding:** Anatomy Figure
 
 568
 The Large Bowel
@@ -167,35 +167,35 @@ enema series showing rectal contrast passing anteriorly into the vagina
 ## 2. Core Radiology High-Yield Notes (Pages 49-56)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p49_p49_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p49_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p49_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 134
 Overview of gastric bypass surgery
@@ -537,21 +537,21 @@ Case courtesy Michael Callahan, MD, Boston Children’s Hospital.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 565-572)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p565_p565_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p565_p566_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p565_p567_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p565_p568_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p565_p569_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p565_p570_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p565_p571_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p565_p572_img1.png)
+> **Key Imaging Finding:** Crack Figure
 
 Radium - Ra^23 (Xofigo): This is the most recent of the three agents, and probably the best. 
 The idea is that Ra223 behaves in a similar way to calcium. It is absorbed into the bone matrix 
@@ -747,3 +747,5 @@ Columbia, SC
 55320885R00311
 55320885R00311
 
+## See Also
+- [[left_atrium|Left Atrium]] ([Left Atrium](../cardio/left_atrium.md))

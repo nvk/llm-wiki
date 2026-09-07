@@ -187,3 +187,5 @@ branches continue to suggest pulmo
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[uterine_artery_embolization|UTERINE ARTERY EMBOLIZATION]] ([UTERINE ARTERY EMBOLIZATION](../gynae/uterine_artery_embolization.md))
+- [[the_normal_vascular_wall|THE NORMAL VASCULAR WALL]] ([THE NORMAL VASCULAR WALL](../vascular_ir/the_normal_vascular_wall.md))

@@ -171,3 +171,4 @@ wi
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[evaluation_of_heart_size|Evaluation of Heart Size]] ([Evaluation of Heart Size](../cardio/evaluation_of_heart_size.md))

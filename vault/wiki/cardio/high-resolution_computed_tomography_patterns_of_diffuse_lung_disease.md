@@ -99,55 +99,55 @@ The distribution and density of nodules may help refine what can be
 ## 2. Core Radiology High-Yield Notes (Pages 25-32)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p25_p25_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p25_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p25_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p26_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p26_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p26_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p26_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img6.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p31_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p31_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 24
 • Adenopathy is common in primary TB, typically featuring central low-attenuation and 
@@ -1068,3 +1068,5 @@ classically has a T2 dark rim.
 T1+C
 275
 
+## See Also
+- [[computed_tomography_and_computed_tomography_angiography|COMPUTED TOMOGRAPHY AND COMPUTED TOMOGRAPHY ANGIOGRAPHY]] ([COMPUTED TOMOGRAPHY AND COMPUTED TOMOGRAPHY ANGIOGRAPHY](../physics_nuclear/computed_tomography_and_computed_tomography_angiography.md))

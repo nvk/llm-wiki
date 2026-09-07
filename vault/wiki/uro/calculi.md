@@ -162,37 +162,37 @@ Benign
 ## 2. Core Radiology High-Yield Notes (Pages 17-24)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p17_p18_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p20_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 172
 Bosniak classification of cystic renal masses
@@ -537,29 +537,29 @@ OIS/AAST grading of renal trauma
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 325-336)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p325_p325_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p326_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p327_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p328_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p329_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p330_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p331_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p332_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p333_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p334_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p335_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p336_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 S E C T I O N 4:
 G a l l b l a d d e r 
@@ -1107,3 +1107,5 @@ Best Option - Rem em ber to
 R ead A ll the Answ er Choices!
 337
 
+## See Also
+- [[further_reading|Further Reading]] ([Further Reading](../cardio/further_reading.md))

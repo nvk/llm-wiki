@@ -165,3 +165,6 @@ B
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[8_spleen|8. Spleen]] ([8. Spleen](../git/8_spleen.md))

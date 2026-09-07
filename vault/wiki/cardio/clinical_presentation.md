@@ -197,3 +197,6 @@ patients may be pink or blue (cyanotic). The ductus arteriosus may
 provide an effective temporary bypass for the obstruction, facilitating 
 systemic perfusion with deoxygenated or mixed blood; however, as 
 the duct closes (some days after birth), life
+
+## See Also
+- [[24_the_biliary_system|24 The Biliary System]] ([24 The Biliary System](../git/24_the_biliary_system.md))

@@ -193,3 +193,4 @@ there is increased resistanc
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[disorders_of_white_matter|DISORDERS OF WHITE MATTER]] ([DISORDERS OF WHITE MATTER](../neuro/disorders_of_white_matter.md))

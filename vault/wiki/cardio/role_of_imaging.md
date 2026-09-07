@@ -106,33 +106,33 @@ in the myocardial interstitium (such us collagen or amyloid proteins
 ## 2. Core Radiology High-Yield Notes (Pages 81-88)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p81_p81_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p83_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p84_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p84_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p88_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 80
 Panacinar (panlobular) emphysema
@@ -407,29 +407,29 @@ Mesentery and peritoneum 149
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 169-180)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p169_p169_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p170_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p171_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p172_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p173_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p174_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p175_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p176_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p177_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p178_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p179_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p180_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Location 3; Nasolacrimal Apparatus
 Dacryocystocele
@@ -973,3 +973,5 @@ PIE = First week of life
 CLD = After 3 to 4 weeks' postnatal age
 181
 
+## See Also
+- [[the_ankle_and_foot|The Ankle And Foot]] ([The Ankle And Foot](../msk/the_ankle_and_foot.md))

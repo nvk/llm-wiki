@@ -133,37 +133,37 @@ are treated topically by transuretheral resection of bladder tumour
 ## 2. Core Radiology High-Yield Notes (Pages 17-24)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p17_p18_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p20_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 172
 Bosniak classification of cystic renal masses
@@ -1006,3 +1006,6 @@ Insufficiency
 Fracture
 71
 
+## See Also
+- [[the_four_ds_of_mediastinal_masses|The Four Ds of Mediastinal Masses]] ([The Four Ds of Mediastinal Masses](../cardio/the_four_ds_of_mediastinal_masses.md))
+- [[55_benign_and_malignant_intracranial_tumours_in_adults|55 Benign And Malignant Intracranial Tumours In Adults]] ([55 Benign And Malignant Intracranial Tumours In Adults](../neuro/55_benign_and_malignant_intracranial_tumours_in_adults.md))

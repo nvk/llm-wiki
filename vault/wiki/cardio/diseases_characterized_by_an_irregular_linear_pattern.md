@@ -195,3 +195,6 @@ Clinical features
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[hydrocephalus|HYDROCEPHALUS]] ([HYDROCEPHALUS](../neuro/hydrocephalus.md))

@@ -104,39 +104,39 @@ role for valvular assessment in thoracic aortic diseases (coexisting valvular
 ## 2. Core Radiology High-Yield Notes (Pages 41-48)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p42_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img26.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img37.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img4.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img6.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 40
 Pleural effusion
@@ -499,29 +499,29 @@ distinguish between a pulmonary artery and vein by tracing the vessel back to th
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 505-516)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p505_p505_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p506_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p507_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p508_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p509_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p510_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p511_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p512_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p513_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p514_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p515_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p516_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Sulfur Colloid Bone Scan & WBC Imaging:
 Tc can be tagged to sulfur colloid with the idea of getting a 
@@ -968,3 +968,5 @@ useful PET CT is. It trends with calcitonin:
 Associated with MEN 2a and 2b
 517
 
+## See Also
+- [[suggested_reading|SUGGESTED READING]] ([SUGGESTED READING](../emergency/suggested_reading.md))

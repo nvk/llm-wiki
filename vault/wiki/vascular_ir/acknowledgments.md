@@ -158,3 +158,6 @@ that Volume II of THE REQUISITES in interventio
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[atrial_septal_defects|Atrial Septal Defects]] ([Atrial Septal Defects](../cardio/atrial_septal_defects.md))

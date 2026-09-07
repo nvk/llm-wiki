@@ -91,38 +91,37 @@ SUMMARY BOX
 •	 Chest radiography remains the mainstay of thoracic imaging
 •	 Novel techniques such as digital tomosynthesis, while useful, are still 
 expensive and limited in availability
-https://t.me/afkebooks
 
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p10_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img7.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img8.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img10.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img12.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p15_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p16_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 8
 Patterns of lung disease
@@ -403,29 +402,29 @@ Lymphangitic carcinomatosis.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 13-24)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p13_p13_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p14_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p15_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p16_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p17_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p18_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p19_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p20_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p21_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p22_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p23_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p24_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 m
 LAW 3 - Performance on “Game Day” must equal performance in practice
@@ -964,3 +963,7 @@ a drawer with my other creepy journals (my poop journal, my ear wax journal, my 
 lint journal).” They thought I was joking...
 25
 
+## See Also
+- [[conclusion|CONCLUSION]] ([CONCLUSION](../emergency/conclusion.md))
+- [[infections|INFECTIONS]] ([INFECTIONS](../emergency/infections.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../emergency/suggested_readings.md))

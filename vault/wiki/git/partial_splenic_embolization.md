@@ -161,3 +161,7 @@ gastric varices (arrow). B, Digital image obtained after inflation of an occlusi
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[acute_ischemia|ACUTE ISCHEMIA]] ([ACUTE ISCHEMIA](../vascular_ir/acute_ischemia.md))
+- [[arteriomegaly|ARTERIOMEGALY]] ([ARTERIOMEGALY](../vascular_ir/arteriomegaly.md))

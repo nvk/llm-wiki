@@ -13,15 +13,15 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 133-134)
 
 ### Key Visuals & Figures (Grainger)
-![Non-Nodal Metastases Figure](assets/grainger_non-nodal_metastases_p133_img1.jpeg)
+> **Key Imaging Finding:** Non-Nodal Metastases Figure
 
-![Non-Nodal Metastases Figure](assets/grainger_non-nodal_metastases_p133_img2.jpeg)
+> **Key Imaging Finding:** Non-Nodal Metastases Figure
 
-![Non-Nodal Metastases Figure](assets/grainger_non-nodal_metastases_p133_img3.jpeg)
+> **Key Imaging Finding:** Non-Nodal Metastases Figure
 
-![Non-Nodal Metastases Figure](assets/grainger_non-nodal_metastases_p133_img4.jpeg)
+> **Key Imaging Finding:** Non-Nodal Metastases Figure
 
-![Non-Nodal Metastases Figure](assets/grainger_non-nodal_metastases_p134_img1.jpeg)
+> **Key Imaging Finding:** Non-Nodal Metastases Figure
 
 854
 SECTION B  Abdominal Imaging
@@ -214,39 +214,39 @@ inferior mesenteric, common iliac, inguinal, femoral, supraclavicular).
 ## 2. Core Radiology High-Yield Notes (Pages 25-32)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p25_p25_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p25_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 180
 Ureter
@@ -1248,3 +1248,7 @@ kid (could be neuroblastoma met), and
 Mets / Myeloma in an adult.
 299
 
+## See Also
+- [[imaging|IMAGING]] ([IMAGING](../vascular_ir/imaging.md))
+- [[key_collateral_pathways|KEY COLLATERAL PATHWAYS]] ([KEY COLLATERAL PATHWAYS](../vascular_ir/key_collateral_pathways.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../vascular_ir/suggested_readings.md))

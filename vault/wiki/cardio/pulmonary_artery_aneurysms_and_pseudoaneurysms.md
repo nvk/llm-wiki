@@ -187,3 +187,7 @@ Infection
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[arterial_embolism|ARTERIAL EMBOLISM]] ([ARTERIAL EMBOLISM](../vascular_ir/arterial_embolism.md))
+- [[venous_aneurysms|VENOUS ANEURYSMS]] ([VENOUS ANEURYSMS](../vascular_ir/venous_aneurysms.md))

@@ -127,44 +127,43 @@ two-dimensional planar VQ scintigraphy.
 •	 Positron emission tomography (PET), hybridised with CT and increasingly 
 also with MRI, offers integrated metabolic and anatomical information critical 
 to thoracic tumour staging.
-https://t.me/afkebooks
 
 ## 2. Core Radiology High-Yield Notes (Pages 49-56)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p49_p50_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p51_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img88.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img89.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p53_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img26.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img27.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img35.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img70.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img76.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img77.png)
+> **Key Imaging Finding:** Core Figure
 
 48
 Diffuse lung disease
@@ -459,29 +458,29 @@ with chronic ﬁbrosis
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 73-84)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p73_p73_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p74_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p75_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p76_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p77_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p78_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p79_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p80_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p81_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p82_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p83_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p84_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 SECTION 6:
 C o n g e n i t a l
@@ -1075,3 +1074,7 @@ Traction Bronchiectasis
 Micronodules
 85
 
+## See Also
+- [[carotid_and_vertebral_arteries|Carotid and Vertebral Arteries]] ([Carotid and Vertebral Arteries](../spine/carotid_and_vertebral_arteries.md))
+- [[traumatic_and_nontraumatic_spine_emergencies|Traumatic and Nontraumatic Spine Emergencies]] ([Traumatic and Nontraumatic Spine Emergencies](../spine/traumatic_and_nontraumatic_spine_emergencies.md))
+- [[traumatic_spine_injury|TRAUMATIC SPINE INJURY]] ([TRAUMATIC SPINE INJURY](../spine/traumatic_spine_injury.md))

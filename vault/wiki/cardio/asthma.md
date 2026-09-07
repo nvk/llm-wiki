@@ -200,7 +200,7 @@ status: "verified_source"
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 157-157)
 
 ### Key Visuals & Figures (Grainger)
-![Asthma Figure](assets/grainger_asthma_p157_img1.jpeg)
+> **Key Imaging Finding:** Asthma Figure
 
 CHAPTER 6  Large Airway Disease and Chronic Airflow Obstruction
 159
@@ -260,3 +260,6 @@ Chest radiography is usually recommended in all asthmatic patients
 who are ill enough to justify admission to a hospital. Hyperinflation 
 may be seen in both relapse and remission. The prevalence of hyperinfla-
 tion is generally high
+
+## See Also
+- [[portal_hypertension|PORTAL HYPERTENSION]] ([PORTAL HYPERTENSION](../vascular_ir/portal_hypertension.md))

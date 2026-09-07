@@ -169,3 +169,7 @@ to injury. Patients with cardiac injuries may have an ­abn
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[diagnostic_aspects|Diagnostic Aspects]] ([Diagnostic Aspects](../cardio/diagnostic_aspects.md))
+- [[bowel_and_mesenteric_injury|BOWEL AND MESENTERIC INJURY]] ([BOWEL AND MESENTERIC INJURY](../git/bowel_and_mesenteric_injury.md))

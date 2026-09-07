@@ -13,35 +13,35 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 16-18)
 
 ### Key Visuals & Figures (Grainger)
-![The Central Airways Figure](assets/grainger_the_central_airways_p16_img1.jpeg)
+> **Key Imaging Finding:** The Central Airways Figure
 
-![The Central Airways Figure](assets/grainger_the_central_airways_p16_img2.jpeg)
+> **Key Imaging Finding:** The Central Airways Figure
 
-![The Central Airways Figure](assets/grainger_the_central_airways_p16_img3.jpeg)
+> **Key Imaging Finding:** The Central Airways Figure
 
-![The Central Airways Figure](assets/grainger_the_central_airways_p16_img4.jpeg)
+> **Key Imaging Finding:** The Central Airways Figure
 
-![The Central Airways Figure](assets/grainger_the_central_airways_p16_img5.jpeg)
+> **Key Imaging Finding:** The Central Airways Figure
 
-![The Central Airways Figure](assets/grainger_the_central_airways_p16_img6.jpeg)
+> **Key Imaging Finding:** The Central Airways Figure
 
-![The Central Airways Figure](assets/grainger_the_central_airways_p16_img7.jpeg)
+> **Key Imaging Finding:** The Central Airways Figure
 
-![The Central Airways Figure](assets/grainger_the_central_airways_p17_img1.jpeg)
+> **Key Imaging Finding:** The Central Airways Figure
 
-![The Central Airways Figure](assets/grainger_the_central_airways_p17_img2.jpeg)
+> **Key Imaging Finding:** The Central Airways Figure
 
-![The Central Airways Figure](assets/grainger_the_central_airways_p17_img3.jpeg)
+> **Key Imaging Finding:** The Central Airways Figure
 
-![The Central Airways Figure](assets/grainger_the_central_airways_p17_img4.jpeg)
+> **Key Imaging Finding:** The Central Airways Figure
 
-![The Central Airways Figure](assets/grainger_the_central_airways_p17_img5.jpeg)
+> **Key Imaging Finding:** The Central Airways Figure
 
-![The Central Airways Figure](assets/grainger_the_central_airways_p18_img1.jpeg)
+> **Key Imaging Finding:** The Central Airways Figure
 
-![The Central Airways Figure](assets/grainger_the_central_airways_p18_img2.jpeg)
+> **Key Imaging Finding:** The Central Airways Figure
 
-![The Central Airways Figure](assets/grainger_the_central_airways_p18_img3.jpeg)
+> **Key Imaging Finding:** The Central Airways Figure
 
 18
 SECTION A  The Chest and Cardiovascular System
@@ -85,7 +85,6 @@ the two mainstem bronchi at the carina. In children the angles are
 symmetrical, but in adults the right mainstem bronchus has a steeper 
 course than the left. The range of angles is wide, and alterations in 
 angle can be diagnosed only by right–left comparisons, not by absolute 
-https://afkebooks.com
 
 
 CHAPTER 2  The Normal Chest
@@ -102,7 +101,6 @@ A
 Fig. 2.2  The position of fissures is often best shown in additional sagittal reformats (arrows) taken of the 
 right lung (A) and left lung (B). The position of fissures is useful to assess for volume loss. 
 Continued
-https://t.me/afkebooks
 
 
 20
@@ -128,38 +126,37 @@ The usual method of deciding normal lung density in the frontal view
 is by comparison with equivalent areas on the opposite side. As this is 
 not possible on the lateral chest radiograph, the detection of subtle 
 densities is more difficult, but the density over the spine should decrease 
-https://afkebooks.com
 
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p10_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img7.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img8.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img10.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img12.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p15_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p16_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 8
 Patterns of lung disease
@@ -440,29 +437,29 @@ Lymphangitic carcinomatosis.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 145-156)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p145_p145_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p146_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p147_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p148_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p149_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p150_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p151_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p152_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p153_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p154_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p155_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p156_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 SECTION 1 l:
 S u r g e r i e s
@@ -987,3 +984,5 @@ Primary Acro-osteolysis (Hajdu-Cheney)
 -Extra Squiggles-
 157
 
+## See Also
+- [[imaging_follow_up|IMAGING FOLLOW-UP]] ([IMAGING FOLLOW-UP](../vascular_ir/imaging_follow_up.md))

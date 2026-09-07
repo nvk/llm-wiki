@@ -92,3 +92,6 @@ correlates of an emerging disease. J Thorac Imaging 21:276–283, 2006).
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pancreatitis|Pancreatitis]] ([Pancreatitis](../git/pancreatitis.md))

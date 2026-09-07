@@ -183,3 +183,4 @@ The bony abnormalities in neurofi bromat
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[surgical_technique|Surgical Technique]] ([Surgical Technique](../uro/surgical_technique.md))

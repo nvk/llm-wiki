@@ -104,3 +104,6 @@ A
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[b_shows_the_graphical_representa|(B) shows the graphical representa-]] ([(B) shows the graphical representa-](../cardio/b_shows_the_graphical_representa.md))

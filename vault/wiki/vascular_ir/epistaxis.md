@@ -160,3 +160,6 @@ one particular technique has not been established. However, w
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[the_normal_aorta|The Normal Aorta]] ([The Normal Aorta](../cardio/the_normal_aorta.md))

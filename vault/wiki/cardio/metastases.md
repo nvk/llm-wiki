@@ -13,15 +13,15 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 201-202)
 
 ### Key Visuals & Figures (Grainger)
-![Metastases Figure](assets/grainger_metastases_p201_img1.jpeg)
+> **Key Imaging Finding:** Metastases Figure
 
-![Metastases Figure](assets/grainger_metastases_p201_img2.jpeg)
+> **Key Imaging Finding:** Metastases Figure
 
-![Metastases Figure](assets/grainger_metastases_p201_img3.jpeg)
+> **Key Imaging Finding:** Metastases Figure
 
-![Metastases Figure](assets/grainger_metastases_p202_img1.jpeg)
+> **Key Imaging Finding:** Metastases Figure
 
-![Metastases Figure](assets/grainger_metastases_p202_img2.jpeg)
+> **Key Imaging Finding:** Metastases Figure
 
 CHAPTER 8  Pulmonary Neoplasms
 203
@@ -162,33 +162,33 @@ left pleural effusion is also present.
 ## 2. Core Radiology High-Yield Notes (Pages 81-88)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p81_p81_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p83_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p84_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p84_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p88_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 80
 Panacinar (panlobular) emphysema
@@ -1154,3 +1154,5 @@ This pattern is possible as the
 variant anatomy with the PCA 
 feeds primarily from the ICA.
 
+## See Also
+- [[extra-axial_tumours|Extra-Axial Tumours]] ([Extra-Axial Tumours](../neuro/extra-axial_tumours.md))

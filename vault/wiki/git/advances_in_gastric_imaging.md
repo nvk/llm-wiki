@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 63-63)
 
 ### Key Visuals & Figures (Grainger)
-![Advances in Gastric Imaging Figure](assets/grainger_advances_in_gastric__p63_img1.jpeg)
+> **Key Imaging Finding:** Advances in Gastric Imaging Figure
 
-![Advances in Gastric Imaging Figure](assets/grainger_advances_in_gastric__p63_img2.jpeg)
+> **Key Imaging Finding:** Advances in Gastric Imaging Figure
 
 CHAPTER 20  The Stomach
 525
@@ -90,47 +90,47 @@ with MDCT. Abdom. Imaging 32, 688–693.
 ## 2. Core Radiology High-Yield Notes (Pages 17-24)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p17_p17_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p17_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p20_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p20_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img6.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img7.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img8.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img11.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img14.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img16.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img18.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img20.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 102
 • Choledochal cysts are thought to represent a heterogeneous group of diseases with a 
@@ -462,29 +462,29 @@ Hemorrhage is typical. SPEN features a capsule, as does mucinous cystic neoplasm
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 409-420)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p409_p409_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p410_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p411_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p412_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p413_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p414_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p415_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p416_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p417_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p418_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p419_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p420_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 uterine Leiomyosarcoma - The risk of malignant transformation to a leiomyosarcoma is 
 super low (0.1%). These look like a fibroid, but rapidly enlarge. Areas of necrosis are often seen.
@@ -1025,3 +1025,5 @@ a lesion that is TI bright.
 Endometrioma - “Shading Sign”
 421
 
+## See Also
+- [[bladder|BLADDER]] ([BLADDER](../uro/bladder.md))

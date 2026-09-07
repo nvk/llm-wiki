@@ -137,37 +137,37 @@ image quality range. Detection of urinary tract stones with ATM is
 ## 2. Core Radiology High-Yield Notes (Pages 17-24)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p17_p18_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p20_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 172
 Bosniak classification of cystic renal masses
@@ -512,29 +512,29 @@ OIS/AAST grading of renal trauma
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 253-264)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p253_p253_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p253_p254_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p253_p255_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p253_p256_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p253_p257_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p253_p258_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p253_p259_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p253_p260_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p253_p261_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p253_p262_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p253_p263_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p253_p264_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 - Non-Accidental Trauma I NAT) -
 “Some People Just C an’t Take Screaming Kids. ”
@@ -940,3 +940,5 @@ Collis gastroplasty (lengthening + fundoplication).
 Trivia: You cannot vomit after a fundoplication (no matter how bad your wife’s cooking is)
 265
 
+## See Also
+- [[pericardial_effusions_and_pericardial_tamponade|Pericardial Effusions and Pericardial Tamponade]] ([Pericardial Effusions and Pericardial Tamponade](../cardio/pericardial_effusions_and_pericardial_tamponade.md))

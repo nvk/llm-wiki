@@ -161,3 +161,6 @@ an inflammatory process is necessary, as this can sup
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[26_common_uroradiological_referrals|26 Common Uroradiological Referrals]] ([26 Common Uroradiological Referrals](../uro/26_common_uroradiological_referrals.md))
+- [[nodal_staging|Nodal Staging]] ([Nodal Staging](../uro/nodal_staging.md))
+- [[risk_stratification|Risk Stratification]] ([Risk Stratification](../uro/risk_stratification.md))

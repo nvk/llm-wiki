@@ -99,27 +99,27 @@ wraps around the left ventricle (LV). Furthermore, the unrestricted
 ## 2. Core Radiology High-Yield Notes (Pages 17-24)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p17_p17_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p17_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p20_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 16
 Random nodules
@@ -957,3 +957,5 @@ Teens
 Multiple Masses in the Setting of Known Primary
 539
 
+## See Also
+- [[pancreas|PANCREAS]] ([PANCREAS](../git/pancreas.md))

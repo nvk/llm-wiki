@@ -183,3 +183,5 @@ The bony abnormalities in neurofi bromat
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[calcifi_c_aortic_stenosis|Calcifi c Aortic Stenosis]] ([Calcifi c Aortic Stenosis](../cardio/calcifi_c_aortic_stenosis.md))
+- [[pulmonary_vasculature|PULMONARY VASCULATURE]] ([PULMONARY VASCULATURE](../cardio/pulmonary_vasculature.md))

@@ -180,3 +180,5 @@ anomalies)
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[upper_extremity_venous_thrombosis|UPPER EXTREMITY VENOUS THROMBOSIS]] ([UPPER EXTREMITY VENOUS THROMBOSIS](../msk/upper_extremity_venous_thrombosis.md))
+- [[popliteal_artery_entrapment|POPLITEAL ARTERY ENTRAPMENT]] ([POPLITEAL ARTERY ENTRAPMENT](../vascular_ir/popliteal_artery_entrapment.md))

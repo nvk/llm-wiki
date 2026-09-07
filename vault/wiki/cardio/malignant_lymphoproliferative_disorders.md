@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 200-200)
 
 ### Key Visuals & Figures (Grainger)
-![Malignant Lymphoproliferative Disorders Figure](assets/grainger_malignant_lymphoprol_p200_img1.jpeg)
+> **Key Imaging Finding:** Malignant Lymphoproliferative Disorders Figure
 
-![Malignant Lymphoproliferative Disorders Figure](assets/grainger_malignant_lymphoprol_p200_img2.jpeg)
+> **Key Imaging Finding:** Malignant Lymphoproliferative Disorders Figure
 
 202
 SECTION A  The Chest and Cardiovascular System
@@ -101,53 +101,53 @@ thy. They frequently disappear once the mediastinal nodes have been
 ## 2. Core Radiology High-Yield Notes (Pages 73-80)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p73_p74_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p74_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img6.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img8.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img9.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 72
 • Low attenuation lymph nodes, while nonspecific, should raise concern for active 
@@ -1073,3 +1073,5 @@ Enhancement
 Thallium Cold
 215
 
+## See Also
+- [[benign_renal_masses|Benign Renal Masses]] ([Benign Renal Masses](../uro/benign_renal_masses.md))

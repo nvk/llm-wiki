@@ -177,3 +177,6 @@ that may not
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[the_thoracic_aorta|THE THORACIC AORTA]] ([THE THORACIC AORTA](../cardio/the_thoracic_aorta.md))

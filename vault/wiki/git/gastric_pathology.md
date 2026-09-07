@@ -137,27 +137,27 @@ submucosa and frequently the muscularis propria. Gastric ulcer is a
 ## 2. Core Radiology High-Yield Notes (Pages 57-64)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p57_p58_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img83.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img94.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 142
 Scleroderma
@@ -526,29 +526,29 @@ Lesser omentum: Connects stomach to liver.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 361-372)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p361_p361_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p362_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p363_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p364_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p365_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p366_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p367_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p368_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p369_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p370_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p371_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p372_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 - More Retroperitoneum Fascial Anatomy -
 I continued my analysis of this anatomy with a team of experts in the field of true love: who once again 
@@ -1247,3 +1247,7 @@ Beckwith-Wiedemann doesn’t really make sense (and therefore is the most likely
 Think about medullary sponge kidney with unilateral less dense medullary nephrocalcinosis.
 373
 
+## See Also
+- [[anatomy_and_physiology_of_the_female_reproductive_system|Anatomy and Physiology of the Female Reproductive System]] ([Anatomy and Physiology of the Female Reproductive System](../gynae/anatomy_and_physiology_of_the_female_reproductive_system.md))
+- [[ovarian_torsion|Ovarian Torsion]] ([Ovarian Torsion](../gynae/ovarian_torsion.md))
+- [[retained_fetal_lung_liquid_transient_tachypnea_of_the_newbor|Retained Fetal Lung Liquid (Transient Tachypnea of the Newborn)]] ([Retained Fetal Lung Liquid (Transient Tachypnea of the Newborn)](../gynae/retained_fetal_lung_liquid_transient_tachypnea_of_the_newbor.md))

@@ -164,3 +164,4 @@ FIGURE 1-6. Right atrial enlargement in pulmonary atresia with intact ventricula
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[2_gallbladder|2. Gallbladder]] ([2. Gallbladder](../git/2_gallbladder.md))

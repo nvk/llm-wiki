@@ -144,3 +144,7 @@ TNK
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[b_for_a_patent_ductus_arteriosus|B, For a patent ductus arteriosus.]] ([B, For a patent ductus arteriosus.](../cardio/b_for_a_patent_ductus_arteriosus.md))
+- [[complete_transposition_of_the_great_arteries|Complete Transposition of the Great Arteries]] ([Complete Transposition of the Great Arteries](../cardio/complete_transposition_of_the_great_arteries.md))

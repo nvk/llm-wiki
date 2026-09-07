@@ -137,25 +137,25 @@ ureteric lithotripsy (Figs 27.32 and 27.33). Limited studies comparing
 ## 2. Core Radiology High-Yield Notes (Pages 1-8)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p1_p2_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p4_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p4_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p4_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p4_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 156
 Soyer, P. et al. Celiac disease in adults: evaluation with MDCT enteroclysis. AJR. American journal of roentgenology 191, 
@@ -480,29 +480,29 @@ complex cystic lesion with an internal membrane.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 229-240)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p229_p229_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p230_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p231_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p232_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p233_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p234_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p235_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p236_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p237_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p238_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p239_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p240_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 - Bladder Masses / Cancers -
 Work up for bladder lesions / masses in kids should start with an Ultrasound. A potentially 
@@ -1099,3 +1099,5 @@ Abuse — Some people abuse drugs, some just can't stand screaming kids, some su
 shortcomings. More on this later.
 241
 
+## See Also
+- [[treatment_of_adverse_contrast_reactions|Treatment of Adverse Contrast Reactions]] ([Treatment of Adverse Contrast Reactions](../physics_nuclear/treatment_of_adverse_contrast_reactions.md))

@@ -160,3 +160,4 @@ sible to gain a sense of
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[abdominal_disease|Abdominal Disease]] ([Abdominal Disease](../git/abdominal_disease.md))

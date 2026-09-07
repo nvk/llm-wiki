@@ -13,7 +13,7 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 72-72)
 
 ### Key Visuals & Figures (Grainger)
-![Disorders of the Small Intestine Figure](assets/grainger_disorders_of_the_sma_p72_img1.jpeg)
+> **Key Imaging Finding:** Disorders of the Small Intestine Figure
 
 534
 SECTION B  Abdominal Imaging
@@ -115,31 +115,31 @@ Crohn disease (black arrow).
 ## 2. Core Radiology High-Yield Notes (Pages 1-8)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p1_p2_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img17.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img18.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img20.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img22.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img23.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img24.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img29.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p5_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p5_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 86
 Pulmonary vascular disease:
@@ -519,29 +519,29 @@ A siderotic nodule is rarely, if ever, malignant.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 493-504)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p493_p493_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p494_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p495_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p496_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p497_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p498_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p499_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p500_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p501_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p502_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p503_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p504_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 What Scan is it - Special Topics:
 MIBG
@@ -1160,3 +1160,7 @@ uptake (which probably means they are faking it, and need a rheumatology consult
 fibromyalgia). In children, sometimes you actually see decreased uptake.
 505
 
+## See Also
+- [[anatomy_and_physiology_of_the_female_reproductive_system|Anatomy and Physiology of the Female Reproductive System]] ([Anatomy and Physiology of the Female Reproductive System](../gynae/anatomy_and_physiology_of_the_female_reproductive_system.md))
+- [[ovarian_torsion|Ovarian Torsion]] ([Ovarian Torsion](../gynae/ovarian_torsion.md))
+- [[retained_fetal_lung_liquid_transient_tachypnea_of_the_newbor|Retained Fetal Lung Liquid (Transient Tachypnea of the Newborn)]] ([Retained Fetal Lung Liquid (Transient Tachypnea of the Newborn)](../gynae/retained_fetal_lung_liquid_transient_tachypnea_of_the_newbor.md))

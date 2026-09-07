@@ -14,9 +14,9 @@ aliases: ["miscellaneous_conditions"]---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 130-130)
 
 ### Key Visuals & Figures (Grainger)
-![Miscellaneous Conditions Figure](assets/grainger_miscellaneous_condit_p130_img1.jpeg)
+> **Key Imaging Finding:** Miscellaneous Conditions Figure
 
-![Miscellaneous Conditions Figure](assets/grainger_miscellaneous_condit_p130_img2.jpeg)
+> **Key Imaging Finding:** Miscellaneous Conditions Figure
 
 592
 SECTION B  Abdominal Imaging
@@ -108,19 +108,19 @@ lipomatosis, trauma
 ## 2. Core Radiology High-Yield Notes (Pages 33-40)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p33_p33_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 118
 Benign cystic splenic lesions
@@ -1006,3 +1006,5 @@ Associations; Hydrocephalus (90%), Additional CNS malformations (~ 40%)
 (agenesis of the corpus callosum, encephaloceles, heterotopia, polymicrogyria, etc...).
 155
 
+## See Also
+- [[systemic_vasculitides|Systemic Vasculitides]] ([Systemic Vasculitides](../cardio/systemic_vasculitides.md))

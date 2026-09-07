@@ -124,38 +124,37 @@ introduced multidetector systems, which provided considerable improve-
 ment in acquisition speed, coverage, and temporal and spatial resolution. 
 Since then, there has been rapid improvement in CT performance with 
 increased numbers of detector rows and faster tube rotation; currently, 
-https://afkebooks.com
 
 ## 2. Core Radiology High-Yield Notes (Pages 33-40)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p33_p33_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 32
 Vascular pedicle
@@ -471,29 +470,29 @@ is usually asymmetric.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 49-60)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p49_p49_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p50_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p51_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p52_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p53_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p54_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p55_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p56_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p57_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p58_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p59_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p60_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Mediastinal Anatomy
 The mediastinum is classically divided into 4 sections, superior, anterior, middle, and posterior. 
@@ -1342,3 +1341,17 @@ Reverse Halo (Ground
 Glass Surrounded by a 
 Ring of Consolidation)
 
+## See Also
+- [[congenital_and_developmental_abnormalities|CONGENITAL AND DEVELOPMENTAL ABNORMALITIES]] ([CONGENITAL AND DEVELOPMENTAL ABNORMALITIES](../paeds/congenital_and_developmental_abnormalities.md))
+- [[hereditary_angioneurotic_edema|Hereditary Angioneurotic Edema]] ([Hereditary Angioneurotic Edema](../paeds/hereditary_angioneurotic_edema.md))
+- [[imaging_techniques|IMAGING TECHNIQUES]] ([IMAGING TECHNIQUES](../paeds/imaging_techniques.md))
+- [[malrotation|Malrotation]] ([Malrotation](../paeds/malrotation.md))
+- [[midgut_volvulus|Midgut Volvulus]] ([Midgut Volvulus](../paeds/midgut_volvulus.md))
+- [[miscellaneous_conditions|MISCELLANEOUS CONDITIONS]] ([MISCELLANEOUS CONDITIONS](../paeds/miscellaneous_conditions.md))
+- [[named_pediatric_cardiac_surgical_procedures|“Named” Pediatric Cardiac Surgical Procedures]] ([“Named” Pediatric Cardiac Surgical Procedures](../paeds/named_pediatric_cardiac_surgical_procedures.md))
+- [[necrotizing_enterocolitis|Necrotizing Enterocolitis]] ([Necrotizing Enterocolitis](../paeds/necrotizing_enterocolitis.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../paeds/suggested_readings.md))
+- [[trauma|TRAUMA]] ([TRAUMA](../paeds/trauma.md))
+- [[carotid_and_vertebral_arteries|Carotid and Vertebral Arteries]] ([Carotid and Vertebral Arteries](../spine/carotid_and_vertebral_arteries.md))
+- [[traumatic_and_nontraumatic_spine_emergencies|Traumatic and Nontraumatic Spine Emergencies]] ([Traumatic and Nontraumatic Spine Emergencies](../spine/traumatic_and_nontraumatic_spine_emergencies.md))
+- [[traumatic_spine_injury|TRAUMATIC SPINE INJURY]] ([TRAUMATIC SPINE INJURY](../spine/traumatic_spine_injury.md))

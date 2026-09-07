@@ -139,3 +139,6 @@ site of the diverticulum. It is important to note that ectopic
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[left_ventricular_diastolic_function|Left Ventricular Diastolic Function]] ([Left Ventricular Diastolic Function](../cardio/left_ventricular_diastolic_function.md))

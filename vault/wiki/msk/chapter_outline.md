@@ -101,25 +101,25 @@ in the context of normal plain radiography or persistent symptoms
 ## 2. Core Radiology High-Yield Notes (Pages 97-104)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p97_p97_img21.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p99_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p99_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p99_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p100_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p101_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p101_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p103_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p103_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p104_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 441
 Shoulder bursae
@@ -835,3 +835,5 @@ The Post CS is Bifid about
 85% of the time.
 131
 
+## See Also
+- [[cystic_pattern|Cystic Pattern]] ([Cystic Pattern](../cardio/cystic_pattern.md))

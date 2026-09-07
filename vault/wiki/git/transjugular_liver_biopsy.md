@@ -120,3 +120,7 @@ A
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[transthoracic_hilar_and_mediastinal_biopsy|Transthoracic Hilar and Mediastinal Biopsy]] ([Transthoracic Hilar and Mediastinal Biopsy](../cardio/transthoracic_hilar_and_mediastinal_biopsy.md))
+- [[varicocele_embolization|VARICOCELE EMBOLIZATION]] ([VARICOCELE EMBOLIZATION](../vascular_ir/varicocele_embolization.md))

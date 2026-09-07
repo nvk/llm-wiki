@@ -193,3 +193,4 @@ there is increased resistanc
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[ear_nose_and_throat_disorders|Ear, Nose, and Throat Disorders]] ([Ear, Nose, and Throat Disorders](../head_neck/ear_nose_and_throat_disorders.md))

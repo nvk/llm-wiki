@@ -155,3 +155,7 @@ is often placed through a lower pole calyx.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[image_guided_percutaneous_biopsy|Image-Guided Percutaneous Biopsy]] ([Image-Guided Percutaneous Biopsy](../vascular_ir/image_guided_percutaneous_biopsy.md))
+- [[reintervention_for_metal_stent_occlusion|REINTERVENTION FOR METAL STENT OCCLUSION]] ([REINTERVENTION FOR METAL STENT OCCLUSION](../vascular_ir/reintervention_for_metal_stent_occlusion.md))

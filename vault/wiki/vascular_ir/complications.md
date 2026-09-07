@@ -194,3 +194,6 @@ Flulike symptoms:
 Image-Guided Ablation of Liver Tumors  579
 Residual disease is defined as persistent enhancement in an 
 area or areas of tumor after ablation, as determined on
+
+## See Also
+- [[mediastinal_position|Mediastinal Position]] ([Mediastinal Position](../cardio/mediastinal_position.md))

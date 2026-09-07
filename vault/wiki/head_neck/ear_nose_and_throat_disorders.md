@@ -188,3 +188,6 @@ CECT:
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[flow_ratios|Flow Ratios]] ([Flow Ratios](../cardio/flow_ratios.md))

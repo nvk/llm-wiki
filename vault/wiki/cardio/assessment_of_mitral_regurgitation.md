@@ -165,3 +165,4 @@ shuntflow across either a pat
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[differential_diagnosis_of_obstetric_and_gynecologic_disorder|Differential Diagnosis of Obstetric and Gynecologic Disorders]] ([Differential Diagnosis of Obstetric and Gynecologic Disorders](../gynae/differential_diagnosis_of_obstetric_and_gynecologic_disorder.md))

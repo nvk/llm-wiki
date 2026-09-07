@@ -154,3 +154,7 @@ creatogr
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[renal_transplant_biopsy|Renal Transplant Biopsy]] ([Renal Transplant Biopsy](../uro/renal_transplant_biopsy.md))
+- [[microwave_ablation|MICROWAVE ABLATION]] ([MICROWAVE ABLATION](../vascular_ir/microwave_ablation.md))

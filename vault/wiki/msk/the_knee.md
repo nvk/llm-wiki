@@ -13,13 +13,13 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 202-202)
 
 ### Key Visuals & Figures (Grainger)
-![The Knee Figure](assets/grainger_the_knee_p202_img1.jpeg)
+> **Key Imaging Finding:** The Knee Figure
 
-![The Knee Figure](assets/grainger_the_knee_p202_img2.jpeg)
+> **Key Imaging Finding:** The Knee Figure
 
-![The Knee Figure](assets/grainger_the_knee_p202_img3.jpeg)
+> **Key Imaging Finding:** The Knee Figure
 
-![The Knee Figure](assets/grainger_the_knee_p202_img4.jpeg)
+> **Key Imaging Finding:** The Knee Figure
 
 1170
 SECTION C  The Musculoskeletal System
@@ -68,51 +68,51 @@ be a fracture present.
 ## 2. Core Radiology High-Yield Notes (Pages 41-48)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p42_img21.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img30.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img40.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img41.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img60.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img61.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img75.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img89.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img92.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img103.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img141.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img146.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img160.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p44_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p44_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p44_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p44_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p46_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 385
 Musculoskeletal infection
@@ -1132,3 +1132,5 @@ This pattern is possible as the
 variant anatomy with the PCA 
 feeds primarily from the ICA.
 
+## See Also
+- [[cardiac_shape_and_size_age_and_its_visible_effects|CARDIAC SHAPE AND SIZE Age and Its Visible Effects]] ([CARDIAC SHAPE AND SIZE Age and Its Visible Effects](../cardio/cardiac_shape_and_size_age_and_its_visible_effects.md))

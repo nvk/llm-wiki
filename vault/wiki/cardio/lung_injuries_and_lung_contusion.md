@@ -168,3 +168,7 @@ collapses toward the lateral chest wall or
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[esophageal_injuries|ESOPHAGEAL INJURIES]] ([ESOPHAGEAL INJURIES](../git/esophageal_injuries.md))
+- [[splenic_trauma|SPLENIC TRAUMA]] ([SPLENIC TRAUMA](../git/splenic_trauma.md))

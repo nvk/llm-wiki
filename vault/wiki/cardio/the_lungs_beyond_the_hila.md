@@ -13,49 +13,49 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 18-23)
 
 ### Key Visuals & Figures (Grainger)
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p18_img1.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p18_img2.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p18_img3.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p19_img1.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p19_img2.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p19_img3.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p19_img4.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p20_img1.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p21_img1.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p21_img2.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p21_img3.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p21_img4.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p21_img5.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p21_img6.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p21_img7.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p21_img8.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p22_img1.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p22_img2.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p22_img3.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p23_img1.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p23_img2.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
-![The Lungs Beyond the Hila Figure](assets/grainger_the_lungs_beyond_the_p23_img3.jpeg)
+> **Key Imaging Finding:** The Lungs Beyond the Hila Figure
 
 20
 SECTION A  The Chest and Cardiovascular System
@@ -80,7 +80,6 @@ The usual method of deciding normal lung density in the frontal view
 is by comparison with equivalent areas on the opposite side. As this is 
 not possible on the lateral chest radiograph, the detection of subtle 
 densities is more difficult, but the density over the spine should decrease 
-https://afkebooks.com
 
 
 CHAPTER 2  The Normal Chest
@@ -215,7 +214,6 @@ D
 A
 Fig. 2.5  Diagram Illustrating the Anatomy of the Main Bronchi and Segmental Divisions. The nomenclature 
 is that approved by the British Thoracic Society. (Courtesy the Editors of Thorax.)
-https://t.me/afkebooks
 
 
 22
@@ -341,7 +339,6 @@ structures, mediastinal contents and the relevant anatomy of the diaphragm.
 As it will become apparent there are multiple overlapping structures within 
 the thorax that are important to note. This will allow accurate interpretation 
 of the various planar and cross-sectional imaging.
-https://afkebooks.com
 
 
 CHAPTER 2  The Normal Chest
@@ -369,7 +366,6 @@ arterial and venous systems can be appreciated interactively on thick-slab maxim
 (C, D, E, F). Coronal reformats (C), axial reformats (D), sagittal reformats, right lung (E) and left lung (F). 
 Conventional digital subtraction angiography using selective right and left injections (G, H). LA, Left atrium; 
 PA, pulmonary artery; RPA, right pulmonary artery; LPA, left pulmonary artery. 
-https://t.me/afkebooks
 
 
 24
@@ -389,7 +385,6 @@ C
 A
 Fig. 2.9  Diagrams Showing the Relationships Between the Hilar Blood Vessels and Bronchi. (A) Frontal 
 view. (B) Right posterior oblique view of right hilum. (C) Left posterior oblique view of left hilum. 
-https://afkebooks.com
 
 
 CHAPTER 2  The Normal Chest
@@ -435,32 +430,31 @@ on modern multidetector CT. The major points to remember when
 viewing the hila (Fig. 2.15) are the following:
 1.	 The transverse diameter of the lower lobe arteries before their 
 segmental divisions can be determined with reasonable accuracy: 
-https://t.me/afkebooks
 
 ## 2. Core Radiology High-Yield Notes (Pages 17-24)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p17_p17_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p17_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p20_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 16
 Random nodules
@@ -762,29 +756,29 @@ Ranke complex: Ghon focus and lymphadenopathy.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 157-168)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p157_p157_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p158_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p159_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p160_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p161_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p162_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p163_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p164_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p165_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p166_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p167_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p168_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Dermoid / Epidermoid of tlie Situll
 In the context of the skull, you can 
@@ -1360,3 +1354,5 @@ This is NOT one of those times. D on’t biopsy th is.... Mother fuckers. The co
 leaking and meningitis.
 169
 
+## See Also
+- [[introduction|Introduction]] ([Introduction](../msk/introduction.md))

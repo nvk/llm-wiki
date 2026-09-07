@@ -172,3 +172,4 @@ increased echogenicity of blood o
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[percutaneous_cecostomy|PERCUTANEOUS CECOSTOMY]] ([PERCUTANEOUS CECOSTOMY](../vascular_ir/percutaneous_cecostomy.md))

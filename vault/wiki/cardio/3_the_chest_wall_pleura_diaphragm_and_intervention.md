@@ -95,56 +95,55 @@ parasites (Taenia solium and Dracunculus medinensis), calcinosis uni-
 versalis, childhood dermatomyositis, tuberculosis (spine, ribs or soft 
 tissues) and bone neoplasms. Ossification is rare and most commonly 
 seen in fibrodysplasia ossificans progressiva.
-https://afkebooks.com
 
 ## 2. Core Radiology High-Yield Notes (Pages 57-64)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p57_p58_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p61_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p61_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p61_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 56
 Antigen and exposure-related lung disease
@@ -436,29 +435,29 @@ Hospital.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 217-228)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p217_p217_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p218_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p219_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p220_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p221_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p222_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p223_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p224_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p225_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p226_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p227_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p228_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Heterotaxia Syndromes I Situs - Cont...
 So on the prior page I used terms like “bilateral right sided” and “bilateral left sided” to help 
@@ -1043,3 +1042,6 @@ Historv of prior cvtotoxic chemotherapy
 is classic.
 229
 
+## See Also
+- [[interventional_management_of_laparoscopic_cholecystectomy_co|INTERVENTIONAL MANAGEMENT OF LAPAROSCOPIC CHOLECYSTECTOMY COMPLICATIONS]] ([INTERVENTIONAL MANAGEMENT OF LAPAROSCOPIC CHOLECYSTECTOMY COMPLICATIONS](../git/interventional_management_of_laparoscopic_cholecystectomy_co.md))
+- [[renal_intervention|RENAL INTERVENTION]] ([RENAL INTERVENTION](../uro/renal_intervention.md))

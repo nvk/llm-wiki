@@ -108,31 +108,31 @@ of osteoporotic vertebral fractures.
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p9_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p9_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p9_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p15_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p16_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 353
 Seronegative spondyloarthropathies
@@ -497,29 +497,29 @@ ankylosis is Klippel–Feil syndrome, which is failure of cervical segmentation.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 13-24)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p13_p13_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p14_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p15_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p16_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p17_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p18_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p19_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p20_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p21_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p22_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p23_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p24_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 m
 LAW 3 - Performance on “Game Day” must equal performance in practice
@@ -1058,3 +1058,17 @@ a drawer with my other creepy journals (my poop journal, my ear wax journal, my 
 lint journal).” They thought I was joking...
 25
 
+## See Also
+- [[acute_epiglottitis|Acute Epiglottitis]] ([Acute Epiglottitis](../head_neck/acute_epiglottitis.md))
+- [[branchial_cleft_anomalies|Branchial Cleft Anomalies]] ([Branchial Cleft Anomalies](../head_neck/branchial_cleft_anomalies.md))
+- [[glottic_region|Glottic Region]] ([Glottic Region](../head_neck/glottic_region.md))
+- [[larynx|Larynx]] ([Larynx](../head_neck/larynx.md))
+- [[maxillofacial_fractures|Maxillofacial Fractures]] ([Maxillofacial Fractures](../head_neck/maxillofacial_fractures.md))
+- [[orbital_blowout_fractures|Orbital Blowout Fractures]] ([Orbital Blowout Fractures](../head_neck/orbital_blowout_fractures.md))
+- [[parathyroid_disorders|Parathyroid Disorders]] ([Parathyroid Disorders](../head_neck/parathyroid_disorders.md))
+- [[pharynx_and_esophagus|Pharynx and Esophagus]] ([Pharynx and Esophagus](../head_neck/pharynx_and_esophagus.md))
+- [[subglottic_region|Subglottic Region]] ([Subglottic Region](../head_neck/subglottic_region.md))
+- [[supraglottic_region|Supraglottic Region]] ([Supraglottic Region](../head_neck/supraglottic_region.md))
+- [[53_current_status_of_imaging_of_the_brain_and_anatomical_features|53 Current Status Of Imaging Of The Brain And Anatomical Features]] ([53 Current Status Of Imaging Of The Brain And Anatomical Features](../neuro/53_current_status_of_imaging_of_the_brain_and_anatomical_features.md))
+- [[brain_anatomy|Brain Anatomy]] ([Brain Anatomy](../neuro/brain_anatomy.md))
+- [[section_e_neuroimaging|Section E Neuroimaging]] ([Section E Neuroimaging](../neuro/section_e_neuroimaging.md))

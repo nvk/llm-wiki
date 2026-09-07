@@ -14,23 +14,23 @@ aliases: ["nuclear_medicine"]---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 6-7)
 
 ### Key Visuals & Figures (Grainger)
-![Nuclear Medicine Figure](assets/grainger_nuclear_medicine_p6_img1.jpeg)
+> **Key Imaging Finding:** Nuclear Medicine Figure
 
-![Nuclear Medicine Figure](assets/grainger_nuclear_medicine_p6_img2.jpeg)
+> **Key Imaging Finding:** Nuclear Medicine Figure
 
-![Nuclear Medicine Figure](assets/grainger_nuclear_medicine_p6_img3.jpeg)
+> **Key Imaging Finding:** Nuclear Medicine Figure
 
-![Nuclear Medicine Figure](assets/grainger_nuclear_medicine_p6_img4.jpeg)
+> **Key Imaging Finding:** Nuclear Medicine Figure
 
-![Nuclear Medicine Figure](assets/grainger_nuclear_medicine_p7_img1.jpeg)
+> **Key Imaging Finding:** Nuclear Medicine Figure
 
-![Nuclear Medicine Figure](assets/grainger_nuclear_medicine_p7_img2.jpeg)
+> **Key Imaging Finding:** Nuclear Medicine Figure
 
-![Nuclear Medicine Figure](assets/grainger_nuclear_medicine_p7_img3.jpeg)
+> **Key Imaging Finding:** Nuclear Medicine Figure
 
-![Nuclear Medicine Figure](assets/grainger_nuclear_medicine_p7_img4.jpeg)
+> **Key Imaging Finding:** Nuclear Medicine Figure
 
-![Nuclear Medicine Figure](assets/grainger_nuclear_medicine_p7_img5.jpeg)
+> **Key Imaging Finding:** Nuclear Medicine Figure
 
 974
 SECTION C  The Musculoskeletal System
@@ -163,67 +163,67 @@ scintigram has a high negative predictive value for many conditions.
 ## 2. Core Radiology High-Yield Notes (Pages 65-72)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p65_p65_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p65_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img40.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img41.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img42.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img45.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img48.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img51.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img82.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img83.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img84.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img92.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img158.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img4.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img3.png)
+> **Key Imaging Finding:** Core Figure
 
 409
 Ankle fractures
@@ -563,29 +563,29 @@ three or more contiguous sagittal slices with standard 4 mm-thick sagittal slice
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 109-120)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p109_p109_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p110_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p111_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p112_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p113_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p114_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p115_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p116_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p117_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p118_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p119_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p120_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Pulmonary Contusion: This is the most common lung injury 
 from blunt trauma. Basically you are dealing with alveolar 
@@ -1112,3 +1112,7 @@ and the posterior left ventricular branches arise from the left circumflex coron
 Although, Christian Gray would never-approve of such a dynamic.
 121
 
+## See Also
+- [[carotid_and_vertebral_arteries|Carotid and Vertebral Arteries]] ([Carotid and Vertebral Arteries](../spine/carotid_and_vertebral_arteries.md))
+- [[traumatic_and_nontraumatic_spine_emergencies|Traumatic and Nontraumatic Spine Emergencies]] ([Traumatic and Nontraumatic Spine Emergencies](../spine/traumatic_and_nontraumatic_spine_emergencies.md))
+- [[traumatic_spine_injury|TRAUMATIC SPINE INJURY]] ([TRAUMATIC SPINE INJURY](../spine/traumatic_spine_injury.md))

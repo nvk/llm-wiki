@@ -194,3 +194,6 @@ form granulomas, eventually destroying the bronchiole
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[chapter_outline|Chapter Outline]] ([Chapter Outline](../msk/chapter_outline.md))

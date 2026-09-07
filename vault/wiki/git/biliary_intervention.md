@@ -183,3 +183,7 @@ midazolam and fentanyl is used for sedoanalgesia.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[interventional_techniques|Interventional Techniques]] ([Interventional Techniques](../cardio/interventional_techniques.md))
+- [[reintervention_for_metal_stent_occlusion|REINTERVENTION FOR METAL STENT OCCLUSION]] ([REINTERVENTION FOR METAL STENT OCCLUSION](../vascular_ir/reintervention_for_metal_stent_occlusion.md))

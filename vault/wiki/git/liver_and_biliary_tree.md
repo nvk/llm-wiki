@@ -156,3 +156,6 @@ Type IV: Multiple fusiform dilatations of the intrahepatic bile d
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[two_dimensional_speckled_strain_echocardiography|Two-Dimensional (Speckled) Strain Echocardiography]] ([Two-Dimensional (Speckled) Strain Echocardiography](../cardio/two_dimensional_speckled_strain_echocardiography.md))

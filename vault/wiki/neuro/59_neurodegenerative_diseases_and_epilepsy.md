@@ -100,109 +100,109 @@ include metabolic information obtained by using single-photon emission
 ## 2. Core Radiology High-Yield Notes (Pages 121-128)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p121_p121_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p121_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p121_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p122_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p122_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p124_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p124_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p124_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p125_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p126_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p126_img7.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p126_img8.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p126_img9.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img76.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img77.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img82.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img101.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img234.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img245.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img264.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img266.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img421.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img423.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img425.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img426.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img433.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img436.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img437.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img442.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img444.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img445.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img453.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img456.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img460.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img464.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img466.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img483.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img487.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img490.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img492.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img493.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img577.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img614.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img645.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img653.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img667.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img674.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img727.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img731.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img734.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img736.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p121_p127_img955.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 320
 Optic nerve meningioma
@@ -613,29 +613,29 @@ craniocaudally from the superior aspect of the manubrium to the brachiocephalic 
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 409-420)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p409_p409_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p410_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p411_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p412_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p413_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p414_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p415_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p416_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p417_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p418_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p419_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p420_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 uterine Leiomyosarcoma - The risk of malignant transformation to a leiomyosarcoma is 
 super low (0.1%). These look like a fibroid, but rapidly enlarge. Areas of necrosis are often seen.
@@ -1176,3 +1176,5 @@ a lesion that is TI bright.
 Endometrioma - “Shading Sign”
 421
 
+## See Also
+- [[chronic_beryllium_disease|Chronic Beryllium Disease]] ([Chronic Beryllium Disease](../cardio/chronic_beryllium_disease.md))

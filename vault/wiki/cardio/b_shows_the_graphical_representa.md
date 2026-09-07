@@ -196,3 +196,4 @@ ing the true shape of the ventricle. A, area; D, diameter; L,
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[postprocedure_care|POSTPROCEDURE CARE]] ([POSTPROCEDURE CARE](../vascular_ir/postprocedure_care.md))

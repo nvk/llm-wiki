@@ -170,3 +170,6 @@ The typical radiographic finding i
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[talcosis|Talcosis]] ([Talcosis](../cardio/talcosis.md))

@@ -13,13 +13,13 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 164-164)
 
 ### Key Visuals & Figures (Grainger)
-![Computed Tomography of Lobar Collapse Figure](assets/grainger_computed_tomography__p164_img1.jpeg)
+> **Key Imaging Finding:** Computed Tomography of Lobar Collapse Figure
 
-![Computed Tomography of Lobar Collapse Figure](assets/grainger_computed_tomography__p164_img2.jpeg)
+> **Key Imaging Finding:** Computed Tomography of Lobar Collapse Figure
 
-![Computed Tomography of Lobar Collapse Figure](assets/grainger_computed_tomography__p164_img3.jpeg)
+> **Key Imaging Finding:** Computed Tomography of Lobar Collapse Figure
 
-![Computed Tomography of Lobar Collapse Figure](assets/grainger_computed_tomography__p164_img4.jpeg)
+> **Key Imaging Finding:** Computed Tomography of Lobar Collapse Figure
 
 166
 SECTION A  The Chest and Cardiovascular System
@@ -69,33 +69,33 @@ the patient’s clinical history, examination and chest radiographic features.
 ## 2. Core Radiology High-Yield Notes (Pages 81-88)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p81_p81_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p83_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p84_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p84_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p88_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 80
 Panacinar (panlobular) emphysema
@@ -1074,3 +1074,5 @@ the hip, leg, arm, hand, etc...).
 See page 299for discussion on the 
 Benign Notochordal Cell Tumor
 
+## See Also
+- [[ultrasound|ULTRASOUND]] ([ULTRASOUND](../vascular_ir/ultrasound.md))

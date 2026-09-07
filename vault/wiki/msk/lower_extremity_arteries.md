@@ -188,3 +188,7 @@ Figure 15-2.  Computed tomography angiogram of the pelvis sh
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[acute_cerebrovascular_disorders|ACUTE CEREBROVASCULAR DISORDERS]] ([ACUTE CEREBROVASCULAR DISORDERS](../neuro/acute_cerebrovascular_disorders.md))
+- [[coarctation|COARCTATION]] ([COARCTATION](../vascular_ir/coarctation.md))

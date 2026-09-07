@@ -141,3 +141,6 @@ neous endoscopic gastrostomy
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pericardial_diseases_normal_pericardium|PERICARDIAL DISEASES Normal Pericardium]] ([PERICARDIAL DISEASES Normal Pericardium](../cardio/pericardial_diseases_normal_pericardium.md))

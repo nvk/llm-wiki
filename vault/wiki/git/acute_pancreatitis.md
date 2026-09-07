@@ -13,45 +13,45 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 218-222)
 
 ### Key Visuals & Figures (Grainger)
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p218_img1.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p218_img2.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p219_img1.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p219_img2.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p219_img3.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p219_img4.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p219_img5.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p219_img6.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p220_img1.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p220_img2.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p220_img3.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p220_img4.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p220_img5.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p221_img1.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p221_img2.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p221_img3.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p221_img4.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p221_img5.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p222_img1.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
-![Acute Pancreatitis Figure](assets/grainger_acute_pancreatitis_p222_img2.jpeg)
+> **Key Imaging Finding:** Acute Pancreatitis Figure
 
 680
 SECTION B  Abdominal Imaging
@@ -271,19 +271,19 @@ Severe
 ## 2. Core Radiology High-Yield Notes (Pages 33-40)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p33_p33_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 118
 Benign cystic splenic lesions
@@ -1414,3 +1414,6 @@ Hemangioendothelioma.
 When I say “Cystic mass in the liver of a newborn,” you say Mesenchymal Hamartoma
 563
 
+## See Also
+- [[pneumonias_caused_by_gram_positive_bacteria|Pneumonias Caused By Gram-Positive Bacteria]] ([Pneumonias Caused By Gram-Positive Bacteria](../cardio/pneumonias_caused_by_gram_positive_bacteria.md))
+- [[types_of_pneumonias|Types Of Pneumonias]] ([Types Of Pneumonias](../cardio/types_of_pneumonias.md))

@@ -174,3 +174,5 @@ stenosis, ventricular septal defect, patent du
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[10_neck_and_chest|10. Neck and Chest]] ([10. Neck and Chest](../head_neck/10_neck_and_chest.md))
+- [[superior_vena_cava_syndrome|SUPERIOR VENA CAVA SYNDROME]] ([SUPERIOR VENA CAVA SYNDROME](../vascular_ir/superior_vena_cava_syndrome.md))

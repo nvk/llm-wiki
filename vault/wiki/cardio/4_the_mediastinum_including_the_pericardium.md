@@ -92,32 +92,31 @@ refined differential diagnosis. CT following intravenous (IV) contrast
 medium with multiplanar reformats provides an excellent assessment 
 of mediastinal structures, including vessels in the coronal and sagittal 
 planes (Fig. 4.1), and the presence or absence of enhancement in the 
-https://t.me/afkebooks
 
 ## 2. Core Radiology High-Yield Notes (Pages 17-24)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p17_p17_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p17_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p20_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 16
 Random nodules
@@ -419,29 +418,29 @@ Ranke complex: Ghon focus and lymphadenopathy.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 289-300)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p289_p289_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p290_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p291_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p292_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p293_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p294_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p295_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p296_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p297_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p298_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p299_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p300_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 -Small Bowel Cancer-
 Adenocarcinoma: Most common in the proximal small bowel (usually duodenum). Increased 
@@ -1033,3 +1032,5 @@ muhiple choice the distal
 entirely extraperitoneal.
 301
 
+## See Also
+- [[contrast_media_nephrotoxicity_premedication_control_of_heart|Contrast Media, Nephrotoxicity, Premedication, Control of Heart Rate]] ([Contrast Media, Nephrotoxicity, Premedication, Control of Heart Rate](../physics_nuclear/contrast_media_nephrotoxicity_premedication_control_of_heart.md))

@@ -170,3 +170,7 @@ over which they evolve is summarized in Table 1-
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[hepatic_trauma|HEPATIC TRAUMA]] ([HEPATIC TRAUMA](../git/hepatic_trauma.md))
+- [[pelvic_and_acetabular_fractures|Pelvic And Acetabular Fractures]] ([Pelvic And Acetabular Fractures](../msk/pelvic_and_acetabular_fractures.md))

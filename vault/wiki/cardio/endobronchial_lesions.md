@@ -172,3 +172,6 @@ a strong association with smoking. Th
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[abdominal_fluid_collections|ABDOMINAL FLUID COLLECTIONS]] ([ABDOMINAL FLUID COLLECTIONS](../git/abdominal_fluid_collections.md))

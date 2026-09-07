@@ -163,3 +163,5 @@ a patient with aortic regurgitation. The s
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[cardiac_magnetic_resonance_imaging|Cardiac Magnetic Resonance Imaging]] ([Cardiac Magnetic Resonance Imaging](../cardio/cardiac_magnetic_resonance_imaging.md))
+- [[diagnosis_of_stroke_computed_tomography_and_magnetic_resonan|Diagnosis of Stroke: Computed Tomography and Magnetic Resonance]] ([Diagnosis of Stroke: Computed Tomography and Magnetic Resonance](../neuro/diagnosis_of_stroke_computed_tomography_and_magnetic_resonan.md))

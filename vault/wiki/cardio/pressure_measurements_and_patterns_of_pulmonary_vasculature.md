@@ -168,3 +168,4 @@ major bronchi, and to the
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[the_postoperative_stomach|The Postoperative Stomach]] ([The Postoperative Stomach](../git/the_postoperative_stomach.md))

@@ -174,3 +174,4 @@ Fleischner FG: The butterfl y pattern of acute pulmonary edema, Am J Cardio
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[complications|COMPLICATIONS]] ([COMPLICATIONS](../vascular_ir/complications.md))

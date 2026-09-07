@@ -168,3 +168,7 @@ Emergency Radiology: The Requisites
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[cervical_spinal_injuries|Cervical Spinal Injuries]] ([Cervical Spinal Injuries](../spine/cervical_spinal_injuries.md))
+- [[genitourinary_trauma|GENITOURINARY TRAUMA]] ([GENITOURINARY TRAUMA](../uro/genitourinary_trauma.md))

@@ -190,3 +190,6 @@ In the upright position in the norm
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[stroke|Stroke]] ([Stroke](../neuro/stroke.md))

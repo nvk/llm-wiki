@@ -167,3 +167,5 @@ with an unusual chestfilm (same patient as in Figure 3-2). A circumscribed, homo
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[congenital_anomalies|CONGENITAL ANOMALIES]] ([CONGENITAL ANOMALIES](../paeds/congenital_anomalies.md))
+- [[impingement_syndromes|IMPINGEMENT SYNDROMES]] ([IMPINGEMENT SYNDROMES](../vascular_ir/impingement_syndromes.md))

@@ -13,15 +13,15 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 150-151)
 
 ### Key Visuals & Figures (Grainger)
-![Osteoarthritis Figure](assets/grainger_osteoarthritis_p150_img1.jpeg)
+> **Key Imaging Finding:** Osteoarthritis Figure
 
-![Osteoarthritis Figure](assets/grainger_osteoarthritis_p150_img2.jpeg)
+> **Key Imaging Finding:** Osteoarthritis Figure
 
-![Osteoarthritis Figure](assets/grainger_osteoarthritis_p150_img3.jpeg)
+> **Key Imaging Finding:** Osteoarthritis Figure
 
-![Osteoarthritis Figure](assets/grainger_osteoarthritis_p150_img4.jpeg)
+> **Key Imaging Finding:** Osteoarthritis Figure
 
-![Osteoarthritis Figure](assets/grainger_osteoarthritis_p151_img1.jpeg)
+> **Key Imaging Finding:** Osteoarthritis Figure
 
 1118
 SECTION C  The Musculoskeletal System
@@ -151,67 +151,67 @@ seen at the thumb metacarpophalangeal joint.
 ## 2. Core Radiology High-Yield Notes (Pages 65-72)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p65_p65_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p65_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img40.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img41.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img42.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img45.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img48.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img51.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img82.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img83.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img84.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img92.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img158.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img4.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img3.png)
+> **Key Imaging Finding:** Core Figure
 
 409
 Ankle fractures
@@ -1255,3 +1255,5 @@ the hip, leg, arm, hand, etc...).
 See page 299for discussion on the 
 Benign Notochordal Cell Tumor
 
+## See Also
+- [[infection|INFECTION]] ([INFECTION](../paeds/infection.md))

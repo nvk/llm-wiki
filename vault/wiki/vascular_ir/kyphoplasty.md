@@ -167,3 +167,6 @@ reach maximum strength. Patients can be mobilized earlier bu
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[solitary_pulmonary_nodule|Solitary Pulmonary Nodule]] ([Solitary Pulmonary Nodule](../cardio/solitary_pulmonary_nodule.md))

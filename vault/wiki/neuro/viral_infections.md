@@ -13,11 +13,11 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 136-136)
 
 ### Key Visuals & Figures (Grainger)
-![Viral Infections Figure](assets/grainger_viral_infections_p136_img1.jpeg)
+> **Key Imaging Finding:** Viral Infections Figure
 
-![Viral Infections Figure](assets/grainger_viral_infections_p136_img2.jpeg)
+> **Key Imaging Finding:** Viral Infections Figure
 
-![Viral Infections Figure](assets/grainger_viral_infections_p136_img3.jpeg)
+> **Key Imaging Finding:** Viral Infections Figure
 
 1486
 SECTION E  Neuroimaging
@@ -64,33 +64,33 @@ enhancement within the affected areas may be patchy or gyriform. MRI
 ## 2. Core Radiology High-Yield Notes (Pages 97-104)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p97_p97_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p97_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p97_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p99_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p99_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p99_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p100_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p101_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p101_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p103_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p103_img24.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p103_img33.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p103_img34.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p103_img35.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 296
 Benign parotid neoplasm
@@ -485,29 +485,29 @@ inner ear.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 373-384)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p373_p373_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p374_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p375_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p376_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p377_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p378_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p379_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p380_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p381_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p382_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p383_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p384_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 SECTION 6:
 P E R F U S I O N / V A S C U L A R
@@ -1198,3 +1198,6 @@ Psoas Hypertrophy
 (distal ureter)
 385
 
+## See Also
+- [[complications_of_pneumonia|Complications Of Pneumonia]] ([Complications Of Pneumonia](../cardio/complications_of_pneumonia.md))
+- [[infective_endocarditis|Infective Endocarditis]] ([Infective Endocarditis](../cardio/infective_endocarditis.md))

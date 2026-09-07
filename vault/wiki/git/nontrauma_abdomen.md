@@ -171,3 +171,6 @@ a
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[aortic_and_great_vessel_injuries|AORTIC AND GREAT VESSEL INJURIES]] ([AORTIC AND GREAT VESSEL INJURIES](../cardio/aortic_and_great_vessel_injuries.md))

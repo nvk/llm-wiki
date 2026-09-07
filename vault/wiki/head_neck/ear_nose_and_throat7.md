@@ -248,3 +248,6 @@ C.  TUMOR
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[statistics|Statistics]] ([Statistics](../cardio/statistics.md))

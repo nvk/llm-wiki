@@ -15,6 +15,10 @@ status: "verified_source"---
 ## Clinical & Radiological Concepts
 Lossless excerpt from gold-standard UK reference textbook.
 
+## See Also
+- [[cardiac_magnetic_resonance_physics|Cardiac Magnetic Resonance]] ([Cardiac Magnetic Resonance](../cardio/cardiac_magnetic_resonance_physics.md))
+- [[diagnostic_aspects|Diagnostic Aspects]] ([Diagnostic Aspects](../cardio/diagnostic_aspects.md))
+
 ## Reference Text
 2050
 SECTION H  Interventional Radiology

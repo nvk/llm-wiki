@@ -96,27 +96,27 @@ sonographic findings remain integral in the assessment of graft
 ## 2. Core Radiology High-Yield Notes (Pages 41-46)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p41_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p41_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p41_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p41_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img8.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img14.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p46_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 196
 Congenital uterine anomalies
@@ -367,29 +367,29 @@ Degenerative spine 334
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 433-444)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p433_p433_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p434_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p435_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p436_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p437_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p438_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p439_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p440_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p441_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p442_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p443_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p444_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Benign prostatic hyperplasia (BPH): Obviously this is super common, and makes 
 old men pee a lot. Volume of 30cc is one definition. Most commonly involves the 
@@ -921,3 +921,6 @@ Decidua Capsularis
 Double Decidual Sac Sign
 445
 
+## See Also
+- [[22_the_large_bowel|22 The Large Bowel]] ([22 The Large Bowel](../git/22_the_large_bowel.md))
+- [[abnormal_bowel_wall_pattern|Abnormal Bowel Wall Pattern]] ([Abnormal Bowel Wall Pattern](../git/abnormal_bowel_wall_pattern.md))

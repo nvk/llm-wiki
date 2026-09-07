@@ -13,11 +13,11 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 16-16)
 
 ### Key Visuals & Figures (Grainger)
-![The Sternoclavicular Joint Figure](assets/grainger_the_sternoclavicular_p16_img1.jpeg)
+> **Key Imaging Finding:** The Sternoclavicular Joint Figure
 
-![The Sternoclavicular Joint Figure](assets/grainger_the_sternoclavicular_p16_img2.jpeg)
+> **Key Imaging Finding:** The Sternoclavicular Joint Figure
 
-![The Sternoclavicular Joint Figure](assets/grainger_the_sternoclavicular_p16_img3.jpeg)
+> **Key Imaging Finding:** The Sternoclavicular Joint Figure
 
 984
 SECTION C  The Musculoskeletal System
@@ -84,31 +84,31 @@ are demonstrated as focal areas of deficiency. In chronic cases, new
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p9_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p9_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p9_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p15_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p16_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 353
 Seronegative spondyloarthropathies
@@ -473,29 +473,29 @@ ankylosis is Klippel–Feil syndrome, which is failure of cervical segmentation.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 205-216)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p205_p205_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p206_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p207_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p208_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p209_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p210_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p211_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p212_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p213_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p214_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p215_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p216_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Just like the upper GI and “bubble” plain film in sections 1 & 2, the lower obstruction can 
 be approached with a pattern-based method. You basically have 4 choices; Normal,
@@ -971,3 +971,7 @@ Right Isomerism
 Left Isomerism
 217
 
+## See Also
+- [[53_current_status_of_imaging_of_the_brain_and_anatomical_features|53 Current Status Of Imaging Of The Brain And Anatomical Features]] ([53 Current Status Of Imaging Of The Brain And Anatomical Features](../neuro/53_current_status_of_imaging_of_the_brain_and_anatomical_features.md))
+- [[brain_anatomy|Brain Anatomy]] ([Brain Anatomy](../neuro/brain_anatomy.md))
+- [[section_e_neuroimaging|Section E Neuroimaging]] ([Section E Neuroimaging](../neuro/section_e_neuroimaging.md))

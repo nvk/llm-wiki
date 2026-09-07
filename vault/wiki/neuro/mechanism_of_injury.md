@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 40-40)
 
 ### Key Visuals & Figures (Grainger)
-![Mechanism of Injury Figure](assets/grainger_mechanism_of_injury_p40_img1.jpeg)
+> **Key Imaging Finding:** Mechanism of Injury Figure
 
-![Mechanism of Injury Figure](assets/grainger_mechanism_of_injury_p40_img2.jpeg)
+> **Key Imaging Finding:** Mechanism of Injury Figure
 
 1390
 SECTION E  Neuroimaging
@@ -91,43 +91,43 @@ assessment of the underlying calvarium and the contre-coup site within
 ## 2. Core Radiology High-Yield Notes (Pages 105-112)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p105_p105_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p106_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p106_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p107_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p107_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p107_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p107_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p109_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p111_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p111_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p111_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p111_img6.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p111_img7.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p111_img9.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p111_img10.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p111_img12.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p112_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p112_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p112_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 304
 Glomus tympanicum
@@ -464,29 +464,29 @@ Metastasis
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 157-168)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p157_p157_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p158_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p159_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p160_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p161_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p162_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p163_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p164_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p165_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p166_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p167_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p168_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Dermoid / Epidermoid of tlie Situll
 In the context of the skull, you can 
@@ -1062,3 +1062,6 @@ This is NOT one of those times. D on’t biopsy th is.... Mother fuckers. The co
 leaking and meningitis.
 169
 
+## See Also
+- [[foot_injuries|Foot Injuries]] ([Foot Injuries](../msk/foot_injuries.md))
+- [[fracture_types|Fracture Types]] ([Fracture Types](../msk/fracture_types.md))

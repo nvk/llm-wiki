@@ -13,13 +13,13 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 221-221)
 
 ### Key Visuals & Figures (Grainger)
-![Systemic Vasculitides Figure](assets/grainger_systemic_vasculitide_p221_img1.jpeg)
+> **Key Imaging Finding:** Systemic Vasculitides Figure
 
-![Systemic Vasculitides Figure](assets/grainger_systemic_vasculitide_p221_img2.jpeg)
+> **Key Imaging Finding:** Systemic Vasculitides Figure
 
-![Systemic Vasculitides Figure](assets/grainger_systemic_vasculitide_p221_img3.jpeg)
+> **Key Imaging Finding:** Systemic Vasculitides Figure
 
-![Systemic Vasculitides Figure](assets/grainger_systemic_vasculitide_p221_img4.jpeg)
+> **Key Imaging Finding:** Systemic Vasculitides Figure
 
 CHAPTER 9  High-Resolution Computed Tomography of Interstitial and Occupational Lung Disease
 223
@@ -60,33 +60,33 @@ and (D) an area of airspace opacification, likely to be a peripheral infarct.
 ## 2. Core Radiology High-Yield Notes (Pages 81-88)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p81_p81_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p83_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p84_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p84_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p88_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 80
 Panacinar (panlobular) emphysema
@@ -838,3 +838,5 @@ About 1 -2 cm below the ideal vessel puncture
 location (needle is inserted at a 45 degree angle)
 359
 
+## See Also
+- [[miscellaneous_conditions|Miscellaneous Conditions]] ([Miscellaneous Conditions](../git/miscellaneous_conditions.md))

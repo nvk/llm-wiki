@@ -13,13 +13,13 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 248-250)
 
 ### Key Visuals & Figures (Grainger)
-![Computed Tomography Imaging Techniques Figure](assets/grainger_computed_tomography__p248_img1.jpeg)
+> **Key Imaging Finding:** Computed Tomography Imaging Techniques Figure
 
-![Computed Tomography Imaging Techniques Figure](assets/grainger_computed_tomography__p249_img1.jpeg)
+> **Key Imaging Finding:** Computed Tomography Imaging Techniques Figure
 
-![Computed Tomography Imaging Techniques Figure](assets/grainger_computed_tomography__p249_img2.jpeg)
+> **Key Imaging Finding:** Computed Tomography Imaging Techniques Figure
 
-![Computed Tomography Imaging Techniques Figure](assets/grainger_computed_tomography__p250_img1.jpeg)
+> **Key Imaging Finding:** Computed Tomography Imaging Techniques Figure
 
 CHAPTER 12  Cardiac Anatomy and Imaging Techniques
 269
@@ -163,39 +163,39 @@ band; RA, right atrium; RV, right ventricle; TV, tricuspid valve.
 ## 2. Core Radiology High-Yield Notes (Pages 49-56)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p49_p50_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p51_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img88.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img89.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p53_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img26.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img27.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img35.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img70.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img76.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img77.png)
+> **Key Imaging Finding:** Core Figure
 
 48
 Diffuse lung disease
@@ -896,3 +896,7 @@ BLANK FOR SCRIBBLES
 BLANK FOR SCRIBBLES
 585
 
+## See Also
+- [[carotid_and_vertebral_arteries|Carotid and Vertebral Arteries]] ([Carotid and Vertebral Arteries](../spine/carotid_and_vertebral_arteries.md))
+- [[traumatic_and_nontraumatic_spine_emergencies|Traumatic and Nontraumatic Spine Emergencies]] ([Traumatic and Nontraumatic Spine Emergencies](../spine/traumatic_and_nontraumatic_spine_emergencies.md))
+- [[traumatic_spine_injury|TRAUMATIC SPINE INJURY]] ([TRAUMATIC SPINE INJURY](../spine/traumatic_spine_injury.md))

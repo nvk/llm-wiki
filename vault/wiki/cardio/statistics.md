@@ -187,3 +187,6 @@ inad
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[ear_nose_and_throat7|EAR, NOSE AND THROAT7]] ([EAR, NOSE AND THROAT7](../head_neck/ear_nose_and_throat7.md))

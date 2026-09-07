@@ -175,3 +175,7 @@ Dec
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[renal_arteries|Renal Arteries]] ([Renal Arteries](../uro/renal_arteries.md))
+- [[intravascular_ultrasound|INTRAVASCULAR ULTRASOUND]] ([INTRAVASCULAR ULTRASOUND](../vascular_ir/intravascular_ultrasound.md))

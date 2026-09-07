@@ -179,3 +179,6 @@ Actinomycosis; occasionally other bacteria or fun
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[anatomy_and_function_of_abdomen_and_gastrointestinal_tract|Anatomy and Function of Abdomen and Gastrointestinal Tract]] ([Anatomy and Function of Abdomen and Gastrointestinal Tract](../git/anatomy_and_function_of_abdomen_and_gastrointestinal_tract.md))

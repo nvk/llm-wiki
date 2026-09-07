@@ -207,3 +207,6 @@ D.  BRAINSTEM = midbrain + pons + medulla co
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[prognosis_assessment_in_ischaemic_heart_disease|Prognosis Assessment In Ischaemic Heart Disease]] ([Prognosis Assessment In Ischaemic Heart Disease](../cardio/prognosis_assessment_in_ischaemic_heart_disease.md))

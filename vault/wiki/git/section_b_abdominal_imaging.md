@@ -101,31 +101,31 @@ bowel ischaemia and injury during colonoscopy. Approximately 70%
 ## 2. Core Radiology High-Yield Notes (Pages 1-8)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p1_p2_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img17.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img18.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img20.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img22.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img23.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img24.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img29.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p5_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p5_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 86
 Pulmonary vascular disease:
@@ -505,29 +505,29 @@ A siderotic nodule is rarely, if ever, malignant.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 37-48)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p37_p37_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p38_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p39_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p40_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p41_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p42_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p43_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p44_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p45_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p46_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p47_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p48_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 When You Sit Down To Take The Exam:
 (1) Check to make sure your markers work. If you got a dud fix it now. You don’t want “dead 
@@ -946,3 +946,5 @@ clinically, but occasionally people can get recurrent
 infections
 49
 
+## See Also
+- [[parenchymal_consolidation|Parenchymal Consolidation]] ([Parenchymal Consolidation](../cardio/parenchymal_consolidation.md))

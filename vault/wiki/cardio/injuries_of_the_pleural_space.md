@@ -169,3 +169,6 @@ to injury. Patients with cardiac injuries may have an ­abn
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[other_nontraumatic_intracranial_emergencies|OTHER NONTRAUMATIC INTRACRANIAL EMERGENCIES]] ([OTHER NONTRAUMATIC INTRACRANIAL EMERGENCIES](../neuro/other_nontraumatic_intracranial_emergencies.md))

@@ -192,3 +192,4 @@ A new measure of
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[acquired_abnormalities|ACQUIRED ABNORMALITIES]] ([ACQUIRED ABNORMALITIES](../paeds/acquired_abnormalities.md))

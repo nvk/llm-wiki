@@ -164,3 +164,4 @@ FIGURE 1-6. Right atrial enlargement in pulmonary atresia with intact ventricula
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[esophageal_rupture|Esophageal Rupture]] ([Esophageal Rupture](../git/esophageal_rupture.md))

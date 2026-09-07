@@ -168,3 +168,6 @@ Emergency Radiology: The Requisites
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[assessing_left_ventricular_regional_wall_motion|Assessing Left Ventricular Regional Wall Motion]] ([Assessing Left Ventricular Regional Wall Motion](../cardio/assessing_left_ventricular_regional_wall_motion.md))

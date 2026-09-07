@@ -180,3 +180,4 @@ to the left pulmonary artery in this patient with trun
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[anal_fistula|Anal Fistula]] ([Anal Fistula](../git/anal_fistula.md))

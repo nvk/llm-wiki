@@ -234,3 +234,6 @@ interpeduncu
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[aortic_valve_calcifi_cation|Aortic Valve Calcifi cation]] ([Aortic Valve Calcifi cation](../cardio/aortic_valve_calcifi_cation.md))

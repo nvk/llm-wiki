@@ -13,7 +13,7 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 135-135)
 
 ### Key Visuals & Figures (Grainger)
-![Parathyroid Disorders Figure](assets/grainger_parathyroid_disorder_p135_img1.jpeg)
+> **Key Imaging Finding:** Parathyroid Disorders Figure
 
 CHAPTER 43  Metabolic and Endocrine Skeletal Disease
 1103
@@ -100,55 +100,55 @@ parameters in addition to biomechanical surrogate markers of bone strength throu
 ## 2. Core Radiology High-Yield Notes (Pages 1-8)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p1_p2_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img46.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img49.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img50.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img51.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img52.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img53.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img54.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img55.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img56.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p4_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p4_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p4_img9.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p5_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p5_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p5_img24.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p5_img35.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p5_img43.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img7.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img8.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 345
 Orbit:
@@ -563,29 +563,29 @@ rheumatoid arthritis
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 553-564)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p553_p553_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p554_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p555_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p556_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p557_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p558_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p559_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p560_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p561_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p562_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p563_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p564_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Gamesmanship - MIBG
 Brown Fat = Just like you can see it on FDG PET (around the shoulders / traps) you can also 
@@ -1049,3 +1049,17 @@ injection
 6-8 weeks needed for full recovery
 565
 
+## See Also
+- [[14_the_first_trimester_and_ectopic_pregnancy|14. The First Trimester and Ectopic Pregnancy]] ([14. The First Trimester and Ectopic Pregnancy](../gynae/14_the_first_trimester_and_ectopic_pregnancy.md))
+- [[15_fetal_central_nervous_system_face_and_neck|15. Fetal Central Nervous System, Face, and Neck]] ([15. Fetal Central Nervous System, Face, and Neck](../gynae/15_fetal_central_nervous_system_face_and_neck.md))
+- [[16_fetal_thorax|16. Fetal Thorax]] ([16. Fetal Thorax](../gynae/16_fetal_thorax.md))
+- [[18_fetal_genitourinary_tract|18. Fetal Genitourinary Tract]] ([18. Fetal Genitourinary Tract](../gynae/18_fetal_genitourinary_tract.md))
+- [[anatomy_and_physiology_of_the_female_reproductive_system|Anatomy and Physiology of the Female Reproductive System]] ([Anatomy and Physiology of the Female Reproductive System](../gynae/anatomy_and_physiology_of_the_female_reproductive_system.md))
+- [[hematocolposhematometrocolpos|Hematocolpos/Hematometrocolpos]] ([Hematocolpos/Hematometrocolpos](../gynae/hematocolposhematometrocolpos.md))
+- [[hemorrhagic_ovarian_cyst|Hemorrhagic Ovarian Cyst]] ([Hemorrhagic Ovarian Cyst](../gynae/hemorrhagic_ovarian_cyst.md))
+- [[ovarian_torsion|Ovarian Torsion]] ([Ovarian Torsion](../gynae/ovarian_torsion.md))
+- [[radiology_considerations_for_mother_fetus_neonate|Radiology Considerations for Mother & Fetus & Neonate]] ([Radiology Considerations for Mother & Fetus & Neonate](../gynae/radiology_considerations_for_mother_fetus_neonate.md))
+- [[retained_fetal_lung_liquid_transient_tachypnea_of_the_newbor|Retained Fetal Lung Liquid (Transient Tachypnea of the Newborn)]] ([Retained Fetal Lung Liquid (Transient Tachypnea of the Newborn)](../gynae/retained_fetal_lung_liquid_transient_tachypnea_of_the_newbor.md))
+- [[38_current_status_of_imaging_of_the_musculoskeletal_system|38 Current Status Of Imaging Of The Musculoskeletal System]] ([38 Current Status Of Imaging Of The Musculoskeletal System](../msk/38_current_status_of_imaging_of_the_musculoskeletal_system.md))
+- [[further_reading|Further Reading]] ([Further Reading](../msk/further_reading.md))
+- [[section_c_the_musculoskeletal_system|Section C The Musculoskeletal System]] ([Section C The Musculoskeletal System](../msk/section_c_the_musculoskeletal_system.md))

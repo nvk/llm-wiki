@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 75-75)
 
 ### Key Visuals & Figures (Grainger)
-![Neoplastic Renal Masses Figure](assets/grainger_neoplastic_renal_mas_p75_img1.jpeg)
+> **Key Imaging Finding:** Neoplastic Renal Masses Figure
 
-![Neoplastic Renal Masses Figure](assets/grainger_neoplastic_renal_mas_p75_img2.jpeg)
+> **Key Imaging Finding:** Neoplastic Renal Masses Figure
 
 796
 SECTION B  Abdominal Imaging
@@ -98,39 +98,39 @@ tion is advised.
 ## 2. Core Radiology High-Yield Notes (Pages 25-32)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p25_p25_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p25_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 180
 Ureter
@@ -480,29 +480,29 @@ Contrast extravasates both into the pelvis and out into the perineum in a type I
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 409-420)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p409_p409_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p410_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p411_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p412_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p413_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p414_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p415_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p416_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p417_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p418_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p419_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p420_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 uterine Leiomyosarcoma - The risk of malignant transformation to a leiomyosarcoma is 
 super low (0.1%). These look like a fibroid, but rapidly enlarge. Areas of necrosis are often seen.
@@ -1043,3 +1043,6 @@ a lesion that is TI bright.
 Endometrioma - “Shading Sign”
 421
 
+## See Also
+- [[pancreatic_neoplasms|Pancreatic Neoplasms]] ([Pancreatic Neoplasms](../git/pancreatic_neoplasms.md))
+- [[neoplasms|NEOPLASMS]] ([NEOPLASMS](../vascular_ir/neoplasms.md))

@@ -163,3 +163,4 @@ half-time. Pressure half-time is obtaine
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[systemic_skeletal_disorders|SYSTEMIC SKELETAL DISORDERS]] ([SYSTEMIC SKELETAL DISORDERS](../msk/systemic_skeletal_disorders.md))

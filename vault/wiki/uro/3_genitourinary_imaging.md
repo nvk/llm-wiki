@@ -187,3 +187,6 @@ malignancy is overwhelmingly likely to represent a lipid-
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pattern_recognition|Pattern Recognition]] ([Pattern Recognition](../cardio/pattern_recognition.md))

@@ -74,3 +74,6 @@ Notice the extensive bilateral pulmonary contusion.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[splenic_trauma|SPLENIC TRAUMA]] ([SPLENIC TRAUMA](../git/splenic_trauma.md))

@@ -13,21 +13,21 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 167-168)
 
 ### Key Visuals & Figures (Grainger)
-![Other Imaging Techniques in Lobar Collapse Figure](assets/grainger_other_imaging_techni_p167_img1.jpeg)
+> **Key Imaging Finding:** Other Imaging Techniques in Lobar Collapse Figure
 
-![Other Imaging Techniques in Lobar Collapse Figure](assets/grainger_other_imaging_techni_p167_img2.jpeg)
+> **Key Imaging Finding:** Other Imaging Techniques in Lobar Collapse Figure
 
-![Other Imaging Techniques in Lobar Collapse Figure](assets/grainger_other_imaging_techni_p167_img3.jpeg)
+> **Key Imaging Finding:** Other Imaging Techniques in Lobar Collapse Figure
 
-![Other Imaging Techniques in Lobar Collapse Figure](assets/grainger_other_imaging_techni_p168_img1.jpeg)
+> **Key Imaging Finding:** Other Imaging Techniques in Lobar Collapse Figure
 
-![Other Imaging Techniques in Lobar Collapse Figure](assets/grainger_other_imaging_techni_p168_img2.jpeg)
+> **Key Imaging Finding:** Other Imaging Techniques in Lobar Collapse Figure
 
-![Other Imaging Techniques in Lobar Collapse Figure](assets/grainger_other_imaging_techni_p168_img3.jpeg)
+> **Key Imaging Finding:** Other Imaging Techniques in Lobar Collapse Figure
 
-![Other Imaging Techniques in Lobar Collapse Figure](assets/grainger_other_imaging_techni_p168_img4.jpeg)
+> **Key Imaging Finding:** Other Imaging Techniques in Lobar Collapse Figure
 
-![Other Imaging Techniques in Lobar Collapse Figure](assets/grainger_other_imaging_techni_p168_img5.jpeg)
+> **Key Imaging Finding:** Other Imaging Techniques in Lobar Collapse Figure
 
 CHAPTER 7  Pulmonary Lobar Collapse: Essential Considerations
 169
@@ -172,33 +172,33 @@ such as the left heart border, mediastinum and aortic arch, as these
 ## 2. Core Radiology High-Yield Notes (Pages 1-8)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p1_p2_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img7.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img10.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 Meaghan M. Mackesy, MD
 Resident in Radiology,
@@ -1137,3 +1137,5 @@ Supracondylar
 Canal
 95
 
+## See Also
+- [[contrast_agents|CONTRAST AGENTS]] ([CONTRAST AGENTS](../vascular_ir/contrast_agents.md))

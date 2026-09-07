@@ -186,3 +186,6 @@ where a phalanx of callosal tissue extends backward arching over the diencephalo
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[differential_diagnosis_in_ischaemic_heart_disease|Differential Diagnosis In Ischaemic Heart Disease]] ([Differential Diagnosis In Ischaemic Heart Disease](../cardio/differential_diagnosis_in_ischaemic_heart_disease.md))

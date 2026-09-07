@@ -110,3 +110,6 @@ Descending aortic interface
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[anatomy_and_metabolism_of_bone|Anatomy and Metabolism of Bone]] ([Anatomy and Metabolism of Bone](../msk/anatomy_and_metabolism_of_bone.md))

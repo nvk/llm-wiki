@@ -148,3 +148,4 @@ indication to the pr
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[cross-sectional_imaging|Cross-Sectional Imaging]] ([Cross-Sectional Imaging](../git/cross-sectional_imaging.md))

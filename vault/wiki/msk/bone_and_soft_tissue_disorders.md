@@ -224,3 +224,6 @@ cerebral gigantism = large skull, mental retardation, cerebral atrophy, advanced
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pericardial_diseases|Pericardial Diseases]] ([Pericardial Diseases](../cardio/pericardial_diseases.md))

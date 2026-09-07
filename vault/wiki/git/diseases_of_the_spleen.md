@@ -133,3 +133,6 @@ with posterior “dirty shadowing.”
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[5_kidney|5. Kidney]] ([5. Kidney](../uro/5_kidney.md))

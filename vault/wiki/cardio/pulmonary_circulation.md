@@ -104,35 +104,35 @@ correlation between pulmonary artery diameter and height, weight,
 ## 2. Core Radiology High-Yield Notes (Pages 65-72)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p65_p65_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p65_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p65_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 64
 Lymphangioleiomyomatosis (LAM)
@@ -460,29 +460,29 @@ prior granulomatous disease.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 277-288)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p277_p277_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p277_p278_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p277_p279_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p277_p280_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p277_p281_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p277_p282_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p277_p283_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p277_p284_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p277_p285_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p277_p286_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p277_p287_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p277_p288_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 - Upper Gl Surgeries - Part 2 - The Wrath of Complications -
 Leak: These usually occur early (within 10 days post op) and 
@@ -1092,3 +1092,5 @@ Other signs of shock
 (bright adrenals, flat IVC, etc...)
 289
 
+## See Also
+- [[upper_extremity|UPPER EXTREMITY]] ([UPPER EXTREMITY](../msk/upper_extremity.md))

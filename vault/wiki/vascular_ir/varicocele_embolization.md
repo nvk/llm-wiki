@@ -162,3 +162,7 @@ sampling approach. The procedure is us
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[transjugular_liver_biopsy|TRANSJUGULAR LIVER BIOPSY]] ([TRANSJUGULAR LIVER BIOPSY](../git/transjugular_liver_biopsy.md))
+- [[chronic_cerebrospinal_venous_insufficiency|CHRONIC CEREBROSPINAL VENOUS INSUFFICIENCY]] ([CHRONIC CEREBROSPINAL VENOUS INSUFFICIENCY](../neuro/chronic_cerebrospinal_venous_insufficiency.md))

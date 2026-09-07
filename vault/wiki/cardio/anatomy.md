@@ -266,3 +266,6 @@ algorithm are used (Fig. 12-2). The image reconstruc­
 tion thickness can be selected prospectively or retrospec­
 tively after raw data set is acquired. The same data can 
 be transferred to a dedicated workstati
+
+## See Also
+- [[haematuria|Haematuria]] ([Haematuria](../uro/haematuria.md))

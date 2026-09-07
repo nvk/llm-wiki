@@ -123,3 +123,6 @@ TIPS, Transjugular intrahepatic portosystemic shunt.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[bladder|BLADDER]] ([BLADDER](../uro/bladder.md))

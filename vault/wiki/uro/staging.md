@@ -134,31 +134,31 @@ can be used as well. The slice thickness should be 3 mm with no gap.
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p9_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p9_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 164
 Malignant (or potentially malignant) adrenal masses
@@ -1162,3 +1162,7 @@ land mark is often brought up with discussion of the
 erosion pattern of Cholesteatomas.
 239
 
+## See Also
+- [[imaging|IMAGING]] ([IMAGING](../vascular_ir/imaging.md))
+- [[key_collateral_pathways|KEY COLLATERAL PATHWAYS]] ([KEY COLLATERAL PATHWAYS](../vascular_ir/key_collateral_pathways.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../vascular_ir/suggested_readings.md))

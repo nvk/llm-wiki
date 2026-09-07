@@ -181,3 +181,6 @@ aPTT), which can be turned
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[heart_and_great_vessels|HEART AND GREAT VESSELS]] ([HEART AND GREAT VESSELS](../cardio/heart_and_great_vessels.md))

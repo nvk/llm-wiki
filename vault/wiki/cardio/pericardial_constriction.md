@@ -165,3 +165,4 @@ Although no
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[future_directions|FUTURE DIRECTIONS]] ([FUTURE DIRECTIONS](../vascular_ir/future_directions.md))

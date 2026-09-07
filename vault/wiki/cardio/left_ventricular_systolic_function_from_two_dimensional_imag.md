@@ -172,3 +172,4 @@ ratio in
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[acknowledgement|Acknowledgement]] ([Acknowledgement](../msk/acknowledgement.md))

@@ -185,3 +185,7 @@ Xanthogranulom
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[atypical_pneumonia_syndrome|Atypical Pneumonia Syndrome]] ([Atypical Pneumonia Syndrome](../cardio/atypical_pneumonia_syndrome.md))
+- [[pneumonias_caused_by_gram_negative_aerobic_organisms|Pneumonias Caused By Gram-Negative Aerobic Organisms]] ([Pneumonias Caused By Gram-Negative Aerobic Organisms](../cardio/pneumonias_caused_by_gram_negative_aerobic_organisms.md))

@@ -36,3 +36,6 @@ Dedication
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[the_pleura|The Pleura]] ([The Pleura](../cardio/the_pleura.md))

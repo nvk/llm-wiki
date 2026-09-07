@@ -154,3 +154,6 @@ phie blanche). There is almost always associated ede
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[inherited_disorders_of_the_arterial_wall|INHERITED DISORDERS OF THE ARTERIAL WALL]] ([INHERITED DISORDERS OF THE ARTERIAL WALL](../vascular_ir/inherited_disorders_of_the_arterial_wall.md))

@@ -103,27 +103,27 @@ Indeed, much of the history of neuroradiology involved the quest for an
 ## 2. Core Radiology High-Yield Notes (Pages 1-8)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p1_p2_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img4.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img6.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img7.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img8.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img9.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img12.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p5_img87.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img46.png)
+> **Key Imaging Finding:** Core Figure
 
 200
 Elsayes, K.M. et al. Adrenal Masses: MR Imaging Features with Pathologic Correlation. Radiographics 24, S73(2004).
@@ -493,29 +493,29 @@ Creutzfeldt–Jakob disease.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 1-12)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p1_p1_img1.jpeg)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p1_p2_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p1_p3_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p1_p4_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p1_p5_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p1_p6_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p1_p7_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p1_p8_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p1_p9_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p1_p10_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p1_p11_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p1_p12_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 CRA CK THE 
 CORE EXAM
@@ -900,3 +900,17 @@ training and you can’t allow them to work when you are not (see Law 1). Minimi
 Maximize productivity.
 13
 
+## See Also
+- [[38_current_status_of_imaging_of_the_musculoskeletal_system|38 Current Status Of Imaging Of The Musculoskeletal System]] ([38 Current Status Of Imaging Of The Musculoskeletal System](../msk/38_current_status_of_imaging_of_the_musculoskeletal_system.md))
+- [[acromio-clavicular_joint|Acromio-Clavicular Joint]] ([Acromio-Clavicular Joint](../msk/acromio-clavicular_joint.md))
+- [[arthrography|Arthrography]] ([Arthrography](../msk/arthrography.md))
+- [[bone_metastases|Bone Metastases]] ([Bone Metastases](../msk/bone_metastases.md))
+- [[conventional_radiography|Conventional Radiography]] ([Conventional Radiography](../msk/conventional_radiography.md))
+- [[further_reading|Further Reading]] ([Further Reading](../msk/further_reading.md))
+- [[general_characteristics_of_bone_tumours|General Characteristics Of Bone Tumours]] ([General Characteristics Of Bone Tumours](../msk/general_characteristics_of_bone_tumours.md))
+- [[hand_and_wrist|Hand And Wrist]] ([Hand And Wrist](../msk/hand_and_wrist.md))
+- [[section_c_the_musculoskeletal_system|Section C The Musculoskeletal System]] ([Section C The Musculoskeletal System](../msk/section_c_the_musculoskeletal_system.md))
+- [[the_sternoclavicular_joint|The Sternoclavicular Joint]] ([The Sternoclavicular Joint](../msk/the_sternoclavicular_joint.md))
+- [[imaging_techniques|IMAGING TECHNIQUES]] ([IMAGING TECHNIQUES](../paeds/imaging_techniques.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../paeds/suggested_readings.md))
+- [[trauma|TRAUMA]] ([TRAUMA](../paeds/trauma.md))

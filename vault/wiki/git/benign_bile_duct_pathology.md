@@ -13,11 +13,11 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 148-148)
 
 ### Key Visuals & Figures (Grainger)
-![Benign Bile Duct Pathology Figure](assets/grainger_benign_bile_duct_pat_p148_img1.jpeg)
+> **Key Imaging Finding:** Benign Bile Duct Pathology Figure
 
-![Benign Bile Duct Pathology Figure](assets/grainger_benign_bile_duct_pat_p148_img2.jpeg)
+> **Key Imaging Finding:** Benign Bile Duct Pathology Figure
 
-![Benign Bile Duct Pathology Figure](assets/grainger_benign_bile_duct_pat_p148_img3.jpeg)
+> **Key Imaging Finding:** Benign Bile Duct Pathology Figure
 
 668
 SECTION B  Abdominal Imaging
@@ -99,23 +99,23 @@ surrounding low-density bile.
 ## 2. Core Radiology High-Yield Notes (Pages 41-48)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p42_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p44_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 126
 Benign esophageal masses
@@ -915,3 +915,5 @@ Mid Aortic Syndrome - Narrow aorta
 without arteritis or atherosclerosis
 323
 
+## See Also
+- [[abnormal_air_collections|Abnormal Air Collections]] ([Abnormal Air Collections](../cardio/abnormal_air_collections.md))

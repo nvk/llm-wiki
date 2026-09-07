@@ -113,3 +113,6 @@ Figure 12-4.  Decay scheme for gallium-67.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[7_pulmonary_lobar_collapse|7 Pulmonary Lobar Collapse]] ([7 Pulmonary Lobar Collapse](../cardio/7_pulmonary_lobar_collapse.md))

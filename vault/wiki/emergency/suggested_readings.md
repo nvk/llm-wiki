@@ -700,7 +700,6 @@ labeled leukocyte scintigraphy for diagnosis of infection. J Nucl Med 47:587–5
 Burke J: Advances in 99mTc radiopharmaceutical chemistry. Paper presented at 
 the 148th annual meeting of the APA, San Francisco, March 2001.
 Carvalho PA, Anthony PJ: Evaluation of GI bleeding with Tc 99m RBC. 
-http://www.jpnm.org.
 Curtin K, Fitzgerald SW, Nemcek AA Jr, et al: CT diagnosis of acute appendicitis: 
 Imaging findings. AJR Am J Roentgenol 164:905, 1995.
 Ell PJ, Gambhir SS: Nuclear Medicine in Clinical Diagnosis and Treatment, 3rd ed.
@@ -725,3 +724,18 @@ Medicine. Washington, DC, APhA, 2004.
 Lew DP, Waldvogel FA: Current concepts: Osteomyelitis. New Engl J Med 
 336:999–1007, 1997.
 Love C, Palestro CJ:
+
+## See Also
+- [[1_current_status_of_thoracic_imaging|1 Current Status Of Thoracic Imaging]] ([1 Current Status Of Thoracic Imaging](../cardio/1_current_status_of_thoracic_imaging.md))
+- [[acknowledgement|Acknowledgement]] ([Acknowledgement](../cardio/acknowledgement.md))
+- [[cardiac_magnetic_resonance|Cardiac Magnetic Resonance]] ([Cardiac Magnetic Resonance](../cardio/cardiac_magnetic_resonance.md))
+- [[coronary_artery_imaging|Coronary Artery Imaging]] ([Coronary Artery Imaging](../cardio/coronary_artery_imaging.md))
+- [[myocardial_infarct_imaging|Myocardial Infarct Imaging]] ([Myocardial Infarct Imaging](../cardio/myocardial_infarct_imaging.md))
+- [[myocardial_viability_imaging|Myocardial Viability Imaging]] ([Myocardial Viability Imaging](../cardio/myocardial_viability_imaging.md))
+- [[pathophysiology_of_ischaemic_heart_disease|Pathophysiology Of Ischaemic Heart Disease]] ([Pathophysiology Of Ischaemic Heart Disease](../cardio/pathophysiology_of_ischaemic_heart_disease.md))
+- [[section_a_the_chest_and_cardiovascular_system|Section A The Chest And Cardiovascular System]] ([Section A The Chest And Cardiovascular System](../cardio/section_a_the_chest_and_cardiovascular_system.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../cardio/suggested_readings.md))
+- [[ultrasound|Ultrasound]] ([Ultrasound](../cardio/ultrasound.md))
+- [[chronic_pancreatitis|Chronic Pancreatitis]] ([Chronic Pancreatitis](../git/chronic_pancreatitis.md))
+- [[iterative_reconstruction_algorithms|Iterative Reconstruction Algorithms]] ([Iterative Reconstruction Algorithms](../git/iterative_reconstruction_algorithms.md))
+- [[section_b_abdominal_imaging_uroradiology|Section B Abdominal Imaging]] ([Section B Abdominal Imaging](../git/section_b_abdominal_imaging_uroradiology.md))

@@ -280,3 +280,6 @@ different morphological appearances. Some have extensive emphysema
 while others have minimal emphysema suggesting more significant small 
 airway disease. These differences in morphological appearances may 
 be related to differences in pathophysiology an
+
+## See Also
+- [[basic_safety_considerations|BASIC SAFETY CONSIDERATIONS]] ([BASIC SAFETY CONSIDERATIONS](../vascular_ir/basic_safety_considerations.md))

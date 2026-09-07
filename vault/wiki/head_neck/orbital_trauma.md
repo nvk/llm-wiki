@@ -15,6 +15,10 @@ status: "verified_source"---
 ## Clinical & Radiological Concepts
 Lossless excerpt from gold-standard UK reference textbook.
 
+## See Also
+- [[extremity_trauma|Extremity Trauma]] ([Extremity Trauma](../msk/extremity_trauma.md))
+- [[genitourinary_trauma|GENITOURINARY TRAUMA]] ([GENITOURINARY TRAUMA](../uro/genitourinary_trauma.md))
+
 ## Reference Text
 1584
 SECTION E  Neuroimaging

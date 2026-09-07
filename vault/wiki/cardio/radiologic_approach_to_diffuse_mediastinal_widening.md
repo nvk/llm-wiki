@@ -174,3 +174,6 @@ Pharynx (retropharyngeal or nasophary
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[skeletal_system|Skeletal System]] ([Skeletal System](../msk/skeletal_system.md))

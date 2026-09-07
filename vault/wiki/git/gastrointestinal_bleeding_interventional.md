@@ -170,3 +170,7 @@ following a positive CT
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[ablation_planning_and_procedure|ABLATION PLANNING AND PROCEDURE]] ([ABLATION PLANNING AND PROCEDURE](../vascular_ir/ablation_planning_and_procedure.md))
+- [[image_guided_percutaneous_biopsy|Image-Guided Percutaneous Biopsy]] ([Image-Guided Percutaneous Biopsy](../vascular_ir/image_guided_percutaneous_biopsy.md))

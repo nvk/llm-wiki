@@ -157,3 +157,4 @@ valve orifi ce is rarely
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[coronary_sinus|Coronary Sinus]] ([Coronary Sinus](../head_neck/coronary_sinus.md))

@@ -90,19 +90,19 @@ is mainly in intervention.
 ## 2. Core Radiology High-Yield Notes (Pages 65-72)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p65_p66_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 150
 Flow of peritoneal fluid
@@ -1014,3 +1014,5 @@ Enhancement
 Thallium Cold
 215
 
+## See Also
+- [[clinical_presentation|Clinical Presentation]] ([Clinical Presentation](../cardio/clinical_presentation.md))

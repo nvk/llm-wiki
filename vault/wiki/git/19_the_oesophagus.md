@@ -93,23 +93,23 @@ foregut. The striated muscle of the upper oesophagus is derived from
 ## 2. Core Radiology High-Yield Notes (Pages 41-48)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p42_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p44_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 126
 Benign esophageal masses
@@ -469,29 +469,29 @@ open of a large, flat malignant ulcer when compression is applied.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 229-240)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p229_p229_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p230_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p231_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p232_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p233_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p234_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p235_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p236_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p237_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p238_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p239_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p240_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 - Bladder Masses / Cancers -
 Work up for bladder lesions / masses in kids should start with an Ultrasound. A potentially 
@@ -1088,3 +1088,5 @@ Abuse — Some people abuse drugs, some just can't stand screaming kids, some su
 shortcomings. More on this later.
 241
 
+## See Also
+- [[the_hila|The Hila]] ([The Hila](../cardio/the_hila.md))

@@ -161,3 +161,7 @@ diagnosis at the time of admission is not as c
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[injuries_of_the_thoracic_skeleton|INJURIES OF THE THORACIC SKELETON]] ([INJURIES OF THE THORACIC SKELETON](../cardio/injuries_of_the_thoracic_skeleton.md))
+- [[aneurysms_vascular_malformations_and_vascular_injuries|ANEURYSMS, VASCULAR MALFORMATIONS, AND VASCULAR INJURIES]] ([ANEURYSMS, VASCULAR MALFORMATIONS, AND VASCULAR INJURIES](../vascular_ir/aneurysms_vascular_malformations_and_vascular_injuries.md))

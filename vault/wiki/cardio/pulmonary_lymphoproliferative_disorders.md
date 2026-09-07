@@ -176,3 +176,6 @@ other immunosuppressive agents, but some cases
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[cysts|Cysts]] ([Cysts](../uro/cysts.md))

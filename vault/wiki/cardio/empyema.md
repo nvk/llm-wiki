@@ -130,3 +130,6 @@ Split pleura sign
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[local_disease_stage|Local Disease Stage]] ([Local Disease Stage](../uro/local_disease_stage.md))

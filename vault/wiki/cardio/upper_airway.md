@@ -190,3 +190,6 @@ turn often resul
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[occlusive_disease|OCCLUSIVE DISEASE]] ([OCCLUSIVE DISEASE](../vascular_ir/occlusive_disease.md))

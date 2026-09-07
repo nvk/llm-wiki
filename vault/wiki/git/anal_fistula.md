@@ -13,11 +13,11 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 134-135)
 
 ### Key Visuals & Figures (Grainger)
-![Anal Fistula Figure](assets/grainger_anal_fistula_p134_img1.jpeg)
+> **Key Imaging Finding:** Anal Fistula Figure
 
-![Anal Fistula Figure](assets/grainger_anal_fistula_p134_img2.jpeg)
+> **Key Imaging Finding:** Anal Fistula Figure
 
-![Anal Fistula Figure](assets/grainger_anal_fistula_p134_img3.jpeg)
+> **Key Imaging Finding:** Anal Fistula Figure
 
 596
 SECTION B  Abdominal Imaging
@@ -146,35 +146,35 @@ colonography. Eur. Radiol. 23 (3), 720–729.
 ## 2. Core Radiology High-Yield Notes (Pages 49-56)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p49_p49_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p49_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p49_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 134
 Overview of gastric bypass surgery
@@ -1231,3 +1231,5 @@ lymphoma or a stroke (or an abscess) - you’ll need to use enhancement to strai
 Yes... GBM can restrict, but for multiple choice it is way more likely to be lymphoma.
 191
 
+## See Also
+- [[anatomy_and_relation_to_the_left_superior_vena_cava|Anatomy and Relation to the Left Superior Vena Cava]] ([Anatomy and Relation to the Left Superior Vena Cava](../cardio/anatomy_and_relation_to_the_left_superior_vena_cava.md))

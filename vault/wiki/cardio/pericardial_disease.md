@@ -165,3 +165,4 @@ Although no
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[stomach_and_diaphragm|STOMACH AND DIAPHRAGM]] ([STOMACH AND DIAPHRAGM](../git/stomach_and_diaphragm.md))

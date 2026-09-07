@@ -192,3 +192,7 @@ nylon suture opposes the stomach wall to th
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[cardiac_interventional_procedures|Cardiac Interventional Procedures]] ([Cardiac Interventional Procedures](../cardio/cardiac_interventional_procedures.md))
+- [[microwave_ablation|MICROWAVE ABLATION]] ([MICROWAVE ABLATION](../vascular_ir/microwave_ablation.md))

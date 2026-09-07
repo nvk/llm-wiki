@@ -352,3 +352,8 @@ Figure 11-45.  Patient with remote liver transplant and a chronic left-sided b
 routine catheter change. A, Hepatic digital subtraction angiogram (DSA) with the tube in place showing slight narrowing of the left hepatic artery 
 (arrow), but no active extravasation. The gastroduodenal artery was ligated during the transplant surgery. B, Repeat DSA after removal of the tube over 
 a guidewire showing a pseudoaneurysm (arrowhead), with extravasation into the bile ducts (curved arr
+
+## See Also
+- [[8_breast_imaging|8. Breast Imaging]] ([8. Breast Imaging](../breast/8_breast_imaging.md))
+- [[breast_anatomy_and_mammographic_technique|Breast Anatomy and Mammographic Technique]] ([Breast Anatomy and Mammographic Technique](../breast/breast_anatomy_and_mammographic_technique.md))
+- [[breast_lesion_excision_systems|BREAST LESION EXCISION SYSTEMS]] ([BREAST LESION EXCISION SYSTEMS](../breast/breast_lesion_excision_systems.md))

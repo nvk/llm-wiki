@@ -174,3 +174,6 @@ Amiodarone is a tri-i
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[indications_and_outcomes|INDICATIONS AND OUTCOMES]] ([INDICATIONS AND OUTCOMES](../vascular_ir/indications_and_outcomes.md))

@@ -220,3 +220,6 @@ These tumors usually c
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[tumors|TUMORS]] ([TUMORS](../emergency/tumors.md))

@@ -191,3 +191,4 @@ may also be redundant or ruptured chordae
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[pancreaticobiliary_disease|PANCREATICOBILIARY DISEASE]] ([PANCREATICOBILIARY DISEASE](../git/pancreaticobiliary_disease.md))

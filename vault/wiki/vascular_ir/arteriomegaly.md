@@ -149,3 +149,6 @@ lutely satisfactory. Patients with an ischemic limb should p
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[partial_splenic_embolization|PARTIAL SPLENIC EMBOLIZATION]] ([PARTIAL SPLENIC EMBOLIZATION](../git/partial_splenic_embolization.md))

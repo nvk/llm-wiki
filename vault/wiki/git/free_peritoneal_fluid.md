@@ -69,3 +69,6 @@ that the initial CT findings were due to fluid resuscitation and not to pancreat
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[diseases_of_altered_immunologic_activity|Diseases of Altered Immunologic Activity]] ([Diseases of Altered Immunologic Activity](../cardio/diseases_of_altered_immunologic_activity.md))

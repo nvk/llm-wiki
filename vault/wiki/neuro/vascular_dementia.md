@@ -13,13 +13,13 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 150-151)
 
 ### Key Visuals & Figures (Grainger)
-![Vascular Dementia Figure](assets/grainger_vascular_dementia_p150_img1.jpeg)
+> **Key Imaging Finding:** Vascular Dementia Figure
 
-![Vascular Dementia Figure](assets/grainger_vascular_dementia_p150_img2.jpeg)
+> **Key Imaging Finding:** Vascular Dementia Figure
 
-![Vascular Dementia Figure](assets/grainger_vascular_dementia_p151_img1.jpeg)
+> **Key Imaging Finding:** Vascular Dementia Figure
 
-![Vascular Dementia Figure](assets/grainger_vascular_dementia_p151_img2.jpeg)
+> **Key Imaging Finding:** Vascular Dementia Figure
 
 1552
 SECTION E  Neuroimaging
@@ -210,49 +210,49 @@ U-fibres at the convexity (blue arrows).
 ## 2. Core Radiology High-Yield Notes (Pages 17-24)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p17_p17_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p20_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p20_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 216
 •	 Tumors hypointense on T2-weighted images include:
@@ -599,29 +599,29 @@ with numerous intratumoral cystic areas. Calcification is common.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 481-492)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p481_p481_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p482_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p483_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p484_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p485_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p486_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p487_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p488_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p489_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p490_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p491_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p492_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Carcinoid Syndrome:
 Flushing, diarrhea, pain, right heart failure from serotonin manufactured by the carcinoid 
@@ -1087,3 +1087,6 @@ Tc (but bones will be real weak on that one). MIBG can have lacrimal activity , 
 bones.
 493
 
+## See Also
+- [[acute_deep_vein_thrombosis|ACUTE DEEP VEIN THROMBOSIS]] ([ACUTE DEEP VEIN THROMBOSIS](../vascular_ir/acute_deep_vein_thrombosis.md))
+- [[vascular_interventions|Vascular Interventions]] ([Vascular Interventions](../vascular_ir/vascular_interventions.md))

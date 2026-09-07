@@ -13,11 +13,11 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 242-242)
 
 ### Key Visuals & Figures (Grainger)
-![Pulmonary Alveolar Proteinosis Figure](assets/grainger_pulmonary_alveolar_p_p242_img1.jpeg)
+> **Key Imaging Finding:** Pulmonary Alveolar Proteinosis Figure
 
-![Pulmonary Alveolar Proteinosis Figure](assets/grainger_pulmonary_alveolar_p_p242_img2.jpeg)
+> **Key Imaging Finding:** Pulmonary Alveolar Proteinosis Figure
 
-![Pulmonary Alveolar Proteinosis Figure](assets/grainger_pulmonary_alveolar_p_p242_img3.jpeg)
+> **Key Imaging Finding:** Pulmonary Alveolar Proteinosis Figure
 
 CHAPTER 11  Airspace Diseases
 263
@@ -89,33 +89,33 @@ is the characteristic feature, which, in its classical form, is virtually
 ## 2. Core Radiology High-Yield Notes (Pages 81-88)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p81_p81_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p83_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p84_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p84_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p88_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 80
 Panacinar (panlobular) emphysema
@@ -876,3 +876,5 @@ Come on now, we all know gold is getting old
 But the ice in my teeth keeps the cristal cold.
 491
 
+## See Also
+- [[rickets_and_osteomalacia|Rickets And Osteomalacia]] ([Rickets And Osteomalacia](../msk/rickets_and_osteomalacia.md))

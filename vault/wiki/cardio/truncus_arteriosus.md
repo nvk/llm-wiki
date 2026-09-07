@@ -170,3 +170,5 @@ ful technique in identif
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[transient_ischemic_attack|TRANSIENT ISCHEMIC ATTACK]] ([TRANSIENT ISCHEMIC ATTACK](../head_neck/transient_ischemic_attack.md))
+- [[adrenal_venous_sampling|ADRENAL VENOUS SAMPLING]] ([ADRENAL VENOUS SAMPLING](../uro/adrenal_venous_sampling.md))

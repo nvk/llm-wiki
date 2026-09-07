@@ -118,27 +118,27 @@ category to PI-RADS 4.
 ## 2. Core Radiology High-Yield Notes (Pages 41-46)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p41_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p41_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p41_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p41_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img8.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img14.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p46_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 196
 Congenital uterine anomalies
@@ -1011,3 +1011,6 @@ Enhancement
 Thallium Cold
 215
 
+## See Also
+- [[thoracic_radiology_imaging_methods_radiographic_signs_and_di|Thoracic Radiology: Imaging Methods, Radiographic Signs, and Diagnosis of Chest Disease]] ([Thoracic Radiology: Imaging Methods, Radiographic Signs, and Diagnosis of Chest Disease](../cardio/thoracic_radiology_imaging_methods_radiographic_signs_and_di.md))
+- [[imaging_the_abdomen_with_computed_tomography_radiation_issue|Imaging the Abdomen With Computed Tomography: Radiation Issues]] ([Imaging the Abdomen With Computed Tomography: Radiation Issues](../git/imaging_the_abdomen_with_computed_tomography_radiation_issue.md))

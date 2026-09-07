@@ -13,21 +13,21 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 212-213)
 
 ### Key Visuals & Figures (Grainger)
-![Foot Injuries Figure](assets/grainger_foot_injuries_p212_img1.jpeg)
+> **Key Imaging Finding:** Foot Injuries Figure
 
-![Foot Injuries Figure](assets/grainger_foot_injuries_p212_img2.jpeg)
+> **Key Imaging Finding:** Foot Injuries Figure
 
-![Foot Injuries Figure](assets/grainger_foot_injuries_p212_img3.jpeg)
+> **Key Imaging Finding:** Foot Injuries Figure
 
-![Foot Injuries Figure](assets/grainger_foot_injuries_p212_img4.jpeg)
+> **Key Imaging Finding:** Foot Injuries Figure
 
-![Foot Injuries Figure](assets/grainger_foot_injuries_p213_img1.jpeg)
+> **Key Imaging Finding:** Foot Injuries Figure
 
-![Foot Injuries Figure](assets/grainger_foot_injuries_p213_img2.jpeg)
+> **Key Imaging Finding:** Foot Injuries Figure
 
-![Foot Injuries Figure](assets/grainger_foot_injuries_p213_img3.jpeg)
+> **Key Imaging Finding:** Foot Injuries Figure
 
-![Foot Injuries Figure](assets/grainger_foot_injuries_p213_img4.jpeg)
+> **Key Imaging Finding:** Foot Injuries Figure
 
 1180
 SECTION C  The Musculoskeletal System
@@ -98,71 +98,71 @@ CT recommended to assess articular involvement and displacement.
 ## 2. Core Radiology High-Yield Notes (Pages 57-64)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p57_p57_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p57_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p61_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p61_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p61_img9.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img48.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img6.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img7.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img8.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img9.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img12.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img15.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img67.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img68.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 401
 Foot and ankle
@@ -1069,3 +1069,5 @@ Trivia: ENT will want to know: (1) if the tissue covering the normally open ear 
 plate) is soft tissue or bone, and (2) if there is an aberrant course of the facial nerve.
 251
 
+## See Also
+- [[mechanism_of_injury|Mechanism Of Injury]] ([Mechanism Of Injury](../neuro/mechanism_of_injury.md))

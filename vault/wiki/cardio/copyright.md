@@ -28,7 +28,6 @@ means, electronic or mechanical, including photocopying, recording, or any infor
 system, without permission in writing from the publisher. Permissions may be sought directly from Elsevier’s 
 Rights Department: phone: (1) 215 239 3804 (US) or (44) 1865 843830 (UK); fax: (44) 1865 853333; 
 e-mail: healthpermissions@elsevier.com. You may also complete your request on-line via the Elsevier website 
-at http://www.elsevier.com/permissions.
 Notice
 Neither the Publisher nor the Authors assume any responsibility for any loss or injury and/or damage 
 to persons or property arising out of or related to any use of the material contained in this book. It is 
@@ -101,7 +100,6 @@ any means, electronic or mechanical, including photocopying, recording, or any i
 retrieval system, without permission in writing from the publisher. Permissions may be sought directly 
 from Elsevier’s Rights Department: phone: (+1) 215 239 3804 (US) or (+44) 1865 843830 (UK); fax: (+44) 
 1865 853333; e-mail: healthpermissions@elsevier.com. You may also complete your request on-line via the 
-Elsevier website at http://www.elsevier.com/permissions.
 
 
 ## Additional Primary Source: Ultrasound: The Requisites (pp. 4–4)
@@ -185,7 +183,7 @@ Identifiers: LCCN 2016044206 | ISBN 9781496360724
 Subjects: | MESH: Radiography | Diagnosis, Differential | Diagnostic Imaging
 | Outlines
 Classification: LCC RC78.17 | NLM WN 18.2 | DDC 616.07/572–dc23
-LC record available at https://lccn.loc.gov/2016044206
+LC record available at 
 This work is provided “as is,” and the publisher disclaims any and all warranties, express or implied,
 including any warranties as to accuracy, comprehensiveness, or currency of the content of this work.
 3
@@ -208,3 +206,6 @@ assumed by the publisher for any injury and/or damage to persons or property, as
 liability, negligence law or otherwise, or from any reference to or use by any person of this work.
 LWW.com
 4
+
+## See Also
+- [[radiological_techniques|Radiological Techniques]] ([Radiological Techniques](../git/radiological_techniques.md))

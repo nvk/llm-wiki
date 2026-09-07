@@ -13,17 +13,17 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 135-136)
 
 ### Key Visuals & Figures (Grainger)
-![Post-Treatment Evaluation Figure](assets/grainger_post-treatment_evalu_p135_img1.jpeg)
+> **Key Imaging Finding:** Post-Treatment Evaluation Figure
 
-![Post-Treatment Evaluation Figure](assets/grainger_post-treatment_evalu_p135_img2.jpeg)
+> **Key Imaging Finding:** Post-Treatment Evaluation Figure
 
-![Post-Treatment Evaluation Figure](assets/grainger_post-treatment_evalu_p135_img3.jpeg)
+> **Key Imaging Finding:** Post-Treatment Evaluation Figure
 
-![Post-Treatment Evaluation Figure](assets/grainger_post-treatment_evalu_p135_img4.jpeg)
+> **Key Imaging Finding:** Post-Treatment Evaluation Figure
 
-![Post-Treatment Evaluation Figure](assets/grainger_post-treatment_evalu_p136_img1.jpeg)
+> **Key Imaging Finding:** Post-Treatment Evaluation Figure
 
-![Post-Treatment Evaluation Figure](assets/grainger_post-treatment_evalu_p136_img2.jpeg)
+> **Key Imaging Finding:** Post-Treatment Evaluation Figure
 
 856
 SECTION B  Abdominal Imaging
@@ -152,27 +152,27 @@ pitfall is residual prostate gland tissue owing to partial or incomplete
 ## 2. Core Radiology High-Yield Notes (Pages 41-46)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p41_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p41_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p41_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p41_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img8.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img14.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p46_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 196
 Congenital uterine anomalies
@@ -863,3 +863,5 @@ Mid Aortic Syndrome - Narrow aorta
 without arteritis or atherosclerosis
 323
 
+## See Also
+- [[isbn_9780323055277|ISBN: 9780323055277]] ([ISBN: 9780323055277](../cardio/isbn_9780323055277.md))

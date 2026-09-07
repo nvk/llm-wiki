@@ -249,3 +249,6 @@ fetal anomaly detected
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[congenital_heart_disease_pediatric|CONGENITAL HEART DISEASE]] ([CONGENITAL HEART DISEASE](../cardio/congenital_heart_disease_pediatric.md))

@@ -117,3 +117,6 @@ made of a lamellated gallstone (white arrow).
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[chapter_outline|Chapter Outline]] ([Chapter Outline](../cardio/chapter_outline.md))

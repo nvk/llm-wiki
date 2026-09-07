@@ -14,13 +14,13 @@ aliases: ["spleen"]---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 206-206)
 
 ### Key Visuals & Figures (Grainger)
-![Spleen Figure](assets/grainger_spleen_p206_img1.jpeg)
+> **Key Imaging Finding:** Spleen Figure
 
-![Spleen Figure](assets/grainger_spleen_p206_img2.jpeg)
+> **Key Imaging Finding:** Spleen Figure
 
-![Spleen Figure](assets/grainger_spleen_p206_img3.jpeg)
+> **Key Imaging Finding:** Spleen Figure
 
-![Spleen Figure](assets/grainger_spleen_p206_img4.jpeg)
+> **Key Imaging Finding:** Spleen Figure
 
 CHAPTER 23  The Liver and Spleen
 645
@@ -67,23 +67,23 @@ University of Washington. All Rights Reserved.
 ## 2. Core Radiology High-Yield Notes (Pages 41-48)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p42_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p44_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 126
 Benign esophageal masses
@@ -869,3 +869,5 @@ Otherwise - you could have just missed, or
 targeted the infection behind the cancer.
 431
 
+## See Also
+- [[radiological_evaluation_of_potential_donor_kidneys|Radiological Evaluation Of Potential Donor Kidneys]] ([Radiological Evaluation Of Potential Donor Kidneys](../uro/radiological_evaluation_of_potential_donor_kidneys.md))

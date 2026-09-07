@@ -160,3 +160,7 @@ small-calibe
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[gallbladder_and_bile_duct_trauma|GALLBLADDER AND BILE DUCT TRAUMA]] ([GALLBLADDER AND BILE DUCT TRAUMA](../git/gallbladder_and_bile_duct_trauma.md))
+- [[54_imaging_of_head_trauma|54 Imaging Of Head Trauma]] ([54 Imaging Of Head Trauma](../neuro/54_imaging_of_head_trauma.md))

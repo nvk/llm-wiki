@@ -143,3 +143,7 @@ image shows both hemothorax (black arrow) and opacified lung
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[lung_injuries_and_lung_contusion|LUNG INJURIES AND LUNG CONTUSION]] ([LUNG INJURIES AND LUNG CONTUSION](../cardio/lung_injuries_and_lung_contusion.md))
+- [[54_imaging_of_head_trauma|54 Imaging Of Head Trauma]] ([54 Imaging Of Head Trauma](../neuro/54_imaging_of_head_trauma.md))

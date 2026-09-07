@@ -158,3 +158,4 @@ rected int
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[the_coronary_sinus_and_the_left_superior_vena_cava|THE CORONARY SINUS AND THE LEFT SUPERIOR VENA CAVA]] ([THE CORONARY SINUS AND THE LEFT SUPERIOR VENA CAVA](../head_neck/the_coronary_sinus_and_the_left_superior_vena_cava.md))

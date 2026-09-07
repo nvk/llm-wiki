@@ -103,3 +103,6 @@ This page intentionally left blank
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[connective_tissue_diseases|Connective Tissue Diseases]] ([Connective Tissue Diseases](../cardio/connective_tissue_diseases.md))

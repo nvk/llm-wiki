@@ -130,3 +130,7 @@ Vascular: Hepatic avulsion
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[cardiac_injuries|CARDIAC INJURIES]] ([CARDIAC INJURIES](../cardio/cardiac_injuries.md))
+- [[traumatic_and_nontraumatic_emergencies_of_the_brain_head_and|Traumatic and Nontraumatic Emergencies of the Brain, Head, and Neck]] ([Traumatic and Nontraumatic Emergencies of the Brain, Head, and Neck](../neuro/traumatic_and_nontraumatic_emergencies_of_the_brain_head_and.md))

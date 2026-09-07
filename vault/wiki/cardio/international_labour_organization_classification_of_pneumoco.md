@@ -239,3 +239,6 @@ radiographically; findin
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[improving_the_lumen|IMPROVING THE LUMEN]] ([IMPROVING THE LUMEN](../vascular_ir/improving_the_lumen.md))

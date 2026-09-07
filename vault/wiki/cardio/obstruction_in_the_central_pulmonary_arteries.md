@@ -164,3 +164,5 @@ probably refl ecting vigorous diuretic therapy that
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[segmental_arterial_mediolysis|SEGMENTAL ARTERIAL MEDIOLYSIS]] ([SEGMENTAL ARTERIAL MEDIOLYSIS](../vascular_ir/segmental_arterial_mediolysis.md))
+- [[thrombosis|THROMBOSIS]] ([THROMBOSIS](../vascular_ir/thrombosis.md))

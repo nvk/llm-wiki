@@ -99,31 +99,31 @@ progressive interstitial fibrosing renal disease with frequent urothelial
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p9_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p9_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 164
 Malignant (or potentially malignant) adrenal masses
@@ -1039,3 +1039,6 @@ Os Peroneum
 (within peroneus longus)
 59
 
+## See Also
+- [[the_four_ds_of_mediastinal_masses|The Four Ds of Mediastinal Masses]] ([The Four Ds of Mediastinal Masses](../cardio/the_four_ds_of_mediastinal_masses.md))
+- [[world_health_organisation_classification_of_soft-tissue_tumours|World Health Organisation Classification Of Soft-Tissue Tumours]] ([World Health Organisation Classification Of Soft-Tissue Tumours](../msk/world_health_organisation_classification_of_soft-tissue_tumours.md))

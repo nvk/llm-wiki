@@ -158,3 +158,4 @@ the atria, and a prominent eustachian valv
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[the_elbow|The Elbow]] ([The Elbow](../msk/the_elbow.md))

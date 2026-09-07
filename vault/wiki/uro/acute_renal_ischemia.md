@@ -135,3 +135,7 @@ Thrombosis of renal artery aneurysm
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[21_the_small_intestine_mesentery_and_peritoneal_cavity|21 The Small Intestine Mesentery And Peritoneal Cavity]] ([21 The Small Intestine Mesentery And Peritoneal Cavity](../git/21_the_small_intestine_mesentery_and_peritoneal_cavity.md))
+- [[embolic_occlusion|EMBOLIC OCCLUSION]] ([EMBOLIC OCCLUSION](../vascular_ir/embolic_occlusion.md))

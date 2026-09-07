@@ -103,55 +103,55 @@ Indeed, much of the history of neuroradiology involved the quest for an
 ## 2. Core Radiology High-Yield Notes (Pages 33-40)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p33_p33_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img7.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img9.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img11.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img14.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img16.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img17.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img19.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img21.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img23.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 232
 Epidermoid cyst
@@ -479,29 +479,29 @@ granulomatous hypophysitis otherwise.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 49-60)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p49_p49_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p50_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p51_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p52_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p53_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p54_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p55_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p56_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p57_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p58_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p59_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p60_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Mediastinal Anatomy
 The mediastinum is classically divided into 4 sections, superior, anterior, middle, and posterior. 
@@ -1350,3 +1350,7 @@ Reverse Halo (Ground
 Glass Surrounded by a 
 Ring of Consolidation)
 
+## See Also
+- [[imaging_techniques|IMAGING TECHNIQUES]] ([IMAGING TECHNIQUES](../paeds/imaging_techniques.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../paeds/suggested_readings.md))
+- [[trauma|TRAUMA]] ([TRAUMA](../paeds/trauma.md))

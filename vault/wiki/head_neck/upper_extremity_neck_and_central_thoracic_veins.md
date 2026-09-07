@@ -198,3 +198,7 @@ Normal and Angiographic
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[1_thoracic_imaging|1. Thoracic Imaging]] ([1. Thoracic Imaging](../cardio/1_thoracic_imaging.md))
+- [[portal_and_hepatic_veins|Portal and Hepatic Veins]] ([Portal and Hepatic Veins](../git/portal_and_hepatic_veins.md))

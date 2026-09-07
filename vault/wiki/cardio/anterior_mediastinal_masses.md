@@ -177,3 +177,7 @@ Figure 16-2.  Thymoma. Axial CT shows an o
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[55_benign_and_malignant_intracranial_tumours_in_adults|55 Benign And Malignant Intracranial Tumours In Adults]] ([55 Benign And Malignant Intracranial Tumours In Adults](../neuro/55_benign_and_malignant_intracranial_tumours_in_adults.md))
+- [[radiological_investigations_in_intracranial_tumours|Radiological Investigations In Intracranial Tumours]] ([Radiological Investigations In Intracranial Tumours](../neuro/radiological_investigations_in_intracranial_tumours.md))

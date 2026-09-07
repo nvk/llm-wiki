@@ -121,3 +121,6 @@ effect on mediastinal structures
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[the_ankle|The Ankle]] ([The Ankle](../msk/the_ankle.md))

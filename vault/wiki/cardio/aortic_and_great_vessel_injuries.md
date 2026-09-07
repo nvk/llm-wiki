@@ -149,3 +149,7 @@ shows pseudoaneurysm more clearly (arrow). E, Three-dimensional images demonstra
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[bowel_and_mesenteric_injury|BOWEL AND MESENTERIC INJURY]] ([BOWEL AND MESENTERIC INJURY](../git/bowel_and_mesenteric_injury.md))
+- [[nontrauma_abdomen|Nontrauma Abdomen]] ([Nontrauma Abdomen](../git/nontrauma_abdomen.md))

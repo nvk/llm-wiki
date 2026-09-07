@@ -126,56 +126,55 @@ two-dimensional planar VQ scintigraphy.
 •	 Positron emission tomography (PET), hybridised with CT and increasingly 
 also with MRI, offers integrated metabolic and anatomical information critical 
 to thoracic tumour staging.
-https://t.me/afkebooks
 
 ## 2. Core Radiology High-Yield Notes (Pages 57-64)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p57_p58_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p61_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p61_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p61_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 56
 Antigen and exposure-related lung disease
@@ -467,29 +466,29 @@ Hospital.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 85-96)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p85_p85_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p85_p86_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p85_p87_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p85_p88_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p85_p89_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p85_p90_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p85_p91_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p85_p92_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p85_p93_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p85_p94_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p85_p95_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p85_p96_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 RB-ILD and DIP:
 I’m going to discuss these two together because some people feel they are a spectrum. For 
@@ -1137,3 +1136,7 @@ Aspiration of Oil
 Lipoid Pneumonia. Low density
 97
 
+## See Also
+- [[carotid_and_vertebral_arteries|Carotid and Vertebral Arteries]] ([Carotid and Vertebral Arteries](../spine/carotid_and_vertebral_arteries.md))
+- [[traumatic_and_nontraumatic_spine_emergencies|Traumatic and Nontraumatic Spine Emergencies]] ([Traumatic and Nontraumatic Spine Emergencies](../spine/traumatic_and_nontraumatic_spine_emergencies.md))
+- [[traumatic_spine_injury|TRAUMATIC SPINE INJURY]] ([TRAUMATIC SPINE INJURY](../spine/traumatic_spine_injury.md))

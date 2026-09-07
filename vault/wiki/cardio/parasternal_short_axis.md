@@ -172,3 +172,4 @@ increased echogenicity of blood o
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[alternative_contrast_agents|ALTERNATIVE CONTRAST AGENTS]] ([ALTERNATIVE CONTRAST AGENTS](../vascular_ir/alternative_contrast_agents.md))

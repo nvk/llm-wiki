@@ -165,3 +165,4 @@ Although no
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[embryology|Embryology]] ([Embryology](../git/embryology.md))

@@ -193,3 +193,4 @@ transverse plane includes a c
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[esophagotracheobronchial_fistulas|Esophagotracheobronchial Fistulas]] ([Esophagotracheobronchial Fistulas](../git/esophagotracheobronchial_fistulas.md))

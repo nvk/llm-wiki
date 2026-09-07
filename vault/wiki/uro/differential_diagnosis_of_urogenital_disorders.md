@@ -223,3 +223,6 @@ selenomethylcholesterol):
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pulmonary_sequestration|PULMONARY SEQUESTRATION]] ([PULMONARY SEQUESTRATION](../cardio/pulmonary_sequestration.md))

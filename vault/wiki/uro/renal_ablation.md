@@ -158,3 +158,7 @@ atherosclerotic renal artery stenosis and impaired renal function: a
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[location_from_catheter_position|Location from Catheter Position]] ([Location from Catheter Position](../cardio/location_from_catheter_position.md))
+- [[23_the_liver_and_spleen|23 The Liver And Spleen]] ([23 The Liver And Spleen](../git/23_the_liver_and_spleen.md))

@@ -175,3 +175,6 @@ ately inserted chest tubes. Intraparenchymal,
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[reconstructive_surgery|RECONSTRUCTIVE SURGERY]] ([RECONSTRUCTIVE SURGERY](../vascular_ir/reconstructive_surgery.md))

@@ -13,11 +13,11 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 136-136)
 
 ### Key Visuals & Figures (Grainger)
-![Fungal Infections Figure](assets/grainger_fungal_infections_p136_img1.jpeg)
+> **Key Imaging Finding:** Fungal Infections Figure
 
-![Fungal Infections Figure](assets/grainger_fungal_infections_p136_img2.jpeg)
+> **Key Imaging Finding:** Fungal Infections Figure
 
-![Fungal Infections Figure](assets/grainger_fungal_infections_p136_img3.jpeg)
+> **Key Imaging Finding:** Fungal Infections Figure
 
 1486
 SECTION E  Neuroimaging
@@ -64,37 +64,37 @@ enhancement within the affected areas may be patchy or gyriform. MRI
 ## 2. Core Radiology High-Yield Notes (Pages 89-96)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p89_p89_img25.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img50.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img52.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img53.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img63.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img64.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p90_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img20.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p94_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p94_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p94_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p94_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p95_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p95_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p95_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 288
 Larynx
@@ -451,29 +451,29 @@ than a tumor arising from the submandibular or parotid glands.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 361-372)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p361_p361_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p362_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p363_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p364_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p365_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p366_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p367_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p368_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p369_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p370_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p371_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p372_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 - More Retroperitoneum Fascial Anatomy -
 I continued my analysis of this anatomy with a team of experts in the field of true love: who once again 
@@ -1172,3 +1172,7 @@ Beckwith-Wiedemann doesn’t really make sense (and therefore is the most likely
 Think about medullary sponge kidney with unilateral less dense medullary nephrocalcinosis.
 373
 
+## See Also
+- [[imaging_techniques|IMAGING TECHNIQUES]] ([IMAGING TECHNIQUES](../paeds/imaging_techniques.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../paeds/suggested_readings.md))
+- [[trauma|TRAUMA]] ([TRAUMA](../paeds/trauma.md))

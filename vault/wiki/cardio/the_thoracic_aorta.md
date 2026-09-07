@@ -162,3 +162,6 @@ tion is the
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[technetium_99m|Technetium-99m]] ([Technetium-99m](../physics_nuclear/technetium_99m.md))

@@ -178,3 +178,6 @@ fragment
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[lung_scintigraphy|LUNG SCINTIGRAPHY]] ([LUNG SCINTIGRAPHY](../cardio/lung_scintigraphy.md))

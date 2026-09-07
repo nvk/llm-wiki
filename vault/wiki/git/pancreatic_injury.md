@@ -166,3 +166,7 @@ Laceration of >3 cm parenchymal depth or involvin
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[diaphragmatic_injuries|DIAPHRAGMATIC INJURIES]] ([DIAPHRAGMATIC INJURIES](../cardio/diaphragmatic_injuries.md))
+- [[lung_laceration|LUNG LACERATION]] ([LUNG LACERATION](../cardio/lung_laceration.md))

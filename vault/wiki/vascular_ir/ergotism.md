@@ -110,3 +110,6 @@ At surgery, type II entrapment was found.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pericarditis_and_pericardial_effusions|Pericarditis and Pericardial Effusions]] ([Pericarditis and Pericardial Effusions](../cardio/pericarditis_and_pericardial_effusions.md))

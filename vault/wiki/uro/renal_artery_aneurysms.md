@@ -107,3 +107,7 @@ aneurysm (arrow) due to fibromuscular dysplasia (medial fibroplasia).
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pancreatic_neoplasms|Pancreatic Neoplasms]] ([Pancreatic Neoplasms](../git/pancreatic_neoplasms.md))
+- [[visceral_arteries|Visceral Arteries]] ([Visceral Arteries](../vascular_ir/visceral_arteries.md))

@@ -13,19 +13,19 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 205-206)
 
 ### Key Visuals & Figures (Grainger)
-![The Ankle Figure](assets/grainger_the_ankle_p205_img1.jpeg)
+> **Key Imaging Finding:** The Ankle Figure
 
-![The Ankle Figure](assets/grainger_the_ankle_p205_img2.jpeg)
+> **Key Imaging Finding:** The Ankle Figure
 
-![The Ankle Figure](assets/grainger_the_ankle_p205_img3.jpeg)
+> **Key Imaging Finding:** The Ankle Figure
 
-![The Ankle Figure](assets/grainger_the_ankle_p205_img4.jpeg)
+> **Key Imaging Finding:** The Ankle Figure
 
-![The Ankle Figure](assets/grainger_the_ankle_p206_img1.jpeg)
+> **Key Imaging Finding:** The Ankle Figure
 
-![The Ankle Figure](assets/grainger_the_ankle_p206_img2.jpeg)
+> **Key Imaging Finding:** The Ankle Figure
 
-![The Ankle Figure](assets/grainger_the_ankle_p206_img3.jpeg)
+> **Key Imaging Finding:** The Ankle Figure
 
 CHAPTER 45  Appendicular and Pelvic Trauma
 1173
@@ -175,31 +175,31 @@ structural failure in this and subsequent patterns).
 ## 2. Core Radiology High-Yield Notes (Pages 49-56)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p49_p49_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p50_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p51_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p51_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p53_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p53_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img26.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img29.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 393
 Renal osteodystrophy
@@ -1209,3 +1209,5 @@ land mark is often brought up with discussion of the
 erosion pattern of Cholesteatomas.
 239
 
+## See Also
+- [[differential_diagnosis|Differential Diagnosis]] ([Differential Diagnosis](../cardio/differential_diagnosis.md))

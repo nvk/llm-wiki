@@ -100,45 +100,45 @@ of non-malignant lesions.
 ## 2. Core Radiology High-Yield Notes (Pages 33-40)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p33_p33_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 377
 •	 In the skull base, fibrous dysplasia is typically expansile and can look highly unusual 
@@ -419,29 +419,29 @@ lesion that can be indistinguishable from an aggressive malignancy.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 421-432)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p421_p421_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p422_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p423_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p424_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p425_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p426_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p427_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p428_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p429_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p430_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p431_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p432_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 As mentioned on prior pages, sometimes a ruptured follicle bleeds internally and re- 
 expands. The result is a homogenous mass with enhanced through transmission (tumor 
@@ -915,3 +915,6 @@ TZ-T2
 4 - Low Signal < 1.5 cm
 5 - Low Signal > 1.5 cm or with extracapsular ext
 
+## See Also
+- [[benign_neoplasms_and_other_nonneoplastic_tumors|Benign Neoplasms and Other Nonneoplastic Tumors]] ([Benign Neoplasms and Other Nonneoplastic Tumors](../cardio/benign_neoplasms_and_other_nonneoplastic_tumors.md))
+- [[neoplasms|NEOPLASMS]] ([NEOPLASMS](../vascular_ir/neoplasms.md))

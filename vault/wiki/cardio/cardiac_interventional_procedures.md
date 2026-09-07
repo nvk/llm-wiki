@@ -160,3 +160,5 @@ Borer JS, Bonow RO: Contemporary approach to aortic and mitral regurgitation,
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[gallbladder_intervention|Gallbladder Intervention]] ([Gallbladder Intervention](../git/gallbladder_intervention.md))
+- [[gastrointestinal_tract_intervention|Gastrointestinal Tract Intervention]] ([Gastrointestinal Tract Intervention](../git/gastrointestinal_tract_intervention.md))

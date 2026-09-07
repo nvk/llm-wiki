@@ -202,3 +202,6 @@ Spectrum:
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pericardium|Pericardium]] ([Pericardium](../cardio/pericardium.md))

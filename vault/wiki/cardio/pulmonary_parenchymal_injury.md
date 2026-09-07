@@ -64,3 +64,7 @@ Figure 6-11.  Pneumothorax. The erect, posteroanterior radiograph demonstrates
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[trauma_and_bone_infarction|TRAUMA AND BONE INFARCTION]] ([TRAUMA AND BONE INFARCTION](../msk/trauma_and_bone_infarction.md))
+- [[renal_and_ureteral_trauma|RENAL AND URETERAL TRAUMA]] ([RENAL AND URETERAL TRAUMA](../uro/renal_and_ureteral_trauma.md))

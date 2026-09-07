@@ -211,3 +211,6 @@ acute
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[24_adnexa|24. Adnexa]] ([24. Adnexa](../gynae/24_adnexa.md))

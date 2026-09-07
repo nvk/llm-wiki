@@ -174,3 +174,4 @@ the standard chestfilm
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[the_shoulder|The Shoulder]] ([The Shoulder](../msk/the_shoulder.md))

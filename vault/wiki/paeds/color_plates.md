@@ -51,3 +51,6 @@ discussion in Chapter 6 of Fig. 6-50.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[focal_pleural_disease|Focal Pleural Disease]] ([Focal Pleural Disease](../cardio/focal_pleural_disease.md))

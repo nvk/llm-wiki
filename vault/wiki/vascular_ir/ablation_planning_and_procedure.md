@@ -273,3 +273,7 @@ or at the same visit. Whereas many tumors may require biopsy to
 stage the cancer, imaging is sufficient in some cases. For example, 
 a 1-cm or larger tumor in a cirrhotic liver showing arterial hyper-
 enhancement and portal venous or
+
+## See Also
+- [[gastrointestinal_bleeding_interventional|GASTROINTESTINAL BLEEDING]] ([GASTROINTESTINAL BLEEDING](../git/gastrointestinal_bleeding_interventional.md))
+- [[musculoskeletal_intervention|Musculoskeletal Intervention]] ([Musculoskeletal Intervention](../msk/musculoskeletal_intervention.md))

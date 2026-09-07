@@ -13,61 +13,61 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 386-392)
 
 ### Key Visuals & Figures (Grainger)
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p386_img1.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p386_img2.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p386_img3.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p387_img1.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p388_img1.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p388_img2.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p388_img3.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p388_img4.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p389_img1.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p389_img2.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p389_img3.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p389_img4.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p389_img5.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p389_img6.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p390_img1.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p390_img2.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p390_img3.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p390_img4.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p391_img1.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p391_img2.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p392_img1.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p392_img2.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p392_img3.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p392_img4.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p392_img5.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p392_img6.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p392_img7.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
-![Myocardial Infarct Imaging Figure](assets/grainger_myocardial_infarct_i_p392_img8.jpeg)
+> **Key Imaging Finding:** Myocardial Infarct Imaging Figure
 
 CHAPTER 15  Ischaemic Heart Disease
 383
@@ -441,35 +441,35 @@ it represents a maladaptive cardiac remodelling due to acute and/or
 ## 2. Core Radiology High-Yield Notes (Pages 65-72)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p65_p65_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p65_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p65_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 64
 Lymphangioleiomyomatosis (LAM)
@@ -797,29 +797,29 @@ prior granulomatous disease.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 409-420)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p409_p409_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p410_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p411_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p412_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p413_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p414_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p415_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p416_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p417_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p418_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p419_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p420_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 uterine Leiomyosarcoma - The risk of malignant transformation to a leiomyosarcoma is 
 super low (0.1%). These look like a fibroid, but rapidly enlarge. Areas of necrosis are often seen.
@@ -1360,3 +1360,17 @@ a lesion that is TI bright.
 Endometrioma - “Shading Sign”
 421
 
+## See Also
+- [[8_breast_imaging|8. Breast Imaging]] ([8. Breast Imaging](../breast/8_breast_imaging.md))
+- [[breast|BREAST]] ([BREAST](../breast/breast.md))
+- [[breast_anatomy_and_mammographic_technique|Breast Anatomy and Mammographic Technique]] ([Breast Anatomy and Mammographic Technique](../breast/breast_anatomy_and_mammographic_technique.md))
+- [[breast_disorders|Breast Disorders]] ([Breast Disorders](../breast/breast_disorders.md))
+- [[breast_lesion_excision_systems|BREAST LESION EXCISION SYSTEMS]] ([BREAST LESION EXCISION SYSTEMS](../breast/breast_lesion_excision_systems.md))
+- [[differential_diagnosis_of_breast_disorders|Differential Diagnosis of Breast Disorders]] ([Differential Diagnosis of Breast Disorders](../breast/differential_diagnosis_of_breast_disorders.md))
+- [[image_guided_breast_biopsy|IMAGE-GUIDED BREAST BIOPSY]] ([IMAGE-GUIDED BREAST BIOPSY](../breast/image_guided_breast_biopsy.md))
+- [[image_guided_breast_intervention|Image-Guided Breast Intervention]] ([Image-Guided Breast Intervention](../breast/image_guided_breast_intervention.md))
+- [[interventional_breast_radiology|Interventional Breast Radiology]] ([Interventional Breast Radiology](../breast/interventional_breast_radiology.md))
+- [[normal_breast_anatomy|Normal Breast Anatomy]] ([Normal Breast Anatomy](../breast/normal_breast_anatomy.md))
+- [[conclusion|CONCLUSION]] ([CONCLUSION](../emergency/conclusion.md))
+- [[infections|INFECTIONS]] ([INFECTIONS](../emergency/infections.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../emergency/suggested_readings.md))

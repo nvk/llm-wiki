@@ -13,17 +13,17 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 216-217)
 
 ### Key Visuals & Figures (Grainger)
-![Lymphangioleiomyomatosis Figure](assets/grainger_lymphangioleiomyomat_p216_img1.jpeg)
+> **Key Imaging Finding:** Lymphangioleiomyomatosis Figure
 
-![Lymphangioleiomyomatosis Figure](assets/grainger_lymphangioleiomyomat_p216_img2.jpeg)
+> **Key Imaging Finding:** Lymphangioleiomyomatosis Figure
 
-![Lymphangioleiomyomatosis Figure](assets/grainger_lymphangioleiomyomat_p216_img3.jpeg)
+> **Key Imaging Finding:** Lymphangioleiomyomatosis Figure
 
-![Lymphangioleiomyomatosis Figure](assets/grainger_lymphangioleiomyomat_p216_img4.jpeg)
+> **Key Imaging Finding:** Lymphangioleiomyomatosis Figure
 
-![Lymphangioleiomyomatosis Figure](assets/grainger_lymphangioleiomyomat_p217_img1.jpeg)
+> **Key Imaging Finding:** Lymphangioleiomyomatosis Figure
 
-![Lymphangioleiomyomatosis Figure](assets/grainger_lymphangioleiomyomat_p217_img2.jpeg)
+> **Key Imaging Finding:** Lymphangioleiomyomatosis Figure
 
 218
 SECTION A  The Chest and Cardiovascular System
@@ -161,35 +161,35 @@ Rheumatoid Disease
 ## 2. Core Radiology High-Yield Notes (Pages 65-72)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p65_p65_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p65_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p65_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 64
 Lymphangioleiomyomatosis (LAM)
@@ -1072,3 +1072,5 @@ aorta and its branches. Which type is which is beyond the scope of the exam, jus
 Takayasu - Wall Thickening Involving the Aorta
 335
 
+## See Also
+- [[hepatobiliary_scintigraphy|HEPATOBILIARY SCINTIGRAPHY]] ([HEPATOBILIARY SCINTIGRAPHY](../git/hepatobiliary_scintigraphy.md))

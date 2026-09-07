@@ -59,7 +59,6 @@ any means, electronic or mechanical, including photocopying, recording, or any i
 ­retrieval system, without permission in writing from the publisher. Permissions may be sought directly 
 from Elsevier’s Rights Department: phone: (+1) 215 239 3804 (U.S.) or (+44)1865 843830 (UK); 
 fax: (+44)1865 853333; e-mail: healthpermissions@elsevier.com. You may also complete your request 
-online via the Elsevier (US) website at http://www.elsevier.com/permissions.
 
 I dedicate this book to my parents, Jorge Sr. and Socorro, 
 for their example and guidance, and to my wife, Ana, and 
@@ -283,3 +282,6 @@ Boston University School of
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[double_outlet_right_ventricle|Double Outlet Right Ventricle]] ([Double Outlet Right Ventricle](../cardio/double_outlet_right_ventricle.md))

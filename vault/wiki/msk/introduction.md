@@ -101,35 +101,35 @@ in the context of normal plain radiography or persistent symptoms
 ## 2. Core Radiology High-Yield Notes (Pages 105-112)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p105_p105_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p105_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p105_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p105_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p105_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p105_img6.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p107_img70.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p108_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p108_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p109_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p111_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p111_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p112_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p112_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p112_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 449
 Anatomy of the glenoid labrum
@@ -954,3 +954,5 @@ T
 au
 143
 
+## See Also
+- [[the_lungs_beyond_the_hila|The Lungs Beyond The Hila]] ([The Lungs Beyond The Hila](../cardio/the_lungs_beyond_the_hila.md))

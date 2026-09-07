@@ -158,3 +158,5 @@ the atria, and a prominent eustachian valv
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[head_and_neck_malignancy|HEAD AND NECK MALIGNANCY]] ([HEAD AND NECK MALIGNANCY](../head_neck/head_and_neck_malignancy.md))
+- [[benign_renal_masses|Benign Renal Masses]] ([Benign Renal Masses](../uro/benign_renal_masses.md))

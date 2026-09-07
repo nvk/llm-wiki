@@ -13,11 +13,11 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 1-2)
 
 ### Key Visuals & Figures (Grainger)
-![Conventional Radiography Figure](assets/grainger_conventional_radiogr_p2_img1.jpeg)
+> **Key Imaging Finding:** Conventional Radiography Figure
 
-![Conventional Radiography Figure](assets/grainger_conventional_radiogr_p2_img2.jpeg)
+> **Key Imaging Finding:** Conventional Radiography Figure
 
-![Conventional Radiography Figure](assets/grainger_conventional_radiogr_p2_img3.jpeg)
+> **Key Imaging Finding:** Conventional Radiography Figure
 
 969
 Current Status of Imaging of The 
@@ -176,45 +176,45 @@ bone to soft tissue contrast.
 ## 2. Core Radiology High-Yield Notes (Pages 33-40)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p33_p33_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 377
 •	 In the skull base, fibrous dysplasia is typically expansile and can look highly unusual 
@@ -495,29 +495,29 @@ lesion that can be indistinguishable from an aggressive malignancy.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 61-72)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p61_p61_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p62_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p63_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p64_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p65_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p66_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p67_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p68_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p69_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p70_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p71_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p72_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Septic Emboli
 There are a variety of ways you can 
@@ -1349,3 +1349,7 @@ Gallium cold. As such (and because it’s not 1970) PET is usually used for stag
 Gallium.
 73
 
+## See Also
+- [[53_current_status_of_imaging_of_the_brain_and_anatomical_features|53 Current Status Of Imaging Of The Brain And Anatomical Features]] ([53 Current Status Of Imaging Of The Brain And Anatomical Features](../neuro/53_current_status_of_imaging_of_the_brain_and_anatomical_features.md))
+- [[brain_anatomy|Brain Anatomy]] ([Brain Anatomy](../neuro/brain_anatomy.md))
+- [[section_e_neuroimaging|Section E Neuroimaging]] ([Section E Neuroimaging](../neuro/section_e_neuroimaging.md))

@@ -207,3 +207,7 @@ embolization and stroke d
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[partial_splenic_embolization|PARTIAL SPLENIC EMBOLIZATION]] ([PARTIAL SPLENIC EMBOLIZATION](../git/partial_splenic_embolization.md))
+- [[upper_extremity_arteries|Upper Extremity Arteries]] ([Upper Extremity Arteries](../msk/upper_extremity_arteries.md))

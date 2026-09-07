@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 199-199)
 
 ### Key Visuals & Figures (Grainger)
-![Benign Lymphoproliferative Disorders Figure](assets/grainger_benign_lymphoprolife_p199_img1.jpeg)
+> **Key Imaging Finding:** Benign Lymphoproliferative Disorders Figure
 
-![Benign Lymphoproliferative Disorders Figure](assets/grainger_benign_lymphoprolife_p199_img2.jpeg)
+> **Key Imaging Finding:** Benign Lymphoproliferative Disorders Figure
 
 CHAPTER 8  Pulmonary Neoplasms
 201
@@ -116,35 +116,35 @@ popcorn calcification in this lesion, which is unusually large.
 ## 2. Core Radiology High-Yield Notes (Pages 65-72)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p65_p65_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p65_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p65_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 64
 Lymphangioleiomyomatosis (LAM)
@@ -1101,3 +1101,5 @@ the midline, and it can restrict diffusion. Remember Turcot Syndrome {that G1 po
 1 are associated with GBMs.
 203
 
+## See Also
+- [[outcomes_and_follow_up|OUTCOMES AND FOLLOW-UP]] ([OUTCOMES AND FOLLOW-UP](../vascular_ir/outcomes_and_follow_up.md))

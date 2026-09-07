@@ -98,27 +98,27 @@ or severe previous reactions to contrast medium. MRI is superior to
 ## 2. Core Radiology High-Yield Notes (Pages 41-46)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p41_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p41_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p41_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p41_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img8.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img14.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p46_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 196
 Congenital uterine anomalies
@@ -369,29 +369,29 @@ Degenerative spine 334
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 361-372)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p361_p361_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p362_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p363_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p364_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p365_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p366_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p367_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p368_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p369_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p370_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p371_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p361_p372_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 - More Retroperitoneum Fascial Anatomy -
 I continued my analysis of this anatomy with a team of experts in the field of true love: who once again 
@@ -1090,3 +1090,6 @@ Beckwith-Wiedemann doesn’t really make sense (and therefore is the most likely
 Think about medullary sponge kidney with unilateral less dense medullary nephrocalcinosis.
 373
 
+## See Also
+- [[descriptive_features_of_mediastinal_masses|Descriptive Features of Mediastinal Masses]] ([Descriptive Features of Mediastinal Masses](../cardio/descriptive_features_of_mediastinal_masses.md))
+- [[neoplasm|NEOPLASM]] ([NEOPLASM](../vascular_ir/neoplasm.md))

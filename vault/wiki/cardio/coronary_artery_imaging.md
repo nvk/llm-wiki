@@ -13,53 +13,53 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 373-378)
 
 ### Key Visuals & Figures (Grainger)
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p374_img1.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p374_img2.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p374_img3.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p374_img4.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p374_img5.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p375_img1.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p375_img2.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p375_img3.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p375_img4.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p375_img5.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p375_img6.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p376_img1.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p376_img2.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p376_img3.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p376_img4.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p376_img5.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p376_img6.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p376_img7.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p377_img1.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p377_img2.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p377_img3.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p377_img4.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p377_img5.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
-![Coronary Artery Imaging Figure](assets/grainger_coronary_artery_imag_p378_img1.jpeg)
+> **Key Imaging Finding:** Coronary Artery Imaging Figure
 
 370
 SECTION A  The Chest and Cardiovascular System
@@ -393,39 +393,39 @@ are that these techniques are accurate, reproducible and preferably
 ## 2. Core Radiology High-Yield Notes (Pages 41-48)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p42_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img26.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img37.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img4.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img6.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 40
 Pleural effusion
@@ -788,29 +788,29 @@ distinguish between a pulmonary artery and vein by tracing the vessel back to th
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 373-384)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p373_p373_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p374_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p375_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p376_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p377_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p378_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p379_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p380_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p381_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p382_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p383_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p373_p384_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 SECTION 6:
 P E R F U S I O N / V A S C U L A R
@@ -1501,3 +1501,7 @@ Psoas Hypertrophy
 (distal ureter)
 385
 
+## See Also
+- [[conclusion|CONCLUSION]] ([CONCLUSION](../emergency/conclusion.md))
+- [[infections|INFECTIONS]] ([INFECTIONS](../emergency/infections.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../emergency/suggested_readings.md))

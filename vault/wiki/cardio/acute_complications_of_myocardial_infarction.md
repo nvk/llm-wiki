@@ -171,3 +171,4 @@ echogenic material in the region of ab
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[lung_herniation_or_torsion|Lung Herniation Or Torsion]] ([Lung Herniation Or Torsion](../neuro/lung_herniation_or_torsion.md))

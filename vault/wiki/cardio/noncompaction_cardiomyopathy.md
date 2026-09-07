@@ -175,3 +175,4 @@ echolucent area within the boundaries of the pericardial sac
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[aggressive_lesions|AGGRESSIVE LESIONS]] ([AGGRESSIVE LESIONS](../paeds/aggressive_lesions.md))

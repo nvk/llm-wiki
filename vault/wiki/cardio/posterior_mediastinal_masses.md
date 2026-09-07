@@ -171,3 +171,7 @@ aortic interface and often demonstrate cu
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[palliation_of_malignant_biliary_obstruction_with_metal_stent|PALLIATION OF MALIGNANT BILIARY OBSTRUCTION WITH METAL STENTS]] ([PALLIATION OF MALIGNANT BILIARY OBSTRUCTION WITH METAL STENTS](../git/palliation_of_malignant_biliary_obstruction_with_metal_stent.md))
+- [[thermal_ablation_of_bone_tumors|THERMAL ABLATION OF BONE TUMORS]] ([THERMAL ABLATION OF BONE TUMORS](../msk/thermal_ablation_of_bone_tumors.md))

@@ -165,3 +165,6 @@ t
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[abdominal_biopsy|ABDOMINAL BIOPSY]] ([ABDOMINAL BIOPSY](../git/abdominal_biopsy.md))

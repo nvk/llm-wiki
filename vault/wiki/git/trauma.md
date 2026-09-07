@@ -14,9 +14,9 @@ aliases: ["trauma"]---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 255-255)
 
 ### Key Visuals & Figures (Grainger)
-![Trauma Figure](assets/grainger_trauma_p255_img1.jpeg)
+> **Key Imaging Finding:** Trauma Figure
 
-![Trauma Figure](assets/grainger_trauma_p255_img2.jpeg)
+> **Key Imaging Finding:** Trauma Figure
 
 CHAPTER 25  The Pancreas
 717
@@ -99,19 +99,19 @@ structures (including liver, stomach, small bowel, but not the spleen)
 ## 2. Core Radiology High-Yield Notes (Pages 65-72)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p65_p66_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 150
 Flow of peritoneal fluid
@@ -401,29 +401,29 @@ MRI of the uterus and adnexa 192
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 49-60)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p49_p49_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p50_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p51_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p52_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p53_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p54_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p55_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p56_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p57_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p58_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p59_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p49_p60_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Mediastinal Anatomy
 The mediastinum is classically divided into 4 sections, superior, anterior, middle, and posterior. 
@@ -1272,3 +1272,6 @@ Reverse Halo (Ground
 Glass Surrounded by a 
 Ring of Consolidation)
 
+## See Also
+- [[chest_trauma|Chest Trauma]] ([Chest Trauma](../cardio/chest_trauma.md))
+- [[nontraumatic_emergency_radiology_of_the_thorax|Nontraumatic Emergency Radiology of the Thorax]] ([Nontraumatic Emergency Radiology of the Thorax](../emergency/nontraumatic_emergency_radiology_of_the_thorax.md))

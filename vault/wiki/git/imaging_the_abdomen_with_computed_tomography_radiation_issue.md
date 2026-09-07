@@ -15,6 +15,9 @@ status: "verified_source"---
 ## Clinical & Radiological Concepts
 Lossless excerpt from gold-standard UK reference textbook.
 
+## See Also
+- [[magnetic_resonance_sequences|Magnetic Resonance Sequences]] ([Magnetic Resonance Sequences](../uro/magnetic_resonance_sequences.md))
+
 ## Reference Text
 CHAPTER 18  Current Status of Imaging of the Gastrointestinal Tract
 477

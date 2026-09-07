@@ -164,3 +164,4 @@ probably refl ecting vigorous diuretic therapy that
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[primary_hyperparathyroidism|PRIMARY HYPERPARATHYROIDISM]] ([PRIMARY HYPERPARATHYROIDISM](../vascular_ir/primary_hyperparathyroidism.md))

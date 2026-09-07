@@ -152,3 +152,4 @@ v
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[ground_glass_attenuation|Ground-Glass Attenuation]] ([Ground-Glass Attenuation](../cardio/ground_glass_attenuation.md))

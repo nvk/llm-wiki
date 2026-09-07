@@ -13,15 +13,15 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 103-104)
 
 ### Key Visuals & Figures (Grainger)
-![Patterns of Pulmonary Infection Figure](assets/grainger_patterns_of_pulmonar_p103_img1.jpeg)
+> **Key Imaging Finding:** Patterns of Pulmonary Infection Figure
 
-![Patterns of Pulmonary Infection Figure](assets/grainger_patterns_of_pulmonar_p103_img2.jpeg)
+> **Key Imaging Finding:** Patterns of Pulmonary Infection Figure
 
-![Patterns of Pulmonary Infection Figure](assets/grainger_patterns_of_pulmonar_p104_img1.jpeg)
+> **Key Imaging Finding:** Patterns of Pulmonary Infection Figure
 
-![Patterns of Pulmonary Infection Figure](assets/grainger_patterns_of_pulmonar_p104_img2.jpeg)
+> **Key Imaging Finding:** Patterns of Pulmonary Infection Figure
 
-![Patterns of Pulmonary Infection Figure](assets/grainger_patterns_of_pulmonar_p104_img3.jpeg)
+> **Key Imaging Finding:** Patterns of Pulmonary Infection Figure
 
 CHAPTER 5  Pulmonary Infection in Adults
 105
@@ -171,33 +171,33 @@ small nodular opacities and a few ‘tree-in-bud’ opacities (arrowhead).
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p10_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img7.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img8.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img10.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img12.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p15_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p16_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 8
 Patterns of lung disease
@@ -478,29 +478,29 @@ Lymphangitic carcinomatosis.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 409-420)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p409_p409_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p410_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p411_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p412_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p413_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p414_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p415_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p416_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p417_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p418_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p419_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p409_p420_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 uterine Leiomyosarcoma - The risk of malignant transformation to a leiomyosarcoma is 
 super low (0.1%). These look like a fibroid, but rapidly enlarge. Areas of necrosis are often seen.
@@ -1041,3 +1041,5 @@ a lesion that is TI bright.
 Endometrioma - “Shading Sign”
 421
 
+## See Also
+- [[parasitic_infections|Parasitic Infections]] ([Parasitic Infections](../neuro/parasitic_infections.md))

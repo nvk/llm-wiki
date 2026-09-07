@@ -158,3 +158,7 @@ down through
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[biliary_intervention|Biliary Intervention]] ([Biliary Intervention](../git/biliary_intervention.md))
+- [[ureteric_intervention|URETERIC INTERVENTION]] ([URETERIC INTERVENTION](../uro/ureteric_intervention.md))

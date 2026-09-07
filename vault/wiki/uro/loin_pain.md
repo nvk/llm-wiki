@@ -13,15 +13,15 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 7-7)
 
 ### Key Visuals & Figures (Grainger)
-![Loin Pain Figure](assets/grainger_loin_pain_p7_img1.jpeg)
+> **Key Imaging Finding:** Loin Pain Figure
 
-![Loin Pain Figure](assets/grainger_loin_pain_p7_img2.jpeg)
+> **Key Imaging Finding:** Loin Pain Figure
 
-![Loin Pain Figure](assets/grainger_loin_pain_p7_img3.jpeg)
+> **Key Imaging Finding:** Loin Pain Figure
 
-![Loin Pain Figure](assets/grainger_loin_pain_p7_img4.jpeg)
+> **Key Imaging Finding:** Loin Pain Figure
 
-![Loin Pain Figure](assets/grainger_loin_pain_p7_img5.jpeg)
+> **Key Imaging Finding:** Loin Pain Figure
 
 728
 SECTION B  Abdominal Imaging
@@ -108,51 +108,51 @@ corresponding hypoattenuating mass on computed tomography (image B).
 ## 2. Core Radiology High-Yield Notes (Pages 33-40)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p33_p33_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img8.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img16.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img18.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 188
 Female urethra 
@@ -484,29 +484,29 @@ fib
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 97-108)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p97_p97_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p98_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p99_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p100_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p101_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p102_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p103_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p104_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p105_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p106_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p107_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p108_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 SECTION 13:
 S y s t e m i c
@@ -1141,3 +1141,7 @@ watched for rapid expansion. This may be practically useful, but is unlikely to 
 know the classic history, and displaced extrapleural fat sign.
 109
 
+## See Also
+- [[imaging|IMAGING]] ([IMAGING](../vascular_ir/imaging.md))
+- [[key_collateral_pathways|KEY COLLATERAL PATHWAYS]] ([KEY COLLATERAL PATHWAYS](../vascular_ir/key_collateral_pathways.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../vascular_ir/suggested_readings.md))

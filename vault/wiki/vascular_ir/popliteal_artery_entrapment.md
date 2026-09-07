@@ -137,3 +137,7 @@ head of the gastrocnemius muscle
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[central_pulmonary_arteries|Central Pulmonary Arteries]] ([Central Pulmonary Arteries](../cardio/central_pulmonary_arteries.md))
+- [[determining_the_vascular_pattern|Determining the Vascular Pattern]] ([Determining the Vascular Pattern](../cardio/determining_the_vascular_pattern.md))

@@ -56,3 +56,6 @@ interstitial lung disease (i.e., sarcoidosis).
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[adventitial_cystic_disease|ADVENTITIAL CYSTIC DISEASE]] ([ADVENTITIAL CYSTIC DISEASE](../vascular_ir/adventitial_cystic_disease.md))

@@ -164,3 +164,7 @@ quence of thrombus exten
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[thoracic_duct_leak_embolization|THORACIC DUCT LEAK EMBOLIZATION]] ([THORACIC DUCT LEAK EMBOLIZATION](../cardio/thoracic_duct_leak_embolization.md))
+- [[acute_mesenteric_ischemia|ACUTE MESENTERIC ISCHEMIA]] ([ACUTE MESENTERIC ISCHEMIA](../git/acute_mesenteric_ischemia.md))

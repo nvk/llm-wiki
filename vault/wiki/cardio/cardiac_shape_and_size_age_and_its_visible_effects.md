@@ -173,3 +173,4 @@ Sensitivity
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[the_knee|The Knee]] ([The Knee](../msk/the_knee.md))

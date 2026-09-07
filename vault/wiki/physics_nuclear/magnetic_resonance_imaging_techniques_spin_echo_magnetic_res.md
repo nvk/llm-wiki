@@ -152,3 +152,5 @@ v
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[chest_radiography_emergency|CHEST RADIOGRAPHY]] ([CHEST RADIOGRAPHY](../cardio/chest_radiography_emergency.md))
+- [[ultrasound|ULTRASOUND]] ([ULTRASOUND](../vascular_ir/ultrasound.md))

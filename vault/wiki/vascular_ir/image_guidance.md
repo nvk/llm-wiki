@@ -156,3 +156,6 @@ Farah G. Irani, MD, Xavier Buy, MD, and Afshin Gangi, MD, PhD
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[the_trachea|The Trachea]] ([The Trachea](../cardio/the_trachea.md))

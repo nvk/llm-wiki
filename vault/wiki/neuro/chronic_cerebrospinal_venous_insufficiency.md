@@ -160,3 +160,7 @@ Seehofer D, Steinmüller T, Rayes N, et al. Parathyro
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[the_venous_puncture|THE VENOUS PUNCTURE]] ([THE VENOUS PUNCTURE](../vascular_ir/the_venous_puncture.md))
+- [[varicocele_embolization|VARICOCELE EMBOLIZATION]] ([VARICOCELE EMBOLIZATION](../vascular_ir/varicocele_embolization.md))

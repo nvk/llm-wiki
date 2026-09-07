@@ -186,3 +186,7 @@ wh
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[20_placenta_umbilical_cord_and_cervix|20. Placenta, Umbilical Cord, and Cervix]] ([20. Placenta, Umbilical Cord, and Cervix](../gynae/20_placenta_umbilical_cord_and_cervix.md))
+- [[extremity_trauma|Extremity Trauma]] ([Extremity Trauma](../msk/extremity_trauma.md))

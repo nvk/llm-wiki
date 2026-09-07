@@ -13,17 +13,17 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 133-134)
 
 ### Key Visuals & Figures (Grainger)
-![Functional Disorders of the Anorectum Figure](assets/grainger_functional_disorders_p133_img1.jpeg)
+> **Key Imaging Finding:** Functional Disorders of the Anorectum Figure
 
-![Functional Disorders of the Anorectum Figure](assets/grainger_functional_disorders_p133_img2.jpeg)
+> **Key Imaging Finding:** Functional Disorders of the Anorectum Figure
 
-![Functional Disorders of the Anorectum Figure](assets/grainger_functional_disorders_p133_img3.jpeg)
+> **Key Imaging Finding:** Functional Disorders of the Anorectum Figure
 
-![Functional Disorders of the Anorectum Figure](assets/grainger_functional_disorders_p134_img1.jpeg)
+> **Key Imaging Finding:** Functional Disorders of the Anorectum Figure
 
-![Functional Disorders of the Anorectum Figure](assets/grainger_functional_disorders_p134_img2.jpeg)
+> **Key Imaging Finding:** Functional Disorders of the Anorectum Figure
 
-![Functional Disorders of the Anorectum Figure](assets/grainger_functional_disorders_p134_img3.jpeg)
+> **Key Imaging Finding:** Functional Disorders of the Anorectum Figure
 
 CHAPTER 22  The Large Bowel
 595
@@ -131,23 +131,23 @@ fossa to the skin surface.
 ## 2. Core Radiology High-Yield Notes (Pages 41-48)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p42_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p44_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 126
 Benign esophageal masses
@@ -1113,3 +1113,5 @@ Marburg Variant: Childhood variant that is fulminant and terrible leading to rap
 usually has a febrile prodrome. "M A rB U R G !!!” = DEATH
 179
 
+## See Also
+- [[vasculitides_and_granulomatoses|Vasculitides And Granulomatoses]] ([Vasculitides And Granulomatoses](../cardio/vasculitides_and_granulomatoses.md))

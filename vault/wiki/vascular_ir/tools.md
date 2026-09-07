@@ -159,3 +159,6 @@ the body of the guidewire (especially stiff
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[the_mediastinum|The Mediastinum]] ([The Mediastinum](../cardio/the_mediastinum.md))

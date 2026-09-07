@@ -56,3 +56,6 @@ enlargements of high density that were consistent with recent hemorrhage.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[functional_mitral_regurgitation|Functional Mitral Regurgitation]] ([Functional Mitral Regurgitation](../cardio/functional_mitral_regurgitation.md))

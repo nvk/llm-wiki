@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 252-252)
 
 ### Key Visuals & Figures (Grainger)
-![Multisystem Diseases With Involvement of the Pancreas Figure](assets/grainger_multisystem_diseases_p252_img1.jpeg)
+> **Key Imaging Finding:** Multisystem Diseases With Involvement of the Pancreas Figure
 
-![Multisystem Diseases With Involvement of the Pancreas Figure](assets/grainger_multisystem_diseases_p252_img2.jpeg)
+> **Key Imaging Finding:** Multisystem Diseases With Involvement of the Pancreas Figure
 
 714
 SECTION B  Abdominal Imaging
@@ -100,27 +100,27 @@ of vessels with early-draining veins.
 ## 2. Core Radiology High-Yield Notes (Pages 57-64)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p57_p58_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img83.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img94.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 142
 Scleroderma
@@ -489,29 +489,29 @@ Lesser omentum: Connects stomach to liver.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 37-48)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p37_p37_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p38_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p39_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p40_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p41_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p42_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p43_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p44_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p45_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p46_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p47_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p37_p48_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 When You Sit Down To Take The Exam:
 (1) Check to make sure your markers work. If you got a dud fix it now. You don’t want “dead 
@@ -930,3 +930,5 @@ clinically, but occasionally people can get recurrent
 infections
 49
 
+## See Also
+- [[left_ventricular_volume|Left Ventricular Volume]] ([Left Ventricular Volume](../cardio/left_ventricular_volume.md))

@@ -13,25 +13,25 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 19-20)
 
 ### Key Visuals & Figures (Grainger)
-![Hand and Wrist Figure](assets/grainger_hand_and_wrist_p19_img1.jpeg)
+> **Key Imaging Finding:** Hand and Wrist Figure
 
-![Hand and Wrist Figure](assets/grainger_hand_and_wrist_p19_img2.jpeg)
+> **Key Imaging Finding:** Hand and Wrist Figure
 
-![Hand and Wrist Figure](assets/grainger_hand_and_wrist_p19_img3.jpeg)
+> **Key Imaging Finding:** Hand and Wrist Figure
 
-![Hand and Wrist Figure](assets/grainger_hand_and_wrist_p19_img4.jpeg)
+> **Key Imaging Finding:** Hand and Wrist Figure
 
-![Hand and Wrist Figure](assets/grainger_hand_and_wrist_p19_img5.jpeg)
+> **Key Imaging Finding:** Hand and Wrist Figure
 
-![Hand and Wrist Figure](assets/grainger_hand_and_wrist_p20_img1.jpeg)
+> **Key Imaging Finding:** Hand and Wrist Figure
 
-![Hand and Wrist Figure](assets/grainger_hand_and_wrist_p20_img2.jpeg)
+> **Key Imaging Finding:** Hand and Wrist Figure
 
-![Hand and Wrist Figure](assets/grainger_hand_and_wrist_p20_img3.jpeg)
+> **Key Imaging Finding:** Hand and Wrist Figure
 
-![Hand and Wrist Figure](assets/grainger_hand_and_wrist_p20_img4.jpeg)
+> **Key Imaging Finding:** Hand and Wrist Figure
 
-![Hand and Wrist Figure](assets/grainger_hand_and_wrist_p20_img5.jpeg)
+> **Key Imaging Finding:** Hand and Wrist Figure
 
 CHAPTER 39  Internal Derangements of Joints: Upper and Lower Limbs
 987
@@ -136,47 +136,47 @@ multiplanar reformats (MPRs) clearly show fracture 23 non-union.
 ## 2. Core Radiology High-Yield Notes (Pages 25-32)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p25_p25_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p25_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p25_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p26_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p31_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p31_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 369
 Benign: Osteoblastoma
@@ -504,29 +504,29 @@ supra-acetabular lesion in a young adult includes cystic fibrous dysplasia and u
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 229-240)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p229_p229_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p230_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p231_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p232_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p233_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p234_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p235_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p236_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p237_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p238_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p239_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p240_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 - Bladder Masses / Cancers -
 Work up for bladder lesions / masses in kids should start with an Ultrasound. A potentially 
@@ -1123,3 +1123,7 @@ Abuse — Some people abuse drugs, some just can't stand screaming kids, some su
 shortcomings. More on this later.
 241
 
+## See Also
+- [[53_current_status_of_imaging_of_the_brain_and_anatomical_features|53 Current Status Of Imaging Of The Brain And Anatomical Features]] ([53 Current Status Of Imaging Of The Brain And Anatomical Features](../neuro/53_current_status_of_imaging_of_the_brain_and_anatomical_features.md))
+- [[brain_anatomy|Brain Anatomy]] ([Brain Anatomy](../neuro/brain_anatomy.md))
+- [[section_e_neuroimaging|Section E Neuroimaging]] ([Section E Neuroimaging](../neuro/section_e_neuroimaging.md))

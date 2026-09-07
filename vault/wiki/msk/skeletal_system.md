@@ -161,3 +161,6 @@ sesamoid in the body, the pate
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[radiologic_approach_to_diffuse_mediastinal_widening|Radiologic Approach to Diffuse Mediastinal Widening]] ([Radiologic Approach to Diffuse Mediastinal Widening](../cardio/radiologic_approach_to_diffuse_mediastinal_widening.md))

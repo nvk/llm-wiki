@@ -168,3 +168,4 @@ THE ELEMENT
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[epiploic_appendagitis|Epiploic Appendagitis]] ([Epiploic Appendagitis](../git/epiploic_appendagitis.md))

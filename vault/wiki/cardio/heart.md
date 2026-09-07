@@ -209,3 +209,6 @@ After immediate palliation, decisions regarding per
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[20_the_stomach|20 The Stomach]] ([20 The Stomach](../git/20_the_stomach.md))

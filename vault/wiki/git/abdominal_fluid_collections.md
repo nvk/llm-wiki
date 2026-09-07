@@ -171,3 +171,6 @@ collection. Failure to aspira
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[endobronchial_lesions|Endobronchial Lesions]] ([Endobronchial Lesions](../cardio/endobronchial_lesions.md))

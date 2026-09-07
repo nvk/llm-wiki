@@ -164,3 +164,7 @@ A
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[intracardiac_thrombus|Intracardiac Thrombus]] ([Intracardiac Thrombus](../cardio/intracardiac_thrombus.md))
+- [[ischemic_heart_disease|Ischemic Heart Disease]] ([Ischemic Heart Disease](../cardio/ischemic_heart_disease.md))

@@ -168,3 +168,6 @@ pain or even cholecystitis if the cystic duct is obstructed.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[computed_tomography_emergency|COMPUTED TOMOGRAPHY]] ([COMPUTED TOMOGRAPHY](../physics_nuclear/computed_tomography_emergency.md))

@@ -269,4 +269,7 @@ gin of the vertebral artery. Non-ionic contrast should be used to
 minimize patient discomfort during the examination. An angled 
 hydrophilic guidewire can then be used to select a more periph-
 eral location. The brachial artery should be imaged with the cath-
-eter in the proximal axillary artery 
+eter in the proximal axillary artery
+
+## See Also
+- [[integrating_clinical_and_imaging_findings|Integrating Clinical And Imaging Findings]] ([Integrating Clinical And Imaging Findings](../cardio/integrating_clinical_and_imaging_findings.md))

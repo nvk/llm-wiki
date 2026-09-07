@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 182-182)
 
 ### Key Visuals & Figures (Grainger)
-![The Elbow Figure](assets/grainger_the_elbow_p182_img1.jpeg)
+> **Key Imaging Finding:** The Elbow Figure
 
-![The Elbow Figure](assets/grainger_the_elbow_p182_img2.jpeg)
+> **Key Imaging Finding:** The Elbow Figure
 
 1150
 SECTION C  The Musculoskeletal System
@@ -103,27 +103,27 @@ clavicular ligament rupture; surgical repair is usually indicated.
 ## 2. Core Radiology High-Yield Notes (Pages 17-24)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p17_p17_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p17_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img12.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 361
 Neuropathic arthropathy (Charcot joint)
@@ -1193,3 +1193,5 @@ lymphoma or a stroke (or an abscess) - you’ll need to use enhancement to strai
 Yes... GBM can restrict, but for multiple choice it is way more likely to be lymphoma.
 191
 
+## See Also
+- [[pericardial_cysts|Pericardial Cysts]] ([Pericardial Cysts](../cardio/pericardial_cysts.md))

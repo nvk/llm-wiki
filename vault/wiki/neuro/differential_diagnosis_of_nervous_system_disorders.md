@@ -211,3 +211,6 @@ including quadriplegia, diplopia, dysarthria, dysphagia
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[sedation_analgesia_local_anesthesia|Sedation, Analgesia, Local Anesthesia]] ([Sedation, Analgesia, Local Anesthesia](../cardio/sedation_analgesia_local_anesthesia.md))

@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 152-152)
 
 ### Key Visuals & Figures (Grainger)
-![Rapidly Progressive and Other Atypical Dementias Figure](assets/grainger_rapidly_progressive__p152_img1.jpeg)
+> **Key Imaging Finding:** Rapidly Progressive and Other Atypical Dementias Figure
 
-![Rapidly Progressive and Other Atypical Dementias Figure](assets/grainger_rapidly_progressive__p152_img2.jpeg)
+> **Key Imaging Finding:** Rapidly Progressive and Other Atypical Dementias Figure
 
 1554
 SECTION E  Neuroimaging
@@ -110,67 +110,67 @@ which are much more prominent on diffusion-weighted imaging (DWI).
 ## 2. Core Radiology High-Yield Notes (Pages 25-32)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p25_p25_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p25_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p25_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p26_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p26_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p26_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p26_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img7.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img9.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img11.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img14.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img16.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img18.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img20.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p31_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p31_img11.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p31_img38.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p31_img45.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p31_img47.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p31_img51.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 224
 Choroid plexus papilloma/carcinoma
@@ -475,29 +475,29 @@ or CTA are diagnostic.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 493-504)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p493_p493_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p494_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p495_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p496_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p497_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p498_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p499_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p500_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p501_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p502_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p503_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p504_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 What Scan is it - Special Topics:
 MIBG
@@ -1116,3 +1116,5 @@ uptake (which probably means they are faking it, and need a rheumatology consult
 fibromyalgia). In children, sometimes you actually see decreased uptake.
 505
 
+## See Also
+- [[suggested_readings_head_and_neck|Suggested Readings: Head and Neck]] ([Suggested Readings: Head and Neck](../emergency/suggested_readings_head_and_neck.md))

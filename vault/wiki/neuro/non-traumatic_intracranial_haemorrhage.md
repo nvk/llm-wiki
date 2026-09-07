@@ -13,17 +13,17 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 115-116)
 
 ### Key Visuals & Figures (Grainger)
-![Non-Traumatic Intracranial Haemorrhage Figure](assets/grainger_non-traumatic_intrac_p115_img1.jpeg)
+> **Key Imaging Finding:** Non-Traumatic Intracranial Haemorrhage Figure
 
-![Non-Traumatic Intracranial Haemorrhage Figure](assets/grainger_non-traumatic_intrac_p115_img2.jpeg)
+> **Key Imaging Finding:** Non-Traumatic Intracranial Haemorrhage Figure
 
-![Non-Traumatic Intracranial Haemorrhage Figure](assets/grainger_non-traumatic_intrac_p115_img3.jpeg)
+> **Key Imaging Finding:** Non-Traumatic Intracranial Haemorrhage Figure
 
-![Non-Traumatic Intracranial Haemorrhage Figure](assets/grainger_non-traumatic_intrac_p115_img4.jpeg)
+> **Key Imaging Finding:** Non-Traumatic Intracranial Haemorrhage Figure
 
-![Non-Traumatic Intracranial Haemorrhage Figure](assets/grainger_non-traumatic_intrac_p115_img5.jpeg)
+> **Key Imaging Finding:** Non-Traumatic Intracranial Haemorrhage Figure
 
-![Non-Traumatic Intracranial Haemorrhage Figure](assets/grainger_non-traumatic_intrac_p116_img1.jpeg)
+> **Key Imaging Finding:** Non-Traumatic Intracranial Haemorrhage Figure
 
 CHAPTER 56  Neurovascular Diseases
 1465
@@ -134,43 +134,43 @@ on magnetic resonance venography (J, white arrow).
 ## 2. Core Radiology High-Yield Notes (Pages 49-56)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p49_p52_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img24.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img39.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img49.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img50.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img54.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img69.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img224.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img225.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img306.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img323.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img327.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img351.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 248
 Critical small arteries arising from the circle of Willis
@@ -632,29 +632,29 @@ penumbra.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 301-312)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p301_p301_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p301_p302_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p301_p303_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p301_p304_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p301_p305_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p301_p306_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p301_p307_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p301_p308_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p301_p309_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p301_p310_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p301_p311_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p301_p312_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 S E C T I O N 2:
 P E R I T O N E A L C A V I T Y
@@ -1246,3 +1246,7 @@ Avid (sometimes)
 Mass is Gallium Avid
 313
 
+## See Also
+- [[imaging_techniques|IMAGING TECHNIQUES]] ([IMAGING TECHNIQUES](../paeds/imaging_techniques.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../paeds/suggested_readings.md))
+- [[trauma|TRAUMA]] ([TRAUMA](../paeds/trauma.md))

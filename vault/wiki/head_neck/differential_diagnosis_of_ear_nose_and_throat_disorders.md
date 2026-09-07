@@ -248,3 +248,6 @@ C.  TUMOR
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[hilar_structures|Hilar Structures]] ([Hilar Structures](../cardio/hilar_structures.md))

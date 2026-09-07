@@ -96,39 +96,39 @@ mothorax, radiation-induced collapse, tumour replacement [adenocarcinoma])
 ## 2. Core Radiology High-Yield Notes (Pages 49-56)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p49_p50_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p51_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img88.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img89.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p53_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img26.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img27.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img35.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img70.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img76.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img77.png)
+> **Key Imaging Finding:** Core Figure
 
 48
 Diffuse lung disease
@@ -1008,3 +1008,5 @@ Grey Smudgy Shit Instead of Clean Fat in the Rotator Cuff Interval
 “Enhancement o f the Rotator C uff Interval ” - Post gad
 35
 
+## See Also
+- [[imaging_equipment|IMAGING EQUIPMENT]] ([IMAGING EQUIPMENT](../physics_nuclear/imaging_equipment.md))

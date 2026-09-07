@@ -197,3 +197,6 @@ ment membranes in the peripheral portions of the lung
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[bipolar_radiofrequency_nucleoplasty|BIPOLAR RADIOFREQUENCY NUCLEOPLASTY]] ([BIPOLAR RADIOFREQUENCY NUCLEOPLASTY](../vascular_ir/bipolar_radiofrequency_nucleoplasty.md))

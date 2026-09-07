@@ -157,3 +157,6 @@ supine chest radiographs in patients with massive trauma are rare
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[2_gastrointestinal_imaging|2. Gastrointestinal Imaging]] ([2. Gastrointestinal Imaging](../git/2_gastrointestinal_imaging.md))

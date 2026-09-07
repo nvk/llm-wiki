@@ -147,3 +147,6 @@ large, right pneumothorax (black arrow). Air outlines the aortic knob confirming
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[trauma_and_bone_infarction|TRAUMA AND BONE INFARCTION]] ([TRAUMA AND BONE INFARCTION](../msk/trauma_and_bone_infarction.md))

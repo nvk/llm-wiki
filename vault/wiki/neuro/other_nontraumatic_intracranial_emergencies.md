@@ -56,3 +56,7 @@ Emergency Radiology: The Requisites
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[injuries_of_the_pleural_space|INJURIES OF THE PLEURAL SPACE]] ([INJURIES OF THE PLEURAL SPACE](../cardio/injuries_of_the_pleural_space.md))
+- [[trauma_to_the_aorta|Trauma To The Aorta]] ([Trauma To The Aorta](../cardio/trauma_to_the_aorta.md))

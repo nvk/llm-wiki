@@ -165,3 +165,7 @@ t
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[tumors|TUMORS]] ([TUMORS](../emergency/tumors.md))
+- [[performing_ablation|PERFORMING ABLATION]] ([PERFORMING ABLATION](../vascular_ir/performing_ablation.md))

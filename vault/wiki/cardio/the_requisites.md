@@ -39,3 +39,6 @@ Vascular & Interventional Radiology
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[indications_and_outcome|INDICATIONS AND OUTCOME]] ([INDICATIONS AND OUTCOME](../vascular_ir/indications_and_outcome.md))

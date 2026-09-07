@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 149-149)
 
 ### Key Visuals & Figures (Grainger)
-![Alzheimer Disease and Other Primary Neurodegenerative Dementias Figure](assets/grainger_alzheimer_disease_an_p149_img1.jpeg)
+> **Key Imaging Finding:** Alzheimer Disease and Other Primary Neurodegenerative Dementias Figure
 
-![Alzheimer Disease and Other Primary Neurodegenerative Dementias Figure](assets/grainger_alzheimer_disease_an_p149_img2.jpeg)
+> **Key Imaging Finding:** Alzheimer Disease and Other Primary Neurodegenerative Dementias Figure
 
 CHAPTER 59  Neurodegenerative Diseases and Epilepsy
 1551
@@ -112,31 +112,31 @@ MTA. (Modified with permission from Radiology 2009;253:174–183.)
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p9_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p15_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p15_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p16_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p16_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 208
 Gradient recall echo (GRE) 
@@ -509,29 +509,29 @@ a lesion is either hypointense with T2 weighting or hyperintense with T1 weighti
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 469-480)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p469_p469_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p470_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p471_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p472_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p473_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p474_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p475_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p476_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p477_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p478_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p479_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p480_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 fROMETHEUS 
 Liomhart, M.1>.
@@ -926,3 +926,5 @@ medullary CA) BUT it has a beef with calcium, so instead of parathyroid, it deci
 B a Gangster (gangster for Ganglioneuroma).
 481
 
+## See Also
+- [[head_and_neck_trauma|HEAD AND NECK TRAUMA]] ([HEAD AND NECK TRAUMA](../head_neck/head_and_neck_trauma.md))

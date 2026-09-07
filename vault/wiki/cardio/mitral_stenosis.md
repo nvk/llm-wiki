@@ -163,3 +163,4 @@ half-time. Pressure half-time is obtaine
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[dedication|Dedication]] ([Dedication](../vascular_ir/dedication.md))

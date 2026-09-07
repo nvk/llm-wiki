@@ -181,3 +181,4 @@ feat
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[meckel_diverticulum_emergency|Meckel Diverticulum]] ([Meckel Diverticulum](../git/meckel_diverticulum_emergency.md))

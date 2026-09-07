@@ -183,3 +183,7 @@ Figure 12-3.  V
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pulmonary_artery_hypertension|Pulmonary Artery Hypertension]] ([Pulmonary Artery Hypertension](../cardio/pulmonary_artery_hypertension.md))
+- [[hepatic_vein_obstructionbudd_chiari_syndrome|HEPATIC VEIN OBSTRUCTION/BUDD-CHIARI SYNDROME]] ([HEPATIC VEIN OBSTRUCTION/BUDD-CHIARI SYNDROME](../git/hepatic_vein_obstructionbudd_chiari_syndrome.md))

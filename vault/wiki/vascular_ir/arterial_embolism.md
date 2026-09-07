@@ -171,3 +171,6 @@ unexplained absence of branch vessels
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pulmonary_artery_aneurysms_and_pseudoaneurysms|PULMONARY ARTERY ANEURYSMS AND PSEUDOANEURYSMS]] ([PULMONARY ARTERY ANEURYSMS AND PSEUDOANEURYSMS](../cardio/pulmonary_artery_aneurysms_and_pseudoaneurysms.md))

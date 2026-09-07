@@ -13,11 +13,11 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 145-145)
 
 ### Key Visuals & Figures (Grainger)
-![Sclerosing Bone Diseases and Other Bone Disorders Figure](assets/grainger_sclerosing_bone_dise_p145_img1.jpeg)
+> **Key Imaging Finding:** Sclerosing Bone Diseases and Other Bone Disorders Figure
 
-![Sclerosing Bone Diseases and Other Bone Disorders Figure](assets/grainger_sclerosing_bone_dise_p145_img2.jpeg)
+> **Key Imaging Finding:** Sclerosing Bone Diseases and Other Bone Disorders Figure
 
-![Sclerosing Bone Diseases and Other Bone Disorders Figure](assets/grainger_sclerosing_bone_dise_p145_img3.jpeg)
+> **Key Imaging Finding:** Sclerosing Bone Diseases and Other Bone Disorders Figure
 
 CHAPTER 43  Metabolic and Endocrine Skeletal Disease
 1113
@@ -83,27 +83,27 @@ obliteration of the marrow space due extensive sclerosis.
 ## 2. Core Radiology High-Yield Notes (Pages 17-24)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p17_p17_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p17_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img12.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 361
 Neuropathic arthropathy (Charcot joint)
@@ -802,3 +802,5 @@ NSAIDS
 Prednisone (steroids)
 11
 
+## See Also
+- [[congestive_heart_failure|Congestive Heart Failure]] ([Congestive Heart Failure](../cardio/congestive_heart_failure.md))

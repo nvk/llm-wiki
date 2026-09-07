@@ -158,3 +158,4 @@ rected int
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[gastrointestinal_tract|Gastrointestinal Tract]] ([Gastrointestinal Tract](../git/gastrointestinal_tract.md))

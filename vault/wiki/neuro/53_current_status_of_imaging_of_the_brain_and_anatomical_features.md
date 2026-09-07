@@ -103,31 +103,31 @@ Indeed, much of the history of neuroradiology involved the quest for an
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p9_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p15_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p15_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p16_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p16_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 208
 Gradient recall echo (GRE) 
@@ -500,29 +500,29 @@ a lesion is either hypointense with T2 weighting or hyperintense with T1 weighti
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 13-24)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p13_p13_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p14_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p15_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p16_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p17_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p18_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p19_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p20_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p21_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p22_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p23_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p13_p24_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 m
 LAW 3 - Performance on “Game Day” must equal performance in practice
@@ -1061,3 +1061,17 @@ a drawer with my other creepy journals (my poop journal, my ear wax journal, my 
 lint journal).” They thought I was joking...
 25
 
+## See Also
+- [[38_current_status_of_imaging_of_the_musculoskeletal_system|38 Current Status Of Imaging Of The Musculoskeletal System]] ([38 Current Status Of Imaging Of The Musculoskeletal System](../msk/38_current_status_of_imaging_of_the_musculoskeletal_system.md))
+- [[acromio-clavicular_joint|Acromio-Clavicular Joint]] ([Acromio-Clavicular Joint](../msk/acromio-clavicular_joint.md))
+- [[arthrography|Arthrography]] ([Arthrography](../msk/arthrography.md))
+- [[bone_metastases|Bone Metastases]] ([Bone Metastases](../msk/bone_metastases.md))
+- [[conventional_radiography|Conventional Radiography]] ([Conventional Radiography](../msk/conventional_radiography.md))
+- [[further_reading|Further Reading]] ([Further Reading](../msk/further_reading.md))
+- [[general_characteristics_of_bone_tumours|General Characteristics Of Bone Tumours]] ([General Characteristics Of Bone Tumours](../msk/general_characteristics_of_bone_tumours.md))
+- [[hand_and_wrist|Hand And Wrist]] ([Hand And Wrist](../msk/hand_and_wrist.md))
+- [[section_c_the_musculoskeletal_system|Section C The Musculoskeletal System]] ([Section C The Musculoskeletal System](../msk/section_c_the_musculoskeletal_system.md))
+- [[the_sternoclavicular_joint|The Sternoclavicular Joint]] ([The Sternoclavicular Joint](../msk/the_sternoclavicular_joint.md))
+- [[imaging_techniques|IMAGING TECHNIQUES]] ([IMAGING TECHNIQUES](../paeds/imaging_techniques.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../paeds/suggested_readings.md))
+- [[trauma|TRAUMA]] ([TRAUMA](../paeds/trauma.md))

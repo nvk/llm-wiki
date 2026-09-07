@@ -307,3 +307,6 @@ Axial contr
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[intravascular_ultrasound|INTRAVASCULAR ULTRASOUND]] ([INTRAVASCULAR ULTRASOUND](../vascular_ir/intravascular_ultrasound.md))

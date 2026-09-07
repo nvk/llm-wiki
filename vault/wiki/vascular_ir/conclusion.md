@@ -148,3 +148,6 @@ Microwave ablation (MWA) c
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[functional_imaging|Functional Imaging]] ([Functional Imaging](../cardio/functional_imaging.md))

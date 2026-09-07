@@ -13,7 +13,7 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 25-25)
 
 ### Key Visuals & Figures (Grainger)
-![The Mediastinum Figure](assets/grainger_the_mediastinum_p25_img1.jpeg)
+> **Key Imaging Finding:** The Mediastinum Figure
 
 CHAPTER 2  The Normal Chest
 27
@@ -117,38 +117,37 @@ Both inferior pulmonary veins travel obliquely anteriorly and
 superiorly, inferior to the branches of the left lower lobe artery, to 
 Fig. 2.13  Lateral view of the hila showing normal thickness of the 
 posterior wall of the bronchus intermedius (arrows). 
-https://t.me/afkebooks
 
 ## 2. Core Radiology High-Yield Notes (Pages 33-40)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p33_p33_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 32
 Vascular pedicle
@@ -464,29 +463,29 @@ is usually asymmetric.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 181-192)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p181_p181_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p181_p182_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p181_p183_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p181_p184_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p181_p185_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p181_p186_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p181_p187_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p181_p188_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p181_p189_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p181_p190_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p181_p191_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p181_p192_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 d v . Solving Cases Using Buzzwords
 When I say “Post Term Baby, ” 
@@ -1052,3 +1051,5 @@ mediastinum). Trivia:
 • Second most common GI lumen duplication cyst (distal ileum #1)
 193
 
+## See Also
+- [[tools|TOOLS]] ([TOOLS](../vascular_ir/tools.md))

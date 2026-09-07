@@ -35,3 +35,7 @@ Dublin, Ireland
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[differential_diagnosis_of_cardiovascular_disorders|Differential Diagnosis of Cardiovascular Disorders]] ([Differential Diagnosis of Cardiovascular Disorders](../cardio/differential_diagnosis_of_cardiovascular_disorders.md))
+- [[vascular_complications_early|Vascular Complications Early]] ([Vascular Complications Early](../uro/vascular_complications_early.md))

@@ -106,35 +106,35 @@ teres minor inserts onto the inferior facet of the greater tuberosity.
 ## 2. Core Radiology High-Yield Notes (Pages 89-96)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p89_p89_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img11.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img17.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img39.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img40.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p92_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p92_img7.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p92_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p95_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p95_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p96_img1.png)
+> **Key Imaging Finding:** Core Figure
 
 433
 Femoroacetabular impingement (FAI)
@@ -564,29 +564,29 @@ Brigham and Women’s Hospital.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 145-156)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p145_p145_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p146_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p147_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p148_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p149_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p150_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p151_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p152_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p153_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p154_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p155_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p156_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 SECTION 1 l:
 S u r g e r i e s
@@ -1111,3 +1111,5 @@ Primary Acro-osteolysis (Hajdu-Cheney)
 -Extra Squiggles-
 157
 
+## See Also
+- [[myocardial_calcifi_cation|Myocardial Calcifi cation]] ([Myocardial Calcifi cation](../cardio/myocardial_calcifi_cation.md))

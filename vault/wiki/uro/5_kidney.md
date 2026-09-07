@@ -191,3 +191,7 @@ search for other anomalies in the genit
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[differential_diagnosis_of_hepatic_biliary_pancreatic_and_spl|Differential Diagnosis of Hepatic, Biliary, Pancreatic and Splenic Disorders]] ([Differential Diagnosis of Hepatic, Biliary, Pancreatic and Splenic Disorders](../git/differential_diagnosis_of_hepatic_biliary_pancreatic_and_spl.md))
+- [[diseases_of_the_spleen|DISEASES OF THE SPLEEN]] ([DISEASES OF THE SPLEEN](../git/diseases_of_the_spleen.md))

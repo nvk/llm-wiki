@@ -251,4 +251,7 @@ The Brödel plane is theoretical, not practical
 Anterior and posterior calyces may have different mediolateral 
 orientations in right and left kidneys
 The colon is rarely found posterior to the kidney
-Figure 22-6.  Antegrade pyelogram in 
+Figure 22-6.  Antegrade pyelogram in
+
+## See Also
+- [[novel_echocardiographic_tools|Novel Echocardiographic Tools]] ([Novel Echocardiographic Tools](../cardio/novel_echocardiographic_tools.md))

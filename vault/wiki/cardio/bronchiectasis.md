@@ -214,21 +214,21 @@ status: "verified_source"
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 134-136)
 
 ### Key Visuals & Figures (Grainger)
-![Bronchiectasis Figure](assets/grainger_bronchiectasis_p134_img1.jpeg)
+> **Key Imaging Finding:** Bronchiectasis Figure
 
-![Bronchiectasis Figure](assets/grainger_bronchiectasis_p134_img2.jpeg)
+> **Key Imaging Finding:** Bronchiectasis Figure
 
-![Bronchiectasis Figure](assets/grainger_bronchiectasis_p135_img1.jpeg)
+> **Key Imaging Finding:** Bronchiectasis Figure
 
-![Bronchiectasis Figure](assets/grainger_bronchiectasis_p135_img2.jpeg)
+> **Key Imaging Finding:** Bronchiectasis Figure
 
-![Bronchiectasis Figure](assets/grainger_bronchiectasis_p136_img1.jpeg)
+> **Key Imaging Finding:** Bronchiectasis Figure
 
-![Bronchiectasis Figure](assets/grainger_bronchiectasis_p136_img2.jpeg)
+> **Key Imaging Finding:** Bronchiectasis Figure
 
-![Bronchiectasis Figure](assets/grainger_bronchiectasis_p136_img3.jpeg)
+> **Key Imaging Finding:** Bronchiectasis Figure
 
-![Bronchiectasis Figure](assets/grainger_bronchiectasis_p136_img4.jpeg)
+> **Key Imaging Finding:** Bronchiectasis Figure
 
 136
 SECTION A  The Chest and Cardiovascular System
@@ -294,3 +294,6 @@ collapsibility of the airway.
 BRONCHIECTASIS
 Bronchiectasis is a chronic condition characterised by local, irreversible 
 dilatation of bronchi, usually associated with inflamm
+
+## See Also
+- [[6_lower_genitourinary|6. Lower Genitourinary]] ([6. Lower Genitourinary](../uro/6_lower_genitourinary.md))

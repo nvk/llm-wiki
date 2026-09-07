@@ -13,21 +13,21 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 46-46)
 
 ### Key Visuals & Figures (Grainger)
-![Benign Bone Tumours Figure](assets/grainger_benign_bone_tumours_p46_img1.jpeg)
+> **Key Imaging Finding:** Benign Bone Tumours Figure
 
-![Benign Bone Tumours Figure](assets/grainger_benign_bone_tumours_p46_img2.jpeg)
+> **Key Imaging Finding:** Benign Bone Tumours Figure
 
-![Benign Bone Tumours Figure](assets/grainger_benign_bone_tumours_p46_img3.jpeg)
+> **Key Imaging Finding:** Benign Bone Tumours Figure
 
-![Benign Bone Tumours Figure](assets/grainger_benign_bone_tumours_p46_img4.jpeg)
+> **Key Imaging Finding:** Benign Bone Tumours Figure
 
-![Benign Bone Tumours Figure](assets/grainger_benign_bone_tumours_p46_img5.jpeg)
+> **Key Imaging Finding:** Benign Bone Tumours Figure
 
-![Benign Bone Tumours Figure](assets/grainger_benign_bone_tumours_p46_img6.jpeg)
+> **Key Imaging Finding:** Benign Bone Tumours Figure
 
-![Benign Bone Tumours Figure](assets/grainger_benign_bone_tumours_p46_img7.jpeg)
+> **Key Imaging Finding:** Benign Bone Tumours Figure
 
-![Benign Bone Tumours Figure](assets/grainger_benign_bone_tumours_p46_img8.jpeg)
+> **Key Imaging Finding:** Benign Bone Tumours Figure
 
 1014
 SECTION C  The Musculoskeletal System
@@ -78,35 +78,35 @@ occult (same case as Fig. 40.4A).
 ## 2. Core Radiology High-Yield Notes (Pages 89-96)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p89_p89_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img11.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img17.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img39.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img40.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p92_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p92_img7.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p92_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p95_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p95_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p96_img1.png)
+> **Key Imaging Finding:** Core Figure
 
 433
 Femoroacetabular impingement (FAI)
@@ -536,29 +536,29 @@ Brigham and Women’s Hospital.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 325-336)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p325_p325_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p326_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p327_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p328_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p329_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p330_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p331_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p332_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p333_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p334_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p335_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p325_p336_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 S E C T I O N 4:
 G a l l b l a d d e r 
@@ -1106,3 +1106,6 @@ Best Option - Rem em ber to
 R ead A ll the Answ er Choices!
 337
 
+## See Also
+- [[mediastinal_masses|Mediastinal Masses]] ([Mediastinal Masses](../cardio/mediastinal_masses.md))
+- [[middle_mediastinal_masses|Middle Mediastinal Masses]] ([Middle Mediastinal Masses](../cardio/middle_mediastinal_masses.md))

@@ -141,39 +141,39 @@ connection.
 ## 2. Core Radiology High-Yield Notes (Pages 49-56)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p49_p50_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p51_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img88.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img89.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p53_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img26.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img27.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img35.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img70.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img76.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img77.png)
+> **Key Imaging Finding:** Core Figure
 
 48
 Diffuse lung disease
@@ -468,29 +468,29 @@ with chronic ﬁbrosis
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 121-132)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p121_p121_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p122_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p123_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p124_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p125_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p126_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p127_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p128_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p129_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p130_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p131_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p132_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 NOT Normal: Anomalies of the Origin, Course, and Termination:
 Malignant Origin: There are like a million billion different types 
@@ -1131,3 +1131,5 @@ Associated with a
 persistent left 
 SVC
 
+## See Also
+- [[biopsies_of_the_musculoskeletal_system|BIOPSIES OF THE MUSCULOSKELETAL SYSTEM]] ([BIOPSIES OF THE MUSCULOSKELETAL SYSTEM](../msk/biopsies_of_the_musculoskeletal_system.md))

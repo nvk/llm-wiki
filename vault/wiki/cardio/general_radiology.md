@@ -208,3 +208,6 @@ iodide crystal!
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[male_disorders|MALE DISORDERS]] ([MALE DISORDERS](../uro/male_disorders.md))

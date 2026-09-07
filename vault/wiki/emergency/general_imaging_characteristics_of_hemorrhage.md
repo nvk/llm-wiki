@@ -196,3 +196,6 @@ Figure 1-1.  Epidural hematoma. A, CT shows usual biconvex, hyperdense acute epi
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[chronic_pancreatitis|Chronic Pancreatitis]] ([Chronic Pancreatitis](../git/chronic_pancreatitis.md))
+- [[iterative_reconstruction_algorithms|Iterative Reconstruction Algorithms]] ([Iterative Reconstruction Algorithms](../git/iterative_reconstruction_algorithms.md))
+- [[section_b_abdominal_imaging_uroradiology|Section B Abdominal Imaging]] ([Section B Abdominal Imaging](../git/section_b_abdominal_imaging_uroradiology.md))

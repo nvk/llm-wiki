@@ -145,3 +145,6 @@ placed from the right. Contrast is injected from the right femoral sheath to det
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[upper_airway|UPPER AIRWAY]] ([UPPER AIRWAY](../cardio/upper_airway.md))

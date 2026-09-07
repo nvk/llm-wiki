@@ -176,3 +176,7 @@ has a side-cutting trough near its end. The E-Z-EM needle has a trough
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[gastrointestinal_bleeding_interventional|GASTROINTESTINAL BLEEDING]] ([GASTROINTESTINAL BLEEDING](../git/gastrointestinal_bleeding_interventional.md))
+- [[ureteric_intervention|URETERIC INTERVENTION]] ([URETERIC INTERVENTION](../uro/ureteric_intervention.md))

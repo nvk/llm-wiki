@@ -182,3 +182,4 @@ FIGURE 2-10. Two-dimensional apical two-chamber view of the h
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[musculoskeletal_system|MUSCULOSKELETAL SYSTEM]] ([MUSCULOSKELETAL SYSTEM](../msk/musculoskeletal_system.md))

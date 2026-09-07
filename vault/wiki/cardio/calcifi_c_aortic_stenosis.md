@@ -169,3 +169,4 @@ FIGURE 1-16. Left ventricular aneurysm. A and B, This angular left ventricu
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[skeletal_abnormalities_in_heart_disease|SKELETAL ABNORMALITIES IN HEART DISEASE]] ([SKELETAL ABNORMALITIES IN HEART DISEASE](../msk/skeletal_abnormalities_in_heart_disease.md))

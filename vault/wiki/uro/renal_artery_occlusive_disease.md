@@ -147,3 +147,7 @@ sary to exclude emboli
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[chronic_mesenteric_ischemia|CHRONIC MESENTERIC ISCHEMIA]] ([CHRONIC MESENTERIC ISCHEMIA](../git/chronic_mesenteric_ischemia.md))
+- [[embolic_occlusion|EMBOLIC OCCLUSION]] ([EMBOLIC OCCLUSION](../vascular_ir/embolic_occlusion.md))

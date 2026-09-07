@@ -52,7 +52,6 @@ Severe Urticaria
 add H2-antihistamine:
 ⇒  cimetidine (Tagamet®) 300 mg PO / slowly IV (diluted in 20 mL D5W solution)
 35
-http://pdfradiology.com
 
 [pediatric: 5–10 mg/kg diluted in 20 mL D5W solution]
 or
@@ -93,7 +92,6 @@ with decreased blood pressure + progressive bronchospasm
 [pediatric: 0.01 mg/kg IV]
 Repeat after 15 min up to a maximum of 1.0 mg
 36
-http://pdfradiology.com
 
 Alternatively
 ⇒  aminophylline 6 mg/kg IV in D5W over 15–20 min (loading dose); then 0.4–1.0
@@ -107,7 +105,6 @@ if anxiety exacerbates bronchospasm, sedation with 5–10 mg Demerol IV
 ⇒  Call for assistance (CODE team) for severe bronchospasm / if O2 saturation persists <
 88%
 37
-http://pdfradiology.com
 
 
 ---
@@ -154,7 +151,6 @@ if uncontrolled:
 if longer effect needed:
 ⇒  obtain consultation
 38
-http://pdfradiology.com
 
 ⇒  phenytoin (Dilantin®) infusion 15–18 mg/kg at 50 mg/minute
 ⇒  consider CODE for intubation
@@ -196,7 +192,6 @@ Risk:   fragile veins, IV catheter indwelling for many days, multiple puncture a
 placement
 Effect: (a) acute inflammatory response (peaking in 24–48 hrs) related to hyperosmolality of
 39
-http://pdfradiology.com
 
 contrast material
  
@@ -224,3 +219,6 @@ pressure
 evaluation
 (5)  Surgical consultation if
 ›  extra
+
+## See Also
+- [[techniques|Techniques]] ([Techniques](../uro/techniques.md))

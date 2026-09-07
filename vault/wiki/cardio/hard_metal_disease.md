@@ -184,3 +184,6 @@ B, Axial CT in
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[preprocedure_patient_evaluation_and_management|PREPROCEDURE PATIENT EVALUATION AND MANAGEMENT]] ([PREPROCEDURE PATIENT EVALUATION AND MANAGEMENT](../vascular_ir/preprocedure_patient_evaluation_and_management.md))

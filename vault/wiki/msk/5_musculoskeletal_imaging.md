@@ -244,3 +244,6 @@ cause of spinal stenosis. OPLL ma
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[tracheobronchomalacia|Tracheobronchomalacia]] ([Tracheobronchomalacia](../cardio/tracheobronchomalacia.md))

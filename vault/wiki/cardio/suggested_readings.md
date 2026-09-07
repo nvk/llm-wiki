@@ -691,10 +691,10 @@ Churg, J., Strauss, L., 1951. Allergic granulomatosis, allergic angiitis, and
 periarteritis nodosa. Am. J. Pathol. 27, 277–283.
 Collard, H.R., King, T.E., 2007. Pulmonary lymphomatoid granulomatosis. 
 In: Rose, B.D. (Ed.), UpToDate (CD-ROM). UpToDate, Waltham, 
-MA, Available at http://www.uptodate.com/patients/content/topic.
+MA, Available at 
 do?topicKey=~0YxcId8bOPEFbH (accessed September 2009).
 Collard, H.R., King, T.E., 2007. Bronchocentric granulomatosis. In: Rose, B.D. 
-(Ed.), UpToDate (CD-ROM). UpToDate, Waltham, MA, Available at http://www.
+(Ed.), UpToDate (CD-ROM). UpToDate, Waltham, MA, Available at 
 
 ## Additional Primary Source: Thoracic Radiology: The Requisites (pp. 263–264)
 
@@ -1416,3 +1416,18 @@ Morrissey, B., Adams, H., Gibbs, A.R., Crane, M.D., 1993. Percutaneous needle
 biopsy of the mediastinum: review of 94 procedures. Thorax 48, 632–637.
 Naidich, D.P., Sussman, R., Kutcher, W.L., et al., 1988. Solitary pulmonary 
 nodules: CT-bronchoscopic correlat
+
+## See Also
+- [[8_breast_imaging|8. Breast Imaging]] ([8. Breast Imaging](../breast/8_breast_imaging.md))
+- [[breast|BREAST]] ([BREAST](../breast/breast.md))
+- [[breast_anatomy_and_mammographic_technique|Breast Anatomy and Mammographic Technique]] ([Breast Anatomy and Mammographic Technique](../breast/breast_anatomy_and_mammographic_technique.md))
+- [[breast_disorders|Breast Disorders]] ([Breast Disorders](../breast/breast_disorders.md))
+- [[breast_lesion_excision_systems|BREAST LESION EXCISION SYSTEMS]] ([BREAST LESION EXCISION SYSTEMS](../breast/breast_lesion_excision_systems.md))
+- [[differential_diagnosis_of_breast_disorders|Differential Diagnosis of Breast Disorders]] ([Differential Diagnosis of Breast Disorders](../breast/differential_diagnosis_of_breast_disorders.md))
+- [[image_guided_breast_biopsy|IMAGE-GUIDED BREAST BIOPSY]] ([IMAGE-GUIDED BREAST BIOPSY](../breast/image_guided_breast_biopsy.md))
+- [[image_guided_breast_intervention|Image-Guided Breast Intervention]] ([Image-Guided Breast Intervention](../breast/image_guided_breast_intervention.md))
+- [[interventional_breast_radiology|Interventional Breast Radiology]] ([Interventional Breast Radiology](../breast/interventional_breast_radiology.md))
+- [[normal_breast_anatomy|Normal Breast Anatomy]] ([Normal Breast Anatomy](../breast/normal_breast_anatomy.md))
+- [[conclusion|CONCLUSION]] ([CONCLUSION](../emergency/conclusion.md))
+- [[infections|INFECTIONS]] ([INFECTIONS](../emergency/infections.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../emergency/suggested_readings.md))

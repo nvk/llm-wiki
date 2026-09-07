@@ -177,3 +177,7 @@ Figure 16-2.  Thymoma. Axial CT shows an o
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[benign_bone_tumours|Benign Bone Tumours]] ([Benign Bone Tumours](../msk/benign_bone_tumours.md))
+- [[image_guided_ablation_of_renal_tumors|Image-Guided Ablation of Renal Tumors]] ([Image-Guided Ablation of Renal Tumors](../uro/image_guided_ablation_of_renal_tumors.md))

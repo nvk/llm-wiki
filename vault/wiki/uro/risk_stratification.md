@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 124-126)
 
 ### Key Visuals & Figures (Grainger)
-![Risk Stratification Figure](assets/grainger_risk_stratification_p124_img1.jpeg)
+> **Key Imaging Finding:** Risk Stratification Figure
 
-![Risk Stratification Figure](assets/grainger_risk_stratification_p124_img2.jpeg)
+> **Key Imaging Finding:** Risk Stratification Figure
 
 CHAPTER 32  Prostate
 845
@@ -325,37 +325,37 @@ for Radiation Oncology (ASTRO) and the Society of Urologic Oncology
 ## 2. Core Radiology High-Yield Notes (Pages 17-24)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p17_p18_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p20_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 172
 Bosniak classification of cystic renal masses
@@ -1547,3 +1547,17 @@ MRl Epilepsy Protocol Trivia:
 calcifications of tuberous sclerosis, Sturge-Weber, Cavemomas, GangliogHomas etc..)
 167
 
+## See Also
+- [[anatomy_of_skull_and_spine|Anatomy of Skull and Spine]] ([Anatomy of Skull and Spine](../spine/anatomy_of_skull_and_spine.md))
+- [[carotid_and_vertebral_arteries|Carotid and Vertebral Arteries]] ([Carotid and Vertebral Arteries](../spine/carotid_and_vertebral_arteries.md))
+- [[differential_diagnosis_of_skull_and_spine_disorders|Differential Diagnosis of Skull and Spine Disorders]] ([Differential Diagnosis of Skull and Spine Disorders](../spine/differential_diagnosis_of_skull_and_spine_disorders.md))
+- [[nontraumatic_spine_emergencies|NONTRAUMATIC SPINE EMERGENCIES]] ([NONTRAUMATIC SPINE EMERGENCIES](../spine/nontraumatic_spine_emergencies.md))
+- [[normal_development_of_the_spinal_neuraxis_and_spinal_column|NORMAL DEVELOPMENT OF THE SPINAL NEURAXIS AND SPINAL COLUMN]] ([NORMAL DEVELOPMENT OF THE SPINAL NEURAXIS AND SPINAL COLUMN](../spine/normal_development_of_the_spinal_neuraxis_and_spinal_column.md))
+- [[prevertebral_collections|Prevertebral Collections]] ([Prevertebral Collections](../spine/prevertebral_collections.md))
+- [[skull_and_spine_disorders|Skull and Spine Disorders]] ([Skull and Spine Disorders](../spine/skull_and_spine_disorders.md))
+- [[spine_imaging|SPINE IMAGING]] ([SPINE IMAGING](../spine/spine_imaging.md))
+- [[traumatic_and_nontraumatic_spine_emergencies|Traumatic and Nontraumatic Spine Emergencies]] ([Traumatic and Nontraumatic Spine Emergencies](../spine/traumatic_and_nontraumatic_spine_emergencies.md))
+- [[traumatic_spine_injury|TRAUMATIC SPINE INJURY]] ([TRAUMATIC SPINE INJURY](../spine/traumatic_spine_injury.md))
+- [[imaging|IMAGING]] ([IMAGING](../vascular_ir/imaging.md))
+- [[key_collateral_pathways|KEY COLLATERAL PATHWAYS]] ([KEY COLLATERAL PATHWAYS](../vascular_ir/key_collateral_pathways.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../vascular_ir/suggested_readings.md))

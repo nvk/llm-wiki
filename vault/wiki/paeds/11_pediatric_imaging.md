@@ -204,3 +204,7 @@ MRI i
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[congenital_anomalies|Congenital Anomalies]] ([Congenital Anomalies](../git/congenital_anomalies.md))
+- [[splenic_steal_syndrome|SPLENIC STEAL SYNDROME]] ([SPLENIC STEAL SYNDROME](../git/splenic_steal_syndrome.md))

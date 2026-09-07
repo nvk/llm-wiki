@@ -161,3 +161,4 @@ a pericardi
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[ergotism|ERGOTISM]] ([ERGOTISM](../vascular_ir/ergotism.md))

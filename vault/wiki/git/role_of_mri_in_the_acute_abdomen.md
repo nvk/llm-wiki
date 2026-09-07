@@ -13,33 +13,33 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 17-18)
 
 ### Key Visuals & Figures (Grainger)
-![Role of MRI in the Acute Abdomen Figure](assets/grainger_role_of_mri_in_the_a_p17_img1.jpeg)
+> **Key Imaging Finding:** Role of MRI in the Acute Abdomen Figure
 
-![Role of MRI in the Acute Abdomen Figure](assets/grainger_role_of_mri_in_the_a_p17_img2.jpeg)
+> **Key Imaging Finding:** Role of MRI in the Acute Abdomen Figure
 
-![Role of MRI in the Acute Abdomen Figure](assets/grainger_role_of_mri_in_the_a_p17_img3.jpeg)
+> **Key Imaging Finding:** Role of MRI in the Acute Abdomen Figure
 
-![Role of MRI in the Acute Abdomen Figure](assets/grainger_role_of_mri_in_the_a_p18_img1.jpeg)
+> **Key Imaging Finding:** Role of MRI in the Acute Abdomen Figure
 
-![Role of MRI in the Acute Abdomen Figure](assets/grainger_role_of_mri_in_the_a_p18_img2.jpeg)
+> **Key Imaging Finding:** Role of MRI in the Acute Abdomen Figure
 
-![Role of MRI in the Acute Abdomen Figure](assets/grainger_role_of_mri_in_the_a_p18_img3.jpeg)
+> **Key Imaging Finding:** Role of MRI in the Acute Abdomen Figure
 
-![Role of MRI in the Acute Abdomen Figure](assets/grainger_role_of_mri_in_the_a_p18_img4.jpeg)
+> **Key Imaging Finding:** Role of MRI in the Acute Abdomen Figure
 
-![Role of MRI in the Acute Abdomen Figure](assets/grainger_role_of_mri_in_the_a_p18_img5.jpeg)
+> **Key Imaging Finding:** Role of MRI in the Acute Abdomen Figure
 
-![Role of MRI in the Acute Abdomen Figure](assets/grainger_role_of_mri_in_the_a_p18_img6.jpeg)
+> **Key Imaging Finding:** Role of MRI in the Acute Abdomen Figure
 
-![Role of MRI in the Acute Abdomen Figure](assets/grainger_role_of_mri_in_the_a_p18_img7.jpeg)
+> **Key Imaging Finding:** Role of MRI in the Acute Abdomen Figure
 
-![Role of MRI in the Acute Abdomen Figure](assets/grainger_role_of_mri_in_the_a_p18_img8.jpeg)
+> **Key Imaging Finding:** Role of MRI in the Acute Abdomen Figure
 
-![Role of MRI in the Acute Abdomen Figure](assets/grainger_role_of_mri_in_the_a_p18_img9.jpeg)
+> **Key Imaging Finding:** Role of MRI in the Acute Abdomen Figure
 
-![Role of MRI in the Acute Abdomen Figure](assets/grainger_role_of_mri_in_the_a_p18_img10.jpeg)
+> **Key Imaging Finding:** Role of MRI in the Acute Abdomen Figure
 
-![Role of MRI in the Acute Abdomen Figure](assets/grainger_role_of_mri_in_the_a_p18_img11.jpeg)
+> **Key Imaging Finding:** Role of MRI in the Acute Abdomen Figure
 
 CHAPTER 18  Current Status of Imaging of the Gastrointestinal Tract
 479
@@ -183,47 +183,47 @@ matory oedema.
 ## 2. Core Radiology High-Yield Notes (Pages 17-24)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p17_p17_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p17_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p20_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p20_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img6.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img7.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img8.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img11.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img14.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img16.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img18.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img20.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 102
 • Choledochal cysts are thought to represent a heterogeneous group of diseases with a 
@@ -555,29 +555,29 @@ Hemorrhage is typical. SPEN features a capsule, as does mucinous cystic neoplasm
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 193-204)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p193_p193_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p194_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p195_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p196_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p197_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p198_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p199_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p200_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p201_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p202_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p203_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p204_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Posterior
 Neuroblastoma - This is the most common posterior mediastinal mass in a child under 2. This 
@@ -1153,3 +1153,5 @@ history to bias yourself.
 j Pancreas Surrounding the Duodenum
 205
 
+## See Also
+- [[chronic_obstructive_pulmonary_disease_and_asthma|Chronic Obstructive Pulmonary Disease and Asthma]] ([Chronic Obstructive Pulmonary Disease and Asthma](../cardio/chronic_obstructive_pulmonary_disease_and_asthma.md))

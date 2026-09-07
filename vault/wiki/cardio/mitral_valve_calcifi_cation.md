@@ -174,3 +174,4 @@ the standard chestfilm
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[contrast_media_nephrotoxicity_premedication_control_of_heart|Contrast Media, Nephrotoxicity, Premedication, Control of Heart Rate]] ([Contrast Media, Nephrotoxicity, Premedication, Control of Heart Rate](../physics_nuclear/contrast_media_nephrotoxicity_premedication_control_of_heart.md))

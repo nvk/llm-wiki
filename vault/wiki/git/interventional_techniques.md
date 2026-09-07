@@ -14,7 +14,7 @@ aliases: ["interventional_techniques"]---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 156-156)
 
 ### Key Visuals & Figures (Grainger)
-![Interventional Techniques Figure](assets/grainger_interventional_techn_p156_img1.jpeg)
+> **Key Imaging Finding:** Interventional Techniques Figure
 
 676
 SECTION B  Abdominal Imaging
@@ -115,27 +115,27 @@ organ involvement.
 ## 2. Core Radiology High-Yield Notes (Pages 57-64)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p57_p58_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img83.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img94.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 142
 Scleroderma
@@ -831,3 +831,6 @@ PROMETHEUS LIONHART, M.D.
 INTERVENTIONAJL
 347
 
+## See Also
+- [[catheter_course|Catheter Course]] ([Catheter Course](../cardio/catheter_course.md))
+- [[other_interventional_procedures_in_the_thorax|Other Interventional Procedures in the Thorax]] ([Other Interventional Procedures in the Thorax](../cardio/other_interventional_procedures_in_the_thorax.md))

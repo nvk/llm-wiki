@@ -87,3 +87,7 @@ laceration of the left portal vein was detected that required surgical repair.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[injury_to_the_trachea_and_major_airways|Injury To The Trachea And Major Airways]] ([Injury To The Trachea And Major Airways](../cardio/injury_to_the_trachea_and_major_airways.md))
+- [[lung_injuries_and_lung_contusion|LUNG INJURIES AND LUNG CONTUSION]] ([LUNG INJURIES AND LUNG CONTUSION](../cardio/lung_injuries_and_lung_contusion.md))

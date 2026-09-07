@@ -176,3 +176,6 @@ pole and may suggest an unobs
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[congenital_absence_of_the_pericardium|Congenital Absence of the Pericardium]] ([Congenital Absence of the Pericardium](../cardio/congenital_absence_of_the_pericardium.md))

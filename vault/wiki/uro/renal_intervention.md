@@ -156,3 +156,7 @@ both the antegrade needle and the bladder cathete
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[3_the_chest_wall_pleura_diaphragm_and_intervention|3 The Chest Wall Pleura Diaphragm And Intervention]] ([3 The Chest Wall Pleura Diaphragm And Intervention](../cardio/3_the_chest_wall_pleura_diaphragm_and_intervention.md))
+- [[interventional_radiology|Interventional Radiology]] ([Interventional Radiology](../git/interventional_radiology.md))

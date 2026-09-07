@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 160-160)
 
 ### Key Visuals & Figures (Grainger)
-![Liver Imaging Techniques Figure](assets/grainger_liver_imaging_techni_p160_img1.jpeg)
+> **Key Imaging Finding:** Liver Imaging Techniques Figure
 
-![Liver Imaging Techniques Figure](assets/grainger_liver_imaging_techni_p160_img2.jpeg)
+> **Key Imaging Finding:** Liver Imaging Techniques Figure
 
 CHAPTER 23  The Liver and Spleen
 599
@@ -101,39 +101,39 @@ Livingstone, 1994.)
 ## 2. Core Radiology High-Yield Notes (Pages 25-32)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p25_p26_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p31_img4.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 110
 Intraductal papillary mucinous neoplasm (IPMN)
@@ -954,3 +954,5 @@ new from the first post
 therapv studv.
 407
 
+## See Also
+- [[diseases_characterized_by_a_nodular_or_reticulonodular_patte|Diseases Characterized By A Nodular Or Reticulonodular Pattern]] ([Diseases Characterized By A Nodular Or Reticulonodular Pattern](../cardio/diseases_characterized_by_a_nodular_or_reticulonodular_patte.md))

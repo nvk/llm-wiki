@@ -168,3 +168,6 @@ head ultraso
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[drug-induced_lung_disease|Drug-Induced Lung Disease]] ([Drug-Induced Lung Disease](../cardio/drug-induced_lung_disease.md))

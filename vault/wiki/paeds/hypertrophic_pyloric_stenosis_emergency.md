@@ -168,3 +168,4 @@ examination evaluates the
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[ventricular_assist_devices|Ventricular Assist Devices]] ([Ventricular Assist Devices](../cardio/ventricular_assist_devices.md))

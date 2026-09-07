@@ -177,3 +177,6 @@ Figure 16-2.  Thymoma. Axial CT shows an o
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[cranial_and_intracranial_tumorsof_childhood|CRANIAL AND INTRACRANIAL TUMORSOF CHILDHOOD]] ([CRANIAL AND INTRACRANIAL TUMORSOF CHILDHOOD](../neuro/cranial_and_intracranial_tumorsof_childhood.md))

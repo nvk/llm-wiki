@@ -153,3 +153,6 @@ It may be particularly important to rul
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[suggested_readings_head_and_neck|Suggested Readings: Head and Neck]] ([Suggested Readings: Head and Neck](../emergency/suggested_readings_head_and_neck.md))

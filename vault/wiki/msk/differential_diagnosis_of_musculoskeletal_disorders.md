@@ -52,7 +52,6 @@ B.  TRAUMATIC
 C.  INFLAMMATORY
 1.   Diskitis
 41
-http://pdfradiology.com
 
 2.   Septic arthritis
 3.   Osteomyelitis
@@ -97,7 +96,6 @@ C.  SYSTEMIC DISEASE
 2.   Renal disease
 3.   GI disease: celiac disease, Crohn disease, ulcerative colitis
 42
-http://pdfradiology.com
 
 4.   Anemia
 5.   Bone marrow transplantation (< 5 years of age)
@@ -142,7 +140,6 @@ bones
 bladder
 √  femoral cortices become visible
 43
-http://pdfradiology.com
 
 CAVE:  scan may be interpreted as normal, particularly in patients with poor renal function!
 Hot Bone Lesions
@@ -186,7 +183,6 @@ B.  Replacement of bone by destructive process
 1.   Metastases (most common cause): central axis skeleton > extremity, most commonly in
 carcinoma of kidney + lung + breast + multiple myeloma
 44
-http://pdfradiology.com
 
 2.   Primary bone tumor (exceptional)
 mnemonic:   HM RANT
@@ -230,7 +226,6 @@ Acquired Syndromes with Increased Bone Density
 2.   Osteoblastic metastases
 3.   Paget disease of bone
 45
-http://pdfradiology.com
 
 4.   Erdheim-Chester disease
 5.   Myelofibrosis
@@ -276,7 +271,6 @@ C.  DYSPLASIA OF INTRAMEMBRANOUS OSSIFICATION
 3.   Hyperostosis corticalis generalisata
 4.   Diaphyseal dysplasia with anemia
 46
-http://pdfradiology.com
 
 5.   Oculodento-osseous dysplasia
 6.   Trichodento-osseous dysplasia
@@ -290,3 +284,6 @@ D.  MIXED SCLEROSING DYSPLASIAS = OVERLAP SYNDROME
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[the_pneumoconioses|The Pneumoconioses]] ([The Pneumoconioses](../cardio/the_pneumoconioses.md))

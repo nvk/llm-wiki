@@ -99,37 +99,37 @@ the facial bones including the mandible, depending on the extent of
 ## 2. Core Radiology High-Yield Notes (Pages 89-96)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p89_p89_img25.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img50.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img52.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img53.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img63.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img64.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p90_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img20.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p94_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p94_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p94_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p94_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p95_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p95_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p95_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 288
 Larynx
@@ -486,29 +486,29 @@ than a tumor arising from the submandibular or parotid glands.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 133-144)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p133_p133_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p134_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p135_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p136_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p137_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p138_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p139_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p140_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p141_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p142_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p143_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p144_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 PAPVR: Partial anomalous pulmonary venous return, 
 is defined as one (or more) of the four pulmonary veins 
@@ -1256,3 +1256,7 @@ Between the
 Aorta and PA
 145
 
+## See Also
+- [[imaging_techniques|IMAGING TECHNIQUES]] ([IMAGING TECHNIQUES](../paeds/imaging_techniques.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../paeds/suggested_readings.md))
+- [[trauma|TRAUMA]] ([TRAUMA](../paeds/trauma.md))

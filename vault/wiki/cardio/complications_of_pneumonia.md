@@ -139,15 +139,15 @@ status: "verified_source"
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 104-105)
 
 ### Key Visuals & Figures (Grainger)
-![Complications of Pneumonia Figure](assets/grainger_complications_of_pne_p104_img1.jpeg)
+> **Key Imaging Finding:** Complications of Pneumonia Figure
 
-![Complications of Pneumonia Figure](assets/grainger_complications_of_pne_p104_img2.jpeg)
+> **Key Imaging Finding:** Complications of Pneumonia Figure
 
-![Complications of Pneumonia Figure](assets/grainger_complications_of_pne_p104_img3.jpeg)
+> **Key Imaging Finding:** Complications of Pneumonia Figure
 
-![Complications of Pneumonia Figure](assets/grainger_complications_of_pne_p105_img1.jpeg)
+> **Key Imaging Finding:** Complications of Pneumonia Figure
 
-![Complications of Pneumonia Figure](assets/grainger_complications_of_pne_p105_img2.jpeg)
+> **Key Imaging Finding:** Complications of Pneumonia Figure
 
 106
 SECTION A  The Chest and Cardiovascular System
@@ -199,3 +199,6 @@ of consolidation (Fig. 5.2). An air bronchogram is frequently seen.
 S. pneumoniae is by far the most common cause of complete lobar 
 consolidation. Other causative agents that produce complete lobar 
 consolidation include K. pneumoniae and other g
+
+## See Also
+- [[viral_infections|Viral Infections]] ([Viral Infections](../neuro/viral_infections.md))

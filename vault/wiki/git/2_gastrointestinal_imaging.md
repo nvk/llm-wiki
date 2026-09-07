@@ -202,3 +202,6 @@ on CT with multiple nodules,
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[intramural_hematoma|INTRAMURAL HEMATOMA]] ([INTRAMURAL HEMATOMA](../vascular_ir/intramural_hematoma.md))

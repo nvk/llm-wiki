@@ -164,3 +164,6 @@ Other common locati
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[rheumatic_mitral_regurgitation|Rheumatic Mitral Regurgitation]] ([Rheumatic Mitral Regurgitation](../cardio/rheumatic_mitral_regurgitation.md))

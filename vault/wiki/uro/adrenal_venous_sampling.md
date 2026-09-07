@@ -162,3 +162,7 @@ sampling approach. The procedure is us
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[chronic_pulmonary_embolism|CHRONIC PULMONARY EMBOLISM]] ([CHRONIC PULMONARY EMBOLISM](../cardio/chronic_pulmonary_embolism.md))
+- [[truncus_arteriosus|Truncus Arteriosus]] ([Truncus Arteriosus](../cardio/truncus_arteriosus.md))

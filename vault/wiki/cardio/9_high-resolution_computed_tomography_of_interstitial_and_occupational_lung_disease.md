@@ -99,33 +99,33 @@ The distribution and density of nodules may help refine what can be
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p10_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img7.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img8.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img10.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img12.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p15_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p16_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 8
 Patterns of lung disease
@@ -928,3 +928,5 @@ Trivia: ENT will want to know: (1) if the tissue covering the normally open ear 
 plate) is soft tissue or bone, and (2) if there is an aberrant course of the facial nerve.
 251
 
+## See Also
+- [[computed_tomography_and_computed_tomography_angiography|COMPUTED TOMOGRAPHY AND COMPUTED TOMOGRAPHY ANGIOGRAPHY]] ([COMPUTED TOMOGRAPHY AND COMPUTED TOMOGRAPHY ANGIOGRAPHY](../physics_nuclear/computed_tomography_and_computed_tomography_angiography.md))

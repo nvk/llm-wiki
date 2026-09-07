@@ -185,3 +185,7 @@ and interpretatio
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[gastrointestinal_conditions_requiring_prompt_intervention|GASTROINTESTINAL CONDITIONS REQUIRING PROMPT INTERVENTION]] ([GASTROINTESTINAL CONDITIONS REQUIRING PROMPT INTERVENTION](../git/gastrointestinal_conditions_requiring_prompt_intervention.md))
+- [[renal_transplant_biopsy|Renal Transplant Biopsy]] ([Renal Transplant Biopsy](../uro/renal_transplant_biopsy.md))

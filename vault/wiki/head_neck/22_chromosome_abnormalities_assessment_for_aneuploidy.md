@@ -165,3 +165,6 @@ risk of pregnancy complications (e.g., fetal growth restriction,
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pleural_fluid_collections|Pleural Fluid Collections]] ([Pleural Fluid Collections](../cardio/pleural_fluid_collections.md))

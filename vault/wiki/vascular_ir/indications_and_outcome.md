@@ -130,3 +130,6 @@ Colin P. Cantwell, FRCR, FFR, and Debra A. Gervais, MD
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[the_requisites|The Requisites]] ([The Requisites](../cardio/the_requisites.md))

@@ -185,3 +185,7 @@ CT scan thr
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[biliary_drainage|BILIARY DRAINAGE]] ([BILIARY DRAINAGE](../git/biliary_drainage.md))
+- [[gastrointestinal_tract_intervention|Gastrointestinal Tract Intervention]] ([Gastrointestinal Tract Intervention](../git/gastrointestinal_tract_intervention.md))

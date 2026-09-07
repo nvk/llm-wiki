@@ -126,3 +126,6 @@ Congestive heart failure (interstitial edema)
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[3_genitourinary_imaging|3. Genitourinary Imaging]] ([3. Genitourinary Imaging](../uro/3_genitourinary_imaging.md))

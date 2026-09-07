@@ -192,3 +192,6 @@ Posterior projection:   lateral orbital wall, lateral wall of maxillary sinus
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[17_the_thoracic_aorta|17 The Thoracic Aorta]] ([17 The Thoracic Aorta](../cardio/17_the_thoracic_aorta.md))

@@ -186,3 +186,7 @@ Figure 6-47.  A, US scan of hemorrhagic cyst of the ovary. B, Ovarian torsion.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[advances_in_gastric_imaging|Advances In Gastric Imaging]] ([Advances In Gastric Imaging](../git/advances_in_gastric_imaging.md))
+- [[balloon_retrograde_transrenal_obliteration_of_gastric_varice|BALLOON RETROGRADE TRANSRENAL OBLITERATION OF GASTRIC VARICES]] ([BALLOON RETROGRADE TRANSRENAL OBLITERATION OF GASTRIC VARICES](../git/balloon_retrograde_transrenal_obliteration_of_gastric_varice.md))

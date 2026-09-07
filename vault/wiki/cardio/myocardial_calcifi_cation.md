@@ -174,3 +174,4 @@ the standard chestfilm
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[39_internal_derangements_of_joints|39 Internal Derangements Of Joints]] ([39 Internal Derangements Of Joints](../msk/39_internal_derangements_of_joints.md))

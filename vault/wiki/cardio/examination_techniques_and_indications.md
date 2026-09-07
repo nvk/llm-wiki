@@ -179,3 +179,6 @@ hilum, or for abnormalities of the pleura. Approximate
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[brain_herniations|BRAIN HERNIATIONS]] ([BRAIN HERNIATIONS](../neuro/brain_herniations.md))

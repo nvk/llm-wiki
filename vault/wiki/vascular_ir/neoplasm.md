@@ -310,3 +310,7 @@ patic portal vein. B, Portogram after place-
 ment of a second stent within the first. 
 The gradient was reduced to 3 mm Hg, 
 and the veloci
+
+## See Also
+- [[classification_of_spinal_tumours|Classification of Spinal Tumours]] ([Classification of Spinal Tumours](../spine/classification_of_spinal_tumours.md))
+- [[29_renal_masses|29 Renal Masses]] ([29 Renal Masses](../uro/29_renal_masses.md))

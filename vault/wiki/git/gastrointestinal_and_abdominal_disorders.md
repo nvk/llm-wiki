@@ -196,3 +196,6 @@ May be associated with:   Peutz-Jeghers syndrome
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[renal_failure|Renal Failure]] ([Renal Failure](../uro/renal_failure.md))

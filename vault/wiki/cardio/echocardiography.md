@@ -215,43 +215,43 @@ status: "verified_source"
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 260-264)
 
 ### Key Visuals & Figures (Grainger)
-![Echocardiography Figure](assets/grainger_echocardiography_p260_img1.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
-![Echocardiography Figure](assets/grainger_echocardiography_p260_img2.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
-![Echocardiography Figure](assets/grainger_echocardiography_p261_img1.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
-![Echocardiography Figure](assets/grainger_echocardiography_p261_img2.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
-![Echocardiography Figure](assets/grainger_echocardiography_p261_img3.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
-![Echocardiography Figure](assets/grainger_echocardiography_p261_img4.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
-![Echocardiography Figure](assets/grainger_echocardiography_p262_img1.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
-![Echocardiography Figure](assets/grainger_echocardiography_p262_img2.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
-![Echocardiography Figure](assets/grainger_echocardiography_p262_img3.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
-![Echocardiography Figure](assets/grainger_echocardiography_p262_img4.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
-![Echocardiography Figure](assets/grainger_echocardiography_p262_img5.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
-![Echocardiography Figure](assets/grainger_echocardiography_p263_img1.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
-![Echocardiography Figure](assets/grainger_echocardiography_p263_img2.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
-![Echocardiography Figure](assets/grainger_echocardiography_p263_img3.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
-![Echocardiography Figure](assets/grainger_echocardiography_p263_img4.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
-![Echocardiography Figure](assets/grainger_echocardiography_p263_img5.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
-![Echocardiography Figure](assets/grainger_echocardiography_p263_img6.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
-![Echocardiography Figure](assets/grainger_echocardiography_p264_img1.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
-![Echocardiography Figure](assets/grainger_echocardiography_p264_img2.jpeg)
+> **Key Imaging Finding:** Echocardiography Figure
 
 CHAPTER 12  Cardiac Anatomy and Imaging Techniques
 281
@@ -289,3 +289,6 @@ non-invasive assessment of blood flow. The Doppler techniques are
 particularly important for the assessment of valvular function. Since 
 the focus of this chapter is mainly on cardiac anatomy, functional and 
 Doppler aspects are
+
+## See Also
+- [[inferior_vena_cava_obstruction|INFERIOR VENA CAVA OBSTRUCTION]] ([INFERIOR VENA CAVA OBSTRUCTION](../vascular_ir/inferior_vena_cava_obstruction.md))

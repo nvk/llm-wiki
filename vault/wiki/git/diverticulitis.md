@@ -13,37 +13,37 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 120-124)
 
 ### Key Visuals & Figures (Grainger)
-![Diverticulitis Figure](assets/grainger_diverticulitis_p120_img1.jpeg)
+> **Key Imaging Finding:** Diverticulitis Figure
 
-![Diverticulitis Figure](assets/grainger_diverticulitis_p120_img2.jpeg)
+> **Key Imaging Finding:** Diverticulitis Figure
 
-![Diverticulitis Figure](assets/grainger_diverticulitis_p120_img3.jpeg)
+> **Key Imaging Finding:** Diverticulitis Figure
 
-![Diverticulitis Figure](assets/grainger_diverticulitis_p120_img4.jpeg)
+> **Key Imaging Finding:** Diverticulitis Figure
 
-![Diverticulitis Figure](assets/grainger_diverticulitis_p121_img1.jpeg)
+> **Key Imaging Finding:** Diverticulitis Figure
 
-![Diverticulitis Figure](assets/grainger_diverticulitis_p121_img2.jpeg)
+> **Key Imaging Finding:** Diverticulitis Figure
 
-![Diverticulitis Figure](assets/grainger_diverticulitis_p122_img1.jpeg)
+> **Key Imaging Finding:** Diverticulitis Figure
 
-![Diverticulitis Figure](assets/grainger_diverticulitis_p122_img2.jpeg)
+> **Key Imaging Finding:** Diverticulitis Figure
 
-![Diverticulitis Figure](assets/grainger_diverticulitis_p122_img3.jpeg)
+> **Key Imaging Finding:** Diverticulitis Figure
 
-![Diverticulitis Figure](assets/grainger_diverticulitis_p122_img4.jpeg)
+> **Key Imaging Finding:** Diverticulitis Figure
 
-![Diverticulitis Figure](assets/grainger_diverticulitis_p123_img1.jpeg)
+> **Key Imaging Finding:** Diverticulitis Figure
 
-![Diverticulitis Figure](assets/grainger_diverticulitis_p123_img2.jpeg)
+> **Key Imaging Finding:** Diverticulitis Figure
 
-![Diverticulitis Figure](assets/grainger_diverticulitis_p123_img3.jpeg)
+> **Key Imaging Finding:** Diverticulitis Figure
 
-![Diverticulitis Figure](assets/grainger_diverticulitis_p124_img1.jpeg)
+> **Key Imaging Finding:** Diverticulitis Figure
 
-![Diverticulitis Figure](assets/grainger_diverticulitis_p124_img2.jpeg)
+> **Key Imaging Finding:** Diverticulitis Figure
 
-![Diverticulitis Figure](assets/grainger_diverticulitis_p124_img3.jpeg)
+> **Key Imaging Finding:** Diverticulitis Figure
 
 582
 SECTION B  Abdominal Imaging
@@ -274,31 +274,31 @@ with a central area of fat density (Fig. 22.44).
 ## 2. Core Radiology High-Yield Notes (Pages 1-8)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p1_p2_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img17.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img18.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img20.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img22.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img23.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img24.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img29.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p5_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p5_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 86
 Pulmonary vascular disease:
@@ -1176,3 +1176,5 @@ Insufficiency
 Fracture
 71
 
+## See Also
+- [[fibrosing_mediastinitis|Fibrosing Mediastinitis]] ([Fibrosing Mediastinitis](../cardio/fibrosing_mediastinitis.md))

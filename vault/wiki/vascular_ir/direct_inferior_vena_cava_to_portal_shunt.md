@@ -158,3 +158,6 @@ botic occlusion of the
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[15_ischaemic_heart_disease|15 Ischaemic Heart Disease]] ([15 Ischaemic Heart Disease](../cardio/15_ischaemic_heart_disease.md))

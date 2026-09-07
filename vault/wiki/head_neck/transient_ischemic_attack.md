@@ -71,3 +71,6 @@ in 12% ← transient hypotension or emboli of platelets / cholesterol crystals, 
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[truncus_arteriosus|Truncus Arteriosus]] ([Truncus Arteriosus](../cardio/truncus_arteriosus.md))

@@ -162,3 +162,4 @@ a
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[clinical_signifi_cance|Clinical Signifi cance]] ([Clinical Signifi cance](../cardio/clinical_signifi_cance.md))

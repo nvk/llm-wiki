@@ -158,3 +158,7 @@ symptoms and as a correlate fo
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[coarctation|COARCTATION]] ([COARCTATION](../vascular_ir/coarctation.md))
+- [[segmental_arterial_mediolysis|SEGMENTAL ARTERIAL MEDIOLYSIS]] ([SEGMENTAL ARTERIAL MEDIOLYSIS](../vascular_ir/segmental_arterial_mediolysis.md))

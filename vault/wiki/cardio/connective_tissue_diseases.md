@@ -218,9 +218,9 @@ status: "verified_source"
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 217-217)
 
 ### Key Visuals & Figures (Grainger)
-![Connective Tissue Diseases Figure](assets/grainger_connective_tissue_di_p217_img1.jpeg)
+> **Key Imaging Finding:** Connective Tissue Diseases Figure
 
-![Connective Tissue Diseases Figure](assets/grainger_connective_tissue_di_p217_img2.jpeg)
+> **Key Imaging Finding:** Connective Tissue Diseases Figure
 
 CHAPTER 9  High-Resolution Computed Tomography of Interstitial and Occupational Lung Disease
 219
@@ -279,3 +279,6 @@ throughout the entire lungs with no zonal predilection (Fig. 9.17).
 Imaging features that help distinguish LAM from LCH include a more 
 diffuse distribution of cysts, typically with no sparing of the bases, 
 more regularly shaped spheri
+
+## See Also
+- [[foreword|Foreword]] ([Foreword](../vascular_ir/foreword.md))

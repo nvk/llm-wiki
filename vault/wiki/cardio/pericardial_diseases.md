@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 337-337)
 
 ### Key Visuals & Figures (Grainger)
-![Pericardial Diseases Figure](assets/grainger_pericardial_diseases_p337_img1.jpeg)
+> **Key Imaging Finding:** Pericardial Diseases Figure
 
-![Pericardial Diseases Figure](assets/grainger_pericardial_diseases_p337_img2.jpeg)
+> **Key Imaging Finding:** Pericardial Diseases Figure
 
 358
 SECTION A  The Chest and Cardiovascular System
@@ -95,33 +95,33 @@ posterolateral surface of the left ventricle, where it can be seen only in
 ## 2. Core Radiology High-Yield Notes (Pages 33-40)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p33_p33_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 32
 Vascular pedicle
@@ -437,29 +437,29 @@ is usually asymmetric.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 229-240)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p229_p229_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p230_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p231_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p232_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p233_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p234_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p235_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p236_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p237_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p238_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p239_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p229_p240_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 - Bladder Masses / Cancers -
 Work up for bladder lesions / masses in kids should start with an Ultrasound. A potentially 
@@ -1056,3 +1056,5 @@ Abuse — Some people abuse drugs, some just can't stand screaming kids, some su
 shortcomings. More on this later.
 241
 
+## See Also
+- [[bone_and_soft_tissue_disorders|Bone and Soft-Tissue Disorders]] ([Bone and Soft-Tissue Disorders](../msk/bone_and_soft_tissue_disorders.md))

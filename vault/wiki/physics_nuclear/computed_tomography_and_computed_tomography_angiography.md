@@ -159,3 +159,7 @@ Special nonmagnetic monitoring/
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[9_high-resolution_computed_tomography_of_interstitial_and_occupational_lung_disease|9 High-Resolution Computed Tomography Of Interstitial And Occupational Lung Disease]] ([9 High-Resolution Computed Tomography Of Interstitial And Occupational Lung Disease](../cardio/9_high-resolution_computed_tomography_of_interstitial_and_occupational_lung_disease.md))
+- [[high-resolution_computed_tomography_patterns_of_diffuse_lung_disease|High-Resolution Computed Tomography Patterns Of Diffuse Lung Disease]] ([High-Resolution Computed Tomography Patterns Of Diffuse Lung Disease](../cardio/high-resolution_computed_tomography_patterns_of_diffuse_lung_disease.md))

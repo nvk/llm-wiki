@@ -159,3 +159,6 @@ Because an angiogram is a projection image rather than a tomo
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[anatomy|Anatomy]] ([Anatomy](../uro/anatomy.md))

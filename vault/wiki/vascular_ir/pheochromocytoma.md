@@ -126,3 +126,6 @@ embolization (arrows) of the two large feeding arteries showing absent filling o
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[aluminum_exposure|Aluminum Exposure]] ([Aluminum Exposure](../cardio/aluminum_exposure.md))

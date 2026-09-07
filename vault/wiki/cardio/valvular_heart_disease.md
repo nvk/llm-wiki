@@ -172,15 +172,15 @@ status: "verified_source"
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 313-313)
 
 ### Key Visuals & Figures (Grainger)
-![Valvular Heart Disease Figure](assets/grainger_valvular_heart_disea_p313_img1.jpeg)
+> **Key Imaging Finding:** Valvular Heart Disease Figure
 
-![Valvular Heart Disease Figure](assets/grainger_valvular_heart_disea_p313_img2.jpeg)
+> **Key Imaging Finding:** Valvular Heart Disease Figure
 
-![Valvular Heart Disease Figure](assets/grainger_valvular_heart_disea_p313_img3.jpeg)
+> **Key Imaging Finding:** Valvular Heart Disease Figure
 
-![Valvular Heart Disease Figure](assets/grainger_valvular_heart_disea_p313_img4.jpeg)
+> **Key Imaging Finding:** Valvular Heart Disease Figure
 
-![Valvular Heart Disease Figure](assets/grainger_valvular_heart_disea_p313_img5.jpeg)
+> **Key Imaging Finding:** Valvular Heart Disease Figure
 
 334
 SECTION A  The Chest and Cardiovascular System
@@ -235,3 +235,6 @@ rheumatic heart disease is still prevalent.
 Among nonrheumatic diseases, mitral regurgitation is the most 
 common, while nonrheumatic MS is very rare. Many conditions can 
 result in significant mitral regurgitation, affecting the mitral le
+
+## See Also
+- [[the_hip|The Hip]] ([The Hip](../msk/the_hip.md))

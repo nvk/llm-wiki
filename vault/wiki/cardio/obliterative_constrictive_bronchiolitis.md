@@ -13,7 +13,7 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 142-142)
 
 ### Key Visuals & Figures (Grainger)
-![Obliterative (Constrictive) Bronchiolitis Figure](assets/grainger_obliterative_constri_p142_img1.jpeg)
+> **Key Imaging Finding:** Obliterative (Constrictive) Bronchiolitis Figure
 
 144
 SECTION A  The Chest and Cardiovascular System
@@ -121,27 +121,27 @@ and expiration gas trapping).
 ## 2. Core Radiology High-Yield Notes (Pages 17-24)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p17_p17_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p17_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p20_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 16
 Random nodules
@@ -443,29 +443,29 @@ Ranke complex: Ghon focus and lymphadenopathy.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 553-564)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p553_p553_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p554_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p555_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p556_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p557_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p558_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p559_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p560_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p561_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p562_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p563_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p564_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Gamesmanship - MIBG
 Brown Fat = Just like you can see it on FDG PET (around the shoulders / traps) you can also 
@@ -929,3 +929,5 @@ injection
 6-8 weeks needed for full recovery
 565
 
+## See Also
+- [[nephrocalcinosis|Nephrocalcinosis]] ([Nephrocalcinosis](../uro/nephrocalcinosis.md))

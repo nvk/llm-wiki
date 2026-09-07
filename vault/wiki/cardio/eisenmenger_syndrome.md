@@ -168,3 +168,4 @@ major bronchi, and to the
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[foreword|Foreword]] ([Foreword](../paeds/foreword.md))

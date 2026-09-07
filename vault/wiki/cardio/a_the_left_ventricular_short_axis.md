@@ -196,3 +196,4 @@ ing the true shape of the ventricle. A, area; D, diameter; L,
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[intraprocedural_care|INTRAPROCEDURAL CARE]] ([INTRAPROCEDURAL CARE](../vascular_ir/intraprocedural_care.md))

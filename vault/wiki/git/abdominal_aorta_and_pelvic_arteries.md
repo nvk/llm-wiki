@@ -174,3 +174,7 @@ L
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[obstruction_to_pulmonary_venous_draingage|OBSTRUCTION TO PULMONARY VENOUS DRAINGAGE]] ([OBSTRUCTION TO PULMONARY VENOUS DRAINGAGE](../cardio/obstruction_to_pulmonary_venous_draingage.md))
+- [[pulmonary_thromboembolism|Pulmonary Thromboembolism]] ([Pulmonary Thromboembolism](../cardio/pulmonary_thromboembolism.md))

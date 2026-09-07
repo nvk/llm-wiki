@@ -103,39 +103,39 @@ role for valvular assessment in thoracic aortic diseases (coexisting valvular
 ## 2. Core Radiology High-Yield Notes (Pages 49-56)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p49_p50_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p51_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img88.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img89.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p53_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img26.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img27.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img35.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img70.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img76.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img77.png)
+> **Key Imaging Finding:** Core Figure
 
 48
 Diffuse lung disease
@@ -430,29 +430,29 @@ with chronic ﬁbrosis
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 517-528)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p517_p517_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p517_p518_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p517_p519_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p517_p520_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p517_p521_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p517_p522_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p517_p523_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p517_p524_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p517_p525_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p517_p526_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p517_p527_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p517_p528_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Radioiodine Therapv - Continued
 How do you get the TSH up?
@@ -1010,3 +1010,5 @@ If there is delayed tracer flow into the peritoneum (> 10 minutes = delayed), th
 distal obstruction.
 529
 
+## See Also
+- [[epistaxis|EPISTAXIS]] ([EPISTAXIS](../vascular_ir/epistaxis.md))

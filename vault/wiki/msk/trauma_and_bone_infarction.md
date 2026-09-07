@@ -136,3 +136,7 @@ abuse. It is important to remember that not all ­children
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[indirect_pulmonary_complications_of_trauma|Indirect Pulmonary Complications Of Trauma]] ([Indirect Pulmonary Complications Of Trauma](../cardio/indirect_pulmonary_complications_of_trauma.md))
+- [[pulmonary_parenchymal_injury|Pulmonary Parenchymal Injury]] ([Pulmonary Parenchymal Injury](../cardio/pulmonary_parenchymal_injury.md))

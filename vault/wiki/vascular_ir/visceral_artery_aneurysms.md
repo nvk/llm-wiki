@@ -180,3 +180,6 @@ Rupture of these
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[renal_vein_varicesnutcracker_syndrome|RENAL VEIN VARICES/NUTCRACKER SYNDROME]] ([RENAL VEIN VARICES/NUTCRACKER SYNDROME](../uro/renal_vein_varicesnutcracker_syndrome.md))

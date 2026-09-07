@@ -189,3 +189,6 @@ the lung i
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[11_extremities|11. Extremities]] ([11. Extremities](../msk/11_extremities.md))

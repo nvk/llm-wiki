@@ -170,3 +170,4 @@ lobe arteries and veins (Figure 1-37). The width of th
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[hepatic_vein_obstructionbudd_chiari_syndrome|HEPATIC VEIN OBSTRUCTION/BUDD-CHIARI SYNDROME]] ([HEPATIC VEIN OBSTRUCTION/BUDD-CHIARI SYNDROME](../git/hepatic_vein_obstructionbudd_chiari_syndrome.md))

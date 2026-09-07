@@ -145,3 +145,7 @@ enlargement, BPE) and can cause urinary
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[neurovascular_diseases|NEUROVASCULAR DISEASES]] ([NEUROVASCULAR DISEASES](../paeds/neurovascular_diseases.md))
+- [[arteriovenous_malformations_and_fistulas|ARTERIOVENOUS MALFORMATIONS AND FISTULAS]] ([ARTERIOVENOUS MALFORMATIONS AND FISTULAS](../vascular_ir/arteriovenous_malformations_and_fistulas.md))

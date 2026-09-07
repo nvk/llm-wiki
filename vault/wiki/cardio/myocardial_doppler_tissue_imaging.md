@@ -172,3 +172,4 @@ increased echogenicity of blood o
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[taking_things_out_of_blood_vessels|TAKING THINGS OUT OF BLOOD VESSELS]] ([TAKING THINGS OUT OF BLOOD VESSELS](../vascular_ir/taking_things_out_of_blood_vessels.md))

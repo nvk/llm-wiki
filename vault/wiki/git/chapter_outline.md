@@ -98,19 +98,19 @@ and symptomatic duodenal narrowing. The diagnosis may be suspected
 ## 2. Core Radiology High-Yield Notes (Pages 65-72)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p65_p66_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 150
 Flow of peritoneal fluid
@@ -899,3 +899,5 @@ Rolled Laterally CC view,
 moves the cancer medially
 467
 
+## See Also
+- [[suprasternal_imaging_planes|Suprasternal Imaging Planes]] ([Suprasternal Imaging Planes](../cardio/suprasternal_imaging_planes.md))

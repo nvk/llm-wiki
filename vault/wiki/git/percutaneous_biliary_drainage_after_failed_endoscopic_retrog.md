@@ -158,3 +158,6 @@ down through
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pulmonary_circulation_interventional|Pulmonary Circulation]] ([Pulmonary Circulation](../cardio/pulmonary_circulation_interventional.md))

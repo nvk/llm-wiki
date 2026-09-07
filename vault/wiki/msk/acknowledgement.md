@@ -14,11 +14,11 @@ aliases: ["acknowledgement"]---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 117-117)
 
 ### Key Visuals & Figures (Grainger)
-![Acknowledgement Figure](assets/grainger_acknowledgement_p117_img1.jpeg)
+> **Key Imaging Finding:** Acknowledgement Figure
 
-![Acknowledgement Figure](assets/grainger_acknowledgement_p117_img2.jpeg)
+> **Key Imaging Finding:** Acknowledgement Figure
 
-![Acknowledgement Figure](assets/grainger_acknowledgement_p117_img3.jpeg)
+> **Key Imaging Finding:** Acknowledgement Figure
 
 CHAPTER 42  Soft-Tissue Tumours
 1085
@@ -64,53 +64,53 @@ malignant and benign musculoskeletal tumors: combined color and
 ## 2. Core Radiology High-Yield Notes (Pages 73-80)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p73_p73_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p73_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p73_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p74_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p74_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p74_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img8.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img21.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 417
 Knee Ligaments
@@ -423,29 +423,29 @@ blooming on gradient-echo sequences.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 481-492)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p481_p481_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p482_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p483_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p484_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p485_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p486_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p487_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p488_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p489_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p490_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p491_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p492_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Carcinoid Syndrome:
 Flushing, diarrhea, pain, right heart failure from serotonin manufactured by the carcinoid 
@@ -911,3 +911,5 @@ Tc (but bones will be real weak on that one). MIBG can have lacrimal activity , 
 bones.
 493
 
+## See Also
+- [[left_ventricular_systolic_function_from_two_dimensional_imag|Left Ventricular Systolic Function from Two-dimensional Images]] ([Left Ventricular Systolic Function from Two-dimensional Images](../cardio/left_ventricular_systolic_function_from_two_dimensional_imag.md))

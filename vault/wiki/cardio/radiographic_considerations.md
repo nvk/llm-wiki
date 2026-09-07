@@ -13,11 +13,11 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 161-162)
 
 ### Key Visuals & Figures (Grainger)
-![Radiographic Considerations Figure](assets/grainger_radiographic_conside_p162_img1.jpeg)
+> **Key Imaging Finding:** Radiographic Considerations Figure
 
-![Radiographic Considerations Figure](assets/grainger_radiographic_conside_p162_img2.jpeg)
+> **Key Imaging Finding:** Radiographic Considerations Figure
 
-![Radiographic Considerations Figure](assets/grainger_radiographic_conside_p162_img3.jpeg)
+> **Key Imaging Finding:** Radiographic Considerations Figure
 
 163
 Pulmonary Lobar Collapse: 
@@ -166,53 +166,53 @@ bronchogenic carcinoma obliterating the right main bronchus.
 ## 2. Core Radiology High-Yield Notes (Pages 73-80)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p73_p74_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p74_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img6.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img8.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img9.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 72
 • Low attenuation lymph nodes, while nonspecific, should raise concern for active 
@@ -1014,3 +1014,6 @@ Insufficiency
 Fracture
 71
 
+## See Also
+- [[12_physics_of_imaging|12. Physics of Imaging]] ([12. Physics of Imaging](../physics_nuclear/12_physics_of_imaging.md))
+- [[1_practical_physics|1. Practical Physics]] ([1. Practical Physics](../physics_nuclear/1_practical_physics.md))

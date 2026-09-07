@@ -167,3 +167,5 @@ with an unusual chestfilm (same patient as in Figure 3-2). A circumscribed, homo
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[cardiac_computed_tomography|Cardiac Computed Tomography]] ([Cardiac Computed Tomography](../cardio/cardiac_computed_tomography.md))
+- [[malignant_cardiac_tumours|Malignant Cardiac Tumours]] ([Malignant Cardiac Tumours](../cardio/malignant_cardiac_tumours.md))

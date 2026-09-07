@@ -139,3 +139,7 @@ A
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[congenital_aortic_abnormalities|Congenital Aortic Abnormalities]] ([Congenital Aortic Abnormalities](../cardio/congenital_aortic_abnormalities.md))
+- [[pulmonary_thomboembolic_disease|Pulmonary Thomboembolic Disease]] ([Pulmonary Thomboembolic Disease](../cardio/pulmonary_thomboembolic_disease.md))

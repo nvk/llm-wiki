@@ -13,15 +13,15 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 396-397)
 
 ### Key Visuals & Figures (Grainger)
-![Imaging of Complications Related to Ischaemic Heart Disease Figure](assets/grainger_imaging_of_complicat_p396_img1.jpeg)
+> **Key Imaging Finding:** Imaging of Complications Related to Ischaemic Heart Disease Figure
 
-![Imaging of Complications Related to Ischaemic Heart Disease Figure](assets/grainger_imaging_of_complicat_p396_img2.jpeg)
+> **Key Imaging Finding:** Imaging of Complications Related to Ischaemic Heart Disease Figure
 
-![Imaging of Complications Related to Ischaemic Heart Disease Figure](assets/grainger_imaging_of_complicat_p397_img1.jpeg)
+> **Key Imaging Finding:** Imaging of Complications Related to Ischaemic Heart Disease Figure
 
-![Imaging of Complications Related to Ischaemic Heart Disease Figure](assets/grainger_imaging_of_complicat_p397_img2.jpeg)
+> **Key Imaging Finding:** Imaging of Complications Related to Ischaemic Heart Disease Figure
 
-![Imaging of Complications Related to Ischaemic Heart Disease Figure](assets/grainger_imaging_of_complicat_p397_img3.jpeg)
+> **Key Imaging Finding:** Imaging of Complications Related to Ischaemic Heart Disease Figure
 
 CHAPTER 15  Ischaemic Heart Disease
 393
@@ -194,33 +194,33 @@ effusion is left-sided located (maximal width 38 mm), explaining the chest rad
 ## 2. Core Radiology High-Yield Notes (Pages 81-88)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p81_p81_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p83_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p84_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p84_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p88_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 80
 Panacinar (panlobular) emphysema
@@ -495,29 +495,29 @@ Mesentery and peritoneum 149
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 433-444)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p433_p433_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p434_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p435_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p436_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p437_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p438_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p439_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p440_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p441_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p442_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p443_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p444_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Benign prostatic hyperplasia (BPH): Obviously this is super common, and makes 
 old men pee a lot. Volume of 30cc is one definition. Most commonly involves the 
@@ -1049,3 +1049,5 @@ Decidua Capsularis
 Double Decidual Sac Sign
 445
 
+## See Also
+- [[parkinson_disease_and_related_disorders|Parkinson Disease And Related Disorders]] ([Parkinson Disease And Related Disorders](../neuro/parkinson_disease_and_related_disorders.md))

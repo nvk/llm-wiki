@@ -180,3 +180,6 @@ ifi
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[kyphoplasty|KYPHOPLASTY]] ([KYPHOPLASTY](../vascular_ir/kyphoplasty.md))

@@ -181,3 +181,6 @@ Infectious ca
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[diverticulitis|Diverticulitis]] ([Diverticulitis](../git/diverticulitis.md))

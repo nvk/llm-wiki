@@ -169,3 +169,7 @@ to injury. Patients with cardiac injuries may have an ­abn
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[trauma|Trauma]] ([Trauma](../git/trauma.md))
+- [[45_appendicular_and_pelvic_trauma|45 Appendicular And Pelvic Trauma]] ([45 Appendicular And Pelvic Trauma](../msk/45_appendicular_and_pelvic_trauma.md))

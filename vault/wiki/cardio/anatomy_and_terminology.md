@@ -177,3 +177,6 @@ right side are more common because o
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[penile_angiography|PENILE ANGIOGRAPHY]] ([PENILE ANGIOGRAPHY](../uro/penile_angiography.md))

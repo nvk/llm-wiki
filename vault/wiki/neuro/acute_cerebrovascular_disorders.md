@@ -173,3 +173,7 @@ relate with the initial National Institutes of Health str
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[lower_extremity_arteries|Lower-Extremity Arteries]] ([Lower-Extremity Arteries](../msk/lower_extremity_arteries.md))
+- [[visceral_arteries|Visceral Arteries]] ([Visceral Arteries](../vascular_ir/visceral_arteries.md))

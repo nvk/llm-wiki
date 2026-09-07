@@ -14,9 +14,9 @@ aliases: ["anatomy"]---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 123-124)
 
 ### Key Visuals & Figures (Grainger)
-![Anatomy Figure](assets/grainger_anatomy_p124_img1.jpeg)
+> **Key Imaging Finding:** Anatomy Figure
 
-![Anatomy Figure](assets/grainger_anatomy_p124_img2.jpeg)
+> **Key Imaging Finding:** Anatomy Figure
 
 844
 Prostate
@@ -192,31 +192,31 @@ ranging from 2 to 10: for example, Gleason 3 + 4 = 7.
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p9_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p9_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 164
 Malignant (or potentially malignant) adrenal masses
@@ -1057,3 +1057,5 @@ Associations; Hydrocephalus (90%), Additional CNS malformations (~ 40%)
 (agenesis of the corpus callosum, encephaloceles, heterotopia, polymicrogyria, etc...).
 155
 
+## See Also
+- [[cardiac_angiography|Cardiac Angiography]] ([Cardiac Angiography](../cardio/cardiac_angiography.md))

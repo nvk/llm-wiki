@@ -147,3 +147,7 @@ Microwave ablation (MWA) c
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[catheter_course|Catheter Course]] ([Catheter Course](../cardio/catheter_course.md))
+- [[neck_biopsy|NECK BIOPSY]] ([NECK BIOPSY](../head_neck/neck_biopsy.md))

@@ -14,177 +14,177 @@ aliases: ["further_reading"]---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 214-254)
 
 ### Key Visuals & Figures (Grainger)
-![Further Reading Figure](assets/grainger_further_reading_p214_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p214_img2.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p214_img3.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p218_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p218_img2.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p218_img3.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p218_img4.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p219_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p220_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p221_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p222_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p223_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p224_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p224_img2.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p224_img3.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p224_img4.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p224_img5.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p224_img6.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p224_img7.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p224_img8.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p225_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p225_img2.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p226_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p227_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p227_img2.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p228_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p229_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p230_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p231_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p231_img2.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p231_img3.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p231_img4.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p231_img5.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p231_img6.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p232_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p232_img2.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p232_img3.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p232_img4.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p232_img5.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p233_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p234_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p235_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p236_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p237_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p238_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p238_img2.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p238_img3.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p238_img4.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p238_img5.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p239_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p240_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p240_img2.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p240_img3.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p240_img4.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p240_img5.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p240_img6.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p241_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p242_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p242_img2.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p242_img3.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p242_img4.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p242_img5.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p242_img6.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p243_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p244_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p245_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p246_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p246_img2.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p246_img3.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p246_img4.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p246_img5.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p246_img6.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p247_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p248_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p248_img2.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p248_img3.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p248_img4.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p248_img5.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p248_img6.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p249_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p249_img2.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p250_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p251_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p252_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p252_img2.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
-![Further Reading Figure](assets/grainger_further_reading_p253_img1.jpeg)
+> **Key Imaging Finding:** Further Reading Figure
 
 1182
 SECTION C  The Musculoskeletal System
@@ -2485,67 +2485,67 @@ Zimmerli, W., 2010. Clinical practice. Vertebral osteomyelitis. N. Engl. J. Med.
 ## 2. Core Radiology High-Yield Notes (Pages 65-72)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p65_p65_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p65_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img40.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img41.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img42.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img45.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img48.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img51.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img82.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img83.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img84.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img92.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img158.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img4.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img3.png)
+> **Key Imaging Finding:** Core Figure
 
 409
 Ankle fractures
@@ -3435,3 +3435,17 @@ Lateral
 Displacement
 263
 
+## See Also
+- [[acute_epiglottitis|Acute Epiglottitis]] ([Acute Epiglottitis](../head_neck/acute_epiglottitis.md))
+- [[branchial_cleft_anomalies|Branchial Cleft Anomalies]] ([Branchial Cleft Anomalies](../head_neck/branchial_cleft_anomalies.md))
+- [[glottic_region|Glottic Region]] ([Glottic Region](../head_neck/glottic_region.md))
+- [[larynx|Larynx]] ([Larynx](../head_neck/larynx.md))
+- [[maxillofacial_fractures|Maxillofacial Fractures]] ([Maxillofacial Fractures](../head_neck/maxillofacial_fractures.md))
+- [[orbital_blowout_fractures|Orbital Blowout Fractures]] ([Orbital Blowout Fractures](../head_neck/orbital_blowout_fractures.md))
+- [[parathyroid_disorders|Parathyroid Disorders]] ([Parathyroid Disorders](../head_neck/parathyroid_disorders.md))
+- [[pharynx_and_esophagus|Pharynx and Esophagus]] ([Pharynx and Esophagus](../head_neck/pharynx_and_esophagus.md))
+- [[subglottic_region|Subglottic Region]] ([Subglottic Region](../head_neck/subglottic_region.md))
+- [[supraglottic_region|Supraglottic Region]] ([Supraglottic Region](../head_neck/supraglottic_region.md))
+- [[53_current_status_of_imaging_of_the_brain_and_anatomical_features|53 Current Status Of Imaging Of The Brain And Anatomical Features]] ([53 Current Status Of Imaging Of The Brain And Anatomical Features](../neuro/53_current_status_of_imaging_of_the_brain_and_anatomical_features.md))
+- [[brain_anatomy|Brain Anatomy]] ([Brain Anatomy](../neuro/brain_anatomy.md))
+- [[section_e_neuroimaging|Section E Neuroimaging]] ([Section E Neuroimaging](../neuro/section_e_neuroimaging.md))

@@ -163,3 +163,6 @@ tenuation
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[foreword|Foreword]] ([Foreword](../cardio/foreword.md))

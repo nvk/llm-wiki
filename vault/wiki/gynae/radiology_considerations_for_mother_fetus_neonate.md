@@ -178,3 +178,8 @@ N.B.:   10% of patients have PE angiographically
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[acute_epiglottitis|Acute Epiglottitis]] ([Acute Epiglottitis](../head_neck/acute_epiglottitis.md))
+- [[orbital_blowout_fractures|Orbital Blowout Fractures]] ([Orbital Blowout Fractures](../head_neck/orbital_blowout_fractures.md))
+- [[parathyroid_disorders|Parathyroid Disorders]] ([Parathyroid Disorders](../head_neck/parathyroid_disorders.md))

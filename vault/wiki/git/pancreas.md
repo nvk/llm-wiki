@@ -157,3 +157,6 @@ pancreas and spleen in the mesogastrium is postulated as t
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[12_cardiac_anatomy_and_imaging_techniques|12 Cardiac Anatomy And Imaging Techniques]] ([12 Cardiac Anatomy And Imaging Techniques](../cardio/12_cardiac_anatomy_and_imaging_techniques.md))

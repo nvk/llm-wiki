@@ -163,3 +163,6 @@ rather than other abdominal organs, as the source of s
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[common_cyanotic_gongenital_heart_defects|COMMON CYANOTIC GONGENITAL HEART DEFECTS]] ([COMMON CYANOTIC GONGENITAL HEART DEFECTS](../cardio/common_cyanotic_gongenital_heart_defects.md))

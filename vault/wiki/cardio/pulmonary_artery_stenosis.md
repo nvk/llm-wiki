@@ -192,3 +192,7 @@ approximately 80% (see Fig. 8-21). Tiny AVMs that may have
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[vascular_complications_intermediate_to_late|Vascular Complications Intermediate To Late]] ([Vascular Complications Intermediate To Late](../uro/vascular_complications_intermediate_to_late.md))
+- [[thrombosis|THROMBOSIS]] ([THROMBOSIS](../vascular_ir/thrombosis.md))

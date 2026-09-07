@@ -209,3 +209,6 @@ Paracicatricial (around
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[role_of_mri_in_the_acute_abdomen|Role Of Mri In The Acute Abdomen]] ([Role Of Mri In The Acute Abdomen](../git/role_of_mri_in_the_acute_abdomen.md))

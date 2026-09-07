@@ -13,21 +13,21 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 107-109)
 
 ### Key Visuals & Figures (Grainger)
-![Radiological Investigation Figure](assets/grainger_radiological_investi_p107_img1.jpeg)
+> **Key Imaging Finding:** Radiological Investigation Figure
 
-![Radiological Investigation Figure](assets/grainger_radiological_investi_p107_img2.jpeg)
+> **Key Imaging Finding:** Radiological Investigation Figure
 
-![Radiological Investigation Figure](assets/grainger_radiological_investi_p107_img3.jpeg)
+> **Key Imaging Finding:** Radiological Investigation Figure
 
-![Radiological Investigation Figure](assets/grainger_radiological_investi_p108_img1.jpeg)
+> **Key Imaging Finding:** Radiological Investigation Figure
 
-![Radiological Investigation Figure](assets/grainger_radiological_investi_p108_img2.jpeg)
+> **Key Imaging Finding:** Radiological Investigation Figure
 
-![Radiological Investigation Figure](assets/grainger_radiological_investi_p109_img1.jpeg)
+> **Key Imaging Finding:** Radiological Investigation Figure
 
-![Radiological Investigation Figure](assets/grainger_radiological_investi_p109_img2.jpeg)
+> **Key Imaging Finding:** Radiological Investigation Figure
 
-![Radiological Investigation Figure](assets/grainger_radiological_investi_p109_img3.jpeg)
+> **Key Imaging Finding:** Radiological Investigation Figure
 
 CHAPTER 22  The Large Bowel
 569
@@ -236,27 +236,27 @@ echogenic.
 ## 2. Core Radiology High-Yield Notes (Pages 57-64)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p57_p58_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img83.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img94.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 142
 Scleroderma
@@ -969,3 +969,7 @@ NSAIDS
 Prednisone (steroids)
 11
 
+## See Also
+- [[anatomy_and_physiology_of_the_female_reproductive_system|Anatomy and Physiology of the Female Reproductive System]] ([Anatomy and Physiology of the Female Reproductive System](../gynae/anatomy_and_physiology_of_the_female_reproductive_system.md))
+- [[ovarian_torsion|Ovarian Torsion]] ([Ovarian Torsion](../gynae/ovarian_torsion.md))
+- [[retained_fetal_lung_liquid_transient_tachypnea_of_the_newbor|Retained Fetal Lung Liquid (Transient Tachypnea of the Newborn)]] ([Retained Fetal Lung Liquid (Transient Tachypnea of the Newborn)](../gynae/retained_fetal_lung_liquid_transient_tachypnea_of_the_newbor.md))

@@ -132,3 +132,7 @@ Patrick D. Barnes
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[thoracic_cage_and_heart_disease|Thoracic Cage and Heart Disease]] ([Thoracic Cage and Heart Disease](../cardio/thoracic_cage_and_heart_disease.md))
+- [[thoracic_radiology_the_requisites_second_edition|Thoracic Radiology: The Requisites, Second Edition]] ([Thoracic Radiology: The Requisites, Second Edition](../cardio/thoracic_radiology_the_requisites_second_edition.md))

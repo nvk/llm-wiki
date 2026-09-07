@@ -126,3 +126,6 @@ before steroid injection.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[coal_workers_pneumoconiosis|Coal Worker’S Pneumoconiosis]] ([Coal Worker’S Pneumoconiosis](../cardio/coal_workers_pneumoconiosis.md))

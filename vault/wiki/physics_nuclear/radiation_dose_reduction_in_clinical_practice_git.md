@@ -14,27 +14,27 @@ aliases: ["radiation_dose_reduction_in_clinical_practice"]---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 18-19)
 
 ### Key Visuals & Figures (Grainger)
-![Radiation Dose Reduction in Clinical Practice Figure](assets/grainger_radiation_dose_reduc_p18_img1.jpeg)
+> **Key Imaging Finding:** Radiation Dose Reduction in Clinical Practice Figure
 
-![Radiation Dose Reduction in Clinical Practice Figure](assets/grainger_radiation_dose_reduc_p18_img2.jpeg)
+> **Key Imaging Finding:** Radiation Dose Reduction in Clinical Practice Figure
 
-![Radiation Dose Reduction in Clinical Practice Figure](assets/grainger_radiation_dose_reduc_p18_img3.jpeg)
+> **Key Imaging Finding:** Radiation Dose Reduction in Clinical Practice Figure
 
-![Radiation Dose Reduction in Clinical Practice Figure](assets/grainger_radiation_dose_reduc_p18_img4.jpeg)
+> **Key Imaging Finding:** Radiation Dose Reduction in Clinical Practice Figure
 
-![Radiation Dose Reduction in Clinical Practice Figure](assets/grainger_radiation_dose_reduc_p18_img5.jpeg)
+> **Key Imaging Finding:** Radiation Dose Reduction in Clinical Practice Figure
 
-![Radiation Dose Reduction in Clinical Practice Figure](assets/grainger_radiation_dose_reduc_p18_img6.jpeg)
+> **Key Imaging Finding:** Radiation Dose Reduction in Clinical Practice Figure
 
-![Radiation Dose Reduction in Clinical Practice Figure](assets/grainger_radiation_dose_reduc_p18_img7.jpeg)
+> **Key Imaging Finding:** Radiation Dose Reduction in Clinical Practice Figure
 
-![Radiation Dose Reduction in Clinical Practice Figure](assets/grainger_radiation_dose_reduc_p18_img8.jpeg)
+> **Key Imaging Finding:** Radiation Dose Reduction in Clinical Practice Figure
 
-![Radiation Dose Reduction in Clinical Practice Figure](assets/grainger_radiation_dose_reduc_p18_img9.jpeg)
+> **Key Imaging Finding:** Radiation Dose Reduction in Clinical Practice Figure
 
-![Radiation Dose Reduction in Clinical Practice Figure](assets/grainger_radiation_dose_reduc_p18_img10.jpeg)
+> **Key Imaging Finding:** Radiation Dose Reduction in Clinical Practice Figure
 
-![Radiation Dose Reduction in Clinical Practice Figure](assets/grainger_radiation_dose_reduc_p18_img11.jpeg)
+> **Key Imaging Finding:** Radiation Dose Reduction in Clinical Practice Figure
 
 480
 SECTION B  Abdominal Imaging
@@ -169,39 +169,39 @@ in the setting of acute abdominal pain. Emerg. Radiol. 21 (6), 615–624.
 ## 2. Core Radiology High-Yield Notes (Pages 25-32)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p25_p26_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p31_img4.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 110
 Intraductal papillary mucinous neoplasm (IPMN)
@@ -577,29 +577,29 @@ heterogeneous early enhancement and relatively homogeneous delayed enhancement.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 205-216)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p205_p205_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p206_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p207_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p208_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p209_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p210_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p211_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p212_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p213_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p214_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p215_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p216_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Just like the upper GI and “bubble” plain film in sections 1 & 2, the lower obstruction can 
 be approached with a pattern-based method. You basically have 4 choices; Normal,
@@ -1075,3 +1075,17 @@ Right Isomerism
 Left Isomerism
 217
 
+## See Also
+- [[congenital_and_developmental_abnormalities|CONGENITAL AND DEVELOPMENTAL ABNORMALITIES]] ([CONGENITAL AND DEVELOPMENTAL ABNORMALITIES](../paeds/congenital_and_developmental_abnormalities.md))
+- [[hereditary_angioneurotic_edema|Hereditary Angioneurotic Edema]] ([Hereditary Angioneurotic Edema](../paeds/hereditary_angioneurotic_edema.md))
+- [[imaging_techniques|IMAGING TECHNIQUES]] ([IMAGING TECHNIQUES](../paeds/imaging_techniques.md))
+- [[malrotation|Malrotation]] ([Malrotation](../paeds/malrotation.md))
+- [[midgut_volvulus|Midgut Volvulus]] ([Midgut Volvulus](../paeds/midgut_volvulus.md))
+- [[miscellaneous_conditions|MISCELLANEOUS CONDITIONS]] ([MISCELLANEOUS CONDITIONS](../paeds/miscellaneous_conditions.md))
+- [[named_pediatric_cardiac_surgical_procedures|“Named” Pediatric Cardiac Surgical Procedures]] ([“Named” Pediatric Cardiac Surgical Procedures](../paeds/named_pediatric_cardiac_surgical_procedures.md))
+- [[necrotizing_enterocolitis|Necrotizing Enterocolitis]] ([Necrotizing Enterocolitis](../paeds/necrotizing_enterocolitis.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../paeds/suggested_readings.md))
+- [[trauma|TRAUMA]] ([TRAUMA](../paeds/trauma.md))
+- [[carotid_and_vertebral_arteries|Carotid and Vertebral Arteries]] ([Carotid and Vertebral Arteries](../spine/carotid_and_vertebral_arteries.md))
+- [[traumatic_and_nontraumatic_spine_emergencies|Traumatic and Nontraumatic Spine Emergencies]] ([Traumatic and Nontraumatic Spine Emergencies](../spine/traumatic_and_nontraumatic_spine_emergencies.md))
+- [[traumatic_spine_injury|TRAUMATIC SPINE INJURY]] ([TRAUMATIC SPINE INJURY](../spine/traumatic_spine_injury.md))

@@ -192,3 +192,6 @@ collaterals, and vas
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pleural_abnormalities|Pleural Abnormalities]] ([Pleural Abnormalities](../cardio/pleural_abnormalities.md))

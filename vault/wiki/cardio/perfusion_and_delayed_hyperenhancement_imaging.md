@@ -148,3 +148,5 @@ cardium appears as a pencil-thin line of low signal int
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[emergency_nuclear_radiology|Emergency Nuclear Radiology]] ([Emergency Nuclear Radiology](../emergency/emergency_nuclear_radiology.md))
+- [[magnetic_resonance_angiography|Magnetic Resonance Angiography]] ([Magnetic Resonance Angiography](../physics_nuclear/magnetic_resonance_angiography.md))

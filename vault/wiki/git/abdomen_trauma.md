@@ -170,3 +170,6 @@ scout image, multiple CT studies can be planned, including dedicated CT angiogra
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[cardiac_injury|Cardiac Injury]] ([Cardiac Injury](../cardio/cardiac_injury.md))

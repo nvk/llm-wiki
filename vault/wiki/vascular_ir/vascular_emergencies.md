@@ -169,3 +169,6 @@ V
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pulmonary_thromboembolism|Pulmonary Thromboembolism]] ([Pulmonary Thromboembolism](../cardio/pulmonary_thromboembolism.md))

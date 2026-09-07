@@ -180,3 +180,5 @@ to the left pulmonary artery in this patient with trun
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[anatomy_and_function_of_lung|Anatomy and Function of Lung]] ([Anatomy and Function of Lung](../cardio/anatomy_and_function_of_lung.md))
+- [[aortic_stenosis|Aortic Stenosis]] ([Aortic Stenosis](../cardio/aortic_stenosis.md))

@@ -13,13 +13,13 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 397-398)
 
 ### Key Visuals & Figures (Grainger)
-![Differential Diagnosis in Ischaemic Heart Disease Figure](assets/grainger_differential_diagnos_p397_img1.jpeg)
+> **Key Imaging Finding:** Differential Diagnosis in Ischaemic Heart Disease Figure
 
-![Differential Diagnosis in Ischaemic Heart Disease Figure](assets/grainger_differential_diagnos_p397_img2.jpeg)
+> **Key Imaging Finding:** Differential Diagnosis in Ischaemic Heart Disease Figure
 
-![Differential Diagnosis in Ischaemic Heart Disease Figure](assets/grainger_differential_diagnos_p397_img3.jpeg)
+> **Key Imaging Finding:** Differential Diagnosis in Ischaemic Heart Disease Figure
 
-![Differential Diagnosis in Ischaemic Heart Disease Figure](assets/grainger_differential_diagnos_p398_img1.jpeg)
+> **Key Imaging Finding:** Differential Diagnosis in Ischaemic Heart Disease Figure
 
 394
 SECTION A  The Chest and Cardiovascular System
@@ -168,27 +168,27 @@ shows lymphohistiocytic infiltrate.
 ## 2. Core Radiology High-Yield Notes (Pages 17-24)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p17_p17_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p17_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p20_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 16
 Random nodules
@@ -490,29 +490,29 @@ Ranke complex: Ghon focus and lymphadenopathy.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 469-480)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p469_p469_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p470_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p471_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p472_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p473_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p474_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p475_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p476_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p477_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p478_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p479_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p480_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 fROMETHEUS 
 Liomhart, M.1>.
@@ -907,3 +907,5 @@ medullary CA) BUT it has a beef with calcium, so instead of parathyroid, it deci
 B a Gangster (gangster for Ganglioneuroma).
 481
 
+## See Also
+- [[nervous_system_disorders|Nervous System Disorders]] ([Nervous System Disorders](../neuro/nervous_system_disorders.md))

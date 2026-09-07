@@ -14,15 +14,15 @@ aliases: ["ultrasound"]---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 9-10)
 
 ### Key Visuals & Figures (Grainger)
-![Ultrasound Figure](assets/grainger_ultrasound_p9_img1.jpeg)
+> **Key Imaging Finding:** Ultrasound Figure
 
-![Ultrasound Figure](assets/grainger_ultrasound_p9_img2.jpeg)
+> **Key Imaging Finding:** Ultrasound Figure
 
-![Ultrasound Figure](assets/grainger_ultrasound_p10_img1.jpeg)
+> **Key Imaging Finding:** Ultrasound Figure
 
-![Ultrasound Figure](assets/grainger_ultrasound_p10_img2.jpeg)
+> **Key Imaging Finding:** Ultrasound Figure
 
-![Ultrasound Figure](assets/grainger_ultrasound_p10_img3.jpeg)
+> **Key Imaging Finding:** Ultrasound Figure
 
 CHAPTER 1  Current Status of Thoracic Imaging
 11
@@ -107,7 +107,6 @@ abnormalities, and guide interventional thoracic procedures, are increasingly
 valuable and very useful for the critically ill patient.
 •	 Endoscopic ultrasound now forms a cornerstone of staging investigations 
 for lung cancer.
-https://t.me/afkebooks
 
 
 12
@@ -185,44 +184,43 @@ Endobronchial ultrasound (EBUS) allows both clear visualisation and
 fine-needle aspiration of such nodes (B). (EBUS image courtesy Dr 
 Hardeep Kalsi, Specialist Registrar, and Dr Neal Navani, Consultant 
 Respiratory Physician, University College London Hospitals, UK.)
-https://afkebooks.com
 
 ## 2. Core Radiology High-Yield Notes (Pages 41-48)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p42_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img26.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img37.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img4.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img6.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 40
 Pleural effusion
@@ -585,29 +583,29 @@ distinguish between a pulmonary artery and vein by tracing the vessel back to th
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 61-72)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p61_p61_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p62_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p63_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p64_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p65_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p66_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p67_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p68_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p69_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p70_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p71_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p61_p72_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Septic Emboli
 There are a variety of ways you can 
@@ -1439,3 +1437,7 @@ Gallium cold. As such (and because it’s not 1970) PET is usually used for stag
 Gallium.
 73
 
+## See Also
+- [[conclusion|CONCLUSION]] ([CONCLUSION](../emergency/conclusion.md))
+- [[infections|INFECTIONS]] ([INFECTIONS](../emergency/infections.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../emergency/suggested_readings.md))

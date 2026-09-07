@@ -176,3 +176,4 @@ stolic dysfunction, and mitral regurgitation. It is associated
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[21_multiple_gestations|21. Multiple Gestations]] ([21. Multiple Gestations](../gynae/21_multiple_gestations.md))

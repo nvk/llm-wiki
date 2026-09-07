@@ -162,3 +162,6 @@ priate position, the wire is deployed through the nee
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[6_large_airway_disease_and_chronic_airflow_obstruction|6 Large Airway Disease And Chronic Airflow Obstruction]] ([6 Large Airway Disease And Chronic Airflow Obstruction](../cardio/6_large_airway_disease_and_chronic_airflow_obstruction.md))

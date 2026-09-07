@@ -13,29 +13,29 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 23-25)
 
 ### Key Visuals & Figures (Grainger)
-![The Hila Figure](assets/grainger_the_hila_p23_img1.jpeg)
+> **Key Imaging Finding:** The Hila Figure
 
-![The Hila Figure](assets/grainger_the_hila_p23_img2.jpeg)
+> **Key Imaging Finding:** The Hila Figure
 
-![The Hila Figure](assets/grainger_the_hila_p23_img3.jpeg)
+> **Key Imaging Finding:** The Hila Figure
 
-![The Hila Figure](assets/grainger_the_hila_p24_img1.jpeg)
+> **Key Imaging Finding:** The Hila Figure
 
-![The Hila Figure](assets/grainger_the_hila_p24_img2.jpeg)
+> **Key Imaging Finding:** The Hila Figure
 
-![The Hila Figure](assets/grainger_the_hila_p24_img3.jpeg)
+> **Key Imaging Finding:** The Hila Figure
 
-![The Hila Figure](assets/grainger_the_hila_p24_img4.jpeg)
+> **Key Imaging Finding:** The Hila Figure
 
-![The Hila Figure](assets/grainger_the_hila_p24_img5.jpeg)
+> **Key Imaging Finding:** The Hila Figure
 
-![The Hila Figure](assets/grainger_the_hila_p24_img6.jpeg)
+> **Key Imaging Finding:** The Hila Figure
 
-![The Hila Figure](assets/grainger_the_hila_p24_img7.jpeg)
+> **Key Imaging Finding:** The Hila Figure
 
-![The Hila Figure](assets/grainger_the_hila_p24_img8.jpeg)
+> **Key Imaging Finding:** The Hila Figure
 
-![The Hila Figure](assets/grainger_the_hila_p25_img1.jpeg)
+> **Key Imaging Finding:** The Hila Figure
 
 CHAPTER 2  The Normal Chest
 25
@@ -80,7 +80,6 @@ on modern multidetector CT. The major points to remember when
 viewing the hila (Fig. 2.15) are the following:
 1.	 The transverse diameter of the lower lobe arteries before their 
 segmental divisions can be determined with reasonable accuracy: 
-https://t.me/afkebooks
 
 
 26
@@ -145,7 +144,6 @@ chus intermedius; LA, left atrium; LMB,
 left main bronchus; LPA, left pulmonary 
 artery; RMB, right main bronchus; RPA, 
 Right pulmonary artery; T, trachea. 
-https://afkebooks.com
 
 
 CHAPTER 2  The Normal Chest
@@ -250,60 +248,59 @@ Both inferior pulmonary veins travel obliquely anteriorly and
 superiorly, inferior to the branches of the left lower lobe artery, to 
 Fig. 2.13  Lateral view of the hila showing normal thickness of the 
 posterior wall of the bronchus intermedius (arrows). 
-https://t.me/afkebooks
 
 ## 2. Core Radiology High-Yield Notes (Pages 25-32)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p25_p25_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p25_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p25_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p26_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p26_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p26_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p26_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img6.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p31_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p31_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 24
 • Adenopathy is common in primary TB, typically featuring central low-attenuation and 
@@ -621,29 +618,29 @@ by rapid reexpansion of a lung in a state of collapse for more than three days.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 169-180)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p169_p169_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p170_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p171_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p172_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p173_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p174_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p175_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p176_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p177_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p178_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p179_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p169_p180_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Location 3; Nasolacrimal Apparatus
 Dacryocystocele
@@ -1187,3 +1184,5 @@ PIE = First week of life
 CLD = After 3 to 4 weeks' postnatal age
 181
 
+## See Also
+- [[19_the_oesophagus|19 The Oesophagus]] ([19 The Oesophagus](../git/19_the_oesophagus.md))

@@ -114,3 +114,6 @@ Diffuse consolidation resembling pulmonary edema
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[other_common_causes_of_colitis|Other Common Causes Of Colitis]] ([Other Common Causes Of Colitis](../git/other_common_causes_of_colitis.md))

@@ -153,3 +153,7 @@ The periosteum can be anesthetized with an additional 1 mL
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[b_for_a_patent_ductus_arteriosus|B, For a patent ductus arteriosus.]] ([B, For a patent ductus arteriosus.](../cardio/b_for_a_patent_ductus_arteriosus.md))
+- [[transthoracic_hilar_and_mediastinal_biopsy|Transthoracic Hilar and Mediastinal Biopsy]] ([Transthoracic Hilar and Mediastinal Biopsy](../cardio/transthoracic_hilar_and_mediastinal_biopsy.md))

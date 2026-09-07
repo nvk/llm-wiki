@@ -13,19 +13,19 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 85-85)
 
 ### Key Visuals & Figures (Grainger)
-![Vascular Complications: Intermediate to Late Figure](assets/grainger_vascular_complicatio_p85_img1.jpeg)
+> **Key Imaging Finding:** Vascular Complications: Intermediate to Late Figure
 
-![Vascular Complications: Intermediate to Late Figure](assets/grainger_vascular_complicatio_p85_img2.jpeg)
+> **Key Imaging Finding:** Vascular Complications: Intermediate to Late Figure
 
-![Vascular Complications: Intermediate to Late Figure](assets/grainger_vascular_complicatio_p85_img3.jpeg)
+> **Key Imaging Finding:** Vascular Complications: Intermediate to Late Figure
 
-![Vascular Complications: Intermediate to Late Figure](assets/grainger_vascular_complicatio_p85_img4.jpeg)
+> **Key Imaging Finding:** Vascular Complications: Intermediate to Late Figure
 
-![Vascular Complications: Intermediate to Late Figure](assets/grainger_vascular_complicatio_p85_img5.jpeg)
+> **Key Imaging Finding:** Vascular Complications: Intermediate to Late Figure
 
-![Vascular Complications: Intermediate to Late Figure](assets/grainger_vascular_complicatio_p85_img6.jpeg)
+> **Key Imaging Finding:** Vascular Complications: Intermediate to Late Figure
 
-![Vascular Complications: Intermediate to Late Figure](assets/grainger_vascular_complicatio_p85_img7.jpeg)
+> **Key Imaging Finding:** Vascular Complications: Intermediate to Late Figure
 
 806
 SECTION B  Abdominal Imaging
@@ -85,27 +85,27 @@ segment and spectral broadening. Secondary findings can be useful
 ## 2. Core Radiology High-Yield Notes (Pages 41-46)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p41_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p41_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p41_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p41_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img8.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img14.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p46_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 196
 Congenital uterine anomalies
@@ -356,29 +356,29 @@ Degenerative spine 334
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 505-516)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p505_p505_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p506_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p507_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p508_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p509_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p510_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p511_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p512_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p513_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p514_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p515_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p505_p516_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Sulfur Colloid Bone Scan & WBC Imaging:
 Tc can be tagged to sulfur colloid with the idea of getting a 
@@ -825,3 +825,6 @@ useful PET CT is. It trends with calcitonin:
 Associated with MEN 2a and 2b
 517
 
+## See Also
+- [[pulmonary_artery_stenosis|PULMONARY ARTERY STENOSIS]] ([PULMONARY ARTERY STENOSIS](../cardio/pulmonary_artery_stenosis.md))
+- [[pulmonary_artery_tumors|PULMONARY ARTERY TUMORS]] ([PULMONARY ARTERY TUMORS](../cardio/pulmonary_artery_tumors.md))

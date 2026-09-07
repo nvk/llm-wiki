@@ -702,3 +702,8 @@ incidence of injury increases to 20% when patients have soft signs
 of injury or an ABI less than 1 (assuming baseline normal arteries). 
 Patients with a pulse deficit, neurologic deficit, or shotgun injury 
 have a 40% incidence of vascular inju
+
+## See Also
+- [[8_breast_imaging|8. Breast Imaging]] ([8. Breast Imaging](../breast/8_breast_imaging.md))
+- [[breast_anatomy_and_mammographic_technique|Breast Anatomy and Mammographic Technique]] ([Breast Anatomy and Mammographic Technique](../breast/breast_anatomy_and_mammographic_technique.md))
+- [[breast_lesion_excision_systems|BREAST LESION EXCISION SYSTEMS]] ([BREAST LESION EXCISION SYSTEMS](../breast/breast_lesion_excision_systems.md))

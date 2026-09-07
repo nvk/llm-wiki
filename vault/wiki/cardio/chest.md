@@ -214,3 +214,6 @@ aminos
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[genitourinary_tract|Genitourinary Tract]] ([Genitourinary Tract](../uro/genitourinary_tract.md))

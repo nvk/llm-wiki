@@ -104,7 +104,7 @@ and can support volumetric tumour measurements.
 ## 2. Core Radiology High-Yield Notes (Pages 145-147)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p145_p147_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 344
 Paranasal sinuses:
@@ -203,29 +203,29 @@ Wrist and hand 457
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 217-228)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p217_p217_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p218_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p219_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p220_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p221_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p222_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p223_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p224_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p225_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p226_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p227_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p217_p228_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Heterotaxia Syndromes I Situs - Cont...
 So on the prior page I used terms like “bilateral right sided” and “bilateral left sided” to help 
@@ -810,3 +810,5 @@ Historv of prior cvtotoxic chemotherapy
 is classic.
 229
 
+## See Also
+- [[anterior_mediastinal_masses|Anterior Mediastinal Masses]] ([Anterior Mediastinal Masses](../cardio/anterior_mediastinal_masses.md))

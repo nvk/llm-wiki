@@ -134,3 +134,6 @@ Figure 3-15.  Mycoplasma pneumonia. A and B, Patchy, bilateral areas of inhomo
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[intracranial_infections_and_inflammatory_disease|INTRACRANIAL INFECTIONS AND INFLAMMATORY DISEASE]] ([INTRACRANIAL INFECTIONS AND INFLAMMATORY DISEASE](../neuro/intracranial_infections_and_inflammatory_disease.md))

@@ -13,13 +13,13 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 58-59)
 
 ### Key Visuals & Figures (Grainger)
-![Diaphragm Figure](assets/grainger_diaphragm_p58_img1.jpeg)
+> **Key Imaging Finding:** Diaphragm Figure
 
-![Diaphragm Figure](assets/grainger_diaphragm_p58_img2.jpeg)
+> **Key Imaging Finding:** Diaphragm Figure
 
-![Diaphragm Figure](assets/grainger_diaphragm_p58_img3.jpeg)
+> **Key Imaging Finding:** Diaphragm Figure
 
-![Diaphragm Figure](assets/grainger_diaphragm_p58_img4.jpeg)
+> **Key Imaging Finding:** Diaphragm Figure
 
 60
 SECTION A  The Chest and Cardiovascular System
@@ -67,7 +67,6 @@ Fig. 3.30  Three-dimensional computed tomography volumetric reformat
 of the posterior chest wall, demonstrating the intercostal arteries (arrows), 
 not protected by the flange of the rib medially. Note how tortuous the 
 arteries are. This may become much more pronounced in the elderly. 
-https://afkebooks.com
 
 
 CHAPTER 3  The Chest Wall, Pleura, Diaphragm and Intervention 
@@ -186,38 +185,37 @@ Pulmonary thromboembolism
 Rib fracture and other painful conditions
 Subphrenic infection
 Subphrenic mass
-https://t.me/afkebooks
 
 ## 2. Core Radiology High-Yield Notes (Pages 1-8)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p1_p2_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img7.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img10.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 Meaghan M. Mackesy, MD
 Resident in Radiology,
@@ -566,29 +564,29 @@ focus of round atelectasis.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 265-276)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p265_p265_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p266_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p267_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p268_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p269_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p270_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p271_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p272_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p273_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p274_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p275_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p276_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Candidiasis:
 A hint in the question stem might be “HIV Patient” or “Transplant 
@@ -1219,3 +1217,5 @@ back into the stomach (usually the efferent limb) and can cause gastric obstruct
 present with the acute form.
 277
 
+## See Also
+- [[postprocessing|POSTPROCESSING]] ([POSTPROCESSING](../vascular_ir/postprocessing.md))

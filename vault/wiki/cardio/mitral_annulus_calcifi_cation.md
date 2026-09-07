@@ -169,3 +169,4 @@ FIGURE 1-16. Left ventricular aneurysm. A and B, This angular left ventricu
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[disorders_of_liver_biliary_tract_pancreas_and_spleen|Disorders of Liver, Biliary Tract, Pancreas and Spleen]] ([Disorders of Liver, Biliary Tract, Pancreas and Spleen](../git/disorders_of_liver_biliary_tract_pancreas_and_spleen.md))

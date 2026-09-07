@@ -161,3 +161,6 @@ ing in air trapping. In severe cases
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[impingement_syndromes|IMPINGEMENT SYNDROMES]] ([IMPINGEMENT SYNDROMES](../vascular_ir/impingement_syndromes.md))

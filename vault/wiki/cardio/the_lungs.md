@@ -13,19 +13,19 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 15-16)
 
 ### Key Visuals & Figures (Grainger)
-![The Lungs Figure](assets/grainger_the_lungs_p16_img1.jpeg)
+> **Key Imaging Finding:** The Lungs Figure
 
-![The Lungs Figure](assets/grainger_the_lungs_p16_img2.jpeg)
+> **Key Imaging Finding:** The Lungs Figure
 
-![The Lungs Figure](assets/grainger_the_lungs_p16_img3.jpeg)
+> **Key Imaging Finding:** The Lungs Figure
 
-![The Lungs Figure](assets/grainger_the_lungs_p16_img4.jpeg)
+> **Key Imaging Finding:** The Lungs Figure
 
-![The Lungs Figure](assets/grainger_the_lungs_p16_img5.jpeg)
+> **Key Imaging Finding:** The Lungs Figure
 
-![The Lungs Figure](assets/grainger_the_lungs_p16_img6.jpeg)
+> **Key Imaging Finding:** The Lungs Figure
 
-![The Lungs Figure](assets/grainger_the_lungs_p16_img7.jpeg)
+> **Key Imaging Finding:** The Lungs Figure
 
 17
 The Normal Chest
@@ -113,7 +113,6 @@ shape to many peritoneal reflections. These two layers of pleura may
 extend down to the diaphragm or may have a free inferior edge. The 
 intersegmental septum of the lower lobe, a septum within the lung 
 immediately beneath the inferior pulmonary ligament, is often visible 
-https://t.me/afkebooks
 
 
 18
@@ -158,38 +157,37 @@ the two mainstem bronchi at the carina. In children the angles are
 symmetrical, but in adults the right mainstem bronchus has a steeper 
 course than the left. The range of angles is wide, and alterations in 
 angle can be diagnosed only by right–left comparisons, not by absolute 
-https://afkebooks.com
 
 ## 2. Core Radiology High-Yield Notes (Pages 1-8)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p1_p2_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img7.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img10.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 Meaghan M. Mackesy, MD
 Resident in Radiology,
@@ -538,29 +536,29 @@ focus of round atelectasis.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 133-144)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p133_p133_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p134_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p135_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p136_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p137_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p138_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p139_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p140_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p141_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p142_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p143_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p133_p144_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 PAPVR: Partial anomalous pulmonary venous return, 
 is defined as one (or more) of the four pulmonary veins 
@@ -1308,3 +1306,5 @@ Between the
 Aorta and PA
 145
 
+## See Also
+- [[43_metabolic_and_endocrine_skeletal_disease|43 Metabolic And Endocrine Skeletal Disease]] ([43 Metabolic And Endocrine Skeletal Disease](../msk/43_metabolic_and_endocrine_skeletal_disease.md))

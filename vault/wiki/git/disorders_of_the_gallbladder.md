@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 139-139)
 
 ### Key Visuals & Figures (Grainger)
-![Disorders of the Gallbladder Figure](assets/grainger_disorders_of_the_gal_p139_img1.jpeg)
+> **Key Imaging Finding:** Disorders of the Gallbladder Figure
 
-![Disorders of the Gallbladder Figure](assets/grainger_disorders_of_the_gal_p139_img2.jpeg)
+> **Key Imaging Finding:** Disorders of the Gallbladder Figure
 
 CHAPTER 24  The Biliary System
 659
@@ -101,39 +101,39 @@ lines, with a distal acoustic shadow.
 ## 2. Core Radiology High-Yield Notes (Pages 25-32)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p25_p26_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p31_img4.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 110
 Intraductal papillary mucinous neoplasm (IPMN)
@@ -1254,3 +1254,5 @@ Flexion
 Distraction
 287
 
+## See Also
+- [[renal_denervation_for_hypertension|RENAL DENERVATION FOR HYPERTENSION]] ([RENAL DENERVATION FOR HYPERTENSION](../uro/renal_denervation_for_hypertension.md))

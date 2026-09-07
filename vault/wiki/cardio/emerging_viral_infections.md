@@ -77,3 +77,6 @@ KT: Radiology of severe acute respiratory syndrome [SARS]: the emerging patholog
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[percutaneous_abscess_and_fluid_drainage|Percutaneous Abscess and Fluid Drainage]] ([Percutaneous Abscess and Fluid Drainage](../vascular_ir/percutaneous_abscess_and_fluid_drainage.md))

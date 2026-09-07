@@ -99,67 +99,67 @@ or ‘hair-on-end’) types of periosteal reaction are seen with the most
 ## 2. Core Radiology High-Yield Notes (Pages 65-72)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p65_p65_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p65_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img40.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img41.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img42.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img45.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img48.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img51.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img82.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img83.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img84.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img92.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img158.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img4.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img3.png)
+> **Key Imaging Finding:** Core Figure
 
 409
 Ankle fractures
@@ -499,29 +499,29 @@ three or more contiguous sagittal slices with standard 4 mm-thick sagittal slice
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 289-300)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p289_p289_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p290_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p291_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p292_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p293_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p294_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p295_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p296_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p297_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p298_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p299_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p289_p300_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 -Small Bowel Cancer-
 Adenocarcinoma: Most common in the proximal small bowel (usually duodenum). Increased 
@@ -1113,3 +1113,6 @@ muhiple choice the distal
 entirely extraperitoneal.
 301
 
+## See Also
+- [[other_primary_malignant_neoplasms|Other Primary Malignant Neoplasms]] ([Other Primary Malignant Neoplasms](../cardio/other_primary_malignant_neoplasms.md))
+- [[pulmonary_artery_tumors|PULMONARY ARTERY TUMORS]] ([PULMONARY ARTERY TUMORS](../cardio/pulmonary_artery_tumors.md))

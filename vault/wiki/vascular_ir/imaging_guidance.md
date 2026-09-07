@@ -149,3 +149,6 @@ CT can provide better
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[11_airspace_diseases|11 Airspace Diseases]] ([11 Airspace Diseases](../cardio/11_airspace_diseases.md))

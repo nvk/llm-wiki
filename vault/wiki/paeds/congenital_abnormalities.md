@@ -162,3 +162,6 @@ Figure 7-13.  Achondroplasia. A, Frontal radiograph demonstrates tapering inte
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[blue_toe_syndrome|BLUE TOE SYNDROME]] ([BLUE TOE SYNDROME](../vascular_ir/blue_toe_syndrome.md))

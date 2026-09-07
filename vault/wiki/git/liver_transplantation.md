@@ -83,3 +83,6 @@ Figure 11-38.  Hepatic angiogram of proven focal nodular hyperplasia
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[renal_transplantation|RENAL TRANSPLANTATION]] ([RENAL TRANSPLANTATION](../uro/renal_transplantation.md))

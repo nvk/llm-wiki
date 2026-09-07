@@ -185,3 +185,7 @@ hepatic artery, the SMA, or the aorta. This is
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[acute_cerebrovascular_disorders|ACUTE CEREBROVASCULAR DISORDERS]] ([ACUTE CEREBROVASCULAR DISORDERS](../neuro/acute_cerebrovascular_disorders.md))
+- [[renal_artery_aneurysms|RENAL ARTERY ANEURYSMS]] ([RENAL ARTERY ANEURYSMS](../uro/renal_artery_aneurysms.md))

@@ -123,3 +123,7 @@ adequate control of active bleeding.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[injuries_to_the_chest_wall|Injuries To The Chest Wall]] ([Injuries To The Chest Wall](../cardio/injuries_to_the_chest_wall.md))
+- [[pelvic_trauma|PELVIC TRAUMA]] ([PELVIC TRAUMA](../emergency/pelvic_trauma.md))

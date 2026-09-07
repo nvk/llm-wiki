@@ -113,3 +113,6 @@ Glenn D. Barest, Asim Z. Mian, Rohini N. Nadgir, and Osamu Sakai
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[imaging_in_blunt_trauma|IMAGING IN BLUNT TRAUMA]] ([IMAGING IN BLUNT TRAUMA](../emergency/imaging_in_blunt_trauma.md))

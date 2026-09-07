@@ -153,3 +153,6 @@ ablation session
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pericardial_constriction|Pericardial Constriction]] ([Pericardial Constriction](../cardio/pericardial_constriction.md))

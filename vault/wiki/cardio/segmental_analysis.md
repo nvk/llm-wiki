@@ -172,3 +172,4 @@ pneumonia, abscess, or bulla all may have caused
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[4_bile_ducts|4. Bile Ducts]] ([4. Bile Ducts](../git/4_bile_ducts.md))

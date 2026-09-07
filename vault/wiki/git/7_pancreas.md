@@ -189,3 +189,6 @@ TECHNI
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[anatomy_and_physiology_of_the_pleural_space|Anatomy and Physiology of the Pleural Space]] ([Anatomy and Physiology of the Pleural Space](../cardio/anatomy_and_physiology_of_the_pleural_space.md))

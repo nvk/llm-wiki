@@ -13,25 +13,25 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 145-148)
 
 ### Key Visuals & Figures (Grainger)
-![Role of Radiology in Investigation of Jaundice Figure](assets/grainger_role_of_radiology_in_p145_img1.jpeg)
+> **Key Imaging Finding:** Role of Radiology in Investigation of Jaundice Figure
 
-![Role of Radiology in Investigation of Jaundice Figure](assets/grainger_role_of_radiology_in_p145_img2.jpeg)
+> **Key Imaging Finding:** Role of Radiology in Investigation of Jaundice Figure
 
-![Role of Radiology in Investigation of Jaundice Figure](assets/grainger_role_of_radiology_in_p145_img3.jpeg)
+> **Key Imaging Finding:** Role of Radiology in Investigation of Jaundice Figure
 
-![Role of Radiology in Investigation of Jaundice Figure](assets/grainger_role_of_radiology_in_p146_img1.jpeg)
+> **Key Imaging Finding:** Role of Radiology in Investigation of Jaundice Figure
 
-![Role of Radiology in Investigation of Jaundice Figure](assets/grainger_role_of_radiology_in_p146_img2.jpeg)
+> **Key Imaging Finding:** Role of Radiology in Investigation of Jaundice Figure
 
-![Role of Radiology in Investigation of Jaundice Figure](assets/grainger_role_of_radiology_in_p146_img3.jpeg)
+> **Key Imaging Finding:** Role of Radiology in Investigation of Jaundice Figure
 
-![Role of Radiology in Investigation of Jaundice Figure](assets/grainger_role_of_radiology_in_p147_img1.jpeg)
+> **Key Imaging Finding:** Role of Radiology in Investigation of Jaundice Figure
 
-![Role of Radiology in Investigation of Jaundice Figure](assets/grainger_role_of_radiology_in_p148_img1.jpeg)
+> **Key Imaging Finding:** Role of Radiology in Investigation of Jaundice Figure
 
-![Role of Radiology in Investigation of Jaundice Figure](assets/grainger_role_of_radiology_in_p148_img2.jpeg)
+> **Key Imaging Finding:** Role of Radiology in Investigation of Jaundice Figure
 
-![Role of Radiology in Investigation of Jaundice Figure](assets/grainger_role_of_radiology_in_p148_img3.jpeg)
+> **Key Imaging Finding:** Role of Radiology in Investigation of Jaundice Figure
 
 CHAPTER 24  The Biliary System
 665
@@ -284,19 +284,19 @@ surrounding low-density bile.
 ## 2. Core Radiology High-Yield Notes (Pages 33-40)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p33_p33_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 118
 Benign cystic splenic lesions
@@ -1138,3 +1138,5 @@ A common way to show this is an enlarged left renal vein and dilatation of the i
 cava at the level of the left renal vein.
 311
 
+## See Also
+- [[trachea|Trachea]] ([Trachea](../cardio/trachea.md))

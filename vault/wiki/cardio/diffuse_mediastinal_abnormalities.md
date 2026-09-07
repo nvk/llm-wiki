@@ -256,3 +256,6 @@ with bright T1 signal. An important feature of mediastinal
 lipomatosis on CT or MRI is a homogeneous appearance 
 of the mediastinal fat. An inhomogeneous appearance, 
 such as
+
+## See Also
+- [[biliary_anatomy|Biliary Anatomy]] ([Biliary Anatomy](../git/biliary_anatomy.md))

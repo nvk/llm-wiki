@@ -155,3 +155,7 @@ Extensive submucosal venous dilatation in the antrum
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[acute_pulmonary_embolism|ACUTE PULMONARY EMBOLISM]] ([ACUTE PULMONARY EMBOLISM](../cardio/acute_pulmonary_embolism.md))
+- [[obstruction_in_the_central_pulmonary_arteries|OBSTRUCTION IN THE CENTRAL PULMONARY ARTERIES]] ([OBSTRUCTION IN THE CENTRAL PULMONARY ARTERIES](../cardio/obstruction_in_the_central_pulmonary_arteries.md))

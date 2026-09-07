@@ -144,3 +144,6 @@ Ablation has little effect on renal function
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[benign_lymphoproliferative_disorders|Benign Lymphoproliferative Disorders]] ([Benign Lymphoproliferative Disorders](../cardio/benign_lymphoproliferative_disorders.md))

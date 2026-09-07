@@ -170,3 +170,7 @@ scout image, multiple CT studies can be planned, including dedicated CT angiogra
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pelvic_and_acetabular_fractures|Pelvic And Acetabular Fractures]] ([Pelvic And Acetabular Fractures](../msk/pelvic_and_acetabular_fractures.md))
+- [[intracranial_hemorrhage_and_traumatic_brain_injury|INTRACRANIAL HEMORRHAGE AND TRAUMATIC BRAIN INJURY]] ([INTRACRANIAL HEMORRHAGE AND TRAUMATIC BRAIN INJURY](../neuro/intracranial_hemorrhage_and_traumatic_brain_injury.md))

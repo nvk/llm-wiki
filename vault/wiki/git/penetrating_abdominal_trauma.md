@@ -161,3 +161,7 @@ of soft tissue in the periadrenal region. B
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[cardiac_injuries|CARDIAC INJURIES]] ([CARDIAC INJURIES](../cardio/cardiac_injuries.md))
+- [[cardiac_injury|Cardiac Injury]] ([Cardiac Injury](../cardio/cardiac_injury.md))

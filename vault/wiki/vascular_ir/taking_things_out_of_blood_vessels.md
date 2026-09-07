@@ -161,3 +161,6 @@ the most stubborn objects (Fig. 4-53).
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[myocardial_doppler_tissue_imaging|Myocardial Doppler Tissue Imaging]] ([Myocardial Doppler Tissue Imaging](../cardio/myocardial_doppler_tissue_imaging.md))

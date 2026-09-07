@@ -176,3 +176,4 @@ and inferiorly to the mitral valve replacement.
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[percutaneous_management_of_common_bile_duct_stones|PERCUTANEOUS MANAGEMENT OF COMMON BILE DUCT STONES]] ([PERCUTANEOUS MANAGEMENT OF COMMON BILE DUCT STONES](../git/percutaneous_management_of_common_bile_duct_stones.md))

@@ -180,3 +180,4 @@ Subcostal views are useful f
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[osteoporosis|Osteoporosis]] ([Osteoporosis](../msk/osteoporosis.md))

@@ -110,3 +110,6 @@ Flulike symptoms:
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[langerhans_cell_histiocytosis|Langerhans Cell Histiocytosis]] ([Langerhans Cell Histiocytosis](../cardio/langerhans_cell_histiocytosis.md))

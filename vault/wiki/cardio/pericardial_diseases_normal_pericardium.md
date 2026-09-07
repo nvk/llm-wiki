@@ -163,3 +163,4 @@ the right atrium (RA) is separated by the low intensity (arrow 3) of intervening
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[direct_percutaneous_jejunostomy|DIRECT PERCUTANEOUS JEJUNOSTOMY]] ([DIRECT PERCUTANEOUS JEJUNOSTOMY](../git/direct_percutaneous_jejunostomy.md))

@@ -98,27 +98,27 @@ the facial bones including the mandible, depending on the extent of
 ## 2. Core Radiology High-Yield Notes (Pages 73-80)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p73_p74_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p74_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 272
 White matter disease
@@ -470,29 +470,29 @@ on thallium scintigraphy.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 109-120)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p109_p109_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p110_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p111_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p112_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p113_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p114_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p115_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p116_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p117_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p118_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p119_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p120_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Pulmonary Contusion: This is the most common lung injury 
 from blunt trauma. Basically you are dealing with alveolar 
@@ -1019,3 +1019,6 @@ and the posterior left ventricular branches arise from the left circumflex coron
 Although, Christian Gray would never-approve of such a dynamic.
 121
 
+## See Also
+- [[pelvic_trauma|PELVIC TRAUMA]] ([PELVIC TRAUMA](../emergency/pelvic_trauma.md))
+- [[esophageal_injuries|ESOPHAGEAL INJURIES]] ([ESOPHAGEAL INJURIES](../git/esophageal_injuries.md))

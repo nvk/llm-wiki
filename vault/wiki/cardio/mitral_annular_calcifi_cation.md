@@ -160,3 +160,4 @@ sible to gain a sense of
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[implanting_devices|IMPLANTING DEVICES]] ([IMPLANTING DEVICES](../vascular_ir/implanting_devices.md))

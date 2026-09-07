@@ -80,3 +80,6 @@ ablation with no residual enhancing tumor (arrow) (C).
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[diffuse_pleural_disease|Diffuse Pleural Disease]] ([Diffuse Pleural Disease](../cardio/diffuse_pleural_disease.md))

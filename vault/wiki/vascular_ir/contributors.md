@@ -128,3 +128,6 @@ This page intentionally left blank
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[assessment_of_acquired_heart_disease|ASSESSMENT OF ACQUIRED HEART DISEASE]] ([ASSESSMENT OF ACQUIRED HEART DISEASE](../cardio/assessment_of_acquired_heart_disease.md))

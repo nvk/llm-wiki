@@ -181,3 +181,6 @@ Figure 10-16.  Air trapping in an asthmatic pat
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[isbn_9780323031257|ISBN: 9780323031257]] ([ISBN: 9780323031257](../paeds/isbn_9780323031257.md))

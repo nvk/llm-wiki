@@ -170,3 +170,5 @@ fant with bilious vomiting demonstrates multiple dilated lo
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[congenital_heart_disease|Congenital Heart Disease]] ([Congenital Heart Disease](../cardio/congenital_heart_disease.md))
+- [[goodpastures_syndrome|Goodpasture’S Syndrome]] ([Goodpasture’S Syndrome](../cardio/goodpastures_syndrome.md))

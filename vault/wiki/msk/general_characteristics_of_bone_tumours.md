@@ -99,121 +99,121 @@ or ‘hair-on-end’) types of periosteal reaction are seen with the most
 ## 2. Core Radiology High-Yield Notes (Pages 81-88)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p81_p81_img10.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img16.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img18.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img19.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img20.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img23.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img26.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img27.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img29.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img30.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img31.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img33.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img34.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img88.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img89.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img90.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img91.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img92.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img93.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img94.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img95.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img96.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img97.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img98.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img99.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img100.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img101.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img103.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img104.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img105.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img106.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img107.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img108.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img109.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p81_img110.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p82_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p83_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p84_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p84_img8.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p84_img17.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img21.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img22.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img29.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img59.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img60.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img61.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img88.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img97.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img101.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img125.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img142.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img143.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img154.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img183.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p81_p85_img184.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 425
 Lipoma arborescens
@@ -638,29 +638,29 @@ the inferior aspect of the hip joint.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 313-324)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p313_p313_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p314_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p315_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p316_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p317_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p318_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p319_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p320_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p321_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p322_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p323_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p324_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 A
 Gamesmanship - They could 
@@ -1364,3 +1364,7 @@ CA Strictures tends to be long, with “shouldering.’
 B9 strictures tend to be abrupt and short.
 325
 
+## See Also
+- [[53_current_status_of_imaging_of_the_brain_and_anatomical_features|53 Current Status Of Imaging Of The Brain And Anatomical Features]] ([53 Current Status Of Imaging Of The Brain And Anatomical Features](../neuro/53_current_status_of_imaging_of_the_brain_and_anatomical_features.md))
+- [[brain_anatomy|Brain Anatomy]] ([Brain Anatomy](../neuro/brain_anatomy.md))
+- [[section_e_neuroimaging|Section E Neuroimaging]] ([Section E Neuroimaging](../neuro/section_e_neuroimaging.md))

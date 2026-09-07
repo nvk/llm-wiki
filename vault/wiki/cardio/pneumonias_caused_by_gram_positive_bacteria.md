@@ -137,3 +137,6 @@ bilateral and is preceded by an atypical pneumonia such as
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[acute_pancreatitis|Acute Pancreatitis]] ([Acute Pancreatitis](../git/acute_pancreatitis.md))

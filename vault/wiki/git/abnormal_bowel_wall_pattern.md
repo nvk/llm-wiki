@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 10-10)
 
 ### Key Visuals & Figures (Grainger)
-![Abnormal Bowel Wall Pattern Figure](assets/grainger_abnormal_bowel_wall__p10_img1.jpeg)
+> **Key Imaging Finding:** Abnormal Bowel Wall Pattern Figure
 
-![Abnormal Bowel Wall Pattern Figure](assets/grainger_abnormal_bowel_wall__p10_img2.jpeg)
+> **Key Imaging Finding:** Abnormal Bowel Wall Pattern Figure
 
 472
 SECTION B  Abdominal Imaging
@@ -108,35 +108,35 @@ proven to be carcinoma.
 ## 2. Core Radiology High-Yield Notes (Pages 49-56)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p49_p49_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p49_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p49_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 134
 Overview of gastric bypass surgery
@@ -478,29 +478,29 @@ Case courtesy Michael Callahan, MD, Boston Children’s Hospital.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 109-120)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p109_p109_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p110_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p111_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p112_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p113_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p114_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p115_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p116_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p117_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p118_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p119_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p109_p120_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Pulmonary Contusion: This is the most common lung injury 
 from blunt trauma. Basically you are dealing with alveolar 
@@ -1027,3 +1027,5 @@ and the posterior left ventricular branches arise from the left circumflex coron
 Although, Christian Gray would never-approve of such a dynamic.
 121
 
+## See Also
+- [[30_renal_transplantation|30 Renal Transplantation]] ([30 Renal Transplantation](../uro/30_renal_transplantation.md))

@@ -71,3 +71,6 @@ vii
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pulmonary_disease|Pulmonary Disease]] ([Pulmonary Disease](../cardio/pulmonary_disease.md))

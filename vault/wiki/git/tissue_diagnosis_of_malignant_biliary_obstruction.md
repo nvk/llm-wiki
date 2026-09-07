@@ -117,3 +117,6 @@ was placed percutaneously after 5 days. B, Note the small size of the pigtail (c
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[thermal_ablation_of_bone_tumors|THERMAL ABLATION OF BONE TUMORS]] ([THERMAL ABLATION OF BONE TUMORS](../msk/thermal_ablation_of_bone_tumors.md))

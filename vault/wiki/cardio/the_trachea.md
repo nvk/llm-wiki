@@ -194,3 +194,6 @@ acquired d
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[image_guidance|IMAGE GUIDANCE]] ([IMAGE GUIDANCE](../vascular_ir/image_guidance.md))

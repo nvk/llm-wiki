@@ -163,3 +163,6 @@ loop bowel obstruction. The b
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[renal_and_ureteral_trauma|RENAL AND URETERAL TRAUMA]] ([RENAL AND URETERAL TRAUMA](../uro/renal_and_ureteral_trauma.md))

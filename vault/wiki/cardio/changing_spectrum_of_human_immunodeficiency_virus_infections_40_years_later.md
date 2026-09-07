@@ -13,13 +13,13 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 113-114)
 
 ### Key Visuals & Figures (Grainger)
-![Changing Spectrum of Human Immunodeficiency Virus Infections: 40 Years Later Figure](assets/grainger_changing_spectrum_of_p113_img1.jpeg)
+> **Key Imaging Finding:** Changing Spectrum of Human Immunodeficiency Virus Infections: 40 Years Later Figure
 
-![Changing Spectrum of Human Immunodeficiency Virus Infections: 40 Years Later Figure](assets/grainger_changing_spectrum_of_p113_img2.jpeg)
+> **Key Imaging Finding:** Changing Spectrum of Human Immunodeficiency Virus Infections: 40 Years Later Figure
 
-![Changing Spectrum of Human Immunodeficiency Virus Infections: 40 Years Later Figure](assets/grainger_changing_spectrum_of_p113_img3.jpeg)
+> **Key Imaging Finding:** Changing Spectrum of Human Immunodeficiency Virus Infections: 40 Years Later Figure
 
-![Changing Spectrum of Human Immunodeficiency Virus Infections: 40 Years Later Figure](assets/grainger_changing_spectrum_of_p114_img1.jpeg)
+> **Key Imaging Finding:** Changing Spectrum of Human Immunodeficiency Virus Infections: 40 Years Later Figure
 
 CHAPTER 5  Pulmonary Infection in Adults
 115
@@ -192,33 +192,33 @@ lower lobe. Note an associated parenchymal cavity (arrowhead).
 ## 2. Core Radiology High-Yield Notes (Pages 33-40)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p33_p33_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 32
 Vascular pedicle
@@ -534,29 +534,29 @@ is usually asymmetric.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 445-456)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p445_p445_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p446_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p447_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p448_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p449_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p450_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p451_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p452_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p453_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p454_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p455_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p456_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Yolk Sac - in the chorionic cavity
 Yolk Sac: This is the first structure visible 
@@ -1023,3 +1023,6 @@ Centered over the
 intemal os
 457
 
+## See Also
+- [[ultrasound|Ultrasound]] ([Ultrasound](../msk/ultrasound.md))
+- [[intracranial_infections_and_inflammatory_disease|INTRACRANIAL INFECTIONS AND INFLAMMATORY DISEASE]] ([INTRACRANIAL INFECTIONS AND INFLAMMATORY DISEASE](../neuro/intracranial_infections_and_inflammatory_disease.md))

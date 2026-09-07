@@ -158,3 +158,5 @@ the atria, and a prominent eustachian valv
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[imaging_characterisation_of_soft-tissue_masses|Imaging Characterisation Of Soft-Tissue Masses]] ([Imaging Characterisation Of Soft-Tissue Masses](../msk/imaging_characterisation_of_soft-tissue_masses.md))
+- [[image_guided_ablation_of_renal_tumors|Image-Guided Ablation of Renal Tumors]] ([Image-Guided Ablation of Renal Tumors](../uro/image_guided_ablation_of_renal_tumors.md))

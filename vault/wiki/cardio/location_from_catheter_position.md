@@ -174,3 +174,5 @@ Fleischner FG: The butterfl y pattern of acute pulmonary edema, Am J Cardio
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[percutaneous_genitourinary_intervention|Percutaneous Genitourinary Intervention]] ([Percutaneous Genitourinary Intervention](../uro/percutaneous_genitourinary_intervention.md))
+- [[renal_ablation|RENAL ABLATION]] ([RENAL ABLATION](../uro/renal_ablation.md))

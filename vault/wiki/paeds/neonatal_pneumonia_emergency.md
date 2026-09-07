@@ -126,3 +126,5 @@ heads).
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[44_arthritis|44 Arthritis]] ([44 Arthritis](../msk/44_arthritis.md))
+- [[the_inflammatory_arthritides|The Inflammatory Arthritides]] ([The Inflammatory Arthritides](../msk/the_inflammatory_arthritides.md))

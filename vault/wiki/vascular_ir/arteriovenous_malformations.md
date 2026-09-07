@@ -147,3 +147,7 @@ Management of Periph
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[atypical_pneumonia_syndrome|Atypical Pneumonia Syndrome]] ([Atypical Pneumonia Syndrome](../cardio/atypical_pneumonia_syndrome.md))
+- [[pulmonary_venous_hypertension|Pulmonary Venous Hypertension]] ([Pulmonary Venous Hypertension](../cardio/pulmonary_venous_hypertension.md))

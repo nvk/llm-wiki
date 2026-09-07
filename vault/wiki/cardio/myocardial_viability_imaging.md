@@ -13,33 +13,33 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 392-396)
 
 ### Key Visuals & Figures (Grainger)
-![Myocardial Viability Imaging Figure](assets/grainger_myocardial_viability_p392_img1.jpeg)
+> **Key Imaging Finding:** Myocardial Viability Imaging Figure
 
-![Myocardial Viability Imaging Figure](assets/grainger_myocardial_viability_p392_img2.jpeg)
+> **Key Imaging Finding:** Myocardial Viability Imaging Figure
 
-![Myocardial Viability Imaging Figure](assets/grainger_myocardial_viability_p392_img3.jpeg)
+> **Key Imaging Finding:** Myocardial Viability Imaging Figure
 
-![Myocardial Viability Imaging Figure](assets/grainger_myocardial_viability_p392_img4.jpeg)
+> **Key Imaging Finding:** Myocardial Viability Imaging Figure
 
-![Myocardial Viability Imaging Figure](assets/grainger_myocardial_viability_p392_img5.jpeg)
+> **Key Imaging Finding:** Myocardial Viability Imaging Figure
 
-![Myocardial Viability Imaging Figure](assets/grainger_myocardial_viability_p392_img6.jpeg)
+> **Key Imaging Finding:** Myocardial Viability Imaging Figure
 
-![Myocardial Viability Imaging Figure](assets/grainger_myocardial_viability_p392_img7.jpeg)
+> **Key Imaging Finding:** Myocardial Viability Imaging Figure
 
-![Myocardial Viability Imaging Figure](assets/grainger_myocardial_viability_p392_img8.jpeg)
+> **Key Imaging Finding:** Myocardial Viability Imaging Figure
 
-![Myocardial Viability Imaging Figure](assets/grainger_myocardial_viability_p393_img1.jpeg)
+> **Key Imaging Finding:** Myocardial Viability Imaging Figure
 
-![Myocardial Viability Imaging Figure](assets/grainger_myocardial_viability_p393_img2.jpeg)
+> **Key Imaging Finding:** Myocardial Viability Imaging Figure
 
-![Myocardial Viability Imaging Figure](assets/grainger_myocardial_viability_p394_img1.jpeg)
+> **Key Imaging Finding:** Myocardial Viability Imaging Figure
 
-![Myocardial Viability Imaging Figure](assets/grainger_myocardial_viability_p395_img1.jpeg)
+> **Key Imaging Finding:** Myocardial Viability Imaging Figure
 
-![Myocardial Viability Imaging Figure](assets/grainger_myocardial_viability_p396_img1.jpeg)
+> **Key Imaging Finding:** Myocardial Viability Imaging Figure
 
-![Myocardial Viability Imaging Figure](assets/grainger_myocardial_viability_p396_img2.jpeg)
+> **Key Imaging Finding:** Myocardial Viability Imaging Figure
 
 CHAPTER 15  Ischaemic Heart Disease
 389
@@ -377,53 +377,53 @@ with large thrombus (*, A and B) almost completely filling the aneurysm.
 ## 2. Core Radiology High-Yield Notes (Pages 73-80)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p73_p74_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p74_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img6.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img8.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img9.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 72
 • Low attenuation lymph nodes, while nonspecific, should raise concern for active 
@@ -727,29 +727,29 @@ pneumothorax.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 421-432)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p421_p421_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p422_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p423_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p424_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p425_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p426_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p427_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p428_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p429_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p430_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p431_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p432_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 As mentioned on prior pages, sometimes a ruptured follicle bleeds internally and re- 
 expands. The result is a homogenous mass with enhanced through transmission (tumor 
@@ -1223,3 +1223,7 @@ TZ-T2
 4 - Low Signal < 1.5 cm
 5 - Low Signal > 1.5 cm or with extracapsular ext
 
+## See Also
+- [[conclusion|CONCLUSION]] ([CONCLUSION](../emergency/conclusion.md))
+- [[infections|INFECTIONS]] ([INFECTIONS](../emergency/infections.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../emergency/suggested_readings.md))

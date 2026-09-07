@@ -166,3 +166,4 @@ ent signifying the presence of a small bowel obstruction (Fig.
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[evaluation|Evaluation]] ([Evaluation](../cardio/evaluation.md))

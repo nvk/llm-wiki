@@ -13,19 +13,19 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 15-16)
 
 ### Key Visuals & Figures (Grainger)
-![Imaging the Abdomen With Computed Tomography: Radiation Issues Figure](assets/grainger_imaging_the_abdomen__p15_img1.jpeg)
+> **Key Imaging Finding:** Imaging the Abdomen With Computed Tomography: Radiation Issues Figure
 
-![Imaging the Abdomen With Computed Tomography: Radiation Issues Figure](assets/grainger_imaging_the_abdomen__p15_img2.jpeg)
+> **Key Imaging Finding:** Imaging the Abdomen With Computed Tomography: Radiation Issues Figure
 
-![Imaging the Abdomen With Computed Tomography: Radiation Issues Figure](assets/grainger_imaging_the_abdomen__p15_img3.jpeg)
+> **Key Imaging Finding:** Imaging the Abdomen With Computed Tomography: Radiation Issues Figure
 
-![Imaging the Abdomen With Computed Tomography: Radiation Issues Figure](assets/grainger_imaging_the_abdomen__p15_img4.jpeg)
+> **Key Imaging Finding:** Imaging the Abdomen With Computed Tomography: Radiation Issues Figure
 
-![Imaging the Abdomen With Computed Tomography: Radiation Issues Figure](assets/grainger_imaging_the_abdomen__p15_img5.jpeg)
+> **Key Imaging Finding:** Imaging the Abdomen With Computed Tomography: Radiation Issues Figure
 
-![Imaging the Abdomen With Computed Tomography: Radiation Issues Figure](assets/grainger_imaging_the_abdomen__p15_img6.jpeg)
+> **Key Imaging Finding:** Imaging the Abdomen With Computed Tomography: Radiation Issues Figure
 
-![Imaging the Abdomen With Computed Tomography: Radiation Issues Figure](assets/grainger_imaging_the_abdomen__p15_img7.jpeg)
+> **Key Imaging Finding:** Imaging the Abdomen With Computed Tomography: Radiation Issues Figure
 
 CHAPTER 18  Current Status of Imaging of the Gastrointestinal Tract
 477
@@ -218,19 +218,19 @@ means’ (ANLM) algorithms and often require less computational time
 ## 2. Core Radiology High-Yield Notes (Pages 65-72)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p65_p66_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 150
 Flow of peritoneal fluid
@@ -520,29 +520,29 @@ MRI of the uterus and adnexa 192
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 157-168)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p157_p157_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p158_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p159_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p160_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p161_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p162_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p163_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p164_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p165_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p166_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p167_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p157_p168_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Dermoid / Epidermoid of tlie Situll
 In the context of the skull, you can 
@@ -1118,3 +1118,7 @@ This is NOT one of those times. D on’t biopsy th is.... Mother fuckers. The co
 leaking and meningitis.
 169
 
+## See Also
+- [[anatomy_and_physiology_of_the_female_reproductive_system|Anatomy and Physiology of the Female Reproductive System]] ([Anatomy and Physiology of the Female Reproductive System](../gynae/anatomy_and_physiology_of_the_female_reproductive_system.md))
+- [[ovarian_torsion|Ovarian Torsion]] ([Ovarian Torsion](../gynae/ovarian_torsion.md))
+- [[retained_fetal_lung_liquid_transient_tachypnea_of_the_newbor|Retained Fetal Lung Liquid (Transient Tachypnea of the Newborn)]] ([Retained Fetal Lung Liquid (Transient Tachypnea of the Newborn)](../gynae/retained_fetal_lung_liquid_transient_tachypnea_of_the_newbor.md))

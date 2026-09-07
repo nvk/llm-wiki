@@ -199,3 +199,6 @@ Iatrogenic causes
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[spontaneous_carotid_and_vertebral_dissection|SPONTANEOUS CAROTID AND VERTEBRAL DISSECTION]] ([SPONTANEOUS CAROTID AND VERTEBRAL DISSECTION](../spine/spontaneous_carotid_and_vertebral_dissection.md))

@@ -156,3 +156,6 @@ until the waist disappeared and for a total time of 2 minutes. E, Finally,
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[renal_failure|Renal Failure]] ([Renal Failure](../uro/renal_failure.md))

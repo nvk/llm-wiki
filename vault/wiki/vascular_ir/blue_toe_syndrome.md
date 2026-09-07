@@ -166,3 +166,7 @@ Degenerating synthetic graft
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[congenital_abnormalities|CONGENITAL ABNORMALITIES]] ([CONGENITAL ABNORMALITIES](../paeds/congenital_abnormalities.md))
+- [[pediatric_radiology_the_requisites_third_edition|Pediatric Radiology: The Requisites, Third Edition]] ([Pediatric Radiology: The Requisites, Third Edition](../paeds/pediatric_radiology_the_requisites_third_edition.md))

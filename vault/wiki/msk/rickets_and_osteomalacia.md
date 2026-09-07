@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 140-140)
 
 ### Key Visuals & Figures (Grainger)
-![Rickets and Osteomalacia Figure](assets/grainger_rickets_and_osteomal_p140_img1.jpeg)
+> **Key Imaging Finding:** Rickets and Osteomalacia Figure
 
-![Rickets and Osteomalacia Figure](assets/grainger_rickets_and_osteomal_p140_img2.jpeg)
+> **Key Imaging Finding:** Rickets and Osteomalacia Figure
 
 1108
 SECTION C  The Musculoskeletal System
@@ -94,31 +94,31 @@ multifocal stenosis of the spinal canal with acute myelopathy (arrow).
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p9_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p9_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p9_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p15_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p16_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 353
 Seronegative spondyloarthropathies
@@ -483,21 +483,21 @@ ankylosis is Klippel–Feil syndrome, which is failure of cervical segmentation.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 565-572)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p565_p565_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p565_p566_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p565_p567_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p565_p568_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p565_p569_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p565_p570_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p565_p571_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p565_p572_img1.png)
+> **Key Imaging Finding:** Crack Figure
 
 Radium - Ra^23 (Xofigo): This is the most recent of the three agents, and probably the best. 
 The idea is that Ra223 behaves in a similar way to calcium. It is absorbed into the bone matrix 
@@ -693,3 +693,5 @@ Columbia, SC
 55320885R00311
 55320885R00311
 
+## See Also
+- [[pulmonary_alveolar_proteinosis|Pulmonary Alveolar Proteinosis]] ([Pulmonary Alveolar Proteinosis](../cardio/pulmonary_alveolar_proteinosis.md))

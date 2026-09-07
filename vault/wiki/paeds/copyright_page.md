@@ -58,8 +58,10 @@ any means, electronic or mechanical, including photocopying, recording, or any i
 retrieval system, without permission in writing from the publisher. Permissions may be sought directly 
 from Elsevier’s Rights Department: phone: (+1) 215 239 3804 (US) or (+44) 1865 843830 (UK); fax: (+44) 
 1865 853333; e-mail: healthpermissions@elsevier.com. You may also complete your request on-line via the 
-Elsevier website at http://www.elsevier.com/permissions.
 
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[broncholithiasis|Broncholithiasis]] ([Broncholithiasis](../cardio/broncholithiasis.md))

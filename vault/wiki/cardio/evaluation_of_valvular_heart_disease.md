@@ -163,3 +163,4 @@ half-time. Pressure half-time is obtaine
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[liver_bile_ducts_pancreas_and_spleen|LIVER, BILE DUCTS, PANCREAS AND SPLEEN]] ([LIVER, BILE DUCTS, PANCREAS AND SPLEEN](../git/liver_bile_ducts_pancreas_and_spleen.md))

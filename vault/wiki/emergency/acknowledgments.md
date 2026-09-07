@@ -118,3 +118,6 @@ Current techniques, spectrum of findings, and diagnostic pitfalls. Radiographics
 Lev MH, Segal AZ, Farkas J, et al: Utility of perfusion-weighted CT imaging 
 in acute middle cerebral artery stroke treated with intra-arterial thrombolysis. 
 Pre
+
+## See Also
+- [[2_the_normal_chest|2 The Normal Chest]] ([2 The Normal Chest](../cardio/2_the_normal_chest.md))

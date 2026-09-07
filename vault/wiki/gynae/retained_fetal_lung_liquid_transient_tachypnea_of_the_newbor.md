@@ -168,3 +168,16 @@ embryologic lymph channels diminish in size to their e
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[automatic_tube_current_modulation|Automatic Tube Current Modulation]] ([Automatic Tube Current Modulation](../git/automatic_tube_current_modulation.md))
+- [[chronic_pancreatitis|Chronic Pancreatitis]] ([Chronic Pancreatitis](../git/chronic_pancreatitis.md))
+- [[dilatation_of_bowel|Dilatation Of Bowel]] ([Dilatation Of Bowel](../git/dilatation_of_bowel.md))
+- [[disorders_of_the_small_intestine|Disorders Of The Small Intestine]] ([Disorders Of The Small Intestine](../git/disorders_of_the_small_intestine.md))
+- [[gastric_pathology|Gastric Pathology]] ([Gastric Pathology](../git/gastric_pathology.md))
+- [[imaging_the_abdomen_with_computed_tomography_radiation_issues|Imaging The Abdomen With Computed Tomography Radiation Issues]] ([Imaging The Abdomen With Computed Tomography Radiation Issues](../git/imaging_the_abdomen_with_computed_tomography_radiation_issues.md))
+- [[iterative_reconstruction_algorithms|Iterative Reconstruction Algorithms]] ([Iterative Reconstruction Algorithms](../git/iterative_reconstruction_algorithms.md))
+- [[pancreatic_transplant_imaging|Pancreatic Transplant Imaging]] ([Pancreatic Transplant Imaging](../git/pancreatic_transplant_imaging.md))
+- [[radiological_investigation|Radiological Investigation]] ([Radiological Investigation](../git/radiological_investigation.md))
+- [[section_b_abdominal_imaging_uroradiology|Section B Abdominal Imaging]] ([Section B Abdominal Imaging](../git/section_b_abdominal_imaging_uroradiology.md))
+- [[acute_epiglottitis|Acute Epiglottitis]] ([Acute Epiglottitis](../head_neck/acute_epiglottitis.md))
+- [[orbital_blowout_fractures|Orbital Blowout Fractures]] ([Orbital Blowout Fractures](../head_neck/orbital_blowout_fractures.md))
+- [[parathyroid_disorders|Parathyroid Disorders]] ([Parathyroid Disorders](../head_neck/parathyroid_disorders.md))

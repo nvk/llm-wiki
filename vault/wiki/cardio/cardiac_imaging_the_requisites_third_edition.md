@@ -47,7 +47,6 @@ means, electronic or mechanical, including photocopying, recording, or any infor
 system, without permission in writing from the publisher. Permissions may be sought directly from Elsevier’s 
 Rights Department: phone: (1) 215 239 3804 (US) or (44) 1865 843830 (UK); fax: (44) 1865 853333; 
 e-mail: healthpermissions@elsevier.com. You may also complete your request on-line via the Elsevier website 
-at http://www.elsevier.com/permissions.
 Notice
 Neither the Publisher nor the Authors assume any responsibility for any loss or injury and/or damage 
 to persons or property arising out of or related to any use of the material contained in this book. It is 
@@ -185,3 +184,6 @@ development in clinical medicine
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[brain_death|BRAIN DEATH]] ([BRAIN DEATH](../neuro/brain_death.md))

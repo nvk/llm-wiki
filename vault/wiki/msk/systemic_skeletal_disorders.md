@@ -184,3 +184,6 @@ take, symptoms and radiographic f
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[mitral_valve_disease|Mitral Valve Disease]] ([Mitral Valve Disease](../cardio/mitral_valve_disease.md))

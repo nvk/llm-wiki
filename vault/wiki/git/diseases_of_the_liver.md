@@ -165,3 +165,6 @@ Hepatitis
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[use_of_isotope_studies_and_renal_transplant|Use Of Isotope Studies And Renal Transplant]] ([Use Of Isotope Studies And Renal Transplant](../uro/use_of_isotope_studies_and_renal_transplant.md))

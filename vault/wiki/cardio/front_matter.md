@@ -100,7 +100,6 @@ any means, electronic or mechanical, including photocopying, recording, or any i
 retrieval system, without permission in writing from the publisher. Permissions may be sought directly 
 from Elsevier’s Rights Department: phone: (+1) 215 239 3804 (US) or (+44) 1865 843830 (UK); fax: (+44) 
 1865 853333; e-mail: healthpermissions@elsevier.com. You may also complete your request on-line via the 
-Elsevier website at http://www.elsevier.com/permissions.
 
 Dedication
 “To my nephews, Malcolm and Paul”
@@ -248,3 +247,6 @@ Director of Ultrasonography
 Mallinckrodt Institute of Radiology
 Washington University School of Medicine
 Saint Louis, Missouri
+
+## See Also
+- [[scrotal_scanning|SCROTAL SCANNING]] ([SCROTAL SCANNING](../uro/scrotal_scanning.md))

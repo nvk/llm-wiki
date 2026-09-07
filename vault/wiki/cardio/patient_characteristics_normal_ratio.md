@@ -181,3 +181,4 @@ feat
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[developmental_abnormalities|DEVELOPMENTAL ABNORMALITIES]] ([DEVELOPMENTAL ABNORMALITIES](../paeds/developmental_abnormalities.md))

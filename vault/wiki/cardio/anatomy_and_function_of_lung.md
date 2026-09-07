@@ -218,3 +218,6 @@ Can
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[coronary_sinus|Coronary Sinus]] ([Coronary Sinus](../head_neck/coronary_sinus.md))

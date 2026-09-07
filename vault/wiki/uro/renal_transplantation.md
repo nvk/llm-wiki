@@ -152,3 +152,7 @@ adjace
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[liver|Liver]] ([Liver](../git/liver.md))
+- [[liver_transplantation|LIVER TRANSPLANTATION]] ([LIVER TRANSPLANTATION](../git/liver_transplantation.md))

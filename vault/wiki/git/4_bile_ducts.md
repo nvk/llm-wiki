@@ -207,3 +207,6 @@ pressur
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[segmental_analysis|Segmental Analysis]] ([Segmental Analysis](../cardio/segmental_analysis.md))

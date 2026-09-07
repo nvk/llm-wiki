@@ -175,3 +175,4 @@ echolucent area within the boundaries of the pericardial sac
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[nonsurgical_gallstone_therapies|NONSURGICAL GALLSTONE THERAPIES]] ([NONSURGICAL GALLSTONE THERAPIES](../vascular_ir/nonsurgical_gallstone_therapies.md))

@@ -130,19 +130,19 @@ infiltration the liver attenuation decreases, reversing, in turn, the normal
 ## 2. Core Radiology High-Yield Notes (Pages 33-40)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p33_p33_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 118
 Benign cystic splenic lesions
@@ -1005,3 +1005,5 @@ Can’t Avoid the Stomach or Patient has a known Duct Communication (so they gon
 for a long time) - Transgastric Approach — so it drains into the stomach
 419
 
+## See Also
+- [[diffuse_pulmonary_haemorrhage|Diffuse Pulmonary Haemorrhage]] ([Diffuse Pulmonary Haemorrhage](../cardio/diffuse_pulmonary_haemorrhage.md))

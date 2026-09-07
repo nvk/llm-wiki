@@ -106,3 +106,7 @@ Portland, Ore.)
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[venous_hypertension|Venous Hypertension]] ([Venous Hypertension](../cardio/venous_hypertension.md))
+- [[renal_arteries|Renal Arteries]] ([Renal Arteries](../uro/renal_arteries.md))

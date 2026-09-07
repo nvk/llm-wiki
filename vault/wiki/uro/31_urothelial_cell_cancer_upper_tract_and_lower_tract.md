@@ -99,27 +99,27 @@ progressive interstitial fibrosing renal disease with frequent urothelial
 ## 2. Core Radiology High-Yield Notes (Pages 41-46)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p41_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p41_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p41_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p41_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img8.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img14.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p46_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 196
 Congenital uterine anomalies
@@ -955,3 +955,6 @@ Grey Smudgy Shit Instead of Clean Fat in the Rotator Cuff Interval
 “Enhancement o f the Rotator C uff Interval ” - Post gad
 35
 
+## See Also
+- [[8_pulmonary_neoplasms|8 Pulmonary Neoplasms]] ([8 Pulmonary Neoplasms](../cardio/8_pulmonary_neoplasms.md))
+- [[descriptive_features_of_mediastinal_masses|Descriptive Features of Mediastinal Masses]] ([Descriptive Features of Mediastinal Masses](../cardio/descriptive_features_of_mediastinal_masses.md))

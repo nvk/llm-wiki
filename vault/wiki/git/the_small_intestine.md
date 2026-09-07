@@ -13,11 +13,11 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 69-69)
 
 ### Key Visuals & Figures (Grainger)
-![The Small Intestine Figure](assets/grainger_the_small_intestine_p69_img1.jpeg)
+> **Key Imaging Finding:** The Small Intestine Figure
 
-![The Small Intestine Figure](assets/grainger_the_small_intestine_p69_img2.jpeg)
+> **Key Imaging Finding:** The Small Intestine Figure
 
-![The Small Intestine Figure](assets/grainger_the_small_intestine_p69_img3.jpeg)
+> **Key Imaging Finding:** The Small Intestine Figure
 
 CHAPTER 21  The Small Intestine, Mesentery and Peritoneal Cavity
 531
@@ -84,19 +84,19 @@ from ischaemic colitis with perforation.)
 ## 2. Core Radiology High-Yield Notes (Pages 65-72)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p65_p66_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 150
 Flow of peritoneal fluid
@@ -386,29 +386,29 @@ MRI of the uterus and adnexa 192
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 481-492)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p481_p481_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p482_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p483_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p484_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p485_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p486_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p487_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p488_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p489_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p490_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p491_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p481_p492_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Carcinoid Syndrome:
 Flushing, diarrhea, pain, right heart failure from serotonin manufactured by the carcinoid 
@@ -874,3 +874,5 @@ Tc (but bones will be real weak on that one). MIBG can have lacrimal activity , 
 bones.
 493
 
+## See Also
+- [[radiological_evaluation_of_potential_donor_kidneys|Radiological Evaluation Of Potential Donor Kidneys]] ([Radiological Evaluation Of Potential Donor Kidneys](../uro/radiological_evaluation_of_potential_donor_kidneys.md))

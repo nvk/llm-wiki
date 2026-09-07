@@ -165,3 +165,7 @@ example, for a mass localized w
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[29_renal_masses|29 Renal Masses]] ([29 Renal Masses](../uro/29_renal_masses.md))
+- [[31_urothelial_cell_cancer_upper_tract_and_lower_tract|31 Urothelial Cell Cancer Upper Tract And Lower Tract]] ([31 Urothelial Cell Cancer Upper Tract And Lower Tract](../uro/31_urothelial_cell_cancer_upper_tract_and_lower_tract.md))

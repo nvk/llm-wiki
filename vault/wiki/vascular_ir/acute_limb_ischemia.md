@@ -195,3 +195,7 @@ occlusion
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[cardiovascular_anatomy|Cardiovascular Anatomy]] ([Cardiovascular Anatomy](../cardio/cardiovascular_anatomy.md))
+- [[56_neurovascular_diseases|56 Neurovascular Diseases]] ([56 Neurovascular Diseases](../neuro/56_neurovascular_diseases.md))

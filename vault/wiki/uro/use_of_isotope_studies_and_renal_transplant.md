@@ -13,15 +13,15 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 92-92)
 
 ### Key Visuals & Figures (Grainger)
-![Use of Isotope Studies and Renal Transplant Figure](assets/grainger_use_of_isotope_studi_p92_img1.jpeg)
+> **Key Imaging Finding:** Use of Isotope Studies and Renal Transplant Figure
 
-![Use of Isotope Studies and Renal Transplant Figure](assets/grainger_use_of_isotope_studi_p92_img2.jpeg)
+> **Key Imaging Finding:** Use of Isotope Studies and Renal Transplant Figure
 
-![Use of Isotope Studies and Renal Transplant Figure](assets/grainger_use_of_isotope_studi_p92_img3.jpeg)
+> **Key Imaging Finding:** Use of Isotope Studies and Renal Transplant Figure
 
-![Use of Isotope Studies and Renal Transplant Figure](assets/grainger_use_of_isotope_studi_p92_img4.jpeg)
+> **Key Imaging Finding:** Use of Isotope Studies and Renal Transplant Figure
 
-![Use of Isotope Studies and Renal Transplant Figure](assets/grainger_use_of_isotope_studi_p92_img5.jpeg)
+> **Key Imaging Finding:** Use of Isotope Studies and Renal Transplant Figure
 
 CHAPTER 30  Renal Transplantation: Imaging
 813
@@ -83,37 +83,37 @@ was evacuated surgically.
 ## 2. Core Radiology High-Yield Notes (Pages 17-24)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p17_p18_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p20_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p22_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 172
 Bosniak classification of cystic renal masses
@@ -458,29 +458,29 @@ OIS/AAST grading of renal trauma
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 541-552)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p541_p541_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p541_p542_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p541_p543_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p541_p544_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p541_p545_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p541_p546_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p541_p547_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p541_p548_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p541_p549_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p541_p550_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p541_p551_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p541_p552_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Suspected Renal Artery Stenosis
 The study can be performed in one 
@@ -975,3 +975,6 @@ So, she just cooked her
 thyroid.
 553
 
+## See Also
+- [[9_general_abdomen|9. General Abdomen]] ([9. General Abdomen](../git/9_general_abdomen.md))
+- [[diseases_of_the_liver|DISEASES OF THE LIVER]] ([DISEASES OF THE LIVER](../git/diseases_of_the_liver.md))

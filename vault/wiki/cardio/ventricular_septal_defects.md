@@ -161,3 +161,4 @@ deviation of
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[28_benign_upper_urinary_tract_conditions|28 Benign Upper Urinary Tract Conditions]] ([28 Benign Upper Urinary Tract Conditions](../uro/28_benign_upper_urinary_tract_conditions.md))

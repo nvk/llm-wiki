@@ -160,3 +160,7 @@ one particular technique has not been established. However, w
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[benign_pulmonary_tumours|Benign Pulmonary Tumours]] ([Benign Pulmonary Tumours](../cardio/benign_pulmonary_tumours.md))
+- [[tumours|Tumours]] ([Tumours](../git/tumours.md))

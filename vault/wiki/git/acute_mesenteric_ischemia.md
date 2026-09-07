@@ -173,3 +173,7 @@ B
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[noninvasive_vascular_imaging|Noninvasive Vascular Imaging]] ([Noninvasive Vascular Imaging](../vascular_ir/noninvasive_vascular_imaging.md))
+- [[venous_emergencies|VENOUS EMERGENCIES]] ([VENOUS EMERGENCIES](../vascular_ir/venous_emergencies.md))

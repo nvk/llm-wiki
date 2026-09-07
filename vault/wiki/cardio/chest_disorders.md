@@ -211,3 +211,6 @@ OXYGEN TOXICITY = ACUTE RESPIRATORY DISTRESS SYNDROME
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[special_considerations|SPECIAL CONSIDERATIONS]] ([SPECIAL CONSIDERATIONS](../emergency/special_considerations.md))

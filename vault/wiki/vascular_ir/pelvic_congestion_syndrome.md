@@ -163,3 +163,7 @@ femoral or jugular vein can be used, a
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pulmonary_diseases_in_the_immunocompromised_host_with_or_wit|Pulmonary Diseases in the Immuno­compromised Host with or without Acquired Immuno­deficiency Syndrome]] ([Pulmonary Diseases in the Immuno­compromised Host with or without Acquired Immuno­deficiency Syndrome](../cardio/pulmonary_diseases_in_the_immunocompromised_host_with_or_wit.md))
+- [[17_fetal_gastrointestinal_tract|17. Fetal Gastrointestinal Tract]] ([17. Fetal Gastrointestinal Tract](../gynae/17_fetal_gastrointestinal_tract.md))

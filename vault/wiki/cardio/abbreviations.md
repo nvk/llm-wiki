@@ -86,7 +86,6 @@ blood group
 ABR
 American Board of Radiology
 14
-http://pdfradiology.com
 
 AC
 abdominal circumference
@@ -169,7 +168,6 @@ endocrine cells tumors
 APVR
 anomalous pulmonary venous return
 15
-http://pdfradiology.com
 
 APW
 absolute percentage washout
@@ -250,7 +248,6 @@ biparietal diameter
 BPH
 benign prostatic hyperplasia
 16
-http://pdfradiology.com
 
 bpm
 beats per minute
@@ -330,7 +327,6 @@ congestive heart failure
 CLL
 chronic lymphatic leukemia
 17
-http://pdfradiology.com
 
 cm
 centimeter
@@ -413,7 +409,6 @@ chest x-ray
 CXRs
 chest x-rays
 18
-http://pdfradiology.com
 
 d
 day(s)
@@ -492,7 +487,6 @@ enddiastolic diameter
 EDTA
 ethylenediaminetetraacetic acid
 19
-http://pdfradiology.com
 
 EDV
 enddiastolic volume
@@ -571,3 +565,6 @@ code number fo
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[radionuclides|RADIONUCLIDES]] ([RADIONUCLIDES](../physics_nuclear/radionuclides.md))

@@ -172,3 +172,7 @@ rupture is incre
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[differential_diagnosis_of_gastrointestinal_and_abdominal_dis|Differential Diagnosis of Gastrointestinal and abdominal Disorders]] ([Differential Diagnosis of Gastrointestinal and abdominal Disorders](../git/differential_diagnosis_of_gastrointestinal_and_abdominal_dis.md))
+- [[disorders_of_the_gallbladder|Disorders Of The Gallbladder]] ([Disorders Of The Gallbladder](../git/disorders_of_the_gallbladder.md))

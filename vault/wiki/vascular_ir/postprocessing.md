@@ -219,3 +219,6 @@ tissues. For these reasons, all 3-D models must be viewed with
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[diaphragm|Diaphragm]] ([Diaphragm](../cardio/diaphragm.md))

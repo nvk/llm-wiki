@@ -100,51 +100,51 @@ include metabolic information obtained by using single-photon emission
 ## 2. Core Radiology High-Yield Notes (Pages 137-144)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p137_p137_img37.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p137_img50.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p137_img57.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p137_img62.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p137_img100.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p137_img102.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p137_img147.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p137_img305.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p137_img315.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p137_img327.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p137_img337.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p138_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p138_img11.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p138_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p138_img21.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p140_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p140_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p140_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p141_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p141_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p142_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p142_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p137_p142_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 336
 •
@@ -504,29 +504,29 @@ Yousem, D. Suprahyoid Spaces of the Head and Neck. Seminars in Roentgenology, XX
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 433-444)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p433_p433_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p434_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p435_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p436_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p437_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p438_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p439_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p440_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p441_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p442_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p443_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p433_p444_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Benign prostatic hyperplasia (BPH): Obviously this is super common, and makes 
 old men pee a lot. Volume of 30cc is one definition. Most commonly involves the 
@@ -1058,3 +1058,5 @@ Decidua Capsularis
 Double Decidual Sac Sign
 445
 
+## See Also
+- [[dementia|DEMENTIA]] ([DEMENTIA](../head_neck/dementia.md))

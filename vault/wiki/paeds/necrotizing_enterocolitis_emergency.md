@@ -164,3 +164,5 @@ a history of emesis, es
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[infection|INFECTION]] ([INFECTION](../emergency/infection.md))
+- [[bacterial_infections|Bacterial Infections]] ([Bacterial Infections](../neuro/bacterial_infections.md))

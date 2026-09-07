@@ -97,3 +97,6 @@ to those of asbestosis. Pleural thickening (arrowhead) can be seen.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[59_neurodegenerative_diseases_and_epilepsy|59 Neurodegenerative Diseases And Epilepsy]] ([59 Neurodegenerative Diseases And Epilepsy](../neuro/59_neurodegenerative_diseases_and_epilepsy.md))

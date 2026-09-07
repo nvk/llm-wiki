@@ -125,3 +125,7 @@ Complications
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[acute_pulmonary_embolism|ACUTE PULMONARY EMBOLISM]] ([ACUTE PULMONARY EMBOLISM](../cardio/acute_pulmonary_embolism.md))
+- [[lower_extremity_arteries|Lower-Extremity Arteries]] ([Lower-Extremity Arteries](../msk/lower_extremity_arteries.md))

@@ -183,3 +183,4 @@ prostheses of the same type.
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[mönckeberg_sclerosis|MÖNCKEBERG SCLEROSIS]] ([MÖNCKEBERG SCLEROSIS](../vascular_ir/mönckeberg_sclerosis.md))

@@ -151,3 +151,7 @@ vulus because both false
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[interventional_techniques|Interventional Techniques]] ([Interventional Techniques](../cardio/interventional_techniques.md))
+- [[transthoracic_needle_biopsy|Transthoracic Needle Biopsy]] ([Transthoracic Needle Biopsy](../cardio/transthoracic_needle_biopsy.md))

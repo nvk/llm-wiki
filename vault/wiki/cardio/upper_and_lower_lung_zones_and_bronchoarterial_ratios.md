@@ -180,3 +180,4 @@ anomalies)
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[inherited_disorders_of_the_arterial_wall|INHERITED DISORDERS OF THE ARTERIAL WALL]] ([INHERITED DISORDERS OF THE ARTERIAL WALL](../vascular_ir/inherited_disorders_of_the_arterial_wall.md))

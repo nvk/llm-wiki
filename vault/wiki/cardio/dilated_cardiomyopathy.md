@@ -176,3 +176,4 @@ stolic dysfunction, and mitral regurgitation. It is associated
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[methods_of_investigation|Methods Of Investigation]] ([Methods Of Investigation](../git/methods_of_investigation.md))

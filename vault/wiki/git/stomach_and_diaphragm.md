@@ -163,3 +163,6 @@ c
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pericardial_disease|Pericardial Disease]] ([Pericardial Disease](../cardio/pericardial_disease.md))

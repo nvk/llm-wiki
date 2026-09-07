@@ -100,35 +100,35 @@ in the context of normal plain radiography or persistent symptoms
 ## 2. Core Radiology High-Yield Notes (Pages 89-96)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p89_p89_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p89_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img11.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img17.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img39.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p91_img40.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p92_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p92_img7.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p92_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p95_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p95_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p89_p96_img1.png)
+> **Key Imaging Finding:** Core Figure
 
 433
 Femoroacetabular impingement (FAI)
@@ -1122,3 +1122,6 @@ affects the C-spine. It looks like bad degenerative changes or CPPD. Amyloid dep
 supposedly why it happens.
 119
 
+## See Also
+- [[chest_trauma|Chest Trauma]] ([Chest Trauma](../cardio/chest_trauma.md))
+- [[tracheobronchtal_injuries|TRACHEOBRONCHTAL INJURIES]] ([TRACHEOBRONCHTAL INJURIES](../cardio/tracheobronchtal_injuries.md))

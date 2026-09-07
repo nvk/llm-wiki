@@ -130,3 +130,6 @@ Philadelphia: WB Saunders, 1986, with permission.)
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[chronic_obstructive_pulmonary_disease|Chronic Obstructive Pulmonary Disease]] ([Chronic Obstructive Pulmonary Disease](../cardio/chronic_obstructive_pulmonary_disease.md))

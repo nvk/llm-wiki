@@ -183,3 +183,5 @@ The bony abnormalities in neurofi bromat
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[chronic_venous_obstruction_and_post_phlebitic_syndrome|CHRONIC VENOUS OBSTRUCTION AND POST-PHLEBITIC SYNDROME]] ([CHRONIC VENOUS OBSTRUCTION AND POST-PHLEBITIC SYNDROME](../vascular_ir/chronic_venous_obstruction_and_post_phlebitic_syndrome.md))
+- [[the_arterial_puncture|THE ARTERIAL PUNCTURE]] ([THE ARTERIAL PUNCTURE](../vascular_ir/the_arterial_puncture.md))

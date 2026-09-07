@@ -174,3 +174,7 @@ M
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pulmonary_parenchymal_injury|Pulmonary Parenchymal Injury]] ([Pulmonary Parenchymal Injury](../cardio/pulmonary_parenchymal_injury.md))
+- [[gastrointestinal|GASTROINTESTINAL]] ([GASTROINTESTINAL](../git/gastrointestinal.md))

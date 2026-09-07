@@ -320,3 +320,6 @@ stimulates smooth muscle contraction. Excessive use of ergot
 alkaloids results in ergotism, with gastrointestinal, neurologic, 
 and vascular symptoms. Patients tend to be younger than 
 would be typical for atherosclerotic disease, with demograph-
+
+## See Also
+- [[zonal_distribution|Zonal Distribution]] ([Zonal Distribution](../cardio/zonal_distribution.md))

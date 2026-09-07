@@ -192,3 +192,4 @@ A new measure of
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[targeted_disc_decompression|TARGETED DISC DECOMPRESSION]] ([TARGETED DISC DECOMPRESSION](../vascular_ir/targeted_disc_decompression.md))

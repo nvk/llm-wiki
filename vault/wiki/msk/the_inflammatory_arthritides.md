@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 154-154)
 
 ### Key Visuals & Figures (Grainger)
-![The Inflammatory Arthritides Figure](assets/grainger_the_inflammatory_art_p154_img1.jpeg)
+> **Key Imaging Finding:** The Inflammatory Arthritides Figure
 
-![The Inflammatory Arthritides Figure](assets/grainger_the_inflammatory_art_p154_img2.jpeg)
+> **Key Imaging Finding:** The Inflammatory Arthritides Figure
 
 1122
 SECTION C  The Musculoskeletal System
@@ -109,53 +109,53 @@ synovitis or bone marrow abnormalities
 ## 2. Core Radiology High-Yield Notes (Pages 73-80)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p73_p73_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p73_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p73_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p74_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p74_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p74_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img8.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img21.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 417
 Knee Ligaments
@@ -1058,3 +1058,6 @@ Supracondylar
 Canal
 95
 
+## See Also
+- [[neonatal_pneumonia_emergency|Neonatal Pneumonia]] ([Neonatal Pneumonia](../paeds/neonatal_pneumonia_emergency.md))
+- [[infection|INFECTION]] ([INFECTION](../vascular_ir/infection.md))

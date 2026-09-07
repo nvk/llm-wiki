@@ -205,3 +205,6 @@ syrup urine disease, Canavan disease, Alexander disease, and the
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[silicosis|Silicosis]] ([Silicosis](../cardio/silicosis.md))

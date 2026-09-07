@@ -182,3 +182,6 @@ Pediatric
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pericardial_and_myocardial_disease|Pericardial and Myocardial Disease]] ([Pericardial and Myocardial Disease](../cardio/pericardial_and_myocardial_disease.md))

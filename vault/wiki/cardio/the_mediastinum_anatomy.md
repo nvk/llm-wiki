@@ -179,3 +179,6 @@ located mass is mediastina
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[32_prostate|32 Prostate]] ([32 Prostate](../uro/32_prostate.md))

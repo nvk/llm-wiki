@@ -178,3 +178,6 @@ Child abuse
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[gallbladder_and_bile_duct_trauma|GALLBLADDER AND BILE DUCT TRAUMA]] ([GALLBLADDER AND BILE DUCT TRAUMA](../git/gallbladder_and_bile_duct_trauma.md))

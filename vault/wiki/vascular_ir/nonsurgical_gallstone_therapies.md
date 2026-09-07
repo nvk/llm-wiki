@@ -157,3 +157,6 @@ material throu
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[endomyocardial_fibrosis|Endomyocardial Fibrosis]] ([Endomyocardial Fibrosis](../cardio/endomyocardial_fibrosis.md))

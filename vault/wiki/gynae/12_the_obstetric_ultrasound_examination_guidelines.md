@@ -25,7 +25,7 @@ FIRST-TRIMESTER IMAGING PARAMETERS
 SECOND- AND THIRD-TRIMESTER IMAGING 
 PARAMETERS
 FOR KEY FEATURES SUMMARY SEE P. 310
-Additional videos for this topic are available online at 
+Additional videos for this topic are 
 expertconsult.com.
 PRACTICE GUIDELINES: OVERVIEW
 This chapter reviews the components of the standard obstet-
@@ -108,7 +108,7 @@ length should be recorded, when possible.
 *All “Comments” (in italics) and bolded text in this chapter are reproduced 
 from American College of Radiology: ACR-ACOG-AIUM-SRU Practice 
 Parameter for the Performance of Obstetrical Ultrasound. With permission. 
-http://www.acr.org. Accessed 15 April 2014.
+ Accessed 15 April 2014.
 Scanning in the ﬁrst trimester may be performed 
 either transabdominally or transvaginally. If a transabdomi-
 nal examination is not deﬁnitive, a transvaginal scan or trans-
@@ -167,3 +167,6 @@ the case of certain assisted fertility procedur
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[normal_chest_radiography|Normal Chest Radiography]] ([Normal Chest Radiography](../cardio/normal_chest_radiography.md))

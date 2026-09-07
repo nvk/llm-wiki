@@ -180,3 +180,6 @@ Pleural effusion
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[color_plates|Color Plates]] ([Color Plates](../paeds/color_plates.md))

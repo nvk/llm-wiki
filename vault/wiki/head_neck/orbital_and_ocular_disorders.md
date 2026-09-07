@@ -192,3 +192,6 @@ Cx:   p
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[23_pelvis_and_uterus|23. Pelvis and Uterus]] ([23. Pelvis and Uterus](../gynae/23_pelvis_and_uterus.md))

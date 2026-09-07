@@ -159,3 +159,6 @@ CABG surgery may even improve their left ventricular sy
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[vascular_pathology|Vascular Pathology]] ([Vascular Pathology](../vascular_ir/vascular_pathology.md))

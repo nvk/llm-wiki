@@ -13,11 +13,11 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 224-224)
 
 ### Key Visuals & Figures (Grainger)
-![Occupational Lung Disease Figure](assets/grainger_occupational_lung_di_p224_img1.jpeg)
+> **Key Imaging Finding:** Occupational Lung Disease Figure
 
-![Occupational Lung Disease Figure](assets/grainger_occupational_lung_di_p224_img2.jpeg)
+> **Key Imaging Finding:** Occupational Lung Disease Figure
 
-![Occupational Lung Disease Figure](assets/grainger_occupational_lung_di_p224_img3.jpeg)
+> **Key Imaging Finding:** Occupational Lung Disease Figure
 
 226
 SECTION A  The Chest and Cardiovascular System
@@ -62,33 +62,33 @@ resolution with migration (C).
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p10_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img7.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img8.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img10.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img12.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p15_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p16_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 8
 Patterns of lung disease
@@ -883,3 +883,5 @@ graft. If you created a wall injury/dissection ? Again - answers will vary, but 
 answer is systemic anticoagulation.
 383
 
+## See Also
+- [[intra_axial_hemorrhage|INTRA-AXIAL HEMORRHAGE]] ([INTRA-AXIAL HEMORRHAGE](../neuro/intra_axial_hemorrhage.md))

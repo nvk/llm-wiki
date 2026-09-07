@@ -202,3 +202,7 @@ resolved but the aorta is aneurysmal and
 the soft tissue stranding increased.
 A
 B
+
+## See Also
+- [[5_pulmonary_infection_in_adults|5 Pulmonary Infection In Adults]] ([5 Pulmonary Infection In Adults](../cardio/5_pulmonary_infection_in_adults.md))
+- [[the_inflammatory_arthritides|The Inflammatory Arthritides]] ([The Inflammatory Arthritides](../msk/the_inflammatory_arthritides.md))

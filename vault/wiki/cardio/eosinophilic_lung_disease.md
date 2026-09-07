@@ -180,3 +180,6 @@ although if untreate
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[small_and_large_bowel|SMALL AND LARGE BOWEL]] ([SMALL AND LARGE BOWEL](../git/small_and_large_bowel.md))

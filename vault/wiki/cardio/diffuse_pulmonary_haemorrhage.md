@@ -13,15 +13,15 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 235-236)
 
 ### Key Visuals & Figures (Grainger)
-![Diffuse Pulmonary Haemorrhage Figure](assets/grainger_diffuse_pulmonary_ha_p235_img1.jpeg)
+> **Key Imaging Finding:** Diffuse Pulmonary Haemorrhage Figure
 
-![Diffuse Pulmonary Haemorrhage Figure](assets/grainger_diffuse_pulmonary_ha_p236_img1.jpeg)
+> **Key Imaging Finding:** Diffuse Pulmonary Haemorrhage Figure
 
-![Diffuse Pulmonary Haemorrhage Figure](assets/grainger_diffuse_pulmonary_ha_p236_img2.jpeg)
+> **Key Imaging Finding:** Diffuse Pulmonary Haemorrhage Figure
 
-![Diffuse Pulmonary Haemorrhage Figure](assets/grainger_diffuse_pulmonary_ha_p236_img3.jpeg)
+> **Key Imaging Finding:** Diffuse Pulmonary Haemorrhage Figure
 
-![Diffuse Pulmonary Haemorrhage Figure](assets/grainger_diffuse_pulmonary_ha_p236_img4.jpeg)
+> **Key Imaging Finding:** Diffuse Pulmonary Haemorrhage Figure
 
 256
 SECTION A  The Chest and Cardiovascular System
@@ -186,35 +186,35 @@ lymph node enlargement.
 ## 2. Core Radiology High-Yield Notes (Pages 65-72)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p65_p65_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p65_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p65_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 64
 Lymphangioleiomyomatosis (LAM)
@@ -1041,3 +1041,5 @@ Rolled Laterally CC view,
 moves the cancer medially
 467
 
+## See Also
+- [[diffuse_disease|Diffuse Disease]] ([Diffuse Disease](../git/diffuse_disease.md))

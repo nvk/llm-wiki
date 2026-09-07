@@ -174,3 +174,6 @@ t
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[radiofrequency_ablation_of_malignant_lung_tumors|Radiofrequency Ablation of Malignant Lung Tumors]] ([Radiofrequency Ablation of Malignant Lung Tumors](../cardio/radiofrequency_ablation_of_malignant_lung_tumors.md))

@@ -193,3 +193,5 @@ transverse plane includes a c
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[classification_of_spinal_tumours|Classification of Spinal Tumours]] ([Classification of Spinal Tumours](../spine/classification_of_spinal_tumours.md))
+- [[percutaneous_vertebroplasty|PERCUTANEOUS VERTEBROPLASTY]] ([PERCUTANEOUS VERTEBROPLASTY](../vascular_ir/percutaneous_vertebroplasty.md))

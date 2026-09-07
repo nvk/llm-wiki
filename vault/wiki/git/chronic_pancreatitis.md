@@ -13,29 +13,29 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 228-230)
 
 ### Key Visuals & Figures (Grainger)
-![Chronic Pancreatitis Figure](assets/grainger_chronic_pancreatitis_p228_img1.jpeg)
+> **Key Imaging Finding:** Chronic Pancreatitis Figure
 
-![Chronic Pancreatitis Figure](assets/grainger_chronic_pancreatitis_p228_img2.jpeg)
+> **Key Imaging Finding:** Chronic Pancreatitis Figure
 
-![Chronic Pancreatitis Figure](assets/grainger_chronic_pancreatitis_p228_img3.jpeg)
+> **Key Imaging Finding:** Chronic Pancreatitis Figure
 
-![Chronic Pancreatitis Figure](assets/grainger_chronic_pancreatitis_p228_img4.jpeg)
+> **Key Imaging Finding:** Chronic Pancreatitis Figure
 
-![Chronic Pancreatitis Figure](assets/grainger_chronic_pancreatitis_p228_img5.jpeg)
+> **Key Imaging Finding:** Chronic Pancreatitis Figure
 
-![Chronic Pancreatitis Figure](assets/grainger_chronic_pancreatitis_p229_img1.jpeg)
+> **Key Imaging Finding:** Chronic Pancreatitis Figure
 
-![Chronic Pancreatitis Figure](assets/grainger_chronic_pancreatitis_p229_img2.jpeg)
+> **Key Imaging Finding:** Chronic Pancreatitis Figure
 
-![Chronic Pancreatitis Figure](assets/grainger_chronic_pancreatitis_p229_img3.jpeg)
+> **Key Imaging Finding:** Chronic Pancreatitis Figure
 
-![Chronic Pancreatitis Figure](assets/grainger_chronic_pancreatitis_p229_img4.jpeg)
+> **Key Imaging Finding:** Chronic Pancreatitis Figure
 
-![Chronic Pancreatitis Figure](assets/grainger_chronic_pancreatitis_p229_img5.jpeg)
+> **Key Imaging Finding:** Chronic Pancreatitis Figure
 
-![Chronic Pancreatitis Figure](assets/grainger_chronic_pancreatitis_p230_img1.jpeg)
+> **Key Imaging Finding:** Chronic Pancreatitis Figure
 
-![Chronic Pancreatitis Figure](assets/grainger_chronic_pancreatitis_p230_img2.jpeg)
+> **Key Imaging Finding:** Chronic Pancreatitis Figure
 
 690
 SECTION B  Abdominal Imaging
@@ -171,23 +171,23 @@ described four distinct subtypes of paraduodenal pancreatitis. The
 ## 2. Core Radiology High-Yield Notes (Pages 41-48)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p42_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p44_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 126
 Benign esophageal masses
@@ -1367,3 +1367,17 @@ There are 10 lung segments on the right, and 8 lung segments on the left
 If it goes above the clavicles, it’s in the posterior mediastinum (cervicothoracic sign)
 575
 
+## See Also
+- [[adhesive_capsulitis|Adhesive Capsulitis]] ([Adhesive Capsulitis](../emergency/adhesive_capsulitis.md))
+- [[calcium_hydroxyapatite_deposition_disease|Calcium Hydroxyapatite Deposition Disease]] ([Calcium Hydroxyapatite Deposition Disease](../emergency/calcium_hydroxyapatite_deposition_disease.md))
+- [[conclusion|CONCLUSION]] ([CONCLUSION](../emergency/conclusion.md))
+- [[general_imaging_characteristics_of_hemorrhage|General Imaging Characteristics of Hemorrhage]] ([General Imaging Characteristics of Hemorrhage](../emergency/general_imaging_characteristics_of_hemorrhage.md))
+- [[hemorrhagic_transformation|Hemorrhagic Transformation]] ([Hemorrhagic Transformation](../emergency/hemorrhagic_transformation.md))
+- [[infections|INFECTIONS]] ([INFECTIONS](../emergency/infections.md))
+- [[intestinal_obstruction|Intestinal Obstruction]] ([Intestinal Obstruction](../emergency/intestinal_obstruction.md))
+- [[spontaneous_cervical_dissection|Spontaneous Cervical Dissection]] ([Spontaneous Cervical Dissection](../emergency/spontaneous_cervical_dissection.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../emergency/suggested_readings.md))
+- [[urolithiasisis|Urolithiasisis]] ([Urolithiasisis](../emergency/urolithiasisis.md))
+- [[anatomy_and_physiology_of_the_female_reproductive_system|Anatomy and Physiology of the Female Reproductive System]] ([Anatomy and Physiology of the Female Reproductive System](../gynae/anatomy_and_physiology_of_the_female_reproductive_system.md))
+- [[ovarian_torsion|Ovarian Torsion]] ([Ovarian Torsion](../gynae/ovarian_torsion.md))
+- [[retained_fetal_lung_liquid_transient_tachypnea_of_the_newbor|Retained Fetal Lung Liquid (Transient Tachypnea of the Newborn)]] ([Retained Fetal Lung Liquid (Transient Tachypnea of the Newborn)](../gynae/retained_fetal_lung_liquid_transient_tachypnea_of_the_newbor.md))

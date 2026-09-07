@@ -106,3 +106,7 @@ B
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[prehepatic_portal_venous_thrombosisocclusion|PREHEPATIC PORTAL VENOUS THROMBOSIS/OCCLUSION]] ([PREHEPATIC PORTAL VENOUS THROMBOSIS/OCCLUSION](../vascular_ir/prehepatic_portal_venous_thrombosisocclusion.md))
+- [[septic_thrombophlebitis|SEPTIC THROMBOPHLEBITIS]] ([SEPTIC THROMBOPHLEBITIS](../vascular_ir/septic_thrombophlebitis.md))

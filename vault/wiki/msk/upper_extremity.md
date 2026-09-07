@@ -222,3 +222,6 @@ a patient holding a 10- to 15-pound w
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pulmonary_circulation|Pulmonary Circulation]] ([Pulmonary Circulation](../cardio/pulmonary_circulation.md))

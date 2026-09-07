@@ -183,3 +183,6 @@ patchy areas of consolidati
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[colitis|Colitis]] ([Colitis](../git/colitis.md))

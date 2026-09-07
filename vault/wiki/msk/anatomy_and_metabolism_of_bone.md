@@ -227,3 +227,6 @@ glenoid body fossa): limited to sector from 11 to 3 o’clock (anterior = 3 o’
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[detection_mediastinal_landmarks|Detection: Mediastinal Landmarks]] ([Detection: Mediastinal Landmarks](../cardio/detection_mediastinal_landmarks.md))

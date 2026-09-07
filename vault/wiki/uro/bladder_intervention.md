@@ -155,3 +155,7 @@ tant for patients with small-capacity bladde
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pulmonary_circulation_interventional|Pulmonary Circulation]] ([Pulmonary Circulation](../cardio/pulmonary_circulation_interventional.md))
+- [[portal_vein_embolization|PORTAL VEIN EMBOLIZATION]] ([PORTAL VEIN EMBOLIZATION](../vascular_ir/portal_vein_embolization.md))

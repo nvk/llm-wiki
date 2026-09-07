@@ -87,3 +87,6 @@ B
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[the_pleura_pericardium_and_mediastinum|THE PLEURA, PERICARDIUM, AND MEDIASTINUM]] ([THE PLEURA, PERICARDIUM, AND MEDIASTINUM](../cardio/the_pleura_pericardium_and_mediastinum.md))

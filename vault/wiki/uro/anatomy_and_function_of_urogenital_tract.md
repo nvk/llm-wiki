@@ -202,3 +202,6 @@ Renal Polar Artery
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[physiological_and_functional_assessment|Physiological And Functional Assessment]] ([Physiological And Functional Assessment](../cardio/physiological_and_functional_assessment.md))

@@ -178,3 +178,6 @@ ance. Both veins were treated with angioplasty followed by self-­expanding
 stent placement. B, One year later the left IJV stents are widely patent 
 stents (arrows) with absence of collateral drainage. The right IJV stents 
 were also patent.
+
+## See Also
+- [[increased_resistance_in_the_capillary_bed|INCREASED RESISTANCE IN THE CAPILLARY BED]] ([INCREASED RESISTANCE IN THE CAPILLARY BED](../cardio/increased_resistance_in_the_capillary_bed.md))

@@ -16,6 +16,10 @@ aliases: ["radiation_dose_reduction_in_clinical_practice"]---
 ## Clinical & Radiological Concepts
 Lossless excerpt from gold-standard UK reference textbook.
 
+## See Also
+- [[radiography_for_the_critical_care_patient|Radiography for the Critical Care Patient]] ([Radiography for the Critical Care Patient](../cardio/radiography_for_the_critical_care_patient.md))
+- [[role_of_conventional_chest_radiography_in_ischaemic_heart_disease|Role Of Conventional Chest Radiography In Ischaemic Heart Disease]] ([Role Of Conventional Chest Radiography In Ischaemic Heart Disease](../cardio/role_of_conventional_chest_radiography_in_ischaemic_heart_disease.md))
+
 ## Reference Text
 480
 SECTION B  Abdominal Imaging

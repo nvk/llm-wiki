@@ -148,3 +148,6 @@ Fig. 27-3). At 3 months, Suh and colleagues demonstrated a
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[the_central_airways|The Central Airways]] ([The Central Airways](../cardio/the_central_airways.md))

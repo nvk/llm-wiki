@@ -164,3 +164,7 @@ Fi
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[trauma|Trauma]] ([Trauma](../git/trauma.md))
+- [[aneurysms_vascular_malformations_and_vascular_injuries|ANEURYSMS, VASCULAR MALFORMATIONS, AND VASCULAR INJURIES]] ([ANEURYSMS, VASCULAR MALFORMATIONS, AND VASCULAR INJURIES](../vascular_ir/aneurysms_vascular_malformations_and_vascular_injuries.md))

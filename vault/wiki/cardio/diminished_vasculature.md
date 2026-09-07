@@ -193,3 +193,4 @@ there is increased resistanc
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[the_acromioclavicular_joint|The Acromioclavicular Joint]] ([The Acromioclavicular Joint](../msk/the_acromioclavicular_joint.md))

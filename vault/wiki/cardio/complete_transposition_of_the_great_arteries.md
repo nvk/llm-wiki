@@ -169,3 +169,5 @@ conal tissue
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[chronic_mesenteric_ischemia|CHRONIC MESENTERIC ISCHEMIA]] ([CHRONIC MESENTERIC ISCHEMIA](../git/chronic_mesenteric_ischemia.md))
+- [[chronic_venous_obstruction_and_post_phlebitic_syndrome|CHRONIC VENOUS OBSTRUCTION AND POST-PHLEBITIC SYNDROME]] ([CHRONIC VENOUS OBSTRUCTION AND POST-PHLEBITIC SYNDROME](../vascular_ir/chronic_venous_obstruction_and_post_phlebitic_syndrome.md))

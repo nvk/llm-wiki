@@ -13,15 +13,15 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 13-13)
 
 ### Key Visuals & Figures (Grainger)
-![Acute Abdominal Inflammatory Conditions Figure](assets/grainger_acute_abdominal_infl_p13_img1.jpeg)
+> **Key Imaging Finding:** Acute Abdominal Inflammatory Conditions Figure
 
-![Acute Abdominal Inflammatory Conditions Figure](assets/grainger_acute_abdominal_infl_p13_img2.jpeg)
+> **Key Imaging Finding:** Acute Abdominal Inflammatory Conditions Figure
 
-![Acute Abdominal Inflammatory Conditions Figure](assets/grainger_acute_abdominal_infl_p13_img3.jpeg)
+> **Key Imaging Finding:** Acute Abdominal Inflammatory Conditions Figure
 
-![Acute Abdominal Inflammatory Conditions Figure](assets/grainger_acute_abdominal_infl_p13_img4.jpeg)
+> **Key Imaging Finding:** Acute Abdominal Inflammatory Conditions Figure
 
-![Acute Abdominal Inflammatory Conditions Figure](assets/grainger_acute_abdominal_infl_p13_img5.jpeg)
+> **Key Imaging Finding:** Acute Abdominal Inflammatory Conditions Figure
 
 CHAPTER 18  Current Status of Imaging of the Gastrointestinal Tract
 475
@@ -89,27 +89,27 @@ Mesenteric adenitis
 ## 2. Core Radiology High-Yield Notes (Pages 57-64)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p57_p58_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img83.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img94.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 142
 Scleroderma
@@ -478,29 +478,29 @@ Lesser omentum: Connects stomach to liver.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 121-132)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p121_p121_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p122_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p123_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p124_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p125_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p126_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p127_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p128_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p129_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p130_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p131_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p132_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 NOT Normal: Anomalies of the Origin, Course, and Termination:
 Malignant Origin: There are like a million billion different types 
@@ -1141,3 +1141,6 @@ Associated with a
 persistent left 
 SVC
 
+## See Also
+- [[5_pulmonary_infection_in_adults|5 Pulmonary Infection In Adults]] ([5 Pulmonary Infection In Adults](../cardio/5_pulmonary_infection_in_adults.md))
+- [[protozoan_and_other_parasitic_infections|Protozoan And Other Parasitic Infections]] ([Protozoan And Other Parasitic Infections](../cardio/protozoan_and_other_parasitic_infections.md))

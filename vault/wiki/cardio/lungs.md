@@ -156,3 +156,6 @@ Figure 2-12.  Cystic adenomatoid malformation type I. The posteroanterior radi
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[percutaneous_transhepatic_cholangiography|PERCUTANEOUS TRANSHEPATIC CHOLANGIOGRAPHY]] ([PERCUTANEOUS TRANSHEPATIC CHOLANGIOGRAPHY](../vascular_ir/percutaneous_transhepatic_cholangiography.md))

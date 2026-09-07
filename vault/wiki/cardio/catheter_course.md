@@ -174,3 +174,5 @@ Fleischner FG: The butterfl y pattern of acute pulmonary edema, Am J Cardio
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[interventional_techniques|Interventional Techniques]] ([Interventional Techniques](../git/interventional_techniques.md))
+- [[cryoablation|CRYOABLATION]] ([CRYOABLATION](../vascular_ir/cryoablation.md))

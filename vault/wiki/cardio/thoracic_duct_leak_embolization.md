@@ -74,3 +74,7 @@ performed. In patients with high-output leaks, early intervention
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[venous_emergencies|VENOUS EMERGENCIES]] ([VENOUS EMERGENCIES](../vascular_ir/venous_emergencies.md))
+- [[venous_malformations|VENOUS MALFORMATIONS]] ([VENOUS MALFORMATIONS](../vascular_ir/venous_malformations.md))

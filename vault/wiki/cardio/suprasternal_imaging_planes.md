@@ -184,3 +184,4 @@ like” appearance. LA, left atrium; LIPV, left inferior pulmonary vein;
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[chapter_outline|Chapter Outline]] ([Chapter Outline](../git/chapter_outline.md))

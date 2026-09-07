@@ -172,3 +172,6 @@ yet include thrombo
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[intimal_hyperplasia|INTIMAL HYPERPLASIA]] ([INTIMAL HYPERPLASIA](../vascular_ir/intimal_hyperplasia.md))

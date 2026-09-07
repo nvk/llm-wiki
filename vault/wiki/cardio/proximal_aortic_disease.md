@@ -163,3 +163,4 @@ to confi rm the diagnosis by echocardiography. The features
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[radiological_techniques|Radiological Techniques]] ([Radiological Techniques](../uro/radiological_techniques.md))

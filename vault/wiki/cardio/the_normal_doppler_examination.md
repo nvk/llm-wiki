@@ -175,3 +175,4 @@ In
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[the_duodenum|The Duodenum]] ([The Duodenum](../git/the_duodenum.md))

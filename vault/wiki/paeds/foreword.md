@@ -97,3 +97,6 @@ Boston, Massachusetts
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[eisenmenger_syndrome|Eisenmenger Syndrome]] ([Eisenmenger Syndrome](../cardio/eisenmenger_syndrome.md))

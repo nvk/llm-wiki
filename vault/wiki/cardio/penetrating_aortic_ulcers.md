@@ -127,3 +127,6 @@ B
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[the_painful_hip|THE PAINFUL HIP]] ([THE PAINFUL HIP](../msk/the_painful_hip.md))

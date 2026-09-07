@@ -13,15 +13,15 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 134-135)
 
 ### Key Visuals & Figures (Grainger)
-![Local Disease Stage Figure](assets/grainger_local_disease_stage_p134_img1.jpeg)
+> **Key Imaging Finding:** Local Disease Stage Figure
 
-![Local Disease Stage Figure](assets/grainger_local_disease_stage_p135_img1.jpeg)
+> **Key Imaging Finding:** Local Disease Stage Figure
 
-![Local Disease Stage Figure](assets/grainger_local_disease_stage_p135_img2.jpeg)
+> **Key Imaging Finding:** Local Disease Stage Figure
 
-![Local Disease Stage Figure](assets/grainger_local_disease_stage_p135_img3.jpeg)
+> **Key Imaging Finding:** Local Disease Stage Figure
 
-![Local Disease Stage Figure](assets/grainger_local_disease_stage_p135_img4.jpeg)
+> **Key Imaging Finding:** Local Disease Stage Figure
 
 CHAPTER 32  Prostate
 855
@@ -160,51 +160,51 @@ of the patients after previous treatment. Currently, a rise in PSA level
 ## 2. Core Radiology High-Yield Notes (Pages 33-40)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p33_p33_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img8.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img16.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img18.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 188
 Female urethra 
@@ -987,3 +987,5 @@ A common way to show this is an enlarged left renal vein and dilatation of the i
 cava at the level of the left renal vein.
 311
 
+## See Also
+- [[empyema|Empyema]] ([Empyema](../cardio/empyema.md))

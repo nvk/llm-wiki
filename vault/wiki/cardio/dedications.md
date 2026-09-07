@@ -50,3 +50,6 @@ William D. Middleton, MD, FACR
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pelvic_emergencies|Pelvic Emergencies]] ([Pelvic Emergencies](../emergency/pelvic_emergencies.md))

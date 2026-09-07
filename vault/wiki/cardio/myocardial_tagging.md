@@ -159,3 +159,4 @@ a patient with aortic regurgitation. The s
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[acknowledgements|Acknowledgements]] ([Acknowledgements](../head_neck/acknowledgements.md))

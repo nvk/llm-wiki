@@ -14,13 +14,13 @@ aliases: ["magnetic_resonance_imaging"]---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 4-5)
 
 ### Key Visuals & Figures (Grainger)
-![Magnetic Resonance Imaging Figure](assets/grainger_magnetic_resonance_i_p4_img1.jpeg)
+> **Key Imaging Finding:** Magnetic Resonance Imaging Figure
 
-![Magnetic Resonance Imaging Figure](assets/grainger_magnetic_resonance_i_p5_img1.jpeg)
+> **Key Imaging Finding:** Magnetic Resonance Imaging Figure
 
-![Magnetic Resonance Imaging Figure](assets/grainger_magnetic_resonance_i_p5_img2.jpeg)
+> **Key Imaging Finding:** Magnetic Resonance Imaging Figure
 
-![Magnetic Resonance Imaging Figure](assets/grainger_magnetic_resonance_i_p5_img3.jpeg)
+> **Key Imaging Finding:** Magnetic Resonance Imaging Figure
 
 972
 SECTION C  The Musculoskeletal System
@@ -205,71 +205,71 @@ matrix sizes and limited availability of different weightings.
 ## 2. Core Radiology High-Yield Notes (Pages 57-64)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p57_p57_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p57_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p61_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p61_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p61_img9.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img48.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img6.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img7.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img8.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img9.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img12.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img15.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img67.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img68.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 401
 Foot and ankle
@@ -654,29 +654,29 @@ The anterior tibial artery runs anteriorly with the extensor tendons.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 97-108)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p97_p97_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p98_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p99_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p100_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p101_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p102_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p103_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p104_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p105_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p106_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p107_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p108_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 SECTION 13:
 S y s t e m i c
@@ -1311,3 +1311,17 @@ watched for rapid expansion. This may be practically useful, but is unlikely to 
 know the classic history, and displaced extrapleural fat sign.
 109
 
+## See Also
+- [[congenital_and_developmental_abnormalities|CONGENITAL AND DEVELOPMENTAL ABNORMALITIES]] ([CONGENITAL AND DEVELOPMENTAL ABNORMALITIES](../paeds/congenital_and_developmental_abnormalities.md))
+- [[hereditary_angioneurotic_edema|Hereditary Angioneurotic Edema]] ([Hereditary Angioneurotic Edema](../paeds/hereditary_angioneurotic_edema.md))
+- [[imaging_techniques|IMAGING TECHNIQUES]] ([IMAGING TECHNIQUES](../paeds/imaging_techniques.md))
+- [[malrotation|Malrotation]] ([Malrotation](../paeds/malrotation.md))
+- [[midgut_volvulus|Midgut Volvulus]] ([Midgut Volvulus](../paeds/midgut_volvulus.md))
+- [[miscellaneous_conditions|MISCELLANEOUS CONDITIONS]] ([MISCELLANEOUS CONDITIONS](../paeds/miscellaneous_conditions.md))
+- [[named_pediatric_cardiac_surgical_procedures|“Named” Pediatric Cardiac Surgical Procedures]] ([“Named” Pediatric Cardiac Surgical Procedures](../paeds/named_pediatric_cardiac_surgical_procedures.md))
+- [[necrotizing_enterocolitis|Necrotizing Enterocolitis]] ([Necrotizing Enterocolitis](../paeds/necrotizing_enterocolitis.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../paeds/suggested_readings.md))
+- [[trauma|TRAUMA]] ([TRAUMA](../paeds/trauma.md))
+- [[carotid_and_vertebral_arteries|Carotid and Vertebral Arteries]] ([Carotid and Vertebral Arteries](../spine/carotid_and_vertebral_arteries.md))
+- [[traumatic_and_nontraumatic_spine_emergencies|Traumatic and Nontraumatic Spine Emergencies]] ([Traumatic and Nontraumatic Spine Emergencies](../spine/traumatic_and_nontraumatic_spine_emergencies.md))
+- [[traumatic_spine_injury|TRAUMATIC SPINE INJURY]] ([TRAUMATIC SPINE INJURY](../spine/traumatic_spine_injury.md))

@@ -161,3 +161,4 @@ tive criterion for right ventricula
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[gastrointestinal_bleeding|GASTROINTESTINAL BLEEDING]] ([GASTROINTESTINAL BLEEDING](../git/gastrointestinal_bleeding.md))

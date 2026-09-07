@@ -15,6 +15,9 @@ status: "verified_source"---
 ## Clinical & Radiological Concepts
 Lossless excerpt from gold-standard UK reference textbook.
 
+## See Also
+- [[percutaneous_vertebroplasty|PERCUTANEOUS VERTEBROPLASTY]] ([PERCUTANEOUS VERTEBROPLASTY](../vascular_ir/percutaneous_vertebroplasty.md))
+
 ## Reference Text
 1319
 Postoperative Spine

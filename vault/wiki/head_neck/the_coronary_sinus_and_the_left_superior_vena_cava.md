@@ -180,3 +180,5 @@ to the left pulmonary artery in this patient with trun
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[prosthetic_heart_valves|Prosthetic Heart Valves]] ([Prosthetic Heart Valves](../cardio/prosthetic_heart_valves.md))
+- [[pulmonary_vascular_abnormalities|Pulmonary Vascular Abnormalities]] ([Pulmonary Vascular Abnormalities](../cardio/pulmonary_vascular_abnormalities.md))

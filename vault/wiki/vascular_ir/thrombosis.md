@@ -213,3 +213,7 @@ Recurrent arterial and venous thrombosis, fetal demise
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[obstruction_in_the_central_pulmonary_arteries|OBSTRUCTION IN THE CENTRAL PULMONARY ARTERIES]] ([OBSTRUCTION IN THE CENTRAL PULMONARY ARTERIES](../cardio/obstruction_in_the_central_pulmonary_arteries.md))
+- [[pulmonary_artery_stenosis|PULMONARY ARTERY STENOSIS]] ([PULMONARY ARTERY STENOSIS](../cardio/pulmonary_artery_stenosis.md))

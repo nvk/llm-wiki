@@ -177,3 +177,6 @@ ar
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[drug_induced_lung_disease|Drug-Induced Lung Disease]] ([Drug-Induced Lung Disease](../cardio/drug_induced_lung_disease.md))

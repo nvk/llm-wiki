@@ -172,3 +172,6 @@ described: they include the Rigler’s sign, in which a
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[27_current_status_of_imaging_of_the_urinary_tract|27 Current Status Of Imaging Of The Urinary Tract]] ([27 Current Status Of Imaging Of The Urinary Tract](../uro/27_current_status_of_imaging_of_the_urinary_tract.md))

@@ -193,3 +193,6 @@ tion of the liver parenchyma
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[asthma|Asthma]] ([Asthma](../cardio/asthma.md))

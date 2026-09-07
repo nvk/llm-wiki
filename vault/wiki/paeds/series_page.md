@@ -38,3 +38,6 @@ Vascular & Interventional Radiology
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[immune_reactions|Immune Reactions]] ([Immune Reactions](../cardio/immune_reactions.md))

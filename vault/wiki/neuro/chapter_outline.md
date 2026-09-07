@@ -101,55 +101,55 @@ include metabolic information obtained by using single-photon emission
 ## 2. Core Radiology High-Yield Notes (Pages 129-136)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p129_p129_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img7.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img8.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img9.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img25.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img29.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img31.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img57.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img68.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img74.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img89.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img91.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img92.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p130_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p130_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p131_img8.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p131_img9.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p133_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p133_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p133_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p136_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p136_img27.png)
+> **Key Imaging Finding:** Core Figure
 
 328
 Spine tumors
@@ -483,29 +483,29 @@ Disc herniation may contribute to nerve root impingement and spinal stenosis.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 421-432)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p421_p421_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p422_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p423_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p424_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p425_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p426_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p427_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p428_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p429_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p430_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p431_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p421_p432_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 As mentioned on prior pages, sometimes a ruptured follicle bleeds internally and re- 
 expands. The result is a homogenous mass with enhanced through transmission (tumor 
@@ -979,3 +979,5 @@ TZ-T2
 4 - Low Signal < 1.5 cm
 5 - Low Signal > 1.5 cm or with extracapsular ext
 
+## See Also
+- [[patterns_of_lobar_collapse|Patterns Of Lobar Collapse]] ([Patterns Of Lobar Collapse](../cardio/patterns_of_lobar_collapse.md))

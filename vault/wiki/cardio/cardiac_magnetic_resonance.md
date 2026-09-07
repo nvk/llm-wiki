@@ -14,7 +14,7 @@ aliases: ["cardiac_magnetic_resonance"]---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 244-245)
 
 ### Key Visuals & Figures (Grainger)
-![Cardiac Magnetic Resonance Figure](assets/grainger_cardiac_magnetic_res_p245_img1.jpeg)
+> **Key Imaging Finding:** Cardiac Magnetic Resonance Figure
 
 265
 Cardiac Anatomy and Imaging Techniques
@@ -171,39 +171,39 @@ relative bulging of left ventricular contour in relationship with inferior vena 
 ## 2. Core Radiology High-Yield Notes (Pages 41-48)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p42_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img26.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img37.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img4.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img6.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 40
 Pleural effusion
@@ -1386,3 +1386,17 @@ There are 10 lung segments on the right, and 8 lung segments on the left
 If it goes above the clavicles, it’s in the posterior mediastinum (cervicothoracic sign)
 575
 
+## See Also
+- [[8_breast_imaging|8. Breast Imaging]] ([8. Breast Imaging](../breast/8_breast_imaging.md))
+- [[breast|BREAST]] ([BREAST](../breast/breast.md))
+- [[breast_anatomy_and_mammographic_technique|Breast Anatomy and Mammographic Technique]] ([Breast Anatomy and Mammographic Technique](../breast/breast_anatomy_and_mammographic_technique.md))
+- [[breast_disorders|Breast Disorders]] ([Breast Disorders](../breast/breast_disorders.md))
+- [[breast_lesion_excision_systems|BREAST LESION EXCISION SYSTEMS]] ([BREAST LESION EXCISION SYSTEMS](../breast/breast_lesion_excision_systems.md))
+- [[differential_diagnosis_of_breast_disorders|Differential Diagnosis of Breast Disorders]] ([Differential Diagnosis of Breast Disorders](../breast/differential_diagnosis_of_breast_disorders.md))
+- [[image_guided_breast_biopsy|IMAGE-GUIDED BREAST BIOPSY]] ([IMAGE-GUIDED BREAST BIOPSY](../breast/image_guided_breast_biopsy.md))
+- [[image_guided_breast_intervention|Image-Guided Breast Intervention]] ([Image-Guided Breast Intervention](../breast/image_guided_breast_intervention.md))
+- [[interventional_breast_radiology|Interventional Breast Radiology]] ([Interventional Breast Radiology](../breast/interventional_breast_radiology.md))
+- [[normal_breast_anatomy|Normal Breast Anatomy]] ([Normal Breast Anatomy](../breast/normal_breast_anatomy.md))
+- [[conclusion|CONCLUSION]] ([CONCLUSION](../emergency/conclusion.md))
+- [[infections|INFECTIONS]] ([INFECTIONS](../emergency/infections.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../emergency/suggested_readings.md))

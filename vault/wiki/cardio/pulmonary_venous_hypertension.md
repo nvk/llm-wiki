@@ -170,3 +170,5 @@ lobe arteries and veins (Figure 1-37). The width of th
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[arteriovenous_malformations|ARTERIOVENOUS MALFORMATIONS]] ([ARTERIOVENOUS MALFORMATIONS](../vascular_ir/arteriovenous_malformations.md))
+- [[posttransplant_portal_vein_stenosis|POSTTRANSPLANT PORTAL VEIN STENOSIS]] ([POSTTRANSPLANT PORTAL VEIN STENOSIS](../vascular_ir/posttransplant_portal_vein_stenosis.md))

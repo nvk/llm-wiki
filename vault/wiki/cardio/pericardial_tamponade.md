@@ -182,3 +182,4 @@ early rev
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[developmental_anatomy|DEVELOPMENTAL ANATOMY]] ([DEVELOPMENTAL ANATOMY](../paeds/developmental_anatomy.md))

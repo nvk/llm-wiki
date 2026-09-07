@@ -161,3 +161,6 @@ both scapulae (Sprengel deformity). B, Normal appearance.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[disease_of_the_thoracic_and_abdominal_aorta|Disease of the Thoracic and Abdominal Aorta]] ([Disease of the Thoracic and Abdominal Aorta](../git/disease_of_the_thoracic_and_abdominal_aorta.md))

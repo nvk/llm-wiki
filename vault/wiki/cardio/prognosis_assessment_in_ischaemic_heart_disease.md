@@ -13,11 +13,11 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 397-397)
 
 ### Key Visuals & Figures (Grainger)
-![Prognosis Assessment in Ischaemic Heart Disease Figure](assets/grainger_prognosis_assessment_p397_img1.jpeg)
+> **Key Imaging Finding:** Prognosis Assessment in Ischaemic Heart Disease Figure
 
-![Prognosis Assessment in Ischaemic Heart Disease Figure](assets/grainger_prognosis_assessment_p397_img2.jpeg)
+> **Key Imaging Finding:** Prognosis Assessment in Ischaemic Heart Disease Figure
 
-![Prognosis Assessment in Ischaemic Heart Disease Figure](assets/grainger_prognosis_assessment_p397_img3.jpeg)
+> **Key Imaging Finding:** Prognosis Assessment in Ischaemic Heart Disease Figure
 
 394
 SECTION A  The Chest and Cardiovascular System
@@ -105,33 +105,33 @@ effusion is left-sided located (maximal width 38 mm), explaining the chest rad
 ## 2. Core Radiology High-Yield Notes (Pages 1-8)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p1_p2_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img7.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img10.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 Meaghan M. Mackesy, MD
 Resident in Radiology,
@@ -480,29 +480,29 @@ focus of round atelectasis.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 445-456)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p445_p445_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p446_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p447_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p448_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p449_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p450_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p451_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p452_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p453_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p454_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p455_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p456_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Yolk Sac - in the chorionic cavity
 Yolk Sac: This is the first structure visible 
@@ -969,3 +969,5 @@ Centered over the
 intemal os
 457
 
+## See Also
+- [[anatomy_of_the_nervous_system|Anatomy of the Nervous System]] ([Anatomy of the Nervous System](../neuro/anatomy_of_the_nervous_system.md))

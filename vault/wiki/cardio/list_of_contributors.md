@@ -63,3 +63,6 @@ Boston, MA
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[25_the_pancreas|25 The Pancreas]] ([25 The Pancreas](../git/25_the_pancreas.md))

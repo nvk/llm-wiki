@@ -175,3 +175,7 @@ Popl
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[chronic_venous_valvular_insufficiency|CHRONIC VENOUS VALVULAR INSUFFICIENCY]] ([CHRONIC VENOUS VALVULAR INSUFFICIENCY](../cardio/chronic_venous_valvular_insufficiency.md))
+- [[upper_and_lower_lung_zones_and_bronchoarterial_ratios|Upper and Lower Lung Zones and Bronchoarterial Ratios]] ([Upper and Lower Lung Zones and Bronchoarterial Ratios](../cardio/upper_and_lower_lung_zones_and_bronchoarterial_ratios.md))

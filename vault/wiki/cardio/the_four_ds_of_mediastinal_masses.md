@@ -179,3 +179,7 @@ located mass is mediastina
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[bladder_cancer|Bladder Cancer]] ([Bladder Cancer](../uro/bladder_cancer.md))
+- [[upper_tract_urothelial_carcinoma|Upper Tract Urothelial Carcinoma]] ([Upper Tract Urothelial Carcinoma](../uro/upper_tract_urothelial_carcinoma.md))

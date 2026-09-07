@@ -196,3 +196,4 @@ ing the true shape of the ventricle. A, area; D, diameter; L,
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[multisystem_diseases_with_involvement_of_the_pancreas|Multisystem Diseases With Involvement Of The Pancreas]] ([Multisystem Diseases With Involvement Of The Pancreas](../git/multisystem_diseases_with_involvement_of_the_pancreas.md))

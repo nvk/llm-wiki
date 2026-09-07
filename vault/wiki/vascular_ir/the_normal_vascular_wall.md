@@ -129,3 +129,7 @@ John A. Kaufman, MD, MS, FSIR, FCIRSE
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[congenitally_hypoplastic_pulmonary_arteries|CONGENITALLY HYPOPLASTIC PULMONARY ARTERIES]] ([CONGENITALLY HYPOPLASTIC PULMONARY ARTERIES](../cardio/congenitally_hypoplastic_pulmonary_arteries.md))
+- [[renal_vein_thrombosis|RENAL VEIN THROMBOSIS]] ([RENAL VEIN THROMBOSIS](../uro/renal_vein_thrombosis.md))

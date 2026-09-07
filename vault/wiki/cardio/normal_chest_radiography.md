@@ -99,33 +99,33 @@ wraps around the left ventricle (LV). Furthermore, the unrestricted
 ## 2. Core Radiology High-Yield Notes (Pages 33-40)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p33_p33_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 32
 Vascular pedicle
@@ -1181,3 +1181,6 @@ Hemangioendothelioma.
 When I say “Cystic mass in the liver of a newborn,” you say Mesenchymal Hamartoma
 563
 
+## See Also
+- [[12_the_obstetric_ultrasound_examination_guidelines|12. The Obstetric Ultrasound Examination : Guidelines *]] ([12. The Obstetric Ultrasound Examination : Guidelines *](../gynae/12_the_obstetric_ultrasound_examination_guidelines.md))
+- [[magnetic_resonance_imaging_and_magnetic_resonance_angiograph|MAGNETIC RESONANCE IMAGING AND MAGNETIC RESONANCE ANGIOGRAPHY]] ([MAGNETIC RESONANCE IMAGING AND MAGNETIC RESONANCE ANGIOGRAPHY](../physics_nuclear/magnetic_resonance_imaging_and_magnetic_resonance_angiograph.md))

@@ -213,3 +213,6 @@ aminos
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[18_current_status_of_imaging_of_the_gastrointestinal_tract|18 Current Status Of Imaging Of The Gastrointestinal Tract]] ([18 Current Status Of Imaging Of The Gastrointestinal Tract](../git/18_current_status_of_imaging_of_the_gastrointestinal_tract.md))

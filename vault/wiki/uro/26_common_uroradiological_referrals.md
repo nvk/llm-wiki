@@ -104,31 +104,31 @@ Conventional radiography has a sensitivity of only 60% for renal stone
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p9_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p9_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 164
 Malignant (or potentially malignant) adrenal masses
@@ -474,29 +474,29 @@ there is no way to distinguish a hyperdense cyst from an enhancing renal mass.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 25-36)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p25_p25_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p25_p26_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p25_p27_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p25_p28_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p25_p29_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p25_p30_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p25_p31_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p25_p32_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p25_p33_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p25_p34_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p25_p35_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p25_p36_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 A
 Method 8: Physical Optimization - Sleep - Continued
@@ -1016,3 +1016,17 @@ Look at your highest yield notes (the 1-2 pages of trivia you have boiled down).
 and over and over again until they make you get rid of all your notes.
 37
 
+## See Also
+- [[anatomy_of_skull_and_spine|Anatomy of Skull and Spine]] ([Anatomy of Skull and Spine](../spine/anatomy_of_skull_and_spine.md))
+- [[carotid_and_vertebral_arteries|Carotid and Vertebral Arteries]] ([Carotid and Vertebral Arteries](../spine/carotid_and_vertebral_arteries.md))
+- [[differential_diagnosis_of_skull_and_spine_disorders|Differential Diagnosis of Skull and Spine Disorders]] ([Differential Diagnosis of Skull and Spine Disorders](../spine/differential_diagnosis_of_skull_and_spine_disorders.md))
+- [[nontraumatic_spine_emergencies|NONTRAUMATIC SPINE EMERGENCIES]] ([NONTRAUMATIC SPINE EMERGENCIES](../spine/nontraumatic_spine_emergencies.md))
+- [[normal_development_of_the_spinal_neuraxis_and_spinal_column|NORMAL DEVELOPMENT OF THE SPINAL NEURAXIS AND SPINAL COLUMN]] ([NORMAL DEVELOPMENT OF THE SPINAL NEURAXIS AND SPINAL COLUMN](../spine/normal_development_of_the_spinal_neuraxis_and_spinal_column.md))
+- [[prevertebral_collections|Prevertebral Collections]] ([Prevertebral Collections](../spine/prevertebral_collections.md))
+- [[skull_and_spine_disorders|Skull and Spine Disorders]] ([Skull and Spine Disorders](../spine/skull_and_spine_disorders.md))
+- [[spine_imaging|SPINE IMAGING]] ([SPINE IMAGING](../spine/spine_imaging.md))
+- [[traumatic_and_nontraumatic_spine_emergencies|Traumatic and Nontraumatic Spine Emergencies]] ([Traumatic and Nontraumatic Spine Emergencies](../spine/traumatic_and_nontraumatic_spine_emergencies.md))
+- [[traumatic_spine_injury|TRAUMATIC SPINE INJURY]] ([TRAUMATIC SPINE INJURY](../spine/traumatic_spine_injury.md))
+- [[imaging|IMAGING]] ([IMAGING](../vascular_ir/imaging.md))
+- [[key_collateral_pathways|KEY COLLATERAL PATHWAYS]] ([KEY COLLATERAL PATHWAYS](../vascular_ir/key_collateral_pathways.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../vascular_ir/suggested_readings.md))

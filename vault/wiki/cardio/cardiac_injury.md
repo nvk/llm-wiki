@@ -78,3 +78,7 @@ Figure 6-22.  Aortic transection. A, The anteroposterior chest radiographs rev
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[abdomen_trauma|Abdomen Trauma]] ([Abdomen Trauma](../git/abdomen_trauma.md))
+- [[penetrating_abdominal_trauma|PENETRATING ABDOMINAL TRAUMA]] ([PENETRATING ABDOMINAL TRAUMA](../git/penetrating_abdominal_trauma.md))

@@ -164,3 +164,4 @@ probably refl ecting vigorous diuretic therapy that
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[abdominal_aorta_and_pelvic_arteries|Abdominal Aorta and Pelvic Arteries]] ([Abdominal Aorta and Pelvic Arteries](../git/abdominal_aorta_and_pelvic_arteries.md))

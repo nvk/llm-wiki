@@ -13,17 +13,17 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 37-40)
 
 ### Key Visuals & Figures (Grainger)
-![Modality and Technique Figure](assets/grainger_modality_and_techniq_p38_img1.jpeg)
+> **Key Imaging Finding:** Modality and Technique Figure
 
-![Modality and Technique Figure](assets/grainger_modality_and_techniq_p38_img2.jpeg)
+> **Key Imaging Finding:** Modality and Technique Figure
 
-![Modality and Technique Figure](assets/grainger_modality_and_techniq_p39_img1.jpeg)
+> **Key Imaging Finding:** Modality and Technique Figure
 
-![Modality and Technique Figure](assets/grainger_modality_and_techniq_p39_img2.jpeg)
+> **Key Imaging Finding:** Modality and Technique Figure
 
-![Modality and Technique Figure](assets/grainger_modality_and_techniq_p40_img1.jpeg)
+> **Key Imaging Finding:** Modality and Technique Figure
 
-![Modality and Technique Figure](assets/grainger_modality_and_techniq_p40_img2.jpeg)
+> **Key Imaging Finding:** Modality and Technique Figure
 
 1387
 Imaging of Head Trauma
@@ -263,33 +263,33 @@ assessment of the underlying calvarium and the contre-coup site within
 ## 2. Core Radiology High-Yield Notes (Pages 97-104)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p97_p97_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p97_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p97_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p99_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p99_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p99_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p100_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p101_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p101_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p103_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p103_img24.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p103_img33.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p103_img34.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p97_p103_img35.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 296
 Benign parotid neoplasm
@@ -684,29 +684,29 @@ inner ear.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 145-156)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p145_p145_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p146_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p147_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p148_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p149_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p150_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p151_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p152_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p153_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p154_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p155_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p145_p156_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 SECTION 1 l:
 S u r g e r i e s
@@ -1231,3 +1231,7 @@ Primary Acro-osteolysis (Hajdu-Cheney)
 -Extra Squiggles-
 157
 
+## See Also
+- [[imaging_techniques|IMAGING TECHNIQUES]] ([IMAGING TECHNIQUES](../paeds/imaging_techniques.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../paeds/suggested_readings.md))
+- [[trauma|TRAUMA]] ([TRAUMA](../paeds/trauma.md))

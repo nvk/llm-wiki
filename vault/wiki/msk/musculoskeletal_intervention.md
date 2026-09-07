@@ -231,3 +231,7 @@ For primary bone tumors
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[10_interventional_radiology|10. Interventional Radiology]] ([10. Interventional Radiology](../head_neck/10_interventional_radiology.md))
+- [[ablation_planning_and_procedure|ABLATION PLANNING AND PROCEDURE]] ([ABLATION PLANNING AND PROCEDURE](../vascular_ir/ablation_planning_and_procedure.md))

@@ -163,3 +163,7 @@ femoral or jugular vein can be used, a
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[posttransplant_portal_vein_stenosis|POSTTRANSPLANT PORTAL VEIN STENOSIS]] ([POSTTRANSPLANT PORTAL VEIN STENOSIS](../vascular_ir/posttransplant_portal_vein_stenosis.md))
+- [[visceral_artery_aneurysms|VISCERAL ARTERY ANEURYSMS]] ([VISCERAL ARTERY ANEURYSMS](../vascular_ir/visceral_artery_aneurysms.md))

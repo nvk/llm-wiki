@@ -170,3 +170,4 @@ ful technique in identif
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[emergency_radiology_the_requisites|Emergency Radiology: The Requisites]] ([Emergency Radiology: The Requisites](../emergency/emergency_radiology_the_requisites.md))

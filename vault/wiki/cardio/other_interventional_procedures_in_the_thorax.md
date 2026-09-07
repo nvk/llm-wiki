@@ -147,3 +147,7 @@ D
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[abdominal_biopsy|ABDOMINAL BIOPSY]] ([ABDOMINAL BIOPSY](../git/abdominal_biopsy.md))
+- [[interventional_techniques|Interventional Techniques]] ([Interventional Techniques](../git/interventional_techniques.md))

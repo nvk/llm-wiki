@@ -104,55 +104,55 @@ and can support volumetric tumour measurements.
 ## 2. Core Radiology High-Yield Notes (Pages 129-136)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p129_p129_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img7.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img8.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img9.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img25.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img29.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img31.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img57.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img68.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img74.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img89.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img91.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p129_img92.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p130_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p130_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p131_img8.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p131_img9.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p133_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p133_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p133_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p136_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p129_p136_img27.png)
+> **Key Imaging Finding:** Core Figure
 
 328
 Spine tumors
@@ -486,29 +486,29 @@ Disc herniation may contribute to nerve root impingement and spinal stenosis.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 193-204)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p193_p193_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p194_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p195_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p196_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p197_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p198_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p199_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p200_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p201_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p202_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p203_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p204_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Posterior
 Neuroblastoma - This is the most common posterior mediastinal mass in a child under 2. This 
@@ -1084,3 +1084,6 @@ history to bias yourself.
 j Pancreas Surrounding the Duodenum
 205
 
+## See Also
+- [[anterior_mediastinal_masses|Anterior Mediastinal Masses]] ([Anterior Mediastinal Masses](../cardio/anterior_mediastinal_masses.md))
+- [[bladder_cancer|Bladder Cancer]] ([Bladder Cancer](../uro/bladder_cancer.md))

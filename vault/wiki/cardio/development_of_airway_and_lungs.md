@@ -190,3 +190,6 @@ turn often resul
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[urogenital_tract|UROGENITAL TRACT]] ([UROGENITAL TRACT](../uro/urogenital_tract.md))

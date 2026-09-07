@@ -92,3 +92,7 @@ Iatrogenic
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[acute_renal_ischemia|ACUTE RENAL ISCHEMIA]] ([ACUTE RENAL ISCHEMIA](../uro/acute_renal_ischemia.md))
+- [[renal_artery_occlusive_disease|RENAL ARTERY OCCLUSIVE DISEASE]] ([RENAL ARTERY OCCLUSIVE DISEASE](../uro/renal_artery_occlusive_disease.md))

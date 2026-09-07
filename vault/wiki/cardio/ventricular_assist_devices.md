@@ -160,3 +160,4 @@ Borer JS, Bonow RO: Contemporary approach to aortic and mitral regurgitation,
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[hypertrophic_pyloric_stenosis_emergency|Hypertrophic Pyloric Stenosis]] ([Hypertrophic Pyloric Stenosis](../paeds/hypertrophic_pyloric_stenosis_emergency.md))

@@ -172,3 +172,4 @@ increased echogenicity of blood o
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[transjugular_intrahepatic_portosystemic_shunt|TRANSJUGULAR INTRAHEPATIC PORTOSYSTEMIC SHUNT]] ([TRANSJUGULAR INTRAHEPATIC PORTOSYSTEMIC SHUNT](../vascular_ir/transjugular_intrahepatic_portosystemic_shunt.md))

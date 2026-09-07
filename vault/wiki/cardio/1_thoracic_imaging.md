@@ -228,3 +228,6 @@ Right middle lobe
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[upper_extremity_neck_and_central_thoracic_veins|Upper Extremity, Neck, and Central Thoracic Veins]] ([Upper Extremity, Neck, and Central Thoracic Veins](../head_neck/upper_extremity_neck_and_central_thoracic_veins.md))

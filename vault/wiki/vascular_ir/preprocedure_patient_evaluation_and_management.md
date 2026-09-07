@@ -135,3 +135,6 @@ John A. Kaufman, MD, MS, FSIR, FCIRSE
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[hard_metal_disease|Hard Metal Disease]] ([Hard Metal Disease](../cardio/hard_metal_disease.md))

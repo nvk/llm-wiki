@@ -192,3 +192,4 @@ A new measure of
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[patient_preparation|PATIENT PREPARATION]] ([PATIENT PREPARATION](../vascular_ir/patient_preparation.md))

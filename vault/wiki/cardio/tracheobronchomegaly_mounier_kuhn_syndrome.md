@@ -123,3 +123,6 @@ Bronchiectasis
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pulmonary_vascular_malformations|PULMONARY VASCULAR MALFORMATIONS]] ([PULMONARY VASCULAR MALFORMATIONS](../vascular_ir/pulmonary_vascular_malformations.md))

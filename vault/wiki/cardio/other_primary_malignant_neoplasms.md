@@ -215,3 +215,7 @@ sentation (Box 11-16). The disease is most comm
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[40_bone_tumours_1|40 Bone Tumours 1]] ([40 Bone Tumours 1](../msk/40_bone_tumours_1.md))
+- [[41_bone_tumours_2|41 Bone Tumours 2]] ([41 Bone Tumours 2](../msk/41_bone_tumours_2.md))

@@ -186,3 +186,7 @@ and interpretatio
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[biliary_intervention|Biliary Intervention]] ([Biliary Intervention](../git/biliary_intervention.md))
+- [[gastrointestinal_conditions_requiring_prompt_intervention|GASTROINTESTINAL CONDITIONS REQUIRING PROMPT INTERVENTION]] ([GASTROINTESTINAL CONDITIONS REQUIRING PROMPT INTERVENTION](../git/gastrointestinal_conditions_requiring_prompt_intervention.md))

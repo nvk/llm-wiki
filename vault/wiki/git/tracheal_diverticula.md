@@ -82,3 +82,6 @@ obstruction
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[myxomatous_mitral_valve_prolapse|Myxomatous Mitral Valve Prolapse]] ([Myxomatous Mitral Valve Prolapse](../cardio/myxomatous_mitral_valve_prolapse.md))

@@ -13,13 +13,13 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 197-198)
 
 ### Key Visuals & Figures (Grainger)
-![Pulmonary Sarcoma and Other Primary Malignant Neoplasms Figure](assets/grainger_pulmonary_sarcoma_an_p197_img1.jpeg)
+> **Key Imaging Finding:** Pulmonary Sarcoma and Other Primary Malignant Neoplasms Figure
 
-![Pulmonary Sarcoma and Other Primary Malignant Neoplasms Figure](assets/grainger_pulmonary_sarcoma_an_p197_img2.jpeg)
+> **Key Imaging Finding:** Pulmonary Sarcoma and Other Primary Malignant Neoplasms Figure
 
-![Pulmonary Sarcoma and Other Primary Malignant Neoplasms Figure](assets/grainger_pulmonary_sarcoma_an_p198_img1.jpeg)
+> **Key Imaging Finding:** Pulmonary Sarcoma and Other Primary Malignant Neoplasms Figure
 
-![Pulmonary Sarcoma and Other Primary Malignant Neoplasms Figure](assets/grainger_pulmonary_sarcoma_an_p198_img2.jpeg)
+> **Key Imaging Finding:** Pulmonary Sarcoma and Other Primary Malignant Neoplasms Figure
 
 CHAPTER 8  Pulmonary Neoplasms
 199
@@ -194,39 +194,39 @@ neurogenic tumours, chemodectoma and granular cell myoblastoma
 ## 2. Core Radiology High-Yield Notes (Pages 49-56)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p49_p50_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p51_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img88.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img89.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p53_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img26.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img27.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img35.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img70.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img76.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img77.png)
+> **Key Imaging Finding:** Core Figure
 
 48
 Diffuse lung disease
@@ -1127,3 +1127,5 @@ Marburg Variant: Childhood variant that is fulminant and terrible leading to rap
 usually has a febrile prodrome. "M A rB U R G !!!” = DEATH
 179
 
+## See Also
+- [[palliation_of_malignant_biliary_obstruction_with_metal_stent|PALLIATION OF MALIGNANT BILIARY OBSTRUCTION WITH METAL STENTS]] ([PALLIATION OF MALIGNANT BILIARY OBSTRUCTION WITH METAL STENTS](../git/palliation_of_malignant_biliary_obstruction_with_metal_stent.md))

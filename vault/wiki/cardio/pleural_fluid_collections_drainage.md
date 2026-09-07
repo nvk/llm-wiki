@@ -149,3 +149,7 @@ Table 18-4  Differentiation of Transudates from Exudate
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[10_interventional_radiology|10. Interventional Radiology]] ([10. Interventional Radiology](../head_neck/10_interventional_radiology.md))
+- [[anatomy_relevant_to_percutaneous_genitourinary_intervention|ANATOMY RELEVANT TO PERCUTANEOUS GENITOURINARY INTERVENTION]] ([ANATOMY RELEVANT TO PERCUTANEOUS GENITOURINARY INTERVENTION](../uro/anatomy_relevant_to_percutaneous_genitourinary_intervention.md))

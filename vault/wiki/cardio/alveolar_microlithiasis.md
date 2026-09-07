@@ -13,13 +13,13 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 242-243)
 
 ### Key Visuals & Figures (Grainger)
-![Alveolar Microlithiasis Figure](assets/grainger_alveolar_microlithia_p242_img1.jpeg)
+> **Key Imaging Finding:** Alveolar Microlithiasis Figure
 
-![Alveolar Microlithiasis Figure](assets/grainger_alveolar_microlithia_p242_img2.jpeg)
+> **Key Imaging Finding:** Alveolar Microlithiasis Figure
 
-![Alveolar Microlithiasis Figure](assets/grainger_alveolar_microlithia_p242_img3.jpeg)
+> **Key Imaging Finding:** Alveolar Microlithiasis Figure
 
-![Alveolar Microlithiasis Figure](assets/grainger_alveolar_microlithia_p243_img1.jpeg)
+> **Key Imaging Finding:** Alveolar Microlithiasis Figure
 
 CHAPTER 11  Airspace Diseases
 263
@@ -142,33 +142,33 @@ a pattern of dense parenchymal opacification. Thickening of fissures
 ## 2. Core Radiology High-Yield Notes (Pages 1-8)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p1_p2_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img7.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p3_img10.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p6_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 Meaghan M. Mackesy, MD
 Resident in Radiology,
@@ -935,3 +935,5 @@ plateau “type 2”, or rapid washout “type 3”.
 Persistent “1”
 503
 
+## See Also
+- [[percutaneous_disc_decompression_box_24_5|PERCUTANEOUS DISC DECOMPRESSION (BOX 24-5)]] ([PERCUTANEOUS DISC DECOMPRESSION (BOX 24-5)](../vascular_ir/percutaneous_disc_decompression_box_24_5.md))

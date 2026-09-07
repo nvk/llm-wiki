@@ -165,3 +165,7 @@ The Doppler charac
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[cardiovascular_disorders|Cardiovascular Disorders]] ([Cardiovascular Disorders](../cardio/cardiovascular_disorders.md))
+- [[acute_mesenteric_ischemia|ACUTE MESENTERIC ISCHEMIA]] ([ACUTE MESENTERIC ISCHEMIA](../git/acute_mesenteric_ischemia.md))

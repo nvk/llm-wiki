@@ -13,33 +13,33 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 91-92)
 
 ### Key Visuals & Figures (Grainger)
-![Renal Transplant Biopsy Figure](assets/grainger_renal_transplant_bio_p91_img1.jpeg)
+> **Key Imaging Finding:** Renal Transplant Biopsy Figure
 
-![Renal Transplant Biopsy Figure](assets/grainger_renal_transplant_bio_p91_img2.jpeg)
+> **Key Imaging Finding:** Renal Transplant Biopsy Figure
 
-![Renal Transplant Biopsy Figure](assets/grainger_renal_transplant_bio_p91_img3.jpeg)
+> **Key Imaging Finding:** Renal Transplant Biopsy Figure
 
-![Renal Transplant Biopsy Figure](assets/grainger_renal_transplant_bio_p91_img4.jpeg)
+> **Key Imaging Finding:** Renal Transplant Biopsy Figure
 
-![Renal Transplant Biopsy Figure](assets/grainger_renal_transplant_bio_p91_img5.jpeg)
+> **Key Imaging Finding:** Renal Transplant Biopsy Figure
 
-![Renal Transplant Biopsy Figure](assets/grainger_renal_transplant_bio_p91_img6.jpeg)
+> **Key Imaging Finding:** Renal Transplant Biopsy Figure
 
-![Renal Transplant Biopsy Figure](assets/grainger_renal_transplant_bio_p91_img7.jpeg)
+> **Key Imaging Finding:** Renal Transplant Biopsy Figure
 
-![Renal Transplant Biopsy Figure](assets/grainger_renal_transplant_bio_p91_img8.jpeg)
+> **Key Imaging Finding:** Renal Transplant Biopsy Figure
 
-![Renal Transplant Biopsy Figure](assets/grainger_renal_transplant_bio_p91_img9.jpeg)
+> **Key Imaging Finding:** Renal Transplant Biopsy Figure
 
-![Renal Transplant Biopsy Figure](assets/grainger_renal_transplant_bio_p92_img1.jpeg)
+> **Key Imaging Finding:** Renal Transplant Biopsy Figure
 
-![Renal Transplant Biopsy Figure](assets/grainger_renal_transplant_bio_p92_img2.jpeg)
+> **Key Imaging Finding:** Renal Transplant Biopsy Figure
 
-![Renal Transplant Biopsy Figure](assets/grainger_renal_transplant_bio_p92_img3.jpeg)
+> **Key Imaging Finding:** Renal Transplant Biopsy Figure
 
-![Renal Transplant Biopsy Figure](assets/grainger_renal_transplant_bio_p92_img4.jpeg)
+> **Key Imaging Finding:** Renal Transplant Biopsy Figure
 
-![Renal Transplant Biopsy Figure](assets/grainger_renal_transplant_bio_p92_img5.jpeg)
+> **Key Imaging Finding:** Renal Transplant Biopsy Figure
 
 812
 SECTION B  Abdominal Imaging
@@ -144,31 +144,31 @@ was evacuated surgically.
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p9_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p9_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 164
 Malignant (or potentially malignant) adrenal masses
@@ -514,29 +514,29 @@ there is no way to distinguish a hyperdense cyst from an enhancing renal mass.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 529-540)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p529_p529_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p529_p530_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p529_p531_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p529_p532_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p529_p533_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p529_p534_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p529_p535_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p529_p536_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p529_p537_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p529_p538_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p529_p539_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p529_p540_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 S E C T IO N 7:
 GI NUKES
@@ -1013,3 +1013,6 @@ Back Pressure Effects - Full or Neurogenic Bladder can generate back pressure an
 not let the kidneys empty (can be resolved with a foley catheter).
 541
 
+## See Also
+- [[transthoracic_needle_biopsy|Transthoracic Needle Biopsy]] ([Transthoracic Needle Biopsy](../cardio/transthoracic_needle_biopsy.md))
+- [[biliary_drainage|BILIARY DRAINAGE]] ([BILIARY DRAINAGE](../git/biliary_drainage.md))

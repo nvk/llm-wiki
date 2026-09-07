@@ -187,3 +187,4 @@ branches continue to suggest pulmo
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[extra_axial_hemorrhage|EXTRA-AXIAL HEMORRHAGE]] ([EXTRA-AXIAL HEMORRHAGE](../neuro/extra_axial_hemorrhage.md))

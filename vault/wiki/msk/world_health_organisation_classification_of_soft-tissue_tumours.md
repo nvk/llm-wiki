@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 100-101)
 
 ### Key Visuals & Figures (Grainger)
-![World Health Organisation Classification of Soft-Tissue Tumours Figure](assets/grainger_world_health_organis_p101_img1.jpeg)
+> **Key Imaging Finding:** World Health Organisation Classification of Soft-Tissue Tumours Figure
 
-![World Health Organisation Classification of Soft-Tissue Tumours Figure](assets/grainger_world_health_organis_p101_img2.jpeg)
+> **Key Imaging Finding:** World Health Organisation Classification of Soft-Tissue Tumours Figure
 
 1068
 SECTION C  The Musculoskeletal System
@@ -240,67 +240,67 @@ focal non-lipomatous areas.
 ## 2. Core Radiology High-Yield Notes (Pages 65-72)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p65_p65_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p65_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img40.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img41.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img42.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img45.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img48.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img51.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img82.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img83.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img84.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img92.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img158.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p69_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p70_img4.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p71_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img3.png)
+> **Key Imaging Finding:** Core Figure
 
 409
 Ankle fractures
@@ -640,29 +640,29 @@ three or more contiguous sagittal slices with standard 4 mm-thick sagittal slice
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 469-480)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p469_p469_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p470_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p471_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p472_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p473_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p474_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p475_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p476_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p477_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p478_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p479_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p469_p480_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 fROMETHEUS 
 Liomhart, M.1>.
@@ -1057,3 +1057,6 @@ medullary CA) BUT it has a beef with calcium, so instead of parathyroid, it deci
 B a Gangster (gangster for Ganglioneuroma).
 481
 
+## See Also
+- [[tumours_of_the_heart|Tumours Of The Heart]] ([Tumours Of The Heart](../cardio/tumours_of_the_heart.md))
+- [[upper_tract_urothelial_carcinoma|Upper Tract Urothelial Carcinoma]] ([Upper Tract Urothelial Carcinoma](../uro/upper_tract_urothelial_carcinoma.md))

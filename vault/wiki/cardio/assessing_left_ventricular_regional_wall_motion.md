@@ -171,3 +171,4 @@ echogenic material in the region of ab
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[shoulder_pain|SHOULDER PAIN]] ([SHOULDER PAIN](../emergency/shoulder_pain.md))

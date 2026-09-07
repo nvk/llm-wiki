@@ -160,3 +160,7 @@ of evolution. Internal septat
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[infection|INFECTION]] ([INFECTION](../emergency/infection.md))
+- [[infection|INFECTION]] ([INFECTION](../paeds/infection.md))

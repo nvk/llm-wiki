@@ -116,3 +116,7 @@ than with other room arrangements.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[cryoablation|CRYOABLATION]] ([CRYOABLATION](../vascular_ir/cryoablation.md))
+- [[the_venous_puncture|THE VENOUS PUNCTURE]] ([THE VENOUS PUNCTURE](../vascular_ir/the_venous_puncture.md))

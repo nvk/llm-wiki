@@ -159,3 +159,6 @@ through the profunda
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[arterial_emergencies|ARTERIAL EMERGENCIES]] ([ARTERIAL EMERGENCIES](../vascular_ir/arterial_emergencies.md))

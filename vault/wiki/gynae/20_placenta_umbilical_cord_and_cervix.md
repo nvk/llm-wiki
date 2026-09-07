@@ -187,3 +187,7 @@ mester shows a thick
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[thoracic_aorta|Thoracic Aorta]] ([Thoracic Aorta](../cardio/thoracic_aorta.md))
+- [[thoracic_trauma|Thoracic Trauma]] ([Thoracic Trauma](../cardio/thoracic_trauma.md))

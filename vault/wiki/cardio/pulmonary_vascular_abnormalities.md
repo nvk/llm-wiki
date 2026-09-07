@@ -175,3 +175,7 @@ Dec
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[uterine_artery_embolization|UTERINE ARTERY EMBOLIZATION]] ([UTERINE ARTERY EMBOLIZATION](../gynae/uterine_artery_embolization.md))
+- [[the_coronary_sinus_and_the_left_superior_vena_cava|THE CORONARY SINUS AND THE LEFT SUPERIOR VENA CAVA]] ([THE CORONARY SINUS AND THE LEFT SUPERIOR VENA CAVA](../head_neck/the_coronary_sinus_and_the_left_superior_vena_cava.md))

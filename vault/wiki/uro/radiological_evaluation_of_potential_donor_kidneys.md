@@ -13,15 +13,15 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 92-93)
 
 ### Key Visuals & Figures (Grainger)
-![Radiological Evaluation of Potential Donor Kidneys Figure](assets/grainger_radiological_evaluat_p92_img1.jpeg)
+> **Key Imaging Finding:** Radiological Evaluation of Potential Donor Kidneys Figure
 
-![Radiological Evaluation of Potential Donor Kidneys Figure](assets/grainger_radiological_evaluat_p92_img2.jpeg)
+> **Key Imaging Finding:** Radiological Evaluation of Potential Donor Kidneys Figure
 
-![Radiological Evaluation of Potential Donor Kidneys Figure](assets/grainger_radiological_evaluat_p92_img3.jpeg)
+> **Key Imaging Finding:** Radiological Evaluation of Potential Donor Kidneys Figure
 
-![Radiological Evaluation of Potential Donor Kidneys Figure](assets/grainger_radiological_evaluat_p92_img4.jpeg)
+> **Key Imaging Finding:** Radiological Evaluation of Potential Donor Kidneys Figure
 
-![Radiological Evaluation of Potential Donor Kidneys Figure](assets/grainger_radiological_evaluat_p92_img5.jpeg)
+> **Key Imaging Finding:** Radiological Evaluation of Potential Donor Kidneys Figure
 
 CHAPTER 30  Renal Transplantation: Imaging
 813
@@ -140,39 +140,39 @@ of an early bifurcation close to the aorta—all of which may affect
 ## 2. Core Radiology High-Yield Notes (Pages 25-32)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p25_p25_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p25_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 180
 Ureter
@@ -522,29 +522,29 @@ Contrast extravasates both into the pelvis and out into the perineum in a type I
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 553-564)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p553_p553_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p554_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p555_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p556_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p557_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p558_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p559_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p560_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p561_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p562_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p563_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p553_p564_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Gamesmanship - MIBG
 Brown Fat = Just like you can see it on FDG PET (around the shoulders / traps) you can also 
@@ -1008,3 +1008,6 @@ injection
 6-8 weeks needed for full recovery
 565
 
+## See Also
+- [[spleen|Spleen]] ([Spleen](../git/spleen.md))
+- [[the_small_intestine|The Small Intestine]] ([The Small Intestine](../git/the_small_intestine.md))

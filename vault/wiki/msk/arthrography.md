@@ -13,19 +13,19 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 7-8)
 
 ### Key Visuals & Figures (Grainger)
-![Arthrography Figure](assets/grainger_arthrography_p7_img1.jpeg)
+> **Key Imaging Finding:** Arthrography Figure
 
-![Arthrography Figure](assets/grainger_arthrography_p7_img2.jpeg)
+> **Key Imaging Finding:** Arthrography Figure
 
-![Arthrography Figure](assets/grainger_arthrography_p7_img3.jpeg)
+> **Key Imaging Finding:** Arthrography Figure
 
-![Arthrography Figure](assets/grainger_arthrography_p7_img4.jpeg)
+> **Key Imaging Finding:** Arthrography Figure
 
-![Arthrography Figure](assets/grainger_arthrography_p7_img5.jpeg)
+> **Key Imaging Finding:** Arthrography Figure
 
-![Arthrography Figure](assets/grainger_arthrography_p8_img1.jpeg)
+> **Key Imaging Finding:** Arthrography Figure
 
-![Arthrography Figure](assets/grainger_arthrography_p8_img2.jpeg)
+> **Key Imaging Finding:** Arthrography Figure
 
 CHAPTER 38  Current Status of Imaging of The Musculoskeletal System
 975
@@ -118,7 +118,6 @@ MRI: a new gold standard for assessing disease burden in patients with
 multiple myeloma? Leukemia 30 (6), 1446–1448.
 Radiology (ACR) RS of NA (RSNA) and AC of. Patient Safety—Radiation 
 Dose in X-Ray and CT Exams [Internet]. (1 May 2018.) Available from: 
-https://www.radiologyinfo.org/en/info.cfm?pg=safety-xray.
 Saifuddin, A., 2008. Musculoskeletal MRI, first ed. CRC Press, London.
 Thomas, M.S., Greenwood, R., Nolan, C., et al., 2014. Optimizing MRI of 
 small joints and extremities. Clin. Radiol. 69 (10), e414–e421.
@@ -176,53 +175,53 @@ CT arthrogram (B) demonstrates intact fibrocartilage at the site of surgery (arr
 ## 2. Core Radiology High-Yield Notes (Pages 73-80)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p73_p73_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p73_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p73_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p74_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p74_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p74_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img8.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img21.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 417
 Knee Ligaments
@@ -535,29 +534,29 @@ blooming on gradient-echo sequences.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 121-132)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p121_p121_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p122_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p123_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p124_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p125_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p126_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p127_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p128_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p129_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p130_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p131_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p121_p132_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 NOT Normal: Anomalies of the Origin, Course, and Termination:
 Malignant Origin: There are like a million billion different types 
@@ -1198,3 +1197,7 @@ Associated with a
 persistent left 
 SVC
 
+## See Also
+- [[53_current_status_of_imaging_of_the_brain_and_anatomical_features|53 Current Status Of Imaging Of The Brain And Anatomical Features]] ([53 Current Status Of Imaging Of The Brain And Anatomical Features](../neuro/53_current_status_of_imaging_of_the_brain_and_anatomical_features.md))
+- [[brain_anatomy|Brain Anatomy]] ([Brain Anatomy](../neuro/brain_anatomy.md))
+- [[section_e_neuroimaging|Section E Neuroimaging]] ([Section E Neuroimaging](../neuro/section_e_neuroimaging.md))

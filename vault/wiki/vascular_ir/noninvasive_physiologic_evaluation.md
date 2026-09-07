@@ -196,3 +196,6 @@ on the right.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[tracheal_stenosis|Tracheal Stenosis]] ([Tracheal Stenosis](../cardio/tracheal_stenosis.md))

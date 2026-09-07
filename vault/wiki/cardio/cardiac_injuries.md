@@ -171,3 +171,7 @@ usually re
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[hepatic_trauma|HEPATIC TRAUMA]] ([HEPATIC TRAUMA](../git/hepatic_trauma.md))
+- [[penetrating_abdominal_trauma|PENETRATING ABDOMINAL TRAUMA]] ([PENETRATING ABDOMINAL TRAUMA](../git/penetrating_abdominal_trauma.md))

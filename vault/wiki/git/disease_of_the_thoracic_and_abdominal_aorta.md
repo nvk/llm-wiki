@@ -164,3 +164,5 @@ the shunt
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[cardiothoracic_ratio|Cardiothoracic Ratio]] ([Cardiothoracic Ratio](../cardio/cardiothoracic_ratio.md))
+- [[thoracic_skeleton|THORACIC SKELETON]] ([THORACIC SKELETON](../cardio/thoracic_skeleton.md))

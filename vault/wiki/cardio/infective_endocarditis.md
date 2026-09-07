@@ -175,3 +175,4 @@ dial adhesions can limit
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[viral_infections|Viral Infections]] ([Viral Infections](../neuro/viral_infections.md))

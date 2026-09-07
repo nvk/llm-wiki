@@ -148,3 +148,6 @@ by distinguishing an occult vascular malformation
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[the_elements_of_cardiac_imaging|The Elements of Cardiac Imaging]] ([The Elements of Cardiac Imaging](../cardio/the_elements_of_cardiac_imaging.md))

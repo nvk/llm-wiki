@@ -179,3 +179,7 @@ Falagas ME, Vardakas KZ,
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[thoracic_duct_leak_embolization|THORACIC DUCT LEAK EMBOLIZATION]] ([THORACIC DUCT LEAK EMBOLIZATION](../cardio/thoracic_duct_leak_embolization.md))
+- [[splenic_steal_syndrome|SPLENIC STEAL SYNDROME]] ([SPLENIC STEAL SYNDROME](../git/splenic_steal_syndrome.md))

@@ -172,3 +172,7 @@ foci has to be differentiated from normal WBC uptake i
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[appendicular_musculoskeletal_infection|APPENDICULAR MUSCULOSKELETAL INFECTION]] ([APPENDICULAR MUSCULOSKELETAL INFECTION](../msk/appendicular_musculoskeletal_infection.md))
+- [[necrotizing_enterocolitis_emergency|Necrotizing Enterocolitis]] ([Necrotizing Enterocolitis](../paeds/necrotizing_enterocolitis_emergency.md))

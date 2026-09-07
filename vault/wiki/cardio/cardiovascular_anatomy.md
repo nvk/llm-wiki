@@ -136,3 +136,7 @@ Function:   site of valve leaflet attachment
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[acute_limb_ischemia|ACUTE LIMB ISCHEMIA]] ([ACUTE LIMB ISCHEMIA](../vascular_ir/acute_limb_ischemia.md))
+- [[hemangiomas_vascular_malformations_and_arteriovenous_fistula|HEMANGIOMAS, VASCULAR MALFORMATIONS, AND ARTERIOVENOUS FISTULAS]] ([HEMANGIOMAS, VASCULAR MALFORMATIONS, AND ARTERIOVENOUS FISTULAS](../vascular_ir/hemangiomas_vascular_malformations_and_arteriovenous_fistula.md))

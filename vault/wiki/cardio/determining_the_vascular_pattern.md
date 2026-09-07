@@ -172,3 +172,4 @@ pneumonia, abscess, or bulla all may have caused
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[popliteal_artery_entrapment|POPLITEAL ARTERY ENTRAPMENT]] ([POPLITEAL ARTERY ENTRAPMENT](../vascular_ir/popliteal_artery_entrapment.md))

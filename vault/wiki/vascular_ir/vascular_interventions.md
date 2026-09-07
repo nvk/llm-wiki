@@ -199,3 +199,7 @@ mal wall opposing the lesion will stretch an
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[bronchial_artery_bleeding|BRONCHIAL ARTERY BLEEDING]] ([BRONCHIAL ARTERY BLEEDING](../cardio/bronchial_artery_bleeding.md))
+- [[vascular_dementia|Vascular Dementia]] ([Vascular Dementia](../neuro/vascular_dementia.md))

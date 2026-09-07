@@ -185,3 +185,6 @@ the same plane on the right, while on the left the anterior cal
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pleural_fluid_collections_drainage|PLEURAL FLUID COLLECTIONS]] ([PLEURAL FLUID COLLECTIONS](../cardio/pleural_fluid_collections_drainage.md))

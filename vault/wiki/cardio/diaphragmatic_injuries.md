@@ -119,3 +119,6 @@ Note the shift of the mediastinum to the right.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pancreatic_injury|PANCREATIC INJURY]] ([PANCREATIC INJURY](../git/pancreatic_injury.md))

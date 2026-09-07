@@ -180,3 +180,4 @@ Subcostal views are useful f
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[3_liver|3. Liver]] ([3. Liver](../git/3_liver.md))

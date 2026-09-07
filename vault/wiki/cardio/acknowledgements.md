@@ -89,13 +89,13 @@ status: "verified_source"
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 369-370)
 
 ### Key Visuals & Figures (Grainger)
-![Acknowledgements Figure](assets/grainger_acknowledgements_p369_img1.jpeg)
+> **Key Imaging Finding:** Acknowledgements Figure
 
-![Acknowledgements Figure](assets/grainger_acknowledgements_p369_img2.jpeg)
+> **Key Imaging Finding:** Acknowledgements Figure
 
-![Acknowledgements Figure](assets/grainger_acknowledgements_p370_img1.jpeg)
+> **Key Imaging Finding:** Acknowledgements Figure
 
-![Acknowledgements Figure](assets/grainger_acknowledgements_p370_img2.jpeg)
+> **Key Imaging Finding:** Acknowledgements Figure
 
 CHAPTER 16  Pulmonary Circulation and Pulmonary Thromboembolism
 419
@@ -149,3 +149,6 @@ Therefore, when there is a clinical suspicion of acute/chronic PE, further
 objective testing is warranted.
 •	 In acute PE, clinical prediction rules help to categorise patients into low-, 
 mode
+
+## See Also
+- [[rhyzolysis_radiofrequency_neurotomy_of_the_zygapophysial_joi|RHYZOLYSIS: RADIOFREQUENCY NEUROTOMY OF THE ZYGAPOPHYSIAL JOINTS]] ([RHYZOLYSIS: RADIOFREQUENCY NEUROTOMY OF THE ZYGAPOPHYSIAL JOINTS](../msk/rhyzolysis_radiofrequency_neurotomy_of_the_zygapophysial_joi.md))

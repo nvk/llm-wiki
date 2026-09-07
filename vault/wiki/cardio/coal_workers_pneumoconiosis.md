@@ -102,3 +102,6 @@ Cavitation (tuberculosis)
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[percutaneous_epidural_and_nerve_root_block|PERCUTANEOUS EPIDURAL AND NERVE ROOT BLOCK]] ([PERCUTANEOUS EPIDURAL AND NERVE ROOT BLOCK](../vascular_ir/percutaneous_epidural_and_nerve_root_block.md))

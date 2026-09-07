@@ -60,3 +60,6 @@ manufacturer of any drugs or equipment that they plan to use.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[trigeminal_neuropathy|TRIGEMINAL NEUROPATHY]] ([TRIGEMINAL NEUROPATHY](../neuro/trigeminal_neuropathy.md))

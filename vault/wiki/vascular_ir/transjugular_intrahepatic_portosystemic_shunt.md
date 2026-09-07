@@ -206,3 +206,6 @@ Prediction of risk is difficult in patients with TIPS
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[right_ventricular_infl_ow_view|Right Ventricular Infl ow View]] ([Right Ventricular Infl ow View](../cardio/right_ventricular_infl_ow_view.md))

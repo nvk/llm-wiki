@@ -157,3 +157,6 @@ rupture (black arrow) and compression shear type lacerations (white arrow).
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[45_appendicular_and_pelvic_trauma|45 Appendicular And Pelvic Trauma]] ([45 Appendicular And Pelvic Trauma](../msk/45_appendicular_and_pelvic_trauma.md))

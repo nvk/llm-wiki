@@ -166,3 +166,7 @@ gitis from Haemophilus influenzae type
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[changing_spectrum_of_human_immunodeficiency_virus_infections_40_years_later|Changing Spectrum Of Human Immunodeficiency Virus Infections 40 Years Later]] ([Changing Spectrum Of Human Immunodeficiency Virus Infections 40 Years Later](../cardio/changing_spectrum_of_human_immunodeficiency_virus_infections_40_years_later.md))
+- [[viral_pneumonias|Viral Pneumonias]] ([Viral Pneumonias](../cardio/viral_pneumonias.md))

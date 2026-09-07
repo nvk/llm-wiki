@@ -180,3 +180,4 @@ anomalies)
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[differential_diagnosis_of_ear_nose_and_throat_disorders|Differential Diagnosis of Ear, Nose, and Throat Disorders]] ([Differential Diagnosis of Ear, Nose, and Throat Disorders](../head_neck/differential_diagnosis_of_ear_nose_and_throat_disorders.md))

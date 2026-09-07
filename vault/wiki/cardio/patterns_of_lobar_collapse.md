@@ -13,15 +13,15 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 168-168)
 
 ### Key Visuals & Figures (Grainger)
-![Patterns of Lobar Collapse Figure](assets/grainger_patterns_of_lobar_co_p168_img1.jpeg)
+> **Key Imaging Finding:** Patterns of Lobar Collapse Figure
 
-![Patterns of Lobar Collapse Figure](assets/grainger_patterns_of_lobar_co_p168_img2.jpeg)
+> **Key Imaging Finding:** Patterns of Lobar Collapse Figure
 
-![Patterns of Lobar Collapse Figure](assets/grainger_patterns_of_lobar_co_p168_img3.jpeg)
+> **Key Imaging Finding:** Patterns of Lobar Collapse Figure
 
-![Patterns of Lobar Collapse Figure](assets/grainger_patterns_of_lobar_co_p168_img4.jpeg)
+> **Key Imaging Finding:** Patterns of Lobar Collapse Figure
 
-![Patterns of Lobar Collapse Figure](assets/grainger_patterns_of_lobar_co_p168_img5.jpeg)
+> **Key Imaging Finding:** Patterns of Lobar Collapse Figure
 
 170
 SECTION A  The Chest and Cardiovascular System
@@ -94,33 +94,33 @@ such as the left heart border, mediastinum and aortic arch, as these
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p10_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img7.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img8.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img10.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img12.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img13.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p15_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p16_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 8
 Patterns of lung disease
@@ -914,3 +914,5 @@ the articular surface it usually requires
 arthroplasty.
 107
 
+## See Also
+- [[chapter_outline|Chapter Outline]] ([Chapter Outline](../neuro/chapter_outline.md))

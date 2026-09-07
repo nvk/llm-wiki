@@ -203,3 +203,6 @@ images. Axial (E) and coronal
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pulmonary_diseases_in_the_immunocompromised_host_with_or_wit|Pulmonary Diseases in the Immuno­compromised Host with or without Acquired Immuno­deficiency Syndrome]] ([Pulmonary Diseases in the Immuno­compromised Host with or without Acquired Immuno­deficiency Syndrome](../cardio/pulmonary_diseases_in_the_immunocompromised_host_with_or_wit.md))

@@ -213,3 +213,6 @@ fissures and the interlobular septa, eventually
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[postprocedural_follow_up_and_imaging|POSTPROCEDURAL FOLLOW-UP AND IMAGING]] ([POSTPROCEDURAL FOLLOW-UP AND IMAGING](../vascular_ir/postprocedural_follow_up_and_imaging.md))

@@ -178,3 +178,7 @@ When using coils for embolization of a specific lesion, the general technique is
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pleural_fluid_collections_drainage|PLEURAL FLUID COLLECTIONS]] ([PLEURAL FLUID COLLECTIONS](../cardio/pleural_fluid_collections_drainage.md))
+- [[musculoskeletal_intervention|Musculoskeletal Intervention]] ([Musculoskeletal Intervention](../msk/musculoskeletal_intervention.md))

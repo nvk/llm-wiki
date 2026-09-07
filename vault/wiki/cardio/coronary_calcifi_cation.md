@@ -176,3 +176,4 @@ and inferiorly to the mitral valve replacement.
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[percutaneous_gastrostomy|PERCUTANEOUS GASTROSTOMY]] ([PERCUTANEOUS GASTROSTOMY](../vascular_ir/percutaneous_gastrostomy.md))

@@ -13,11 +13,11 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 80-80)
 
 ### Key Visuals & Figures (Grainger)
-![Extra-Axial Tumours Figure](assets/grainger_extra-axial_tumours_p80_img1.jpeg)
+> **Key Imaging Finding:** Extra-Axial Tumours Figure
 
-![Extra-Axial Tumours Figure](assets/grainger_extra-axial_tumours_p80_img2.jpeg)
+> **Key Imaging Finding:** Extra-Axial Tumours Figure
 
-![Extra-Axial Tumours Figure](assets/grainger_extra-axial_tumours_p80_img3.jpeg)
+> **Key Imaging Finding:** Extra-Axial Tumours Figure
 
 1430
 SECTION E  Neuroimaging
@@ -105,31 +105,31 @@ confirming its highly vascular nature.
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p9_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p15_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p15_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p16_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p16_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 208
 Gradient recall echo (GRE) 
@@ -502,29 +502,29 @@ a lesion is either hypointense with T2 weighting or hyperintense with T1 weighti
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 241-252)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p241_p241_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p241_p242_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p241_p243_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p241_p244_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p241_p245_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p241_p246_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p241_p247_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p241_p248_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p241_p249_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p241_p250_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p241_p251_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p241_p252_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 - Other “Aggressive Processes” In Kids -
 Langerhans Cell Histiocytosis (LCH) - Also known as EG (eosinophilic 
@@ -1064,3 +1064,5 @@ Neuroblastoma Mets
 Endocrine (rickets, Scurvy)
 253
 
+## See Also
+- [[metastases|Metastases]] ([Metastases](../cardio/metastases.md))

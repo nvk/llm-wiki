@@ -193,3 +193,6 @@ Renal
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[sarcoidosis|Sarcoidosis]] ([Sarcoidosis](../cardio/sarcoidosis.md))

@@ -158,3 +158,6 @@ failure of ne
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[patient_characteristics_normal_ratio|Patient Characteristics Normal Ratio]] ([Patient Characteristics Normal Ratio](../cardio/patient_characteristics_normal_ratio.md))

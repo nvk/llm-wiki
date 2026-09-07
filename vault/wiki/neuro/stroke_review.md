@@ -153,3 +153,6 @@ lower / proximal upper extremity after exercise; occurs in patients with occlude
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[tetralogy_of_fallot|Tetralogy of Fallot]] ([Tetralogy of Fallot](../cardio/tetralogy_of_fallot.md))

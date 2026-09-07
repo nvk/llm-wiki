@@ -136,3 +136,6 @@ Pulmonary gangrene
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[urinary_tract_infection|URINARY TRACT INFECTION]] ([URINARY TRACT INFECTION](../uro/urinary_tract_infection.md))

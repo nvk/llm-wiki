@@ -191,3 +191,4 @@ may also be redundant or ruptured chordae
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[tracheal_diverticula|Tracheal Diverticula]] ([Tracheal Diverticula](../git/tracheal_diverticula.md))

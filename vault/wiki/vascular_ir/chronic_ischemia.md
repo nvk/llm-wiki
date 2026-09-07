@@ -191,3 +191,6 @@ perfusion of the second digit is evident.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[cardiovascular_disorders|Cardiovascular Disorders]] ([Cardiovascular Disorders](../cardio/cardiovascular_disorders.md))

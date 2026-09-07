@@ -13,35 +13,35 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 237-241)
 
 ### Key Visuals & Figures (Grainger)
-![Organising Pneumonia Figure](assets/grainger_organising_pneumonia_p238_img1.jpeg)
+> **Key Imaging Finding:** Organising Pneumonia Figure
 
-![Organising Pneumonia Figure](assets/grainger_organising_pneumonia_p238_img2.jpeg)
+> **Key Imaging Finding:** Organising Pneumonia Figure
 
-![Organising Pneumonia Figure](assets/grainger_organising_pneumonia_p238_img3.jpeg)
+> **Key Imaging Finding:** Organising Pneumonia Figure
 
-![Organising Pneumonia Figure](assets/grainger_organising_pneumonia_p238_img4.jpeg)
+> **Key Imaging Finding:** Organising Pneumonia Figure
 
-![Organising Pneumonia Figure](assets/grainger_organising_pneumonia_p239_img1.jpeg)
+> **Key Imaging Finding:** Organising Pneumonia Figure
 
-![Organising Pneumonia Figure](assets/grainger_organising_pneumonia_p239_img2.jpeg)
+> **Key Imaging Finding:** Organising Pneumonia Figure
 
-![Organising Pneumonia Figure](assets/grainger_organising_pneumonia_p239_img3.jpeg)
+> **Key Imaging Finding:** Organising Pneumonia Figure
 
-![Organising Pneumonia Figure](assets/grainger_organising_pneumonia_p239_img4.jpeg)
+> **Key Imaging Finding:** Organising Pneumonia Figure
 
-![Organising Pneumonia Figure](assets/grainger_organising_pneumonia_p239_img5.jpeg)
+> **Key Imaging Finding:** Organising Pneumonia Figure
 
-![Organising Pneumonia Figure](assets/grainger_organising_pneumonia_p239_img6.jpeg)
+> **Key Imaging Finding:** Organising Pneumonia Figure
 
-![Organising Pneumonia Figure](assets/grainger_organising_pneumonia_p240_img1.jpeg)
+> **Key Imaging Finding:** Organising Pneumonia Figure
 
-![Organising Pneumonia Figure](assets/grainger_organising_pneumonia_p240_img2.jpeg)
+> **Key Imaging Finding:** Organising Pneumonia Figure
 
-![Organising Pneumonia Figure](assets/grainger_organising_pneumonia_p240_img3.jpeg)
+> **Key Imaging Finding:** Organising Pneumonia Figure
 
-![Organising Pneumonia Figure](assets/grainger_organising_pneumonia_p240_img4.jpeg)
+> **Key Imaging Finding:** Organising Pneumonia Figure
 
-![Organising Pneumonia Figure](assets/grainger_organising_pneumonia_p240_img5.jpeg)
+> **Key Imaging Finding:** Organising Pneumonia Figure
 
 258
 SECTION A  The Chest and Cardiovascular System
@@ -367,53 +367,53 @@ Neoplasms
 ## 2. Core Radiology High-Yield Notes (Pages 73-80)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p73_p74_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p74_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p75_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img6.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img8.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p76_img9.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p77_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p78_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p79_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p73_p80_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 72
 • Low attenuation lymph nodes, while nonspecific, should raise concern for active 
@@ -1142,3 +1142,5 @@ appearance of numerous skin nodules — classically peri-areolar
 in location, but they tend to just be everywhere.
 479
 
+## See Also
+- [[other_common_causes_of_colitis|Other Common Causes Of Colitis]] ([Other Common Causes Of Colitis](../git/other_common_causes_of_colitis.md))

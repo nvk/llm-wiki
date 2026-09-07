@@ -151,3 +151,7 @@ Figure 2-23.  Sagittal CT image demonstrates fracture of the sternum
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[cervicocerebral_arterial_injuries|CERVICOCEREBRAL ARTERIAL INJURIES]] ([CERVICOCEREBRAL ARTERIAL INJURIES](../neuro/cervicocerebral_arterial_injuries.md))
+- [[cervical_spinal_injuries|Cervical Spinal Injuries]] ([Cervical Spinal Injuries](../spine/cervical_spinal_injuries.md))

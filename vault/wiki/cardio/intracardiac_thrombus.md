@@ -163,3 +163,4 @@ to confi rm the diagnosis by echocardiography. The features
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[vascular_pathology|Vascular Pathology]] ([Vascular Pathology](../vascular_ir/vascular_pathology.md))

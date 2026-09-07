@@ -164,3 +164,6 @@ B, Sagittal reformatted image obtained from subsequent CT of the neck demonstrat
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[bowel_disease|BOWEL DISEASE]] ([BOWEL DISEASE](../git/bowel_disease.md))

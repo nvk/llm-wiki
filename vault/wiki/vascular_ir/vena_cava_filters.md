@@ -154,3 +154,6 @@ arrow) with coll
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[mechanisms_and_causes_of_lobar_collapse|Mechanisms And Causes Of Lobar Collapse]] ([Mechanisms And Causes Of Lobar Collapse](../cardio/mechanisms_and_causes_of_lobar_collapse.md))

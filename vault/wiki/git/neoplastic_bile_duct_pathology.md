@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 153-153)
 
 ### Key Visuals & Figures (Grainger)
-![Neoplastic Bile Duct Pathology Figure](assets/grainger_neoplastic_bile_duct_p153_img1.jpeg)
+> **Key Imaging Finding:** Neoplastic Bile Duct Pathology Figure
 
-![Neoplastic Bile Duct Pathology Figure](assets/grainger_neoplastic_bile_duct_p153_img2.jpeg)
+> **Key Imaging Finding:** Neoplastic Bile Duct Pathology Figure
 
 CHAPTER 24  The Biliary System
 673
@@ -89,35 +89,35 @@ or peripheral dilatation.
 ## 2. Core Radiology High-Yield Notes (Pages 49-56)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p49_p49_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p49_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p49_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 134
 Overview of gastric bypass surgery
@@ -1014,3 +1014,5 @@ aorta and its branches. Which type is which is beyond the scope of the exam, jus
 Takayasu - Wall Thickening Involving the Aorta
 335
 
+## See Also
+- [[prolactin_elevation|PROLACTIN ELEVATION]] ([PROLACTIN ELEVATION](../cardio/prolactin_elevation.md))

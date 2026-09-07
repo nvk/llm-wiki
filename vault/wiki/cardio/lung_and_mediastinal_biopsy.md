@@ -155,3 +155,7 @@ pected mass (
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[interventional_management_of_laparoscopic_cholecystectomy_co|INTERVENTIONAL MANAGEMENT OF LAPAROSCOPIC CHOLECYSTECTOMY COMPLICATIONS]] ([INTERVENTIONAL MANAGEMENT OF LAPAROSCOPIC CHOLECYSTECTOMY COMPLICATIONS](../git/interventional_management_of_laparoscopic_cholecystectomy_co.md))
+- [[percutaneous_genitourinary_intervention|Percutaneous Genitourinary Intervention]] ([Percutaneous Genitourinary Intervention](../uro/percutaneous_genitourinary_intervention.md))

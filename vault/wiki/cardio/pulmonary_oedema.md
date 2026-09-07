@@ -13,25 +13,25 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 230-232)
 
 ### Key Visuals & Figures (Grainger)
-![Pulmonary Oedema Figure](assets/grainger_pulmonary_oedema_p230_img1.jpeg)
+> **Key Imaging Finding:** Pulmonary Oedema Figure
 
-![Pulmonary Oedema Figure](assets/grainger_pulmonary_oedema_p230_img2.jpeg)
+> **Key Imaging Finding:** Pulmonary Oedema Figure
 
-![Pulmonary Oedema Figure](assets/grainger_pulmonary_oedema_p231_img1.jpeg)
+> **Key Imaging Finding:** Pulmonary Oedema Figure
 
-![Pulmonary Oedema Figure](assets/grainger_pulmonary_oedema_p231_img2.jpeg)
+> **Key Imaging Finding:** Pulmonary Oedema Figure
 
-![Pulmonary Oedema Figure](assets/grainger_pulmonary_oedema_p231_img3.jpeg)
+> **Key Imaging Finding:** Pulmonary Oedema Figure
 
-![Pulmonary Oedema Figure](assets/grainger_pulmonary_oedema_p231_img4.jpeg)
+> **Key Imaging Finding:** Pulmonary Oedema Figure
 
-![Pulmonary Oedema Figure](assets/grainger_pulmonary_oedema_p231_img5.jpeg)
+> **Key Imaging Finding:** Pulmonary Oedema Figure
 
-![Pulmonary Oedema Figure](assets/grainger_pulmonary_oedema_p232_img1.jpeg)
+> **Key Imaging Finding:** Pulmonary Oedema Figure
 
-![Pulmonary Oedema Figure](assets/grainger_pulmonary_oedema_p232_img2.jpeg)
+> **Key Imaging Finding:** Pulmonary Oedema Figure
 
-![Pulmonary Oedema Figure](assets/grainger_pulmonary_oedema_p232_img3.jpeg)
+> **Key Imaging Finding:** Pulmonary Oedema Figure
 
 CHAPTER 11  Airspace Diseases
 251
@@ -190,51 +190,51 @@ mediastinal fat (in heart failure)—reversible
 ## 2. Core Radiology High-Yield Notes (Pages 57-64)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p57_p58_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p61_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p61_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p61_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 56
 Antigen and exposure-related lung disease
@@ -933,3 +933,5 @@ all (97%) of lymph drains to the axilla. The remaining 3% goes to the internal m
 nodes.
 455
 
+## See Also
+- [[epilepsy_imaging_approach|Epilepsy Imaging Approach]] ([Epilepsy Imaging Approach](../neuro/epilepsy_imaging_approach.md))

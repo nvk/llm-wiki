@@ -14,9 +14,9 @@ aliases: ["parasitic_infections"]---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 142-142)
 
 ### Key Visuals & Figures (Grainger)
-![Parasitic Infections Figure](assets/grainger_parasitic_infections_p142_img1.jpeg)
+> **Key Imaging Finding:** Parasitic Infections Figure
 
-![Parasitic Infections Figure](assets/grainger_parasitic_infections_p142_img2.jpeg)
+> **Key Imaging Finding:** Parasitic Infections Figure
 
 1492
 SECTION E  Neuroimaging
@@ -82,43 +82,43 @@ coefficient values (C). (D and E) Peripheral, irregular enhancement of the lesio
 ## 2. Core Radiology High-Yield Notes (Pages 105-112)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p105_p105_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p106_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p106_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p107_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p107_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p107_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p107_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p109_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p111_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p111_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p111_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p111_img6.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p111_img7.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p111_img9.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p111_img10.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p111_img12.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p112_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p112_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p105_p112_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 304
 Glomus tympanicum
@@ -455,29 +455,29 @@ Metastasis
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 385-396)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p385_p385_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p386_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p387_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p388_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p389_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p390_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p391_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p392_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p393_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p394_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p395_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p396_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 SECTION lO:
 U r e t e r a l M a s s e s
@@ -1058,3 +1058,6 @@ Stones can also develop in these things. All this infection and irritation leads
 cancer, and the very common high yield factoid is this is most commonly adenocarcinoma (60%).
 397
 
+## See Also
+- [[parasitic_infections|Parasitic Infections]] ([Parasitic Infections](../cardio/parasitic_infections.md))
+- [[patterns_of_pulmonary_infection|Patterns Of Pulmonary Infection]] ([Patterns Of Pulmonary Infection](../cardio/patterns_of_pulmonary_infection.md))

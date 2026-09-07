@@ -13,31 +13,31 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 382-386)
 
 ### Key Visuals & Figures (Grainger)
-![Stress Imaging Figure](assets/grainger_stress_imaging_p382_img1.jpeg)
+> **Key Imaging Finding:** Stress Imaging Figure
 
-![Stress Imaging Figure](assets/grainger_stress_imaging_p383_img1.jpeg)
+> **Key Imaging Finding:** Stress Imaging Figure
 
-![Stress Imaging Figure](assets/grainger_stress_imaging_p384_img1.jpeg)
+> **Key Imaging Finding:** Stress Imaging Figure
 
-![Stress Imaging Figure](assets/grainger_stress_imaging_p384_img2.jpeg)
+> **Key Imaging Finding:** Stress Imaging Figure
 
-![Stress Imaging Figure](assets/grainger_stress_imaging_p384_img3.jpeg)
+> **Key Imaging Finding:** Stress Imaging Figure
 
-![Stress Imaging Figure](assets/grainger_stress_imaging_p384_img4.jpeg)
+> **Key Imaging Finding:** Stress Imaging Figure
 
-![Stress Imaging Figure](assets/grainger_stress_imaging_p385_img1.jpeg)
+> **Key Imaging Finding:** Stress Imaging Figure
 
-![Stress Imaging Figure](assets/grainger_stress_imaging_p385_img2.jpeg)
+> **Key Imaging Finding:** Stress Imaging Figure
 
-![Stress Imaging Figure](assets/grainger_stress_imaging_p385_img3.jpeg)
+> **Key Imaging Finding:** Stress Imaging Figure
 
-![Stress Imaging Figure](assets/grainger_stress_imaging_p385_img4.jpeg)
+> **Key Imaging Finding:** Stress Imaging Figure
 
-![Stress Imaging Figure](assets/grainger_stress_imaging_p386_img1.jpeg)
+> **Key Imaging Finding:** Stress Imaging Figure
 
-![Stress Imaging Figure](assets/grainger_stress_imaging_p386_img2.jpeg)
+> **Key Imaging Finding:** Stress Imaging Figure
 
-![Stress Imaging Figure](assets/grainger_stress_imaging_p386_img3.jpeg)
+> **Key Imaging Finding:** Stress Imaging Figure
 
 CHAPTER 15  Ischaemic Heart Disease
 379
@@ -313,51 +313,51 @@ techniques in patients presenting with an ACS. Firstly, patient’s triage
 ## 2. Core Radiology High-Yield Notes (Pages 57-64)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p57_p58_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p58_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p59_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p60_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p61_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p61_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p61_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p62_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p63_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p57_p64_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 56
 Antigen and exposure-related lung disease
@@ -649,29 +649,29 @@ Hospital.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 397-408)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p397_p397_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p397_p398_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p397_p399_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p397_p400_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p397_p401_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p397_p402_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p397_p403_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p397_p404_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p397_p405_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p397_p406_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p397_p407_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p397_p408_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 - GU Cancer Blitz! -
 Renal Cancer (Adenocarcinoma)
@@ -1286,3 +1286,5 @@ Cystic
 ' '
 409
 
+## See Also
+- [[diseases_of_the_gentitourinary_tract|DISEASES OF THE GENTITOURINARY TRACT]] ([DISEASES OF THE GENTITOURINARY TRACT](../emergency/diseases_of_the_gentitourinary_tract.md))

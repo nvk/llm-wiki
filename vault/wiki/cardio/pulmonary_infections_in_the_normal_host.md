@@ -179,3 +179,6 @@ Actinomycosis; occasionally other bacteria or fun
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pancreatitis|Pancreatitis]] ([Pancreatitis](../git/pancreatitis.md))

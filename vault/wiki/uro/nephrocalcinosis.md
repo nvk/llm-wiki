@@ -13,11 +13,11 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 68-69)
 
 ### Key Visuals & Figures (Grainger)
-![Nephrocalcinosis Figure](assets/grainger_nephrocalcinosis_p68_img1.jpeg)
+> **Key Imaging Finding:** Nephrocalcinosis Figure
 
-![Nephrocalcinosis Figure](assets/grainger_nephrocalcinosis_p68_img2.jpeg)
+> **Key Imaging Finding:** Nephrocalcinosis Figure
 
-![Nephrocalcinosis Figure](assets/grainger_nephrocalcinosis_p68_img3.jpeg)
+> **Key Imaging Finding:** Nephrocalcinosis Figure
 
 CHAPTER 28  Benign Upper Urinary Tract Conditions: Congenital Anomalies, Cysts, Calculi, Nephrocalcinosis
 789
@@ -135,39 +135,39 @@ analysis. Eur. J. Radiol. 85, 1843–1848.
 ## 2. Core Radiology High-Yield Notes (Pages 25-32)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p25_p25_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p25_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 180
 Ureter
@@ -517,29 +517,29 @@ Contrast extravasates both into the pelvis and out into the perineum in a type I
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 337-348)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p337_p337_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p337_p338_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p337_p339_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p337_p340_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p337_p341_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p337_p342_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p337_p343_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p337_p344_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p337_p345_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p337_p346_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p337_p347_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p337_p348_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 VOCAB - Radiologist LOVE to Argue over Words — therefore high yield
 < 4weeks
@@ -1092,3 +1092,5 @@ Felty’s Syndrome - abnormality of granulocytes, with a triad:
 (3) Neutropenia
 349
 
+## See Also
+- [[obliterative_constrictive_bronchiolitis|Obliterative Constrictive Bronchiolitis]] ([Obliterative Constrictive Bronchiolitis](../cardio/obliterative_constrictive_bronchiolitis.md))

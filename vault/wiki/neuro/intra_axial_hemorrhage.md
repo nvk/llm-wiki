@@ -172,3 +172,6 @@ for detect
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[occupational_lung_disease|Occupational Lung Disease]] ([Occupational Lung Disease](../cardio/occupational_lung_disease.md))

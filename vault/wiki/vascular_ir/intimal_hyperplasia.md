@@ -95,3 +95,6 @@ Vascular Surgery, 5th ed. Philadelphia: WB Saunders, 2000, with permission.)
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[lung|LUNG]] ([LUNG](../cardio/lung.md))

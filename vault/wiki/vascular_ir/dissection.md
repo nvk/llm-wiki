@@ -287,3 +287,6 @@ Figure 11-45.  Patient with remote liver transplant and a chronic left-sided b
 routine catheter change. A, Hepatic digital subtraction angiogram (DSA) with the tube in place showing slight narrowing of the left hepatic artery 
 (arrow), but no active extravasation. The gastroduodenal artery was ligated during the transplant surgery. B, Repeat DSA after removal of the tube over 
 a guidewire showing a pseudoaneurysm (arrowhead), with extravasation into the bile ducts (curved arr
+
+## See Also
+- [[differential_diagnosis_of_cardiovascular_disorders|Differential Diagnosis of Cardiovascular Disorders]] ([Differential Diagnosis of Cardiovascular Disorders](../cardio/differential_diagnosis_of_cardiovascular_disorders.md))

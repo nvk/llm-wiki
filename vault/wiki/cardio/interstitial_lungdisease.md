@@ -233,3 +233,6 @@ phenomenon. Pleural disease may take one of several forms
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[benign_findings|Benign Findings]] ([Benign Findings](../uro/benign_findings.md))

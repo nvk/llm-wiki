@@ -13,11 +13,11 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 34-35)
 
 ### Key Visuals & Figures (Grainger)
-![The Diaphragm Figure](assets/grainger_the_diaphragm_p34_img1.jpeg)
+> **Key Imaging Finding:** The Diaphragm Figure
 
-![The Diaphragm Figure](assets/grainger_the_diaphragm_p35_img1.jpeg)
+> **Key Imaging Finding:** The Diaphragm Figure
 
-![The Diaphragm Figure](assets/grainger_the_diaphragm_p35_img2.jpeg)
+> **Key Imaging Finding:** The Diaphragm Figure
 
 36
 SECTION A  The Chest and Cardiovascular System
@@ -81,7 +81,6 @@ the right hemidiaphragm is 1.5 to 2.5 cm higher than the left, but the
 two hemidiaphragms are at the same level in some 9% of the population. 
 In a few normal individuals the left hemidiaphragm is up to 1 cm 
 higher than the right. The normal excursion of the diaphragm is usually 
-https://afkebooks.com
 
 
 CHAPTER 2  The Normal Chest
@@ -166,44 +165,43 @@ in order to recognise disease processes.
 the thorax and, where relevant, important anatomical relationships have 
 been illustrated using the wide range of imaging techniques available to 
 clinicians.
-https://t.me/afkebooks
 
 ## 2. Core Radiology High-Yield Notes (Pages 41-48)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p42_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img26.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img37.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img4.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img6.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 40
 Pleural effusion
@@ -566,29 +564,29 @@ distinguish between a pulmonary artery and vein by tracing the vessel back to th
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 193-204)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p193_p193_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p194_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p195_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p196_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p197_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p198_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p199_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p200_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p201_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p202_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p203_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p193_p204_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Posterior
 Neuroblastoma - This is the most common posterior mediastinal mass in a child under 2. This 
@@ -1164,3 +1162,5 @@ history to bias yourself.
 j Pancreas Surrounding the Duodenum
 205
 
+## See Also
+- [[the_normal_pancreas|The Normal Pancreas]] ([The Normal Pancreas](../git/the_normal_pancreas.md))

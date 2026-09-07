@@ -13,19 +13,19 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 57-58)
 
 ### Key Visuals & Figures (Grainger)
-![Cysts Figure](assets/grainger_cysts_p57_img1.jpeg)
+> **Key Imaging Finding:** Cysts Figure
 
-![Cysts Figure](assets/grainger_cysts_p57_img2.jpeg)
+> **Key Imaging Finding:** Cysts Figure
 
-![Cysts Figure](assets/grainger_cysts_p57_img3.jpeg)
+> **Key Imaging Finding:** Cysts Figure
 
-![Cysts Figure](assets/grainger_cysts_p57_img4.jpeg)
+> **Key Imaging Finding:** Cysts Figure
 
-![Cysts Figure](assets/grainger_cysts_p58_img1.jpeg)
+> **Key Imaging Finding:** Cysts Figure
 
-![Cysts Figure](assets/grainger_cysts_p58_img2.jpeg)
+> **Key Imaging Finding:** Cysts Figure
 
-![Cysts Figure](assets/grainger_cysts_p58_img3.jpeg)
+> **Key Imaging Finding:** Cysts Figure
 
 778
 SECTION B  Abdominal Imaging
@@ -118,31 +118,31 @@ classification for renal cysts (Table 28.1 and Fig. 28.6).
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p9_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p9_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 164
 Malignant (or potentially malignant) adrenal masses
@@ -488,29 +488,29 @@ there is no way to distinguish a hyperdense cyst from an enhancing renal mass.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 313-324)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p313_p313_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p314_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p315_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p316_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p317_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p318_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p319_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p320_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p321_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p322_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p323_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p313_p324_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 A
 Gamesmanship - They could 
@@ -1214,3 +1214,5 @@ CA Strictures tends to be long, with “shouldering.’
 B9 strictures tend to be abrupt and short.
 325
 
+## See Also
+- [[pulmonary_lymphoproliferative_disorders|Pulmonary Lymphoproliferative Disorders]] ([Pulmonary Lymphoproliferative Disorders](../cardio/pulmonary_lymphoproliferative_disorders.md))

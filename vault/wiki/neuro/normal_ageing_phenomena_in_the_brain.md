@@ -100,7 +100,7 @@ include metabolic information obtained by using single-photon emission
 ## 2. Core Radiology High-Yield Notes (Pages 145-147)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p145_p147_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 344
 Paranasal sinuses:
@@ -199,29 +199,29 @@ Wrist and hand 457
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 445-456)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p445_p445_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p446_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p447_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p448_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p449_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p450_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p451_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p452_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p453_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p454_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p455_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p445_p456_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Yolk Sac - in the chorionic cavity
 Yolk Sac: This is the first structure visible 
@@ -688,3 +688,5 @@ Centered over the
 intemal os
 457
 
+## See Also
+- [[dementia|DEMENTIA]] ([DEMENTIA](../head_neck/dementia.md))

@@ -165,3 +165,6 @@ if clinically feasible.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[cardiac_imaging_the_requisites_third_edition|Cardiac Imaging: The Requisites, Third Edition]] ([Cardiac Imaging: The Requisites, Third Edition](../cardio/cardiac_imaging_the_requisites_third_edition.md))

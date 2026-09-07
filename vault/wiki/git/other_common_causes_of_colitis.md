@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 126-126)
 
 ### Key Visuals & Figures (Grainger)
-![Other Common Causes of Colitis Figure](assets/grainger_other_common_causes__p126_img1.jpeg)
+> **Key Imaging Finding:** Other Common Causes of Colitis Figure
 
-![Other Common Causes of Colitis Figure](assets/grainger_other_common_causes__p126_img2.jpeg)
+> **Key Imaging Finding:** Other Common Causes of Colitis Figure
 
 588
 SECTION B  Abdominal Imaging
@@ -87,39 +87,39 @@ represents oedema and is also indicative of active inflammation.
 ## 2. Core Radiology High-Yield Notes (Pages 25-32)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p25_p26_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p27_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p28_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p29_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p30_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p31_img4.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p25_p32_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 110
 Intraductal papillary mucinous neoplasm (IPMN)
@@ -1059,3 +1059,6 @@ affects the C-spine. It looks like bad degenerative changes or CPPD. Amyloid dep
 supposedly why it happens.
 119
 
+## See Also
+- [[aspiration_pneumonitis_and_anaerobic_pneumonia|Aspiration Pneumonitis And Anaerobic Pneumonia]] ([Aspiration Pneumonitis And Anaerobic Pneumonia](../cardio/aspiration_pneumonitis_and_anaerobic_pneumonia.md))
+- [[organising_pneumonia|Organising Pneumonia]] ([Organising Pneumonia](../cardio/organising_pneumonia.md))

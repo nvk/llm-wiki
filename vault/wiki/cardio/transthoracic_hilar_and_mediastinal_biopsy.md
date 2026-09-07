@@ -87,3 +87,7 @@ B
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[transjugular_liver_biopsy|TRANSJUGULAR LIVER BIOPSY]] ([TRANSJUGULAR LIVER BIOPSY](../git/transjugular_liver_biopsy.md))
+- [[the_arterial_puncture|THE ARTERIAL PUNCTURE]] ([THE ARTERIAL PUNCTURE](../vascular_ir/the_arterial_puncture.md))

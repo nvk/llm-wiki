@@ -158,3 +158,7 @@ and occlusion of the portal v
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pulmonary_venous_hypertension|Pulmonary Venous Hypertension]] ([Pulmonary Venous Hypertension](../cardio/pulmonary_venous_hypertension.md))
+- [[renal_vein_varicesnutcracker_syndrome|RENAL VEIN VARICES/NUTCRACKER SYNDROME]] ([RENAL VEIN VARICES/NUTCRACKER SYNDROME](../uro/renal_vein_varicesnutcracker_syndrome.md))

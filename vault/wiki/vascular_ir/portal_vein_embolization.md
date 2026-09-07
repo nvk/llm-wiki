@@ -118,3 +118,7 @@ lowed by coils, all through the recurved catheter. The liver tract was then embo
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pulmonary_thomboembolic_disease|Pulmonary Thomboembolic Disease]] ([Pulmonary Thomboembolic Disease](../cardio/pulmonary_thomboembolic_disease.md))
+- [[bladder_intervention|BLADDER INTERVENTION]] ([BLADDER INTERVENTION](../uro/bladder_intervention.md))

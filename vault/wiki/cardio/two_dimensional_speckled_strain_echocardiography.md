@@ -196,3 +196,4 @@ ing the true shape of the ventricle. A, area; D, diameter; L,
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[liver_and_biliary_tree|LIVER AND BILIARY TREE]] ([LIVER AND BILIARY TREE](../git/liver_and_biliary_tree.md))

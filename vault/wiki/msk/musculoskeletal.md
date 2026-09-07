@@ -165,3 +165,6 @@ is obtained. When clinical suspicion
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[restrictive_cardiomyopathy|Restrictive Cardiomyopathy]] ([Restrictive Cardiomyopathy](../cardio/restrictive_cardiomyopathy.md))

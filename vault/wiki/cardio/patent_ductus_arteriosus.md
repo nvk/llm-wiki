@@ -161,3 +161,4 @@ deviation of
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[vascular_complications_early|Vascular Complications Early]] ([Vascular Complications Early](../uro/vascular_complications_early.md))

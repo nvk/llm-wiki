@@ -210,3 +210,6 @@ After immediate palliation, decisions regarding per
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[obstetrics_and_gynecology|OBSTETRICS AND GYNECOLOGY]] ([OBSTETRICS AND GYNECOLOGY](../gynae/obstetrics_and_gynecology.md))

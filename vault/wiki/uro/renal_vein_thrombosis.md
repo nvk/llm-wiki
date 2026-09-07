@@ -103,3 +103,7 @@ Tumor thrombus
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[neurovascular_diseases|NEUROVASCULAR DISEASES]] ([NEUROVASCULAR DISEASES](../paeds/neurovascular_diseases.md))
+- [[the_normal_vascular_wall|THE NORMAL VASCULAR WALL]] ([THE NORMAL VASCULAR WALL](../vascular_ir/the_normal_vascular_wall.md))

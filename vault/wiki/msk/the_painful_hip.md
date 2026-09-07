@@ -164,3 +164,6 @@ bulum may occasionally be involved, but to a lesser de
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[penetrating_aortic_ulcers|PENETRATING AORTIC ULCERS]] ([PENETRATING AORTIC ULCERS](../cardio/penetrating_aortic_ulcers.md))

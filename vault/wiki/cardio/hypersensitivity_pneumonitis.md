@@ -272,15 +272,15 @@ status: "verified_source"
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 214-215)
 
 ### Key Visuals & Figures (Grainger)
-![Hypersensitivity Pneumonitis Figure](assets/grainger_hypersensitivity_pne_p214_img1.jpeg)
+> **Key Imaging Finding:** Hypersensitivity Pneumonitis Figure
 
-![Hypersensitivity Pneumonitis Figure](assets/grainger_hypersensitivity_pne_p214_img2.jpeg)
+> **Key Imaging Finding:** Hypersensitivity Pneumonitis Figure
 
-![Hypersensitivity Pneumonitis Figure](assets/grainger_hypersensitivity_pne_p214_img3.jpeg)
+> **Key Imaging Finding:** Hypersensitivity Pneumonitis Figure
 
-![Hypersensitivity Pneumonitis Figure](assets/grainger_hypersensitivity_pne_p215_img1.jpeg)
+> **Key Imaging Finding:** Hypersensitivity Pneumonitis Figure
 
-![Hypersensitivity Pneumonitis Figure](assets/grainger_hypersensitivity_pne_p215_img2.jpeg)
+> **Key Imaging Finding:** Hypersensitivity Pneumonitis Figure
 
 216
 SECTION A  The Chest and Cardiovascular System
@@ -339,3 +339,6 @@ C
 B
 A
 Fig.
+
+## See Also
+- [[57_intracranial_infections|57 Intracranial Infections]] ([57 Intracranial Infections](../neuro/57_intracranial_infections.md))

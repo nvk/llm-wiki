@@ -102,3 +102,6 @@ excellent liver function. RASD, right anterior sectoral duct.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[lungs|Lungs]] ([Lungs](../cardio/lungs.md))

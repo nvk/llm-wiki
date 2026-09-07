@@ -14,19 +14,19 @@ aliases: ["ultrasound"]---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 2-3)
 
 ### Key Visuals & Figures (Grainger)
-![Ultrasound Figure](assets/grainger_ultrasound_p2_img1.jpeg)
+> **Key Imaging Finding:** Ultrasound Figure
 
-![Ultrasound Figure](assets/grainger_ultrasound_p2_img2.jpeg)
+> **Key Imaging Finding:** Ultrasound Figure
 
-![Ultrasound Figure](assets/grainger_ultrasound_p2_img3.jpeg)
+> **Key Imaging Finding:** Ultrasound Figure
 
-![Ultrasound Figure](assets/grainger_ultrasound_p3_img1.jpeg)
+> **Key Imaging Finding:** Ultrasound Figure
 
-![Ultrasound Figure](assets/grainger_ultrasound_p3_img2.jpeg)
+> **Key Imaging Finding:** Ultrasound Figure
 
-![Ultrasound Figure](assets/grainger_ultrasound_p3_img3.jpeg)
+> **Key Imaging Finding:** Ultrasound Figure
 
-![Ultrasound Figure](assets/grainger_ultrasound_p3_img4.jpeg)
+> **Key Imaging Finding:** Ultrasound Figure
 
 970
 SECTION C  The Musculoskeletal System
@@ -145,51 +145,51 @@ be used to target diagnostic and therapeutic injections.
 ## 2. Core Radiology High-Yield Notes (Pages 41-48)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p42_img21.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img30.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img40.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img41.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img60.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img61.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img75.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img89.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img92.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img103.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img141.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img146.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img160.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p44_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p44_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p44_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p44_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p46_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p48_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 385
 Musculoskeletal infection
@@ -518,29 +518,29 @@ propensity for ligaments and tendons to rupture.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 73-84)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p73_p73_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p74_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p75_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p76_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p77_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p78_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p79_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p80_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p81_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p82_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p83_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p73_p84_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 SECTION 6:
 C o n g e n i t a l
@@ -1134,3 +1134,5 @@ Traction Bronchiectasis
 Micronodules
 85
 
+## See Also
+- [[changing_spectrum_of_human_immunodeficiency_virus_infections_40_years_later|Changing Spectrum Of Human Immunodeficiency Virus Infections 40 Years Later]] ([Changing Spectrum Of Human Immunodeficiency Virus Infections 40 Years Later](../cardio/changing_spectrum_of_human_immunodeficiency_virus_infections_40_years_later.md))

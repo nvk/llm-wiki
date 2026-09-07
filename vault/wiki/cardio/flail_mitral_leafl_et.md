@@ -160,3 +160,4 @@ sible to gain a sense of
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[normal_and_variant_anatomy|NORMAL AND VARIANT ANATOMY]] ([NORMAL AND VARIANT ANATOMY](../vascular_ir/normal_and_variant_anatomy.md))

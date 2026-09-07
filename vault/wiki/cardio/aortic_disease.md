@@ -163,3 +163,4 @@ to confi rm the diagnosis by echocardiography. The features
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[bone_physiology_and_pathophysiology|Bone Physiology And Pathophysiology]] ([Bone Physiology And Pathophysiology](../msk/bone_physiology_and_pathophysiology.md))

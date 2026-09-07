@@ -189,3 +189,6 @@ sive system of dilated collateral c
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[prostatic_embolization_for_benign_hyperplasia|PROSTATIC EMBOLIZATION FOR BENIGN HYPERPLASIA]] ([PROSTATIC EMBOLIZATION FOR BENIGN HYPERPLASIA](../uro/prostatic_embolization_for_benign_hyperplasia.md))

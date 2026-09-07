@@ -149,3 +149,6 @@ luminal high density on noncontrast s
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[vascular_dementia|Vascular Dementia]] ([Vascular Dementia](../neuro/vascular_dementia.md))

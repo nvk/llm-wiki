@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 36-36)
 
 ### Key Visuals & Figures (Grainger)
-![The Ankle and Foot Figure](assets/grainger_the_ankle_and_foot_p36_img1.jpeg)
+> **Key Imaging Finding:** The Ankle and Foot Figure
 
-![The Ankle and Foot Figure](assets/grainger_the_ankle_and_foot_p36_img2.jpeg)
+> **Key Imaging Finding:** The Ankle and Foot Figure
 
 1004
 SECTION C  The Musculoskeletal System
@@ -86,31 +86,31 @@ fibres behind the lateral malleolus (short arrows). The peroneus longus
 ## 2. Core Radiology High-Yield Notes (Pages 49-56)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p49_p49_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p50_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p51_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p51_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p53_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p53_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img26.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img29.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 393
 Renal osteodystrophy
@@ -462,29 +462,29 @@ tendon. There is often retraction of the tendon remnants.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 265-276)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p265_p265_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p266_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p267_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p268_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p269_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p270_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p271_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p272_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p273_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p274_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p275_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p265_p276_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Candidiasis:
 A hint in the question stem might be “HIV Patient” or “Transplant 
@@ -1115,3 +1115,5 @@ back into the stomach (usually the efferent limb) and can cause gastric obstruct
 present with the acute form.
 277
 
+## See Also
+- [[role_of_imaging|Role Of Imaging]] ([Role Of Imaging](../cardio/role_of_imaging.md))

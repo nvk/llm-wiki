@@ -197,3 +197,6 @@ skin, nerv
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[functional_disorders_of_the_anorectum|Functional Disorders Of The Anorectum]] ([Functional Disorders Of The Anorectum](../git/functional_disorders_of_the_anorectum.md))

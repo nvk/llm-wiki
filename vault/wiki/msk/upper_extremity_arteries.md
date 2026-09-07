@@ -185,3 +185,7 @@ Anter
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[16_pulmonary_circulation_and_pulmonary_thromboembolism|16 Pulmonary Circulation And Pulmonary Thromboembolism]] ([16 Pulmonary Circulation And Pulmonary Thromboembolism](../cardio/16_pulmonary_circulation_and_pulmonary_thromboembolism.md))
+- [[acute_ischemia|ACUTE ISCHEMIA]] ([ACUTE ISCHEMIA](../vascular_ir/acute_ischemia.md))

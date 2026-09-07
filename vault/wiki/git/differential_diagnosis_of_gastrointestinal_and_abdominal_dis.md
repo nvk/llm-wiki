@@ -236,3 +236,6 @@ A.  VASCULITIS
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[renal_denervation_for_hypertension|RENAL DENERVATION FOR HYPERTENSION]] ([RENAL DENERVATION FOR HYPERTENSION](../uro/renal_denervation_for_hypertension.md))

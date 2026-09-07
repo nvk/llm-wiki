@@ -13,35 +13,35 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 136-139)
 
 ### Key Visuals & Figures (Grainger)
-![Prostate Biopsy Figure](assets/grainger_prostate_biopsy_p136_img1.jpeg)
+> **Key Imaging Finding:** Prostate Biopsy Figure
 
-![Prostate Biopsy Figure](assets/grainger_prostate_biopsy_p136_img2.jpeg)
+> **Key Imaging Finding:** Prostate Biopsy Figure
 
-![Prostate Biopsy Figure](assets/grainger_prostate_biopsy_p137_img1.jpeg)
+> **Key Imaging Finding:** Prostate Biopsy Figure
 
-![Prostate Biopsy Figure](assets/grainger_prostate_biopsy_p137_img2.jpeg)
+> **Key Imaging Finding:** Prostate Biopsy Figure
 
-![Prostate Biopsy Figure](assets/grainger_prostate_biopsy_p137_img3.jpeg)
+> **Key Imaging Finding:** Prostate Biopsy Figure
 
-![Prostate Biopsy Figure](assets/grainger_prostate_biopsy_p137_img4.jpeg)
+> **Key Imaging Finding:** Prostate Biopsy Figure
 
-![Prostate Biopsy Figure](assets/grainger_prostate_biopsy_p137_img5.jpeg)
+> **Key Imaging Finding:** Prostate Biopsy Figure
 
-![Prostate Biopsy Figure](assets/grainger_prostate_biopsy_p137_img6.jpeg)
+> **Key Imaging Finding:** Prostate Biopsy Figure
 
-![Prostate Biopsy Figure](assets/grainger_prostate_biopsy_p137_img7.jpeg)
+> **Key Imaging Finding:** Prostate Biopsy Figure
 
-![Prostate Biopsy Figure](assets/grainger_prostate_biopsy_p138_img1.jpeg)
+> **Key Imaging Finding:** Prostate Biopsy Figure
 
-![Prostate Biopsy Figure](assets/grainger_prostate_biopsy_p138_img2.jpeg)
+> **Key Imaging Finding:** Prostate Biopsy Figure
 
-![Prostate Biopsy Figure](assets/grainger_prostate_biopsy_p138_img3.jpeg)
+> **Key Imaging Finding:** Prostate Biopsy Figure
 
-![Prostate Biopsy Figure](assets/grainger_prostate_biopsy_p138_img4.jpeg)
+> **Key Imaging Finding:** Prostate Biopsy Figure
 
-![Prostate Biopsy Figure](assets/grainger_prostate_biopsy_p138_img5.jpeg)
+> **Key Imaging Finding:** Prostate Biopsy Figure
 
-![Prostate Biopsy Figure](assets/grainger_prostate_biopsy_p138_img6.jpeg)
+> **Key Imaging Finding:** Prostate Biopsy Figure
 
 CHAPTER 32  Prostate
 857
@@ -269,25 +269,25 @@ imaging—reporting and data system: 2015, version 2. Eur. Urol. 69 (1),
 ## 2. Core Radiology High-Yield Notes (Pages 1-8)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p1_p2_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p4_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p4_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p4_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p4_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p7_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p1_p8_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 156
 Soyer, P. et al. Celiac disease in adults: evaluation with MDCT enteroclysis. AJR. American journal of roentgenology 191, 
@@ -1167,3 +1167,7 @@ aorta and its branches. Which type is which is beyond the scope of the exam, jus
 Takayasu - Wall Thickening Involving the Aorta
 335
 
+## See Also
+- [[imaging|IMAGING]] ([IMAGING](../vascular_ir/imaging.md))
+- [[key_collateral_pathways|KEY COLLATERAL PATHWAYS]] ([KEY COLLATERAL PATHWAYS](../vascular_ir/key_collateral_pathways.md))
+- [[suggested_readings|Suggested Readings]] ([Suggested Readings](../vascular_ir/suggested_readings.md))

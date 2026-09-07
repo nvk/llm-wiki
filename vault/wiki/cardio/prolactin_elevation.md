@@ -211,3 +211,6 @@ including quadriplegia, diplopia, dysarthria, dysphagia
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[neoplastic_bile_duct_pathology|Neoplastic Bile Duct Pathology]] ([Neoplastic Bile Duct Pathology](../git/neoplastic_bile_duct_pathology.md))

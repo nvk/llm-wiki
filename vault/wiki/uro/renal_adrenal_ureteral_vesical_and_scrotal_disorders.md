@@ -192,3 +192,7 @@ sclerosis in diabetes mellitus), aminoglycosides (gentamicin,
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[abdomen_and_gastrointestinal_tract|ABDOMEN AND GASTROINTESTINAL TRACT]] ([ABDOMEN AND GASTROINTESTINAL TRACT](../git/abdomen_and_gastrointestinal_tract.md))
+- [[disorders_of_the_duodenum|Disorders Of The Duodenum]] ([Disorders Of The Duodenum](../git/disorders_of_the_duodenum.md))

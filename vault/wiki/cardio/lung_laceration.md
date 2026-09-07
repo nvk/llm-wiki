@@ -76,3 +76,6 @@ stent graft repair of the aorta.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pancreatic_injury|PANCREATIC INJURY]] ([PANCREATIC INJURY](../git/pancreatic_injury.md))

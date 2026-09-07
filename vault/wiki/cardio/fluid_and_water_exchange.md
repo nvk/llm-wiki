@@ -170,3 +170,4 @@ lobe arteries and veins (Figure 1-37). The width of th
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[miscellaneous|MISCELLANEOUS]] ([MISCELLANEOUS](../vascular_ir/miscellaneous.md))

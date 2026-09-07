@@ -170,3 +170,7 @@ re
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[abdominal_aorta_and_pelvic_arteries|Abdominal Aorta and Pelvic Arteries]] ([Abdominal Aorta and Pelvic Arteries](../git/abdominal_aorta_and_pelvic_arteries.md))
+- [[vascular_emergencies|Vascular Emergencies]] ([Vascular Emergencies](../vascular_ir/vascular_emergencies.md))

@@ -196,3 +196,4 @@ ing the true shape of the ventricle. A, area; D, diameter; L,
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[intrahepatic_ductal_anatomy|INTRAHEPATIC DUCTAL ANATOMY]] ([INTRAHEPATIC DUCTAL ANATOMY](../vascular_ir/intrahepatic_ductal_anatomy.md))

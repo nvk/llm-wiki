@@ -170,3 +170,6 @@ to avoid damage to underlying neural structures.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[specific_lesions|Specific Lesions]] ([Specific Lesions](../cardio/specific_lesions.md))

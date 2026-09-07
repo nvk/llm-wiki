@@ -239,3 +239,6 @@ radiographically; findin
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[metabolic_neurodegenerativeand_toxic_disorders|METABOLIC, NEURODEGENERATIVE,AND TOXIC DISORDERS]] ([METABOLIC, NEURODEGENERATIVE,AND TOXIC DISORDERS](../paeds/metabolic_neurodegenerativeand_toxic_disorders.md))

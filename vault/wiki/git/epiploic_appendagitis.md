@@ -13,15 +13,15 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 124-125)
 
 ### Key Visuals & Figures (Grainger)
-![Epiploic Appendagitis Figure](assets/grainger_epiploic_appendagiti_p124_img1.jpeg)
+> **Key Imaging Finding:** Epiploic Appendagitis Figure
 
-![Epiploic Appendagitis Figure](assets/grainger_epiploic_appendagiti_p124_img2.jpeg)
+> **Key Imaging Finding:** Epiploic Appendagitis Figure
 
-![Epiploic Appendagitis Figure](assets/grainger_epiploic_appendagiti_p124_img3.jpeg)
+> **Key Imaging Finding:** Epiploic Appendagitis Figure
 
-![Epiploic Appendagitis Figure](assets/grainger_epiploic_appendagiti_p125_img1.jpeg)
+> **Key Imaging Finding:** Epiploic Appendagitis Figure
 
-![Epiploic Appendagitis Figure](assets/grainger_epiploic_appendagiti_p125_img2.jpeg)
+> **Key Imaging Finding:** Epiploic Appendagitis Figure
 
 586
 SECTION B  Abdominal Imaging
@@ -148,39 +148,39 @@ submucosa.
 ## 2. Core Radiology High-Yield Notes (Pages 9-16)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p9_p9_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p9_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p9_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p10_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p11_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p12_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p13_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p9_p14_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 94
 Hepatocellular carcinoma (HCC)
@@ -1139,3 +1139,5 @@ Supracondylar
 Canal
 95
 
+## See Also
+- [[cardiac_and_pericardial_calcifications|CARDIAC AND PERICARDIAL CALCIFICATIONS]] ([CARDIAC AND PERICARDIAL CALCIFICATIONS](../cardio/cardiac_and_pericardial_calcifications.md))

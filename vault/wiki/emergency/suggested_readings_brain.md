@@ -150,3 +150,7 @@ Battista RA, Baredes S, Krieger A, et al: Prevertebral space infecti
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[central_nervous_system_head_neck|CENTRAL NERVOUS SYSTEM]] ([CENTRAL NERVOUS SYSTEM](../neuro/central_nervous_system_head_neck.md))
+- [[cerebral_vasculature|Cerebral Vasculature]] ([Cerebral Vasculature](../neuro/cerebral_vasculature.md))

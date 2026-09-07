@@ -13,11 +13,11 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 109-109)
 
 ### Key Visuals & Figures (Grainger)
-![Tumours Figure](assets/grainger_tumours_p109_img1.jpeg)
+> **Key Imaging Finding:** Tumours Figure
 
-![Tumours Figure](assets/grainger_tumours_p109_img2.jpeg)
+> **Key Imaging Finding:** Tumours Figure
 
-![Tumours Figure](assets/grainger_tumours_p109_img3.jpeg)
+> **Key Imaging Finding:** Tumours Figure
 
 CHAPTER 22  The Large Bowel
 571
@@ -92,19 +92,19 @@ echogenic.
 ## 2. Core Radiology High-Yield Notes (Pages 65-72)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p65_p66_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p66_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p67_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p68_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p65_p72_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 150
 Flow of peritoneal fluid
@@ -869,3 +869,6 @@ along the superior lateral aspect.
 47
 Wear
 
+## See Also
+- [[benign_neoplasms_and_other_nonneoplastic_tumors|Benign Neoplasms and Other Nonneoplastic Tumors]] ([Benign Neoplasms and Other Nonneoplastic Tumors](../cardio/benign_neoplasms_and_other_nonneoplastic_tumors.md))
+- [[carotid_body_tumors|CAROTID BODY TUMORS]] ([CAROTID BODY TUMORS](../vascular_ir/carotid_body_tumors.md))

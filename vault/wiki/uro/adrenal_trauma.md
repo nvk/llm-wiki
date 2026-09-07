@@ -74,3 +74,7 @@ Mechanical ventilation
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[trauma_to_the_aorta|Trauma To The Aorta]] ([Trauma To The Aorta](../cardio/trauma_to_the_aorta.md))
+- [[head_and_neck_trauma|HEAD AND NECK TRAUMA]] ([HEAD AND NECK TRAUMA](../head_neck/head_and_neck_trauma.md))

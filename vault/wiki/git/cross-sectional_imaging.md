@@ -13,13 +13,13 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 38-38)
 
 ### Key Visuals & Figures (Grainger)
-![Cross-Sectional Imaging Figure](assets/grainger_cross-sectional_imag_p38_img1.jpeg)
+> **Key Imaging Finding:** Cross-Sectional Imaging Figure
 
-![Cross-Sectional Imaging Figure](assets/grainger_cross-sectional_imag_p38_img2.jpeg)
+> **Key Imaging Finding:** Cross-Sectional Imaging Figure
 
-![Cross-Sectional Imaging Figure](assets/grainger_cross-sectional_imag_p38_img3.jpeg)
+> **Key Imaging Finding:** Cross-Sectional Imaging Figure
 
-![Cross-Sectional Imaging Figure](assets/grainger_cross-sectional_imag_p38_img4.jpeg)
+> **Key Imaging Finding:** Cross-Sectional Imaging Figure
 
 500
 SECTION B  Abdominal Imaging
@@ -61,35 +61,35 @@ proper distension of the stomach and optimally timed administration
 ## 2. Core Radiology High-Yield Notes (Pages 49-56)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p49_p49_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p49_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p49_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 134
 Overview of gastric bypass surgery
@@ -431,29 +431,29 @@ Case courtesy Michael Callahan, MD, Boston Children’s Hospital.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 349-360)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p349_p349_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p349_p350_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p349_p351_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p349_p352_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p349_p353_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p349_p354_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p349_p355_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p349_p356_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p349_p357_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p349_p358_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p349_p359_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p349_p360_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 - Benign Masses of the Spleen -
 Post traumatic cysts (pseudocysts) are the most common cystic lesion in the spleen. They can 
@@ -984,3 +984,5 @@ young boys and middle aged women.
 Nerds ruined my joke. Now these are “Adult MLCNs" and “Pediatric MLCNs.” See page 229.
 361
 
+## See Also
+- [[cardiac_resynchronization_therapy|Cardiac Resynchronization Therapy]] ([Cardiac Resynchronization Therapy](../cardio/cardiac_resynchronization_therapy.md))

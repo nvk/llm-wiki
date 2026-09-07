@@ -124,3 +124,6 @@ the spleen (arrow). B, US demonstration of a splenule (s).
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[thoracic_outlet_syndrome|THORACIC OUTLET SYNDROME]] ([THORACIC OUTLET SYNDROME](../cardio/thoracic_outlet_syndrome.md))

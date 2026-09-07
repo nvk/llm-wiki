@@ -283,3 +283,7 @@ com
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[dissection|DISSECTION]] ([DISSECTION](../vascular_ir/dissection.md))
+- [[vascular_and_interventional_radiology|Vascular and Interventional Radiology]] ([Vascular and Interventional Radiology](../vascular_ir/vascular_and_interventional_radiology.md))

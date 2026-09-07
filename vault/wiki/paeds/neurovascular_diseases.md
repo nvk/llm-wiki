@@ -165,3 +165,7 @@ basal ganglia
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[embolization_of_the_bladder|EMBOLIZATION OF THE BLADDER]] ([EMBOLIZATION OF THE BLADDER](../uro/embolization_of_the_bladder.md))
+- [[renal_vein_thrombosis|RENAL VEIN THROMBOSIS]] ([RENAL VEIN THROMBOSIS](../uro/renal_vein_thrombosis.md))

@@ -74,3 +74,6 @@ xi
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[examination|Examination]] ([Examination](../git/examination.md))

@@ -158,3 +158,7 @@ atherosclerotic renal artery stenosis and impaired renal function: a
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[19_fetal_musculoskeletal_system|19. Fetal Musculoskeletal System]] ([19. Fetal Musculoskeletal System](../gynae/19_fetal_musculoskeletal_system.md))
+- [[embolization_of_the_bladder|EMBOLIZATION OF THE BLADDER]] ([EMBOLIZATION OF THE BLADDER](../uro/embolization_of_the_bladder.md))

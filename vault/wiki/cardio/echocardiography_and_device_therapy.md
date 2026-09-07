@@ -148,3 +148,4 @@ indication to the pr
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[history_of_transplantation|History Of Transplantation]] ([History Of Transplantation](../uro/history_of_transplantation.md))

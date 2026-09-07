@@ -115,3 +115,6 @@ nal CT (not shown) demonstrated a pseudocyst as a cause for malfunction.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[diseases_characterized_by_an_irregular_linear_pattern|Diseases Characterized By An Irregular Linear Pattern]] ([Diseases Characterized By An Irregular Linear Pattern](../cardio/diseases_characterized_by_an_irregular_linear_pattern.md))

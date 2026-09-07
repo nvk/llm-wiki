@@ -172,3 +172,4 @@ ratio in
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[anatomy_and_function|Anatomy And Function]] ([Anatomy And Function](../git/anatomy_and_function.md))

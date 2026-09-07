@@ -164,3 +164,6 @@ the at-risk cecum quickly and effectively. The main indicati
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[tracheal_disorders|Tracheal Disorders]] ([Tracheal Disorders](../cardio/tracheal_disorders.md))

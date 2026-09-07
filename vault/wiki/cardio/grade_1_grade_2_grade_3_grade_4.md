@@ -191,3 +191,4 @@ may also be redundant or ruptured chordae
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[atherosclerotic_occlusive_disease|ATHEROSCLEROTIC OCCLUSIVE DISEASE]] ([ATHEROSCLEROTIC OCCLUSIVE DISEASE](../vascular_ir/atherosclerotic_occlusive_disease.md))

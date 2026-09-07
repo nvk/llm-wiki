@@ -227,3 +227,6 @@ men than in women with rheumatoid disea
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[free_peritoneal_fluid|FREE PERITONEAL FLUID]] ([FREE PERITONEAL FLUID](../git/free_peritoneal_fluid.md))

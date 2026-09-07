@@ -170,3 +170,6 @@ disappears. Current thinking leans toward the latter (Fig. 2-1
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[38_current_status_of_imaging_of_the_musculoskeletal_system|38 Current Status Of Imaging Of The Musculoskeletal System]] ([38 Current Status Of Imaging Of The Musculoskeletal System](../msk/38_current_status_of_imaging_of_the_musculoskeletal_system.md))
+- [[further_reading|Further Reading]] ([Further Reading](../msk/further_reading.md))
+- [[section_c_the_musculoskeletal_system|Section C The Musculoskeletal System]] ([Section C The Musculoskeletal System](../msk/section_c_the_musculoskeletal_system.md))

@@ -154,3 +154,7 @@ to management of fibroids. The basic principle is selecti
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[congenitally_hypoplastic_pulmonary_arteries|CONGENITALLY HYPOPLASTIC PULMONARY ARTERIES]] ([CONGENITALLY HYPOPLASTIC PULMONARY ARTERIES](../cardio/congenitally_hypoplastic_pulmonary_arteries.md))
+- [[pulmonary_vascular_abnormalities|Pulmonary Vascular Abnormalities]] ([Pulmonary Vascular Abnormalities](../cardio/pulmonary_vascular_abnormalities.md))

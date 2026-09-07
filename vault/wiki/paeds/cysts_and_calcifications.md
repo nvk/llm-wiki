@@ -184,3 +184,6 @@ Ivema
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[emphysema|Emphysema]] ([Emphysema](../cardio/emphysema.md))

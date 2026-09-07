@@ -13,9 +13,9 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 192-192)
 
 ### Key Visuals & Figures (Grainger)
-![Pelvic and Acetabular Fractures Figure](assets/grainger_pelvic_and_acetabula_p192_img1.jpeg)
+> **Key Imaging Finding:** Pelvic and Acetabular Fractures Figure
 
-![Pelvic and Acetabular Fractures Figure](assets/grainger_pelvic_and_acetabula_p192_img2.jpeg)
+> **Key Imaging Finding:** Pelvic and Acetabular Fractures Figure
 
 1160
 SECTION C  The Musculoskeletal System
@@ -98,45 +98,45 @@ Associated Ligaments.
 ## 2. Core Radiology High-Yield Notes (Pages 33-40)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p33_p33_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p34_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 377
 •	 In the skull base, fibrous dysplasia is typically expansile and can look highly unusual 
@@ -1039,3 +1039,6 @@ Enhancement
 Thallium Cold
 215
 
+## See Also
+- [[imaging_in_blunt_trauma|IMAGING IN BLUNT TRAUMA]] ([IMAGING IN BLUNT TRAUMA](../emergency/imaging_in_blunt_trauma.md))
+- [[traumatic_and_nontraumatic_emergencies_of_the_brain_head_and|Traumatic and Nontraumatic Emergencies of the Brain, Head, and Neck]] ([Traumatic and Nontraumatic Emergencies of the Brain, Head, and Neck](../neuro/traumatic_and_nontraumatic_emergencies_of_the_brain_head_and.md))

@@ -150,3 +150,6 @@ AIDS presented with a rapid decline in mental status.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[high_output_states|High-Output States]] ([High-Output States](../cardio/high_output_states.md))

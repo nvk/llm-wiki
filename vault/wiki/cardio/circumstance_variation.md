@@ -164,3 +164,4 @@ FIGURE 1-6. Right atrial enlargement in pulmonary atresia with intact ventricula
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[pathological_features|Pathological Features]] ([Pathological Features](../git/pathological_features.md))

@@ -168,3 +168,4 @@ THE ELEMENT
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[4_neuroimaging|4. Neuroimaging]] ([4. Neuroimaging](../neuro/4_neuroimaging.md))

@@ -13,19 +13,19 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 85-85)
 
 ### Key Visuals & Figures (Grainger)
-![Vascular Complications: Early Figure](assets/grainger_vascular_complicatio_p85_img1.jpeg)
+> **Key Imaging Finding:** Vascular Complications: Early Figure
 
-![Vascular Complications: Early Figure](assets/grainger_vascular_complicatio_p85_img2.jpeg)
+> **Key Imaging Finding:** Vascular Complications: Early Figure
 
-![Vascular Complications: Early Figure](assets/grainger_vascular_complicatio_p85_img3.jpeg)
+> **Key Imaging Finding:** Vascular Complications: Early Figure
 
-![Vascular Complications: Early Figure](assets/grainger_vascular_complicatio_p85_img4.jpeg)
+> **Key Imaging Finding:** Vascular Complications: Early Figure
 
-![Vascular Complications: Early Figure](assets/grainger_vascular_complicatio_p85_img5.jpeg)
+> **Key Imaging Finding:** Vascular Complications: Early Figure
 
-![Vascular Complications: Early Figure](assets/grainger_vascular_complicatio_p85_img6.jpeg)
+> **Key Imaging Finding:** Vascular Complications: Early Figure
 
-![Vascular Complications: Early Figure](assets/grainger_vascular_complicatio_p85_img7.jpeg)
+> **Key Imaging Finding:** Vascular Complications: Early Figure
 
 806
 SECTION B  Abdominal Imaging
@@ -85,51 +85,51 @@ segment and spectral broadening. Secondary findings can be useful
 ## 2. Core Radiology High-Yield Notes (Pages 33-40)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p33_p33_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p33_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p35_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p36_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img8.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p37_img16.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img5.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p38_img18.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p39_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p33_p40_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 188
 Female urethra 
@@ -461,29 +461,29 @@ fib
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 493-504)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p493_p493_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p494_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p495_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p496_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p497_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p498_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p499_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p500_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p501_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p502_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p503_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p493_p504_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 What Scan is it - Special Topics:
 MIBG
@@ -1102,3 +1102,6 @@ uptake (which probably means they are faking it, and need a rheumatology consult
 fibromyalgia). In children, sometimes you actually see decreased uptake.
 505
 
+## See Also
+- [[patent_ductus_arteriosus|Patent Ductus Arteriosus]] ([Patent Ductus Arteriosus](../cardio/patent_ductus_arteriosus.md))
+- [[vascular_and_interventional_radiology|Vascular and Interventional Radiology]] ([Vascular and Interventional Radiology](../vascular_ir/vascular_and_interventional_radiology.md))

@@ -13,19 +13,19 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 5-5)
 
 ### Key Visuals & Figures (Grainger)
-![Dilatation of Bowel Figure](assets/grainger_dilatation_of_bowel_p5_img1.jpeg)
+> **Key Imaging Finding:** Dilatation of Bowel Figure
 
-![Dilatation of Bowel Figure](assets/grainger_dilatation_of_bowel_p5_img2.jpeg)
+> **Key Imaging Finding:** Dilatation of Bowel Figure
 
-![Dilatation of Bowel Figure](assets/grainger_dilatation_of_bowel_p5_img3.jpeg)
+> **Key Imaging Finding:** Dilatation of Bowel Figure
 
-![Dilatation of Bowel Figure](assets/grainger_dilatation_of_bowel_p5_img4.jpeg)
+> **Key Imaging Finding:** Dilatation of Bowel Figure
 
-![Dilatation of Bowel Figure](assets/grainger_dilatation_of_bowel_p5_img5.jpeg)
+> **Key Imaging Finding:** Dilatation of Bowel Figure
 
-![Dilatation of Bowel Figure](assets/grainger_dilatation_of_bowel_p5_img6.jpeg)
+> **Key Imaging Finding:** Dilatation of Bowel Figure
 
-![Dilatation of Bowel Figure](assets/grainger_dilatation_of_bowel_p5_img7.jpeg)
+> **Key Imaging Finding:** Dilatation of Bowel Figure
 
 CHAPTER 18  Current Status of Imaging of the Gastrointestinal Tract
 467
@@ -87,23 +87,23 @@ gallstones in the gall bladder.
 ## 2. Core Radiology High-Yield Notes (Pages 41-48)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p41_p42_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p42_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p43_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p44_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p45_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p41_p47_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 126
 Benign esophageal masses
@@ -463,29 +463,29 @@ open of a large, flat malignant ulcer when compression is applied.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 97-108)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p97_p97_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p98_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p99_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p100_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p101_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p102_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p103_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p104_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p105_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p106_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p107_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p97_p108_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 SECTION 13:
 S y s t e m i c
@@ -1120,3 +1120,7 @@ watched for rapid expansion. This may be practically useful, but is unlikely to 
 know the classic history, and displaced extrapleural fat sign.
 109
 
+## See Also
+- [[anatomy_and_physiology_of_the_female_reproductive_system|Anatomy and Physiology of the Female Reproductive System]] ([Anatomy and Physiology of the Female Reproductive System](../gynae/anatomy_and_physiology_of_the_female_reproductive_system.md))
+- [[ovarian_torsion|Ovarian Torsion]] ([Ovarian Torsion](../gynae/ovarian_torsion.md))
+- [[retained_fetal_lung_liquid_transient_tachypnea_of_the_newbor|Retained Fetal Lung Liquid (Transient Tachypnea of the Newborn)]] ([Retained Fetal Lung Liquid (Transient Tachypnea of the Newborn)](../gynae/retained_fetal_lung_liquid_transient_tachypnea_of_the_newbor.md))

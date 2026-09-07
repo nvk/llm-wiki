@@ -104,3 +104,6 @@ Immunoglobulin deficiency syndromes
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[section_b_abdominal_imaging|Section B Abdominal Imaging]] ([Section B Abdominal Imaging](../git/section_b_abdominal_imaging.md))

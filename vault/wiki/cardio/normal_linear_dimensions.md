@@ -196,3 +196,4 @@ ing the true shape of the ventricle. A, area; D, diameter; L,
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[common_conditions|COMMON CONDITIONS]] ([COMMON CONDITIONS](../paeds/common_conditions.md))

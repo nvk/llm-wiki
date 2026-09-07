@@ -13,51 +13,51 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 378-382)
 
 ### Key Visuals & Figures (Grainger)
-![Functional Imaging Figure](assets/grainger_functional_imaging_p378_img1.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p379_img1.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p379_img2.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p379_img3.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p379_img4.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p379_img5.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p379_img6.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p379_img7.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p379_img8.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p379_img9.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p380_img1.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p380_img2.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p380_img3.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p380_img4.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p380_img5.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p380_img6.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p381_img1.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p381_img2.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p381_img3.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p381_img4.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p381_img5.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p381_img6.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
-![Functional Imaging Figure](assets/grainger_functional_imaging_p382_img1.jpeg)
+> **Key Imaging Finding:** Functional Imaging Figure
 
 CHAPTER 15  Ischaemic Heart Disease
 375
@@ -316,39 +316,39 @@ of the left ventricle. The segment numbers refer to the same segments.
 ## 2. Core Radiology High-Yield Notes (Pages 49-56)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p49_p50_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p51_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img88.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img89.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p53_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img26.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img27.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img35.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img70.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img76.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img77.png)
+> **Key Imaging Finding:** Core Figure
 
 48
 Diffuse lung disease
@@ -643,29 +643,29 @@ with chronic ﬁbrosis
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 385-396)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p385_p385_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p386_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p387_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p388_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p389_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p390_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p391_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p392_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p393_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p394_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p395_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p385_p396_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 SECTION lO:
 U r e t e r a l M a s s e s
@@ -1246,3 +1246,5 @@ Stones can also develop in these things. All this infection and irritation leads
 cancer, and the very common high yield factoid is this is most commonly adenocarcinoma (60%).
 397
 
+## See Also
+- [[conclusion|CONCLUSION]] ([CONCLUSION](../vascular_ir/conclusion.md))

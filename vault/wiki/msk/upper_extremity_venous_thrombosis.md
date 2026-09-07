@@ -171,3 +171,7 @@ Wall enhancement on delayed contrast imag
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[central_pulmonary_arteries|Central Pulmonary Arteries]] ([Central Pulmonary Arteries](../cardio/central_pulmonary_arteries.md))
+- [[arterial_emergencies|ARTERIAL EMERGENCIES]] ([ARTERIAL EMERGENCIES](../vascular_ir/arterial_emergencies.md))

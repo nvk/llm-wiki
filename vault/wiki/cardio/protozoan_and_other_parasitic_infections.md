@@ -182,3 +182,7 @@ Lung
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[acute_abdominal_inflammatory_conditions|Acute Abdominal Inflammatory Conditions]] ([Acute Abdominal Inflammatory Conditions](../git/acute_abdominal_inflammatory_conditions.md))
+- [[colitis|Colitis]] ([Colitis](../git/colitis.md))

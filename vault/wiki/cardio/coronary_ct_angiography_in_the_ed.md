@@ -171,3 +171,6 @@ and testing (delayed cardiac biomarkers, stre
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[chronic_occlusive_disease|CHRONIC OCCLUSIVE DISEASE]] ([CHRONIC OCCLUSIVE DISEASE](../vascular_ir/chronic_occlusive_disease.md))

@@ -172,3 +172,4 @@ increased echogenicity of blood o
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[angiographic_dos_and_donts|ANGIOGRAPHIC “DO’S AND DON’TS”]] ([ANGIOGRAPHIC “DO’S AND DON’TS”](../vascular_ir/angiographic_dos_and_donts.md))

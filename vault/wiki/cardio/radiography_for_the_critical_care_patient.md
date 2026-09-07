@@ -183,3 +183,6 @@ the tip lying wit
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[radiation_dose_reduction_in_clinical_practice|Radiation Dose Reduction in Clinical Practice]] ([Radiation Dose Reduction in Clinical Practice](../physics_nuclear/radiation_dose_reduction_in_clinical_practice.md))

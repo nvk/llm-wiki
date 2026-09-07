@@ -13,13 +13,13 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 327-329)
 
 ### Key Visuals & Figures (Grainger)
-![Tumours of the Heart Figure](assets/grainger_tumours_of_the_heart_p327_img1.jpeg)
+> **Key Imaging Finding:** Tumours of the Heart Figure
 
-![Tumours of the Heart Figure](assets/grainger_tumours_of_the_heart_p327_img2.jpeg)
+> **Key Imaging Finding:** Tumours of the Heart Figure
 
-![Tumours of the Heart Figure](assets/grainger_tumours_of_the_heart_p328_img1.jpeg)
+> **Key Imaging Finding:** Tumours of the Heart Figure
 
-![Tumours of the Heart Figure](assets/grainger_tumours_of_the_heart_p329_img1.jpeg)
+> **Key Imaging Finding:** Tumours of the Heart Figure
 
 348
 SECTION A  The Chest and Cardiovascular System
@@ -194,27 +194,27 @@ signal in the mass. A left pleural effusion is also present.
 ## 2. Core Radiology High-Yield Notes (Pages 17-24)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p17_p17_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p17_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p18_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p19_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p20_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p21_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p23_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p17_p24_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 16
 Random nodules
@@ -516,29 +516,29 @@ Ranke complex: Ghon focus and lymphadenopathy.
 ## 3. Crack the Core Exam Review (Prometheus Lionhart M.D. - Pages 205-216)
 
 ### Key Visuals & Figures (Crack the Core)
-![Crack Figure](assets/crack_v1_p205_p205_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p206_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p207_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p208_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p209_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p210_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p211_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p212_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p213_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p214_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p215_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
-![Crack Figure](assets/crack_v1_p205_p216_img1.jpx)
+> **Key Imaging Finding:** Crack Figure
 
 Just like the upper GI and “bubble” plain film in sections 1 & 2, the lower obstruction can 
 be approached with a pattern-based method. You basically have 4 choices; Normal,
@@ -1014,3 +1014,6 @@ Right Isomerism
 Left Isomerism
 217
 
+## See Also
+- [[world_health_organisation_classification_of_soft-tissue_tumours|World Health Organisation Classification Of Soft-Tissue Tumours]] ([World Health Organisation Classification Of Soft-Tissue Tumours](../msk/world_health_organisation_classification_of_soft-tissue_tumours.md))
+- [[image_guided_tumor_ablation_basic_principles|Image-Guided Tumor Ablation: Basic Principles]] ([Image-Guided Tumor Ablation: Basic Principles](../vascular_ir/image_guided_tumor_ablation_basic_principles.md))

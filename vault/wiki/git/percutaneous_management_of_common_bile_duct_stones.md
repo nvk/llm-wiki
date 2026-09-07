@@ -144,3 +144,6 @@ present. Contrast injection at the end of the procedure showed a clear bile duct
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pericardial_calcifi_cation|Pericardial Calcifi cation]] ([Pericardial Calcifi cation](../cardio/pericardial_calcifi_cation.md))

@@ -190,3 +190,6 @@ In the upright position in the norm
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[7_pancreas|7. Pancreas]] ([7. Pancreas](../git/7_pancreas.md))

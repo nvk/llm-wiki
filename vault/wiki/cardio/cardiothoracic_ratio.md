@@ -181,3 +181,4 @@ feat
 
 ---
 *Indexed in canonical radiology-wiki vault conforming to nvk/llm-wiki dual-link specification.*
+- [[disease_of_the_thoracic_and_abdominal_aorta|Disease of the Thoracic and Abdominal Aorta]] ([Disease of the Thoracic and Abdominal Aorta](../git/disease_of_the_thoracic_and_abdominal_aorta.md))

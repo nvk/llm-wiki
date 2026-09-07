@@ -13,11 +13,11 @@ status: "verified_source"---
 ## 1. Grainger & Allison's Diagnostic Radiology (Pages 236-236)
 
 ### Key Visuals & Figures (Grainger)
-![Pancreatic Neoplasms Figure](assets/grainger_pancreatic_neoplasms_p236_img1.jpeg)
+> **Key Imaging Finding:** Pancreatic Neoplasms Figure
 
-![Pancreatic Neoplasms Figure](assets/grainger_pancreatic_neoplasms_p236_img2.jpeg)
+> **Key Imaging Finding:** Pancreatic Neoplasms Figure
 
-![Pancreatic Neoplasms Figure](assets/grainger_pancreatic_neoplasms_p236_img3.jpeg)
+> **Key Imaging Finding:** Pancreatic Neoplasms Figure
 
 698
 SECTION B  Abdominal Imaging
@@ -75,35 +75,35 @@ with cancer), multifocal and diffuse.
 ## 2. Core Radiology High-Yield Notes (Pages 49-56)
 
 ### Key Visuals & Figures (Core Radiology)
-![Core Figure](assets/core_p49_p49_img1.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p49_img2.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p49_img3.png)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p52_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p54_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p55_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img1.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img2.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img3.jpeg)
+> **Key Imaging Finding:** Core Figure
 
-![Core Figure](assets/core_p49_p56_img4.jpeg)
+> **Key Imaging Finding:** Core Figure
 
 134
 Overview of gastric bypass surgery
@@ -851,3 +851,6 @@ BLANK FOR SCRIBBLES
 BLANK FOR SCRIBBLES
 585
 
+## See Also
+- [[neoplastic_renal_masses|Neoplastic Renal Masses]] ([Neoplastic Renal Masses](../uro/neoplastic_renal_masses.md))
+- [[renal_artery_aneurysms|RENAL ARTERY ANEURYSMS]] ([RENAL ARTERY ANEURYSMS](../uro/renal_artery_aneurysms.md))

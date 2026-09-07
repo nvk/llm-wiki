@@ -180,3 +180,6 @@ testin
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pericardial_tamponade|Pericardial Tamponade]] ([Pericardial Tamponade](../cardio/pericardial_tamponade.md))

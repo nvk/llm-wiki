@@ -108,3 +108,7 @@ was 0 mm Hg, and the angiographic appearance was excellent (arrow). The patient 
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[complete_transposition_of_the_great_arteries|Complete Transposition of the Great Arteries]] ([Complete Transposition of the Great Arteries](../cardio/complete_transposition_of_the_great_arteries.md))
+- [[renal_artery_occlusive_disease|RENAL ARTERY OCCLUSIVE DISEASE]] ([RENAL ARTERY OCCLUSIVE DISEASE](../uro/renal_artery_occlusive_disease.md))

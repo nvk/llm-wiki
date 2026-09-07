@@ -171,3 +171,7 @@ collection. Failure to aspira
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[emerging_viral_infections|Emerging Viral Infections]] ([Emerging Viral Infections](../cardio/emerging_viral_infections.md))
+- [[idiopathic_interstitial_pneumonias|Idiopathic Interstitial Pneumonias]] ([Idiopathic Interstitial Pneumonias](../cardio/idiopathic_interstitial_pneumonias.md))

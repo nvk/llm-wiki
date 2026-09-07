@@ -163,3 +163,6 @@ agent and prevents nont
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[vascular_interventions|Vascular Interventions]] ([Vascular Interventions](../vascular_ir/vascular_interventions.md))

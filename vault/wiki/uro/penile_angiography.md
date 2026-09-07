@@ -109,3 +109,6 @@ rather than digital spot films to minimize radiation to the fetus and mother.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[anatomy_and_terminology|Anatomy and Terminology]] ([Anatomy and Terminology](../cardio/anatomy_and_terminology.md))

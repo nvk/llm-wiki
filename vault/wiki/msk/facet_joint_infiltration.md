@@ -108,3 +108,6 @@ tomography guidance.
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[acquired_aortic_abnormalities|Acquired Aortic Abnormalities]] ([Acquired Aortic Abnormalities](../cardio/acquired_aortic_abnormalities.md))

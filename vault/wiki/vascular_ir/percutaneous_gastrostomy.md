@@ -192,3 +192,6 @@ nylon suture opposes the stomach wall to th
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[coronary_calcifi_cation|Coronary Calcifi cation]] ([Coronary Calcifi cation](../cardio/coronary_calcifi_cation.md))

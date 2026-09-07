@@ -196,3 +196,7 @@ In 30% associated with:   other cardiac lesions, asplenia
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[chronic_ischemia|CHRONIC ISCHEMIA]] ([CHRONIC ISCHEMIA](../vascular_ir/chronic_ischemia.md))
+- [[noninvasive_vascular_imaging|Noninvasive Vascular Imaging]] ([Noninvasive Vascular Imaging](../vascular_ir/noninvasive_vascular_imaging.md))

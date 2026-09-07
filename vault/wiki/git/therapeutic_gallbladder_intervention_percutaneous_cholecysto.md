@@ -174,3 +174,6 @@ the main problems with the
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[performing_ablation|PERFORMING ABLATION]] ([PERFORMING ABLATION](../vascular_ir/performing_ablation.md))

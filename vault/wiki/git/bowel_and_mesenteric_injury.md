@@ -161,3 +161,7 @@ pancreatitis or superficial laceration (less than 50% pan­
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[aortic_and_great_vessel_injuries|AORTIC AND GREAT VESSEL INJURIES]] ([AORTIC AND GREAT VESSEL INJURIES](../cardio/aortic_and_great_vessel_injuries.md))
+- [[mdct_protocol_for_suspected_thoracic_injury|MDCT PROTOCOL FOR SUSPECTED THORACIC INJURY]] ([MDCT PROTOCOL FOR SUSPECTED THORACIC INJURY](../physics_nuclear/mdct_protocol_for_suspected_thoracic_injury.md))

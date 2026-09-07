@@ -185,3 +185,6 @@ subclavian vein beneath the clavicle are at risk for fracture due
 to compression (see Fig. 4-23). Large stents are needed for most 
 central veins, often 14 mm in diameter. Patients require long-
 term anticoagulation following success
+
+## See Also
+- [[spleen_pediatric|SPLEEN]] ([SPLEEN](../git/spleen_pediatric.md))

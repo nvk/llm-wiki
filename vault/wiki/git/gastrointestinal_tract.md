@@ -155,3 +155,6 @@ multiple dilated loops of air filled bowel which could be adynamic ileus or low 
 
 ---
 *Indexed in canonical radiology-wiki vault.*
+
+## See Also
+- [[pulmonary_valve_disease|Pulmonary Valve Disease]] ([Pulmonary Valve Disease](../cardio/pulmonary_valve_disease.md))

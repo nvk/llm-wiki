@@ -12,6 +12,16 @@ TOTAL=0
 log_pass() { PASS=$((PASS + 1)); TOTAL=$((TOTAL + 1)); printf "  \033[32mPASS\033[0m: %s\n" "$1"; }
 log_fail() { FAIL=$((FAIL + 1)); TOTAL=$((TOTAL + 1)); printf "  \033[31mFAIL\033[0m: %s - %s\n" "$1" "$2"; }
 
+sha256() {
+  python3 -c '
+import hashlib
+import sys
+
+data = open(sys.argv[1], "rb").read() if len(sys.argv) > 1 else sys.stdin.buffer.read()
+print(hashlib.sha256(data).hexdigest())
+' "$@"
+}
+
 tmpdir="$(mktemp -d)"
 trap 'rm -rf "$tmpdir"' EXIT
 export LLM_WIKI_CONFIG_DIR="$tmpdir/config"
@@ -255,7 +265,7 @@ else
   log_fail "run verifies artifact hashes and writes a private response receipt" "$run_output"
 fi
 
-plan_sha="$(shasum -a 256 "$inputs/plan.json" | awk '{print $1}')"
+plan_sha="$(sha256 "$inputs/plan.json")"
 remote_request="$tmpdir/remote-request.json"
 remote_receipt="$outputs/remote-receipt.json"
 cat > "$remote_request" <<JSON
@@ -289,7 +299,7 @@ else
   log_fail "remote writes fail closed without an explicit exact-plan approval" "$unapproved_output"
 fi
 
-wrong_sha="$(printf wrong | shasum -a 256 | awk '{print $1}')"
+wrong_sha="$(printf wrong | sha256)"
 set +e
 mismatch_output="$("$CLI" adapter run fixture-private --request "$remote_request" \
   --response "$remote_receipt" --approve-remote-write "$wrong_sha" --json 2>&1)"

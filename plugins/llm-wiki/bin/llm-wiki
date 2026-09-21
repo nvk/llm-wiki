@@ -1696,6 +1696,71 @@ def check_tags(ctx: LintContext) -> None:
             ctx.issue("warning", f"Near-duplicate tags found: {', '.join(matches)}.")
 
 
+def underlying_source_of(ctx: LintContext, raw_file: Path) -> Path | None:
+    """Resolve the external file represented by a raw pointer record."""
+    doc = ctx.documents.get(raw_file.resolve())
+    source = doc.frontmatter.get("source") if doc else None
+    if not source:
+        return None
+    text = str(source).strip()
+    if not text or text == "MANUAL" or text.startswith(("http://", "https://")):
+        return None
+    try:
+        return (raw_file.parent / text).resolve()
+    except (OSError, ValueError):
+        return None
+
+
+def compiled_external_references(ctx: LintContext) -> dict[Path, list[Path]]:
+    """Map external file references to the compiled articles that cite them."""
+    index: dict[Path, list[Path]] = {}
+    for doc in ctx.documents.values():
+        try:
+            rel = doc.path.resolve().relative_to(ctx.root)
+        except ValueError:
+            continue
+        if not rel.parts or rel.parts[0] != "wiki":
+            continue
+        refs: list[str] = []
+        sources = doc.frontmatter.get("sources")
+        if isinstance(sources, list):
+            refs.extend(str(source) for source in sources)
+        refs.extend(extract_markdown_links(doc.path.read_text(encoding="utf-8")))
+        for ref in refs:
+            text = ref.strip().split("#", 1)[0].split("?", 1)[0]
+            if not text or text.startswith(("http://", "https://", "mailto:")):
+                continue
+            try:
+                resolved = (doc.path.parent / text).resolve()
+            except (OSError, ValueError):
+                continue
+            if is_under(resolved, ctx.root):
+                continue
+            owners = index.setdefault(resolved, [])
+            if doc.path.resolve() not in owners:
+                owners.append(doc.path.resolve())
+    return index
+
+
+def attach_pointer_to_article(ctx: LintContext, article: Path, raw_file: Path) -> bool:
+    """Add a raw pointer record to an article's sources list."""
+    parts = split_markdown_frontmatter(article.read_text(encoding="utf-8"))
+    if parts is None:
+        return False
+    frontmatter, body = parts
+    doc = ctx.documents.get(article.resolve())
+    existing = doc.frontmatter.get("sources") if doc else None
+    values = [str(value) for value in existing] if isinstance(existing, list) else []
+    reference = markdown_relative_link(article.parent, raw_file)
+    if reference in values:
+        return False
+    updated = set_frontmatter_list(frontmatter, "sources", [reference, *values])
+    if updated == frontmatter:
+        return False
+    write_markdown_frontmatter(article, updated, body)
+    return True
+
+
 def check_coverage(ctx: LintContext) -> None:
     unreferenced: list[Path] = []
     for raw_file in content_markdown_files(ctx.root / "raw"):
@@ -1704,11 +1769,55 @@ def check_coverage(ctx: LintContext) -> None:
             continue
         if raw_file.resolve() not in ctx.referenced_raw:
             unreferenced.append(raw_file)
-    if ctx.fix and unreferenced:
-        create_or_update_coverage_reference(ctx, unreferenced)
+    if not unreferenced:
         return
+
+    external = compiled_external_references(ctx)
+    owners: dict[Path, list[Path]] = {}
     for raw_file in unreferenced:
-        ctx.issue("suggestion", "Raw source is not referenced by any compiled article.", raw_file)
+        target = underlying_source_of(ctx, raw_file)
+        owners[raw_file] = external.get(target, []) if target else []
+
+    if ctx.fix:
+        attached = [
+            raw_file
+            for raw_file in unreferenced
+            if len(owners[raw_file]) == 1
+            and attach_pointer_to_article(ctx, owners[raw_file][0], raw_file)
+        ]
+        for raw_file in attached:
+            ctx.fixed(
+                f"Added {ctx.rel(raw_file)} to the sources of "
+                f"{ctx.rel(owners[raw_file][0])}."
+            )
+        remaining = [raw_file for raw_file in unreferenced if raw_file not in set(attached)]
+        if attached:
+            load_documents(ctx)
+        if remaining:
+            create_or_update_coverage_reference(ctx, remaining)
+        return
+
+    for raw_file in unreferenced:
+        candidates = owners[raw_file]
+        if len(candidates) == 1:
+            ctx.issue(
+                "suggestion",
+                "Raw source is not referenced by any compiled article, but "
+                f"{ctx.rel(candidates[0])} cites its underlying source directly; "
+                "add the pointer to that article's sources.",
+                raw_file,
+                fixable=True,
+            )
+        elif candidates:
+            listed = ", ".join(sorted(ctx.rel(candidate) for candidate in candidates))
+            ctx.issue(
+                "suggestion",
+                "Raw source is not referenced by any compiled article; these cite "
+                f"its underlying source directly: {listed}.",
+                raw_file,
+            )
+        else:
+            ctx.issue("suggestion", "Raw source is not referenced by any compiled article.", raw_file)
 
 
 def create_or_update_coverage_reference(ctx: LintContext, unreferenced: list[Path]) -> None:

@@ -670,6 +670,43 @@ else
   log_fail "--fix creates explicit coverage reference for uncompiled raw sources" "$coverage_output"
 fi
 
+owned_pointer="$tmpdir/owned-pointer"
+mkdir "$owned_pointer"
+cp -R "$GOLDEN/." "$owned_pointer/"
+mkdir -p "$tmpdir/external"
+printf 'external source\n' > "$tmpdir/external/source.txt"
+cat > "$owned_pointer/raw/notes/source-pointer.md" <<'EOF'
+---
+title: "Source Pointer"
+source: ../../../external/source.txt
+type: notes
+ingested: 2026-01-06
+tags: [coverage]
+summary: "Pointer to an external source."
+---
+EOF
+cat >> "$owned_pointer/wiki/concepts/sample-concept.md" <<'EOF'
+
+[External source](../../../external/source.txt)
+EOF
+
+expect_failure_contains \
+  "coverage finding names the sole article citing a pointer target" \
+  "cites its underlying source directly" \
+  "$CLI" lint "$owned_pointer"
+
+set +e
+owned_output="$($CLI lint --fix "$owned_pointer" 2>&1)"
+owned_rc=$?
+set -e
+if [ "$owned_rc" -eq 0 ] \
+  && grep -q 'raw/notes/source-pointer.md' "$owned_pointer/wiki/concepts/sample-concept.md" \
+  && [ ! -f "$owned_pointer/wiki/references/uncompiled-source-coverage.md" ]; then
+  log_pass "--fix attaches a pointer with exactly one owner"
+else
+  log_fail "--fix attaches a pointer with exactly one owner" "$owned_output"
+fi
+
 hub_scope="$tmpdir/hub-scope"
 mkdir -p "$hub_scope/topics/noisy-topic"
 cp -R "$SCRIPT_DIR/fixtures/defects/missing-index/." "$hub_scope/topics/noisy-topic/"

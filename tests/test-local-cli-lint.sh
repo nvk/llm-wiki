@@ -117,6 +117,21 @@ fi
 
 expect_success "golden wiki passes local lint" "$CLI" lint "$GOLDEN"
 
+engine_text="$($CLI lint "$GOLDEN")"
+if grep -q '^Engine: 0.25.0' <<<"$engine_text"; then
+  log_pass "text lint report identifies the running engine"
+else
+  log_fail "text lint report identifies the running engine" "$engine_text"
+fi
+
+engine_json="$($CLI lint "$GOLDEN" --json)"
+if grep -q '"engine"' <<<"$engine_json" \
+  && grep -q '"version": "0.25.0"' <<<"$engine_json"; then
+  log_pass "JSON lint report includes structured engine metadata"
+else
+  log_fail "JSON lint report includes structured engine metadata" "$engine_json"
+fi
+
 tmpdir="$(mktemp -d)"
 trap 'rm -rf "$tmpdir"' EXIT
 

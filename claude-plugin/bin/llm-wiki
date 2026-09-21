@@ -2236,10 +2236,53 @@ def lint_exit_code(counts: dict[str, int], fail_on: str = "suggestion") -> int:
     return 1 if any(counts.get(level) for level in FAIL_ON_LEVELS[: threshold + 1]) else 0
 
 
+def engine_metadata() -> dict[str, str | None]:
+    """Identify the package or checkout that produced a lint report."""
+    root = Path(__file__).resolve().parent.parent
+    manifests = [
+        root / "claude-plugin" / ".claude-plugin" / "plugin.json",
+        root / ".claude-plugin" / "plugin.json",
+        root / ".codex-plugin" / "plugin.json",
+    ]
+    version: str | None = None
+    for manifest in manifests:
+        try:
+            value = json.loads(manifest.read_text(encoding="utf-8")).get("version")
+        except (OSError, json.JSONDecodeError):
+            continue
+        if value:
+            version = str(value)
+            break
+
+    commit: str | None = None
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(root), "rev-parse", "HEAD"],
+            capture_output=True,
+            text=True,
+            timeout=2,
+            check=False,
+        )
+        if result.returncode == 0 and re.fullmatch(r"[0-9a-fA-F]{40}", result.stdout.strip()):
+            commit = result.stdout.strip().lower()
+    except (OSError, subprocess.TimeoutExpired):
+        pass
+    return {"version": version, "commit": commit}
+
+
+def format_engine_metadata(engine: dict[str, str | None]) -> str:
+    version = engine.get("version")
+    commit = engine.get("commit")
+    if version and commit:
+        return f"{version} ({commit[:12]})"
+    return version or (commit[:12] if commit else "unknown")
+
+
 def print_json_report(ctx: LintContext) -> None:
     counts = ctx.counts()
     report = {
         "root": str(ctx.root),
+        "engine": engine_metadata(),
         "status": "pass"
         if not (counts["critical"] or counts["warning"] or counts["suggestion"])
         else "fail",
@@ -2262,6 +2305,7 @@ def print_text_report(ctx: LintContext) -> None:
     counts = ctx.counts()
     failed = counts["critical"] or counts["warning"] or counts["suggestion"]
     print(f"llm-wiki lint: {ctx.root}")
+    print(f"Engine: {format_engine_metadata(engine_metadata())}")
     if ctx.fixes:
         print("\nAuto-fixed:")
         for fix in ctx.fixes:

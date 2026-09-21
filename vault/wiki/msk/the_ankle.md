@@ -1209,5 +1209,26 @@ land mark is often brought up with discussion of the
 erosion pattern of Cholesteatomas.
 239
 
+## 4. Normal radiographic measurements — mortise, syndesmosis, hindfoot (curated 2026-09-16, Radiopaedia + department corpus)
+
+> Curated reference block added on 2026-09-16 from Radiopaedia (fetched same day) and the department signed-report corpus. Not a book extract.
+
+Mortise / syndesmosis (AP and mortise views):
+- **Medial clear space (MCS):** widest distance between the lateral border of the medial malleolus and the medial talar surface, measured parallel to the superior talar articular surface (at the dome, or 5 mm inferior to it). Within normal limits: **<4-5 mm**; **>=4-5 mm = abnormal** (deltoid injury, syndesmotic injury, instability). Threshold varies between males/females and with height.
+- **Tibiofibular clear space (TFCS):** measured 1 cm above the tibial plafond, horizontal distance from the deepest point of the fibular groove (posterior tibial tubercle) to the medial edge of the distal fibula. Mean **~4.6 mm (AP) / ~4.3 mm (mortise)**; a widened space **>5.3 mm (AP)** = 82% sensitivity / 75% specificity for syndesmotic injury; **>6 mm abnormal** only in the setting of absent tibiofibular overlap (TFO <0) and widened MCS.
+- **Tibiofibular overlap (TFO):** overlap between the anterior distal tibial tubercle and the medial edge of the distal fibula; normally present. Widened: **<6 mm (AP)** suggests syndesmotic injury; **<0 mm** abnormal (rare normal variant).
+- Ankle-approach rule: 1 cm proximal to the tibial plafond, the tibiofibular distance should be **<6 mm**; >6 mm = think ligament tear/rupture and look for a fracture.
+- Documented acute-trauma approach (Radiopaedia case PDF, A. N. Dutta): syndesmotic disruption indicated by tibial clear space >5 mm (AP) and tibiofibular overlap <10 mm (AP) / <1 mm (mortise).
+
+Alignment and weight-bearing angles:
+- **Talar tilt** (angle between the talar dome articular surface and the tibial plafond surface, AP/mortise): **<2 deg non-stressed; <5 deg on inversion stress**; **>=2 deg upgrades KL ankle OA grade 3a to 3b**.
+- **Tibiotalar angle** (tibial anatomical axis to the superior talar dome surface): mean **88.7 deg +/- 5.1 deg**.
+- **Talocalcaneal (kite) angle**, weight-bearing: **normal 25-40 deg** (<25 deg hindfoot varus / pes cavus; >40 deg hindfoot valgus / pes planus).
+- **Böhler angle** (talar calcaneal reference used in the department foot practice): **20-40 deg**; heel-pad height conventionally **~2.0 cm** (department signed rows 243740 / 323508 carry 38 deg and 33 deg Böhler with 2.0 cm / 20 mm heel pads).
+
+Department signed-report embedded reference values (accession 317334, RIGHT ANKLE LATERAL; MORTISE VIEW): tibiofibular overlap "normal > 6 mm"; medial clear space "normal 5 mm" with medial/lateral equality checked; lateral tibiofibular clear space "normal < 6 mm"; talar tilt reported qualitatively ("tibial plafond and talar dome appear parallel").
+
+Sources: [Medial clear space (ankle)](https://radiopaedia.org/articles/medial-clear-space-ankle) · [Tibiofibular clear space](https://radiopaedia.org/articles/tibiofibular-clear-space) · [Tibiofibular overlap](https://radiopaedia.org/articles/tibiofibular-overlap) · [Distal tibiofibular syndesmosis injury](https://radiopaedia.org/articles/distal-tibiofibular-syndesmosis-injury) · [Ankle radiograph (an approach)](https://radiopaedia.org/articles/ankle-radiograph-an-approach) · [Talar tilt](https://radiopaedia.org/articles/talar-tilt) · [Tibiotalar angle](https://radiopaedia.org/articles/tibiotalar-angle) · [Talocalcaneal angle](https://radiopaedia.org/articles/talocalcaneal-angle) · [Lateral talocalcaneal angle](https://radiopaedia.org/articles/lateral-talocalcaneal-angle)
+
 ## See Also
 - [[differential_diagnosis|Differential Diagnosis]] ([Differential Diagnosis](../cardio/differential_diagnosis.md))

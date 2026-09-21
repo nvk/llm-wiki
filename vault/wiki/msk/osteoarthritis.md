@@ -1255,5 +1255,27 @@ the hip, leg, arm, hand, etc...).
 See page 299for discussion on the 
 Benign Notochordal Cell Tumor
 
+## 4. Kellgren-Lawrence system for classification of osteoarthritis (curated 2026-09-16, Radiopaedia)
+
+> Curated reference block added on 2026-09-16 from Radiopaedia (fetched same day). Not a book extract.
+
+The Kellgren-Lawrence (KL) system grades radiographic (x-ray) osteoarthritis in five grades (originally for the knee; commonly applied to hip, hand, ankle and other joints):
+
+| Grade | Descriptor | Radiographic criteria |
+|-------|------------|-----------------------|
+| 0 | None | Definite absence of x-ray changes of osteoarthritis |
+| 1 | Doubtful | Possible (minor) osteophytic lipping; doubtful joint space narrowing |
+| 2 | Definite / minimal | Definite (minor, few) osteophytes; definite joint space narrowing |
+| 3 | Moderate | Multiple osteophytes, definite joint space narrowing, some sclerosis, possible deformity of bone ends |
+| 4 | Severe | Large osteophytes, marked joint space narrowing, severe sclerosis, definite deformity of bone ends |
+
+Grading notes (per Radiopaedia sourcing):
+- Original description wording: grade 1 = "doubtful joint space narrowing and possible osteophytic lipping"; grade 2 = "definite osteophytes and possible joint space narrowing".
+- Ankle: talar tilt >= 2 deg upgrades KL ankle OA from grade 3a to 3b (associated with worse clinical outcomes).
+- Weight-bearing knee AP: joint space <3 mm = absolute joint space narrowing (normal >5 mm).
+- Department signed-corpus usage: per-knee bracketed line — "[Kellgren and Lawrence classification: Right (Grade III) and Left (Grade I)]" — after bilateral findings; grade echoed in the clinical when given.
+
+Sources: [Kellgren and Lawrence system for classification of osteoarthritis](https://radiopaedia.org/articles/kellgren-and-lawrence-system-for-classification-of-osteoarthritis) · [Talar tilt](https://radiopaedia.org/articles/talar-tilt) · [Osteoarthritis of the knee](https://radiopaedia.org/articles/osteoarthritis-of-the-knee)
+
 ## See Also
 - [[infection|INFECTION]] ([INFECTION](../paeds/infection.md))

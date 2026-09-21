@@ -1393,5 +1393,16 @@ MRl Epilepsy Protocol Trivia:
 calcifications of tuberous sclerosis, Sturge-Weber, Cavemomas, GangliogHomas etc..)
 167
 
+## 4. Normal Radiographic Measurements (curated 2026-09-16, Radiopaedia)
+
+> Curated reference block added on 2026-09-16 from Radiopaedia (fetched same day). Not a book extract.
+
+- **Glenohumeral joint space** (best on the AP glenoid / Grashey view): **normal 3–6 mm**.
+  - Decreased: degenerative joint disease, crystal arthropathies, inflammatory arthropathies, anterior or posterior dislocation.
+  - Increased: posterior dislocation.
+- AC and CC joint distances: see [[the_acromioclavicular_joint|The Acromioclavicular Joint]] §4.
+
+Source: [Normal radiographic measurements of the shoulder](https://radiopaedia.org/articles/normal-radiographic-measurements-of-the-shoulder-1)
+
 ## See Also
 - [[left_atrial_calcifi_cation|Left Atrial Calcifi cation]] ([Left Atrial Calcifi cation](../cardio/left_atrial_calcifi_cation.md))

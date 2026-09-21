@@ -1259,5 +1259,16 @@ history to bias yourself.
 j Pancreas Surrounding the Duodenum
 205
 
+## 4. Normal Radiographic Measurements (curated 2026-09-16, Radiopaedia)
+
+> Curated reference block added on 2026-09-16 from Radiopaedia (fetched same day). Not a book extract.
+
+- **Acromioclavicular (AC) joint / AC distance** (frontal shoulder radiograph; measured between the medial cortex of the acromion and the lateral cortex of the clavicle, or averaged between the superior and inferior joint borders): **normal 1–6 mm (females) and 1–7 mm (males)**, decreasing with age; a joint space **<0.5 mm can be considered normal in patients >60 years old**.
+  - Abnormal (suggestive of AC ligament lesion): **>6 mm (females) / >7 mm (males)**; **>2–4 mm asymmetry vs the contralateral side**.
+- **Coracoclavicular (CC) distance** (frontal radiograph; superior cortex of the coracoid to the undersurface of the clavicle at the CC ligament insertion): **normal 11–13 mm**, wide individual variance — **no greater than 5 mm side-to-side difference**; compare with the contralateral side.
+  - An increase of **>50% vs the normal side** indicates CC ligament disruption / complete AC dislocation (complete dislocations may occur with increases as low as 25%).
+
+Sources: [Acromioclavicular distance](https://radiopaedia.org/articles/acromioclavicular-distance) · [Acromioclavicular joint injury](https://radiopaedia.org/articles/acromioclavicular-joint-injury-1) · [Coracoclavicular distance](https://radiopaedia.org/articles/coracoclavicular-distance)
+
 ## See Also
 - [[diminished_vasculature|Diminished Vasculature]] ([Diminished Vasculature](../cardio/diminished_vasculature.md))

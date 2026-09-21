@@ -60,6 +60,10 @@ CONFIDENCE_VALUES = {"high", "medium", "low"}
 VOLATILITY_VALUES = {"hot", "warm", "cold"}
 PERMISSION_DENIED_ERRNOS = {1, 13}
 WINDOWS_ABSOLUTE_PATH_RE = re.compile(r"^/?[A-Za-z]:[\\/]")
+FOOTNOTE_DEF_RE = re.compile(r"^\[\^([^\]\s]+)\]:", re.M)
+FOOTNOTE_REF_RE = re.compile(r"\[\^([^\]\s]+)\](?!:)")
+WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:\|[^\]]*)?\]\]")
+INLINE_CODE_RE = re.compile(r"`+[^`\n]*`+")
 SCHEMELESS_WEB_SOURCE_RE = re.compile(
     r"^(?:[A-Za-z0-9-]+\.)+[A-Za-z]{2,}(?::\d+)?(?:[/#?]|$)"
 )
@@ -1437,6 +1441,98 @@ def check_links(ctx: LintContext) -> None:
                 ctx.issue("warning", f"Markdown link points to missing file: {link}.", doc.path)
 
 
+def strip_code_blocks(text: str) -> str:
+    """Remove fenced and inline code before checking prose references."""
+    out: list[str] = []
+    fence: str | None = None
+    for line in text.split("\n"):
+        stripped = line.lstrip()
+        if fence is None:
+            if stripped.startswith("```") or stripped.startswith("~~~"):
+                fence = stripped[:3]
+                out.append("")
+                continue
+            out.append(line)
+        else:
+            if stripped.startswith(fence):
+                fence = None
+            out.append("")
+    return INLINE_CODE_RE.sub("", "\n".join(out))
+
+
+def compiled_article_bodies(ctx: LintContext):
+    """Yield compiled articles and their prose-only bodies."""
+    for doc in sorted(ctx.documents.values(), key=lambda item: str(item.path)):
+        try:
+            rel = doc.path.resolve().relative_to(ctx.root)
+        except ValueError:
+            continue
+        if not rel.parts or rel.parts[0] != "wiki" or doc.path.name == "_index.md":
+            continue
+        text = doc.path.read_text(encoding="utf-8")
+        parts = split_markdown_frontmatter(text)
+        yield doc, strip_code_blocks(parts[1] if parts else text)
+
+
+def check_footnotes(ctx: LintContext) -> None:
+    for doc, prose in compiled_article_bodies(ctx):
+        defined = {match.group(1) for match in FOOTNOTE_DEF_RE.finditer(prose)}
+        referenced = {match.group(1) for match in FOOTNOTE_REF_RE.finditer(prose)}
+        for key in sorted(referenced - defined):
+            ctx.issue(
+                "warning",
+                f"Footnote [^{key}] is referenced but never defined; the claim it "
+                "supports has no evidence in the rendered article.",
+                doc.path,
+            )
+        for key in sorted(defined - referenced):
+            ctx.issue(
+                "suggestion",
+                f"Footnote [^{key}] is defined but never referenced; it supports "
+                "no claim in the article.",
+                doc.path,
+            )
+
+
+def check_wikilinks(ctx: LintContext) -> None:
+    slugs: dict[str, list[Path]] = {}
+    for doc in ctx.documents.values():
+        try:
+            rel = doc.path.resolve().relative_to(ctx.root)
+        except ValueError:
+            continue
+        if not rel.parts or rel.parts[0] != "wiki" or doc.path.name == "_index.md":
+            continue
+        names = {slugify(doc.path.stem)}
+        names.update(slugify(alias) for alias in as_string_list(doc.frontmatter.get("aliases")))
+        for name in names:
+            if name:
+                slugs.setdefault(name, []).append(doc.path)
+
+    for doc, prose in compiled_article_bodies(ctx):
+        seen: set[str] = set()
+        for match in WIKILINK_RE.finditer(prose):
+            raw_target = match.group(1).strip()
+            target = slugify(raw_target)
+            if not target or target in seen:
+                continue
+            seen.add(target)
+            owners = slugs.get(target, [])
+            if not owners:
+                ctx.issue(
+                    "warning",
+                    f"Wiki-link [[{raw_target}]] resolves to no compiled article.",
+                    doc.path,
+                )
+            elif len(owners) > 1:
+                listed = ", ".join(sorted(ctx.rel(owner) for owner in owners))
+                ctx.issue(
+                    "suggestion",
+                    f"Wiki-link [[{raw_target}]] is ambiguous: {listed}.",
+                    doc.path,
+                )
+
+
 def check_source_provenance(ctx: LintContext) -> None:
     for doc in sorted(ctx.documents.values(), key=lambda item: str(item.path)):
         try:
@@ -2203,6 +2299,8 @@ def run_lint(args: argparse.Namespace) -> int:
     fix_source_references(ctx)
     check_index_consistency(ctx)
     check_links(ctx)
+    check_wikilinks(ctx)
+    check_footnotes(ctx)
     check_source_provenance(ctx)
     check_tags(ctx)
     check_coverage(ctx)

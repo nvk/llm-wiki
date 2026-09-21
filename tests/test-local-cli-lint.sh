@@ -144,6 +144,44 @@ else
   log_fail "--fail-on critical ignores advisory findings in exit status" "$fail_on_output"
 fi
 
+reference_integrity="$tmpdir/reference-integrity"
+mkdir "$reference_integrity"
+cp -R "$GOLDEN/." "$reference_integrity/"
+cat >> "$reference_integrity/wiki/concepts/sample-concept.md" <<'EOF'
+
+Broken evidence.[^missing]
+
+Orphaned cross-reference: [[does-not-exist]].
+
+Syntax examples are not references: `[[inline-example]]` and `[^inline]`.
+
+```
+[[fenced-example]] [^fenced]
+```
+
+[^orphan]: This definition supports no claim.
+EOF
+
+expect_failure_contains \
+  "missing footnote definitions are reported" \
+  "referenced but never defined" \
+  "$CLI" lint "$reference_integrity"
+expect_failure_contains \
+  "orphaned footnote definitions are reported" \
+  "defined but never referenced" \
+  "$CLI" lint "$reference_integrity"
+expect_failure_contains \
+  "unresolved wiki-links are reported" \
+  "resolves to no compiled article" \
+  "$CLI" lint "$reference_integrity"
+
+reference_output="$($CLI lint "$reference_integrity" 2>&1 || true)"
+if ! grep -q 'inline-example\|fenced-example\|\[\^inline\]\|\[\^fenced\]' <<<"$reference_output"; then
+  log_pass "code examples are excluded from reference checks"
+else
+  log_fail "code examples are excluded from reference checks" "$reference_output"
+fi
+
 hybrid_rollup="$tmpdir/hybrid-rollup"
 mkdir "$hybrid_rollup"
 cp -R "$SCRIPT_DIR/fixtures/defects/stale-inventory-rollup/." "$hybrid_rollup/"

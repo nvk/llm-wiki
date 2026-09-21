@@ -144,6 +144,20 @@ else
   log_fail "--fail-on critical ignores advisory findings in exit status" "$fail_on_output"
 fi
 
+five_point_confidence="$tmpdir/five-point-confidence"
+mkdir "$five_point_confidence"
+cp -R "$GOLDEN/." "$five_point_confidence/"
+sed -i.bak 's/^confidence: high$/confidence: medium-high/' \
+  "$five_point_confidence/wiki/concepts/sample-concept.md"
+sed -i.bak 's/^confidence: high$/confidence: medium-low/' \
+  "$five_point_confidence/wiki/references/sample-reference.md"
+rm -f "$five_point_confidence/wiki/concepts/sample-concept.md.bak" \
+  "$five_point_confidence/wiki/references/sample-reference.md.bak"
+
+expect_success \
+  "five-point confidence values pass lint" \
+  "$CLI" lint "$five_point_confidence"
+
 hybrid_rollup="$tmpdir/hybrid-rollup"
 mkdir "$hybrid_rollup"
 cp -R "$SCRIPT_DIR/fixtures/defects/stale-inventory-rollup/." "$hybrid_rollup/"

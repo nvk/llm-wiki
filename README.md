@@ -62,6 +62,16 @@ private verified receipts, and content-free terminal reporting.
 claude plugin install wiki@llm-wiki
 ```
 
+**Hermes Agent** (unified native plugin):
+
+```bash
+mkdir -p "$HERMES_HOME/plugins"
+cp -R hermes-plugin/llm-wiki "$HERMES_HOME/plugins/llm-wiki"
+hermes plugins enable llm-wiki
+```
+
+Restart the gateway after enabling it. In Hermes Desktop, enable **llm-wiki** in **Capabilities → Plugins** for the read-only status pane. The agent tools report topic status and run deterministic lint; copied installs must set `LLM_WIKI_CLI` to the local `llm-wiki` executable before using lint. See [`hermes-plugin/llm-wiki/README.md`](hermes-plugin/llm-wiki/README.md).
+
 **OpenAI Codex** (marketplace plugin):
 
 Install from GitHub:

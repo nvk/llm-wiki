@@ -1,0 +1,4 @@
+{
+  "name": "llm-wiki",
+  "api": "plugin_api.py"
+}

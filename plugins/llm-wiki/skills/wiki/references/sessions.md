@@ -152,7 +152,7 @@ llm-wiki-session hook --harness <codex|claude|opencode|gemini> --if-enabled
 
 The command reads the harness hook JSON object from stdin and should:
 
-1. resolve HUB from `~/.config/llm-wiki/config.json` unless `--hub` or `--local`
+1. resolve HUB from `${LLM_WIKI_CONFIG_DIR:-~/.config/llm-wiki}/config.json` unless `--hub` or `--local`
    is supplied;
 2. exit 0 without writing if `--if-enabled` is set and `.sessions/config.json`
    has `enabled: false`; missing config means default-on balanced capture;

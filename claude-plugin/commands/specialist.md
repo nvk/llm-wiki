@@ -10,7 +10,7 @@ Manage or apply personal specialist methods. Read
 `skills/wiki-manager/references/specialists.md` before acting. A specialist is
 a bounded evidence/review protocol, not a human credential or new authority.
 
-Resolve HUB from `$HOME/.config/llm-wiki/config.json`, preferring `hub_path` and
+Resolve HUB from `${LLM_WIKI_CONFIG_DIR:-$HOME/.config/llm-wiki}/config.json`, preferring `hub_path` and
 expanding only a leading `~`. Use the bundled deterministic helper:
 
 ```bash

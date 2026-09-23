@@ -1861,6 +1861,18 @@ def append_lint_log(ctx: LintContext) -> None:
         handle.write(entry)
 
 
+def config_dir() -> Path:
+    """Return the llm-wiki config directory.
+
+    ``LLM_WIKI_CONFIG_DIR`` overrides the default ``~/.config/llm-wiki`` so one
+    machine can run several isolated hubs (for example one per client profile).
+    """
+    override = os.environ.get("LLM_WIKI_CONFIG_DIR")
+    if override:
+        return expand_leading_tilde(override)
+    return home_directory() / ".config" / "llm-wiki"
+
+
 def home_directory() -> Path:
     """Return the home directory, honouring HOME on every platform.
 
@@ -1914,7 +1926,7 @@ def initialized_wiki_root(path: Path) -> bool:
 def resolve_hub(args: argparse.Namespace) -> Path:
     if args.hub:
         return expand_leading_tilde(str(args.hub))
-    config = home_directory() / ".config" / "llm-wiki" / "config.json"
+    config = config_dir() / "config.json"
     if config.exists():
         try:
             data = json.loads(config.read_text(encoding="utf-8"))
@@ -3864,10 +3876,7 @@ def run_specialist(args: argparse.Namespace) -> int:
 
 
 def adapter_config_dir() -> Path:
-    override = os.environ.get("LLM_WIKI_CONFIG_DIR")
-    if override:
-        return expand_leading_tilde(override)
-    return home_directory() / ".config" / "llm-wiki"
+    return config_dir()
 
 
 def adapter_registry_path() -> Path:

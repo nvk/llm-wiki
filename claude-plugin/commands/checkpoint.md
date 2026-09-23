@@ -17,7 +17,7 @@ previewed file write—not commit, push, publication, release, or import.
 
 ## Resolve and parse
 
-1. Resolve HUB from `$HOME/.config/llm-wiki/config.json` using normal
+1. Resolve HUB from `${LLM_WIKI_CONFIG_DIR:-$HOME/.config/llm-wiki}/config.json` using normal
    `hub_path`/fallback rules; read `HUB/_index.md` and `HUB/wikis.json`.
 2. Parse `create`, `refresh`, `verify`, or `import`; natural “checkpoint/dump
    this project's wiki knowledge into the repo” means `create`.

@@ -13,11 +13,19 @@ When a wiki folder is shared through iCloud, the same logical folder appears at 
 > file remains as canonical developer documentation for the protocol, but is not
 > load-bearing for command execution.
 
+## Config directory override
+
+The config file lives in `~/.config/llm-wiki/` by default. If the environment
+variable `LLM_WIKI_CONFIG_DIR` is set, read `config.json` (and `adapters.json`)
+from that directory instead. This lets one machine run several isolated hubs,
+for example one per client profile, by launching the agent with a different
+`LLM_WIKI_CONFIG_DIR`. The `llm-wiki` helper honours the same variable.
+
 ## Resolution Steps
 
 **This is a sequential file-read protocol. Do NOT use Explore agents, `find`, `ls -R`, or any filesystem search. Each step is a single Read tool call. Most configured sessions resolve by step 3.**
 
-1. **Read `~/.config/llm-wiki/config.json`** (expand `~` to `$HOME`).
+1. **Read `${LLM_WIKI_CONFIG_DIR:-~/.config/llm-wiki}/config.json`** (expand `~` to `$HOME`).
 
 2. **If config has `hub_path`** → expand the leading `~` ONLY (see Tilde Expansion below), set that expanded path as the preferred **HUB** candidate.
 
@@ -45,7 +53,7 @@ Most sessions hit steps 1-3 and resolve from config. The `~/wiki/` fallback is o
 > **CRITICAL — Do NOT confuse directory existence with hub existence.**
 > A directory may exist (e.g., leftover `.DS_Store`, empty folder, or a symlink to an uninitialized path) without being an initialized hub. Only `_index.md` existing at the hub root counts as an initialized hub.
 
-> **Config is authoritative.** If `~/.config/llm-wiki/config.json` exists with a `hub_path` or `resolved_path`, ALL initialization MUST happen at the config path. Prefer `hub_path` for initialization when present. Never create a hub at `~/wiki/` when config points elsewhere.
+> **Config is authoritative.** If `${LLM_WIKI_CONFIG_DIR:-~/.config/llm-wiki}/config.json` exists with a `hub_path` or `resolved_path`, ALL initialization MUST happen at the config path. Prefer `hub_path` for initialization when present. Never create a hub at `~/wiki/` when config points elsewhere.
 
 > **Never access `~/wiki/` when config exists.** In sandboxed environments, `~/wiki/` may not be an allowed path. The config path is the only path the agent should touch.
 

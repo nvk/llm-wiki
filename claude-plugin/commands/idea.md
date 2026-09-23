@@ -10,7 +10,7 @@ Manage Ideas between compiled Concepts and committed Projects. Read
 `skills/wiki-manager/references/ideas.md`; load inventory, research, or Project
 references only for the operation that needs them.
 
-Resolve HUB from `$HOME/.config/llm-wiki/config.json` (`hub_path` first), then
+Resolve HUB from `${LLM_WIKI_CONFIG_DIR:-$HOME/.config/llm-wiki}/config.json` (`hub_path` first), then
 `--local`, `--wiki`, CWD `.wiki/`, or HUB. Read indexes first. Writes require
 one active topic and never go at hub root.
 

@@ -36,7 +36,7 @@ stated search strategy, quality threshold, and limit", not the entire internet.
 
 Follow the standard resolution flow:
 
-1. Read `$HOME/.config/llm-wiki/config.json`. If it has `hub_path`, expand
+1. Read `${LLM_WIKI_CONFIG_DIR:-$HOME/.config/llm-wiki}/config.json`. If it has `hub_path`, expand
    leading `~` only and prefer that path; use `resolved_path` only as a fallback
    cache when the expanded `hub_path` is unavailable and `resolved_path` is
    initialized. If config has only `resolved_path`, use it. If the configured

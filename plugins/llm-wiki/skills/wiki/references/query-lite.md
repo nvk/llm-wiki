@@ -20,7 +20,7 @@ portable fallback.
 
 1. If the request says `--local`, or the current project contains `.wiki/`,
    use `<cwd>/.wiki` and read `.wiki/_index.md` first.
-2. Otherwise read `~/.config/llm-wiki/config.json`. Expand only a leading `~`
+2. Otherwise read `${LLM_WIKI_CONFIG_DIR:-~/.config/llm-wiki}/config.json`. Expand only a leading `~`
    in `hub_path`. If unavailable, try `resolved_path`, then `~/wiki`.
 3. At a hub, read `<hub>/_index.md` and `<hub>/wikis.json`. Choose exactly one
    active topic from its title, aliases, summary, or an explicit `--wiki NAME`.

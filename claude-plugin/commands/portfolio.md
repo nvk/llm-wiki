@@ -15,7 +15,7 @@ Ideas/Portfolio directory, saved view, duplicate record, or activity-log entry.
 
 ### Resolve scope
 
-Resolve HUB from `$HOME/.config/llm-wiki/config.json`, preferring `hub_path`.
+Resolve HUB from `${LLM_WIKI_CONFIG_DIR:-$HOME/.config/llm-wiki}/config.json`, preferring `hub_path`.
 
 - `--local` selects the current `.wiki/`.
 - `--wiki <name>` selects one active topic from `HUB/wikis.json`.

@@ -18,7 +18,7 @@ Read `skills/wiki-manager/references/archive.md`,
 
 Archive is a hub-level operation. Resolve **HUB** with the standard protocol:
 
-1. Read `$HOME/.config/llm-wiki/config.json`. Prefer `hub_path`, expanding only
+1. Read `${LLM_WIKI_CONFIG_DIR:-$HOME/.config/llm-wiki}/config.json`. Prefer `hub_path`, expanding only
    a leading `~`. Use `resolved_path` only as the legacy fallback described in
    `hub-resolution.md`.
 2. If no config exists, try `$HOME/wiki/_index.md`.

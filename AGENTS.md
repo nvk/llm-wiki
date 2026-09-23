@@ -14,7 +14,7 @@ An LLM-compiled knowledge base. You (the LLM agent) are both the compiler and th
 
 ### Hub Path
 
-Defaults to `~/wiki/`. Optionally configured via `~/.config/llm-wiki/config.json`:
+Defaults to `~/wiki/`. Optionally configured via `${LLM_WIKI_CONFIG_DIR:-~/.config/llm-wiki}/config.json`:
 
 ```json
 { "hub_path": "~/Library/Mobile Documents/com~apple~CloudDocs/wiki" }

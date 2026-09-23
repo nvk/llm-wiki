@@ -299,13 +299,13 @@ Codex needs r+w to its own `$HOME/.codex` directory for plugin install, marketpl
 
 | Path | Access | Purpose |
 |------|--------|---------|
-| `$HOME/.config/llm-wiki` | read | Hub path config — checked first during resolution (v0.4.2+) |
+| `$HOME/.config/llm-wiki` | read | Hub path config — checked first during resolution (v0.4.2+). Set `LLM_WIKI_CONFIG_DIR` to use another directory (one hub per profile). |
 | Wiki data dir | readwrite | The wiki itself — use the actual path, not `$HOME/wiki` (see below) |
 | `$HOME/.codex` | readwrite | Codex only — plugin cache, skills, state, marketplace temp files |
 
 ### Hub resolution and `~/wiki`
 
-Hub resolution checks `~/.config/llm-wiki/config.json` first and only falls back to `~/wiki` when no config exists. If your wiki lives on iCloud or any non-default path, set the config and you don't need `$HOME/wiki` in the sandbox at all:
+Hub resolution checks `~/.config/llm-wiki/config.json` first (or `$LLM_WIKI_CONFIG_DIR/config.json` when that variable is set) and only falls back to `~/wiki` when no config exists. If your wiki lives on iCloud or any non-default path, set the config and you don't need `$HOME/wiki` in the sandbox at all:
 
 ```bash
 # Set once — agents will resolve from config, never touch ~/wiki

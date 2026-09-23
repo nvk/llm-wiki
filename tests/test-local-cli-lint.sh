@@ -836,6 +836,39 @@ expect_success \
   "existing hub_path wins even when hub _index is not present yet" \
   env HOME="$lag_home" "$CLI" lint --wiki lag-topic
 
+override_home="$tmpdir/override-home"
+override_config="$tmpdir/override-config"
+override_hub="$tmpdir/override-hub"
+mkdir -p "$override_home" "$override_config" "$override_hub/topics/override-topic"
+cp -R "$GOLDEN/." "$override_hub/topics/override-topic/"
+cat > "$override_config/config.json" <<JSON
+{
+  "hub_path": "$override_hub"
+}
+JSON
+cat > "$override_hub/_index.md" <<'EOF'
+# Hub Index
+EOF
+cat > "$override_hub/wikis.json" <<'JSON'
+{
+  "default": "<HUB>",
+  "wikis": {
+    "hub": { "path": "<HUB>", "description": "Hub" },
+    "override-topic": { "path": "topics/override-topic", "description": "Override topic" }
+  },
+  "local_wikis": []
+}
+JSON
+
+expect_success \
+  "LLM_WIKI_CONFIG_DIR relocates config.json for hub resolution" \
+  env HOME="$override_home" LLM_WIKI_CONFIG_DIR="$override_config" "$CLI" lint --wiki override-topic
+
+expect_failure_contains \
+  "without LLM_WIKI_CONFIG_DIR the same HOME has no hub" \
+  "wiki registry not found" \
+  env HOME="$override_home" "$CLI" lint --wiki override-topic
+
 relative_hub="$tmpdir/relative-hub"
 mkdir -p "$relative_hub/topics/relative-topic"
 cp -R "$GOLDEN/." "$relative_hub/topics/relative-topic/"

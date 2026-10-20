@@ -1,0 +1,7 @@
+name: llm-wiki
+version: 0.1.0
+description: Hermes tools and dashboard for llm-wiki.
+author: nvk
+provides_tools:
+  - llm_wiki_status
+  - llm_wiki_lint

@@ -115,6 +115,38 @@ else
   log_fail "generated wiki paths use portable separators" "$portable_path_output"
 fi
 
+set +e
+code_strip_output="$(python3 - "$CLI" <<'PY' 2>&1
+import runpy
+import sys
+
+namespace = runpy.run_path(sys.argv[1])
+strip = namespace["strip_markdown_code"]
+
+# A `` span that contains a ``` run closes on the matching two-backtick run,
+# not on the first two backticks of the longer run.
+line = "`` before ``` [[inside-code]] end `` [[outside-code]] `literal`"
+stripped = strip(line)
+assert "[[inside-code]]" not in stripped, stripped
+assert "[[outside-code]]" in stripped, stripped
+assert "`literal`" not in stripped, stripped
+
+# An unmatched opener stays prose instead of swallowing the rest of the line.
+assert "[[link]]" in strip("`a [[link]]"), "unmatched opener must not swallow prose"
+
+# Ordinary one- and two-backtick spans still strip.
+assert "x" not in strip("`x` after")
+assert "y" not in strip("``y`` after")
+PY
+)"
+code_strip_rc=$?
+set -e
+if [ "$code_strip_rc" -eq 0 ]; then
+  log_pass "inline code closes on an equal-length backtick run"
+else
+  log_fail "inline code closes on an equal-length backtick run" "$code_strip_output"
+fi
+
 expect_success "golden wiki passes local lint" "$CLI" lint "$GOLDEN"
 
 tmpdir="$(mktemp -d)"

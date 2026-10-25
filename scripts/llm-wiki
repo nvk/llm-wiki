@@ -1539,7 +1539,22 @@ def strip_markdown_code(text: str) -> str:
             while end < len(line) and line[end] == "`":
                 end += 1
             delimiter = line[index:end]
-            closing = line.find(delimiter, end)
+            # Only a run of exactly this length closes the span: the first two
+            # backticks of a ``` run belong to a different span, and accepting
+            # them would let an unmatched tail swallow the prose after it.
+            closing = -1
+            scan = end
+            while scan < len(line):
+                run_start = line.find("`", scan)
+                if run_start == -1:
+                    break
+                run_end = run_start
+                while run_end < len(line) and line[run_end] == "`":
+                    run_end += 1
+                if run_end - run_start == len(delimiter):
+                    closing = run_start
+                    break
+                scan = run_end
             if closing == -1:
                 output.append(delimiter)
                 index = end

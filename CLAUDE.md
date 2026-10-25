@@ -38,6 +38,7 @@ git -C ~/.claude/plugins/marketplaces/llm-wiki remote set-url origin https://git
 ./tests/test-docs-consistency.sh   # README command table + manifest/version drift
 ./tests/test-structure.sh          # wiki fixture validation (84 assertions)
 ./tests/test-local-cli-lint.sh     # local scripts/llm-wiki lint helper
+./tests/test-local-cli-identity.sh # identity assign write ordering
 ./tests/test-local-cli-retract.sh  # local secret-safe retract + verification helper
 ./tests/test-local-cli-adapters.sh # private-adapter registry + v1 execution boundary
 ./tests/test-local-cli-specialists.sh # personal specialist library + topic allowlists

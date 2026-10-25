@@ -2913,20 +2913,29 @@ def run_identity(args: argparse.Namespace) -> int:
         result["status"] = "would-assign"
     else:
         config = root / "config.md"
-        parts = split_markdown_frontmatter(config.read_text(encoding="utf-8"))
+        original_config = config.read_text(encoding="utf-8")
+        parts = split_markdown_frontmatter(original_config)
         if parts is None:
             raise SystemExit(f"config.md has no valid frontmatter: {config}")
         frontmatter, body = parts
-        write_markdown_frontmatter(
-            config,
-            set_frontmatter_scalar(frontmatter, "wiki_id", yaml_quote(identifier)),
-            body,
-        )
         match = matching_registry_entry(hub, root)
+        try:
+            write_markdown_frontmatter(
+                config,
+                set_frontmatter_scalar(frontmatter, "wiki_id", yaml_quote(identifier)),
+                body,
+            )
+            if match:
+                slug, entry, data = match
+                entry["id"] = identifier
+                write_registry(hub, data)
+        except BaseException:
+            # A half-applied identity (new config, old registry) makes every
+            # later named command fail verification, so put the config back
+            # before the failure reaches the caller.
+            config.write_text(original_config, encoding="utf-8")
+            raise
         if match:
-            slug, entry, data = match
-            entry["id"] = identifier
-            write_registry(hub, data)
             append_log(hub, "identity", f"assigned wiki identity for {slug}")
         append_log(root, "identity", f"assigned stable wiki identity {identifier}")
         result = identity_payload(root, hub)

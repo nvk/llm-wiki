@@ -1517,7 +1517,14 @@ def strip_markdown_code(text: str) -> str:
     for line in text.splitlines():
         marker = re.match(r"^\s*(`{3,}|~{3,})", line)
         if fence_char is not None:
-            if marker and marker.group(1)[0] == fence_char and len(marker.group(1)) >= fence_length:
+            # A closing fence is only whitespace after its run; text after the
+            # marker keeps the line inside the block, as CommonMark reads it.
+            if (
+                marker
+                and marker.group(1)[0] == fence_char
+                and len(marker.group(1)) >= fence_length
+                and not line[marker.end() :].strip()
+            ):
                 fence_char = None
                 fence_length = 0
             prose_lines.append("")

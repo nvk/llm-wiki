@@ -1220,6 +1220,39 @@ expect_failure_contains \
   "$CLI" lint --hub "$permission_hub" --wiki denied-topic
 chmod 644 "$permission_hub/wikis.json"
 
+set +e
+fence_strip_output="$(python3 - "$CLI" <<'PY' 2>&1
+import runpy
+import sys
+
+namespace = runpy.run_path(sys.argv[1])
+strip = namespace["strip_markdown_code"]
+
+# A fence line with text after the marker is not a closing fence, so the block
+# continues and only the following bare fence ends it.
+text = "````\ncode\n```` not-a-closing-fence\n[[inside-code]]\n````\n[[outside-code]]\n"
+stripped = strip(text)
+assert "[[inside-code]]" not in stripped, stripped
+assert "[[outside-code]]" in stripped, stripped
+
+# Trailing spaces/tabs and a longer run both still close.
+assert "[[outside-ws]]" in strip("```\ncode\n```  \n[[outside-ws]]\n")
+assert "[[outside-long]]" in strip("```\ncode\n`````\n[[outside-long]]\n")
+
+# Tilde fences behave the same way.
+tilde = strip("~~~\ncode\n~~~ trailing\n[[inside-tilde]]\n~~~\n[[outside-tilde]]\n")
+assert "[[inside-tilde]]" not in tilde, tilde
+assert "[[outside-tilde]]" in tilde, tilde
+PY
+)"
+fence_strip_rc=$?
+set -e
+if [ "$fence_strip_rc" -eq 0 ]; then
+  log_pass "fenced code closes only on a bare marker line"
+else
+  log_fail "fenced code closes only on a bare marker line" "$fence_strip_output"
+fi
+
 echo ""
 echo "==========================================="
 printf "Results: \033[32m%d passed\033[0m, \033[31m%d failed\033[0m, %d total\n" "$PASS" "$FAIL" "$TOTAL"

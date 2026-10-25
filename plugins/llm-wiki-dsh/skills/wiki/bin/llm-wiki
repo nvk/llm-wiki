@@ -2343,6 +2343,10 @@ def check_hub_registry(ctx: LintContext) -> None:
             identity_error = registry_identity_error(slug, entry, hub_topic)
             if identity_error:
                 ctx.issue("critical", identity_error, registry)
+                # A row bound to another wiki's identity is not ours to retarget:
+                # a path repair here would rebind it to a wiki it does not
+                # describe. Identity repair stays an explicit operation.
+                continue
             if raw_path != relative_path:
                 if ctx.fix:
                     entry["path"] = relative_path

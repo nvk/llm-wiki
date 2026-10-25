@@ -950,6 +950,47 @@ else
   log_fail "identity commands can inspect and explicitly repair a mismatch" "$identity_mismatch_status $identity_repair $identity_repaired_status"
 fi
 
+identity_repair_hub="$tmpdir/identity-repair-hub"
+mkdir -p "$identity_repair_hub/topics/anchor" "$identity_repair_hub/topics/portable"
+printf '# Hub\n' > "$identity_repair_hub/_index.md"
+printf '# Log\n' > "$identity_repair_hub/log.md"
+printf -- '---\nwiki_id: wk-2222222222222222\n---\n' > "$identity_repair_hub/topics/anchor/config.md"
+printf '# Topic\n' > "$identity_repair_hub/topics/anchor/_index.md"
+printf -- '---\nwiki_id: wk-3333333333333333\n---\n' > "$identity_repair_hub/topics/portable/config.md"
+printf '# Topic\n' > "$identity_repair_hub/topics/portable/_index.md"
+cat > "$identity_repair_hub/wikis.json" <<'JSON'
+{
+  "default": "<HUB>",
+  "wikis": {
+    "hub": {"path": "<HUB>"},
+    "anchor": {"path": "external/anchor", "id": "wk-1111111111111111"},
+    "portable": {"path": "./topics/portable", "id": "wk-3333333333333333"}
+  }
+}
+JSON
+set +e
+identity_repair_output="$("$CLI" lint "$identity_repair_hub" --fix 2>&1)"
+identity_repair_lint_rc=$?
+set -e
+if [ "$identity_repair_lint_rc" -ne 0 ] \
+  && grep -q 'registry identity mismatch for anchor' <<<"$identity_repair_output" \
+  && python3 - "$identity_repair_hub/wikis.json" <<'PY'
+import json
+import sys
+from pathlib import Path
+
+data = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
+wikis = data["wikis"]
+assert wikis["anchor"]["path"] == "external/anchor", wikis["anchor"]
+assert wikis["anchor"]["id"] == "wk-1111111111111111", wikis["anchor"]
+assert wikis["portable"]["path"] == "topics/portable", wikis["portable"]
+PY
+then
+  log_pass "hub lint --fix does not retarget a row whose identity conflicts"
+else
+  log_fail "hub lint --fix does not retarget a row whose identity conflicts" "$identity_repair_output"
+fi
+
 hub_scope="$tmpdir/hub-scope"
 mkdir -p "$hub_scope/topics/noisy-topic"
 cp -R "$SCRIPT_DIR/fixtures/defects/missing-index/." "$hub_scope/topics/noisy-topic/"

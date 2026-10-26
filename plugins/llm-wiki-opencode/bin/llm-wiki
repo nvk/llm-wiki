@@ -2912,6 +2912,16 @@ def run_identity(args: argparse.Namespace) -> int:
     if not args.apply:
         result["status"] = "would-assign"
     else:
+        if getattr(args, "hub", None):
+            # An explicitly selected hub has to have a usable registry: treating a
+            # missing or malformed one as "unregistered" writes a config identity
+            # the registry never learns about, and nothing later fixes it.
+            registry_data = read_registry(hub)
+            if not isinstance(registry_data.get("wikis"), dict):
+                raise SystemExit(
+                    "hub registry is invalid: 'wikis' must be an object: "
+                    f"{hub / 'wikis.json'}"
+                )
         config = root / "config.md"
         parts = split_markdown_frontmatter(config.read_text(encoding="utf-8"))
         if parts is None:

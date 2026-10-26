@@ -2833,15 +2833,19 @@ def run_schema(args: argparse.Namespace) -> int:
     raise SystemExit("unknown schema subcommand")
 
 
-def matching_registry_entry(hub: Path, root: Path) -> tuple[str, dict[str, Any], dict[str, Any]] | None:
-    registry = hub / "wikis.json"
-    if not registry.exists():
-        return None
-    data = read_registry(hub)
+def registry_entries_for_root(
+    data: dict[str, Any], hub: Path, root: Path
+) -> list[tuple[str, dict[str, Any]]]:
+    """Every registry entry that resolves to ``root``, in registry order.
+
+    Two names can point at one wiki root (an alias plus the canonical slug), and
+    an identity change has to reach all of them or the alias keeps the old id.
+    """
     wikis = data.get("wikis")
     if not isinstance(wikis, dict):
-        return None
+        return []
     root_resolved = root.resolve()
+    matches: list[tuple[str, dict[str, Any]]] = []
     for slug, entry in wikis.items():
         if slug == "hub" or not isinstance(entry, dict):
             continue
@@ -2853,8 +2857,20 @@ def matching_registry_entry(hub: Path, root: Path) -> tuple[str, dict[str, Any],
         except OSError:
             continue
         if candidate == root_resolved:
-            return str(slug), entry, data
-    return None
+            matches.append((str(slug), entry))
+    return matches
+
+
+def matching_registry_entry(hub: Path, root: Path) -> tuple[str, dict[str, Any], dict[str, Any]] | None:
+    registry = hub / "wikis.json"
+    if not registry.exists():
+        return None
+    data = read_registry(hub)
+    matches = registry_entries_for_root(data, hub, root)
+    if not matches:
+        return None
+    slug, entry = matches[0]
+    return slug, entry, data
 
 
 def identity_payload(root: Path, hub: Path) -> dict[str, Any]:
@@ -2922,12 +2938,15 @@ def run_identity(args: argparse.Namespace) -> int:
             set_frontmatter_scalar(frontmatter, "wiki_id", yaml_quote(identifier)),
             body,
         )
-        match = matching_registry_entry(hub, root)
-        if match:
-            slug, entry, data = match
-            entry["id"] = identifier
+        registry = hub / "wikis.json"
+        data = read_registry(hub) if registry.exists() else None
+        matches = registry_entries_for_root(data, hub, root) if data is not None else []
+        if matches:
+            for slug, entry in matches:
+                entry["id"] = identifier
             write_registry(hub, data)
-            append_log(hub, "identity", f"assigned wiki identity for {slug}")
+            visited = ", ".join(slug for slug, _entry in matches)
+            append_log(hub, "identity", f"assigned wiki identity for {visited}")
         append_log(root, "identity", f"assigned stable wiki identity {identifier}")
         result = identity_payload(root, hub)
         result["assigned_id"] = identifier

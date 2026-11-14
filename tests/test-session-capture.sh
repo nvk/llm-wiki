@@ -32,6 +32,27 @@ else
   log_fail "promotion notes preserve frontmatter and multiline content" "promotion regression"
 fi
 
+if python3 "$SCRIPT_DIR/test-session-index-throttle.py"; then
+  log_pass "index rebuilds are throttled by snapshot freshness"
+else
+  log_fail "index rebuilds are throttled by snapshot freshness" "throttle regression"
+fi
+
+throttle_hub="$tmpdir/throttle-wiki"
+mkdir -p "$throttle_hub"
+printf '{"session_id":"throttle","hook_event_name":"PostToolUse","cwd":"%s","tool_name":"Bash"}' "$PWD" \
+  | "$SESSION" --hub "$throttle_hub" hook --harness codex --if-enabled >/dev/null
+before_mtime="$(python3 -c 'import os,sys; print(os.stat(sys.argv[1]).st_mtime_ns)' "$throttle_hub/.sessions/indexes/sessions.json")"
+sleep 1
+printf '{"session_id":"throttle","hook_event_name":"PostToolUse","cwd":"%s","tool_name":"Bash"}' "$PWD" \
+  | "$SESSION" --hub "$throttle_hub" hook --harness codex --if-enabled >/dev/null
+after_mtime="$(python3 -c 'import os,sys; print(os.stat(sys.argv[1]).st_mtime_ns)' "$throttle_hub/.sessions/indexes/sessions.json")"
+if [ "$before_mtime" = "$after_mtime" ]; then
+  log_pass "repeated hooks do not rewrite the index snapshots"
+else
+  log_fail "repeated hooks do not rewrite the index snapshots" "index mtime changed"
+fi
+
 tmpdir="$(mktemp -d)"
 trap 'rm -rf "$tmpdir"' EXIT
 hub="$tmpdir/wiki"

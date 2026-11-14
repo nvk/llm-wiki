@@ -66,6 +66,7 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "capture_approvals": True,
         "min_confidence": "medium",
     },
+    "index_rebuild_min_interval": 120,
 }
 
 BALANCED_CONFIG = {
@@ -1083,6 +1084,18 @@ def rebuild_feedback_index(root: Path) -> None:
     )
 
 
+def indexes_recent(root: Path, config: dict[str, Any]) -> bool:
+    """Whether the index snapshots were rebuilt within the configured window."""
+    interval = float(config.get("index_rebuild_min_interval", 120))
+    if interval <= 0:
+        return False
+    sessions_index = root / "indexes" / "sessions.json"
+    try:
+        return time.time() - sessions_index.stat().st_mtime < interval
+    except OSError:
+        return False
+
+
 def rebuild_indexes(root: Path) -> None:
     by_cwd: dict[str, list[dict[str, Any]]] = {}
     by_topic: dict[str, list[dict[str, Any]]] = {}
@@ -1157,7 +1170,7 @@ def run_hook(args: argparse.Namespace) -> int:
     write, trigger = should_write_digest(state, event, config, force=False)
     if write:
         write_digest(root, state, trigger)
-    else:
+    elif not indexes_recent(root, config):
         rebuild_indexes(root)
 
     event_name = str(event.get("hook_event_name") or "")

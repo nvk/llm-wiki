@@ -247,7 +247,7 @@ A `raw/` or `wiki/` file's correct path is a pure function of its frontmatter. M
 **Checks**:
 
 - [ ] For every `.md` file under `raw/` and `wiki/` (excluding `_index.md` and `config.md`), compute the expected top-level type/category from frontmatter and compare it to the actual path. Raw sources may retain arbitrary nested namespaces below the matching type; wiki articles remain in their exact category directory.
-- [ ] Raw sources at the hub level (not inside a topic wiki) → misplaced. Hub must only contain `wikis.json`, `_index.md`, `log.md`, and `topics/`.
+- [ ] Raw sources at the hub level (not inside a topic wiki) → misplaced. Hub content belongs under the C12 HUB allowlist (`wikis.json`, indexes/logs, `topics/`, optional `.sessions/` / `.skills/` / `QUERY-LITE.md`, plus Git-root metadata when applicable).
 - [ ] Content directories (`raw/`, `wiki/`, `output/`, `inbox/`) at the hub level → misplaced. Move contents into a topic wiki or quarantine.
 - [ ] Files with missing or unreadable frontmatter → defer to C2 (frontmatter fix) before placement can be determined.
 - [ ] Out of scope: anything under `output/projects/`. Project-level placement is C8/C9.
@@ -262,7 +262,7 @@ Any file that is not in the canonical allowlist for its location is either a use
 
 | Location | Allowed items |
 |----------|--------------|
-| HUB | `wikis.json`, `_index.md`, `README.md`, `log.md`, `topics/`, optional `.sessions/`, optional `.skills/` |
+| HUB | `wikis.json`, `_index.md`, `README.md`, `log.md`, `topics/`, optional `.sessions/`, optional `.skills/`, optional `QUERY-LITE.md` |
 | `HUB/.skills/` | `_index.md`, `registry.json`, and lowercase specialist package directories |
 | `HUB/.skills/<name>/` | `SKILL.md` and optional `references/` containing Markdown only |
 | `HUB/topics/` | active topic directories plus `.archive/` |
@@ -284,9 +284,10 @@ When the hub or topic wiki root is itself a Git repository root (a `.git`
 directory or worktree `.git` file exists there), also allow the repository's
 `.git`, optional `.github/`, `AGENTS.md`, `CLAUDE.md`, `CHANGELOG.md`,
 `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `SECURITY.md`, `LICENSE`, `LICENSE.md`,
-`.gitignore`, `.gitattributes`, and `.gitmodules`. Do not apply this exception
-merely because some parent directory is a repository: project metadata does not
-belong inside an ordinary nested `.wiki/`.
+`.gitignore`, `.gitattributes`, `.gitmodules`, and optional `.cursor/` (editor
+agent project tooling for a hub that is also the Git checkout). Do not apply
+this exception merely because some parent directory is a repository: project
+metadata does not belong inside an ordinary nested `.wiki/`.
 
 **Checks**:
 

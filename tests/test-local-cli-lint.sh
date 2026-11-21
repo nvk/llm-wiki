@@ -980,6 +980,17 @@ expect_success \
   "hub lint allows operational .sessions layer" \
   "$CLI" lint "$hub_scope"
 
+printf '# Query Lite\n' > "$hub_scope/QUERY-LITE.md"
+expect_success \
+  "hub lint allows QUERY-LITE.md" \
+  "$CLI" lint "$hub_scope"
+
+mkdir -p "$hub_scope/.git" "$hub_scope/.cursor/rules"
+printf 'rule\n' > "$hub_scope/.cursor/rules/sample.mdc"
+expect_success \
+  "git-root hub lint allows .cursor tooling" \
+  "$CLI" lint "$hub_scope"
+
 registry_portability="$tmpdir/registry-portability"
 external_registry_wiki="$tmpdir/external-registry-wiki"
 missing_registry_wiki="$tmpdir/missing-registry-wiki"

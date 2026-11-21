@@ -12,6 +12,7 @@ HUB/                               # resolved from ~/.config/llm-wiki/config.jso
 ├── wikis.json                     # Registry of all topic wikis
 ├── _index.md                      # Lists topic wikis with stats
 ├── log.md                         # Global activity log
+├── QUERY-LITE.md                  # Optional compact read-only query profile
 ├── .sessions/                     # Optional harness-session operational memory
 ├── .skills/                       # Optional personal specialist method library
 │   ├── _index.md                  # Derived specialist catalog

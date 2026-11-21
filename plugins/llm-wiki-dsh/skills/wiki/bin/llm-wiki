@@ -133,6 +133,8 @@ HUB_ALLOWED = {
     "topics",
     ".sessions",
     ".skills",
+    # Compact read-only query profile shipped with hubs that use QUERY-LITE.
+    "QUERY-LITE.md",
 }
 # When a wiki or hub root is itself a git repository root, these conventional
 # VCS/project files legitimately coexist with the wiki schema and must never
@@ -151,6 +153,8 @@ GIT_ROOT_META_ALLOWED = {
     ".gitignore",
     ".gitattributes",
     ".gitmodules",
+    # Agent/editor project tooling when the hub itself is the Git checkout.
+    ".cursor",
 }
 RAW_ALLOWED = {"_index.md", "articles", "papers", "repos", "notes", "data"}
 WIKI_ALLOWED = {"_index.md", "concepts", "topics", "references", "theses"}

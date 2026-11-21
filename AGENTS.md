@@ -39,6 +39,7 @@ The hub is lightweight — NO content, just a registry.
 ├── wikis.json          # Registry of all topic wikis
 ├── _index.md           # Lists topic wikis with stats
 ├── log.md              # Global activity log
+├── QUERY-LITE.md       # Optional compact read-only query profile
 ├── .sessions/          # Optional automated agent-session capture + feedback candidates
 ├── .skills/            # Optional personal specialist SKILL.md methods + topic allowlists
 └── topics/
@@ -1039,11 +1040,13 @@ Flags: `--dry-run` (preview without writing), `--rules` (also propose CLAUDE.md/
 Auto-run lightweight checks after write operations:
 
 1. Hub should only have `wikis.json`, `_index.md`, optional `README.md`,
-   `log.md`, `topics/`, and optional `.sessions/` and `.skills/`.
+   `log.md`, `topics/`, optional `.sessions/` and `.skills/`, and optional
+   `QUERY-LITE.md` (compact read-only query profile).
    `topics/.archive/` is allowed for archived topic wikis. When the hub or a
    topic wiki is itself a Git repository root, preserve its conventional Git
    and project metadata (`.git`, `.github/`, ignore/attribute files, agent
-   instructions, contribution/security/changelog files, and licenses).
+   instructions, contribution/security/changelog files, licenses, and optional
+   `.cursor/` editor tooling).
    Validate `.skills/` with the instruction-only package and active-topic
    allowlist rules. Warn on anything else; never delete hub-level content
    automatically.
